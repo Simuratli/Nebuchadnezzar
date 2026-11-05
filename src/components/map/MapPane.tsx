@@ -147,7 +147,13 @@ export function MapPane({ events, routes, yearKey, primary = true, onBoundaryCha
       const el = containerRef.current;
       el?.setAttribute("data-rendered-boundaries", String(map.queryRenderedFeatures({ layers: ["boundary-fill"] }).length));
       el?.setAttribute("data-rendered-icons", String(map.queryRenderedFeatures({ layers: ["event-icon"] }).length));
-      el?.setAttribute("data-rendered-clusters", String(map.queryRenderedFeatures({ layers: ["event-cluster"] }).length));
+      const clusters = map.queryRenderedFeatures({ layers: ["event-cluster"] });
+      el?.setAttribute("data-rendered-clusters", String(clusters.length));
+      const first = clusters[0]?.geometry;
+      if (first?.type === "Point") {
+        const p = map.project(first.coordinates as [number, number]);
+        el?.setAttribute("data-first-cluster", `${Math.round(p.x)},${Math.round(p.y)}`);
+      }
       el?.setAttribute("data-rendered-route", String(map.queryRenderedFeatures({ layers: ["route-line"] }).length));
     });
     if (primary) {
