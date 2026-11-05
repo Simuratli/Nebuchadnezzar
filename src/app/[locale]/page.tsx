@@ -10,13 +10,14 @@ export default async function Page({ params }: Props) {
   setRequestLocale(locale);
   const repository = await getRepository();
   const language = locale as Locale; // validated by the layout
-  const [events, people, routes, tours, cities, corrections] = await Promise.all([
+  const [events, people, routes, tours, cities, corrections, polities] = await Promise.all([
     repository.listEvents(language),
     repository.listPeople(language),
     repository.listRoutes(language),
     repository.listTours(language),
     repository.listCities(language),
     repository.listCorrections(language),
+    repository.listPolities(language),
   ]);
-  return <AtlasLoader data={{ events, people, routes, tours, cities, corrections }} />;
+  return <AtlasLoader data={{ events, people, routes, tours, cities, corrections, polities }} />;
 }

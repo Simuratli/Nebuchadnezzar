@@ -91,7 +91,8 @@
     "tours": "Turlar",
     "compare": "Karşılaştır",
     "panels": "Paneller",
-    "export": "Haritayı indir"
+    "export": "Haritayı indir",
+    "states": "Devletler"
   },
   "filters": {
     "title": "Filtreler",
@@ -238,5 +239,39 @@
     "attribution": "Taban harita: OpenFreeMap, OpenMapTiles, OpenStreetMap katkıcıları. Sınırlar: historical-basemaps (A. Ourednik ve katkıcılar, GPL-3.0), yaklaşıktır.",
     "correction": "Güney Kafkasya (1800–1920): elle düzeltilmiştir; bugünkü idari sınırlardan (Natural Earth) türetilmiş, antlaşmalarla tarihlendirilmiştir ve yaklaşıktır.",
     "citationLabel": "Atıf"
+  },
+  "facts": {
+    "title": "Olay özeti",
+    "place": "Yer",
+    "partOf": "Parçası olduğu",
+    "side": "{number}. taraf",
+    "parties": "Taraflar",
+    "commanders": "Komutanlar",
+    "signatories": "İmzacılar",
+    "result": "Sonuç",
+    "outcome": "Sonuç",
+    "note": "Wikidata ve İngilizce Vikipedi bilgi kutularından otomatik okundu, bu yüzden sonuç İngilizcedir. Alıntılamadan önce doğrulayın.",
+    "treatyNote": "Wikidata ve İngilizce Vikipedi'den otomatik okundu. Antlaşma maddeleri yer almıyor, çünkü bunları sunan yapılandırılmış bir kaynak yok. Alıntılamadan önce doğrulayın."
+  },
+  "states": {
+    "title": "Devletler çizelgesi",
+    "activeCount": "{year} yılında listedeki {count} devlet var",
+    "legendActive": "Seçili yılda var",
+    "legendOther": "Diğer yıllar",
+    "legendManual": "Tarih elle girildi",
+    "close": "Çizelgeyi kapat",
+    "hint": "Tarihleri görmek için bir satır seçin. Seçili yılda olmayan bir devlet, kaydırıcıyı kuruluş yılına taşır.",
+    "manualDates": "Tarih elle girildi",
+    "source": "Wikipedia",
+    "present": "günümüz",
+    "note": "Bölgeyle ilgili bir seçkidir, tam liste değildir. Kuruluş ve yıkılış tarihleri basitleştirilmiş kabullerdir, tarihçiler farklı tarihlendirebilir. Şeritler {from} ve {to} sınırlarında kesilir.",
+    "groups": {
+      "kafkasya": "Kafkasya",
+      "akdeniz": "Akdeniz ve Anadolu",
+      "iran": "İran ve Mezopotamya",
+      "asya": "Orta Asya",
+      "bozkir": "Bozkır ve Rusya",
+      "cin": "Çin"
+    }
   }
 }

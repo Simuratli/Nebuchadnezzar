@@ -112,7 +112,8 @@
     "tours": "Tours",
     "export": "Download map",
     "compare": "Compare",
-    "panels": "Panels"
+    "panels": "Panels",
+    "states": "States"
   },
   "filters": {
     "title": "Filters",
@@ -238,5 +239,39 @@
     "attribution": "Basemap: OpenFreeMap, OpenMapTiles, OpenStreetMap contributors. Boundaries: historical-basemaps (A. Ourednik and contributors, GPL-3.0), approximate.",
     "correction": "South Caucasus (1800–1920): corrected by hand, derived from today's administrative boundaries (Natural Earth), dated by treaties, approximate.",
     "citationLabel": "Citation"
+  },
+  "facts": {
+    "title": "Event summary",
+    "place": "Place",
+    "partOf": "Part of",
+    "side": "Side {number}",
+    "parties": "Parties",
+    "commanders": "Commanders",
+    "signatories": "Signatories",
+    "result": "Result",
+    "outcome": "Outcome",
+    "note": "Read automatically from Wikidata and English Wikipedia infoboxes, so the result is in English. Check before citing.",
+    "treatyNote": "Read automatically from Wikidata and English Wikipedia. Treaty articles are not included, as no structured source provides them. Check before citing."
+  },
+  "states": {
+    "title": "States timeline",
+    "activeCount": "{count} listed states exist in {year}",
+    "legendActive": "Exists in the selected year",
+    "legendOther": "Other years",
+    "legendManual": "Date entered by hand",
+    "close": "Close timeline",
+    "hint": "Select a row for dates. A state that does not exist in the selected year moves the slider to its start.",
+    "manualDates": "Date entered by hand",
+    "source": "Wikipedia",
+    "present": "present",
+    "note": "A selection of states relevant to the region, not a full list. Founding and end dates are simplified conventions and historians may date them differently. Bars are cut off at {from} and {to}.",
+    "groups": {
+      "kafkasya": "Caucasus",
+      "akdeniz": "Mediterranean and Anatolia",
+      "iran": "Iran and Mesopotamia",
+      "asya": "Central Asia",
+      "bozkir": "Steppe and Russia",
+      "cin": "China"
+    }
   }
 }

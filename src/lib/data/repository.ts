@@ -1,4 +1,4 @@
-import type { City, Correction, EventDetail, EventSummary, HistoricalRoute, Locale, Person, Source, Tour } from "@/lib/types";
+import type { City, Correction, EventDetail, EventSummary, HistoricalRoute, Locale, Person, Polity, Source, Tour } from "@/lib/types";
 
 /** All data access goes through this interface, and every method serves one language so seed JSON and Supabase are interchangeable. */
 export interface AtlasRepository {
@@ -10,6 +10,7 @@ export interface AtlasRepository {
   listTours(locale: Locale): Promise<Tour[]>;
   listCities(locale: Locale): Promise<City[]>;
   listCorrections(locale: Locale): Promise<Correction[]>;
+  listPolities(locale: Locale): Promise<Polity[]>;
 }
 
 let instance: Promise<AtlasRepository> | null = null;

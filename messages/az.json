@@ -112,7 +112,8 @@
     "tours": "Turlar",
     "export": "Xəritəni endir",
     "compare": "Müqayisə et",
-    "panels": "Panellər"
+    "panels": "Panellər",
+    "states": "Dövlətlər"
   },
   "filters": {
     "title": "Filtrlər",
@@ -238,5 +239,39 @@
     "attribution": "Əsas xəritə: OpenFreeMap, OpenMapTiles, OpenStreetMap iştirakçıları. Sərhədlər: historical-basemaps (A. Ourednik və iştirakçılar, GPL-3.0), təxminidir.",
     "correction": "Cənubi Qafqaz (1800–1920): əl ilə düzəldilib, bugünkü inzibati sərhədlərdən (Natural Earth) götürülüb, müqavilələrlə tarixləndirilib, təxminidir.",
     "citationLabel": "İstinad"
+  },
+  "facts": {
+    "title": "Hadisə xülasəsi",
+    "place": "Yer",
+    "partOf": "Tərkib hissəsi",
+    "side": "{number}-ci tərəf",
+    "parties": "Tərəflər",
+    "commanders": "Komandanlar",
+    "signatories": "İmzalayanlar",
+    "result": "Nəticə",
+    "outcome": "Nəticə",
+    "note": "Vikidata və ingilis Vikipediyasının məlumat qutularından avtomatik oxunub, buna görə nəticə ingiliscədir. İstinad etməzdən əvvəl yoxlayın.",
+    "treatyNote": "Vikidata və ingilis Vikipediyasından avtomatik oxunub. Müqavilə maddələri daxil deyil, çünki onları təqdim edən strukturlaşdırılmış mənbə yoxdur. İstinad etməzdən əvvəl yoxlayın."
+  },
+  "states": {
+    "title": "Dövlətlər cədvəli",
+    "activeCount": "{year} ilində siyahıdakı {count} dövlət var",
+    "legendActive": "Seçilmiş ildə var",
+    "legendOther": "Digər illər",
+    "legendManual": "Tarix əl ilə daxil edilib",
+    "close": "Cədvəli bağla",
+    "hint": "Tarixləri görmək üçün sətir seçin. Seçilmiş ildə olmayan dövlət sürüşdürücünü yaranma ilinə aparır.",
+    "manualDates": "Tarix əl ilə daxil edilib",
+    "source": "Wikipedia",
+    "present": "bu gün",
+    "note": "Bu, regionla bağlı seçmədir, tam siyahı deyil. Yaranma və süqut tarixləri sadələşdirilmiş qəbullardır, tarixçilər fərqli tarixləndirə bilər. Zolaqlar {from} və {to} sərhədlərində kəsilir.",
+    "groups": {
+      "kafkasya": "Qafqaz",
+      "akdeniz": "Aralıq dənizi və Anadolu",
+      "iran": "İran və Mesopotamiya",
+      "asya": "Orta Asiya",
+      "bozkir": "Çöl və Rusiya",
+      "cin": "Çin"
+    }
   }
 }

@@ -65,7 +65,7 @@ export const storedEventSchema = eventSchema.omit({ title: true, summary: true, 
   i18n: z.partialRecord(z.enum(LOCALES), storedText),
 });
 export type StoredEvent = z.infer<typeof storedEventSchema>;
-export type EventDetail = HistoricalEvent & { sources: Source[] };
+export type EventDetail = HistoricalEvent & { sources: Source[]; card: EventCard | null };
 
 const placeSchema = z.object({ name: z.string(), lng: z.number(), lat: z.number(), i18n: z.partialRecord(z.enum(LOCALES), z.string()).optional() });
 
@@ -124,6 +124,49 @@ export const correctionSchema = z.object({
   needs_review: z.boolean(),
 });
 export type Correction = z.infer<typeof correctionSchema>;
+
+/** A name in up to three languages, with its Wikidata item when known. */
+const nameI18n = z.object({ en: z.string().optional(), tr: z.string().optional(), az: z.string().optional(), qid: z.string().optional() });
+export type NameI18n = z.infer<typeof nameI18n>;
+
+const storedCardSchema = z.object({
+  parties: z.array(nameI18n),
+  part_of: z.array(nameI18n),
+  places: z.array(nameI18n),
+  signatories: z.array(nameI18n),
+  sides: z.array(z.object({ parties: z.array(nameI18n), commanders: z.array(nameI18n) })),
+  /** From the English Wikipedia infobox, so English in every language. */
+  result: z.string().nullable(),
+});
+export type StoredCard = z.infer<typeof storedCardSchema>;
+export const eventCardStoreSchema = z.record(z.string(), storedCardSchema);
+
+export type CardName = { name: string; qid: string | null };
+export type EventCard = {
+  parties: CardName[];
+  part_of: CardName[];
+  places: CardName[];
+  signatories: CardName[];
+  sides: { parties: CardName[]; commanders: CardName[] }[];
+  result: string | null;
+};
+
+export const POLITY_GROUPS = ["kafkasya", "akdeniz", "iran", "asya", "bozkir", "cin"] as const;
+export type PolityGroup = (typeof POLITY_GROUPS)[number];
+const storedPolitySchema = z.object({
+  id: z.string(),
+  group: z.enum(POLITY_GROUPS),
+  from: year,
+  /** null means it still exists. */
+  to: year.nullable(),
+  manual_dates: z.boolean(),
+  wikidata_id: z.string().nullable(),
+  url: z.string().url(),
+  i18n: z.partialRecord(z.enum(LOCALES), z.string()),
+});
+export type StoredPolity = z.infer<typeof storedPolitySchema>;
+export const polityStoreSchema = z.array(storedPolitySchema);
+export type Polity = Omit<StoredPolity, "i18n"> & { name: string };
 
 export const routeSchema = z.object({
   id: z.string(),

@@ -1,16 +1,22 @@
 import content from "../../../data/i18n/content.json";
 import {
   LOCALES,
+  type CardName,
   type City,
   type Correction,
+  type EventCard,
   type HistoricalEvent,
   type HistoricalRoute,
   type Locale,
+  type NameI18n,
   type Person,
+  type Polity,
   type Source,
+  type StoredCard,
   type StoredCity,
   type StoredEvent,
   type StoredPerson,
+  type StoredPolity,
   type Tour,
 } from "@/lib/types";
 
@@ -79,6 +85,29 @@ export function localizeCity(c: StoredCity, locale: Locale): City {
     rulers: c.rulers.map((r) => ({ ...r, name: r.name && translate(r.name, locale) })),
     sources: localizeSources(c.sources, locale, name.value),
   };
+}
+
+const localName = (n: NameI18n, locale: Locale): CardName => ({
+  name: fallbackOrder(locale).map((l) => n[l]).find(Boolean) ?? "",
+  qid: n.qid ?? null,
+});
+
+export function localizeCard(card: StoredCard | undefined | null, locale: Locale): EventCard | null {
+  if (!card) return null;
+  const names = (list: NameI18n[]) => list.map((n) => localName(n, locale)).filter((n) => n.name);
+  return {
+    parties: names(card.parties),
+    part_of: names(card.part_of),
+    places: names(card.places),
+    signatories: names(card.signatories),
+    sides: card.sides.map((s) => ({ parties: names(s.parties), commanders: names(s.commanders) })),
+    result: card.result,
+  };
+}
+
+export function localizePolity(p: StoredPolity, locale: Locale): Polity {
+  const { i18n, ...rest } = p;
+  return { ...rest, name: fallbackOrder(locale).map((l) => i18n[l]).find(Boolean) ?? p.id };
 }
 
 export function localizeRoute(r: HistoricalRoute, locale: Locale): HistoricalRoute {

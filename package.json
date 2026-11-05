@@ -15,7 +15,9 @@
     "prebuild": "node scripts/copy-maplibre-worker.mjs",
     "data:load-supabase": "tsx scripts/load-supabase.ts",
     "data:corrections": "tsx scripts/prepare-corrections.ts",
-    "data:entities": "tsx scripts/fetch-entities.ts"
+    "data:entities": "tsx scripts/fetch-entities.ts",
+    "data:cards": "tsx scripts/fetch-cards.ts",
+    "data:polities": "tsx scripts/fetch-polities.ts"
   },
   "dependencies": {
     "@radix-ui/react-slider": "^1.6.1",

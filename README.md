@@ -40,7 +40,15 @@ Seed verisi ve sınır dosyaları repoda hazır gelir, ek ayar gerekmez.
 
 historical-basemaps bu bölgeyi 1800–1920 için hatalı gösterir (örneğin 1914'e kadar "Persia"). `scripts/prepare-corrections.ts`, Natural Earth'ün bugünkü idari birimlerini `data/manual/south-caucasus.json` dosyasındaki gruplara göre birleştirir ve dönemleri antlaşmalarla tarihlendirir. Çizgiler tarihî sınır değil yaklaşıktır; tüm kayıtlar `needs_review` taşır. Kuzey Kafkasya bu katmana dahil değildir.
 
-Sıra önemlidir: `data:corrections`, `data:boundaries`, `data:wikidata`, `data:entities`.
+Sıra önemlidir: `data:corrections`, `data:boundaries`, `data:wikidata`, `data:entities`, `data:cards`, `data:polities`.
+
+### Olay kartları: `npm run data:cards`
+
+Taraflar, yer, üst savaş ve imzacılar Wikidata'dan; karşı karşıya gelen taraflar, komutanlar ve sonuç İngilizce Vikipedi bilgi kutularından otomatik okunur. Sonuç metni bu yüzden her dilde İngilizcedir. Antlaşma maddeleri yapılandırılmış hiçbir kaynakta bulunmadığından kartta yoktur.
+
+### Devletler çizelgesi: `npm run data:polities`
+
+Liste `data/manual/polities.json` dosyasındadır. Tarihler Wikidata'dan gelir; orada olmayan veya yanıltıcı olanlar elle girilir ve çizelgede içi boş şeritle gösterilir.
 
 ### Kişiler ve şehirler: `npm run data:entities`
 

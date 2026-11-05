@@ -1,18 +1,21 @@
 import citiesJson from "../../../data/seed/cities.json";
 import correctionsJson from "../../../data/seed/corrections.json";
+import cardsJson from "../../../data/seed/event-cards.json";
 import eventsJson from "../../../data/seed/events.json";
 import peopleJson from "../../../data/seed/people.json";
+import politiesJson from "../../../data/seed/polities.json";
 import routesJson from "../../../data/seed/routes.json";
 import sourcesJson from "../../../data/seed/sources.json";
 import toursJson from "../../../data/seed/tours.json";
-import type { Correction, EventSummary, HistoricalRoute, Source, StoredCity, StoredEvent, StoredPerson, Tour } from "@/lib/types";
-import { localizeCity, localizeCorrection, localizeEvent, localizePerson, localizeRoute, localizeSources, localizeTour } from "./localize";
+import type { Correction, EventSummary, HistoricalRoute, Source, StoredCard, StoredCity, StoredEvent, StoredPerson, StoredPolity, Tour } from "@/lib/types";
+import { localizeCard, localizeCity, localizeCorrection, localizeEvent, localizePerson, localizePolity, localizeRoute, localizeSources, localizeTour } from "./localize";
 import type { AtlasRepository } from "./repository";
 
 export function createSeedRepository(): AtlasRepository {
   const events = eventsJson as unknown as StoredEvent[];
   const sources = sourcesJson as unknown as Source[];
   const byId = new Map(events.map((e) => [e.id, e]));
+  const cards = cardsJson as unknown as Record<string, StoredCard>;
 
   return {
     async listEvents(locale) {
@@ -25,7 +28,7 @@ export function createSeedRepository(): AtlasRepository {
       const event = byId.get(id);
       if (!event) return null;
       const localized = localizeEvent(event, locale);
-      return { ...localized, sources: localizeSources(sources.filter((s) => s.event_id === id), locale, localized.title) };
+      return { ...localized, sources: localizeSources(sources.filter((s) => s.event_id === id), locale, localized.title), card: localizeCard(cards[id], locale) };
     },
     async getSources(eventIds, locale) {
       return eventIds.flatMap((id) => {
@@ -47,6 +50,9 @@ export function createSeedRepository(): AtlasRepository {
     },
     async listCorrections(locale) {
       return (correctionsJson as unknown as Correction[]).map((c) => localizeCorrection(c, locale));
+    },
+    async listPolities(locale) {
+      return (politiesJson as unknown as StoredPolity[]).map((p) => localizePolity(p, locale));
     },
   };
 }

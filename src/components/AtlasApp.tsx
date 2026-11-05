@@ -16,6 +16,7 @@ import { PersonPanel } from "@/components/panels/PersonPanel";
 import { RoutesPanel } from "@/components/panels/RoutesPanel";
 import { SearchBox } from "@/components/panels/SearchBox";
 import { SidePanel } from "@/components/panels/SidePanel";
+import { StatesChart } from "@/components/panels/StatesChart";
 import { TourPlayer } from "@/components/panels/TourPlayer";
 import { ToursPanel } from "@/components/panels/ToursPanel";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
@@ -23,12 +24,12 @@ import { ThemeToggle } from "@/components/ThemeToggle";
 import { TimeBar, usePlayback } from "@/components/timeline/TimeBar";
 import { isCorrectedYear } from "@/lib/corrections";
 import { eventsAtYear, filterEvents } from "@/lib/filters";
-import type { City, Correction, EventSummary, HistoricalRoute, Person, Tour } from "@/lib/types";
+import type { City, Correction, EventSummary, HistoricalRoute, Person, Polity, Tour } from "@/lib/types";
 import { serializeUrlState } from "@/lib/url-state";
 import { formatYear, type BoundaryEntry } from "@/lib/year";
 import { useAtlas } from "@/store/atlas";
 
-export type AtlasData = { events: EventSummary[]; people: Person[]; routes: HistoricalRoute[]; tours: Tour[]; cities: City[]; corrections: Correction[] };
+export type AtlasData = { events: EventSummary[]; people: Person[]; routes: HistoricalRoute[]; tours: Tour[]; cities: City[]; corrections: Correction[]; polities: Polity[] };
 
 /** Keeps the address bar shareable. replaceState avoids a Next navigation on every change. */
 function useUrlSync() {
@@ -170,6 +171,7 @@ export function AtlasApp({ data }: { data: AtlasData }) {
             <ExportPanel maps={compare ? [leftMap, rightMap] : [leftMap]} />
           </SidePanel>
         )}
+        {sidePanel === "states" && <StatesChart polities={data.polities} />}
         <TourPlayer tours={data.tours} events={data.events} />
         <EventPanel people={data.people} />
         <PersonPanel people={data.people} events={data.events} routes={data.routes} />

@@ -1,0 +1,730 @@
+[
+ {
+  "id": "ahameniş",
+  "group": "iran",
+  "from": -550,
+  "to": -330,
+  "manual_dates": false,
+  "wikidata_id": "Q389688",
+  "url": "https://en.wikipedia.org/wiki/Achaemenid_Empire",
+  "i18n": {
+   "en": "Achaemenid Empire",
+   "tr": "Ahameniş İmparatorluğu",
+   "az": "Əhəmənilər imperiyası"
+  }
+ },
+ {
+  "id": "selevkos",
+  "group": "iran",
+  "from": -312,
+  "to": -63,
+  "manual_dates": false,
+  "wikidata_id": "Q93180",
+  "url": "https://en.wikipedia.org/wiki/Seleucid_Empire",
+  "i18n": {
+   "en": "Seleucid Empire",
+   "tr": "Selevkos İmparatorluğu",
+   "az": "Selevkilər imperiyası"
+  }
+ },
+ {
+  "id": "part",
+  "group": "iran",
+  "from": -247,
+  "to": 224,
+  "manual_dates": false,
+  "wikidata_id": "Q1986139",
+  "url": "https://en.wikipedia.org/wiki/Parthian_Empire",
+  "i18n": {
+   "en": "Parthian Empire",
+   "tr": "Part İmparatorluğu",
+   "az": "Parfiya"
+  }
+ },
+ {
+  "id": "sasani",
+  "group": "iran",
+  "from": 224,
+  "to": 651,
+  "manual_dates": false,
+  "wikidata_id": "Q83891",
+  "url": "https://en.wikipedia.org/wiki/Sasanian_Empire",
+  "i18n": {
+   "en": "Sasanian Empire",
+   "tr": "Sasani İmparatorluğu",
+   "az": "Sasanilər dövləti"
+  }
+ },
+ {
+  "id": "samani",
+  "group": "asya",
+  "from": 819,
+  "to": 999,
+  "manual_dates": false,
+  "wikidata_id": "Q12150341",
+  "url": "https://en.wikipedia.org/wiki/Samanid_Empire",
+  "i18n": {
+   "en": "Samanid Empire",
+   "tr": "Samaniler",
+   "az": "Samanilər dövləti"
+  }
+ },
+ {
+  "id": "gazneli",
+  "group": "asya",
+  "from": 962,
+  "to": 1186,
+  "manual_dates": true,
+  "wikidata_id": "Q12844800",
+  "url": "https://en.wikipedia.org/wiki/Ghaznavids",
+  "i18n": {
+   "en": "Ghaznavids",
+   "tr": "Gazneliler",
+   "az": "Qəznəvilər sülaləsi"
+  }
+ },
+ {
+  "id": "harzem",
+  "group": "asya",
+  "from": 1077,
+  "to": 1231,
+  "manual_dates": false,
+  "wikidata_id": "Q63134381",
+  "url": "https://en.wikipedia.org/wiki/Khwarazmian_Empire",
+  "i18n": {
+   "en": "Khwarazmian Empire",
+   "tr": "Harezmşahlar Devleti",
+   "az": "Xarəzmşahlar dövləti"
+  }
+ },
+ {
+  "id": "selcuklu",
+  "group": "iran",
+  "from": 1037,
+  "to": 1194,
+  "manual_dates": false,
+  "wikidata_id": "Q3708094",
+  "url": "https://en.wikipedia.org/wiki/Seljuk_Empire",
+  "i18n": {
+   "en": "Seljuk Empire",
+   "tr": "Büyük Selçuklu İmparatorluğu",
+   "az": "Böyük Səlcuq imperiyası"
+  }
+ },
+ {
+  "id": "ilhanli",
+  "group": "iran",
+  "from": 1256,
+  "to": 1335,
+  "manual_dates": false,
+  "wikidata_id": "Q178084",
+  "url": "https://en.wikipedia.org/wiki/Ilkhanate",
+  "i18n": {
+   "en": "Ilkhanate",
+   "tr": "İlhanlılar",
+   "az": "Elxanilər dövləti"
+  }
+ },
+ {
+  "id": "timurlu",
+  "group": "iran",
+  "from": 1370,
+  "to": 1507,
+  "manual_dates": false,
+  "wikidata_id": "Q484195",
+  "url": "https://en.wikipedia.org/wiki/Timurid_Empire",
+  "i18n": {
+   "en": "Timurid Empire",
+   "tr": "Timur İmparatorluğu",
+   "az": "Teymurilər dövləti"
+  }
+ },
+ {
+  "id": "karakoyunlu",
+  "group": "iran",
+  "from": 1375,
+  "to": 1468,
+  "manual_dates": false,
+  "wikidata_id": "Q324470",
+  "url": "https://en.wikipedia.org/wiki/Qara_Qoyunlu",
+  "i18n": {
+   "en": "Qara Qoyunlu",
+   "tr": "Karakoyunlular",
+   "az": "Qaraqoyunlu"
+  }
+ },
+ {
+  "id": "akkoyunlu",
+  "group": "iran",
+  "from": 1378,
+  "to": 1508,
+  "manual_dates": false,
+  "wikidata_id": "Q555994",
+  "url": "https://en.wikipedia.org/wiki/Aq_Qoyunlu",
+  "i18n": {
+   "en": "Aq Qoyunlu",
+   "tr": "Akkoyunlular",
+   "az": "Ağqoyunlular"
+  }
+ },
+ {
+  "id": "safevi",
+  "group": "iran",
+  "from": 1501,
+  "to": 1736,
+  "manual_dates": false,
+  "wikidata_id": "Q18234383",
+  "url": "https://en.wikipedia.org/wiki/Safavid_Iran",
+  "i18n": {
+   "en": "Safavid Iran",
+   "tr": "Safevî Devleti",
+   "az": "Səfəvilər"
+  }
+ },
+ {
+  "id": "afsar",
+  "group": "iran",
+  "from": 1736,
+  "to": 1796,
+  "manual_dates": false,
+  "wikidata_id": "Q63149558",
+  "url": "https://en.wikipedia.org/wiki/Afsharid_Iran",
+  "i18n": {
+   "en": "Afsharid Iran",
+   "tr": "Afşar İmparatorluğu",
+   "az": "Əfşarlar imperiyası"
+  }
+ },
+ {
+  "id": "zend",
+  "group": "iran",
+  "from": 1751,
+  "to": 1794,
+  "manual_dates": true,
+  "wikidata_id": "Q97629053",
+  "url": "https://en.wikipedia.org/wiki/Zand_dynasty",
+  "i18n": {
+   "en": "Zand dynasty",
+   "tr": "Zend Hanedanı",
+   "az": "Zəndlər"
+  }
+ },
+ {
+  "id": "kacar",
+  "group": "iran",
+  "from": 1789,
+  "to": 1925,
+  "manual_dates": false,
+  "wikidata_id": "Q63158027",
+  "url": "https://en.wikipedia.org/wiki/Qajar_Iran",
+  "i18n": {
+   "en": "Qajar Iran",
+   "tr": "Kaçar Devleti",
+   "az": "Qacar dövləti"
+  }
+ },
+ {
+  "id": "pehlevi",
+  "group": "iran",
+  "from": 1925,
+  "to": 1979,
+  "manual_dates": false,
+  "wikidata_id": "Q107258515",
+  "url": "https://en.wikipedia.org/wiki/Pahlavi_Iran",
+  "i18n": {
+   "en": "Pahlavi Iran",
+   "tr": "Pehlevi İranı",
+   "az": "Pəhləvi İranı"
+  }
+ },
+ {
+  "id": "roma",
+  "group": "akdeniz",
+  "from": -27,
+  "to": 395,
+  "manual_dates": true,
+  "wikidata_id": "Q2277",
+  "url": "https://en.wikipedia.org/wiki/Roman_Empire",
+  "i18n": {
+   "en": "Roman Empire",
+   "tr": "Roma İmparatorluğu",
+   "az": "Roma imperiyası"
+  }
+ },
+ {
+  "id": "bizans",
+  "group": "akdeniz",
+  "from": 395,
+  "to": 1453,
+  "manual_dates": false,
+  "wikidata_id": "Q12544",
+  "url": "https://en.wikipedia.org/wiki/Byzantine_Empire",
+  "i18n": {
+   "en": "Byzantine Empire",
+   "tr": "Bizans İmparatorluğu",
+   "az": "Bizans imperiyası"
+  }
+ },
+ {
+  "id": "rasidun",
+  "group": "akdeniz",
+  "from": 632,
+  "to": 661,
+  "manual_dates": false,
+  "wikidata_id": "Q12490507",
+  "url": "https://en.wikipedia.org/wiki/Rashidun_Caliphate",
+  "i18n": {
+   "en": "Rashidun Caliphate",
+   "tr": "Râşidîn Halifeliği",
+   "az": "Rəşidi xilafəti"
+  }
+ },
+ {
+  "id": "emevi",
+  "group": "akdeniz",
+  "from": 661,
+  "to": 750,
+  "manual_dates": false,
+  "wikidata_id": "Q8575586",
+  "url": "https://en.wikipedia.org/wiki/Umayyad_Caliphate",
+  "i18n": {
+   "en": "Umayyad Caliphate",
+   "tr": "Emeviler",
+   "az": "Əməvilər xilafəti"
+  }
+ },
+ {
+  "id": "abbasi",
+  "group": "akdeniz",
+  "from": 750,
+  "to": 1258,
+  "manual_dates": false,
+  "wikidata_id": "Q12536",
+  "url": "https://en.wikipedia.org/wiki/Abbasid_Caliphate",
+  "i18n": {
+   "en": "Abbasid Caliphate",
+   "tr": "Abbasiler",
+   "az": "Abbasilər xilafəti"
+  }
+ },
+ {
+  "id": "anadolu-selcuklu",
+  "group": "akdeniz",
+  "from": 1077,
+  "to": 1307,
+  "manual_dates": false,
+  "wikidata_id": "Q975405",
+  "url": "https://en.wikipedia.org/wiki/Sultanate_of_Rum",
+  "i18n": {
+   "en": "Sultanate of Rum",
+   "tr": "Anadolu Selçuklu Devleti",
+   "az": "Rum Səlcuqlu dövləti"
+  }
+ },
+ {
+  "id": "eyyubi",
+  "group": "akdeniz",
+  "from": 1171,
+  "to": 1341,
+  "manual_dates": false,
+  "wikidata_id": "Q180114",
+  "url": "https://en.wikipedia.org/wiki/Ayyubid_dynasty",
+  "i18n": {
+   "en": "Ayyubid dynasty",
+   "tr": "Eyyubiler",
+   "az": "Əyyubilər sülaləsi"
+  }
+ },
+ {
+  "id": "memluk",
+  "group": "akdeniz",
+  "from": 1250,
+  "to": 1517,
+  "manual_dates": false,
+  "wikidata_id": "Q282428",
+  "url": "https://en.wikipedia.org/wiki/Mamluk_Sultanate",
+  "i18n": {
+   "en": "Mamluk Sultanate of Egypt",
+   "tr": "Memlukler",
+   "az": "Məmlük dövləti"
+  }
+ },
+ {
+  "id": "osmanli",
+  "group": "akdeniz",
+  "from": 1299,
+  "to": 1922,
+  "manual_dates": false,
+  "wikidata_id": "Q12560",
+  "url": "https://en.wikipedia.org/wiki/Ottoman_Empire",
+  "i18n": {
+   "en": "Ottoman Empire",
+   "tr": "Osmanlı İmparatorluğu",
+   "az": "Osmanlı imperiyası"
+  }
+ },
+ {
+  "id": "turkiye",
+  "group": "akdeniz",
+  "from": 1923,
+  "to": null,
+  "manual_dates": false,
+  "wikidata_id": "Q43",
+  "url": "https://en.wikipedia.org/wiki/Turkey",
+  "i18n": {
+   "en": "Turkey",
+   "tr": "Türkiye",
+   "az": "Türkiyə"
+  }
+ },
+ {
+  "id": "ermeni-krallik",
+  "group": "kafkasya",
+  "from": -331,
+  "to": 428,
+  "manual_dates": true,
+  "wikidata_id": "Q208404",
+  "url": "https://en.wikipedia.org/wiki/Kingdom_of_Armenia_(antiquity)",
+  "i18n": {
+   "en": "Kingdom of Armenia",
+   "tr": "Ermeni Krallığı",
+   "az": "Ermənistan krallığı"
+  }
+ },
+ {
+  "id": "kafkas-albanya",
+  "group": "kafkasya",
+  "from": -200,
+  "to": 461,
+  "manual_dates": true,
+  "wikidata_id": "Q177076",
+  "url": "https://en.wikipedia.org/wiki/Caucasian_Albania",
+  "i18n": {
+   "en": "Caucasian Albania",
+   "tr": "Kafkaz Albanyası",
+   "az": "Qafqaz Albaniyası"
+  }
+ },
+ {
+  "id": "iberya",
+  "group": "kafkasya",
+  "from": -299,
+  "to": 580,
+  "manual_dates": false,
+  "wikidata_id": "Q19083",
+  "url": "https://en.wikipedia.org/wiki/Kingdom_of_Iberia",
+  "i18n": {
+   "en": "Kingdom of Iberia",
+   "tr": "İberya Krallığı",
+   "az": "İberiya"
+  }
+ },
+ {
+  "id": "sirvansah",
+  "group": "kafkasya",
+  "from": 861,
+  "to": 1538,
+  "manual_dates": true,
+  "wikidata_id": "Q136045372",
+  "url": "https://en.wikipedia.org/wiki/Shirvanshah",
+  "i18n": {
+   "en": "Shirvanshah",
+   "tr": "Şirvanşahlar",
+   "az": "Şirvanşahlar"
+  }
+ },
+ {
+  "id": "gurcu-krallik",
+  "group": "kafkasya",
+  "from": 1008,
+  "to": 1466,
+  "manual_dates": false,
+  "wikidata_id": "Q154667",
+  "url": "https://en.wikipedia.org/wiki/Kingdom_of_Georgia",
+  "i18n": {
+   "en": "Kingdom of Georgia",
+   "tr": "Gürcü Krallığı",
+   "az": "Gürcüstan çarlığı"
+  }
+ },
+ {
+  "id": "azerbaycan-dc",
+  "group": "kafkasya",
+  "from": 1918,
+  "to": 1920,
+  "manual_dates": false,
+  "wikidata_id": "Q206411",
+  "url": "https://en.wikipedia.org/wiki/Azerbaijan_Democratic_Republic",
+  "i18n": {
+   "en": "Azerbaijan Democratic Republic",
+   "tr": "Azerbaycan Demokratik Cumhuriyeti",
+   "az": "Azərbaycan Xalq Cümhuriyyəti"
+  }
+ },
+ {
+  "id": "gurcistan-dc",
+  "group": "kafkasya",
+  "from": 1918,
+  "to": 1921,
+  "manual_dates": false,
+  "wikidata_id": "Q245160",
+  "url": "https://en.wikipedia.org/wiki/Democratic_Republic_of_Georgia",
+  "i18n": {
+   "en": "Democratic Republic of Georgia",
+   "tr": "Gürcistan Demokratik Cumhuriyeti",
+   "az": "Gürcüstan Demokratik Respublikası"
+  }
+ },
+ {
+  "id": "ermenistan-dc",
+  "group": "kafkasya",
+  "from": 1918,
+  "to": 1920,
+  "manual_dates": false,
+  "wikidata_id": "Q139670",
+  "url": "https://en.wikipedia.org/wiki/First_Republic_of_Armenia",
+  "i18n": {
+   "en": "First Republic of Armenia",
+   "tr": "Ermenistan Demokratik Cumhuriyeti",
+   "az": "Ermənistan Demokratik Respublikası"
+  }
+ },
+ {
+  "id": "hazar",
+  "group": "bozkir",
+  "from": 618,
+  "to": 1048,
+  "manual_dates": false,
+  "wikidata_id": "Q173282",
+  "url": "https://en.wikipedia.org/wiki/Khazars",
+  "i18n": {
+   "en": "Khazars",
+   "tr": "Hazarlar",
+   "az": "Xəzərlər"
+  }
+ },
+ {
+  "id": "gokturk",
+  "group": "bozkir",
+  "from": 551,
+  "to": 603,
+  "manual_dates": false,
+  "wikidata_id": "Q15146034",
+  "url": "https://en.wikipedia.org/wiki/First_Turkic_Khaganate",
+  "i18n": {
+   "en": "First Turkic Khaganate",
+   "tr": "Birinci Göktürk Kağanlığı",
+   "az": "Birinci Göytürk xaqanlığı"
+  }
+ },
+ {
+  "id": "kusan",
+  "group": "asya",
+  "from": 30,
+  "to": 375,
+  "manual_dates": false,
+  "wikidata_id": "Q25979",
+  "url": "https://en.wikipedia.org/wiki/Kushan_Empire",
+  "i18n": {
+   "en": "Kushan Empire",
+   "tr": "Kuşan İmparatorluğu",
+   "az": "Kuşan İmperiyası"
+  }
+ },
+ {
+  "id": "mogol",
+  "group": "bozkir",
+  "from": 1206,
+  "to": 1368,
+  "manual_dates": false,
+  "wikidata_id": "Q12557",
+  "url": "https://en.wikipedia.org/wiki/Mongol_Empire",
+  "i18n": {
+   "en": "Mongol Empire",
+   "tr": "Moğol İmparatorluğu",
+   "az": "Böyük Monqol imperiyası"
+  }
+ },
+ {
+  "id": "altin-orda",
+  "group": "bozkir",
+  "from": 1243,
+  "to": 1502,
+  "manual_dates": false,
+  "wikidata_id": "Q79965",
+  "url": "https://en.wikipedia.org/wiki/Golden_Horde",
+  "i18n": {
+   "en": "Golden Horde",
+   "tr": "Altın Orda Devleti",
+   "az": "Qızıl Orda"
+  }
+ },
+ {
+  "id": "cagatay",
+  "group": "asya",
+  "from": 1225,
+  "to": 1687,
+  "manual_dates": false,
+  "wikidata_id": "Q487829",
+  "url": "https://en.wikipedia.org/wiki/Chagatai_Khanate",
+  "i18n": {
+   "en": "Chagatai Khanate",
+   "tr": "Çağatay Hanlığı",
+   "az": "Cığatay xanlığı"
+  }
+ },
+ {
+  "id": "kirim",
+  "group": "bozkir",
+  "from": 1441,
+  "to": 1783,
+  "manual_dates": false,
+  "wikidata_id": "Q160440",
+  "url": "https://en.wikipedia.org/wiki/Crimean_Khanate",
+  "i18n": {
+   "en": "Crimean Khanate",
+   "tr": "Kırım Hanlığı",
+   "az": "Krım xanlığı"
+  }
+ },
+ {
+  "id": "buhara-hanligi",
+  "group": "asya",
+  "from": 1500,
+  "to": 1785,
+  "manual_dates": false,
+  "wikidata_id": "Q577668",
+  "url": "https://en.wikipedia.org/wiki/Khanate_of_Bukhara",
+  "i18n": {
+   "en": "Khanate of Bukhara",
+   "tr": "Buhara Hanlığı",
+   "az": "Buxara xanlığı"
+  }
+ },
+ {
+  "id": "hive-hanligi",
+  "group": "asya",
+  "from": 1511,
+  "to": 1920,
+  "manual_dates": false,
+  "wikidata_id": "Q491106",
+  "url": "https://en.wikipedia.org/wiki/Khanate_of_Khiva",
+  "i18n": {
+   "en": "Khanate of Khiva",
+   "tr": "Hive Hanlığı",
+   "az": "Xivə xanlığı"
+  }
+ },
+ {
+  "id": "rus-carligi",
+  "group": "bozkir",
+  "from": 1547,
+  "to": 1721,
+  "manual_dates": false,
+  "wikidata_id": "Q186096",
+  "url": "https://en.wikipedia.org/wiki/Tsardom_of_Russia",
+  "i18n": {
+   "en": "Tsardom of Russia",
+   "tr": "Rusya Çarlığı",
+   "az": "Çar Rusiyası"
+  }
+ },
+ {
+  "id": "rus-imparatorlugu",
+  "group": "bozkir",
+  "from": 1721,
+  "to": 1917,
+  "manual_dates": false,
+  "wikidata_id": "Q34266",
+  "url": "https://en.wikipedia.org/wiki/Russian_Empire",
+  "i18n": {
+   "en": "Russian Empire",
+   "tr": "Rus İmparatorluğu",
+   "az": "Rusiya imperiyası"
+  }
+ },
+ {
+  "id": "sscb",
+  "group": "bozkir",
+  "from": 1922,
+  "to": 1991,
+  "manual_dates": false,
+  "wikidata_id": "Q15180",
+  "url": "https://en.wikipedia.org/wiki/Soviet_Union",
+  "i18n": {
+   "en": "Soviet Union",
+   "tr": "Sovyet Sosyalist Cumhuriyetler Birliği",
+   "az": "SSRİ"
+  }
+ },
+ {
+  "id": "han",
+  "group": "cin",
+  "from": -206,
+  "to": 220,
+  "manual_dates": false,
+  "wikidata_id": "Q7209",
+  "url": "https://en.wikipedia.org/wiki/Han_dynasty",
+  "i18n": {
+   "en": "Han dynasty",
+   "tr": "Han Hanedanı",
+   "az": "Xan sülaləsi"
+  }
+ },
+ {
+  "id": "tang",
+  "group": "cin",
+  "from": 618,
+  "to": 907,
+  "manual_dates": false,
+  "wikidata_id": "Q9683",
+  "url": "https://en.wikipedia.org/wiki/Tang_dynasty",
+  "i18n": {
+   "en": "Tang dynasty",
+   "tr": "Tang Hanedanı",
+   "az": "Tan sülaləsi"
+  }
+ },
+ {
+  "id": "yuan",
+  "group": "cin",
+  "from": 1271,
+  "to": 1368,
+  "manual_dates": false,
+  "wikidata_id": "Q7313",
+  "url": "https://en.wikipedia.org/wiki/Yuan_dynasty",
+  "i18n": {
+   "en": "Yuan dynasty",
+   "tr": "Yuan",
+   "az": "Yuan imperiyası"
+  }
+ },
+ {
+  "id": "ming",
+  "group": "cin",
+  "from": 1368,
+  "to": 1644,
+  "manual_dates": false,
+  "wikidata_id": "Q9903",
+  "url": "https://en.wikipedia.org/wiki/Ming_dynasty",
+  "i18n": {
+   "en": "Ming dynasty",
+   "tr": "Ming Hanedanı",
+   "az": "Min sülaləsi"
+  }
+ },
+ {
+  "id": "qing",
+  "group": "cin",
+  "from": 1636,
+  "to": 1912,
+  "manual_dates": false,
+  "wikidata_id": "Q8733",
+  "url": "https://en.wikipedia.org/wiki/Qing_dynasty",
+  "i18n": {
+   "en": "Qing dynasty",
+   "tr": "Qing Hanedanı",
+   "az": "Tzin sülaləsi"
+  }
+ }
+]

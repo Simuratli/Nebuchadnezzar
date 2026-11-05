@@ -10,6 +10,7 @@ import { formatYearRange } from "@/lib/year";
 import { useAtlas } from "@/store/atlas";
 import { CollectionControls } from "./CollectionControls";
 import { DetailShell } from "./DetailShell";
+import { EventFacts } from "./EventFacts";
 import { SourceList } from "./SourceList";
 
 type State = { status: "loading" } | { status: "error" } | { status: "ready"; event: EventDetail };
@@ -96,6 +97,8 @@ export function EventPanel({ people }: { people: Person[] }) {
                 </figcaption>
               </figure>
             )}
+
+            <EventFacts card={state.event.card} category={state.event.category} people={people} />
 
             <div className="mt-4 leading-relaxed">
               {state.event.description ? (

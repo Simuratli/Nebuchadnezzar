@@ -2,6 +2,8 @@ import { createClient } from "@supabase/supabase-js";
 import { z } from "zod";
 import {
   correctionSchema,
+  eventCardStoreSchema,
+  polityStoreSchema,
   routeSchema,
   sourceSchema,
   storedCitySchema,
@@ -11,7 +13,7 @@ import {
   type Locale,
   type Source,
 } from "@/lib/types";
-import { localizeCity, localizeCorrection, localizeEvent, localizePerson, localizeRoute, localizeSources, localizeTour } from "./localize";
+import { localizeCard, localizeCity, localizeCorrection, localizeEvent, localizePerson, localizePolity, localizeRoute, localizeSources, localizeTour } from "./localize";
 import type { AtlasRepository } from "./repository";
 
 const PAGE_SIZE = 1000;
@@ -62,7 +64,8 @@ export function createSupabaseRepository(): AtlasRepository {
       if (error) throw new Error(`events: ${error.message}`);
       if (!data) return null;
       const event = localizeEvent(storedEventSchema.parse(data), locale);
-      return { ...event, sources: localizeSources(await readSources([id]), locale, event.title) };
+      const card = eventCardStoreSchema.safeParse({ [id]: (data as { card?: unknown }).card });
+      return { ...event, sources: localizeSources(await readSources([id]), locale, event.title), card: card.success ? localizeCard(card.data[id], locale) : null };
     },
     getSources,
     async listPeople(locale) {
@@ -79,6 +82,9 @@ export function createSupabaseRepository(): AtlasRepository {
     },
     async listCorrections(locale) {
       return (await readAll("corrections", correctionSchema, "id")).map((c) => localizeCorrection(c, locale));
+    },
+    async listPolities(locale) {
+      return (await readAll("polities", polityStoreSchema.element, "from")).map((p) => localizePolity(p, locale));
     },
   };
 }
