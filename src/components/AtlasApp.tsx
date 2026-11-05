@@ -1,5 +1,6 @@
 "use client";
 
+import type { Map as MlMap } from "maplibre-gl";
 import { useTranslations } from "next-intl";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { MapPane } from "@/components/map/MapPane";
@@ -42,6 +43,40 @@ function useUrlSync() {
   }, []);
 }
 
+/** Mirrors the camera between both compare maps; the guard stops the echo from looping. */
+function useSyncedMaps(left: MlMap | null, right: MlMap | null) {
+  useEffect(() => {
+    if (!left || !right) return;
+    let syncing = false;
+    const follow = (from: MlMap, to: MlMap) => () => {
+      if (syncing) return;
+      syncing = true;
+      to.jumpTo({ center: from.getCenter(), zoom: from.getZoom() });
+      syncing = false;
+    };
+    const onLeft = follow(left, right);
+    const onRight = follow(right, left);
+    left.on("move", onLeft);
+    right.on("move", onRight);
+    onLeft();
+    return () => {
+      left.off("move", onLeft);
+      right.off("move", onRight);
+    };
+  }, [left, right]);
+}
+
+function YearBadge({ yearKey, label }: { yearKey: "year" | "year2"; label: string }) {
+  const t = useTranslations("era");
+  const year = useAtlas((s) => s[yearKey]);
+  return (
+    <div className="pointer-events-none absolute left-2 top-2 z-10 rounded bg-surface/90 px-2 py-1 text-sm shadow">
+      <span className="text-muted">{label}: </span>
+      <span className="font-serif font-semibold">{formatYear(year, { bc: t("bc"), ad: t("ad") })}</span>
+    </div>
+  );
+}
+
 export function AtlasApp({ data }: { data: AtlasData }) {
   const t = useTranslations();
   useUrlSync();
@@ -51,6 +86,10 @@ export function AtlasApp({ data }: { data: AtlasData }) {
   const windowYears = useAtlas((s) => s.windowYears);
   const filters = useAtlas((s) => s.filters);
   const sidePanel = useAtlas((s) => s.sidePanel);
+  const compare = useAtlas((s) => s.compare);
+  const [leftMap, setLeftMap] = useState<MlMap | null>(null);
+  const [rightMap, setRightMap] = useState<MlMap | null>(null);
+  useSyncedMaps(leftMap, compare ? rightMap : null);
   const events = useMemo(() => filterEvents(data.events, filters), [data.events, filters]);
   const visibleCount = eventsAtYear(events, year, windowYears).length;
 
@@ -82,8 +121,15 @@ export function AtlasApp({ data }: { data: AtlasData }) {
       </header>
       <main className="relative flex min-h-0 flex-1 flex-col md:flex-row">
         <div className="relative min-h-0 min-w-0 flex-1">
-          <MapPane events={events} routes={data.routes} yearKey="year" onBoundaryChange={onBoundaryChange} />
+          <MapPane events={events} routes={data.routes} yearKey="year" onBoundaryChange={onBoundaryChange} onMap={setLeftMap} />
+          {compare && <YearBadge yearKey="year" label={t("compare.left")} />}
         </div>
+        {compare && (
+          <div className="relative min-h-0 min-w-0 flex-1 border-t border-line md:border-l md:border-t-0">
+            <MapPane events={events} routes={data.routes} yearKey="year2" primary={false} onMap={setRightMap} />
+            <YearBadge yearKey="year2" label={t("compare.right")} />
+          </div>
+        )}
         {sidePanel === "filters" && (
           <SidePanel title={t("filters.title")}>
             <FiltersPanel events={events} />
@@ -97,7 +143,8 @@ export function AtlasApp({ data }: { data: AtlasData }) {
         <EventPanel />
       </main>
       <section id="timeline" aria-label={t("timeline.label")} className="z-40 border-t border-line bg-surface px-3 py-2 md:px-4">
-        <TimeBar note={note} />
+        <TimeBar note={note} sliderLabel={compare ? t("timeline.sliderLeft") : undefined} />
+        {compare && <TimeBar yearKey="year2" compact sliderLabel={t("timeline.sliderRight")} />}
       </section>
     </div>
   );

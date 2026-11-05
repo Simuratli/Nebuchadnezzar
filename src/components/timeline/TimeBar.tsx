@@ -39,9 +39,10 @@ type Props = {
   yearKey?: "year" | "year2";
   note?: string;
   compact?: boolean;
+  sliderLabel?: string;
 };
 
-export function TimeBar({ yearKey = "year", note, compact = false }: Props) {
+export function TimeBar({ yearKey = "year", note, compact = false, sliderLabel }: Props) {
   const t = useTranslations("timeline");
   const tEra = useTranslations("era");
   const era = { bc: tEra("bc"), ad: tEra("ad") };
@@ -93,14 +94,14 @@ export function TimeBar({ yearKey = "year", note, compact = false }: Props) {
             step={1}
             value={[yearToIndex(year)]}
             onValueChange={([v]) => setYear(indexToYear(v))}
-            aria-label={t("slider")}
+            aria-label={sliderLabel ?? t("slider")}
           >
             <Slider.Track className="relative h-1.5 grow rounded-full bg-line">
               <Slider.Range className="absolute h-full rounded-full bg-accent" />
             </Slider.Track>
             <Slider.Thumb
               data-testid={`slider-${yearKey}`}
-              aria-label={t("slider")}
+              aria-label={sliderLabel ?? t("slider")}
               aria-valuetext={label}
               className="block h-5 w-5 rounded-full border-2 border-accent bg-surface shadow"
             />
