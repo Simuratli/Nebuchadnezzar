@@ -10,7 +10,7 @@ import { readFileSync } from "node:fs";
 import { join, resolve } from "node:path";
 import { createClient } from "@supabase/supabase-js";
 import { z } from "zod";
-import { eventSchema, personSchema, routeSchema, sourceSchema, tourSchema } from "../src/lib/types";
+import { citySchema, eventSchema, personSchema, routeSchema, sourceSchema, tourSchema } from "../src/lib/types";
 
 const url = process.env.SUPABASE_URL;
 const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
@@ -38,6 +38,7 @@ async function main() {
   await upsert("sources", read("sources.json", sourceSchema));
   await upsert("routes", read("routes.json", routeSchema));
   await upsert("tours", read("tours.json", tourSchema));
+  await upsert("cities", read("cities.json", citySchema));
 }
 
 main().catch((e) => {

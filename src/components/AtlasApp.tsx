@@ -4,6 +4,7 @@ import type { Map as MlMap } from "maplibre-gl";
 import { useTranslations } from "next-intl";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { MapPane } from "@/components/map/MapPane";
+import { CityPanel } from "@/components/panels/CityPanel";
 import { CollectionPanel } from "@/components/panels/CollectionPanel";
 import { EventPanel } from "@/components/panels/EventPanel";
 import { FiltersPanel } from "@/components/panels/FiltersPanel";
@@ -16,12 +17,12 @@ import { ToursPanel } from "@/components/panels/ToursPanel";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { TimeBar, usePlayback } from "@/components/timeline/TimeBar";
 import { eventsAtYear, filterEvents } from "@/lib/filters";
-import type { EventSummary, HistoricalRoute, Person, Tour } from "@/lib/types";
+import type { City, EventSummary, HistoricalRoute, Person, Tour } from "@/lib/types";
 import { serializeUrlState } from "@/lib/url-state";
 import { formatYear, type BoundaryEntry } from "@/lib/year";
 import { useAtlas } from "@/store/atlas";
 
-export type AtlasData = { events: EventSummary[]; people: Person[]; routes: HistoricalRoute[]; tours: Tour[] };
+export type AtlasData = { events: EventSummary[]; people: Person[]; routes: HistoricalRoute[]; tours: Tour[]; cities: City[] };
 
 /** Keeps the address bar shareable. replaceState avoids a Next navigation on every change. */
 function useUrlSync() {
@@ -115,7 +116,7 @@ export function AtlasApp({ data }: { data: AtlasData }) {
       <header className="z-40 flex flex-wrap items-center gap-2 border-b border-line bg-surface px-3 py-2 md:px-4">
         <h1 className="font-serif text-xl font-semibold">{t("app.title")}</h1>
         <div className="order-last w-full md:order-none md:ml-4 md:w-auto md:flex-1">
-          <SearchBox events={data.events} people={data.people} routes={data.routes} />
+          <SearchBox events={data.events} people={data.people} routes={data.routes} cities={data.cities} />
         </div>
         <div className="ml-auto flex min-w-0 items-center gap-2">
           <NavButtons />
@@ -124,12 +125,12 @@ export function AtlasApp({ data }: { data: AtlasData }) {
       </header>
       <main className="relative flex min-h-0 flex-1 flex-col md:flex-row">
         <div className="relative min-h-0 min-w-0 flex-1">
-          <MapPane events={events} routes={data.routes} yearKey="year" onBoundaryChange={onBoundaryChange} onMap={setLeftMap} />
+          <MapPane events={events} routes={data.routes} cities={data.cities} yearKey="year" onBoundaryChange={onBoundaryChange} onMap={setLeftMap} />
           {compare && <YearBadge yearKey="year" label={t("compare.left")} />}
         </div>
         {compare && (
           <div className="relative min-h-0 min-w-0 flex-1 border-t border-line md:border-l md:border-t-0">
-            <MapPane events={events} routes={data.routes} yearKey="year2" primary={false} onMap={setRightMap} />
+            <MapPane events={events} routes={data.routes} cities={data.cities} yearKey="year2" primary={false} onMap={setRightMap} />
             <YearBadge yearKey="year2" label={t("compare.right")} />
           </div>
         )}
@@ -155,6 +156,7 @@ export function AtlasApp({ data }: { data: AtlasData }) {
         )}
         <TourPlayer tours={data.tours} events={data.events} />
         <EventPanel />
+        <CityPanel cities={data.cities} events={data.events} />
       </main>
       <section id="timeline" aria-label={t("timeline.label")} className="z-40 border-t border-line bg-surface px-3 py-2 md:px-4">
         <TimeBar note={note} sliderLabel={compare ? t("timeline.sliderLeft") : undefined} />

@@ -28,6 +28,8 @@ type AtlasState = UrlState & {
   setView: (view: { lng: number; lat: number; zoom: number }) => void;
   flyTo: (target: { lng: number; lat: number; zoom?: number }) => void;
   selectEvent: (id: string | null) => void;
+  selectPerson: (id: string | null) => void;
+  selectCity: (id: string | null) => void;
   /** Selects an event from a list: moves the slider to it if needed and flies there. */
   openEvent: (event: EventSummary) => void;
   setFilters: (filters: Partial<Filters>) => void;
@@ -60,12 +62,17 @@ export const useAtlas = create<AtlasState>((set, get) => ({
   setWindowYears: (windowYears) => set({ windowYears }),
   setView: ({ lng, lat, zoom }) => set({ lng, lat, zoom }),
   flyTo: (target) => set({ flyTarget: { ...target, nonce: Date.now() + Math.random() } }),
-  selectEvent: (eventId) => set({ eventId }),
+  // Only one detail panel is open at a time.
+  selectEvent: (eventId) => set({ eventId, personId: null, cityId: null }),
+  selectPerson: (personId) => set({ personId, eventId: null, cityId: null }),
+  selectCity: (cityId) => set({ cityId, eventId: null, personId: null }),
   openEvent: (event) => {
     const { year, windowYears, flyTo } = get();
     const [lng, lat] = event.geometry.type === "Point" ? event.geometry.coordinates : event.geometry.coordinates[0];
     set({
       eventId: event.id,
+      personId: null,
+      cityId: null,
       playing: false,
       // Keep the current year when the event is already on the map.
       year: isVisibleAt(event.start_year, event.end_year, year, windowYears) ? year : clampYear(event.start_year),
@@ -78,7 +85,7 @@ export const useAtlas = create<AtlasState>((set, get) => ({
   setCompare: (compare) => set({ compare, playing: false }),
   setRoute: (routeId) => set({ routeId, playing: false }),
   replayRoute: () => set((s) => ({ routeNonce: s.routeNonce + 1, playing: false })),
-  startTour: (tourId) => set({ tourId, tourStep: 0, playing: false, routeId: null, compare: false, sidePanel: null, eventId: null }),
+  startTour: (tourId) => set({ tourId, tourStep: 0, playing: false, routeId: null, compare: false, sidePanel: null, eventId: null, personId: null, cityId: null }),
   setTourStep: (tourStep) => set({ tourStep }),
   endTour: () => set({ tourId: null, tourStep: 0 }),
 }));

@@ -125,6 +125,39 @@ export function installLayers(map: MlMap, dark: boolean) {
     },
   });
 
+  map.addSource("cities", { type: "geojson", data: EMPTY });
+  map.addLayer({
+    id: "city-dot",
+    type: "circle",
+    source: "cities",
+    minzoom: 3,
+    paint: {
+      "circle-radius": 4,
+      "circle-color": dark ? "#efe6d3" : "#2c2416",
+      "circle-stroke-width": 1.5,
+      "circle-stroke-color": dark ? "#17140f" : "#fffaf0",
+    },
+  });
+  map.addLayer({
+    id: "city-label",
+    type: "symbol",
+    source: "cities",
+    minzoom: 4.2,
+    layout: {
+      "text-field": ["get", "name"],
+      "text-font": ["Noto Sans Bold"],
+      "text-size": 12,
+      "text-anchor": "top",
+      "text-offset": [0, 0.5],
+      "text-optional": true,
+    },
+    paint: {
+      "text-color": dark ? "#f3ead8" : "#2c2416",
+      "text-halo-color": dark ? "#17140f" : "#fbf6ea",
+      "text-halo-width": 1.5,
+    },
+  });
+
   map.addSource("route", { type: "geojson", data: EMPTY });
   map.addSource("route-points", { type: "geojson", data: EMPTY });
   map.addLayer({

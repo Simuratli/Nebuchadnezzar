@@ -4,17 +4,17 @@ import { useTranslations } from "next-intl";
 import { useId, useMemo, useRef, useState } from "react";
 import { CATEGORY_META } from "@/lib/categories";
 import { createSearch, type SearchResult } from "@/lib/search";
-import type { EventSummary, HistoricalRoute, Person } from "@/lib/types";
+import type { City, EventSummary, HistoricalRoute, Person } from "@/lib/types";
 import { formatYear, formatYearRange } from "@/lib/year";
 import { useAtlas } from "@/store/atlas";
 
-type Props = { events: EventSummary[]; people: Person[]; routes: HistoricalRoute[] };
+type Props = { events: EventSummary[]; people: Person[]; routes: HistoricalRoute[]; cities: City[] };
 
-export function SearchBox({ events, people, routes }: Props) {
+export function SearchBox({ events, people, routes, cities }: Props) {
   const t = useTranslations();
   const era = { bc: t("era.bc"), ad: t("era.ad") };
   const listId = useId();
-  const search = useMemo(() => createSearch(events, people), [events, people]);
+  const search = useMemo(() => createSearch(events, people, cities), [events, people, cities]);
   const [query, setQuery] = useState("");
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState(0);
@@ -26,6 +26,9 @@ export function SearchBox({ events, people, routes }: Props) {
     const atlas = useAtlas.getState();
     if (result.kind === "event") {
       atlas.openEvent(result.item);
+    } else if (result.kind === "city") {
+      atlas.selectCity(result.item.id);
+      atlas.flyTo({ lng: result.item.lng, lat: result.item.lat });
     } else {
       // A person with a route goes straight to it; others jump to their lifetime.
       const route = routes.find((r) => r.person_id === result.item.id);
@@ -105,6 +108,11 @@ export function SearchBox({ events, people, routes }: Props) {
                   <span aria-hidden="true" className="h-2.5 w-2.5 shrink-0 rounded-full" style={{ background: CATEGORY_META[r.item.category].color }} />
                   <span className="min-w-0 flex-1 truncate">{r.item.title}</span>
                   <span className="shrink-0 text-xs text-muted">{formatYearRange(r.item.start_year, r.item.end_year, era)}</span>
+                </>
+              ) : r.kind === "city" ? (
+                <>
+                  <span className="shrink-0 rounded bg-surface-2 px-1 text-xs">{t("search.city")}</span>
+                  <span className="min-w-0 flex-1 truncate">{r.item.name}</span>
                 </>
               ) : (
                 <>

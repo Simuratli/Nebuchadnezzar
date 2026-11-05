@@ -1,5 +1,5 @@
 import Fuse from "fuse.js";
-import type { EventSummary, Person } from "./types";
+import type { City, EventSummary, Person } from "./types";
 
 /**
  * Folds text for matching: Turkish-aware lowercase ("İ" → "i", "I" → "ı"), then
@@ -13,10 +13,16 @@ export function foldText(text: string): string {
     .replace(/ı/g, "i");
 }
 
-export type SearchResult = { kind: "event"; item: EventSummary } | { kind: "person"; item: Person };
+export type SearchResult = { kind: "event"; item: EventSummary } | { kind: "person"; item: Person } | { kind: "city"; item: City };
 
-export function createSearch(events: EventSummary[], people: Person[]) {
+export function createSearch(events: EventSummary[], people: Person[], cities: City[] = []) {
   const docs: (SearchResult & { folded: string })[] = [
+    // Old names are searchable too, so "Kirovabad" and "Konstantinopolis" find their cities.
+    ...cities.map((item) => ({
+      kind: "city" as const,
+      item,
+      folded: foldText([item.name, ...item.periods.map((p) => p.name), ...item.other_names].join(" ")),
+    })),
     ...people.map((item) => ({ kind: "person" as const, item, folded: foldText(item.name) })),
     ...events.map((item) => ({ kind: "event" as const, item, folded: foldText(item.title) })),
   ];

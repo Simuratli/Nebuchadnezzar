@@ -3,7 +3,7 @@ import { createLocalCollectionStore } from "@/lib/collection";
 import { csvCell, eventsToCsv, eventsToGeoJson } from "@/lib/export";
 import { EMPTY_FILTERS, eventsAtYear, filterEvents } from "@/lib/filters";
 import { createSearch, foldText } from "@/lib/search";
-import type { EventSummary, Person } from "@/lib/types";
+import type { City, EventSummary, Person } from "@/lib/types";
 
 const ev = (over: Partial<EventSummary>): EventSummary => ({
   id: "x",
@@ -52,8 +52,9 @@ describe("filterEvents", () => {
 });
 
 describe("search", () => {
-  const people: Person[] = [{ id: "p", name: "Evliya Çelebi", birth_year: 1611, death_year: 1682, wikidata_id: null }];
-  const search = createSearch(events, people);
+  const people = [{ id: "p", name: "Evliya Çelebi", birth_year: 1611, death_year: 1682, wikidata_id: null }] as Person[];
+  const cities = [{ id: "gence", name: "Gence", periods: [{ name: "Kirovabad", from: 1935, to: 1989, confirmed: true }], other_names: [] }] as unknown as City[];
+  const search = createSearch(events, people, cities);
 
   it("folds Turkish letters both ways", () => {
     expect(foldText("İSTANBUL")).toBe("istanbul");
@@ -69,6 +70,9 @@ describe("search", () => {
   });
   it("finds people", () => {
     expect(search("evliya celebi")[0]).toMatchObject({ kind: "person", item: { id: "p" } });
+  });
+  it("finds cities by their old names", () => {
+    expect(search("kirovabad")[0]).toMatchObject({ kind: "city", item: { id: "gence" } });
   });
   it("ignores too-short queries and unrelated text", () => {
     expect(search("a")).toEqual([]);

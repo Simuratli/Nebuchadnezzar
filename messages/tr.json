@@ -6,8 +6,15 @@
     "skipToTimeline": "Zaman çizelgesine atla",
     "close": "Kapat"
   },
-  "era": { "bc": "MÖ", "ad": "MS" },
-  "theme": { "toggle": "Temayı değiştir", "light": "Açık tema", "dark": "Koyu tema" },
+  "era": {
+    "bc": "MÖ",
+    "ad": "MS"
+  },
+  "theme": {
+    "toggle": "Temayı değiştir",
+    "light": "Açık tema",
+    "dark": "Koyu tema"
+  },
   "timeline": {
     "label": "Zaman çizelgesi",
     "slider": "Yıl seçimi",
@@ -67,7 +74,12 @@
     "copyFailed": "Kopyalanamadı",
     "missing": "Eksik alan: {fields}. Atıfı kullanmadan önce tamamlayın.",
     "reviewFlag": "Bu kaynak gözden geçirilmeyi bekliyor.",
-    "fields": { "author": "yazar", "title": "başlık", "year": "yıl", "publisher": "yayınevi" }
+    "fields": {
+      "author": "yazar",
+      "title": "başlık",
+      "year": "yıl",
+      "publisher": "yayınevi"
+    }
   },
   "nav": {
     "filters": "Filtre",
@@ -100,7 +112,8 @@
     "person": "Kişi",
     "event": "Olay",
     "lived": "{start} – {end}",
-    "unknown": "?"
+    "unknown": "?",
+    "city": "Şehir"
   },
   "collection": {
     "title": "Koleksiyonum",
@@ -138,5 +151,22 @@
     "prev": "Önceki",
     "finish": "Turu bitir",
     "reviewNote": "Anlatım genel bilgiye dayanır, kaynak eklenmedi ve uzman kontrolü beklemektedir."
+  },
+  "city": {
+    "panel": "Şehir ayrıntıları",
+    "kind": "Şehir",
+    "nameInYear": "{year} yılındaki adı: {name}",
+    "names": "Adları",
+    "noNames": "Bu şehir için kayıtlı başka ad yok.",
+    "otherNames": "Bilinen diğer adları",
+    "unknownStart": "başlangıç belirsiz",
+    "present": "günümüz",
+    "unconfirmed": "doğrulanmadı",
+    "rulers": "Yönetim (yaklaşık)",
+    "rulersWarning": "Bu liste tarihî sınır haritalarından otomatik çıkarılmıştır ve kaynak veride bilinen hatalar vardır. Tek tek olayları ve kısa süreli el değiştirmeleri göstermez. Doğrulamadan alıntılamayın.",
+    "unknownRuler": "Bilinmiyor",
+    "manualRuler": "elle düzeltildi",
+    "events": "Yakın çevresindeki olaylar (≈{km} km)",
+    "noEvents": "Bu çevrede kayıtlı olay yok."
   }
 }

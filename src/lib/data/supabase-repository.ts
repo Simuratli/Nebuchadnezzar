@@ -1,6 +1,6 @@
 import { createClient } from "@supabase/supabase-js";
 import { z } from "zod";
-import { eventSchema, personSchema, routeSchema, sourceSchema, tourSchema } from "@/lib/types";
+import { citySchema, eventSchema, personSchema, routeSchema, sourceSchema, tourSchema } from "@/lib/types";
 import type { AtlasRepository } from "./repository";
 
 const SUMMARY_COLUMNS =
@@ -48,5 +48,6 @@ export function createSupabaseRepository(): AtlasRepository {
     listPeople: () => readAll("people", "*", personSchema, "name"),
     listRoutes: () => readAll("routes", "*", routeSchema, "start_year"),
     listTours: () => readAll("tours", "*", tourSchema, "title"),
+    listCities: () => readAll("cities", "*", citySchema, "name"),
   };
 }

@@ -1,0 +1,14 @@
+{
+  "iskender": ["Granikos Muharebesi", "İssos Muharebesi", "Sur Kuşatması", "Gaugamela Muharebesi", "Hidaspes Muharebesi"],
+  "alparslan": ["Malazgirt Meydan Muharebesi"],
+  "tamar": ["Basiani Muharebesi"],
+  "cengiz-han": ["Yehuling Muharebesi", "Siege of Zhongdu", "Buhara Kuşatması", "İndus Muharebesi"],
+  "timur": ["Siege of Herat", "Tiflis Kuşatması (1386)", "İsfahan Kuşatması (1387)", "Terek Muharebesi", "Ankara Muharebesi"],
+  "ulug-bey": ["Uluğ Bey Rasathanesi"],
+  "fatih-sultan-mehmed": ["İstanbul'un Fethi", "Belgrad Kuşatması (1456)", "Trabzon'un Fethi", "Otlukbeli Muharebesi"],
+  "sah-ismail": ["Çaldıran Muharebesi"],
+  "kanuni-sultan-suleyman": ["Belgrad'ın Fethi", "Rodos Kuşatması (1522)", "Mohaç Muharebesi (1526)", "Viyana kuşatması", "Amasya Antlaşması", "Zigetvar Kuşatması"],
+  "nadir-sah": ["Damğan Muharebesi (1729)", "Gence Kuşatması (1734)", "Qəndaharın mühasirəsi (1737-1738)"],
+  "seyh-samil": ["Kafkas Savaşı"],
+  "ataturk": ["Çanakkale Savaşı", "Sakarya Meydan Muharebesi", "Başkomutanlık Meydan Muharebesi"]
+}

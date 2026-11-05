@@ -3,7 +3,7 @@ import { DEFAULT_URL_STATE, parseUrlState, serializeUrlState } from "@/lib/url-s
 
 describe("url state", () => {
   it("round-trips a full state", () => {
-    const state = { ...DEFAULT_URL_STATE, year: -331, lat: 36.5, lng: 43.25, zoom: 5.5, compare: true, year2: 1071, eventId: "Q123", routeId: "r-1", tourId: "t_1" };
+    const state = { ...DEFAULT_URL_STATE, year: -331, lat: 36.5, lng: 43.25, zoom: 5.5, compare: true, year2: 1071, eventId: "Q123", routeId: "r-1", tourId: "t_1", personId: "ibn-sina", cityId: "gence" };
     expect(parseUrlState(`?${serializeUrlState(state)}`)).toEqual(state);
   });
 

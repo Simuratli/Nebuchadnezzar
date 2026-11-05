@@ -10,6 +10,8 @@ export type UrlState = {
   eventId: string | null;
   routeId: string | null;
   tourId: string | null;
+  personId: string | null;
+  cityId: string | null;
 };
 
 export const DEFAULT_URL_STATE: UrlState = {
@@ -22,6 +24,8 @@ export const DEFAULT_URL_STATE: UrlState = {
   eventId: null,
   routeId: null,
   tourId: null,
+  personId: null,
+  cityId: null,
 };
 
 const numberParam = (value: string | null, min: number, max: number) => {
@@ -48,6 +52,8 @@ export function parseUrlState(search: string): UrlState {
     eventId: idParam(p.get("e")),
     routeId: idParam(p.get("route")),
     tourId: idParam(p.get("tour")),
+    personId: idParam(p.get("person")),
+    cityId: idParam(p.get("city")),
   };
 }
 
@@ -64,5 +70,7 @@ export function serializeUrlState(s: UrlState): string {
   if (s.eventId) p.set("e", s.eventId);
   if (s.routeId) p.set("route", s.routeId);
   if (s.tourId) p.set("tour", s.tourId);
+  if (s.personId) p.set("person", s.personId);
+  if (s.cityId) p.set("city", s.cityId);
   return p.toString();
 }

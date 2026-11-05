@@ -11,9 +11,10 @@ import { useTheme } from "next-themes";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import { getManifest, loadBoundary } from "@/lib/boundaries";
+import { nameAtYear } from "@/lib/cities";
 import { eventsAtYear } from "@/lib/filters";
 import { lineBounds, sliceLine } from "@/lib/routes";
-import type { EventSummary, HistoricalRoute } from "@/lib/types";
+import type { City, EventSummary, HistoricalRoute } from "@/lib/types";
 import { boundaryForYear, nextBoundary, type BoundaryEntry } from "@/lib/year";
 import { useAtlas } from "@/store/atlas";
 import { CLICKABLE_EVENT_LAYERS, installLayers, setSelectedEvent, STYLE_URLS, toEventFeatures } from "./layers";
@@ -26,6 +27,7 @@ const EMPTY_ROUTE = { line: null as [number, number][] | null, points: [] as Geo
 type Props = {
   events: EventSummary[];
   routes?: HistoricalRoute[];
+  cities?: City[];
   yearKey: "year" | "year2";
   /** Only the primary pane writes the view to the store and URL. */
   primary?: boolean;
@@ -42,7 +44,7 @@ function applyRoute(map: MlMap | null, data: typeof EMPTY_ROUTE) {
   (map?.getSource("route-points") as GeoJSONSource | undefined)?.setData({ type: "FeatureCollection", features: data.points });
 }
 
-export function MapPane({ events, routes, yearKey, primary = true, onBoundaryChange, onMap }: Props) {
+export function MapPane({ events, routes, cities, yearKey, primary = true, onBoundaryChange, onMap }: Props) {
   const t = useTranslations("map");
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<MlMap | null>(null);
@@ -64,6 +66,25 @@ export function MapPane({ events, routes, yearKey, primary = true, onBoundaryCha
   // layer filter. Skipping unchanged sets keeps playback smooth between events.
   const visibleKey = useMemo(() => visible.map((e) => e.id).join(","), [visible]);
   const featuresRef = useRef(toEventFeatures(visible));
+
+  // Cities are labelled with their name in the selected year; rebuilt only when a name changes.
+  const cityFeatures = useMemo<GeoJSON.FeatureCollection>(
+    () => ({
+      type: "FeatureCollection",
+      features: (cities ?? []).map((c) => ({
+        type: "Feature",
+        properties: { id: c.id, name: nameAtYear(c, year) },
+        geometry: { type: "Point", coordinates: [c.lng, c.lat] },
+      })),
+    }),
+    [cities, year],
+  );
+  const cityKey = cityFeatures.features.map((f) => f.properties?.name).join("|");
+  const cityFeaturesRef = useRef(cityFeatures);
+  cityFeaturesRef.current = cityFeatures;
+  useEffect(() => {
+    (mapRef.current?.getSource("cities") as GeoJSONSource | undefined)?.setData(cityFeaturesRef.current);
+  }, [cityKey]);
 
   const onMapRef = useRef(onMap);
   onMapRef.current = onMap;
@@ -137,6 +158,7 @@ export function MapPane({ events, routes, yearKey, primary = true, onBoundaryCha
       (map.getSource("event-lines") as GeoJSONSource).setData(featuresRef.current.lines);
       setSelectedEvent(map, useAtlas.getState().eventId);
       applyRoute(map, routeDataRef.current);
+      (map.getSource("cities") as GeoJSONSource).setData(cityFeaturesRef.current);
       setStyleTick((n) => n + 1);
     });
     map.on("moveend", () => {
@@ -159,6 +181,8 @@ export function MapPane({ events, routes, yearKey, primary = true, onBoundaryCha
         const p = map.project(first.coordinates as [number, number]);
         el?.setAttribute("data-first-cluster", `${Math.round(p.x)},${Math.round(p.y)}`);
       }
+      const centre = map.queryRenderedFeatures(map.project(map.getCenter()), { layers: ["city-dot"] })[0];
+      el?.setAttribute("data-city-at-center", String(centre?.properties?.id ?? ""));
       el?.setAttribute("data-rendered-route", String(map.queryRenderedFeatures({ layers: ["route-line"] }).length));
     });
     if (primary) {
@@ -185,6 +209,14 @@ export function MapPane({ events, routes, yearKey, primary = true, onBoundaryCha
       map.on("mouseleave", layer, () => (map.getCanvas().style.cursor = ""));
     }
     map.on("click", "event-cluster", onClusterClick);
+    map.on("click", "city-dot", (e) => {
+      // An event marker on top of the city takes the click.
+      if (map.queryRenderedFeatures(e.point, { layers: ["event-icon", "event-cluster"] }).length > 0) return;
+      const id = e.features?.[0]?.properties?.id as string | undefined;
+      if (id) useAtlas.getState().selectCity(id);
+    });
+    map.on("mouseenter", "city-dot", () => (map.getCanvas().style.cursor = "pointer"));
+    map.on("mouseleave", "city-dot", () => (map.getCanvas().style.cursor = ""));
     map.on("mouseenter", "event-cluster", () => (map.getCanvas().style.cursor = "pointer"));
     map.on("mouseleave", "event-cluster", () => (map.getCanvas().style.cursor = ""));
 

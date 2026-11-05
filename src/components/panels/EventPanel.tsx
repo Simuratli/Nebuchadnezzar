@@ -1,13 +1,14 @@
 "use client";
 
 import { useLocale, useTranslations } from "next-intl";
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import { CATEGORY_META } from "@/lib/categories";
 import type { EventDetail } from "@/lib/types";
 import { formatYearRange } from "@/lib/year";
 import { useAtlas } from "@/store/atlas";
 import { CollectionControls } from "./CollectionControls";
+import { DetailShell } from "./DetailShell";
 import { SourceList } from "./SourceList";
 
 type State = { status: "loading" } | { status: "error" } | { status: "ready"; event: EventDetail };
@@ -24,7 +25,6 @@ export function EventPanel() {
   const selectEvent = useAtlas((s) => s.selectEvent);
   const [state, setState] = useState<State>({ status: "loading" });
   const [attempt, setAttempt] = useState(0);
-  const panelRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
     if (!eventId) return;
@@ -42,48 +42,15 @@ export function EventPanel() {
     return () => controller.abort();
   }, [eventId, attempt]);
 
-  // Keyboard users land in the panel when it opens.
-  useEffect(() => {
-    if (eventId) panelRef.current?.focus();
-  }, [eventId]);
-
   const close = useCallback(() => selectEvent(null), [selectEvent]);
-  useEffect(() => {
-    if (!eventId) return;
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") close();
-    };
-    window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
-  }, [eventId, close]);
 
   if (!eventId) return null;
   const era = { bc: t("era.bc"), ad: t("era.ad") };
   const langName = (code: string) => new Intl.DisplayNames([locale], { type: "language" }).of(code) ?? code;
 
   return (
-    <aside
-      ref={panelRef}
-      tabIndex={-1}
-      aria-label={t("event.panel")}
-      data-testid="event-panel"
-      className="absolute inset-x-0 bottom-0 z-30 flex max-h-[70%] flex-col rounded-t-2xl border-t border-line bg-surface shadow-2xl outline-none md:inset-y-0 md:left-auto md:right-0 md:max-h-none md:w-[420px] md:rounded-none md:border-l md:border-t-0"
-    >
-      <div aria-hidden="true" className="mx-auto mt-2 h-1 w-10 shrink-0 rounded-full bg-line md:hidden" />
-      <div className="flex justify-end px-2 pt-1">
-        <button
-          type="button"
-          onClick={close}
-          aria-label={t("app.close")}
-          data-testid="event-close"
-          className="flex h-9 w-9 items-center justify-center rounded-full text-muted hover:bg-surface-2"
-        >
-          <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true">
-            <path d="M6 6l12 12M18 6L6 18" />
-          </svg>
-        </button>
-      </div>
-      <div className="min-h-0 flex-1 overflow-y-auto px-5 pb-6" aria-live="polite">
+    <DetailShell kind="event" label={t("event.panel")} recordId={eventId} onClose={close}>
+      <div aria-live="polite">
         {state.status === "loading" && <p className="py-8 text-center text-muted">{t("event.loading")}</p>}
         {state.status === "error" && (
           <div className="py-8 text-center">
@@ -141,6 +108,6 @@ export function EventPanel() {
           </article>
         )}
       </div>
-    </aside>
+    </DetailShell>
   );
 }

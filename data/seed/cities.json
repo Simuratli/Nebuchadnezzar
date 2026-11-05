@@ -1,0 +1,7304 @@
+[
+ {
+  "id": "gence",
+  "name": "Gence",
+  "wikidata_id": "Q131290",
+  "lng": 46.360555555,
+  "lat": 40.682777777,
+  "summary": "Gence (Azerice: Gəncə, Azerice telaffuz: [ɟænˈdʒæ]), Azerbaycan'ın en kalabalık üçüncü şehridir. Tarihinin büyük bölümünde önemli bir tarihî ve kültürel merkez olarak öne çıkan şehir, 1804 yılına kadar Gence Hanlığı'nın başkentiydi.",
+  "content_lang": "tr",
+  "periods": [
+   {
+    "name": "Gence",
+    "from": null,
+    "to": 1804,
+    "confirmed": false
+   },
+   {
+    "name": "Yelizavetpol",
+    "from": 1804,
+    "to": 1918,
+    "confirmed": true
+   },
+   {
+    "name": "Gence",
+    "from": 1918,
+    "to": 1935,
+    "confirmed": true
+   },
+   {
+    "name": "Kirovabad",
+    "from": 1935,
+    "to": 1989,
+    "confirmed": true
+   },
+   {
+    "name": "Gence",
+    "from": 1989,
+    "to": null,
+    "confirmed": true
+   }
+  ],
+  "other_names": [],
+  "rulers": [
+   {
+    "from": -500,
+    "to": -323,
+    "name": "Achaemenid Empire",
+    "manual": false
+   },
+   {
+    "from": -323,
+    "to": -200,
+    "name": "Armenia",
+    "manual": false
+   },
+   {
+    "from": -200,
+    "to": -1,
+    "name": "minor states",
+    "manual": false
+   },
+   {
+    "from": -1,
+    "to": 400,
+    "name": "Armenia",
+    "manual": false
+   },
+   {
+    "from": 400,
+    "to": 500,
+    "name": "Persi",
+    "manual": false
+   },
+   {
+    "from": 500,
+    "to": 700,
+    "name": "Sasanian Empire",
+    "manual": false
+   },
+   {
+    "from": 700,
+    "to": 800,
+    "name": "Caucasian Albania",
+    "manual": false
+   },
+   {
+    "from": 800,
+    "to": 1100,
+    "name": "Khazars",
+    "manual": false
+   },
+   {
+    "from": 1100,
+    "to": 1200,
+    "name": "Tashir",
+    "manual": false
+   },
+   {
+    "from": 1200,
+    "to": 1279,
+    "name": "Cuman Khanates",
+    "manual": false
+   },
+   {
+    "from": 1279,
+    "to": 1300,
+    "name": "Mongol Empire",
+    "manual": false
+   },
+   {
+    "from": 1300,
+    "to": 1400,
+    "name": "Ilkhanate",
+    "manual": false
+   },
+   {
+    "from": 1400,
+    "to": 1492,
+    "name": "Timurid Empire",
+    "manual": false
+   },
+   {
+    "from": 1492,
+    "to": 1501,
+    "name": "Emirate of the White Sheep Turks",
+    "manual": false
+   },
+   {
+    "from": 1501,
+    "to": 1723,
+    "name": "Safevî İmparatorluğu",
+    "manual": true
+   },
+   {
+    "from": 1723,
+    "to": 1747,
+    "name": "Safavid Empire",
+    "manual": false
+   },
+   {
+    "from": 1747,
+    "to": 1804,
+    "name": "Gence Hanlığı",
+    "manual": true
+   },
+   {
+    "from": 1804,
+    "to": 1918,
+    "name": "Rus İmparatorluğu",
+    "manual": true
+   },
+   {
+    "from": 1918,
+    "to": 1920,
+    "name": "Azerbaycan Demokratik Cumhuriyeti",
+    "manual": true
+   },
+   {
+    "from": 1920,
+    "to": 1950,
+    "name": "SSCB",
+    "manual": true
+   }
+  ],
+  "sources": [
+   {
+    "id": "gence-wikidata",
+    "event_id": "gence",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Gence",
+    "year": null,
+    "publisher": "Wikidata",
+    "url": "https://www.wikidata.org/wiki/Q131290",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   },
+   {
+    "id": "gence-trwiki",
+    "event_id": "gence",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Gence",
+    "year": null,
+    "publisher": "Vikipedi",
+    "url": "https://tr.wikipedia.org/wiki/Gence",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   }
+  ],
+  "needs_review": true
+ },
+ {
+  "id": "istanbul",
+  "name": "İstanbul",
+  "wikidata_id": "Q406",
+  "lng": 28.960277777,
+  "lat": 41.01,
+  "summary": "İstanbul, Türkiye'nin ekonomik, kültürel ve tarihî merkezini oluşturan en kalabalık şehridir. 15,7 milyonu aşan nüfusuyla Türkiye nüfusunun yaklaşık %18,3'ine ev sahipliği yapmaktadır.",
+  "content_lang": "tr",
+  "periods": [
+   {
+    "name": "Byzantion",
+    "from": null,
+    "to": 330,
+    "confirmed": false
+   },
+   {
+    "name": "Konstantinopolis",
+    "from": 330,
+    "to": 1930,
+    "confirmed": false
+   },
+   {
+    "name": "İstanbul",
+    "from": 1930,
+    "to": null,
+    "confirmed": true
+   }
+  ],
+  "other_names": [
+   "Kostantiniyye",
+   "Dersaadet"
+  ],
+  "rulers": [
+   {
+    "from": -500,
+    "to": -323,
+    "name": "Achaemenid Empire",
+    "manual": false
+   },
+   {
+    "from": -323,
+    "to": -300,
+    "name": "Empire of Alexander",
+    "manual": false
+   },
+   {
+    "from": -300,
+    "to": -200,
+    "name": "Kingdom of Lysimachus",
+    "manual": false
+   },
+   {
+    "from": -200,
+    "to": -100,
+    "name": "?",
+    "manual": false
+   },
+   {
+    "from": -100,
+    "to": -1,
+    "name": "Dacians",
+    "manual": false
+   },
+   {
+    "from": -1,
+    "to": 300,
+    "name": "Roman Empire",
+    "manual": false
+   },
+   {
+    "from": 300,
+    "to": 400,
+    "name": "Rome (Galerius)",
+    "manual": false
+   },
+   {
+    "from": 400,
+    "to": 800,
+    "name": "Eastern Roman Empire",
+    "manual": false
+   },
+   {
+    "from": 800,
+    "to": 1400,
+    "name": "Byzantine Empire",
+    "manual": false
+   },
+   {
+    "from": 1400,
+    "to": 1453,
+    "name": "Bizans İmparatorluğu",
+    "manual": true
+   },
+   {
+    "from": 1453,
+    "to": 1923,
+    "name": "Osmanlı İmparatorluğu",
+    "manual": true
+   },
+   {
+    "from": 1923,
+    "to": 1950,
+    "name": "Türkiye Cumhuriyeti",
+    "manual": true
+   }
+  ],
+  "sources": [
+   {
+    "id": "istanbul-wikidata",
+    "event_id": "istanbul",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "İstanbul",
+    "year": null,
+    "publisher": "Wikidata",
+    "url": "https://www.wikidata.org/wiki/Q406",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   },
+   {
+    "id": "istanbul-trwiki",
+    "event_id": "istanbul",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "İstanbul",
+    "year": null,
+    "publisher": "Vikipedi",
+    "url": "https://tr.wikipedia.org/wiki/%C4%B0stanbul",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   }
+  ],
+  "needs_review": true
+ },
+ {
+  "id": "tiflis",
+  "name": "Tiflis",
+  "wikidata_id": "Q994",
+  "lng": 44.7925,
+  "lat": 41.7225,
+  "summary": "Tiflis (Gürcüce: თბილისი / Tbilisi), Gürcistan'ın başkenti ve en kalabalık ilidir. Tiflis Gürcistan'ın doğusunda, Tiflis Havzasında, Kura Nehri'nin iki yakasında kurulmuştur. Kuzeyinde Saguramo Dağları'nın güney yamacı, doğusunda İgris Zageni Dağı'nın kuzeybatı bölümü ve güneyinde Trialeti Dağları uzanmaktadır.",
+  "content_lang": "tr",
+  "periods": [
+   {
+    "name": "Tiflis",
+    "from": null,
+    "to": 1936,
+    "confirmed": true
+   },
+   {
+    "name": "Tbilisi",
+    "from": 1936,
+    "to": null,
+    "confirmed": true
+   }
+  ],
+  "other_names": [],
+  "rulers": [
+   {
+    "from": -500,
+    "to": -323,
+    "name": "Achaemenid Empire",
+    "manual": false
+   },
+   {
+    "from": -323,
+    "to": -200,
+    "name": "Colchis",
+    "manual": false
+   },
+   {
+    "from": -200,
+    "to": -1,
+    "name": "minor states",
+    "manual": false
+   },
+   {
+    "from": -1,
+    "to": 400,
+    "name": "Armenia",
+    "manual": false
+   },
+   {
+    "from": 400,
+    "to": 500,
+    "name": "Persi",
+    "manual": false
+   },
+   {
+    "from": 500,
+    "to": 700,
+    "name": "Sasanian Empire",
+    "manual": false
+   },
+   {
+    "from": 700,
+    "to": 800,
+    "name": "Caucasian Albania",
+    "manual": false
+   },
+   {
+    "from": 800,
+    "to": 1000,
+    "name": "Khazars",
+    "manual": false
+   },
+   {
+    "from": 1000,
+    "to": 1200,
+    "name": "Kingdom of Georgia",
+    "manual": false
+   },
+   {
+    "from": 1200,
+    "to": 1279,
+    "name": "Georgia",
+    "manual": false
+   },
+   {
+    "from": 1279,
+    "to": 1300,
+    "name": "Mongol Empire",
+    "manual": false
+   },
+   {
+    "from": 1300,
+    "to": 1400,
+    "name": "Ilkhanate",
+    "manual": false
+   },
+   {
+    "from": 1400,
+    "to": 1492,
+    "name": "Timurid Empire",
+    "manual": false
+   },
+   {
+    "from": 1492,
+    "to": 1501,
+    "name": "Emirate of the White Sheep Turks",
+    "manual": false
+   },
+   {
+    "from": 1501,
+    "to": 1723,
+    "name": "Kartli Krallığı (Safevî nüfuzunda)",
+    "manual": true
+   },
+   {
+    "from": 1723,
+    "to": 1762,
+    "name": "Safavid Empire",
+    "manual": false
+   },
+   {
+    "from": 1762,
+    "to": 1801,
+    "name": "Kartli-Kaheti Krallığı",
+    "manual": true
+   },
+   {
+    "from": 1801,
+    "to": 1918,
+    "name": "Rus İmparatorluğu",
+    "manual": true
+   },
+   {
+    "from": 1918,
+    "to": 1921,
+    "name": "Gürcistan Demokratik Cumhuriyeti",
+    "manual": true
+   },
+   {
+    "from": 1921,
+    "to": 1950,
+    "name": "SSCB",
+    "manual": true
+   }
+  ],
+  "sources": [
+   {
+    "id": "tiflis-wikidata",
+    "event_id": "tiflis",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Tiflis",
+    "year": null,
+    "publisher": "Wikidata",
+    "url": "https://www.wikidata.org/wiki/Q994",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   },
+   {
+    "id": "tiflis-trwiki",
+    "event_id": "tiflis",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Tiflis",
+    "year": null,
+    "publisher": "Vikipedi",
+    "url": "https://tr.wikipedia.org/wiki/Tiflis",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   }
+  ],
+  "needs_review": false
+ },
+ {
+  "id": "erivan",
+  "name": "Erivan",
+  "wikidata_id": "Q1953",
+  "lng": 44.514444444,
+  "lat": 40.181388888,
+  "summary": "Erivan (Ermenice: Երևան, bazen \"Երեվան\" olarak da yazılır, /ˌjɛrɛˈvɑn/; Osmanlı döneminde Farsça: ﺭﺍﻭﻦ, Revan, Azerice: İrəvan), Ermenistan'ın başkenti ve en büyük şehri olan Erivan, aynı zamanda dünyanın en eski sürekli yerleşim yerlerinden biridir.",
+  "content_lang": "tr",
+  "periods": [
+   {
+    "name": "Erivan",
+    "from": null,
+    "to": 1936,
+    "confirmed": true
+   },
+   {
+    "name": "Yerevan",
+    "from": 1936,
+    "to": null,
+    "confirmed": true
+   }
+  ],
+  "other_names": [],
+  "rulers": [
+   {
+    "from": -500,
+    "to": -323,
+    "name": "Achaemenid Empire",
+    "manual": false
+   },
+   {
+    "from": -323,
+    "to": -200,
+    "name": "Armenia",
+    "manual": false
+   },
+   {
+    "from": -200,
+    "to": -1,
+    "name": "minor states",
+    "manual": false
+   },
+   {
+    "from": -1,
+    "to": 400,
+    "name": "Armenia",
+    "manual": false
+   },
+   {
+    "from": 400,
+    "to": 500,
+    "name": "Persi",
+    "manual": false
+   },
+   {
+    "from": 500,
+    "to": 700,
+    "name": "Sasanian Empire",
+    "manual": false
+   },
+   {
+    "from": 700,
+    "to": 800,
+    "name": "Armenia",
+    "manual": false
+   },
+   {
+    "from": 800,
+    "to": 1000,
+    "name": "Abbasid Caliphate",
+    "manual": false
+   },
+   {
+    "from": 1000,
+    "to": 1100,
+    "name": "Armenia",
+    "manual": false
+   },
+   {
+    "from": 1100,
+    "to": 1200,
+    "name": "Byzantine Empire",
+    "manual": false
+   },
+   {
+    "from": 1200,
+    "to": 1279,
+    "name": "Armenia",
+    "manual": false
+   },
+   {
+    "from": 1279,
+    "to": 1300,
+    "name": "Mongol Empire",
+    "manual": false
+   },
+   {
+    "from": 1300,
+    "to": 1400,
+    "name": "Ilkhanate",
+    "manual": false
+   },
+   {
+    "from": 1400,
+    "to": 1492,
+    "name": "Timurid Empire",
+    "manual": false
+   },
+   {
+    "from": 1492,
+    "to": 1501,
+    "name": "Emirate of the White Sheep Turks",
+    "manual": false
+   },
+   {
+    "from": 1501,
+    "to": 1747,
+    "name": "Safevî İmparatorluğu",
+    "manual": true
+   },
+   {
+    "from": 1747,
+    "to": 1827,
+    "name": "Erivan Hanlığı",
+    "manual": true
+   },
+   {
+    "from": 1827,
+    "to": 1918,
+    "name": "Rus İmparatorluğu",
+    "manual": true
+   },
+   {
+    "from": 1918,
+    "to": 1920,
+    "name": "Ermenistan Demokratik Cumhuriyeti",
+    "manual": true
+   },
+   {
+    "from": 1920,
+    "to": 1950,
+    "name": "SSCB",
+    "manual": true
+   }
+  ],
+  "sources": [
+   {
+    "id": "erivan-wikidata",
+    "event_id": "erivan",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Erivan",
+    "year": null,
+    "publisher": "Wikidata",
+    "url": "https://www.wikidata.org/wiki/Q1953",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   },
+   {
+    "id": "erivan-trwiki",
+    "event_id": "erivan",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Erivan",
+    "year": null,
+    "publisher": "Vikipedi",
+    "url": "https://tr.wikipedia.org/wiki/Erivan",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   }
+  ],
+  "needs_review": false
+ },
+ {
+  "id": "gumru",
+  "name": "Gümrü",
+  "wikidata_id": "Q199500",
+  "lng": 43.833333333,
+  "lat": 40.783333333,
+  "summary": "Gümrü (Ermenice: Գյումրի, eskiden Александрополь Aleksandropol), Ermenistan'ın ikinci büyük şehri ve ülkenin kuzeybatısındaki Şirak Eyaleti'nin idari merkezi olarak hizmet veren kentsel bir belediye topluluğudur. 19.",
+  "content_lang": "tr",
+  "periods": [
+   {
+    "name": "Gümrü",
+    "from": null,
+    "to": 1837,
+    "confirmed": false
+   },
+   {
+    "name": "Aleksandropol",
+    "from": 1837,
+    "to": 1924,
+    "confirmed": true
+   },
+   {
+    "name": "Leninakan",
+    "from": 1924,
+    "to": 1990,
+    "confirmed": true
+   },
+   {
+    "name": "Gümrü",
+    "from": 1990,
+    "to": null,
+    "confirmed": true
+   }
+  ],
+  "other_names": [],
+  "rulers": [
+   {
+    "from": -500,
+    "to": -323,
+    "name": "Achaemenid Empire",
+    "manual": false
+   },
+   {
+    "from": -323,
+    "to": -200,
+    "name": "Colchis",
+    "manual": false
+   },
+   {
+    "from": -200,
+    "to": -1,
+    "name": "minor states",
+    "manual": false
+   },
+   {
+    "from": -1,
+    "to": 400,
+    "name": "Armenia",
+    "manual": false
+   },
+   {
+    "from": 400,
+    "to": 500,
+    "name": "Persi",
+    "manual": false
+   },
+   {
+    "from": 500,
+    "to": 700,
+    "name": "Sasanian Empire",
+    "manual": false
+   },
+   {
+    "from": 700,
+    "to": 800,
+    "name": "Armenia",
+    "manual": false
+   },
+   {
+    "from": 800,
+    "to": 1000,
+    "name": "Abbasid Caliphate",
+    "manual": false
+   },
+   {
+    "from": 1000,
+    "to": 1100,
+    "name": "Armenia",
+    "manual": false
+   },
+   {
+    "from": 1100,
+    "to": 1200,
+    "name": "Byzantine Empire",
+    "manual": false
+   },
+   {
+    "from": 1200,
+    "to": 1279,
+    "name": "Armenia",
+    "manual": false
+   },
+   {
+    "from": 1279,
+    "to": 1300,
+    "name": "Mongol Empire",
+    "manual": false
+   },
+   {
+    "from": 1300,
+    "to": 1400,
+    "name": "Ilkhanate",
+    "manual": false
+   },
+   {
+    "from": 1400,
+    "to": 1492,
+    "name": "Timurid Empire",
+    "manual": false
+   },
+   {
+    "from": 1492,
+    "to": 1530,
+    "name": "Emirate of the White Sheep Turks",
+    "manual": false
+   },
+   {
+    "from": 1530,
+    "to": 1715,
+    "name": "Ottoman Empire",
+    "manual": false
+   },
+   {
+    "from": 1715,
+    "to": 1783,
+    "name": "Safavid Empire",
+    "manual": false
+   },
+   {
+    "from": 1783,
+    "to": 1815,
+    "name": "central Asian khanates",
+    "manual": false
+   },
+   {
+    "from": 1815,
+    "to": 1829,
+    "name": "Persia",
+    "manual": false
+   },
+   {
+    "from": 1829,
+    "to": 1918,
+    "name": "Rus İmparatorluğu",
+    "manual": true
+   },
+   {
+    "from": 1918,
+    "to": 1920,
+    "name": "Armenia",
+    "manual": false
+   },
+   {
+    "from": 1920,
+    "to": 1950,
+    "name": "SSCB",
+    "manual": true
+   }
+  ],
+  "sources": [
+   {
+    "id": "gumru-wikidata",
+    "event_id": "gumru",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Gümrü",
+    "year": null,
+    "publisher": "Wikidata",
+    "url": "https://www.wikidata.org/wiki/Q199500",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   },
+   {
+    "id": "gumru-trwiki",
+    "event_id": "gumru",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Gümrü",
+    "year": null,
+    "publisher": "Vikipedi",
+    "url": "https://tr.wikipedia.org/wiki/G%C3%BCmr%C3%BC",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   }
+  ],
+  "needs_review": true
+ },
+ {
+  "id": "baku",
+  "name": "Bakü",
+  "wikidata_id": "Q9248",
+  "lng": 49.835183333,
+  "lat": 40.366655555,
+  "summary": "Bakü (Azerbaycanca, Azerice telaffuz: [bɑˈcɯ] ( dinle)), Azerbaycan'ın Hazar Denizi'nin batı kıyısında yer alan başkentidir. Kafkasya'nın en büyük şehri, en önemli kültür ve ticaret merkezidir. Ülkenin en doğusundaki ve en önemli sanayi, ticaret ve kültür merkezi olmanın yanı sıra bir liman kenti olarak da önemlidir.",
+  "content_lang": "tr",
+  "periods": [],
+  "other_names": [],
+  "rulers": [
+   {
+    "from": -500,
+    "to": -323,
+    "name": "Achaemenid Empire",
+    "manual": false
+   },
+   {
+    "from": -323,
+    "to": -200,
+    "name": "Atropatene",
+    "manual": false
+   },
+   {
+    "from": -200,
+    "to": -100,
+    "name": "Scythians",
+    "manual": false
+   },
+   {
+    "from": -100,
+    "to": -1,
+    "name": "Sarmates",
+    "manual": false
+   },
+   {
+    "from": -1,
+    "to": 100,
+    "name": "Armenia",
+    "manual": false
+   },
+   {
+    "from": 100,
+    "to": 200,
+    "name": "Alans",
+    "manual": false
+   },
+   {
+    "from": 200,
+    "to": 400,
+    "name": "Armenia",
+    "manual": false
+   },
+   {
+    "from": 400,
+    "to": 500,
+    "name": "Persi",
+    "manual": false
+   },
+   {
+    "from": 500,
+    "to": 700,
+    "name": "Sasanian Empire",
+    "manual": false
+   },
+   {
+    "from": 700,
+    "to": 800,
+    "name": "Caucasian Albania",
+    "manual": false
+   },
+   {
+    "from": 800,
+    "to": 1000,
+    "name": "Abbasid Caliphate",
+    "manual": false
+   },
+   {
+    "from": 1000,
+    "to": 1200,
+    "name": "Shirvan",
+    "manual": false
+   },
+   {
+    "from": 1200,
+    "to": 1279,
+    "name": "Buwayhid Emirates",
+    "manual": false
+   },
+   {
+    "from": 1279,
+    "to": 1300,
+    "name": "Mongol Empire",
+    "manual": false
+   },
+   {
+    "from": 1300,
+    "to": 1400,
+    "name": "Ilkhanate",
+    "manual": false
+   },
+   {
+    "from": 1400,
+    "to": 1492,
+    "name": "Timurid Empire",
+    "manual": false
+   },
+   {
+    "from": 1492,
+    "to": 1501,
+    "name": "Emirate of the White Sheep Turks",
+    "manual": false
+   },
+   {
+    "from": 1501,
+    "to": 1723,
+    "name": "Safevî İmparatorluğu",
+    "manual": true
+   },
+   {
+    "from": 1723,
+    "to": 1747,
+    "name": "Safavid Empire",
+    "manual": false
+   },
+   {
+    "from": 1747,
+    "to": 1806,
+    "name": "Bakü Hanlığı",
+    "manual": true
+   },
+   {
+    "from": 1806,
+    "to": 1918,
+    "name": "Rus İmparatorluğu",
+    "manual": true
+   },
+   {
+    "from": 1918,
+    "to": 1920,
+    "name": "Azerbaycan Demokratik Cumhuriyeti",
+    "manual": true
+   },
+   {
+    "from": 1920,
+    "to": 1950,
+    "name": "SSCB",
+    "manual": true
+   }
+  ],
+  "sources": [
+   {
+    "id": "baku-wikidata",
+    "event_id": "baku",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Bakü",
+    "year": null,
+    "publisher": "Wikidata",
+    "url": "https://www.wikidata.org/wiki/Q9248",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   },
+   {
+    "id": "baku-trwiki",
+    "event_id": "baku",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Bakü",
+    "year": null,
+    "publisher": "Vikipedi",
+    "url": "https://tr.wikipedia.org/wiki/Bak%C3%BC",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   }
+  ],
+  "needs_review": false
+ },
+ {
+  "id": "derbent",
+  "name": "Derbent",
+  "wikidata_id": "Q131416",
+  "lng": 48.288888888,
+  "lat": 42.057777777,
+  "summary": "Derbent (Rusça: Дербе́нт; Azerice: Dərbənd; Lezgice: Кьвевар; Avarca: Дербенд; Farsça: دربند, Darband), bugünkü Rusya'ya bağlı Dağıstan'da yer alan tarihi bir şehirdir. Şehrin tarihi yapıları 2003 yılında UNESCO tarafından Dünya Mirası olarak ilan edilmiştir.",
+  "content_lang": "tr",
+  "periods": [],
+  "other_names": [
+   "Babü'l-Ebvab"
+  ],
+  "rulers": [
+   {
+    "from": -500,
+    "to": -200,
+    "name": null,
+    "manual": false
+   },
+   {
+    "from": -200,
+    "to": -100,
+    "name": "Scythians",
+    "manual": false
+   },
+   {
+    "from": -100,
+    "to": -1,
+    "name": "Sarmates",
+    "manual": false
+   },
+   {
+    "from": -1,
+    "to": 100,
+    "name": null,
+    "manual": false
+   },
+   {
+    "from": 100,
+    "to": 200,
+    "name": "Alans",
+    "manual": false
+   },
+   {
+    "from": 200,
+    "to": 500,
+    "name": null,
+    "manual": false
+   },
+   {
+    "from": 500,
+    "to": 700,
+    "name": "Sasanian Empire",
+    "manual": false
+   },
+   {
+    "from": 700,
+    "to": 800,
+    "name": "Caucasian Albania",
+    "manual": false
+   },
+   {
+    "from": 800,
+    "to": 1000,
+    "name": "Khazars",
+    "manual": false
+   },
+   {
+    "from": 1000,
+    "to": 1100,
+    "name": "Buwayhid Emirates",
+    "manual": false
+   },
+   {
+    "from": 1100,
+    "to": 1200,
+    "name": "Derbent",
+    "manual": false
+   },
+   {
+    "from": 1200,
+    "to": 1279,
+    "name": "Buwayhid Emirates",
+    "manual": false
+   },
+   {
+    "from": 1279,
+    "to": 1300,
+    "name": "Mongol Empire",
+    "manual": false
+   },
+   {
+    "from": 1300,
+    "to": 1400,
+    "name": "Ilkhanate",
+    "manual": false
+   },
+   {
+    "from": 1400,
+    "to": 1492,
+    "name": "Timurid Empire",
+    "manual": false
+   },
+   {
+    "from": 1492,
+    "to": 1530,
+    "name": "Emirate of the White Sheep Turks",
+    "manual": false
+   },
+   {
+    "from": 1530,
+    "to": 1715,
+    "name": "Ottoman Empire",
+    "manual": false
+   },
+   {
+    "from": 1715,
+    "to": 1783,
+    "name": "Safavid Empire",
+    "manual": false
+   },
+   {
+    "from": 1783,
+    "to": 1806,
+    "name": "central Asian khanates",
+    "manual": false
+   },
+   {
+    "from": 1806,
+    "to": 1918,
+    "name": "Rus İmparatorluğu",
+    "manual": true
+   },
+   {
+    "from": 1918,
+    "to": 1920,
+    "name": "Russia",
+    "manual": false
+   },
+   {
+    "from": 1920,
+    "to": 1921,
+    "name": "USSR",
+    "manual": false
+   },
+   {
+    "from": 1921,
+    "to": 1950,
+    "name": "SSCB",
+    "manual": true
+   }
+  ],
+  "sources": [
+   {
+    "id": "derbent-wikidata",
+    "event_id": "derbent",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Derbent",
+    "year": null,
+    "publisher": "Wikidata",
+    "url": "https://www.wikidata.org/wiki/Q131416",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   },
+   {
+    "id": "derbent-trwiki",
+    "event_id": "derbent",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Derbent, Dağıstan",
+    "year": null,
+    "publisher": "Vikipedi",
+    "url": "https://tr.wikipedia.org/wiki/Derbent%2C_Da%C4%9F%C4%B1stan",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   }
+  ],
+  "needs_review": true
+ },
+ {
+  "id": "nahcivan",
+  "name": "Nahçıvan",
+  "wikidata_id": "Q230104",
+  "lng": 45.412222222,
+  "lat": 39.208888888,
+  "summary": "Nahçıvan (Azerice: Naxçıvan), Azerbaycan'da bir şehirdir. Nahçıvan Özerk Cumhuriyeti'nin başkentidir. Aras Nehri'nin kolu olan Nahçıvan Nehri'nin batı kıyısındadır. Babek Rayonu ile çevrili olan Nahçıvan şehri, özel bir statüye sahiptir. 2019 itibarıyla, şehir nüfusu 93.700'dür. Bakü'den uzaklığı 536 km'dir.",
+  "content_lang": "tr",
+  "periods": [],
+  "other_names": [],
+  "rulers": [
+   {
+    "from": -500,
+    "to": -323,
+    "name": "Achaemenid Empire",
+    "manual": false
+   },
+   {
+    "from": -323,
+    "to": -200,
+    "name": "Atropatene",
+    "manual": false
+   },
+   {
+    "from": -200,
+    "to": -1,
+    "name": "minor states",
+    "manual": false
+   },
+   {
+    "from": -1,
+    "to": 400,
+    "name": "Armenia",
+    "manual": false
+   },
+   {
+    "from": 400,
+    "to": 500,
+    "name": "Persi",
+    "manual": false
+   },
+   {
+    "from": 500,
+    "to": 800,
+    "name": "Sasanian Empire",
+    "manual": false
+   },
+   {
+    "from": 800,
+    "to": 1000,
+    "name": "Abbasid Caliphate",
+    "manual": false
+   },
+   {
+    "from": 1000,
+    "to": 1100,
+    "name": "Armenia",
+    "manual": false
+   },
+   {
+    "from": 1100,
+    "to": 1200,
+    "name": "Goghtn",
+    "manual": false
+   },
+   {
+    "from": 1200,
+    "to": 1279,
+    "name": "Armenia",
+    "manual": false
+   },
+   {
+    "from": 1279,
+    "to": 1300,
+    "name": "Mongol Empire",
+    "manual": false
+   },
+   {
+    "from": 1300,
+    "to": 1400,
+    "name": "Ilkhanate",
+    "manual": false
+   },
+   {
+    "from": 1400,
+    "to": 1492,
+    "name": "Timurid Empire",
+    "manual": false
+   },
+   {
+    "from": 1492,
+    "to": 1530,
+    "name": "Emirate of the White Sheep Turks",
+    "manual": false
+   },
+   {
+    "from": 1530,
+    "to": 1715,
+    "name": "Ottoman Empire",
+    "manual": false
+   },
+   {
+    "from": 1715,
+    "to": 1783,
+    "name": "Safavid Empire",
+    "manual": false
+   },
+   {
+    "from": 1783,
+    "to": 1828,
+    "name": "Persia",
+    "manual": false
+   },
+   {
+    "from": 1828,
+    "to": 1918,
+    "name": "Rus İmparatorluğu",
+    "manual": true
+   },
+   {
+    "from": 1918,
+    "to": 1920,
+    "name": "Azerbaijan",
+    "manual": false
+   },
+   {
+    "from": 1920,
+    "to": 1950,
+    "name": "SSCB",
+    "manual": true
+   }
+  ],
+  "sources": [
+   {
+    "id": "nahcivan-wikidata",
+    "event_id": "nahcivan",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Nahçıvan",
+    "year": null,
+    "publisher": "Wikidata",
+    "url": "https://www.wikidata.org/wiki/Q230104",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   },
+   {
+    "id": "nahcivan-trwiki",
+    "event_id": "nahcivan",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Nahçıvan",
+    "year": null,
+    "publisher": "Vikipedi",
+    "url": "https://tr.wikipedia.org/wiki/Nah%C3%A7%C4%B1van",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   }
+  ],
+  "needs_review": false
+ },
+ {
+  "id": "batum",
+  "name": "Batum",
+  "wikidata_id": "Q25475",
+  "lng": 41.641666666,
+  "lat": 41.645833333,
+  "summary": "Batum (Gürcüce-Lazca: ბათუმი / Batumi), Gürcistan'ın ikinci büyük şehri ve Acara Özerk Cumhuriyeti'nin başkentidir. Karadeniz'in doğu kıyısında, Gürcistan-Türkiye sınırının yaklaşık 20 kilometre (12 mil) kuzeyinde yer alan Batum, Kafkas Dağları'nın eteklerinde, nemli subtropikal bir bölgede bulunmaktadır.",
+  "content_lang": "tr",
+  "periods": [],
+  "other_names": [],
+  "rulers": [
+   {
+    "from": -500,
+    "to": -323,
+    "name": "Achaemenid Empire",
+    "manual": false
+   },
+   {
+    "from": -323,
+    "to": -200,
+    "name": "Colchis",
+    "manual": false
+   },
+   {
+    "from": -200,
+    "to": -1,
+    "name": "minor states",
+    "manual": false
+   },
+   {
+    "from": -1,
+    "to": 300,
+    "name": "Roman Empire",
+    "manual": false
+   },
+   {
+    "from": 300,
+    "to": 400,
+    "name": "Rome (Diocletianus)",
+    "manual": false
+   },
+   {
+    "from": 400,
+    "to": 800,
+    "name": "Eastern Roman Empire",
+    "manual": false
+   },
+   {
+    "from": 800,
+    "to": 1000,
+    "name": "Abbasid Caliphate",
+    "manual": false
+   },
+   {
+    "from": 1000,
+    "to": 1200,
+    "name": "Kingdom of Georgia",
+    "manual": false
+   },
+   {
+    "from": 1200,
+    "to": 1279,
+    "name": "Byzantine Empire",
+    "manual": false
+   },
+   {
+    "from": 1279,
+    "to": 1530,
+    "name": "Georgia",
+    "manual": false
+   },
+   {
+    "from": 1530,
+    "to": 1600,
+    "name": "Nogai Horde",
+    "manual": false
+   },
+   {
+    "from": 1600,
+    "to": 1783,
+    "name": "Ottoman Empire",
+    "manual": false
+   },
+   {
+    "from": 1783,
+    "to": 1878,
+    "name": "Russian Empire",
+    "manual": false
+   },
+   {
+    "from": 1878,
+    "to": 1918,
+    "name": "Rus İmparatorluğu",
+    "manual": true
+   },
+   {
+    "from": 1918,
+    "to": 1920,
+    "name": "Georgia",
+    "manual": false
+   },
+   {
+    "from": 1920,
+    "to": 1921,
+    "name": "USSR",
+    "manual": false
+   },
+   {
+    "from": 1921,
+    "to": 1950,
+    "name": "SSCB",
+    "manual": true
+   }
+  ],
+  "sources": [
+   {
+    "id": "batum-wikidata",
+    "event_id": "batum",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Batum",
+    "year": null,
+    "publisher": "Wikidata",
+    "url": "https://www.wikidata.org/wiki/Q25475",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   },
+   {
+    "id": "batum-trwiki",
+    "event_id": "batum",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Batum",
+    "year": null,
+    "publisher": "Vikipedi",
+    "url": "https://tr.wikipedia.org/wiki/Batum",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   }
+  ],
+  "needs_review": false
+ },
+ {
+  "id": "mahackale",
+  "name": "Mahaçkale",
+  "wikidata_id": "Q5168",
+  "lng": 47.505,
+  "lat": 42.9825,
+  "summary": "Mahaçkale veya Mahaçkala (Kumukça: Anсi, Ancikala, Rusça: Махачкала; Avarca: МахIачхъала; Lakça: МахIачкъала, Анжи), Rusya'nın Dağıstan eyaletinin başkenti ve en büyük şehridir.",
+  "content_lang": "tr",
+  "periods": [
+   {
+    "name": "Petrovsk-Port",
+    "from": 1857,
+    "to": 1921,
+    "confirmed": true
+   },
+   {
+    "name": "Mahaçkale",
+    "from": 1921,
+    "to": null,
+    "confirmed": true
+   }
+  ],
+  "other_names": [],
+  "rulers": [
+   {
+    "from": -500,
+    "to": -200,
+    "name": null,
+    "manual": false
+   },
+   {
+    "from": -200,
+    "to": -100,
+    "name": "Scythians",
+    "manual": false
+   },
+   {
+    "from": -100,
+    "to": -1,
+    "name": "Sarmates",
+    "manual": false
+   },
+   {
+    "from": -1,
+    "to": 100,
+    "name": null,
+    "manual": false
+   },
+   {
+    "from": 100,
+    "to": 200,
+    "name": "Alans",
+    "manual": false
+   },
+   {
+    "from": 200,
+    "to": 700,
+    "name": null,
+    "manual": false
+   },
+   {
+    "from": 700,
+    "to": 800,
+    "name": "Huns",
+    "manual": false
+   },
+   {
+    "from": 800,
+    "to": 1100,
+    "name": "Khazars",
+    "manual": false
+   },
+   {
+    "from": 1100,
+    "to": 1200,
+    "name": "",
+    "manual": false
+   },
+   {
+    "from": 1200,
+    "to": 1279,
+    "name": "Cuman Khanates",
+    "manual": false
+   },
+   {
+    "from": 1279,
+    "to": 1492,
+    "name": "Mongol Empire",
+    "manual": false
+   },
+   {
+    "from": 1492,
+    "to": 1530,
+    "name": "Emirate of the White Sheep Turks",
+    "manual": false
+   },
+   {
+    "from": 1530,
+    "to": 1715,
+    "name": "Ottoman Empire",
+    "manual": false
+   },
+   {
+    "from": 1715,
+    "to": 1783,
+    "name": "Safavid Empire",
+    "manual": false
+   },
+   {
+    "from": 1783,
+    "to": 1815,
+    "name": "central Asian khanates",
+    "manual": false
+   },
+   {
+    "from": 1815,
+    "to": 1857,
+    "name": "Persia",
+    "manual": false
+   },
+   {
+    "from": 1857,
+    "to": 1918,
+    "name": "Rus İmparatorluğu",
+    "manual": true
+   },
+   {
+    "from": 1918,
+    "to": 1920,
+    "name": "Russia",
+    "manual": false
+   },
+   {
+    "from": 1920,
+    "to": 1921,
+    "name": "USSR",
+    "manual": false
+   },
+   {
+    "from": 1921,
+    "to": 1950,
+    "name": "SSCB",
+    "manual": true
+   }
+  ],
+  "sources": [
+   {
+    "id": "mahackale-wikidata",
+    "event_id": "mahackale",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Mahaçkale",
+    "year": null,
+    "publisher": "Wikidata",
+    "url": "https://www.wikidata.org/wiki/Q5168",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   },
+   {
+    "id": "mahackale-trwiki",
+    "event_id": "mahackale",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Mahaçkale",
+    "year": null,
+    "publisher": "Vikipedi",
+    "url": "https://tr.wikipedia.org/wiki/Maha%C3%A7kale",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   }
+  ],
+  "needs_review": false
+ },
+ {
+  "id": "edirne",
+  "name": "Edirne",
+  "wikidata_id": "Q43387",
+  "lng": 26.57361,
+  "lat": 41.67304,
+  "summary": "Edirne, Türkiye'nin Edirne ilinin merkezi olan şehir. Marmara Bölgesi'nin Trakya kesiminde, Yunanistan ve Bulgaristan sınırında yer almaktadır. Edirne, 1363'ten 1453'e kadar Osmanlı İmparatorluğu'nun başkentiydi. 2020 sayımına göre toplam nüfusu 180.901'di.",
+  "content_lang": "tr",
+  "periods": [
+   {
+    "name": "Hadrianopolis",
+    "from": 125,
+    "to": 1362,
+    "confirmed": false
+   },
+   {
+    "name": "Edirne",
+    "from": 1362,
+    "to": null,
+    "confirmed": false
+   }
+  ],
+  "other_names": [],
+  "rulers": [
+   {
+    "from": -500,
+    "to": -400,
+    "name": null,
+    "manual": false
+   },
+   {
+    "from": -400,
+    "to": -323,
+    "name": "Achaemenid Empire",
+    "manual": false
+   },
+   {
+    "from": -323,
+    "to": -300,
+    "name": "Empire of Alexander",
+    "manual": false
+   },
+   {
+    "from": -300,
+    "to": -200,
+    "name": "Kingdom of Lysimachus",
+    "manual": false
+   },
+   {
+    "from": -200,
+    "to": -100,
+    "name": "Macedon and Hellenic League",
+    "manual": false
+   },
+   {
+    "from": -100,
+    "to": -1,
+    "name": "Dacians",
+    "manual": false
+   },
+   {
+    "from": -1,
+    "to": 300,
+    "name": "Roman Empire",
+    "manual": false
+   },
+   {
+    "from": 300,
+    "to": 400,
+    "name": "Rome (Galerius)",
+    "manual": false
+   },
+   {
+    "from": 400,
+    "to": 800,
+    "name": "Eastern Roman Empire",
+    "manual": false
+   },
+   {
+    "from": 800,
+    "to": 1400,
+    "name": "Byzantine Empire",
+    "manual": false
+   },
+   {
+    "from": 1400,
+    "to": 1878,
+    "name": "Ottoman Empire",
+    "manual": false
+   },
+   {
+    "from": 1878,
+    "to": 1920,
+    "name": "Osmanlı İmparatorluğu",
+    "manual": true
+   },
+   {
+    "from": 1920,
+    "to": 1922,
+    "name": "Yunanistan",
+    "manual": true
+   },
+   {
+    "from": 1922,
+    "to": 1950,
+    "name": "Türkiye Cumhuriyeti",
+    "manual": true
+   }
+  ],
+  "sources": [
+   {
+    "id": "edirne-wikidata",
+    "event_id": "edirne",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Edirne",
+    "year": null,
+    "publisher": "Wikidata",
+    "url": "https://www.wikidata.org/wiki/Q43387",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   },
+   {
+    "id": "edirne-trwiki",
+    "event_id": "edirne",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Edirne",
+    "year": null,
+    "publisher": "Vikipedi",
+    "url": "https://tr.wikipedia.org/wiki/Edirne",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   }
+  ],
+  "needs_review": true
+ },
+ {
+  "id": "bursa",
+  "name": "Bursa",
+  "wikidata_id": "Q40738",
+  "lng": 29.080538888,
+  "lat": 40.191330555,
+  "summary": "Bursa, Türkiye'nin nüfus bakımından dördüncü büyük ili olan Bursa ilinin merkezidir. Şehir merkezinin rakımı ortalama 155 metredir. Tarih boyunca Bithynia, Roma ve Bizans gibi medeniyetlere ev sahipliği yapan kent; Osmanlı İmparatorluğu'nun ilk başkenti olmasıyla tarihsel bir öneme sahiptir.",
+  "content_lang": "tr",
+  "periods": [
+   {
+    "name": "Prusa",
+    "from": null,
+    "to": 1326,
+    "confirmed": false
+   },
+   {
+    "name": "Bursa",
+    "from": 1326,
+    "to": null,
+    "confirmed": false
+   }
+  ],
+  "other_names": [],
+  "rulers": [
+   {
+    "from": -500,
+    "to": -323,
+    "name": "Achaemenid Empire",
+    "manual": false
+   },
+   {
+    "from": -323,
+    "to": -200,
+    "name": "Cappadocia",
+    "manual": false
+   },
+   {
+    "from": -200,
+    "to": -1,
+    "name": "minor states",
+    "manual": false
+   },
+   {
+    "from": -1,
+    "to": 300,
+    "name": "Roman Empire",
+    "manual": false
+   },
+   {
+    "from": 300,
+    "to": 400,
+    "name": "Rome (Diocletianus)",
+    "manual": false
+   },
+   {
+    "from": 400,
+    "to": 800,
+    "name": "Eastern Roman Empire",
+    "manual": false
+   },
+   {
+    "from": 800,
+    "to": 1400,
+    "name": "Byzantine Empire",
+    "manual": false
+   },
+   {
+    "from": 1400,
+    "to": 1920,
+    "name": "Ottoman Empire",
+    "manual": false
+   },
+   {
+    "from": 1920,
+    "to": 1930,
+    "name": "Ottoman Sultanate",
+    "manual": false
+   },
+   {
+    "from": 1930,
+    "to": 1938,
+    "name": "Republic of Turkey",
+    "manual": false
+   },
+   {
+    "from": 1938,
+    "to": 1950,
+    "name": "Turkey",
+    "manual": false
+   }
+  ],
+  "sources": [
+   {
+    "id": "bursa-wikidata",
+    "event_id": "bursa",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Bursa",
+    "year": null,
+    "publisher": "Wikidata",
+    "url": "https://www.wikidata.org/wiki/Q40738",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   },
+   {
+    "id": "bursa-trwiki",
+    "event_id": "bursa",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Bursa",
+    "year": null,
+    "publisher": "Vikipedi",
+    "url": "https://tr.wikipedia.org/wiki/Bursa",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   }
+  ],
+  "needs_review": true
+ },
+ {
+  "id": "iznik",
+  "name": "İznik",
+  "wikidata_id": "Q217125",
+  "lng": 29.719444444,
+  "lat": 40.428888888,
+  "summary": "İznik (Grekçe: Νίκαια Níkaia), Türkiye'nin Bursa ilinin bir ilçesi ve ilçenin merkezi olan şehir. Adını şehirden alan İznik Gölü'nün doğu kıyısında, Bursa'nın kuzeydoğusunda yer alır. 2025 yılı TÜİK verilerine göre nüfusu 45.510 kişidir. İznik adı, şehrin eski adı olan Nikea'dan gelmektedir.",
+  "content_lang": "tr",
+  "periods": [
+   {
+    "name": "Nikaia",
+    "from": null,
+    "to": 1331,
+    "confirmed": true
+   },
+   {
+    "name": "İznik",
+    "from": 1331,
+    "to": null,
+    "confirmed": false
+   }
+  ],
+  "other_names": [],
+  "rulers": [
+   {
+    "from": -500,
+    "to": -323,
+    "name": "Achaemenid Empire",
+    "manual": false
+   },
+   {
+    "from": -323,
+    "to": -200,
+    "name": "Cappadocia",
+    "manual": false
+   },
+   {
+    "from": -200,
+    "to": -1,
+    "name": "minor states",
+    "manual": false
+   },
+   {
+    "from": -1,
+    "to": 300,
+    "name": "Roman Empire",
+    "manual": false
+   },
+   {
+    "from": 300,
+    "to": 400,
+    "name": "Rome (Diocletianus)",
+    "manual": false
+   },
+   {
+    "from": 400,
+    "to": 800,
+    "name": "Eastern Roman Empire",
+    "manual": false
+   },
+   {
+    "from": 800,
+    "to": 1400,
+    "name": "Byzantine Empire",
+    "manual": false
+   },
+   {
+    "from": 1400,
+    "to": 1920,
+    "name": "Ottoman Empire",
+    "manual": false
+   },
+   {
+    "from": 1920,
+    "to": 1930,
+    "name": "Ottoman Sultanate",
+    "manual": false
+   },
+   {
+    "from": 1930,
+    "to": 1938,
+    "name": "Republic of Turkey",
+    "manual": false
+   },
+   {
+    "from": 1938,
+    "to": 1950,
+    "name": "Turkey",
+    "manual": false
+   }
+  ],
+  "sources": [
+   {
+    "id": "iznik-wikidata",
+    "event_id": "iznik",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "İznik",
+    "year": null,
+    "publisher": "Wikidata",
+    "url": "https://www.wikidata.org/wiki/Q217125",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   },
+   {
+    "id": "iznik-trwiki",
+    "event_id": "iznik",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "İznik",
+    "year": null,
+    "publisher": "Vikipedi",
+    "url": "https://tr.wikipedia.org/wiki/%C4%B0znik",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   }
+  ],
+  "needs_review": true
+ },
+ {
+  "id": "izmir",
+  "name": "İzmir",
+  "wikidata_id": "Q35997",
+  "lng": 27.13838,
+  "lat": 38.41273,
+  "summary": "İzmir, Türkiye'de Ege Bölgesi'nde yer alan İzmir ilinin merkezi olan şehirdir. 3,5 milyona yakın merkez nüfusuyla ülkenin nüfus bakımından en kalabalık üçüncü şehridir. Uzun ve dar bir yapıya sahip olan İzmir Körfezi'nin başında yer alan İzmir'de Türkiye'nin en büyük yedinci limanı olan İzmir Limanı bulunur.",
+  "content_lang": "tr",
+  "periods": [
+   {
+    "name": "Smyrna",
+    "from": null,
+    "to": 1930,
+    "confirmed": false
+   },
+   {
+    "name": "İzmir",
+    "from": 1930,
+    "to": null,
+    "confirmed": false
+   }
+  ],
+  "other_names": [],
+  "rulers": [
+   {
+    "from": -500,
+    "to": -323,
+    "name": "Achaemenid Empire",
+    "manual": false
+   },
+   {
+    "from": -323,
+    "to": -300,
+    "name": "Empire of Alexander",
+    "manual": false
+   },
+   {
+    "from": -300,
+    "to": -200,
+    "name": "Kingdom of Antigonus",
+    "manual": false
+   },
+   {
+    "from": -200,
+    "to": -100,
+    "name": "Seleucid Kingdom",
+    "manual": false
+   },
+   {
+    "from": -100,
+    "to": -1,
+    "name": "Roman Republic",
+    "manual": false
+   },
+   {
+    "from": -1,
+    "to": 300,
+    "name": "Roman Empire",
+    "manual": false
+   },
+   {
+    "from": 300,
+    "to": 400,
+    "name": "Rome (Diocletianus)",
+    "manual": false
+   },
+   {
+    "from": 400,
+    "to": 800,
+    "name": "Eastern Roman Empire",
+    "manual": false
+   },
+   {
+    "from": 800,
+    "to": 1400,
+    "name": "Byzantine Empire",
+    "manual": false
+   },
+   {
+    "from": 1400,
+    "to": 1492,
+    "name": "Beylik of Aydin",
+    "manual": false
+   },
+   {
+    "from": 1492,
+    "to": 1920,
+    "name": "Ottoman Empire",
+    "manual": false
+   },
+   {
+    "from": 1920,
+    "to": 1930,
+    "name": "Greece",
+    "manual": false
+   },
+   {
+    "from": 1930,
+    "to": 1938,
+    "name": "Republic of Turkey",
+    "manual": false
+   },
+   {
+    "from": 1938,
+    "to": 1945,
+    "name": "Greece",
+    "manual": false
+   },
+   {
+    "from": 1945,
+    "to": 1950,
+    "name": "Turkey",
+    "manual": false
+   }
+  ],
+  "sources": [
+   {
+    "id": "izmir-wikidata",
+    "event_id": "izmir",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "İzmir",
+    "year": null,
+    "publisher": "Wikidata",
+    "url": "https://www.wikidata.org/wiki/Q35997",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   },
+   {
+    "id": "izmir-trwiki",
+    "event_id": "izmir",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "İzmir",
+    "year": null,
+    "publisher": "Vikipedi",
+    "url": "https://tr.wikipedia.org/wiki/%C4%B0zmir",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   }
+  ],
+  "needs_review": true
+ },
+ {
+  "id": "ankara",
+  "name": "Ankara",
+  "wikidata_id": "Q3640",
+  "lng": 32.83869,
+  "lat": 39.93576,
+  "summary": "Ankara, Türkiye'nin başkenti ve Ankara ilinin merkezi olan şehirdir. Coğrafi olarak Türkiye'nin merkezine yakın bir konumda bulunur ve İç Anadolu Bölgesi'nde yer alır. Türkiye İstatistik Kurumu'nun 2025 sonuçlarına göre 5.910.320 nüfusuyla ülkenin İstanbul'dan sonra nüfus bakımından ikinci büyük şehridir.",
+  "content_lang": "tr",
+  "periods": [],
+  "other_names": [
+   "Ankyra",
+   "Angora"
+  ],
+  "rulers": [
+   {
+    "from": -500,
+    "to": -323,
+    "name": "Achaemenid Empire",
+    "manual": false
+   },
+   {
+    "from": -323,
+    "to": -200,
+    "name": "Cappadocia",
+    "manual": false
+   },
+   {
+    "from": -200,
+    "to": -1,
+    "name": "minor states",
+    "manual": false
+   },
+   {
+    "from": -1,
+    "to": 300,
+    "name": "Roman Empire",
+    "manual": false
+   },
+   {
+    "from": 300,
+    "to": 400,
+    "name": "Rome (Diocletianus)",
+    "manual": false
+   },
+   {
+    "from": 400,
+    "to": 800,
+    "name": "Eastern Roman Empire",
+    "manual": false
+   },
+   {
+    "from": 800,
+    "to": 1279,
+    "name": "Byzantine Empire",
+    "manual": false
+   },
+   {
+    "from": 1279,
+    "to": 1300,
+    "name": "Mongol Empire",
+    "manual": false
+   },
+   {
+    "from": 1300,
+    "to": 1400,
+    "name": "Seljuk Caliphate",
+    "manual": false
+   },
+   {
+    "from": 1400,
+    "to": 1920,
+    "name": "Ottoman Empire",
+    "manual": false
+   },
+   {
+    "from": 1920,
+    "to": 1930,
+    "name": "Ottoman Sultanate",
+    "manual": false
+   },
+   {
+    "from": 1930,
+    "to": 1938,
+    "name": "Republic of Turkey",
+    "manual": false
+   },
+   {
+    "from": 1938,
+    "to": 1950,
+    "name": "Turkey",
+    "manual": false
+   }
+  ],
+  "sources": [
+   {
+    "id": "ankara-wikidata",
+    "event_id": "ankara",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Ankara",
+    "year": null,
+    "publisher": "Wikidata",
+    "url": "https://www.wikidata.org/wiki/Q3640",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   },
+   {
+    "id": "ankara-trwiki",
+    "event_id": "ankara",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Ankara",
+    "year": null,
+    "publisher": "Vikipedi",
+    "url": "https://tr.wikipedia.org/wiki/Ankara",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   }
+  ],
+  "needs_review": true
+ },
+ {
+  "id": "konya",
+  "name": "Konya",
+  "wikidata_id": "Q79857",
+  "lng": 32.5161,
+  "lat": 37.847054,
+  "summary": "Konya, Türkiye'nin Konya ilinin merkezi olan şehirdir. 1875'te kurulan Konya Belediyesi, 1987'de çıkarılan 3399 sayılı yasa gereğince \"büyükşehir\" statüsüne kavuşmuş olup 1989'dan beri belediye hizmetleri bu statüye göre yürütülmektedir.",
+  "content_lang": "tr",
+  "periods": [],
+  "other_names": [
+   "Ikonion"
+  ],
+  "rulers": [
+   {
+    "from": -500,
+    "to": -323,
+    "name": "Achaemenid Empire",
+    "manual": false
+   },
+   {
+    "from": -323,
+    "to": -300,
+    "name": "Empire of Alexander",
+    "manual": false
+   },
+   {
+    "from": -300,
+    "to": -200,
+    "name": "Kingdom of Antigonus",
+    "manual": false
+   },
+   {
+    "from": -200,
+    "to": -100,
+    "name": "Seleucid Kingdom",
+    "manual": false
+   },
+   {
+    "from": -100,
+    "to": -1,
+    "name": "Roman Republic",
+    "manual": false
+   },
+   {
+    "from": -1,
+    "to": 300,
+    "name": "Roman Empire",
+    "manual": false
+   },
+   {
+    "from": 300,
+    "to": 400,
+    "name": "Rome (Diocletianus)",
+    "manual": false
+   },
+   {
+    "from": 400,
+    "to": 800,
+    "name": "Eastern Roman Empire",
+    "manual": false
+   },
+   {
+    "from": 800,
+    "to": 1279,
+    "name": "Byzantine Empire",
+    "manual": false
+   },
+   {
+    "from": 1279,
+    "to": 1300,
+    "name": "Mongol Empire",
+    "manual": false
+   },
+   {
+    "from": 1300,
+    "to": 1400,
+    "name": "Seljuk Caliphate",
+    "manual": false
+   },
+   {
+    "from": 1400,
+    "to": 1920,
+    "name": "Ottoman Empire",
+    "manual": false
+   },
+   {
+    "from": 1920,
+    "to": 1930,
+    "name": "Italy",
+    "manual": false
+   },
+   {
+    "from": 1930,
+    "to": 1938,
+    "name": "Republic of Turkey",
+    "manual": false
+   },
+   {
+    "from": 1938,
+    "to": 1950,
+    "name": "Turkey",
+    "manual": false
+   }
+  ],
+  "sources": [
+   {
+    "id": "konya-wikidata",
+    "event_id": "konya",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Konya",
+    "year": null,
+    "publisher": "Wikidata",
+    "url": "https://www.wikidata.org/wiki/Q79857",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   },
+   {
+    "id": "konya-trwiki",
+    "event_id": "konya",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Konya",
+    "year": null,
+    "publisher": "Vikipedi",
+    "url": "https://tr.wikipedia.org/wiki/Konya",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   }
+  ],
+  "needs_review": true
+ },
+ {
+  "id": "sivas",
+  "name": "Sivas",
+  "wikidata_id": "Q107401",
+  "lng": 37.016666666,
+  "lat": 39.75,
+  "summary": "Sivas, Türkiye'nin İç Anadolu Bölgesi'nde yer alan Sivas ilinin merkezi olan şehir ve bölgenin en eski ve önemli kentlerinden biridir.",
+  "content_lang": "tr",
+  "periods": [],
+  "other_names": [
+   "Sebasteia"
+  ],
+  "rulers": [
+   {
+    "from": -500,
+    "to": -323,
+    "name": "Achaemenid Empire",
+    "manual": false
+   },
+   {
+    "from": -323,
+    "to": -200,
+    "name": "Cappadocia",
+    "manual": false
+   },
+   {
+    "from": -200,
+    "to": -1,
+    "name": "minor states",
+    "manual": false
+   },
+   {
+    "from": -1,
+    "to": 300,
+    "name": "Roman Empire",
+    "manual": false
+   },
+   {
+    "from": 300,
+    "to": 400,
+    "name": "Rome (Diocletianus)",
+    "manual": false
+   },
+   {
+    "from": 400,
+    "to": 800,
+    "name": "Eastern Roman Empire",
+    "manual": false
+   },
+   {
+    "from": 800,
+    "to": 1279,
+    "name": "Byzantine Empire",
+    "manual": false
+   },
+   {
+    "from": 1279,
+    "to": 1300,
+    "name": "Mongol Empire",
+    "manual": false
+   },
+   {
+    "from": 1300,
+    "to": 1492,
+    "name": "Seljuk Caliphate",
+    "manual": false
+   },
+   {
+    "from": 1492,
+    "to": 1920,
+    "name": "Ottoman Empire",
+    "manual": false
+   },
+   {
+    "from": 1920,
+    "to": 1930,
+    "name": "Ottoman Sultanate",
+    "manual": false
+   },
+   {
+    "from": 1930,
+    "to": 1938,
+    "name": "Republic of Turkey",
+    "manual": false
+   },
+   {
+    "from": 1938,
+    "to": 1950,
+    "name": "Turkey",
+    "manual": false
+   }
+  ],
+  "sources": [
+   {
+    "id": "sivas-wikidata",
+    "event_id": "sivas",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Sivas",
+    "year": null,
+    "publisher": "Wikidata",
+    "url": "https://www.wikidata.org/wiki/Q107401",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   },
+   {
+    "id": "sivas-trwiki",
+    "event_id": "sivas",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Sivas",
+    "year": null,
+    "publisher": "Vikipedi",
+    "url": "https://tr.wikipedia.org/wiki/Sivas",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   }
+  ],
+  "needs_review": true
+ },
+ {
+  "id": "trabzon",
+  "name": "Trabzon",
+  "wikidata_id": "Q45301",
+  "lng": 39.7225,
+  "lat": 41.005,
+  "summary": "Trabzon (Romeika: Τραπεζούντα, Trapezounta, Lazca: Ťamt̆ra), Türkiye'nin Trabzon ilinin merkezi olan şehirdir. Karadeniz Bölgesi'nin Doğu Karadeniz Bölümü'nde yer alan ilin Karadeniz'e kıyısı bulunur. Günümüzde Karadeniz Bölgesi'nin Samsun'dan sonra ikinci büyük kentidir.",
+  "content_lang": "tr",
+  "periods": [
+   {
+    "name": "Trapezus",
+    "from": null,
+    "to": 1461,
+    "confirmed": true
+   },
+   {
+    "name": "Trabzon",
+    "from": 1461,
+    "to": null,
+    "confirmed": true
+   }
+  ],
+  "other_names": [],
+  "rulers": [
+   {
+    "from": -500,
+    "to": -323,
+    "name": "Achaemenid Empire",
+    "manual": false
+   },
+   {
+    "from": -323,
+    "to": -200,
+    "name": "Cappadocia",
+    "manual": false
+   },
+   {
+    "from": -200,
+    "to": -1,
+    "name": "minor states",
+    "manual": false
+   },
+   {
+    "from": -1,
+    "to": 300,
+    "name": "Roman Empire",
+    "manual": false
+   },
+   {
+    "from": 300,
+    "to": 400,
+    "name": "Rome (Diocletianus)",
+    "manual": false
+   },
+   {
+    "from": 400,
+    "to": 800,
+    "name": "Eastern Roman Empire",
+    "manual": false
+   },
+   {
+    "from": 800,
+    "to": 1279,
+    "name": "Byzantine Empire",
+    "manual": false
+   },
+   {
+    "from": 1279,
+    "to": 1492,
+    "name": "Trebizond",
+    "manual": false
+   },
+   {
+    "from": 1492,
+    "to": 1920,
+    "name": "Ottoman Empire",
+    "manual": false
+   },
+   {
+    "from": 1920,
+    "to": 1945,
+    "name": "USSR",
+    "manual": false
+   },
+   {
+    "from": 1945,
+    "to": 1950,
+    "name": "Turkey",
+    "manual": false
+   }
+  ],
+  "sources": [
+   {
+    "id": "trabzon-wikidata",
+    "event_id": "trabzon",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Trabzon",
+    "year": null,
+    "publisher": "Wikidata",
+    "url": "https://www.wikidata.org/wiki/Q45301",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   },
+   {
+    "id": "trabzon-trwiki",
+    "event_id": "trabzon",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Trabzon",
+    "year": null,
+    "publisher": "Vikipedi",
+    "url": "https://tr.wikipedia.org/wiki/Trabzon",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   }
+  ],
+  "needs_review": false
+ },
+ {
+  "id": "erzurum",
+  "name": "Erzurum",
+  "wikidata_id": "Q122803",
+  "lng": 41.275555555,
+  "lat": 39.909722222,
+  "summary": "Erzurum, Türkiye'nin Erzurum ilinin merkezi olan şehirdir. Bir bölümü Türkiye'nin Doğu Anadolu Bölgesi'nde yer alırken diğer bölümü ise Türkiye'nin Doğu Karadeniz Bölgesi'nde yer almaktadır.",
+  "content_lang": "tr",
+  "periods": [],
+  "other_names": [
+   "Theodosiopolis",
+   "Karin"
+  ],
+  "rulers": [
+   {
+    "from": -500,
+    "to": -323,
+    "name": "Achaemenid Empire",
+    "manual": false
+   },
+   {
+    "from": -323,
+    "to": -200,
+    "name": "Armenia",
+    "manual": false
+   },
+   {
+    "from": -200,
+    "to": -1,
+    "name": "minor states",
+    "manual": false
+   },
+   {
+    "from": -1,
+    "to": 300,
+    "name": "Roman Empire",
+    "manual": false
+   },
+   {
+    "from": 300,
+    "to": 400,
+    "name": "Armenia",
+    "manual": false
+   },
+   {
+    "from": 400,
+    "to": 500,
+    "name": "Persi",
+    "manual": false
+   },
+   {
+    "from": 500,
+    "to": 600,
+    "name": "Sasanian Empire",
+    "manual": false
+   },
+   {
+    "from": 600,
+    "to": 800,
+    "name": "Eastern Roman Empire",
+    "manual": false
+   },
+   {
+    "from": 800,
+    "to": 1000,
+    "name": "Abbasid Caliphate",
+    "manual": false
+   },
+   {
+    "from": 1000,
+    "to": 1279,
+    "name": "Byzantine Empire",
+    "manual": false
+   },
+   {
+    "from": 1279,
+    "to": 1300,
+    "name": "Mongol Empire",
+    "manual": false
+   },
+   {
+    "from": 1300,
+    "to": 1400,
+    "name": "Ilkhanate",
+    "manual": false
+   },
+   {
+    "from": 1400,
+    "to": 1492,
+    "name": "Timurid Empire",
+    "manual": false
+   },
+   {
+    "from": 1492,
+    "to": 1530,
+    "name": "Emirate of the White Sheep Turks",
+    "manual": false
+   },
+   {
+    "from": 1530,
+    "to": 1920,
+    "name": "Ottoman Empire",
+    "manual": false
+   },
+   {
+    "from": 1920,
+    "to": 1945,
+    "name": "USSR",
+    "manual": false
+   },
+   {
+    "from": 1945,
+    "to": 1950,
+    "name": "Turkey",
+    "manual": false
+   }
+  ],
+  "sources": [
+   {
+    "id": "erzurum-wikidata",
+    "event_id": "erzurum",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Erzurum",
+    "year": null,
+    "publisher": "Wikidata",
+    "url": "https://www.wikidata.org/wiki/Q122803",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   },
+   {
+    "id": "erzurum-trwiki",
+    "event_id": "erzurum",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Erzurum",
+    "year": null,
+    "publisher": "Vikipedi",
+    "url": "https://tr.wikipedia.org/wiki/Erzurum",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   }
+  ],
+  "needs_review": true
+ },
+ {
+  "id": "kars",
+  "name": "Kars",
+  "wikidata_id": "Q127063",
+  "lng": 43.095833333,
+  "lat": 40.607777777,
+  "summary": "Kars, Kars ilinin merkezi olan şehirdir. Türkiye'nin rakımı en yüksek il merkezlerinden biri olan, köyleri ile birlikte Kars merkez nüfusu 2023 itibarıyla 122.524 olarak bildirilmiştir. Merkez ilçeye bağlı, 23 mahalle ve 72 köy bulunmaktadır.",
+  "content_lang": "tr",
+  "periods": [],
+  "other_names": [],
+  "rulers": [
+   {
+    "from": -500,
+    "to": -323,
+    "name": "Achaemenid Empire",
+    "manual": false
+   },
+   {
+    "from": -323,
+    "to": -200,
+    "name": "Colchis",
+    "manual": false
+   },
+   {
+    "from": -200,
+    "to": -1,
+    "name": "minor states",
+    "manual": false
+   },
+   {
+    "from": -1,
+    "to": 400,
+    "name": "Armenia",
+    "manual": false
+   },
+   {
+    "from": 400,
+    "to": 500,
+    "name": "Persi",
+    "manual": false
+   },
+   {
+    "from": 500,
+    "to": 600,
+    "name": "Sasanian Empire",
+    "manual": false
+   },
+   {
+    "from": 600,
+    "to": 800,
+    "name": "Eastern Roman Empire",
+    "manual": false
+   },
+   {
+    "from": 800,
+    "to": 1000,
+    "name": "Abbasid Caliphate",
+    "manual": false
+   },
+   {
+    "from": 1000,
+    "to": 1100,
+    "name": "Armenia",
+    "manual": false
+   },
+   {
+    "from": 1100,
+    "to": 1200,
+    "name": "Byzantine Empire",
+    "manual": false
+   },
+   {
+    "from": 1200,
+    "to": 1279,
+    "name": "Armenia",
+    "manual": false
+   },
+   {
+    "from": 1279,
+    "to": 1300,
+    "name": "Mongol Empire",
+    "manual": false
+   },
+   {
+    "from": 1300,
+    "to": 1400,
+    "name": "Ilkhanate",
+    "manual": false
+   },
+   {
+    "from": 1400,
+    "to": 1492,
+    "name": "Timurid Empire",
+    "manual": false
+   },
+   {
+    "from": 1492,
+    "to": 1530,
+    "name": "Emirate of the White Sheep Turks",
+    "manual": false
+   },
+   {
+    "from": 1530,
+    "to": 1920,
+    "name": "Ottoman Empire",
+    "manual": false
+   },
+   {
+    "from": 1920,
+    "to": 1945,
+    "name": "USSR",
+    "manual": false
+   },
+   {
+    "from": 1945,
+    "to": 1950,
+    "name": "Turkey",
+    "manual": false
+   }
+  ],
+  "sources": [
+   {
+    "id": "kars-wikidata",
+    "event_id": "kars",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Kars",
+    "year": null,
+    "publisher": "Wikidata",
+    "url": "https://www.wikidata.org/wiki/Q127063",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   },
+   {
+    "id": "kars-trwiki",
+    "event_id": "kars",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Kars",
+    "year": null,
+    "publisher": "Vikipedi",
+    "url": "https://tr.wikipedia.org/wiki/Kars",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   }
+  ],
+  "needs_review": false
+ },
+ {
+  "id": "van",
+  "name": "Van",
+  "wikidata_id": "Q83061",
+  "lng": 43.416666666,
+  "lat": 38.501944444,
+  "summary": "Van, Türkiye'nin Van ilinin merkezi olan şehirdir. Anadolu'nun en büyük kapalı havzası olan Van Gölü kıyısında toprakları verimli, akarsuları bol, iklim koşulları oldukça elverişli bir yerleşim merkezidir.",
+  "content_lang": "tr",
+  "periods": [],
+  "other_names": [
+   "Tuşpa"
+  ],
+  "rulers": [
+   {
+    "from": -500,
+    "to": -323,
+    "name": "Achaemenid Empire",
+    "manual": false
+   },
+   {
+    "from": -323,
+    "to": -300,
+    "name": "Empire of Alexander",
+    "manual": false
+   },
+   {
+    "from": -300,
+    "to": -1,
+    "name": "Seleucid Kingdom",
+    "manual": false
+   },
+   {
+    "from": -1,
+    "to": 400,
+    "name": "Armenia",
+    "manual": false
+   },
+   {
+    "from": 400,
+    "to": 500,
+    "name": "Persi",
+    "manual": false
+   },
+   {
+    "from": 500,
+    "to": 800,
+    "name": "Sasanian Empire",
+    "manual": false
+   },
+   {
+    "from": 800,
+    "to": 1000,
+    "name": "Abbasid Caliphate",
+    "manual": false
+   },
+   {
+    "from": 1000,
+    "to": 1100,
+    "name": "Armenia",
+    "manual": false
+   },
+   {
+    "from": 1100,
+    "to": 1200,
+    "name": "Byzantine Empire",
+    "manual": false
+   },
+   {
+    "from": 1200,
+    "to": 1279,
+    "name": "Armenia",
+    "manual": false
+   },
+   {
+    "from": 1279,
+    "to": 1300,
+    "name": "Mongol Empire",
+    "manual": false
+   },
+   {
+    "from": 1300,
+    "to": 1400,
+    "name": "Ilkhanate",
+    "manual": false
+   },
+   {
+    "from": 1400,
+    "to": 1492,
+    "name": "Timurid Empire",
+    "manual": false
+   },
+   {
+    "from": 1492,
+    "to": 1530,
+    "name": "Emirate of the White Sheep Turks",
+    "manual": false
+   },
+   {
+    "from": 1530,
+    "to": 1920,
+    "name": "Ottoman Empire",
+    "manual": false
+   },
+   {
+    "from": 1920,
+    "to": 1945,
+    "name": "USSR",
+    "manual": false
+   },
+   {
+    "from": 1945,
+    "to": 1950,
+    "name": "Turkey",
+    "manual": false
+   }
+  ],
+  "sources": [
+   {
+    "id": "van-wikidata",
+    "event_id": "van",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Van",
+    "year": null,
+    "publisher": "Wikidata",
+    "url": "https://www.wikidata.org/wiki/Q83061",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   },
+   {
+    "id": "van-trwiki",
+    "event_id": "van",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Van",
+    "year": null,
+    "publisher": "Vikipedi",
+    "url": "https://tr.wikipedia.org/wiki/Van",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   }
+  ],
+  "needs_review": true
+ },
+ {
+  "id": "diyarbakir",
+  "name": "Diyarbakır",
+  "wikidata_id": "Q83387",
+  "lng": 40.21889,
+  "lat": 37.91583,
+  "summary": "Diyarbakır, Türkiye'nin Diyarbakır ilinin merkezi olan şehirdir. Üzerinde tarihî Diyarbakır Kalesi'nin bulunduğu ve Dicle Nehri kıyısındaki yüksek platonun çevresinde yer alan şehir, Güneydoğu Anadolu Bölgesi'nde yüzölçümü bakımından Şanlıurfa'dan sonra ikinci sıradadır.",
+  "content_lang": "tr",
+  "periods": [],
+  "other_names": [
+   "Amida",
+   "Diyarbekir"
+  ],
+  "rulers": [
+   {
+    "from": -500,
+    "to": -323,
+    "name": "Achaemenid Empire",
+    "manual": false
+   },
+   {
+    "from": -323,
+    "to": -300,
+    "name": "Empire of Alexander",
+    "manual": false
+   },
+   {
+    "from": -300,
+    "to": -200,
+    "name": "Kingdom of Antigonus",
+    "manual": false
+   },
+   {
+    "from": -200,
+    "to": -1,
+    "name": "Seleucid Kingdom",
+    "manual": false
+   },
+   {
+    "from": -1,
+    "to": 300,
+    "name": "Roman Empire",
+    "manual": false
+   },
+   {
+    "from": 300,
+    "to": 400,
+    "name": "Parthian Empire",
+    "manual": false
+   },
+   {
+    "from": 400,
+    "to": 500,
+    "name": "Persi",
+    "manual": false
+   },
+   {
+    "from": 500,
+    "to": 800,
+    "name": "Eastern Roman Empire",
+    "manual": false
+   },
+   {
+    "from": 800,
+    "to": 1000,
+    "name": "Abbasid Caliphate",
+    "manual": false
+   },
+   {
+    "from": 1000,
+    "to": 1100,
+    "name": "Buwayhid Emirates",
+    "manual": false
+   },
+   {
+    "from": 1100,
+    "to": 1200,
+    "name": "Seljuk Empire",
+    "manual": false
+   },
+   {
+    "from": 1200,
+    "to": 1279,
+    "name": "Buwayhid Emirates",
+    "manual": false
+   },
+   {
+    "from": 1279,
+    "to": 1300,
+    "name": "Mongol Empire",
+    "manual": false
+   },
+   {
+    "from": 1300,
+    "to": 1400,
+    "name": "Ilkhanate",
+    "manual": false
+   },
+   {
+    "from": 1400,
+    "to": 1492,
+    "name": "Timurid Empire",
+    "manual": false
+   },
+   {
+    "from": 1492,
+    "to": 1530,
+    "name": "Emirate of the White Sheep Turks",
+    "manual": false
+   },
+   {
+    "from": 1530,
+    "to": 1920,
+    "name": "Ottoman Empire",
+    "manual": false
+   },
+   {
+    "from": 1920,
+    "to": 1945,
+    "name": "France",
+    "manual": false
+   },
+   {
+    "from": 1945,
+    "to": 1950,
+    "name": "Turkey",
+    "manual": false
+   }
+  ],
+  "sources": [
+   {
+    "id": "diyarbakir-wikidata",
+    "event_id": "diyarbakir",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Diyarbakır",
+    "year": null,
+    "publisher": "Wikidata",
+    "url": "https://www.wikidata.org/wiki/Q83387",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   },
+   {
+    "id": "diyarbakir-trwiki",
+    "event_id": "diyarbakir",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Diyarbakır",
+    "year": null,
+    "publisher": "Vikipedi",
+    "url": "https://tr.wikipedia.org/wiki/Diyarbak%C4%B1r",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   }
+  ],
+  "needs_review": true
+ },
+ {
+  "id": "antakya",
+  "name": "Antakya",
+  "wikidata_id": "Q80561",
+  "lng": 36.160555555,
+  "lat": 36.2025,
+  "summary": "Antakya (Arapça: انطاكيّة, Anṭākye; Yunanca: Ἀντιόχεια, Antiohia), Hatay ilinin nüfus bakımından en büyük yerleşim merkezidir. Yeni düzenlemeyle birlikte Antakya ve Defne Belediyesi olarak ayrılmıştır. Ortasından Asi Nehri geçmektedir. Hristiyanlığın önemli mukaddes mekânlarından biridir.",
+  "content_lang": "tr",
+  "periods": [],
+  "other_names": [
+   "Antiokheia"
+  ],
+  "rulers": [
+   {
+    "from": -500,
+    "to": -323,
+    "name": "Achaemenid Empire",
+    "manual": false
+   },
+   {
+    "from": -323,
+    "to": -300,
+    "name": "Empire of Alexander",
+    "manual": false
+   },
+   {
+    "from": -300,
+    "to": -200,
+    "name": "Kingdom of Antigonus",
+    "manual": false
+   },
+   {
+    "from": -200,
+    "to": -1,
+    "name": "Seleucid Kingdom",
+    "manual": false
+   },
+   {
+    "from": -1,
+    "to": 300,
+    "name": "Roman Empire",
+    "manual": false
+   },
+   {
+    "from": 300,
+    "to": 400,
+    "name": "Rome (Diocletianus)",
+    "manual": false
+   },
+   {
+    "from": 400,
+    "to": 700,
+    "name": "Eastern Roman Empire",
+    "manual": false
+   },
+   {
+    "from": 700,
+    "to": 800,
+    "name": "Umayyad Caliphate",
+    "manual": false
+   },
+   {
+    "from": 800,
+    "to": 1000,
+    "name": "Abbasid Caliphate",
+    "manual": false
+   },
+   {
+    "from": 1000,
+    "to": 1279,
+    "name": "Byzantine Empire",
+    "manual": false
+   },
+   {
+    "from": 1279,
+    "to": 1300,
+    "name": "Mongol Empire",
+    "manual": false
+   },
+   {
+    "from": 1300,
+    "to": 1400,
+    "name": "Ilkhanate",
+    "manual": false
+   },
+   {
+    "from": 1400,
+    "to": 1492,
+    "name": "Timurid Empire",
+    "manual": false
+   },
+   {
+    "from": 1492,
+    "to": 1530,
+    "name": "Mamluke Sultanate",
+    "manual": false
+   },
+   {
+    "from": 1530,
+    "to": 1920,
+    "name": "Ottoman Empire",
+    "manual": false
+   },
+   {
+    "from": 1920,
+    "to": 1945,
+    "name": "France",
+    "manual": false
+   },
+   {
+    "from": 1945,
+    "to": 1950,
+    "name": "Turkey",
+    "manual": false
+   }
+  ],
+  "sources": [
+   {
+    "id": "antakya-wikidata",
+    "event_id": "antakya",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Antakya",
+    "year": null,
+    "publisher": "Wikidata",
+    "url": "https://www.wikidata.org/wiki/Q80561",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   },
+   {
+    "id": "antakya-trwiki",
+    "event_id": "antakya",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Antakya",
+    "year": null,
+    "publisher": "Vikipedi",
+    "url": "https://tr.wikipedia.org/wiki/Antakya",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   }
+  ],
+  "needs_review": true
+ },
+ {
+  "id": "gaziantep",
+  "name": "Gaziantep",
+  "wikidata_id": "Q93338",
+  "lng": 37.379166666,
+  "lat": 37.062777777,
+  "summary": "Gaziantep (Osmanlıca: غازی عینتاب, Gazi Ayıntab) ya da halk arasında kullanılan eski ve kısa adıyla Antep (Osmanlıca: عینتاب, Ayıntab) Türkiye'nin Gaziantep ilinin merkezi olan şehirdir. 1,9 milyona yakın merkez nüfusuyla Türkiye'nin en fazla nüfusa sahip 5. şehri ve 2,250 milyon genel nüfusu ile Türkiye'nin 9.",
+  "content_lang": "tr",
+  "periods": [
+   {
+    "name": "Antep",
+    "from": null,
+    "to": 1921,
+    "confirmed": true
+   },
+   {
+    "name": "Gaziantep",
+    "from": 1921,
+    "to": null,
+    "confirmed": true
+   }
+  ],
+  "other_names": [],
+  "rulers": [
+   {
+    "from": -500,
+    "to": -323,
+    "name": "Achaemenid Empire",
+    "manual": false
+   },
+   {
+    "from": -323,
+    "to": -300,
+    "name": "Empire of Alexander",
+    "manual": false
+   },
+   {
+    "from": -300,
+    "to": -200,
+    "name": "Kingdom of Antigonus",
+    "manual": false
+   },
+   {
+    "from": -200,
+    "to": -1,
+    "name": "Seleucid Kingdom",
+    "manual": false
+   },
+   {
+    "from": -1,
+    "to": 300,
+    "name": "Roman Empire",
+    "manual": false
+   },
+   {
+    "from": 300,
+    "to": 400,
+    "name": "Rome (Diocletianus)",
+    "manual": false
+   },
+   {
+    "from": 400,
+    "to": 800,
+    "name": "Eastern Roman Empire",
+    "manual": false
+   },
+   {
+    "from": 800,
+    "to": 1000,
+    "name": "Abbasid Caliphate",
+    "manual": false
+   },
+   {
+    "from": 1000,
+    "to": 1279,
+    "name": "Byzantine Empire",
+    "manual": false
+   },
+   {
+    "from": 1279,
+    "to": 1300,
+    "name": "Mongol Empire",
+    "manual": false
+   },
+   {
+    "from": 1300,
+    "to": 1400,
+    "name": "Ilkhanate",
+    "manual": false
+   },
+   {
+    "from": 1400,
+    "to": 1492,
+    "name": "Timurid Empire",
+    "manual": false
+   },
+   {
+    "from": 1492,
+    "to": 1530,
+    "name": "Mamluke Sultanate",
+    "manual": false
+   },
+   {
+    "from": 1530,
+    "to": 1920,
+    "name": "Ottoman Empire",
+    "manual": false
+   },
+   {
+    "from": 1920,
+    "to": 1945,
+    "name": "France",
+    "manual": false
+   },
+   {
+    "from": 1945,
+    "to": 1950,
+    "name": "Turkey",
+    "manual": false
+   }
+  ],
+  "sources": [
+   {
+    "id": "gaziantep-wikidata",
+    "event_id": "gaziantep",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Gaziantep",
+    "year": null,
+    "publisher": "Wikidata",
+    "url": "https://www.wikidata.org/wiki/Q93338",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   },
+   {
+    "id": "gaziantep-trwiki",
+    "event_id": "gaziantep",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Gaziantep",
+    "year": null,
+    "publisher": "Vikipedi",
+    "url": "https://tr.wikipedia.org/wiki/Gaziantep",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   }
+  ],
+  "needs_review": false
+ },
+ {
+  "id": "urfa",
+  "name": "Şanlıurfa",
+  "wikidata_id": "Q133118",
+  "lng": 38.791666666,
+  "lat": 37.158333333,
+  "summary": "Şanlıurfa (eski adıyla: Ruha, Kürtçe: Riha, Arapça: الرها (El-Ruhâ)), halk arasındaki kısa adıyla Urfa veya eski çağlarda bilinen adıyla Edessa, Türkiye'nin Şanlıurfa ilinin merkezi olan şehirdir. Yazları son derece sıcak ve kurak bir iklime sahip olan şehir, kışı serin ve nemli geçirir.",
+  "content_lang": "tr",
+  "periods": [
+   {
+    "name": "Urfa",
+    "from": null,
+    "to": 1984,
+    "confirmed": false
+   },
+   {
+    "name": "Şanlıurfa",
+    "from": 1984,
+    "to": null,
+    "confirmed": false
+   }
+  ],
+  "other_names": [
+   "Edessa"
+  ],
+  "rulers": [
+   {
+    "from": -500,
+    "to": -323,
+    "name": "Achaemenid Empire",
+    "manual": false
+   },
+   {
+    "from": -323,
+    "to": -300,
+    "name": "Empire of Alexander",
+    "manual": false
+   },
+   {
+    "from": -300,
+    "to": -200,
+    "name": "Kingdom of Antigonus",
+    "manual": false
+   },
+   {
+    "from": -200,
+    "to": -1,
+    "name": "Seleucid Kingdom",
+    "manual": false
+   },
+   {
+    "from": -1,
+    "to": 300,
+    "name": "Roman Empire",
+    "manual": false
+   },
+   {
+    "from": 300,
+    "to": 400,
+    "name": "Parthian Empire",
+    "manual": false
+   },
+   {
+    "from": 400,
+    "to": 500,
+    "name": "Persi",
+    "manual": false
+   },
+   {
+    "from": 500,
+    "to": 700,
+    "name": "Eastern Roman Empire",
+    "manual": false
+   },
+   {
+    "from": 700,
+    "to": 800,
+    "name": "Umayyad Caliphate",
+    "manual": false
+   },
+   {
+    "from": 800,
+    "to": 1000,
+    "name": "Abbasid Caliphate",
+    "manual": false
+   },
+   {
+    "from": 1000,
+    "to": 1100,
+    "name": "Buwayhid Emirates",
+    "manual": false
+   },
+   {
+    "from": 1100,
+    "to": 1200,
+    "name": "Seljuk Empire",
+    "manual": false
+   },
+   {
+    "from": 1200,
+    "to": 1279,
+    "name": "Buwayhid Emirates",
+    "manual": false
+   },
+   {
+    "from": 1279,
+    "to": 1300,
+    "name": "Mongol Empire",
+    "manual": false
+   },
+   {
+    "from": 1300,
+    "to": 1400,
+    "name": "Ilkhanate",
+    "manual": false
+   },
+   {
+    "from": 1400,
+    "to": 1492,
+    "name": "Timurid Empire",
+    "manual": false
+   },
+   {
+    "from": 1492,
+    "to": 1530,
+    "name": "Emirate of the White Sheep Turks",
+    "manual": false
+   },
+   {
+    "from": 1530,
+    "to": 1920,
+    "name": "Ottoman Empire",
+    "manual": false
+   },
+   {
+    "from": 1920,
+    "to": 1945,
+    "name": "France",
+    "manual": false
+   },
+   {
+    "from": 1945,
+    "to": 1950,
+    "name": "Turkey",
+    "manual": false
+   }
+  ],
+  "sources": [
+   {
+    "id": "urfa-wikidata",
+    "event_id": "urfa",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Şanlıurfa",
+    "year": null,
+    "publisher": "Wikidata",
+    "url": "https://www.wikidata.org/wiki/Q133118",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   },
+   {
+    "id": "urfa-trwiki",
+    "event_id": "urfa",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Şanlıurfa",
+    "year": null,
+    "publisher": "Vikipedi",
+    "url": "https://tr.wikipedia.org/wiki/%C5%9Eanl%C4%B1urfa",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   }
+  ],
+  "needs_review": true
+ },
+ {
+  "id": "selanik",
+  "name": "Selanik",
+  "wikidata_id": "Q17151",
+  "lng": 22.935555555,
+  "lat": 40.640277777,
+  "summary": "Selanik (Yunanca: Θεσσαλονίκη, romanize: Thessaloníki, Yunanca telaffuz: [θesaloˈnici]), metropol alanında bir milyondan fazla nüfusu ile Yunanistan'ın en büyük ikinci şehri ve Makedonya coğrafi bölgesinin, Orta Makedonya idari bölgesinin ve Makedonya ve Trakya Merkezi Olmayan İdaresi'nin başkentidir.",
+  "content_lang": "tr",
+  "periods": [],
+  "other_names": [
+   "Thessaloniki"
+  ],
+  "rulers": [
+   {
+    "from": -500,
+    "to": -323,
+    "name": "Greek city-states",
+    "manual": false
+   },
+   {
+    "from": -323,
+    "to": -300,
+    "name": "Empire of Alexander",
+    "manual": false
+   },
+   {
+    "from": -300,
+    "to": -200,
+    "name": "Kingdom of Kassander",
+    "manual": false
+   },
+   {
+    "from": -200,
+    "to": -100,
+    "name": "Macedon and Hellenic League",
+    "manual": false
+   },
+   {
+    "from": -100,
+    "to": -1,
+    "name": "Roman Republic",
+    "manual": false
+   },
+   {
+    "from": -1,
+    "to": 300,
+    "name": "Roman Empire",
+    "manual": false
+   },
+   {
+    "from": 300,
+    "to": 400,
+    "name": "Rome (Galerius)",
+    "manual": false
+   },
+   {
+    "from": 400,
+    "to": 800,
+    "name": "Eastern Roman Empire",
+    "manual": false
+   },
+   {
+    "from": 800,
+    "to": 1492,
+    "name": "Byzantine Empire",
+    "manual": false
+   },
+   {
+    "from": 1492,
+    "to": 1878,
+    "name": "Ottoman Empire",
+    "manual": false
+   },
+   {
+    "from": 1878,
+    "to": 1900,
+    "name": "Greece",
+    "manual": false
+   },
+   {
+    "from": 1900,
+    "to": 1914,
+    "name": "Ottoman Empire",
+    "manual": false
+   },
+   {
+    "from": 1914,
+    "to": 1950,
+    "name": "Greece",
+    "manual": false
+   }
+  ],
+  "sources": [
+   {
+    "id": "selanik-wikidata",
+    "event_id": "selanik",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Selanik",
+    "year": null,
+    "publisher": "Wikidata",
+    "url": "https://www.wikidata.org/wiki/Q17151",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   },
+   {
+    "id": "selanik-trwiki",
+    "event_id": "selanik",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Selanik",
+    "year": null,
+    "publisher": "Vikipedi",
+    "url": "https://tr.wikipedia.org/wiki/Selanik",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   }
+  ],
+  "needs_review": true
+ },
+ {
+  "id": "sofya",
+  "name": "Sofya",
+  "wikidata_id": "Q472",
+  "lng": 23.321726,
+  "lat": 42.697886,
+  "summary": "Sofya, Bulgaristan'ın başkenti ve en büyük şehridir. Ülkenin batı kesiminde, Vitoşa Dağı'nın eteklerinde, Sofya Vadisi'nde yer almaktadır. Şehir, İskar Nehri'nin batısında kurulmuş olup, Sofya Merkez Mineral Hamamları gibi birçok mineral kaynağına sahiptir. Nemli karasal iklime sahiptir.",
+  "content_lang": "tr",
+  "periods": [],
+  "other_names": [
+   "Serdika"
+  ],
+  "rulers": [
+   {
+    "from": -500,
+    "to": -400,
+    "name": null,
+    "manual": false
+   },
+   {
+    "from": -400,
+    "to": -323,
+    "name": "Hallstatt culture",
+    "manual": false
+   },
+   {
+    "from": -323,
+    "to": -300,
+    "name": "Empire of Alexander",
+    "manual": false
+   },
+   {
+    "from": -300,
+    "to": -200,
+    "name": "Kingdom of Kassander",
+    "manual": false
+   },
+   {
+    "from": -200,
+    "to": -100,
+    "name": "Dardania",
+    "manual": false
+   },
+   {
+    "from": -100,
+    "to": -1,
+    "name": "Dacians",
+    "manual": false
+   },
+   {
+    "from": -1,
+    "to": 300,
+    "name": "Roman Empire",
+    "manual": false
+   },
+   {
+    "from": 300,
+    "to": 400,
+    "name": "Rome (Galerius)",
+    "manual": false
+   },
+   {
+    "from": 400,
+    "to": 800,
+    "name": "Eastern Roman Empire",
+    "manual": false
+   },
+   {
+    "from": 800,
+    "to": 900,
+    "name": "Avars",
+    "manual": false
+   },
+   {
+    "from": 900,
+    "to": 1000,
+    "name": "Bulgars",
+    "manual": false
+   },
+   {
+    "from": 1000,
+    "to": 1400,
+    "name": "Bulgar Khanate",
+    "manual": false
+   },
+   {
+    "from": 1400,
+    "to": 1878,
+    "name": "Ottoman Empire",
+    "manual": false
+   },
+   {
+    "from": 1878,
+    "to": 1950,
+    "name": "Bulgaria",
+    "manual": false
+   }
+  ],
+  "sources": [
+   {
+    "id": "sofya-wikidata",
+    "event_id": "sofya",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Sofya",
+    "year": null,
+    "publisher": "Wikidata",
+    "url": "https://www.wikidata.org/wiki/Q472",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   },
+   {
+    "id": "sofya-trwiki",
+    "event_id": "sofya",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Sofya",
+    "year": null,
+    "publisher": "Vikipedi",
+    "url": "https://tr.wikipedia.org/wiki/Sofya",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   }
+  ],
+  "needs_review": true
+ },
+ {
+  "id": "belgrad",
+  "name": "Belgrad",
+  "wikidata_id": "Q3711",
+  "lng": 20.456944444,
+  "lat": 44.817777777,
+  "summary": "Belgrad, Sırbistan'ın başkenti ve en büyük şehridir. Sava ve Tuna nehirlerinin birleştiği noktada ve Karpat Havzası ile Balkan Yarımadası'nın kesişme noktasında yer almaktadır.",
+  "content_lang": "tr",
+  "periods": [],
+  "other_names": [
+   "Singidunum"
+  ],
+  "rulers": [
+   {
+    "from": -500,
+    "to": -400,
+    "name": null,
+    "manual": false
+   },
+   {
+    "from": -400,
+    "to": -323,
+    "name": "Hallstatt culture",
+    "manual": false
+   },
+   {
+    "from": -323,
+    "to": -1,
+    "name": null,
+    "manual": false
+   },
+   {
+    "from": -1,
+    "to": 300,
+    "name": "Roman Empire",
+    "manual": false
+   },
+   {
+    "from": 300,
+    "to": 400,
+    "name": "Rome (Galerius)",
+    "manual": false
+   },
+   {
+    "from": 400,
+    "to": 500,
+    "name": "Western Roman Empire",
+    "manual": false
+   },
+   {
+    "from": 500,
+    "to": 600,
+    "name": "Eastern Roman Empire",
+    "manual": false
+   },
+   {
+    "from": 600,
+    "to": 1000,
+    "name": "Avars",
+    "manual": false
+   },
+   {
+    "from": 1000,
+    "to": 1100,
+    "name": "Magyars",
+    "manual": false
+   },
+   {
+    "from": 1100,
+    "to": 1492,
+    "name": "Hungary",
+    "manual": false
+   },
+   {
+    "from": 1492,
+    "to": 1700,
+    "name": "Ottoman Empire",
+    "manual": false
+   },
+   {
+    "from": 1700,
+    "to": 1715,
+    "name": "Austrian Empire",
+    "manual": false
+   },
+   {
+    "from": 1715,
+    "to": 1878,
+    "name": "Ottoman Empire",
+    "manual": false
+   },
+   {
+    "from": 1878,
+    "to": 1914,
+    "name": "Austria Hungary",
+    "manual": false
+   },
+   {
+    "from": 1914,
+    "to": 1920,
+    "name": "Serbia",
+    "manual": false
+   },
+   {
+    "from": 1920,
+    "to": 1950,
+    "name": "Yugoslavia",
+    "manual": false
+   }
+  ],
+  "sources": [
+   {
+    "id": "belgrad-wikidata",
+    "event_id": "belgrad",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Belgrad",
+    "year": null,
+    "publisher": "Wikidata",
+    "url": "https://www.wikidata.org/wiki/Q3711",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   },
+   {
+    "id": "belgrad-trwiki",
+    "event_id": "belgrad",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Belgrad",
+    "year": null,
+    "publisher": "Vikipedi",
+    "url": "https://tr.wikipedia.org/wiki/Belgrad",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   }
+  ],
+  "needs_review": true
+ },
+ {
+  "id": "halep",
+  "name": "Halep",
+  "wikidata_id": "Q41183",
+  "lng": 37.16,
+  "lat": 36.2,
+  "summary": "Halep (Arapça: حلب), Suriye'nin kuzeyinde yer alan ve ülkenin en kalabalık vilayeti olan Halep Valiliği'nin başkenti olan bir şehirdir.",
+  "content_lang": "tr",
+  "periods": [],
+  "other_names": [],
+  "rulers": [
+   {
+    "from": -500,
+    "to": -323,
+    "name": "Achaemenid Empire",
+    "manual": false
+   },
+   {
+    "from": -323,
+    "to": -300,
+    "name": "Empire of Alexander",
+    "manual": false
+   },
+   {
+    "from": -300,
+    "to": -200,
+    "name": "Kingdom of Antigonus",
+    "manual": false
+   },
+   {
+    "from": -200,
+    "to": -1,
+    "name": "Seleucid Kingdom",
+    "manual": false
+   },
+   {
+    "from": -1,
+    "to": 300,
+    "name": "Roman Empire",
+    "manual": false
+   },
+   {
+    "from": 300,
+    "to": 400,
+    "name": "Rome (Diocletianus)",
+    "manual": false
+   },
+   {
+    "from": 400,
+    "to": 700,
+    "name": "Eastern Roman Empire",
+    "manual": false
+   },
+   {
+    "from": 700,
+    "to": 800,
+    "name": "Umayyad Caliphate",
+    "manual": false
+   },
+   {
+    "from": 800,
+    "to": 1000,
+    "name": "Abbasid Caliphate",
+    "manual": false
+   },
+   {
+    "from": 1000,
+    "to": 1279,
+    "name": "Byzantine Empire",
+    "manual": false
+   },
+   {
+    "from": 1279,
+    "to": 1300,
+    "name": "Mongol Empire",
+    "manual": false
+   },
+   {
+    "from": 1300,
+    "to": 1400,
+    "name": "Ilkhanate",
+    "manual": false
+   },
+   {
+    "from": 1400,
+    "to": 1492,
+    "name": "Timurid Empire",
+    "manual": false
+   },
+   {
+    "from": 1492,
+    "to": 1530,
+    "name": "Mamluke Sultanate",
+    "manual": false
+   },
+   {
+    "from": 1530,
+    "to": 1920,
+    "name": "Ottoman Empire",
+    "manual": false
+   },
+   {
+    "from": 1920,
+    "to": 1945,
+    "name": "France",
+    "manual": false
+   },
+   {
+    "from": 1945,
+    "to": 1950,
+    "name": "Syria",
+    "manual": false
+   }
+  ],
+  "sources": [
+   {
+    "id": "halep-wikidata",
+    "event_id": "halep",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Halep",
+    "year": null,
+    "publisher": "Wikidata",
+    "url": "https://www.wikidata.org/wiki/Q41183",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   },
+   {
+    "id": "halep-trwiki",
+    "event_id": "halep",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Halep",
+    "year": null,
+    "publisher": "Vikipedi",
+    "url": "https://tr.wikipedia.org/wiki/Halep",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   }
+  ],
+  "needs_review": false
+ },
+ {
+  "id": "sam",
+  "name": "Şam",
+  "wikidata_id": "Q3766",
+  "lng": 36.292,
+  "lat": 33.513,
+  "summary": "Şam veya Dımaşk (Arapça: دمشق Dımaşk ya da الشام Eş-şam), Suriye'nin başkentidir. Ayrıca, Şam Valiliğinin ve Rif Şam Valiliği'nin de idari başkentidir. Osmanlılar zamanında Şam-ı şerif unvanı ile anılmıştır.",
+  "content_lang": "tr",
+  "periods": [],
+  "other_names": [],
+  "rulers": [
+   {
+    "from": -500,
+    "to": -323,
+    "name": "Achaemenid Empire",
+    "manual": false
+   },
+   {
+    "from": -323,
+    "to": -300,
+    "name": "Empire of Alexander",
+    "manual": false
+   },
+   {
+    "from": -300,
+    "to": -200,
+    "name": "Kingdom of Antigonus",
+    "manual": false
+   },
+   {
+    "from": -200,
+    "to": -1,
+    "name": "Ptolemaic Kingdom",
+    "manual": false
+   },
+   {
+    "from": -1,
+    "to": 300,
+    "name": "Roman Empire",
+    "manual": false
+   },
+   {
+    "from": 300,
+    "to": 400,
+    "name": "Rome (Diocletianus)",
+    "manual": false
+   },
+   {
+    "from": 400,
+    "to": 700,
+    "name": "Eastern Roman Empire",
+    "manual": false
+   },
+   {
+    "from": 700,
+    "to": 800,
+    "name": "Umayyad Caliphate",
+    "manual": false
+   },
+   {
+    "from": 800,
+    "to": 1000,
+    "name": "Abbasid Caliphate",
+    "manual": false
+   },
+   {
+    "from": 1000,
+    "to": 1279,
+    "name": "Fatimid Caliphate",
+    "manual": false
+   },
+   {
+    "from": 1279,
+    "to": 1530,
+    "name": "Mamluke Sultanate",
+    "manual": false
+   },
+   {
+    "from": 1530,
+    "to": 1920,
+    "name": "Ottoman Empire",
+    "manual": false
+   },
+   {
+    "from": 1920,
+    "to": 1945,
+    "name": "France",
+    "manual": false
+   },
+   {
+    "from": 1945,
+    "to": 1950,
+    "name": "Syria",
+    "manual": false
+   }
+  ],
+  "sources": [
+   {
+    "id": "sam-wikidata",
+    "event_id": "sam",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Şam",
+    "year": null,
+    "publisher": "Wikidata",
+    "url": "https://www.wikidata.org/wiki/Q3766",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   },
+   {
+    "id": "sam-trwiki",
+    "event_id": "sam",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Şam",
+    "year": null,
+    "publisher": "Vikipedi",
+    "url": "https://tr.wikipedia.org/wiki/%C5%9Eam",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   }
+  ],
+  "needs_review": false
+ },
+ {
+  "id": "kudus",
+  "name": "Kudüs",
+  "wikidata_id": "Q1218",
+  "lng": 35.234156,
+  "lat": 31.776679,
+  "summary": "Kudüs (Arapça: القُدس, el-Kuds) veya Yeruşalim (İbranice: יְרוּשָׁלַיִם, Yeruşaláyim Şehir, Akdeniz ve Ölüdeniz'in (Lut Gölü) kuzey sınırı arasında yer almaktadır. Doğu Kudüs ile birlikte düşünüldüğünde, alan ve nüfus olarak İsrail'in en kalabalık şehridir. 800 binin üzerinde nüfusa ve 125,1 km2 alana sahiptir.",
+  "content_lang": "tr",
+  "periods": [],
+  "other_names": [
+   "Aelia Capitolina"
+  ],
+  "rulers": [
+   {
+    "from": -500,
+    "to": -323,
+    "name": "Achaemenid Empire",
+    "manual": false
+   },
+   {
+    "from": -323,
+    "to": -300,
+    "name": "Empire of Alexander",
+    "manual": false
+   },
+   {
+    "from": -300,
+    "to": -200,
+    "name": "Kingdom of Antigonus",
+    "manual": false
+   },
+   {
+    "from": -200,
+    "to": -1,
+    "name": "Ptolemaic Kingdom",
+    "manual": false
+   },
+   {
+    "from": -1,
+    "to": 300,
+    "name": "Roman Empire",
+    "manual": false
+   },
+   {
+    "from": 300,
+    "to": 400,
+    "name": "Rome (Diocletianus)",
+    "manual": false
+   },
+   {
+    "from": 400,
+    "to": 700,
+    "name": "Eastern Roman Empire",
+    "manual": false
+   },
+   {
+    "from": 700,
+    "to": 800,
+    "name": "Umayyad Caliphate",
+    "manual": false
+   },
+   {
+    "from": 800,
+    "to": 1000,
+    "name": "Abbasid Caliphate",
+    "manual": false
+   },
+   {
+    "from": 1000,
+    "to": 1279,
+    "name": "Fatimid Caliphate",
+    "manual": false
+   },
+   {
+    "from": 1279,
+    "to": 1530,
+    "name": "Mamluke Sultanate",
+    "manual": false
+   },
+   {
+    "from": 1530,
+    "to": 1920,
+    "name": "Ottoman Empire",
+    "manual": false
+   },
+   {
+    "from": 1920,
+    "to": 1938,
+    "name": "United Kingdom of Great Britain and Ireland",
+    "manual": false
+   },
+   {
+    "from": 1938,
+    "to": 1950,
+    "name": "Israel",
+    "manual": false
+   }
+  ],
+  "sources": [
+   {
+    "id": "kudus-wikidata",
+    "event_id": "kudus",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Kudüs",
+    "year": null,
+    "publisher": "Wikidata",
+    "url": "https://www.wikidata.org/wiki/Q1218",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   },
+   {
+    "id": "kudus-trwiki",
+    "event_id": "kudus",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Kudüs",
+    "year": null,
+    "publisher": "Vikipedi",
+    "url": "https://tr.wikipedia.org/wiki/Kud%C3%BCs",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   }
+  ],
+  "needs_review": true
+ },
+ {
+  "id": "kahire",
+  "name": "Kahire",
+  "wikidata_id": "Q85",
+  "lng": 31.235833333,
+  "lat": 30.044444444,
+  "summary": "Kahire (Arapça: القاهرة, romanize: el-Qāhira, \"Galip\", \"Üstün Gelen\"), Mısır'ın başkenti ve en büyük şehridir ve Kahire ilinin merkezidir. 9,8 milyondan fazla insana ev sahipliği yapmaktadır. Ayrıca Afrika, Arap dünyası ve Orta Doğu'daki en büyük kentsel yerleşim alanlarından biridir.",
+  "content_lang": "tr",
+  "periods": [],
+  "other_names": [],
+  "rulers": [
+   {
+    "from": -500,
+    "to": -323,
+    "name": "Achaemenid Empire",
+    "manual": false
+   },
+   {
+    "from": -323,
+    "to": -300,
+    "name": "Empire of Alexander",
+    "manual": false
+   },
+   {
+    "from": -300,
+    "to": -1,
+    "name": "Ptolemaic Kingdom",
+    "manual": false
+   },
+   {
+    "from": -1,
+    "to": 300,
+    "name": "Roman Empire",
+    "manual": false
+   },
+   {
+    "from": 300,
+    "to": 400,
+    "name": "Rome (Diocletianus)",
+    "manual": false
+   },
+   {
+    "from": 400,
+    "to": 700,
+    "name": "Eastern Roman Empire",
+    "manual": false
+   },
+   {
+    "from": 700,
+    "to": 800,
+    "name": "Umayyad Caliphate",
+    "manual": false
+   },
+   {
+    "from": 800,
+    "to": 1000,
+    "name": "Abbasid Caliphate",
+    "manual": false
+   },
+   {
+    "from": 1000,
+    "to": 1279,
+    "name": "Fatimid Caliphate",
+    "manual": false
+   },
+   {
+    "from": 1279,
+    "to": 1530,
+    "name": "Mamluke Sultanate",
+    "manual": false
+   },
+   {
+    "from": 1530,
+    "to": 1715,
+    "name": "Ottoman Empire",
+    "manual": false
+   },
+   {
+    "from": 1715,
+    "to": 1783,
+    "name": "Egypt",
+    "manual": false
+   },
+   {
+    "from": 1783,
+    "to": 1815,
+    "name": "Ottoman Empire",
+    "manual": false
+   },
+   {
+    "from": 1815,
+    "to": 1878,
+    "name": "Egypt",
+    "manual": false
+   },
+   {
+    "from": 1878,
+    "to": 1900,
+    "name": "Ottoman Empire",
+    "manual": false
+   },
+   {
+    "from": 1900,
+    "to": 1914,
+    "name": "Egypt",
+    "manual": false
+   },
+   {
+    "from": 1914,
+    "to": 1938,
+    "name": "United Kingdom of Great Britain and Ireland",
+    "manual": false
+   },
+   {
+    "from": 1938,
+    "to": 1945,
+    "name": "Egypt",
+    "manual": false
+   },
+   {
+    "from": 1945,
+    "to": 1950,
+    "name": "United Kingdom",
+    "manual": false
+   }
+  ],
+  "sources": [
+   {
+    "id": "kahire-wikidata",
+    "event_id": "kahire",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Kahire",
+    "year": null,
+    "publisher": "Wikidata",
+    "url": "https://www.wikidata.org/wiki/Q85",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   },
+   {
+    "id": "kahire-trwiki",
+    "event_id": "kahire",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Kahire",
+    "year": null,
+    "publisher": "Vikipedi",
+    "url": "https://tr.wikipedia.org/wiki/Kahire",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   }
+  ],
+  "needs_review": false
+ },
+ {
+  "id": "iskenderiye",
+  "name": "İskenderiye",
+  "wikidata_id": "Q87",
+  "lng": 29.8925,
+  "lat": 31.1975,
+  "summary": "İskenderiye veya Aleksandria (Arapça: الإسكندرية, al-ʾIskandarīyah; Mısır Arapçası: اسكندرية, Eskendereyya; Yunanca: Αλεξάνδρεια, Alexándria; Kıptîce: ⲣⲁⲕⲟϯ, Rakodī), Mısır'ın önemli bir şehridir. Nil Nehri Deltası'nın batı ucunda yer alan şehir, ülkenin kuzey kıyısı boyunca yaklaşık 40 km (25 mil) uzanır.",
+  "content_lang": "tr",
+  "periods": [],
+  "other_names": [],
+  "rulers": [
+   {
+    "from": -500,
+    "to": -323,
+    "name": "Achaemenid Empire",
+    "manual": false
+   },
+   {
+    "from": -323,
+    "to": -300,
+    "name": "Empire of Alexander",
+    "manual": false
+   },
+   {
+    "from": -300,
+    "to": -1,
+    "name": "Ptolemaic Kingdom",
+    "manual": false
+   },
+   {
+    "from": -1,
+    "to": 300,
+    "name": "Roman Empire",
+    "manual": false
+   },
+   {
+    "from": 300,
+    "to": 400,
+    "name": "Rome (Diocletianus)",
+    "manual": false
+   },
+   {
+    "from": 400,
+    "to": 700,
+    "name": "Eastern Roman Empire",
+    "manual": false
+   },
+   {
+    "from": 700,
+    "to": 800,
+    "name": "Umayyad Caliphate",
+    "manual": false
+   },
+   {
+    "from": 800,
+    "to": 1000,
+    "name": "Abbasid Caliphate",
+    "manual": false
+   },
+   {
+    "from": 1000,
+    "to": 1279,
+    "name": "Fatimid Caliphate",
+    "manual": false
+   },
+   {
+    "from": 1279,
+    "to": 1530,
+    "name": "Mamluke Sultanate",
+    "manual": false
+   },
+   {
+    "from": 1530,
+    "to": 1715,
+    "name": "Ottoman Empire",
+    "manual": false
+   },
+   {
+    "from": 1715,
+    "to": 1783,
+    "name": "Egypt",
+    "manual": false
+   },
+   {
+    "from": 1783,
+    "to": 1815,
+    "name": "Ottoman Empire",
+    "manual": false
+   },
+   {
+    "from": 1815,
+    "to": 1878,
+    "name": "Egypt",
+    "manual": false
+   },
+   {
+    "from": 1878,
+    "to": 1900,
+    "name": "Ottoman Empire",
+    "manual": false
+   },
+   {
+    "from": 1900,
+    "to": 1914,
+    "name": "Egypt",
+    "manual": false
+   },
+   {
+    "from": 1914,
+    "to": 1938,
+    "name": "United Kingdom of Great Britain and Ireland",
+    "manual": false
+   },
+   {
+    "from": 1938,
+    "to": 1945,
+    "name": "Egypt",
+    "manual": false
+   },
+   {
+    "from": 1945,
+    "to": 1950,
+    "name": "United Kingdom",
+    "manual": false
+   }
+  ],
+  "sources": [
+   {
+    "id": "iskenderiye-wikidata",
+    "event_id": "iskenderiye",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "İskenderiye",
+    "year": null,
+    "publisher": "Wikidata",
+    "url": "https://www.wikidata.org/wiki/Q87",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   },
+   {
+    "id": "iskenderiye-trwiki",
+    "event_id": "iskenderiye",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "İskenderiye",
+    "year": null,
+    "publisher": "Vikipedi",
+    "url": "https://tr.wikipedia.org/wiki/%C4%B0skenderiye",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   }
+  ],
+  "needs_review": false
+ },
+ {
+  "id": "bagdat",
+  "name": "Bağdat",
+  "wikidata_id": "Q1530",
+  "lng": 44.366111111,
+  "lat": 33.315277777,
+  "summary": "Bağdat (Arapça: بغداد), Irak'ın başkenti ve en büyük şehridir. Irak'ın merkezinde, Dicle Nehri kıyısında yer almaktadır. Şehrin tahmini nüfusu 8 milyondur. Orta Doğu ve Arap dünyasının en kalabalık ve büyük şehirleri arasında yer almakta olup Irak nüfusunun %22'sini oluşturmaktadır.",
+  "content_lang": "tr",
+  "periods": [],
+  "other_names": [
+   "Medinetü's-Selam"
+  ],
+  "rulers": [
+   {
+    "from": -500,
+    "to": -323,
+    "name": "Achaemenid Empire",
+    "manual": false
+   },
+   {
+    "from": -323,
+    "to": -300,
+    "name": "Empire of Alexander",
+    "manual": false
+   },
+   {
+    "from": -300,
+    "to": -1,
+    "name": "Seleucid Kingdom",
+    "manual": false
+   },
+   {
+    "from": -1,
+    "to": 400,
+    "name": "Parthian Empire",
+    "manual": false
+   },
+   {
+    "from": 400,
+    "to": 500,
+    "name": "Persi",
+    "manual": false
+   },
+   {
+    "from": 500,
+    "to": 800,
+    "name": "Sasanian Empire",
+    "manual": false
+   },
+   {
+    "from": 800,
+    "to": 1000,
+    "name": "Abbasid Caliphate",
+    "manual": false
+   },
+   {
+    "from": 1000,
+    "to": 1100,
+    "name": "Buwayhid Emirates",
+    "manual": false
+   },
+   {
+    "from": 1100,
+    "to": 1200,
+    "name": "Seljuk Empire",
+    "manual": false
+   },
+   {
+    "from": 1200,
+    "to": 1279,
+    "name": "Buwayhid Emirates",
+    "manual": false
+   },
+   {
+    "from": 1279,
+    "to": 1300,
+    "name": "Mongol Empire",
+    "manual": false
+   },
+   {
+    "from": 1300,
+    "to": 1400,
+    "name": "Ilkhanate",
+    "manual": false
+   },
+   {
+    "from": 1400,
+    "to": 1492,
+    "name": "Timurid Empire",
+    "manual": false
+   },
+   {
+    "from": 1492,
+    "to": 1530,
+    "name": "Emirate of the White Sheep Turks",
+    "manual": false
+   },
+   {
+    "from": 1530,
+    "to": 1920,
+    "name": "Ottoman Empire",
+    "manual": false
+   },
+   {
+    "from": 1920,
+    "to": 1945,
+    "name": "United Kingdom of Great Britain and Ireland",
+    "manual": false
+   },
+   {
+    "from": 1945,
+    "to": 1950,
+    "name": "Iraq",
+    "manual": false
+   }
+  ],
+  "sources": [
+   {
+    "id": "bagdat-wikidata",
+    "event_id": "bagdat",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Bağdat",
+    "year": null,
+    "publisher": "Wikidata",
+    "url": "https://www.wikidata.org/wiki/Q1530",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   },
+   {
+    "id": "bagdat-trwiki",
+    "event_id": "bagdat",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Bağdat",
+    "year": null,
+    "publisher": "Vikipedi",
+    "url": "https://tr.wikipedia.org/wiki/Ba%C4%9Fdat",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   }
+  ],
+  "needs_review": true
+ },
+ {
+  "id": "musul",
+  "name": "Musul",
+  "wikidata_id": "Q83317",
+  "lng": 43.129166666,
+  "lat": 36.341666666,
+  "summary": "Musul (Arapça: موصل, Kürtçe: Mûsil), Irak'ın kuzeyindeki önemli bir şehirdir ve Ninova Valiliği'nin başkentidir. Başkent Bağdat'tan sonra Irak'ın ikinci büyük şehridir ve Dicle Nehri kıyısında yer almaktadır. Bir zamanlar dünyanın en büyük şehri olan antik Asur kenti Ninova'nın kalıntıları şehrin doğu tarafındadır.",
+  "content_lang": "tr",
+  "periods": [],
+  "other_names": [],
+  "rulers": [
+   {
+    "from": -500,
+    "to": -323,
+    "name": "Achaemenid Empire",
+    "manual": false
+   },
+   {
+    "from": -323,
+    "to": -300,
+    "name": "Empire of Alexander",
+    "manual": false
+   },
+   {
+    "from": -300,
+    "to": -1,
+    "name": "Seleucid Kingdom",
+    "manual": false
+   },
+   {
+    "from": -1,
+    "to": 200,
+    "name": "Parthian Empire",
+    "manual": false
+   },
+   {
+    "from": 200,
+    "to": 300,
+    "name": "Roman Empire",
+    "manual": false
+   },
+   {
+    "from": 300,
+    "to": 400,
+    "name": "Parthian Empire",
+    "manual": false
+   },
+   {
+    "from": 400,
+    "to": 500,
+    "name": "Persi",
+    "manual": false
+   },
+   {
+    "from": 500,
+    "to": 800,
+    "name": "Sasanian Empire",
+    "manual": false
+   },
+   {
+    "from": 800,
+    "to": 1000,
+    "name": "Abbasid Caliphate",
+    "manual": false
+   },
+   {
+    "from": 1000,
+    "to": 1100,
+    "name": "Buwayhid Emirates",
+    "manual": false
+   },
+   {
+    "from": 1100,
+    "to": 1200,
+    "name": "Seljuk Empire",
+    "manual": false
+   },
+   {
+    "from": 1200,
+    "to": 1279,
+    "name": "Buwayhid Emirates",
+    "manual": false
+   },
+   {
+    "from": 1279,
+    "to": 1300,
+    "name": "Mongol Empire",
+    "manual": false
+   },
+   {
+    "from": 1300,
+    "to": 1400,
+    "name": "Ilkhanate",
+    "manual": false
+   },
+   {
+    "from": 1400,
+    "to": 1492,
+    "name": "Timurid Empire",
+    "manual": false
+   },
+   {
+    "from": 1492,
+    "to": 1530,
+    "name": "Emirate of the White Sheep Turks",
+    "manual": false
+   },
+   {
+    "from": 1530,
+    "to": 1920,
+    "name": "Ottoman Empire",
+    "manual": false
+   },
+   {
+    "from": 1920,
+    "to": 1945,
+    "name": "United Kingdom of Great Britain and Ireland",
+    "manual": false
+   },
+   {
+    "from": 1945,
+    "to": 1950,
+    "name": "Iraq",
+    "manual": false
+   }
+  ],
+  "sources": [
+   {
+    "id": "musul-wikidata",
+    "event_id": "musul",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Musul",
+    "year": null,
+    "publisher": "Wikidata",
+    "url": "https://www.wikidata.org/wiki/Q83317",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   },
+   {
+    "id": "musul-trwiki",
+    "event_id": "musul",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Musul",
+    "year": null,
+    "publisher": "Vikipedi",
+    "url": "https://tr.wikipedia.org/wiki/Musul",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   }
+  ],
+  "needs_review": false
+ },
+ {
+  "id": "tebriz",
+  "name": "Tebriz",
+  "wikidata_id": "Q80053",
+  "lng": 46.296111111,
+  "lat": 38.073888888,
+  "summary": "Tebriz (Farsça: تبریز, Azerice: Təbriz), İran'da Güney Azerbaycan bölgesinde yer alan, Doğu Azerbaycan Eyaleti'nin yönetim merkezi olan şehir. Tebriz İran'ın kuzey batısındaki en büyük şehri, aynı zamanda Azerbaycan Türkleri'nin yoğunluklu olarak yaşadığı bir şehirdir.",
+  "content_lang": "tr",
+  "periods": [],
+  "other_names": [],
+  "rulers": [
+   {
+    "from": -500,
+    "to": -323,
+    "name": "Achaemenid Empire",
+    "manual": false
+   },
+   {
+    "from": -323,
+    "to": -200,
+    "name": "Atropatene",
+    "manual": false
+   },
+   {
+    "from": -200,
+    "to": -1,
+    "name": "minor states",
+    "manual": false
+   },
+   {
+    "from": -1,
+    "to": 400,
+    "name": "Parthian Empire",
+    "manual": false
+   },
+   {
+    "from": 400,
+    "to": 500,
+    "name": "Persi",
+    "manual": false
+   },
+   {
+    "from": 500,
+    "to": 800,
+    "name": "Sasanian Empire",
+    "manual": false
+   },
+   {
+    "from": 800,
+    "to": 1000,
+    "name": "Abbasid Caliphate",
+    "manual": false
+   },
+   {
+    "from": 1000,
+    "to": 1100,
+    "name": "Armenia",
+    "manual": false
+   },
+   {
+    "from": 1100,
+    "to": 1200,
+    "name": "Byzantine Empire",
+    "manual": false
+   },
+   {
+    "from": 1200,
+    "to": 1279,
+    "name": "Armenia",
+    "manual": false
+   },
+   {
+    "from": 1279,
+    "to": 1300,
+    "name": "Mongol Empire",
+    "manual": false
+   },
+   {
+    "from": 1300,
+    "to": 1400,
+    "name": "Ilkhanate",
+    "manual": false
+   },
+   {
+    "from": 1400,
+    "to": 1492,
+    "name": "Timurid Empire",
+    "manual": false
+   },
+   {
+    "from": 1492,
+    "to": 1530,
+    "name": "Emirate of the White Sheep Turks",
+    "manual": false
+   },
+   {
+    "from": 1530,
+    "to": 1715,
+    "name": "Ottoman Empire",
+    "manual": false
+   },
+   {
+    "from": 1715,
+    "to": 1783,
+    "name": "Safavid Empire",
+    "manual": false
+   },
+   {
+    "from": 1783,
+    "to": 1920,
+    "name": "Persia",
+    "manual": false
+   },
+   {
+    "from": 1920,
+    "to": 1950,
+    "name": "Iran",
+    "manual": false
+   }
+  ],
+  "sources": [
+   {
+    "id": "tebriz-wikidata",
+    "event_id": "tebriz",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Tebriz",
+    "year": null,
+    "publisher": "Wikidata",
+    "url": "https://www.wikidata.org/wiki/Q80053",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   },
+   {
+    "id": "tebriz-trwiki",
+    "event_id": "tebriz",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Tebriz",
+    "year": null,
+    "publisher": "Vikipedi",
+    "url": "https://tr.wikipedia.org/wiki/Tebriz",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   }
+  ],
+  "needs_review": false
+ },
+ {
+  "id": "isfahan",
+  "name": "İsfahan",
+  "wikidata_id": "Q42053",
+  "lng": 51.674722222,
+  "lat": 32.6525,
+  "summary": "İsfahan (Farsça: اصفهان), İran'ın İsfahan eyaletinin İsfahan ilçesinin merkez bölgesinde yer alan bir şehirdir. Eyaletin, ilçenin ve bölgenin başkentidir. Tahran'ın 440 kilometre (270 mil) güneyinde yer almaktadır.",
+  "content_lang": "tr",
+  "periods": [],
+  "other_names": [],
+  "rulers": [
+   {
+    "from": -500,
+    "to": -323,
+    "name": "Achaemenid Empire",
+    "manual": false
+   },
+   {
+    "from": -323,
+    "to": -300,
+    "name": "Empire of Alexander",
+    "manual": false
+   },
+   {
+    "from": -300,
+    "to": -1,
+    "name": "Seleucid Kingdom",
+    "manual": false
+   },
+   {
+    "from": -1,
+    "to": 400,
+    "name": "Parthian Empire",
+    "manual": false
+   },
+   {
+    "from": 400,
+    "to": 500,
+    "name": "Persi",
+    "manual": false
+   },
+   {
+    "from": 500,
+    "to": 800,
+    "name": "Sasanian Empire",
+    "manual": false
+   },
+   {
+    "from": 800,
+    "to": 900,
+    "name": "Abbasid Caliphate",
+    "manual": false
+   },
+   {
+    "from": 900,
+    "to": 1000,
+    "name": "Saffarids",
+    "manual": false
+   },
+   {
+    "from": 1000,
+    "to": 1100,
+    "name": "Buwayhid Emirates",
+    "manual": false
+   },
+   {
+    "from": 1100,
+    "to": 1200,
+    "name": "Seljuk Empire",
+    "manual": false
+   },
+   {
+    "from": 1200,
+    "to": 1279,
+    "name": "Buwayhid Emirates",
+    "manual": false
+   },
+   {
+    "from": 1279,
+    "to": 1300,
+    "name": "Mongol Empire",
+    "manual": false
+   },
+   {
+    "from": 1300,
+    "to": 1400,
+    "name": "Ilkhanate",
+    "manual": false
+   },
+   {
+    "from": 1400,
+    "to": 1492,
+    "name": "Timurid Empire",
+    "manual": false
+   },
+   {
+    "from": 1492,
+    "to": 1530,
+    "name": "Emirate of the White Sheep Turks",
+    "manual": false
+   },
+   {
+    "from": 1530,
+    "to": 1783,
+    "name": "Safavid Empire",
+    "manual": false
+   },
+   {
+    "from": 1783,
+    "to": 1920,
+    "name": "Persia",
+    "manual": false
+   },
+   {
+    "from": 1920,
+    "to": 1950,
+    "name": "Iran",
+    "manual": false
+   }
+  ],
+  "sources": [
+   {
+    "id": "isfahan-wikidata",
+    "event_id": "isfahan",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "İsfahan",
+    "year": null,
+    "publisher": "Wikidata",
+    "url": "https://www.wikidata.org/wiki/Q42053",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   },
+   {
+    "id": "isfahan-trwiki",
+    "event_id": "isfahan",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "İsfahan",
+    "year": null,
+    "publisher": "Vikipedi",
+    "url": "https://tr.wikipedia.org/wiki/%C4%B0sfahan",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   }
+  ],
+  "needs_review": false
+ },
+ {
+  "id": "tahran",
+  "name": "Tahran",
+  "wikidata_id": "Q3616",
+  "lng": 51.389722222,
+  "lat": 35.688888888,
+  "summary": "Tahran (Farsça: تهران), İran'ın başkenti ve en büyük şehridir. Aynı zamanda Tahran eyaletinin başkenti ve Tahran İlçesi ile Merkez Bölgesi'nin idari merkezidir.",
+  "content_lang": "tr",
+  "periods": [],
+  "other_names": [],
+  "rulers": [
+   {
+    "from": -500,
+    "to": -323,
+    "name": "Achaemenid Empire",
+    "manual": false
+   },
+   {
+    "from": -323,
+    "to": -300,
+    "name": "Empire of Alexander",
+    "manual": false
+   },
+   {
+    "from": -300,
+    "to": -1,
+    "name": "Seleucid Kingdom",
+    "manual": false
+   },
+   {
+    "from": -1,
+    "to": 400,
+    "name": "Parthian Empire",
+    "manual": false
+   },
+   {
+    "from": 400,
+    "to": 500,
+    "name": "Persi",
+    "manual": false
+   },
+   {
+    "from": 500,
+    "to": 800,
+    "name": "Sasanian Empire",
+    "manual": false
+   },
+   {
+    "from": 800,
+    "to": 1000,
+    "name": "Abbasid Caliphate",
+    "manual": false
+   },
+   {
+    "from": 1000,
+    "to": 1100,
+    "name": "Buwayhid Emirates",
+    "manual": false
+   },
+   {
+    "from": 1100,
+    "to": 1200,
+    "name": "Seljuk Empire",
+    "manual": false
+   },
+   {
+    "from": 1200,
+    "to": 1279,
+    "name": "Buwayhid Emirates",
+    "manual": false
+   },
+   {
+    "from": 1279,
+    "to": 1300,
+    "name": "Mongol Empire",
+    "manual": false
+   },
+   {
+    "from": 1300,
+    "to": 1400,
+    "name": "Ilkhanate",
+    "manual": false
+   },
+   {
+    "from": 1400,
+    "to": 1492,
+    "name": "Timurid Empire",
+    "manual": false
+   },
+   {
+    "from": 1492,
+    "to": 1530,
+    "name": "Emirate of the White Sheep Turks",
+    "manual": false
+   },
+   {
+    "from": 1530,
+    "to": 1783,
+    "name": "Safavid Empire",
+    "manual": false
+   },
+   {
+    "from": 1783,
+    "to": 1920,
+    "name": "Persia",
+    "manual": false
+   },
+   {
+    "from": 1920,
+    "to": 1950,
+    "name": "Iran",
+    "manual": false
+   }
+  ],
+  "sources": [
+   {
+    "id": "tahran-wikidata",
+    "event_id": "tahran",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Tahran",
+    "year": null,
+    "publisher": "Wikidata",
+    "url": "https://www.wikidata.org/wiki/Q3616",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   },
+   {
+    "id": "tahran-trwiki",
+    "event_id": "tahran",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Tahran",
+    "year": null,
+    "publisher": "Vikipedi",
+    "url": "https://tr.wikipedia.org/wiki/Tahran",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   }
+  ],
+  "needs_review": false
+ },
+ {
+  "id": "merv",
+  "name": "Merv",
+  "wikidata_id": "Q193325",
+  "lng": 62.1925,
+  "lat": 37.662777777,
+  "summary": "Merv (Türkmence: Merw; Farsça: مرو, Marv, bazı çevirilerde Marw veya Mary; Çince: 木鹿, Mulu), Türkmenistan sınırları içinde tarihi İpek yolu güzergâhı üzerinde kurulmuş, Karakum Çölü'nde bir vaha şehridir.",
+  "content_lang": "tr",
+  "periods": [],
+  "other_names": [
+   "Margiana"
+  ],
+  "rulers": [
+   {
+    "from": -500,
+    "to": -323,
+    "name": "Achaemenid Empire",
+    "manual": false
+   },
+   {
+    "from": -323,
+    "to": -300,
+    "name": "Empire of Alexander",
+    "manual": false
+   },
+   {
+    "from": -300,
+    "to": -200,
+    "name": "Seleucid Kingdom",
+    "manual": false
+   },
+   {
+    "from": -200,
+    "to": -100,
+    "name": "Scythians",
+    "manual": false
+   },
+   {
+    "from": -100,
+    "to": -1,
+    "name": "Kushan Empire",
+    "manual": false
+   },
+   {
+    "from": -1,
+    "to": 100,
+    "name": null,
+    "manual": false
+   },
+   {
+    "from": 100,
+    "to": 200,
+    "name": "Kushan Empire",
+    "manual": false
+   },
+   {
+    "from": 200,
+    "to": 500,
+    "name": null,
+    "manual": false
+   },
+   {
+    "from": 500,
+    "to": 800,
+    "name": "Sasanian Empire",
+    "manual": false
+   },
+   {
+    "from": 800,
+    "to": 900,
+    "name": "Abbasid Caliphate",
+    "manual": false
+   },
+   {
+    "from": 900,
+    "to": 1000,
+    "name": "Samanid Empire",
+    "manual": false
+   },
+   {
+    "from": 1000,
+    "to": 1279,
+    "name": "Ghaznavid Emirate",
+    "manual": false
+   },
+   {
+    "from": 1279,
+    "to": 1300,
+    "name": "Mongol Empire",
+    "manual": false
+   },
+   {
+    "from": 1300,
+    "to": 1400,
+    "name": "Ilkhanate",
+    "manual": false
+   },
+   {
+    "from": 1400,
+    "to": 1492,
+    "name": "Timurid Empire",
+    "manual": false
+   },
+   {
+    "from": 1492,
+    "to": 1530,
+    "name": "Timurid Emirates",
+    "manual": false
+   },
+   {
+    "from": 1530,
+    "to": 1783,
+    "name": "Safavid Empire",
+    "manual": false
+   },
+   {
+    "from": 1783,
+    "to": 1815,
+    "name": "Afghanistan",
+    "manual": false
+   },
+   {
+    "from": 1815,
+    "to": 1878,
+    "name": "Turan",
+    "manual": false
+   },
+   {
+    "from": 1878,
+    "to": 1900,
+    "name": "Bokhara Khanate",
+    "manual": false
+   },
+   {
+    "from": 1900,
+    "to": 1914,
+    "name": "central Asian khanates",
+    "manual": false
+   },
+   {
+    "from": 1914,
+    "to": 1920,
+    "name": "Russia",
+    "manual": false
+   },
+   {
+    "from": 1920,
+    "to": 1930,
+    "name": "USSR",
+    "manual": false
+   },
+   {
+    "from": 1930,
+    "to": 1938,
+    "name": "White Russia",
+    "manual": false
+   },
+   {
+    "from": 1938,
+    "to": 1950,
+    "name": "USSR",
+    "manual": false
+   }
+  ],
+  "sources": [
+   {
+    "id": "merv-wikidata",
+    "event_id": "merv",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Merv",
+    "year": null,
+    "publisher": "Wikidata",
+    "url": "https://www.wikidata.org/wiki/Q193325",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   },
+   {
+    "id": "merv-trwiki",
+    "event_id": "merv",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Merv",
+    "year": null,
+    "publisher": "Vikipedi",
+    "url": "https://tr.wikipedia.org/wiki/Merv",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   }
+  ],
+  "needs_review": true
+ },
+ {
+  "id": "herat",
+  "name": "Herat",
+  "wikidata_id": "Q45313",
+  "lng": 62.203056,
+  "lat": 34.341944,
+  "summary": "Herat (Farsça: هرات, Eski Türkçe: Heri), Afganistan'ın batısında Herat Vilayeti'nin merkezi olan kent. 2016 tahminine göre 1,762,157 kişi nüfusu ile Herat Afganistan'ın nüfus itibarıyla ikinci büyük şehridir. Münbit Hari Nehri vadisinde konumlanmıştır. Kandehar ve Mezar-ı Şerif kentlerine 1.",
+  "content_lang": "tr",
+  "periods": [],
+  "other_names": [],
+  "rulers": [
+   {
+    "from": -500,
+    "to": -323,
+    "name": "Achaemenid Empire",
+    "manual": false
+   },
+   {
+    "from": -323,
+    "to": -300,
+    "name": "Empire of Alexander",
+    "manual": false
+   },
+   {
+    "from": -300,
+    "to": -200,
+    "name": "Seleucid Kingdom",
+    "manual": false
+   },
+   {
+    "from": -200,
+    "to": -100,
+    "name": "Scythians",
+    "manual": false
+   },
+   {
+    "from": -100,
+    "to": -1,
+    "name": "Kushan Empire",
+    "manual": false
+   },
+   {
+    "from": -1,
+    "to": 400,
+    "name": "Parthian Empire",
+    "manual": false
+   },
+   {
+    "from": 400,
+    "to": 500,
+    "name": "Persi",
+    "manual": false
+   },
+   {
+    "from": 500,
+    "to": 800,
+    "name": "Sasanian Empire",
+    "manual": false
+   },
+   {
+    "from": 800,
+    "to": 900,
+    "name": "Abbasid Caliphate",
+    "manual": false
+   },
+   {
+    "from": 900,
+    "to": 1000,
+    "name": "Samanid Empire",
+    "manual": false
+   },
+   {
+    "from": 1000,
+    "to": 1279,
+    "name": "Ghaznavid Emirate",
+    "manual": false
+   },
+   {
+    "from": 1279,
+    "to": 1300,
+    "name": "Mongol Empire",
+    "manual": false
+   },
+   {
+    "from": 1300,
+    "to": 1400,
+    "name": "Ilkhanate",
+    "manual": false
+   },
+   {
+    "from": 1400,
+    "to": 1492,
+    "name": "Timurid Empire",
+    "manual": false
+   },
+   {
+    "from": 1492,
+    "to": 1530,
+    "name": "Timurid Emirates",
+    "manual": false
+   },
+   {
+    "from": 1530,
+    "to": 1783,
+    "name": "Safavid Empire",
+    "manual": false
+   },
+   {
+    "from": 1783,
+    "to": 1950,
+    "name": "Afghanistan",
+    "manual": false
+   }
+  ],
+  "sources": [
+   {
+    "id": "herat-wikidata",
+    "event_id": "herat",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Herat",
+    "year": null,
+    "publisher": "Wikidata",
+    "url": "https://www.wikidata.org/wiki/Q45313",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   },
+   {
+    "id": "herat-trwiki",
+    "event_id": "herat",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Herat",
+    "year": null,
+    "publisher": "Vikipedi",
+    "url": "https://tr.wikipedia.org/wiki/Herat",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   }
+  ],
+  "needs_review": false
+ },
+ {
+  "id": "semerkant",
+  "name": "Semerkant",
+  "wikidata_id": "Q5753",
+  "lng": 66.975833333,
+  "lat": 39.654722222,
+  "summary": "Semerkant, Özbekistan'ın 12 ilinden biri olan Semerkant ilinin yönetim merkezi olan şehir. Zerefşan Nehri vadisinde, başkent Taşkent'in 275 km güneybatısında yer alır. Nüfus açısından Özbekistan'ın en büyük ikinci şehri, tarihi ve sosyo-kültürel açıdan en önemli şehridir.",
+  "content_lang": "tr",
+  "periods": [],
+  "other_names": [
+   "Marakanda"
+  ],
+  "rulers": [
+   {
+    "from": -500,
+    "to": -323,
+    "name": "Achaemenid Empire",
+    "manual": false
+   },
+   {
+    "from": -323,
+    "to": -300,
+    "name": "Empire of Alexander",
+    "manual": false
+   },
+   {
+    "from": -300,
+    "to": -200,
+    "name": "Seleucid Kingdom",
+    "manual": false
+   },
+   {
+    "from": -200,
+    "to": -100,
+    "name": "Scythians",
+    "manual": false
+   },
+   {
+    "from": -100,
+    "to": -1,
+    "name": "Kushan Empire",
+    "manual": false
+   },
+   {
+    "from": -1,
+    "to": 100,
+    "name": null,
+    "manual": false
+   },
+   {
+    "from": 100,
+    "to": 200,
+    "name": "Kushan Empire",
+    "manual": false
+   },
+   {
+    "from": 200,
+    "to": 700,
+    "name": null,
+    "manual": false
+   },
+   {
+    "from": 700,
+    "to": 800,
+    "name": "Western Gokturk Khaganate",
+    "manual": false
+   },
+   {
+    "from": 800,
+    "to": 900,
+    "name": "Abbasid Caliphate",
+    "manual": false
+   },
+   {
+    "from": 900,
+    "to": 1000,
+    "name": "Samanid Empire",
+    "manual": false
+   },
+   {
+    "from": 1000,
+    "to": 1100,
+    "name": null,
+    "manual": false
+   },
+   {
+    "from": 1100,
+    "to": 1200,
+    "name": "Karkhanids",
+    "manual": false
+   },
+   {
+    "from": 1200,
+    "to": 1279,
+    "name": "Kara Khitai Khaganate",
+    "manual": false
+   },
+   {
+    "from": 1279,
+    "to": 1400,
+    "name": "Mongol Empire",
+    "manual": false
+   },
+   {
+    "from": 1400,
+    "to": 1492,
+    "name": "Timurid Empire",
+    "manual": false
+   },
+   {
+    "from": 1492,
+    "to": 1530,
+    "name": "Chagatai Khanate",
+    "manual": false
+   },
+   {
+    "from": 1530,
+    "to": 1783,
+    "name": "Khiva Khanate",
+    "manual": false
+   },
+   {
+    "from": 1783,
+    "to": 1815,
+    "name": "central Asian khanates",
+    "manual": false
+   },
+   {
+    "from": 1815,
+    "to": 1878,
+    "name": "Turan",
+    "manual": false
+   },
+   {
+    "from": 1878,
+    "to": 1914,
+    "name": "Russian Empire",
+    "manual": false
+   },
+   {
+    "from": 1914,
+    "to": 1920,
+    "name": "Russia",
+    "manual": false
+   },
+   {
+    "from": 1920,
+    "to": 1930,
+    "name": "USSR",
+    "manual": false
+   },
+   {
+    "from": 1930,
+    "to": 1938,
+    "name": "White Russia",
+    "manual": false
+   },
+   {
+    "from": 1938,
+    "to": 1950,
+    "name": "USSR",
+    "manual": false
+   }
+  ],
+  "sources": [
+   {
+    "id": "semerkant-wikidata",
+    "event_id": "semerkant",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Semerkant",
+    "year": null,
+    "publisher": "Wikidata",
+    "url": "https://www.wikidata.org/wiki/Q5753",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   },
+   {
+    "id": "semerkant-trwiki",
+    "event_id": "semerkant",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Semerkant",
+    "year": null,
+    "publisher": "Vikipedi",
+    "url": "https://tr.wikipedia.org/wiki/Semerkant",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   }
+  ],
+  "needs_review": true
+ },
+ {
+  "id": "buhara",
+  "name": "Buhara",
+  "wikidata_id": "Q5764",
+  "lng": 64.428611111,
+  "lat": 39.774722222,
+  "summary": "Buhara (Özbekçe: Buxoro; Eski Türkçe: 𐰉𐰆𐰴𐰺𐰴 \"Bukarak\"; Türkmence: Buhara; Arapça: بخارى; Farsça: بُخارا‎ Bukhārā; Rusça: Бухара), Orta Asya'nın en eski yerleşim bölgelerinden olan ve günümüzde Özbekistan sınırları içinde bulunan tarihî şehir.",
+  "content_lang": "tr",
+  "periods": [],
+  "other_names": [],
+  "rulers": [
+   {
+    "from": -500,
+    "to": -323,
+    "name": "Achaemenid Empire",
+    "manual": false
+   },
+   {
+    "from": -323,
+    "to": -300,
+    "name": "Empire of Alexander",
+    "manual": false
+   },
+   {
+    "from": -300,
+    "to": -200,
+    "name": "Seleucid Kingdom",
+    "manual": false
+   },
+   {
+    "from": -200,
+    "to": -1,
+    "name": "Scythians",
+    "manual": false
+   },
+   {
+    "from": -1,
+    "to": 100,
+    "name": null,
+    "manual": false
+   },
+   {
+    "from": 100,
+    "to": 200,
+    "name": "Kushan Empire",
+    "manual": false
+   },
+   {
+    "from": 200,
+    "to": 700,
+    "name": null,
+    "manual": false
+   },
+   {
+    "from": 700,
+    "to": 800,
+    "name": "Western Gokturk Khaganate",
+    "manual": false
+   },
+   {
+    "from": 800,
+    "to": 900,
+    "name": "Abbasid Caliphate",
+    "manual": false
+   },
+   {
+    "from": 900,
+    "to": 1000,
+    "name": "Samanid Empire",
+    "manual": false
+   },
+   {
+    "from": 1000,
+    "to": 1100,
+    "name": null,
+    "manual": false
+   },
+   {
+    "from": 1100,
+    "to": 1200,
+    "name": "Karkhanids",
+    "manual": false
+   },
+   {
+    "from": 1200,
+    "to": 1279,
+    "name": "Kara Khitai Khaganate",
+    "manual": false
+   },
+   {
+    "from": 1279,
+    "to": 1400,
+    "name": "Mongol Empire",
+    "manual": false
+   },
+   {
+    "from": 1400,
+    "to": 1492,
+    "name": "Timurid Empire",
+    "manual": false
+   },
+   {
+    "from": 1492,
+    "to": 1530,
+    "name": "Timurid Emirates",
+    "manual": false
+   },
+   {
+    "from": 1530,
+    "to": 1783,
+    "name": "Khiva Khanate",
+    "manual": false
+   },
+   {
+    "from": 1783,
+    "to": 1815,
+    "name": "central Asian khanates",
+    "manual": false
+   },
+   {
+    "from": 1815,
+    "to": 1878,
+    "name": "Turan",
+    "manual": false
+   },
+   {
+    "from": 1878,
+    "to": 1914,
+    "name": "Russian Empire",
+    "manual": false
+   },
+   {
+    "from": 1914,
+    "to": 1920,
+    "name": "Russia",
+    "manual": false
+   },
+   {
+    "from": 1920,
+    "to": 1930,
+    "name": "USSR",
+    "manual": false
+   },
+   {
+    "from": 1930,
+    "to": 1938,
+    "name": "White Russia",
+    "manual": false
+   },
+   {
+    "from": 1938,
+    "to": 1950,
+    "name": "USSR",
+    "manual": false
+   }
+  ],
+  "sources": [
+   {
+    "id": "buhara-wikidata",
+    "event_id": "buhara",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Buhara",
+    "year": null,
+    "publisher": "Wikidata",
+    "url": "https://www.wikidata.org/wiki/Q5764",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   },
+   {
+    "id": "buhara-trwiki",
+    "event_id": "buhara",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Buhara",
+    "year": null,
+    "publisher": "Vikipedi",
+    "url": "https://tr.wikipedia.org/wiki/Buhara",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   }
+  ],
+  "needs_review": false
+ },
+ {
+  "id": "taskent",
+  "name": "Taşkent",
+  "wikidata_id": "Q269",
+  "lng": 69.279722222,
+  "lat": 41.311111111,
+  "summary": "Taşkent (Özbekçe: Toshkent), Özbekistan'ın başkenti ve en büyük şehridir. 1 Temmuz 2025 itibarıyla 3,1 milyondan fazla nüfusuyla Orta Asya'nın en kalabalık şehridir.",
+  "content_lang": "tr",
+  "periods": [],
+  "other_names": [
+   "Çaç"
+  ],
+  "rulers": [
+   {
+    "from": -500,
+    "to": -323,
+    "name": "Achaemenid Empire",
+    "manual": false
+   },
+   {
+    "from": -323,
+    "to": -200,
+    "name": null,
+    "manual": false
+   },
+   {
+    "from": -200,
+    "to": -100,
+    "name": "Scythians",
+    "manual": false
+   },
+   {
+    "from": -100,
+    "to": -1,
+    "name": "Saces",
+    "manual": false
+   },
+   {
+    "from": -1,
+    "to": 700,
+    "name": null,
+    "manual": false
+   },
+   {
+    "from": 700,
+    "to": 800,
+    "name": "Western Gokturk Khaganate",
+    "manual": false
+   },
+   {
+    "from": 800,
+    "to": 900,
+    "name": null,
+    "manual": false
+   },
+   {
+    "from": 900,
+    "to": 1000,
+    "name": "Karluks",
+    "manual": false
+   },
+   {
+    "from": 1000,
+    "to": 1100,
+    "name": null,
+    "manual": false
+   },
+   {
+    "from": 1100,
+    "to": 1200,
+    "name": "Karkhanids",
+    "manual": false
+   },
+   {
+    "from": 1200,
+    "to": 1279,
+    "name": "Kara Khitai Khaganate",
+    "manual": false
+   },
+   {
+    "from": 1279,
+    "to": 1400,
+    "name": "Mongol Empire",
+    "manual": false
+   },
+   {
+    "from": 1400,
+    "to": 1492,
+    "name": "Timurid Empire",
+    "manual": false
+   },
+   {
+    "from": 1492,
+    "to": 1530,
+    "name": "Chagatai Khanate",
+    "manual": false
+   },
+   {
+    "from": 1530,
+    "to": 1783,
+    "name": "Quazaq Khanate",
+    "manual": false
+   },
+   {
+    "from": 1783,
+    "to": 1815,
+    "name": "central Asian khanates",
+    "manual": false
+   },
+   {
+    "from": 1815,
+    "to": 1878,
+    "name": "Turan",
+    "manual": false
+   },
+   {
+    "from": 1878,
+    "to": 1914,
+    "name": "Russian Empire",
+    "manual": false
+   },
+   {
+    "from": 1914,
+    "to": 1920,
+    "name": "Russia",
+    "manual": false
+   },
+   {
+    "from": 1920,
+    "to": 1930,
+    "name": "USSR",
+    "manual": false
+   },
+   {
+    "from": 1930,
+    "to": 1938,
+    "name": "White Russia",
+    "manual": false
+   },
+   {
+    "from": 1938,
+    "to": 1950,
+    "name": "USSR",
+    "manual": false
+   }
+  ],
+  "sources": [
+   {
+    "id": "taskent-wikidata",
+    "event_id": "taskent",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Taşkent",
+    "year": null,
+    "publisher": "Wikidata",
+    "url": "https://www.wikidata.org/wiki/Q269",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   },
+   {
+    "id": "taskent-trwiki",
+    "event_id": "taskent",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Taşkent",
+    "year": null,
+    "publisher": "Vikipedi",
+    "url": "https://tr.wikipedia.org/wiki/Ta%C5%9Fkent",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   }
+  ],
+  "needs_review": true
+ },
+ {
+  "id": "biskek",
+  "name": "Bişkek",
+  "wikidata_id": "Q9361",
+  "lng": 74.566666666,
+  "lat": 42.866666666,
+  "summary": "Bişkek, Kırgızistan'ın başkenti ve en büyük kentsel şehridir. Şehir aynı zamanda Çuy bölgesininde başkentidir. Kazakistan sınırına yakın konumda olup 2024 yılı itibarıyla yaklaşık 1.200.000 nüfusa sahiptir.",
+  "content_lang": "tr",
+  "periods": [
+   {
+    "name": "Pişpek",
+    "from": null,
+    "to": 1926,
+    "confirmed": true
+   },
+   {
+    "name": "Frunze",
+    "from": 1926,
+    "to": 1991,
+    "confirmed": true
+   },
+   {
+    "name": "Bişkek",
+    "from": 1991,
+    "to": null,
+    "confirmed": true
+   }
+  ],
+  "other_names": [],
+  "rulers": [
+   {
+    "from": -500,
+    "to": -323,
+    "name": "Achaemenid Empire",
+    "manual": false
+   },
+   {
+    "from": -323,
+    "to": -200,
+    "name": null,
+    "manual": false
+   },
+   {
+    "from": -200,
+    "to": -100,
+    "name": "Scythians",
+    "manual": false
+   },
+   {
+    "from": -100,
+    "to": -1,
+    "name": "Saces",
+    "manual": false
+   },
+   {
+    "from": -1,
+    "to": 900,
+    "name": null,
+    "manual": false
+   },
+   {
+    "from": 900,
+    "to": 1000,
+    "name": "Karluks",
+    "manual": false
+   },
+   {
+    "from": 1000,
+    "to": 1100,
+    "name": null,
+    "manual": false
+   },
+   {
+    "from": 1100,
+    "to": 1200,
+    "name": "",
+    "manual": false
+   },
+   {
+    "from": 1200,
+    "to": 1279,
+    "name": "Kara Khitai Khaganate",
+    "manual": false
+   },
+   {
+    "from": 1279,
+    "to": 1492,
+    "name": "Mongol Empire",
+    "manual": false
+   },
+   {
+    "from": 1492,
+    "to": 1530,
+    "name": "Chagatai Khanate",
+    "manual": false
+   },
+   {
+    "from": 1530,
+    "to": 1783,
+    "name": "Quazaq Khanate",
+    "manual": false
+   },
+   {
+    "from": 1783,
+    "to": 1878,
+    "name": "central Asian khanates",
+    "manual": false
+   },
+   {
+    "from": 1878,
+    "to": 1914,
+    "name": "Russian Empire",
+    "manual": false
+   },
+   {
+    "from": 1914,
+    "to": 1920,
+    "name": "Russia",
+    "manual": false
+   },
+   {
+    "from": 1920,
+    "to": 1930,
+    "name": "USSR",
+    "manual": false
+   },
+   {
+    "from": 1930,
+    "to": 1938,
+    "name": "White Russia",
+    "manual": false
+   },
+   {
+    "from": 1938,
+    "to": 1950,
+    "name": "USSR",
+    "manual": false
+   }
+  ],
+  "sources": [
+   {
+    "id": "biskek-wikidata",
+    "event_id": "biskek",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Bişkek",
+    "year": null,
+    "publisher": "Wikidata",
+    "url": "https://www.wikidata.org/wiki/Q9361",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   },
+   {
+    "id": "biskek-trwiki",
+    "event_id": "biskek",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Bişkek",
+    "year": null,
+    "publisher": "Vikipedi",
+    "url": "https://tr.wikipedia.org/wiki/Bi%C5%9Fkek",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   }
+  ],
+  "needs_review": false
+ },
+ {
+  "id": "kasgar",
+  "name": "Kaşgar",
+  "wikidata_id": "Q170521",
+  "lng": 75.983333,
+  "lat": 39.45,
+  "summary": "Kaşgar (Uygur Arap yazısı: قەشقەر; Uygur Latin yazısı: Qeshqer; Çince (basitleştirilmiş): 喀什噶尔; Çince (geleneksel): 喀什噶爾; pinyin: Kāshígá'ěr ya da 喀什 Kāshí), Çin'de Sincan Uygur Özerk Bölgesi'nin batısında yer alan tarihi bir vaha şehridir.",
+  "content_lang": "tr",
+  "periods": [],
+  "other_names": [],
+  "rulers": [
+   {
+    "from": -500,
+    "to": -400,
+    "name": null,
+    "manual": false
+   },
+   {
+    "from": -400,
+    "to": -323,
+    "name": "Proto-Tibetan cultures",
+    "manual": false
+   },
+   {
+    "from": -323,
+    "to": -200,
+    "name": null,
+    "manual": false
+   },
+   {
+    "from": -200,
+    "to": -100,
+    "name": "Scythians",
+    "manual": false
+   },
+   {
+    "from": -100,
+    "to": -1,
+    "name": "Kushan Empire",
+    "manual": false
+   },
+   {
+    "from": -1,
+    "to": 100,
+    "name": null,
+    "manual": false
+   },
+   {
+    "from": 100,
+    "to": 200,
+    "name": "Kushan Empire",
+    "manual": false
+   },
+   {
+    "from": 200,
+    "to": 700,
+    "name": null,
+    "manual": false
+   },
+   {
+    "from": 700,
+    "to": 800,
+    "name": "Tufan Empire",
+    "manual": false
+   },
+   {
+    "from": 800,
+    "to": 1000,
+    "name": "Tibetan Empire",
+    "manual": false
+   },
+   {
+    "from": 1000,
+    "to": 1100,
+    "name": null,
+    "manual": false
+   },
+   {
+    "from": 1100,
+    "to": 1200,
+    "name": "Karkhanids",
+    "manual": false
+   },
+   {
+    "from": 1200,
+    "to": 1279,
+    "name": "Kara Khitai Khaganate",
+    "manual": false
+   },
+   {
+    "from": 1279,
+    "to": 1492,
+    "name": "Mongol Empire",
+    "manual": false
+   },
+   {
+    "from": 1492,
+    "to": 1530,
+    "name": "Chagatai Khanate",
+    "manual": false
+   },
+   {
+    "from": 1530,
+    "to": 1600,
+    "name": "Bukara Khanate",
+    "manual": false
+   },
+   {
+    "from": 1600,
+    "to": 1815,
+    "name": "central Asian khanates",
+    "manual": false
+   },
+   {
+    "from": 1815,
+    "to": 1914,
+    "name": "Manchu Empire",
+    "manual": false
+   },
+   {
+    "from": 1914,
+    "to": 1950,
+    "name": "Xinjiang",
+    "manual": false
+   }
+  ],
+  "sources": [
+   {
+    "id": "kasgar-wikidata",
+    "event_id": "kasgar",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Kaşgar",
+    "year": null,
+    "publisher": "Wikidata",
+    "url": "https://www.wikidata.org/wiki/Q170521",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   },
+   {
+    "id": "kasgar-trwiki",
+    "event_id": "kasgar",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Kaşgar",
+    "year": null,
+    "publisher": "Vikipedi",
+    "url": "https://tr.wikipedia.org/wiki/Ka%C5%9Fgar",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   }
+  ],
+  "needs_review": false
+ },
+ {
+  "id": "dunhuang",
+  "name": "Dunhuang",
+  "wikidata_id": "Q319114",
+  "lng": 94.663888888,
+  "lat": 40.141111111,
+  "summary": "Dunhuang (Çince: 敦煌市; pinyin: Dūnhuáng shì) Çin'in Kansu eyaletinde bulunan bir şehirdir. Şehir, tarihi önemi olan bir vahada kurulmuştur. Şehrin nüfusu 2010 yılı itibarı ile 186,027'dir.",
+  "content_lang": "tr",
+  "periods": [],
+  "other_names": [],
+  "rulers": [
+   {
+    "from": -500,
+    "to": -400,
+    "name": "Proto-Altaic pastoralists",
+    "manual": false
+   },
+   {
+    "from": -400,
+    "to": -323,
+    "name": "Xiongnu",
+    "manual": false
+   },
+   {
+    "from": -323,
+    "to": -200,
+    "name": null,
+    "manual": false
+   },
+   {
+    "from": -200,
+    "to": -100,
+    "name": "Yuezhi",
+    "manual": false
+   },
+   {
+    "from": -100,
+    "to": -1,
+    "name": null,
+    "manual": false
+   },
+   {
+    "from": -1,
+    "to": 300,
+    "name": "Han",
+    "manual": false
+   },
+   {
+    "from": 300,
+    "to": 400,
+    "name": "Jin",
+    "manual": false
+   },
+   {
+    "from": 400,
+    "to": 500,
+    "name": "Northern Liang",
+    "manual": false
+   },
+   {
+    "from": 500,
+    "to": 700,
+    "name": null,
+    "manual": false
+   },
+   {
+    "from": 700,
+    "to": 800,
+    "name": "Karluks",
+    "manual": false
+   },
+   {
+    "from": 800,
+    "to": 1000,
+    "name": "Tibetan Empire",
+    "manual": false
+   },
+   {
+    "from": 1000,
+    "to": 1279,
+    "name": "Xixia",
+    "manual": false
+   },
+   {
+    "from": 1279,
+    "to": 1492,
+    "name": "Mongol Empire",
+    "manual": false
+   },
+   {
+    "from": 1492,
+    "to": 1530,
+    "name": "Chagatai Khanate",
+    "manual": false
+   },
+   {
+    "from": 1530,
+    "to": 1600,
+    "name": null,
+    "manual": false
+   },
+   {
+    "from": 1600,
+    "to": 1783,
+    "name": "central Asian khanates",
+    "manual": false
+   },
+   {
+    "from": 1783,
+    "to": 1815,
+    "name": "Qing Empire",
+    "manual": false
+   },
+   {
+    "from": 1815,
+    "to": 1920,
+    "name": "Manchu Empire",
+    "manual": false
+   },
+   {
+    "from": 1920,
+    "to": 1938,
+    "name": "Chinese Warlords",
+    "manual": false
+   },
+   {
+    "from": 1938,
+    "to": 1945,
+    "name": "Chinese warlords",
+    "manual": false
+   },
+   {
+    "from": 1945,
+    "to": 1950,
+    "name": "China",
+    "manual": false
+   }
+  ],
+  "sources": [
+   {
+    "id": "dunhuang-wikidata",
+    "event_id": "dunhuang",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Dunhuang",
+    "year": null,
+    "publisher": "Wikidata",
+    "url": "https://www.wikidata.org/wiki/Q319114",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   },
+   {
+    "id": "dunhuang-trwiki",
+    "event_id": "dunhuang",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Dunhuang",
+    "year": null,
+    "publisher": "Vikipedi",
+    "url": "https://tr.wikipedia.org/wiki/Dunhuang",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   }
+  ],
+  "needs_review": false
+ },
+ {
+  "id": "sian",
+  "name": "Şian",
+  "wikidata_id": "Q5826",
+  "lng": 108.942222222,
+  "lat": 34.261111111,
+  "summary": "Şian (Çince: 西安; pinyin: Xī'ān), Çin'in Şensi eyaletinin başkentidir. Guanzhong ovasında yer alan bir alt eyalet şehri olan Şian, Çin'in batısında Çongçing ve Çengdu'dan sonra en kalabalık üçüncü şehir ve aynı zamanda Çin'in kuzeybatısındaki en kalabalık şehirdir.",
+  "content_lang": "tr",
+  "periods": [],
+  "other_names": [
+   "Chang'an"
+  ],
+  "rulers": [
+   {
+    "from": -500,
+    "to": -323,
+    "name": "Zhou states",
+    "manual": false
+   },
+   {
+    "from": -323,
+    "to": -200,
+    "name": "Qin",
+    "manual": false
+   },
+   {
+    "from": -200,
+    "to": -1,
+    "name": "Han Empire",
+    "manual": false
+   },
+   {
+    "from": -1,
+    "to": 300,
+    "name": "Han",
+    "manual": false
+   },
+   {
+    "from": 300,
+    "to": 500,
+    "name": "Jin",
+    "manual": false
+   },
+   {
+    "from": 500,
+    "to": 600,
+    "name": "Toba Wei",
+    "manual": false
+   },
+   {
+    "from": 600,
+    "to": 800,
+    "name": "Sui Empire",
+    "manual": false
+   },
+   {
+    "from": 800,
+    "to": 1000,
+    "name": "Tang Empire",
+    "manual": false
+   },
+   {
+    "from": 1000,
+    "to": 1279,
+    "name": "Song Empire",
+    "manual": false
+   },
+   {
+    "from": 1279,
+    "to": 1492,
+    "name": "Mongol Empire",
+    "manual": false
+   },
+   {
+    "from": 1492,
+    "to": 1500,
+    "name": "Ming Empire",
+    "manual": false
+   },
+   {
+    "from": 1500,
+    "to": 1650,
+    "name": "Ming Chinese Empire",
+    "manual": false
+   },
+   {
+    "from": 1650,
+    "to": 1783,
+    "name": "Manchu Empire",
+    "manual": false
+   },
+   {
+    "from": 1783,
+    "to": 1815,
+    "name": "Qing Empire",
+    "manual": false
+   },
+   {
+    "from": 1815,
+    "to": 1920,
+    "name": "Manchu Empire",
+    "manual": false
+   },
+   {
+    "from": 1920,
+    "to": 1938,
+    "name": "Chinese Warlords",
+    "manual": false
+   },
+   {
+    "from": 1938,
+    "to": 1945,
+    "name": "Chinese warlords",
+    "manual": false
+   },
+   {
+    "from": 1945,
+    "to": 1950,
+    "name": "China",
+    "manual": false
+   }
+  ],
+  "sources": [
+   {
+    "id": "sian-wikidata",
+    "event_id": "sian",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Şian",
+    "year": null,
+    "publisher": "Wikidata",
+    "url": "https://www.wikidata.org/wiki/Q5826",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   },
+   {
+    "id": "sian-trwiki",
+    "event_id": "sian",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Şian",
+    "year": null,
+    "publisher": "Vikipedi",
+    "url": "https://tr.wikipedia.org/wiki/%C5%9Eian",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false
+   }
+  ],
+  "needs_review": true
+ }
+]

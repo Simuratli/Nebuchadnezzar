@@ -1,5 +1,6 @@
 /**
- * Builds data/seed/{events,sources,people}.json from Wikidata and Wikipedia.
+ * Builds data/seed/{events,sources}.json from Wikidata and Wikipedia.
+ * People and cities come from scripts/fetch-entities.ts, which reads this output.
  *
  *   npm run data:wikidata
  *
@@ -8,14 +9,12 @@
  * touched. Wikipedia intro text is CC BY-SA; each event cites its article.
  */
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
-import { join, resolve } from "node:path";
+import { join } from "node:path";
 import {
   eventSchema,
-  personSchema,
   sourceSchema,
   type Category,
   type HistoricalEvent,
-  type Person,
   type Source,
 } from "../src/lib/types";
 import {
@@ -28,52 +27,26 @@ import {
   trimToSentence,
   wikidataTimeToYear,
 } from "./wikidata-utils";
+import {
+  cacheDir,
+  cachedSparql,
+  diskMap,
+  fetchExtracts,
+  root,
+  seedDir,
+  sparql,
+  wikiUri,
+  wikiUrl,
+  type Binding,
+} from "./wikidata-client";
 
-const UA = "ZamanAtlasi/0.1 (historical map project; data preparation script)";
-const SPARQL = "https://query.wikidata.org/sparql";
 const MIN_YEAR = -500;
 const MAX_YEAR = 1950;
 // Sitelink counts favour big modern cities, so each century has a quota per category.
 const CENTURY_CAPS: Record<Category, number> = { savas: 14, kurulus: 5, kultur: 5, bilim: 3, antlasma: 4, isyan: 4, goc: 2, diger: 0 };
-const DELAY_MS = 1500;
 const GRID: Record<string, [number, number]> = { osmanli: [3, 3], "ipek-yolu": [3, 1] };
 
-const root = resolve(import.meta.dirname, "..");
-const seedDir = join(root, "data", "seed");
-const cacheDir = join(root, ".cache", "wikidata");
 const accessed = new Date().toISOString().slice(0, 10);
-
-const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
-
-/** Sequential GET that retries transient errors, honouring Retry-After. */
-async function getJson<T>(url: string, attempt = 0): Promise<T> {
-  const res = await fetch(url, {
-    headers: { "User-Agent": UA, Accept: "application/sparql-results+json, application/json" },
-  });
-  if ([429, 500, 502, 503, 504].includes(res.status) && attempt < 5) {
-    const wait = Number(res.headers.get("retry-after")) || 15 * (attempt + 1);
-    console.warn(`  HTTP ${res.status}, waiting ${wait}s`);
-    await sleep(wait * 1000);
-    return getJson<T>(url, attempt + 1);
-  }
-  if (!res.ok) throw new Error(`${url.slice(0, 120)}: HTTP ${res.status}`);
-  try {
-    return (await res.json()) as T;
-  } catch (e) {
-    // WDQS streams results, so a server-side timeout arrives as HTTP 200 with truncated JSON.
-    if (attempt >= 3) throw e;
-    console.warn("  yanit yarim kaldi, yeniden deneniyor");
-    await sleep(10_000 * (attempt + 1));
-    return getJson<T>(url, attempt + 1);
-  }
-}
-
-type Binding = Record<string, { value: string } | undefined>;
-async function sparql(query: string): Promise<Binding[]> {
-  const data = await getJson<{ results: { bindings: Binding[] } }>(`${SPARQL}?query=${encodeURIComponent(query)}`);
-  await sleep(DELAY_MS);
-  return data.results.bindings;
-}
 
 type Group = { name: string; category: Category; types: string[]; dateProps: string[]; minLinks: number };
 const GROUPS: Group[] = [
@@ -139,13 +112,6 @@ async function fetchPrecisions(items: Raw[]): Promise<void> {
     }
   }
   for (const r of items) r.date_precision = precisionToDate(known[r.qid] ?? 0);
-}
-
-/** JSON map persisted on disk, so reruns only ask for what is new. */
-function diskMap<T>(name: string) {
-  const file = join(cacheDir, name);
-  const data: Record<string, T> = existsSync(file) ? (JSON.parse(readFileSync(file, "utf8")) as Record<string, T>) : {};
-  return { data, save: () => writeFileSync(file, JSON.stringify(data)) };
 }
 
 type Enrichment = Pick<Raw, "labels" | "desc" | "trTitle" | "enTitle" | "image">;
@@ -225,15 +191,6 @@ function parseRow(b: Binding, category: Category, dateProp: string): Raw | null 
   };
 }
 
-/** Query results are cached on disk so a timeout late in the run does not lose earlier work. */
-async function cachedSparql(key: string, query: string): Promise<Binding[]> {
-  const file = join(cacheDir, `${key}.json`);
-  if (existsSync(file)) return JSON.parse(readFileSync(file, "utf8")) as Binding[];
-  const rows = await sparql(query);
-  writeFileSync(file, JSON.stringify(rows));
-  return rows;
-}
-
 async function fetchCandidates(): Promise<Map<string, Raw>> {
   mkdirSync(cacheDir, { recursive: true });
   const all = new Map<string, Raw>();
@@ -271,35 +228,6 @@ async function fetchCandidates(): Promise<Map<string, Raw>> {
   return all;
 }
 
-type ExtractResponse = {
-  query?: {
-    normalized?: { from: string; to: string }[];
-    redirects?: { from: string; to: string }[];
-    pages?: Record<string, { title: string; extract?: string }>;
-  };
-};
-
-/** Fetches lead sections in batches of 20 (the API limit for exintro). */
-async function fetchExtracts(lang: "tr" | "en", titles: string[]): Promise<Map<string, string>> {
-  const cache = diskMap<string>(`extracts-${lang}.json`);
-  const todo = titles.filter((t) => cache.data[t] === undefined);
-  for (let i = 0; i < todo.length; i += 20) {
-    const batch = todo.slice(i, i + 20);
-    const url = `https://${lang}.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&exintro=1&explaintext=1&exlimit=20&redirects=1&maxlag=5&titles=${encodeURIComponent(batch.join("|"))}`;
-    const q = (await getJson<ExtractResponse>(url)).query;
-    const byTitle = new Map(Object.values(q?.pages ?? {}).map((p) => [p.title, p.extract]));
-    for (const t of batch) {
-      let cur = t;
-      for (const n of q?.normalized ?? []) if (n.from === cur) cur = n.to;
-      for (const r of q?.redirects ?? []) if (r.from === cur) cur = r.to;
-      cache.data[t] = byTitle.get(cur) ?? "";
-    }
-    cache.save();
-    await sleep(300);
-  }
-  return new Map(titles.filter((t) => cache.data[t]).map((t) => [t, cache.data[t]]));
-}
-
 type KeyEvent = {
   enwiki: string;
   category: Category;
@@ -309,8 +237,6 @@ type KeyEvent = {
   line?: [number, number][];
   regions?: HistoricalEvent["region_tags"];
 };
-
-const wikiUri = (title: string) => `<https://en.wikipedia.org/wiki/${encodeURIComponent(title.replaceAll(" ", "_")).replace(/%3A/g, ":")}>`;
 
 /**
  * Curated events that the area queries miss, usually because Wikidata has no
@@ -412,7 +338,6 @@ function toSources(r: Raw, title: string): Source[] {
     accessed_at: accessed,
     needs_review: false,
   };
-  const wikiUrl = (lang: string, t: string) => `https://${lang}.wikipedia.org/wiki/${encodeURIComponent(t.replaceAll(" ", "_"))}`;
   const out: Source[] = [
     { ...common, id: `${r.qid}-wikidata`, title, publisher: "Wikidata", url: `https://www.wikidata.org/wiki/${r.qid}` },
   ];
@@ -421,43 +346,9 @@ function toSources(r: Raw, title: string): Source[] {
   return out;
 }
 
-async function fetchPeople(): Promise<Person[]> {
-  const list = JSON.parse(readFileSync(join(root, "data", "manual", "people.json"), "utf8")) as { id: string; enwiki: string }[];
-  const out: Person[] = [];
-  for (const p of list) {
-    const rows = await cachedSparql(
-      `person-${p.id}`,
-      `SELECT ?item ?trLabel ?enLabel ?birth ?death ?human WHERE {
-        ${wikiUri(p.enwiki)} schema:about ?item.
-        OPTIONAL { ?item rdfs:label ?trLabel FILTER(LANG(?trLabel) = "tr") }
-        OPTIONAL { ?item rdfs:label ?enLabel FILTER(LANG(?enLabel) = "en") }
-        OPTIONAL { ?item wdt:P569 ?birth }
-        OPTIONAL { ?item wdt:P570 ?death }
-        OPTIONAL { ?item wdt:P31 wd:Q5. BIND(1 AS ?human) }
-      } LIMIT 1`,
-    );
-    const b = rows[0];
-    if (!b?.human) {
-      console.warn(`KISI ATLANDI: ${p.enwiki}`);
-      continue;
-    }
-    out.push({
-      id: p.id,
-      name: b.trLabel?.value ?? b.enLabel?.value ?? p.enwiki,
-      birth_year: b.birth ? wikidataTimeToYear(b.birth.value) : null,
-      death_year: b.death ? wikidataTimeToYear(b.death.value) : null,
-      wikidata_id: b.item?.value.split("/").pop() ?? null,
-    });
-  }
-  return out;
-}
-
 async function main() {
   mkdirSync(seedDir, { recursive: true });
   mkdirSync(cacheDir, { recursive: true });
-  const people = (await fetchPeople()).map((p) => personSchema.parse(p));
-  writeFileSync(join(seedDir, "people.json"), `${JSON.stringify(people, null, 1)}\n`);
-
   const candidates = await fetchCandidates();
   console.log(`Toplam aday: ${candidates.size}`);
   await fetchPrecisions([...candidates.values()]);
@@ -509,7 +400,7 @@ async function main() {
     for (const e of events) for (const k of f(e)) m[k] = (m[k] ?? 0) + 1;
     return m;
   };
-  console.log(`Olay: ${events.length}, kaynak: ${sources.length}, kisi: ${people.length}`);
+  console.log(`Olay: ${events.length}, kaynak: ${sources.length}`);
   console.log("Kategori:", JSON.stringify(count((e) => [e.category])));
   console.log("Bolge:", JSON.stringify(count((e) => e.region_tags)));
   console.log("Turkce:", events.filter((e) => e.content_lang === "tr").length, "| needs_review:", events.filter((e) => e.needs_review).length);
