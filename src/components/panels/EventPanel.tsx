@@ -4,7 +4,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { useCallback, useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import { CATEGORY_META } from "@/lib/categories";
-import type { EventDetail } from "@/lib/types";
+import type { EventDetail, Person } from "@/lib/types";
 import { formatYearRange } from "@/lib/year";
 import { useAtlas } from "@/store/atlas";
 import { CollectionControls } from "./CollectionControls";
@@ -18,11 +18,12 @@ const commonsPage = (imageUrl: string) => {
   return file ? `https://commons.wikimedia.org/wiki/File:${file}` : imageUrl;
 };
 
-export function EventPanel() {
+export function EventPanel({ people }: { people: Person[] }) {
   const t = useTranslations();
   const locale = useLocale();
   const eventId = useAtlas((s) => s.eventId);
   const selectEvent = useAtlas((s) => s.selectEvent);
+  const selectPerson = useAtlas((s) => s.selectPerson);
   const [state, setState] = useState<State>({ status: "loading" });
   const [attempt, setAttempt] = useState(0);
 
@@ -101,6 +102,21 @@ export function EventPanel() {
               )}
             </div>
             {state.event.description && <p className="mt-2 text-xs text-muted">{t("event.wikiLicense")}</p>}
+
+            {people.some((p) => p.events.some((l) => l.event_id === state.event.id)) && (
+              <section className="mt-4 text-sm">
+                <h3 className="mb-1 font-medium">{t("event.people")}</h3>
+                <div className="flex flex-wrap gap-2">
+                  {people
+                    .filter((p) => p.events.some((l) => l.event_id === state.event.id))
+                    .map((p) => (
+                      <button key={p.id} type="button" onClick={() => selectPerson(p.id)} data-testid="event-person" className="rounded-full border border-line px-3 py-1 hover:bg-surface-2">
+                        {p.name}
+                      </button>
+                    ))}
+                </div>
+              </section>
+            )}
 
             <CollectionControls eventId={state.event.id} />
             <SourceList sources={state.event.sources} />

@@ -73,6 +73,22 @@ describe("seed data", () => {
     for (const t of tours) for (const s of t.steps) if (s.event_id) expect(eventIds.has(s.event_id), s.title).toBe(true);
   });
 
+  it("links people only to existing events and flags hand-made links", () => {
+    const eventIds = new Set(events.map((e) => e.id));
+    for (const p of people) {
+      for (const l of p.events) expect(eventIds.has(l.event_id), `${p.id} -> ${l.event_id}`).toBe(true);
+      if (p.events.some((l) => l.manual)) expect(p.needs_review, p.id).toBe(true);
+    }
+    expect(people.reduce((n, p) => n + p.events.length, 0)).toBeGreaterThanOrEqual(30);
+  });
+
+  it("resolves the people that a name search once mismatched", () => {
+    const byId = new Map(people.map((p) => [p.id, p]));
+    expect(byId.get("zhang-qian")?.death_year).toBe(-114);
+    expect(byId.get("timur")?.birth_year).toBe(1336);
+    expect(byId.get("cengiz-han")?.death_year).toBe(1227);
+  });
+
   it("covers every focus region and the BCE period", () => {
     for (const region of ["kafkasya", "osmanli", "ipek-yolu"]) {
       expect(events.filter((e) => (e.region_tags as string[]).includes(region)).length, region).toBeGreaterThanOrEqual(15);

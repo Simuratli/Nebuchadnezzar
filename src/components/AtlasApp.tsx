@@ -9,6 +9,7 @@ import { CollectionPanel } from "@/components/panels/CollectionPanel";
 import { EventPanel } from "@/components/panels/EventPanel";
 import { FiltersPanel } from "@/components/panels/FiltersPanel";
 import { NavButtons } from "@/components/panels/NavButtons";
+import { PersonPanel } from "@/components/panels/PersonPanel";
 import { RoutesPanel } from "@/components/panels/RoutesPanel";
 import { SearchBox } from "@/components/panels/SearchBox";
 import { SidePanel } from "@/components/panels/SidePanel";
@@ -116,7 +117,7 @@ export function AtlasApp({ data }: { data: AtlasData }) {
       <header className="z-40 flex flex-wrap items-center gap-2 border-b border-line bg-surface px-3 py-2 md:px-4">
         <h1 className="font-serif text-xl font-semibold">{t("app.title")}</h1>
         <div className="order-last w-full md:order-none md:ml-4 md:w-auto md:flex-1">
-          <SearchBox events={data.events} people={data.people} routes={data.routes} cities={data.cities} />
+          <SearchBox events={data.events} people={data.people} cities={data.cities} />
         </div>
         <div className="ml-auto flex min-w-0 items-center gap-2">
           <NavButtons />
@@ -155,7 +156,8 @@ export function AtlasApp({ data }: { data: AtlasData }) {
           </SidePanel>
         )}
         <TourPlayer tours={data.tours} events={data.events} />
-        <EventPanel />
+        <EventPanel people={data.people} />
+        <PersonPanel people={data.people} events={data.events} routes={data.routes} />
         <CityPanel cities={data.cities} events={data.events} />
       </main>
       <section id="timeline" aria-label={t("timeline.label")} className="z-40 border-t border-line bg-surface px-3 py-2 md:px-4">

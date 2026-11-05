@@ -60,7 +60,8 @@
     "wikiLicense": "Metin Vikipedi'den alınmıştır (CC BY-SA).",
     "noSummary": "Bu olay için henüz özet yok.",
     "sources": "Kaynaklar",
-    "noSources": "Bu olay için kaynak yok."
+    "noSources": "Bu olay için kaynak yok.",
+    "people": "İlgili kişiler"
   },
   "source": {
     "birincil": "Birincil",
@@ -168,5 +169,19 @@
     "manualRuler": "elle düzeltildi",
     "events": "Yakın çevresindeki olaylar (≈{km} km)",
     "noEvents": "Bu çevrede kayıtlı olay yok."
+  },
+  "person": {
+    "panel": "Kişi ayrıntıları",
+    "kind": "Kişi",
+    "unknown": "?",
+    "needsReview": "Bu kişinin bazı bilgileri henüz gözden geçirilmedi.",
+    "noSummary": "Bu kişi için henüz özet yok.",
+    "goToEra": "Dönemine git ({year})",
+    "showRoute": "Rotayı göster: {title}",
+    "born": "Doğum yeri",
+    "died": "Ölüm yeri",
+    "events": "İlgili olaylar",
+    "noEvents": "Bu kişiye bağlı olay henüz yok.",
+    "manualLink": "elle bağlandı"
   }
 }

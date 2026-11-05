@@ -34,6 +34,14 @@ Seed verisi ve sınır dosyaları repoda hazır gelir, ek ayar gerekmez.
 - İstekler sıralıdır. Aynı anda birden fazla kopya çalıştırmayın.
 - Rotalar (`routes.json`) ve turlar (`tours.json`) elle yazılmıştır, script bunlara dokunmaz. Göç olaylarının çizgileri `data/manual/migrations.json`, kişi listesi `data/manual/people.json` dosyasındadır.
 
+### Kişiler ve şehirler: `npm run data:entities`
+
+`scripts/fetch-entities.ts`, olay ve sınır verisini okuyarak `data/seed/people.json` ile `cities.json` dosyalarını üretir. Bu yüzden diğer iki scriptten sonra çalıştırılır.
+
+- Kişi-olay bağları Wikidata'dan gelir, `data/manual/person-events.json` ile tamamlanır. Elle eklenenler arayüzde "elle bağlandı" olarak görünür.
+- Şehirlerin eski adları `data/manual/cities.json` dosyasındadır. Sınır yılı Wikidata ile eşleşmeyen dönemler "doğrulanmadı" olarak görünür.
+- Şehirlerin yönetim listesi, şehir konumu sınır dosyalarıyla kesiştirilerek hesaplanır. Bilinen hatalar `data/manual/ruler-overrides.json` ile düzeltilir ve "elle düzeltildi" olarak görünür.
+
 ### Sınırlar: `npm run data:boundaries`
 
 `scripts/prepare-boundaries.ts`, [historical-basemaps](https://github.com/aourednik/historical-basemaps) dosyalarını indirir, mapshaper ile sadeleştirir ve `public/data/boundaries/` altına manifest ile birlikte yazar. Seçilen yıl için, o yıldan önceki en yakın dosya gösterilir.
@@ -45,6 +53,7 @@ Seed verisi ve sınır dosyaları repoda hazır gelir, ek ayar gerekmez.
 - **Wikidata ve Vikipedi kaynakları** `reliability: 1` (en düşük) taşır. Akademik kaynaklar `data/seed/sources.json` dosyasına elle eklenebilir. Uydurma kaynak eklemeyin; bilinmeyen alanları `null` bırakın.
 - **Yıllar** tarihsel sayımla tutulur: negatif değer MÖ'dür ve yıl 0 yoktur.
 - **Sınırlar yaklaşıktır.** Veri setinin kendisi de akademik kullanımdan önce başka kaynaklarla karşılaştırılmasını önerir. Kesik çizgi, veri setinde "yaklaşık" işaretli sınırı gösterir.
+- **Sınır verisinde bilinen hatalar var.** Örneğin Güney Kafkasya 1815–1900 haritalarında "Persia", İstanbul 1914 haritasında "Bulgaria" içinde görünür. Şehir panelindeki listede bu tür hatalar elle düzeltilmiştir, ancak haritanın kendisi kaynak veriyi olduğu gibi gösterir.
 
 ## Supabase'e geçiş
 

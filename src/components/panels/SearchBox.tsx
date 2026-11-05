@@ -4,13 +4,13 @@ import { useTranslations } from "next-intl";
 import { useId, useMemo, useRef, useState } from "react";
 import { CATEGORY_META } from "@/lib/categories";
 import { createSearch, type SearchResult } from "@/lib/search";
-import type { City, EventSummary, HistoricalRoute, Person } from "@/lib/types";
+import type { City, EventSummary, Person } from "@/lib/types";
 import { formatYear, formatYearRange } from "@/lib/year";
 import { useAtlas } from "@/store/atlas";
 
-type Props = { events: EventSummary[]; people: Person[]; routes: HistoricalRoute[]; cities: City[] };
+type Props = { events: EventSummary[]; people: Person[]; cities: City[] };
 
-export function SearchBox({ events, people, routes, cities }: Props) {
+export function SearchBox({ events, people, cities }: Props) {
   const t = useTranslations();
   const era = { bc: t("era.bc"), ad: t("era.ad") };
   const listId = useId();
@@ -30,16 +30,7 @@ export function SearchBox({ events, people, routes, cities }: Props) {
       atlas.selectCity(result.item.id);
       atlas.flyTo({ lng: result.item.lng, lat: result.item.lat });
     } else {
-      // A person with a route goes straight to it; others jump to their lifetime.
-      const route = routes.find((r) => r.person_id === result.item.id);
-      if (route) {
-        atlas.setSidePanel("routes");
-        atlas.setRoute(route.id);
-      } else {
-        const { birth_year: b, death_year: d } = result.item;
-        const year = b !== null && d !== null ? Math.round((b + d) / 2) : (b ?? d);
-        if (year !== null) atlas.setYear(year);
-      }
+      atlas.selectPerson(result.item.id);
     }
     setQuery("");
     setOpen(false);

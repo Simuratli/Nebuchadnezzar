@@ -22,7 +22,14 @@ export function RoutesPanel({ routes, people }: { routes: HistoricalRoute[]; peo
           <article key={route.id} className="rounded border border-line p-3" data-testid="route-item">
             <h3 className="font-serif text-base font-semibold">{route.title}</h3>
             <p className="text-xs text-muted">
-              {person && `${person.name} · `}
+              {person && (
+                <>
+                  <button type="button" onClick={() => useAtlas.getState().selectPerson(person.id)} data-testid="route-person" className="underline">
+                    {person.name}
+                  </button>
+                  {" · "}
+                </>
+              )}
               {formatYearRange(route.start_year, route.end_year, era)}
             </p>
             {route.needs_review && <p className="mt-2 rounded bg-warn-bg px-2 py-1 text-xs text-warn-ink">{t("routes.reviewNote")} {t("routes.noSource")}</p>}

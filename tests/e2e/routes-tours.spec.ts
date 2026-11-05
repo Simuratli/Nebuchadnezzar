@@ -36,13 +36,6 @@ test.describe("rotalar", () => {
     await expect(page.getByTestId("route-item").first()).toContainText("uzman kontrolü");
   });
 
-  test("kişi aramasından rota açılır", async ({ page }) => {
-    await page.goto("/tr?y=1000");
-    await page.getByTestId("search").fill("evliya");
-    await page.getByTestId("search-result").first().click();
-    await expect(page).toHaveURL(/route=evliya-kafkasya/);
-    await expect(page.getByTestId("route-waypoints")).toContainText("Erzurum");
-  });
 });
 
 test.describe("turlar", () => {
