@@ -92,6 +92,15 @@ export const citySchema = z.object({
 });
 export type City = z.infer<typeof citySchema>;
 
+export const correctionSchema = z.object({
+  id: z.string(),
+  slices: z
+    .array(z.object({ from: year, to: year, name: z.string(), color_key: z.string(), note: z.string(), sources: z.array(sourceSchema) }))
+    .min(1),
+  needs_review: z.boolean(),
+});
+export type Correction = z.infer<typeof correctionSchema>;
+
 export const routeSchema = z.object({
   id: z.string(),
   person_id: z.string().nullable(),

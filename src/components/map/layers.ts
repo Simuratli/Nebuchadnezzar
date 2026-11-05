@@ -125,6 +125,38 @@ export function installLayers(map: MlMap, dark: boolean) {
     },
   });
 
+  // Fill only. The groups are today's admin units, so outlining them would draw internal
+  // borders that did not exist; neighbours under one polity blend into a single colour.
+  map.addSource("corrections", { type: "geojson", data: EMPTY, attribution: "Natural Earth" });
+  map.addLayer(
+    {
+      id: "correction-fill",
+      type: "fill",
+      source: "corrections",
+      // Antialiasing would show the shared edges of neighbouring groups as faint lines.
+      paint: { "fill-color": ["get", "color"], "fill-opacity": dark ? 0.26 : 0.22, "fill-antialias": false },
+    },
+    before,
+  );
+  map.addLayer({
+    id: "correction-label",
+    type: "symbol",
+    source: "corrections",
+    filter: ["==", ["get", "label"], true],
+    layout: {
+      "text-field": ["get", "name"],
+      "text-font": ["Noto Sans Regular"],
+      "text-size": 12,
+      "text-max-width": 8,
+      "text-padding": 8,
+    },
+    paint: {
+      "text-color": dark ? "#e6dcc6" : "#3d3120",
+      "text-halo-color": dark ? "#17140f" : "#fbf6ea",
+      "text-halo-width": 1.4,
+    },
+  });
+
   map.addSource("cities", { type: "geojson", data: EMPTY });
   map.addLayer({
     id: "city-dot",

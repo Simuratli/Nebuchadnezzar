@@ -34,6 +34,12 @@ Seed verisi ve sınır dosyaları repoda hazır gelir, ek ayar gerekmez.
 - İstekler sıralıdır. Aynı anda birden fazla kopya çalıştırmayın.
 - Rotalar (`routes.json`) ve turlar (`tours.json`) elle yazılmıştır, script bunlara dokunmaz. Göç olaylarının çizgileri `data/manual/migrations.json`, kişi listesi `data/manual/people.json` dosyasındadır.
 
+### Güney Kafkasya düzeltmesi: `npm run data:corrections`
+
+historical-basemaps bu bölgeyi 1800–1920 için hatalı gösterir (örneğin 1914'e kadar "Persia"). `scripts/prepare-corrections.ts`, Natural Earth'ün bugünkü idari birimlerini `data/manual/south-caucasus.json` dosyasındaki gruplara göre birleştirir ve dönemleri antlaşmalarla tarihlendirir. Çizgiler tarihî sınır değil yaklaşıktır; tüm kayıtlar `needs_review` taşır. Kuzey Kafkasya bu katmana dahil değildir.
+
+Sıra önemlidir: `data:corrections`, `data:boundaries`, `data:wikidata`, `data:entities`.
+
 ### Kişiler ve şehirler: `npm run data:entities`
 
 `scripts/fetch-entities.ts`, olay ve sınır verisini okuyarak `data/seed/people.json` ile `cities.json` dosyalarını üretir. Bu yüzden diğer iki scriptten sonra çalıştırılır.
@@ -53,7 +59,7 @@ Seed verisi ve sınır dosyaları repoda hazır gelir, ek ayar gerekmez.
 - **Wikidata ve Vikipedi kaynakları** `reliability: 1` (en düşük) taşır. Akademik kaynaklar `data/seed/sources.json` dosyasına elle eklenebilir. Uydurma kaynak eklemeyin; bilinmeyen alanları `null` bırakın.
 - **Yıllar** tarihsel sayımla tutulur: negatif değer MÖ'dür ve yıl 0 yoktur.
 - **Sınırlar yaklaşıktır.** Veri setinin kendisi de akademik kullanımdan önce başka kaynaklarla karşılaştırılmasını önerir. Kesik çizgi, veri setinde "yaklaşık" işaretli sınırı gösterir.
-- **Sınır verisinde bilinen hatalar var.** Örneğin Güney Kafkasya 1815–1900 haritalarında "Persia", İstanbul 1914 haritasında "Bulgaria" içinde görünür. Şehir panelindeki listede bu tür hatalar elle düzeltilmiştir, ancak haritanın kendisi kaynak veriyi olduğu gibi gösterir.
+- **Sınır verisinde bilinen hatalar var.** Örneğin Güney Kafkasya 1815–1900 haritalarında "Persia", İstanbul 1914 haritasında "Bulgaria" içinde görünür. Güney Kafkasya 1800–1920 elle düzeltilmiştir; bunun dışındaki bölge ve dönemlerde harita kaynak veriyi olduğu gibi gösterir.
 
 ## Supabase'e geçiş
 
@@ -91,3 +97,4 @@ Olay içeriği şu an tek dillidir; içerik çevirisi ayrı bir veri modeli çal
 - **Olay verisi:** Wikidata, CC0.
 - **Görseller:** Wikimedia Commons; lisans her dosyanın kendi sayfasındadır ve panelden bağlantı verilir.
 - **Taban harita:** OpenFreeMap, OpenMapTiles, OpenStreetMap katkıcıları.
+- **Düzeltme katmanı geometrisi:** Natural Earth, kamu malı.

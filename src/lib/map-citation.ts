@@ -1,4 +1,5 @@
 import { formatAccessDate } from "./citation/common";
+import { isCorrectedYear } from "./corrections";
 import { formatYear } from "./year";
 
 export type MapCaptionInput = {
@@ -14,6 +15,9 @@ export type MapCaptionInput = {
 
 export const MAP_ATTRIBUTION =
   "Taban harita: OpenFreeMap, OpenMapTiles, OpenStreetMap katkıcıları. Sınırlar: historical-basemaps (A. Ourednik ve katkıcılar, GPL-3.0), yaklaşıktır.";
+
+export const CORRECTION_ATTRIBUTION =
+  "Güney Kafkasya (1800–1920): elle düzeltilmiştir; bugünkü idari sınırlardan (Natural Earth) türetilmiş, antlaşmalarla tarihlendirilmiştir ve yaklaşıktır.";
 
 const viewTitle = ({ year, year2 }: MapCaptionInput) =>
   year2 === undefined ? `${formatYear(year)} yılı` : `${formatYear(year)} ve ${formatYear(year2)} yılları`;
@@ -34,7 +38,12 @@ export function mapCaption(input: MapCaptionInput): { title: string; lines: stri
       : `Sınır haritaları: ${boundary(input.boundaryYear)} ve ${boundary(input.boundaryYear2)}`;
   return {
     title: `Zaman Atlası: ${viewTitle(input)}`,
-    lines: [boundaryLine, MAP_ATTRIBUTION, `Atıf: ${mapCitation(input)}`],
+    lines: [
+      boundaryLine,
+      MAP_ATTRIBUTION,
+      ...(isCorrectedYear(input.year) || (input.year2 !== undefined && isCorrectedYear(input.year2)) ? [CORRECTION_ATTRIBUTION] : []),
+      `Atıf: ${mapCitation(input)}`,
+    ],
   };
 }
 

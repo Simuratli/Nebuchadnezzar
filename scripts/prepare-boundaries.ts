@@ -7,14 +7,20 @@
  * The source data is GPL-3.0; its LICENSE is copied next to the output.
  */
 import { execFileSync } from "node:child_process";
-import { existsSync, mkdirSync, readdirSync, rmSync, statSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, statSync, writeFileSync } from "node:fs";
 import { join, resolve } from "node:path";
+import { removeSlivers, type AreaFeature } from "./geo-utils";
 
 const REPO = "aourednik/historical-basemaps";
 const RAW = `https://raw.githubusercontent.com/${REPO}/master`;
 const UA = "ZamanAtlasi/0.1 (historical map project; data preparation script)";
 const MIN_YEAR = -500;
 const MAX_YEAR = 1950;
+// Files used for 1800-1919; the correction layer replaces them in its region.
+const CORRECTED_FILES = new Set([1800, 1815, 1878, 1880, 1900, 1914]);
+// Strips left by that cut. About 12,000 km² is well under any polity in the area.
+const SLIVER_BOX = { west: 38.5, south: 38.2, east: 51.5, north: 44.8 };
+const SLIVER_MAX_SQUARE_DEGREES = 1.2;
 
 const root = resolve(import.meta.dirname, "..");
 const cacheDir = join(root, ".cache", "boundaries");
@@ -36,6 +42,8 @@ async function get(url: string): Promise<Response> {
 
 async function main() {
   mkdirSync(cacheDir, { recursive: true });
+  const region = join(root, ".cache", "natural-earth", "region.json");
+  if (!existsSync(region)) throw new Error("Run npm run data:corrections first");
   mkdirSync(outDir, { recursive: true });
   for (const f of readdirSync(outDir)) rmSync(join(outDir, f));
 
@@ -65,10 +73,16 @@ async function main() {
         "-filter-fields", "NAME,SUBJECTO,BORDERPRECISION",
         "-simplify", "dp", "interval=6km", "keep-shapes",
         "-clean", "allow-overlaps",
+        ...(CORRECTED_FILES.has(year) ? ["-erase", region] : []),
         "-o", out, "format=geojson", "precision=0.01", "force",
       ],
       { stdio: ["ignore", "ignore", "pipe"] },
     );
+    if (CORRECTED_FILES.has(year)) {
+      const fc = JSON.parse(readFileSync(out, "utf8")) as { features: AreaFeature[] };
+      fc.features = removeSlivers(fc.features, SLIVER_BOX, SLIVER_MAX_SQUARE_DEGREES);
+      writeFileSync(out, JSON.stringify(fc));
+    }
     manifest.push({ year, file });
     console.log(
       `${String(year).padStart(5)}  ${(statSync(raw).size / 1024).toFixed(0).padStart(5)} KB -> ${(statSync(out).size / 1024).toFixed(0).padStart(4)} KB`,
@@ -81,7 +95,7 @@ async function main() {
     join(outDir, "NOTICE.txt"),
     `Boundary data derived from historical-basemaps by Andre Ourednik and contributors\n` +
       `https://github.com/${REPO} - licensed under GPL-3.0 (see LICENSE in this folder).\n` +
-      `Modifications: filtered to ${MIN_YEAR}..${MAX_YEAR}, unnamed polygons removed, fields reduced, geometry simplified with mapshaper.\n`,
+      `Modifications: filtered to ${MIN_YEAR}..${MAX_YEAR}, unnamed polygons removed, fields reduced, geometry simplified with mapshaper, South Caucasus removed from the 1800-1914 files (see data/manual/south-caucasus.json).\n`,
   );
   console.log(`${manifest.length} files written to ${outDir}`);
 }

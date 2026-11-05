@@ -1,4 +1,4 @@
-/** Pure geometry helpers for scripts/fetch-entities.ts. */
+/** Pure geometry helpers for the data scripts. */
 
 type Ring = number[][];
 type PolygonCoords = Ring[];
@@ -19,6 +19,33 @@ const inPolygon = (p: [number, number], [outer, ...holes]: PolygonCoords) => inR
 
 export function pointInGeometry(p: [number, number], g: AreaGeometry): boolean {
   return g.type === "Polygon" ? inPolygon(p, g.coordinates) : g.coordinates.some((poly) => inPolygon(p, poly));
+}
+
+/** Planar area in square degrees; only used to compare against a small threshold. */
+function ringArea(ring: Ring): number {
+  let sum = 0;
+  for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) sum += (ring[j][0] + ring[i][0]) * (ring[j][1] - ring[i][1]);
+  return Math.abs(sum) / 2;
+}
+
+type Box = { west: number; south: number; east: number; north: number };
+
+/**
+ * Drops polygon parts that are both small and entirely inside the box. Cutting a
+ * region out of a coarse map leaves thin strips along the cut, and each strip would
+ * otherwise still show the old, wrong polity. Larger or outside parts are untouched.
+ */
+export function removeSlivers<T extends AreaFeature>(features: T[], box: Box, maxArea: number): T[] {
+  const isSliver = (poly: PolygonCoords) =>
+    ringArea(poly[0]) < maxArea && poly[0].every(([x, y]) => x >= box.west && x <= box.east && y >= box.south && y <= box.north);
+  return features.flatMap((f) => {
+    if (!f.geometry) return [f];
+    const polys = f.geometry.type === "Polygon" ? [f.geometry.coordinates] : f.geometry.coordinates;
+    const kept = polys.filter((p) => !isSliver(p));
+    if (kept.length === polys.length) return [f];
+    if (kept.length === 0) return [];
+    return [{ ...f, geometry: { type: "MultiPolygon" as const, coordinates: kept } }];
+  });
 }
 
 const rings = (g: AreaGeometry): Ring[] => (g.type === "Polygon" ? g.coordinates : g.coordinates.flat());
@@ -44,11 +71,11 @@ function distanceToGeometry([x, y]: [number, number], g: AreaGeometry): number {
 const COAST_TOLERANCE_DEGREES = 0.5;
 
 /** The authority holding a point in one boundary file, or null when none is near. */
-export function rulerAt(p: [number, number], features: AreaFeature[]): string | null {
+export function rulerAt(p: [number, number], features: AreaFeature[], tolerance = COAST_TOLERANCE_DEGREES): string | null {
   const name = (f: AreaFeature) => f.properties?.SUBJECTO ?? f.properties?.NAME ?? null;
   for (const f of features) if (f.geometry && pointInGeometry(p, f.geometry)) return name(f);
   let best: AreaFeature | null = null;
-  let bestDistance = COAST_TOLERANCE_DEGREES ** 2;
+  let bestDistance = tolerance ** 2;
   for (const f of features) {
     if (!f.geometry) continue;
     const d = distanceToGeometry(p, f.geometry);

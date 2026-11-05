@@ -1,0 +1,113 @@
+{
+  "sources": {
+    "conquest": { "title": "Russian conquest of the Caucasus", "url": "https://en.wikipedia.org/wiki/Russian_conquest_of_the_Caucasus" },
+    "gulistan": { "title": "Treaty of Gulistan", "url": "https://en.wikipedia.org/wiki/Treaty_of_Gulistan" },
+    "turkmenchay": { "title": "Treaty of Turkmenchay", "url": "https://en.wikipedia.org/wiki/Treaty_of_Turkmenchay" },
+    "adrianople": { "title": "Treaty of Adrianople (1829)", "url": "https://en.wikipedia.org/wiki/Treaty_of_Adrianople_(1829)" },
+    "kars": { "title": "Kars oblast", "url": "https://en.wikipedia.org/wiki/Kars_oblast" },
+    "batum": { "title": "Batum oblast", "url": "https://en.wikipedia.org/wiki/Batum_oblast" },
+    "gyumri": { "title": "Gyumri", "url": "https://en.wikipedia.org/wiki/Gyumri" },
+    "akhaltsikhe": { "title": "Akhaltsikhe", "url": "https://en.wikipedia.org/wiki/Akhaltsikhe" },
+    "erivan": { "title": "Erivan Khanate", "url": "https://en.wikipedia.org/wiki/Erivan_Khanate" },
+    "nakhchivan": { "title": "Nakhichevan Khanate", "url": "https://en.wikipedia.org/wiki/Nakhichevan_Khanate" },
+    "adr": { "title": "Azerbaijan Democratic Republic", "url": "https://en.wikipedia.org/wiki/Azerbaijan_Democratic_Republic" },
+    "drg": { "title": "Democratic Republic of Georgia", "url": "https://en.wikipedia.org/wiki/Democratic_Republic_of_Georgia" },
+    "dra": { "title": "First Republic of Armenia", "url": "https://en.wikipedia.org/wiki/First_Republic_of_Armenia" }
+  },
+  "groups": [
+    {
+      "id": "kartli",
+      "units": { "Georgia": ["Tbilisi", "Kakheti", "Kvemo Kartli", "Shida Kartli", "Mtskheta-Mtianeti"], "Armenia": ["Lori", "Tavush"] },
+      "slices": [
+        { "from": 1800, "to": 1801, "name": "Kartli-Kaheti Krallığı", "color_key": "Georgia", "note": "Rusya'nın ilhakından önceki son yıl.", "sources": ["conquest"] },
+        { "from": 1801, "to": 1918, "name": "Rus İmparatorluğu", "color_key": "Russian Empire", "note": "Kartli-Kaheti 1801'de ilhak edildi.", "sources": ["conquest"] },
+        { "from": 1918, "to": 1920, "name": "Gürcistan Demokratik Cumhuriyeti", "color_key": "Georgia", "note": "Lori çevresi Gürcistan ile Ermenistan arasında ihtilaflıydı.", "sources": ["drg"] }
+      ]
+    },
+    {
+      "id": "bati-gurcistan",
+      "units": { "Georgia": ["Imereti", "Samegrelo-Zemo Svaneti", "Racha-Lechkhumi-Kvemo Svaneti", "Guria", "Abkhazia"] },
+      "slices": [
+        { "from": 1800, "to": 1803, "name": "Batı Gürcü prenslikleri", "color_key": "Georgia", "note": "İmereti, Megrelya, Guria ve Abhazya ayrı yönetimlerdi.", "sources": ["conquest"] },
+        { "from": 1803, "to": 1810, "name": "Rus ilhakı sürüyor", "color_key": "Russian Empire", "note": "Megrelya 1803'te, Abhazya 1810'da Rus nüfuzuna girdi. Bu bölgelerin tarihleri tek tek farklıdır.", "sources": ["conquest"] },
+        { "from": 1810, "to": 1918, "name": "Rus İmparatorluğu", "color_key": "Russian Empire", "note": "", "sources": ["conquest"] },
+        { "from": 1918, "to": 1920, "name": "Gürcistan Demokratik Cumhuriyeti", "color_key": "Georgia", "note": "", "sources": ["drg"] }
+      ]
+    },
+    {
+      "id": "meshetya",
+      "units": { "Georgia": ["Samtskhe-Javakheti"] },
+      "slices": [
+        { "from": 1800, "to": 1829, "name": "Osmanlı İmparatorluğu", "color_key": "Ottoman Empire", "note": "", "sources": ["akhaltsikhe"] },
+        { "from": 1829, "to": 1918, "name": "Rus İmparatorluğu", "color_key": "Russian Empire", "note": "Ahıska, 1829 Edirne Antlaşması ile Rusya'ya bırakıldı.", "sources": ["adrianople", "akhaltsikhe"] },
+        { "from": 1918, "to": 1920, "name": "Gürcistan Demokratik Cumhuriyeti", "color_key": "Georgia", "note": "1918'de bölge bir süre Osmanlı denetimine girdi.", "sources": ["drg"] }
+      ]
+    },
+    {
+      "id": "batum",
+      "units": { "Georgia": ["Ajaria"], "Turkey": ["Artvin"] },
+      "slices": [
+        { "from": 1800, "to": 1878, "name": "Osmanlı İmparatorluğu", "color_key": "Ottoman Empire", "note": "", "sources": ["batum"] },
+        { "from": 1878, "to": 1918, "name": "Rus İmparatorluğu", "color_key": "Russian Empire", "note": "Batum oblastı, 1877-78 savaşından sonra kuruldu.", "sources": ["batum"] },
+        { "from": 1918, "to": 1920, "name": "Osmanlı işgali, sonra İngiliz yönetimi", "color_key": "contested", "note": "Batum, 1920 yazında İngilizler tarafından Gürcistan'a bırakıldı.", "sources": ["batum"] }
+      ]
+    },
+    {
+      "id": "kars",
+      "units": { "Turkey": ["Kars", "Ardahan"] },
+      "slices": [
+        { "from": 1800, "to": 1878, "name": "Osmanlı İmparatorluğu", "color_key": "Ottoman Empire", "note": "", "sources": ["kars"] },
+        { "from": 1878, "to": 1918, "name": "Rus İmparatorluğu", "color_key": "Russian Empire", "note": "Kars oblastı 1878'de kuruldu.", "sources": ["kars"] },
+        { "from": 1918, "to": 1920, "name": "Osmanlı işgali, sonra Ermenistan yönetimi", "color_key": "contested", "note": "1918'de Brest-Litovsk ile Osmanlı'ya bırakıldı; 1919'dan sonra bölgede Ermenistan yönetimi kuruldu.", "sources": ["kars"] }
+      ]
+    },
+    {
+      "id": "azerbaycan",
+      "units": { "Azerbaijan": ["Qazax", "Ağstafa", "Tovuz", "Gədəbəy", "Daşkəsən", "Kəlbəcər", "Lankaran", "Qubadli", "Zəngilan", "Balakən", "Zaqatala", "Xaçmaz", "Qusar", "Oğuz", "Şəki", "Qax", "Qəbələ", "Samux", "İmişli", "Biləsuvar", "Cəlilabad", "Yardımlı", "Lerik", "Cəbrayıl", "Füzuli", "Beyləqan", "Astara", "Dəvəçi", "Siyəzən", "Xizı", "Sumqayıt", "Bakı", "Salyan", "Neftçala", "Masallı", "Ağdam", "Tərtər", "Goranboy", "Hajigabul", "Abşeron", "Xanlar", "Kürdəmir", "Zərdab", "Sabirabad", "Shirvan", "Saatlı", "Bərdə", "Şəmkir", "Ağsu", "Şamaxı", "Quba", "Ucar", "Qobustan", "İsmayıllı", "Yevlakh Rayon", "Gəncə", "Mingəçevir", "Göyçay", "Ağdaş", "Ağcabədi", "Yevlakh", "Naftalan"] },
+      "slices": [
+        { "from": 1800, "to": 1804, "name": "Azerbaycan hanlıkları", "color_key": "khanates", "note": "Gence, Karabağ, Şirvan, Şeki, Bakü, Kuba ve Talış gibi hanlıklar; İran nüfuzu ile yerel yönetim bir aradaydı.", "sources": ["gulistan"] },
+        { "from": 1804, "to": 1813, "name": "Rus ilhakı sürüyor", "color_key": "Russian Empire", "note": "Hanlıklar farklı tarihlerde ele geçirildi (Gence 1804, Şirvan ve Bakü 1805-06). 1813 Gülistan Antlaşması bunu tanıdı.", "sources": ["conquest", "gulistan"] },
+        { "from": 1813, "to": 1918, "name": "Rus İmparatorluğu", "color_key": "Russian Empire", "note": "Talış'ın durumu 1828 Türkmençay Antlaşması ile kesinleşti.", "sources": ["gulistan", "turkmenchay"] },
+        { "from": 1918, "to": 1920, "name": "Azerbaycan Demokratik Cumhuriyeti", "color_key": "Azerbaijan", "note": "", "sources": ["adr"] }
+      ]
+    },
+    {
+      "id": "karabag-zengezur",
+      "units": { "Azerbaijan": ["Şuşa", "Xocalı", "Xocavənd", "Stepanakert"], "Armenia": ["Syunik"] },
+      "slices": [
+        { "from": 1800, "to": 1804, "name": "Karabağ Hanlığı", "color_key": "khanates", "note": "", "sources": ["gulistan"] },
+        { "from": 1804, "to": 1813, "name": "Rus ilhakı sürüyor", "color_key": "Russian Empire", "note": "1813 Gülistan Antlaşması Rus egemenliğini tanıdı.", "sources": ["conquest", "gulistan"] },
+        { "from": 1813, "to": 1918, "name": "Rus İmparatorluğu", "color_key": "Russian Empire", "note": "", "sources": ["gulistan"] },
+        { "from": 1918, "to": 1920, "name": "İhtilaflı: Azerbaycan ve Ermenistan", "color_key": "contested", "note": "Karabağ ve Zengezur iki cumhuriyet arasında ihtilaflıydı. Bu alan yalnızca ihtilafı gösterir, bir hak iddiasını değil.", "sources": ["adr", "dra"] }
+      ]
+    },
+    {
+      "id": "nahcivan",
+      "units": { "Azerbaijan": ["Naxçıvan", "Şərur", "Sədərək", "Kangarli", "Babək", "Şahbuz", "Culfa", "Ordubad"] },
+      "slices": [
+        { "from": 1800, "to": 1828, "name": "Nahçıvan Hanlığı (İran)", "color_key": "Persia", "note": "1808'de Ruslar kısa süre işgal etti, Gülistan ile İran'a geri döndü.", "sources": ["nakhchivan"] },
+        { "from": 1828, "to": 1918, "name": "Rus İmparatorluğu", "color_key": "Russian Empire", "note": "1828 Türkmençay Antlaşması ile Rusya'ya geçti.", "sources": ["turkmenchay", "nakhchivan"] },
+        { "from": 1918, "to": 1920, "name": "İhtilaflı: Azerbaycan, Ermenistan ve Osmanlı birlikleri", "color_key": "contested", "note": "Bu alan yalnızca ihtilafı gösterir, bir hak iddiasını değil.", "sources": ["adr", "dra"] }
+      ]
+    },
+    {
+      "id": "erivan",
+      "units": { "Armenia": ["Erevan", "Ararat", "Armavir", "Aragatsotn", "Kotayk", "Gegharkunik", "Vayots Dzor"], "Turkey": ["Iğdir"] },
+      "slices": [
+        { "from": 1800, "to": 1828, "name": "Erivan Hanlığı (İran)", "color_key": "Persia", "note": "", "sources": ["erivan"] },
+        { "from": 1828, "to": 1918, "name": "Rus İmparatorluğu", "color_key": "Russian Empire", "note": "1828 Türkmençay Antlaşması ile Rusya'ya geçti.", "sources": ["turkmenchay", "erivan"] },
+        { "from": 1918, "to": 1920, "name": "Ermenistan Demokratik Cumhuriyeti", "color_key": "Armenia", "note": "", "sources": ["dra"] }
+      ]
+    },
+    {
+      "id": "sirak",
+      "units": { "Armenia": ["Shirak"] },
+      "slices": [
+        { "from": 1800, "to": 1804, "name": "Şüregel (İran nüfuzunda)", "color_key": "Persia", "note": "", "sources": ["gyumri"] },
+        { "from": 1804, "to": 1813, "name": "Rus ilhakı sürüyor", "color_key": "Russian Empire", "note": "Ruslar 1804'te bölgeyi denetimine aldı; 1813 Gülistan Antlaşması ile resmîleşti.", "sources": ["gyumri", "gulistan"] },
+        { "from": 1813, "to": 1918, "name": "Rus İmparatorluğu", "color_key": "Russian Empire", "note": "", "sources": ["gyumri"] },
+        { "from": 1918, "to": 1920, "name": "Ermenistan Demokratik Cumhuriyeti", "color_key": "Armenia", "note": "", "sources": ["dra"] }
+      ]
+    }
+  ]
+}

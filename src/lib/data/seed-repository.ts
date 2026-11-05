@@ -1,10 +1,11 @@
 import citiesJson from "../../../data/seed/cities.json";
+import correctionsJson from "../../../data/seed/corrections.json";
 import eventsJson from "../../../data/seed/events.json";
 import peopleJson from "../../../data/seed/people.json";
 import routesJson from "../../../data/seed/routes.json";
 import sourcesJson from "../../../data/seed/sources.json";
 import toursJson from "../../../data/seed/tours.json";
-import type { City, EventSummary, HistoricalEvent, HistoricalRoute, Person, Source, Tour } from "@/lib/types";
+import type { City, Correction, EventSummary, HistoricalEvent, HistoricalRoute, Person, Source, Tour } from "@/lib/types";
 import type { AtlasRepository } from "./repository";
 
 export function createSeedRepository(): AtlasRepository {
@@ -38,6 +39,9 @@ export function createSeedRepository(): AtlasRepository {
     },
     async listCities() {
       return citiesJson as City[];
+    },
+    async listCorrections() {
+      return correctionsJson as Correction[];
     },
   };
 }

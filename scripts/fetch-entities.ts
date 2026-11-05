@@ -9,8 +9,8 @@
  */
 import { readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
-import { citySchema, personSchema, type City, type HistoricalEvent, type Person, type Source } from "../src/lib/types";
-import { applyRulerOverrides, mergeRulers, periodConfirmed, rulerAt, type AreaFeature } from "./geo-utils";
+import { citySchema, personSchema, type City, type Correction, type HistoricalEvent, type Person, type Source } from "../src/lib/types";
+import { applyRulerOverrides, mergeRulers, periodConfirmed, rulerAt, type AreaFeature, type AreaGeometry } from "./geo-utils";
 import { cachedSparql, fetchExtracts, root, seedDir, wikiUri, wikiUrl, type Binding } from "./wikidata-client";
 import { parseWktPoint, trimToSentence, wikidataTimeToYear } from "./wikidata-utils";
 
@@ -140,6 +140,12 @@ async function buildCities(): Promise<City[]> {
   const list = readJson<ManualCity[]>("data", "manual", "cities.json");
   const overrides = readJson<Record<string, { from: number; to: number; name: string }[]>>("data", "manual", "ruler-overrides.json");
   const manifest = readJson<{ year: number; file: string }[]>("public", "data", "boundaries", "manifest.json");
+  const corrections = readJson<Correction[]>("data", "seed", "corrections.json");
+  const correctionAreas: AreaFeature[] = readJson<{ features: { properties: { group: string }; geometry: AreaGeometry }[] }>("public", "data", "corrections", "south-caucasus.json").features.map(
+    (f) => ({ geometry: f.geometry, properties: { NAME: f.properties.group } }),
+  );
+  // Tight enough to catch coastal Batum without pulling in Derbent, just north of the region.
+  const REGION_TOLERANCE_DEGREES = 0.15;
   const maps = manifest.map((m) => ({
     year: m.year,
     features: readJson<{ features: AreaFeature[] }>("public", "data", "boundaries", m.file).features,
@@ -187,7 +193,11 @@ async function buildCities(): Promise<City[]> {
         maps.map((m) => ({ year: m.year, name: rulerAt(point, m.features) })),
         LAST_YEAR,
       ),
-      overrides[c.id] ?? [],
+      [
+        ...(overrides[c.id] ?? []),
+        // A city inside the corrected region takes its 1800-1920 rulers from that layer.
+        ...(corrections.find((k) => k.id === rulerAt(point, correctionAreas, REGION_TOLERANCE_DEGREES))?.slices ?? []),
+      ],
     );
     cities.push({
       id: c.id,

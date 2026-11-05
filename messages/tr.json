@@ -196,5 +196,13 @@
     "citation": "Haritanın atfı",
     "copy": "Atfı kopyala",
     "accuracy": "Sınırlar yaklaşıktır ve kaynak veride bilinen hatalar vardır. Tez veya yayında kullanmadan önce başka kaynaklarla karşılaştırın."
+  },
+  "correction": {
+    "panel": "Sınır düzeltmesi",
+    "kind": "Elle düzeltilmiş bölge",
+    "outside": "Bu yıl düzeltme dönemi dışında",
+    "warning": "Kaynak veri seti bu bölgeyi 1800–1920 için hatalı gösterdiğinden elle düzeltildi. Çizgiler tarihî sınır değil, bugünkü idari sınırlardan türetildi; tarihler antlaşmalara dayanır. Uzman kontrolü bekliyor.",
+    "periods": "Bu bölgenin dönemleri",
+    "timelineNote": "Güney Kafkasya düzeltildi"
   }
 }

@@ -1,60 +1,129 @@
 {
   "gence": [
-    { "from": 1501, "to": 1723, "name": "Safevî İmparatorluğu" },
-    { "from": 1747, "to": 1804, "name": "Gence Hanlığı" },
-    { "from": 1804, "to": 1918, "name": "Rus İmparatorluğu" },
-    { "from": 1918, "to": 1920, "name": "Azerbaycan Demokratik Cumhuriyeti" },
-    { "from": 1920, "to": 1950, "name": "SSCB" }
+    {
+      "from": 1501,
+      "to": 1723,
+      "name": "Safevî İmparatorluğu"
+    },
+    {
+      "from": 1920,
+      "to": 1950,
+      "name": "SSCB"
+    }
   ],
   "baku": [
-    { "from": 1501, "to": 1723, "name": "Safevî İmparatorluğu" },
-    { "from": 1747, "to": 1806, "name": "Bakü Hanlığı" },
-    { "from": 1806, "to": 1918, "name": "Rus İmparatorluğu" },
-    { "from": 1918, "to": 1920, "name": "Azerbaycan Demokratik Cumhuriyeti" },
-    { "from": 1920, "to": 1950, "name": "SSCB" }
+    {
+      "from": 1501,
+      "to": 1723,
+      "name": "Safevî İmparatorluğu"
+    },
+    {
+      "from": 1920,
+      "to": 1950,
+      "name": "SSCB"
+    }
   ],
   "tiflis": [
-    { "from": 1501, "to": 1723, "name": "Kartli Krallığı (Safevî nüfuzunda)" },
-    { "from": 1762, "to": 1801, "name": "Kartli-Kaheti Krallığı" },
-    { "from": 1801, "to": 1918, "name": "Rus İmparatorluğu" },
-    { "from": 1918, "to": 1921, "name": "Gürcistan Demokratik Cumhuriyeti" },
-    { "from": 1921, "to": 1950, "name": "SSCB" }
+    {
+      "from": 1501,
+      "to": 1723,
+      "name": "Kartli Krallığı (Safevî nüfuzunda)"
+    },
+    {
+      "from": 1921,
+      "to": 1950,
+      "name": "SSCB"
+    }
   ],
   "erivan": [
-    { "from": 1501, "to": 1747, "name": "Safevî İmparatorluğu" },
-    { "from": 1747, "to": 1827, "name": "Erivan Hanlığı" },
-    { "from": 1827, "to": 1918, "name": "Rus İmparatorluğu" },
-    { "from": 1918, "to": 1920, "name": "Ermenistan Demokratik Cumhuriyeti" },
-    { "from": 1920, "to": 1950, "name": "SSCB" }
+    {
+      "from": 1501,
+      "to": 1747,
+      "name": "Safevî İmparatorluğu"
+    },
+    {
+      "from": 1920,
+      "to": 1950,
+      "name": "SSCB"
+    }
   ],
   "gumru": [
-    { "from": 1829, "to": 1918, "name": "Rus İmparatorluğu" },
-    { "from": 1920, "to": 1950, "name": "SSCB" }
+    {
+      "from": 1920,
+      "to": 1950,
+      "name": "SSCB"
+    }
   ],
   "derbent": [
-    { "from": 1806, "to": 1918, "name": "Rus İmparatorluğu" },
-    { "from": 1921, "to": 1950, "name": "SSCB" }
+    {
+      "from": 1806,
+      "to": 1918,
+      "name": "Rus İmparatorluğu"
+    },
+    {
+      "from": 1921,
+      "to": 1950,
+      "name": "SSCB"
+    }
   ],
   "nahcivan": [
-    { "from": 1828, "to": 1918, "name": "Rus İmparatorluğu" },
-    { "from": 1920, "to": 1950, "name": "SSCB" }
+    {
+      "from": 1920,
+      "to": 1950,
+      "name": "SSCB"
+    }
   ],
   "batum": [
-    { "from": 1878, "to": 1918, "name": "Rus İmparatorluğu" },
-    { "from": 1921, "to": 1950, "name": "SSCB" }
+    {
+      "from": 1921,
+      "to": 1950,
+      "name": "SSCB"
+    }
   ],
   "mahackale": [
-    { "from": 1857, "to": 1918, "name": "Rus İmparatorluğu" },
-    { "from": 1921, "to": 1950, "name": "SSCB" }
+    {
+      "from": 1857,
+      "to": 1918,
+      "name": "Rus İmparatorluğu"
+    },
+    {
+      "from": 1921,
+      "to": 1950,
+      "name": "SSCB"
+    }
   ],
   "istanbul": [
-    { "from": 1400, "to": 1453, "name": "Bizans İmparatorluğu" },
-    { "from": 1453, "to": 1923, "name": "Osmanlı İmparatorluğu" },
-    { "from": 1923, "to": 1950, "name": "Türkiye Cumhuriyeti" }
+    {
+      "from": 1400,
+      "to": 1453,
+      "name": "Bizans İmparatorluğu"
+    },
+    {
+      "from": 1453,
+      "to": 1923,
+      "name": "Osmanlı İmparatorluğu"
+    },
+    {
+      "from": 1923,
+      "to": 1950,
+      "name": "Türkiye Cumhuriyeti"
+    }
   ],
   "edirne": [
-    { "from": 1878, "to": 1920, "name": "Osmanlı İmparatorluğu" },
-    { "from": 1920, "to": 1922, "name": "Yunanistan" },
-    { "from": 1922, "to": 1950, "name": "Türkiye Cumhuriyeti" }
+    {
+      "from": 1878,
+      "to": 1920,
+      "name": "Osmanlı İmparatorluğu"
+    },
+    {
+      "from": 1920,
+      "to": 1922,
+      "name": "Yunanistan"
+    },
+    {
+      "from": 1922,
+      "to": 1950,
+      "name": "Türkiye Cumhuriyeti"
+    }
   ]
 }

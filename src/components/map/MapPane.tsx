@@ -12,9 +12,10 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import { getManifest, loadBoundary } from "@/lib/boundaries";
 import { nameAtYear } from "@/lib/cities";
+import { correctionFeatures, isCorrectedYear, loadCorrectionGeometry, sliceAt } from "@/lib/corrections";
 import { eventsAtYear } from "@/lib/filters";
 import { lineBounds, sliceLine } from "@/lib/routes";
-import type { City, EventSummary, HistoricalRoute } from "@/lib/types";
+import type { City, Correction, EventSummary, HistoricalRoute } from "@/lib/types";
 import { boundaryForYear, nextBoundary, type BoundaryEntry } from "@/lib/year";
 import { useAtlas } from "@/store/atlas";
 import { CLICKABLE_EVENT_LAYERS, installLayers, setSelectedEvent, STYLE_URLS, toEventFeatures } from "./layers";
@@ -28,6 +29,7 @@ type Props = {
   events: EventSummary[];
   routes?: HistoricalRoute[];
   cities?: City[];
+  corrections?: Correction[];
   yearKey: "year" | "year2";
   /** Only the primary pane writes the view to the store and URL. */
   primary?: boolean;
@@ -44,7 +46,7 @@ function applyRoute(map: MlMap | null, data: typeof EMPTY_ROUTE) {
   (map?.getSource("route-points") as GeoJSONSource | undefined)?.setData({ type: "FeatureCollection", features: data.points });
 }
 
-export function MapPane({ events, routes, cities, yearKey, primary = true, onBoundaryChange, onMap }: Props) {
+export function MapPane({ events, routes, cities, corrections, yearKey, primary = true, onBoundaryChange, onMap }: Props) {
   const t = useTranslations("map");
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<MlMap | null>(null);
@@ -85,6 +87,19 @@ export function MapPane({ events, routes, cities, yearKey, primary = true, onBou
   useEffect(() => {
     (mapRef.current?.getSource("cities") as GeoJSONSource | undefined)?.setData(cityFeaturesRef.current);
   }, [cityKey]);
+
+  // The correction layer only needs new data when some group enters another period.
+  const [correctionBase, setCorrectionBase] = useState<GeoJSON.FeatureCollection | null>(null);
+  const correctionActive = isCorrectedYear(year) && (corrections?.length ?? 0) > 0;
+  useEffect(() => {
+    if (correctionActive) loadCorrectionGeometry().then(setCorrectionBase).catch(() => undefined);
+  }, [correctionActive]);
+  const correctionKey = correctionActive ? (corrections ?? []).map((c) => sliceAt(c, year)?.from).join("|") : "";
+  const correctionDataRef = useRef<GeoJSON.FeatureCollection>({ type: "FeatureCollection", features: [] });
+  correctionDataRef.current = correctionFeatures(correctionBase, corrections ?? [], year);
+  useEffect(() => {
+    (mapRef.current?.getSource("corrections") as GeoJSONSource | undefined)?.setData(correctionDataRef.current);
+  }, [correctionKey, correctionBase]);
 
   const onMapRef = useRef(onMap);
   onMapRef.current = onMap;
@@ -159,6 +174,7 @@ export function MapPane({ events, routes, cities, yearKey, primary = true, onBou
       setSelectedEvent(map, useAtlas.getState().eventId);
       applyRoute(map, routeDataRef.current);
       (map.getSource("cities") as GeoJSONSource).setData(cityFeaturesRef.current);
+      (map.getSource("corrections") as GeoJSONSource).setData(correctionDataRef.current);
       setStyleTick((n) => n + 1);
     });
     map.on("moveend", () => {
@@ -183,6 +199,8 @@ export function MapPane({ events, routes, cities, yearKey, primary = true, onBou
       }
       const centre = map.queryRenderedFeatures(map.project(map.getCenter()), { layers: ["city-dot"] })[0];
       el?.setAttribute("data-city-at-center", String(centre?.properties?.id ?? ""));
+      const fix = map.queryRenderedFeatures(map.project(map.getCenter()), { layers: ["correction-fill"] })[0];
+      el?.setAttribute("data-correction-at-center", String(fix?.properties?.name ?? ""));
       el?.setAttribute("data-rendered-route", String(map.queryRenderedFeatures({ layers: ["route-line"] }).length));
     });
     if (primary) {
@@ -214,6 +232,12 @@ export function MapPane({ events, routes, cities, yearKey, primary = true, onBou
       if (map.queryRenderedFeatures(e.point, { layers: ["event-icon", "event-cluster"] }).length > 0) return;
       const id = e.features?.[0]?.properties?.id as string | undefined;
       if (id) useAtlas.getState().selectCity(id);
+    });
+    map.on("click", "correction-fill", (e) => {
+      // Markers and cities on top take the click.
+      if (map.queryRenderedFeatures(e.point, { layers: ["event-icon", "event-cluster", "event-line-hit", "city-dot"] }).length > 0) return;
+      const id = e.features?.[0]?.properties?.id as string | undefined;
+      if (id) useAtlas.getState().selectCorrection(id);
     });
     map.on("mouseenter", "city-dot", () => (map.getCanvas().style.cursor = "pointer"));
     map.on("mouseleave", "city-dot", () => (map.getCanvas().style.cursor = ""));

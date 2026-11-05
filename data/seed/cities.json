@@ -133,18 +133,30 @@
    },
    {
     "from": 1723,
-    "to": 1747,
+    "to": 1783,
     "name": "Safavid Empire",
     "manual": false
    },
    {
-    "from": 1747,
+    "from": 1783,
+    "to": 1800,
+    "name": "central Asian khanates",
+    "manual": false
+   },
+   {
+    "from": 1800,
     "to": 1804,
-    "name": "Gence Hanlığı",
+    "name": "Azerbaycan hanlıkları",
     "manual": true
    },
    {
     "from": 1804,
+    "to": 1813,
+    "name": "Rus ilhakı sürüyor",
+    "manual": true
+   },
+   {
+    "from": 1813,
     "to": 1918,
     "name": "Rus İmparatorluğu",
     "manual": true
@@ -448,12 +460,18 @@
    },
    {
     "from": 1723,
-    "to": 1762,
+    "to": 1783,
     "name": "Safavid Empire",
     "manual": false
    },
    {
-    "from": 1762,
+    "from": 1783,
+    "to": 1800,
+    "name": "central Asian khanates",
+    "manual": false
+   },
+   {
+    "from": 1800,
     "to": 1801,
     "name": "Kartli-Kaheti Krallığı",
     "manual": true
@@ -466,9 +484,15 @@
    },
    {
     "from": 1918,
-    "to": 1921,
+    "to": 1920,
     "name": "Gürcistan Demokratik Cumhuriyeti",
     "manual": true
+   },
+   {
+    "from": 1920,
+    "to": 1921,
+    "name": "USSR",
+    "manual": false
    },
    {
     "from": 1921,
@@ -631,12 +655,24 @@
    },
    {
     "from": 1747,
-    "to": 1827,
-    "name": "Erivan Hanlığı",
+    "to": 1783,
+    "name": "Safavid Empire",
+    "manual": false
+   },
+   {
+    "from": 1783,
+    "to": 1800,
+    "name": "central Asian khanates",
+    "manual": false
+   },
+   {
+    "from": 1800,
+    "to": 1828,
+    "name": "Erivan Hanlığı (İran)",
     "manual": true
    },
    {
-    "from": 1827,
+    "from": 1828,
     "to": 1918,
     "name": "Rus İmparatorluğu",
     "manual": true
@@ -826,18 +862,24 @@
    },
    {
     "from": 1783,
-    "to": 1815,
+    "to": 1800,
     "name": "central Asian khanates",
     "manual": false
    },
    {
-    "from": 1815,
-    "to": 1829,
-    "name": "Persia",
-    "manual": false
+    "from": 1800,
+    "to": 1804,
+    "name": "Şüregel (İran nüfuzunda)",
+    "manual": true
    },
    {
-    "from": 1829,
+    "from": 1804,
+    "to": 1813,
+    "name": "Rus ilhakı sürüyor",
+    "manual": true
+   },
+   {
+    "from": 1813,
     "to": 1918,
     "name": "Rus İmparatorluğu",
     "manual": true
@@ -845,8 +887,8 @@
    {
     "from": 1918,
     "to": 1920,
-    "name": "Armenia",
-    "manual": false
+    "name": "Ermenistan Demokratik Cumhuriyeti",
+    "manual": true
    },
    {
     "from": 1920,
@@ -1008,18 +1050,30 @@
    },
    {
     "from": 1723,
-    "to": 1747,
+    "to": 1783,
     "name": "Safavid Empire",
     "manual": false
    },
    {
-    "from": 1747,
-    "to": 1806,
-    "name": "Bakü Hanlığı",
+    "from": 1783,
+    "to": 1800,
+    "name": "central Asian khanates",
+    "manual": false
+   },
+   {
+    "from": 1800,
+    "to": 1804,
+    "name": "Azerbaycan hanlıkları",
     "manual": true
    },
    {
-    "from": 1806,
+    "from": 1804,
+    "to": 1813,
+    "name": "Rus ilhakı sürüyor",
+    "manual": true
+   },
+   {
+    "from": 1813,
     "to": 1918,
     "name": "Rus İmparatorluğu",
     "manual": true
@@ -1192,8 +1246,14 @@
    },
    {
     "from": 1783,
-    "to": 1806,
+    "to": 1800,
     "name": "central Asian khanates",
+    "manual": false
+   },
+   {
+    "from": 1800,
+    "to": 1806,
+    "name": "Russian Empire",
     "manual": false
    },
    {
@@ -1362,9 +1422,15 @@
    },
    {
     "from": 1783,
-    "to": 1828,
+    "to": 1800,
     "name": "Persia",
     "manual": false
+   },
+   {
+    "from": 1800,
+    "to": 1828,
+    "name": "Nahçıvan Hanlığı (İran)",
+    "manual": true
    },
    {
     "from": 1828,
@@ -1375,8 +1441,8 @@
    {
     "from": 1918,
     "to": 1920,
-    "name": "Azerbaijan",
-    "manual": false
+    "name": "İhtilaflı: Azerbaycan, Ermenistan ve Osmanlı birlikleri",
+    "manual": true
    },
    {
     "from": 1920,
@@ -1502,9 +1568,15 @@
    },
    {
     "from": 1783,
-    "to": 1878,
+    "to": 1800,
     "name": "Russian Empire",
     "manual": false
+   },
+   {
+    "from": 1800,
+    "to": 1878,
+    "name": "Osmanlı İmparatorluğu",
+    "manual": true
    },
    {
     "from": 1878,
@@ -1515,8 +1587,8 @@
    {
     "from": 1918,
     "to": 1920,
-    "name": "Georgia",
-    "manual": false
+    "name": "Osmanlı işgali, sonra İngiliz yönetimi",
+    "manual": true
    },
    {
     "from": 1920,
@@ -1673,14 +1745,14 @@
    },
    {
     "from": 1783,
-    "to": 1815,
+    "to": 1800,
     "name": "central Asian khanates",
     "manual": false
    },
    {
-    "from": 1815,
+    "from": 1800,
     "to": 1857,
-    "name": "Persia",
+    "name": "Russian Empire",
     "manual": false
    },
    {
@@ -3034,9 +3106,27 @@
    },
    {
     "from": 1530,
-    "to": 1920,
+    "to": 1800,
     "name": "Ottoman Empire",
     "manual": false
+   },
+   {
+    "from": 1800,
+    "to": 1878,
+    "name": "Osmanlı İmparatorluğu",
+    "manual": true
+   },
+   {
+    "from": 1878,
+    "to": 1918,
+    "name": "Rus İmparatorluğu",
+    "manual": true
+   },
+   {
+    "from": 1918,
+    "to": 1920,
+    "name": "Osmanlı işgali, sonra Ermenistan yönetimi",
+    "manual": true
    },
    {
     "from": 1920,

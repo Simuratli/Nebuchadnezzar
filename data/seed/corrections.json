@@ -1,0 +1,970 @@
+[
+ {
+  "id": "kartli",
+  "slices": [
+   {
+    "from": 1800,
+    "to": 1801,
+    "name": "Kartli-Kaheti Krallığı",
+    "color_key": "Georgia",
+    "note": "Rusya'nın ilhakından önceki son yıl.",
+    "sources": [
+     {
+      "id": "fix-kartli-1800-conquest",
+      "event_id": "kartli",
+      "type": "ansiklopedi",
+      "author": null,
+      "title": "Russian conquest of the Caucasus",
+      "year": null,
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Russian_conquest_of_the_Caucasus",
+      "pages": null,
+      "reliability": 1,
+      "accessed_at": "2026-11-05",
+      "needs_review": true
+     }
+    ]
+   },
+   {
+    "from": 1801,
+    "to": 1918,
+    "name": "Rus İmparatorluğu",
+    "color_key": "Russian Empire",
+    "note": "Kartli-Kaheti 1801'de ilhak edildi.",
+    "sources": [
+     {
+      "id": "fix-kartli-1801-conquest",
+      "event_id": "kartli",
+      "type": "ansiklopedi",
+      "author": null,
+      "title": "Russian conquest of the Caucasus",
+      "year": null,
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Russian_conquest_of_the_Caucasus",
+      "pages": null,
+      "reliability": 1,
+      "accessed_at": "2026-11-05",
+      "needs_review": true
+     }
+    ]
+   },
+   {
+    "from": 1918,
+    "to": 1920,
+    "name": "Gürcistan Demokratik Cumhuriyeti",
+    "color_key": "Georgia",
+    "note": "Lori çevresi Gürcistan ile Ermenistan arasında ihtilaflıydı.",
+    "sources": [
+     {
+      "id": "fix-kartli-1918-drg",
+      "event_id": "kartli",
+      "type": "ansiklopedi",
+      "author": null,
+      "title": "Democratic Republic of Georgia",
+      "year": null,
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Democratic_Republic_of_Georgia",
+      "pages": null,
+      "reliability": 1,
+      "accessed_at": "2026-11-05",
+      "needs_review": true
+     }
+    ]
+   }
+  ],
+  "needs_review": true
+ },
+ {
+  "id": "bati-gurcistan",
+  "slices": [
+   {
+    "from": 1800,
+    "to": 1803,
+    "name": "Batı Gürcü prenslikleri",
+    "color_key": "Georgia",
+    "note": "İmereti, Megrelya, Guria ve Abhazya ayrı yönetimlerdi.",
+    "sources": [
+     {
+      "id": "fix-bati-gurcistan-1800-conquest",
+      "event_id": "bati-gurcistan",
+      "type": "ansiklopedi",
+      "author": null,
+      "title": "Russian conquest of the Caucasus",
+      "year": null,
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Russian_conquest_of_the_Caucasus",
+      "pages": null,
+      "reliability": 1,
+      "accessed_at": "2026-11-05",
+      "needs_review": true
+     }
+    ]
+   },
+   {
+    "from": 1803,
+    "to": 1810,
+    "name": "Rus ilhakı sürüyor",
+    "color_key": "Russian Empire",
+    "note": "Megrelya 1803'te, Abhazya 1810'da Rus nüfuzuna girdi. Bu bölgelerin tarihleri tek tek farklıdır.",
+    "sources": [
+     {
+      "id": "fix-bati-gurcistan-1803-conquest",
+      "event_id": "bati-gurcistan",
+      "type": "ansiklopedi",
+      "author": null,
+      "title": "Russian conquest of the Caucasus",
+      "year": null,
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Russian_conquest_of_the_Caucasus",
+      "pages": null,
+      "reliability": 1,
+      "accessed_at": "2026-11-05",
+      "needs_review": true
+     }
+    ]
+   },
+   {
+    "from": 1810,
+    "to": 1918,
+    "name": "Rus İmparatorluğu",
+    "color_key": "Russian Empire",
+    "note": "",
+    "sources": [
+     {
+      "id": "fix-bati-gurcistan-1810-conquest",
+      "event_id": "bati-gurcistan",
+      "type": "ansiklopedi",
+      "author": null,
+      "title": "Russian conquest of the Caucasus",
+      "year": null,
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Russian_conquest_of_the_Caucasus",
+      "pages": null,
+      "reliability": 1,
+      "accessed_at": "2026-11-05",
+      "needs_review": true
+     }
+    ]
+   },
+   {
+    "from": 1918,
+    "to": 1920,
+    "name": "Gürcistan Demokratik Cumhuriyeti",
+    "color_key": "Georgia",
+    "note": "",
+    "sources": [
+     {
+      "id": "fix-bati-gurcistan-1918-drg",
+      "event_id": "bati-gurcistan",
+      "type": "ansiklopedi",
+      "author": null,
+      "title": "Democratic Republic of Georgia",
+      "year": null,
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Democratic_Republic_of_Georgia",
+      "pages": null,
+      "reliability": 1,
+      "accessed_at": "2026-11-05",
+      "needs_review": true
+     }
+    ]
+   }
+  ],
+  "needs_review": true
+ },
+ {
+  "id": "meshetya",
+  "slices": [
+   {
+    "from": 1800,
+    "to": 1829,
+    "name": "Osmanlı İmparatorluğu",
+    "color_key": "Ottoman Empire",
+    "note": "",
+    "sources": [
+     {
+      "id": "fix-meshetya-1800-akhaltsikhe",
+      "event_id": "meshetya",
+      "type": "ansiklopedi",
+      "author": null,
+      "title": "Akhaltsikhe",
+      "year": null,
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Akhaltsikhe",
+      "pages": null,
+      "reliability": 1,
+      "accessed_at": "2026-11-05",
+      "needs_review": true
+     }
+    ]
+   },
+   {
+    "from": 1829,
+    "to": 1918,
+    "name": "Rus İmparatorluğu",
+    "color_key": "Russian Empire",
+    "note": "Ahıska, 1829 Edirne Antlaşması ile Rusya'ya bırakıldı.",
+    "sources": [
+     {
+      "id": "fix-meshetya-1829-adrianople",
+      "event_id": "meshetya",
+      "type": "ansiklopedi",
+      "author": null,
+      "title": "Treaty of Adrianople (1829)",
+      "year": null,
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Treaty_of_Adrianople_(1829)",
+      "pages": null,
+      "reliability": 1,
+      "accessed_at": "2026-11-05",
+      "needs_review": true
+     },
+     {
+      "id": "fix-meshetya-1829-akhaltsikhe",
+      "event_id": "meshetya",
+      "type": "ansiklopedi",
+      "author": null,
+      "title": "Akhaltsikhe",
+      "year": null,
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Akhaltsikhe",
+      "pages": null,
+      "reliability": 1,
+      "accessed_at": "2026-11-05",
+      "needs_review": true
+     }
+    ]
+   },
+   {
+    "from": 1918,
+    "to": 1920,
+    "name": "Gürcistan Demokratik Cumhuriyeti",
+    "color_key": "Georgia",
+    "note": "1918'de bölge bir süre Osmanlı denetimine girdi.",
+    "sources": [
+     {
+      "id": "fix-meshetya-1918-drg",
+      "event_id": "meshetya",
+      "type": "ansiklopedi",
+      "author": null,
+      "title": "Democratic Republic of Georgia",
+      "year": null,
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Democratic_Republic_of_Georgia",
+      "pages": null,
+      "reliability": 1,
+      "accessed_at": "2026-11-05",
+      "needs_review": true
+     }
+    ]
+   }
+  ],
+  "needs_review": true
+ },
+ {
+  "id": "batum",
+  "slices": [
+   {
+    "from": 1800,
+    "to": 1878,
+    "name": "Osmanlı İmparatorluğu",
+    "color_key": "Ottoman Empire",
+    "note": "",
+    "sources": [
+     {
+      "id": "fix-batum-1800-batum",
+      "event_id": "batum",
+      "type": "ansiklopedi",
+      "author": null,
+      "title": "Batum oblast",
+      "year": null,
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Batum_oblast",
+      "pages": null,
+      "reliability": 1,
+      "accessed_at": "2026-11-05",
+      "needs_review": true
+     }
+    ]
+   },
+   {
+    "from": 1878,
+    "to": 1918,
+    "name": "Rus İmparatorluğu",
+    "color_key": "Russian Empire",
+    "note": "Batum oblastı, 1877-78 savaşından sonra kuruldu.",
+    "sources": [
+     {
+      "id": "fix-batum-1878-batum",
+      "event_id": "batum",
+      "type": "ansiklopedi",
+      "author": null,
+      "title": "Batum oblast",
+      "year": null,
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Batum_oblast",
+      "pages": null,
+      "reliability": 1,
+      "accessed_at": "2026-11-05",
+      "needs_review": true
+     }
+    ]
+   },
+   {
+    "from": 1918,
+    "to": 1920,
+    "name": "Osmanlı işgali, sonra İngiliz yönetimi",
+    "color_key": "contested",
+    "note": "Batum, 1920 yazında İngilizler tarafından Gürcistan'a bırakıldı.",
+    "sources": [
+     {
+      "id": "fix-batum-1918-batum",
+      "event_id": "batum",
+      "type": "ansiklopedi",
+      "author": null,
+      "title": "Batum oblast",
+      "year": null,
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Batum_oblast",
+      "pages": null,
+      "reliability": 1,
+      "accessed_at": "2026-11-05",
+      "needs_review": true
+     }
+    ]
+   }
+  ],
+  "needs_review": true
+ },
+ {
+  "id": "kars",
+  "slices": [
+   {
+    "from": 1800,
+    "to": 1878,
+    "name": "Osmanlı İmparatorluğu",
+    "color_key": "Ottoman Empire",
+    "note": "",
+    "sources": [
+     {
+      "id": "fix-kars-1800-kars",
+      "event_id": "kars",
+      "type": "ansiklopedi",
+      "author": null,
+      "title": "Kars oblast",
+      "year": null,
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kars_oblast",
+      "pages": null,
+      "reliability": 1,
+      "accessed_at": "2026-11-05",
+      "needs_review": true
+     }
+    ]
+   },
+   {
+    "from": 1878,
+    "to": 1918,
+    "name": "Rus İmparatorluğu",
+    "color_key": "Russian Empire",
+    "note": "Kars oblastı 1878'de kuruldu.",
+    "sources": [
+     {
+      "id": "fix-kars-1878-kars",
+      "event_id": "kars",
+      "type": "ansiklopedi",
+      "author": null,
+      "title": "Kars oblast",
+      "year": null,
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kars_oblast",
+      "pages": null,
+      "reliability": 1,
+      "accessed_at": "2026-11-05",
+      "needs_review": true
+     }
+    ]
+   },
+   {
+    "from": 1918,
+    "to": 1920,
+    "name": "Osmanlı işgali, sonra Ermenistan yönetimi",
+    "color_key": "contested",
+    "note": "1918'de Brest-Litovsk ile Osmanlı'ya bırakıldı; 1919'dan sonra bölgede Ermenistan yönetimi kuruldu.",
+    "sources": [
+     {
+      "id": "fix-kars-1918-kars",
+      "event_id": "kars",
+      "type": "ansiklopedi",
+      "author": null,
+      "title": "Kars oblast",
+      "year": null,
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kars_oblast",
+      "pages": null,
+      "reliability": 1,
+      "accessed_at": "2026-11-05",
+      "needs_review": true
+     }
+    ]
+   }
+  ],
+  "needs_review": true
+ },
+ {
+  "id": "azerbaycan",
+  "slices": [
+   {
+    "from": 1800,
+    "to": 1804,
+    "name": "Azerbaycan hanlıkları",
+    "color_key": "khanates",
+    "note": "Gence, Karabağ, Şirvan, Şeki, Bakü, Kuba ve Talış gibi hanlıklar; İran nüfuzu ile yerel yönetim bir aradaydı.",
+    "sources": [
+     {
+      "id": "fix-azerbaycan-1800-gulistan",
+      "event_id": "azerbaycan",
+      "type": "ansiklopedi",
+      "author": null,
+      "title": "Treaty of Gulistan",
+      "year": null,
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Treaty_of_Gulistan",
+      "pages": null,
+      "reliability": 1,
+      "accessed_at": "2026-11-05",
+      "needs_review": true
+     }
+    ]
+   },
+   {
+    "from": 1804,
+    "to": 1813,
+    "name": "Rus ilhakı sürüyor",
+    "color_key": "Russian Empire",
+    "note": "Hanlıklar farklı tarihlerde ele geçirildi (Gence 1804, Şirvan ve Bakü 1805-06). 1813 Gülistan Antlaşması bunu tanıdı.",
+    "sources": [
+     {
+      "id": "fix-azerbaycan-1804-conquest",
+      "event_id": "azerbaycan",
+      "type": "ansiklopedi",
+      "author": null,
+      "title": "Russian conquest of the Caucasus",
+      "year": null,
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Russian_conquest_of_the_Caucasus",
+      "pages": null,
+      "reliability": 1,
+      "accessed_at": "2026-11-05",
+      "needs_review": true
+     },
+     {
+      "id": "fix-azerbaycan-1804-gulistan",
+      "event_id": "azerbaycan",
+      "type": "ansiklopedi",
+      "author": null,
+      "title": "Treaty of Gulistan",
+      "year": null,
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Treaty_of_Gulistan",
+      "pages": null,
+      "reliability": 1,
+      "accessed_at": "2026-11-05",
+      "needs_review": true
+     }
+    ]
+   },
+   {
+    "from": 1813,
+    "to": 1918,
+    "name": "Rus İmparatorluğu",
+    "color_key": "Russian Empire",
+    "note": "Talış'ın durumu 1828 Türkmençay Antlaşması ile kesinleşti.",
+    "sources": [
+     {
+      "id": "fix-azerbaycan-1813-gulistan",
+      "event_id": "azerbaycan",
+      "type": "ansiklopedi",
+      "author": null,
+      "title": "Treaty of Gulistan",
+      "year": null,
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Treaty_of_Gulistan",
+      "pages": null,
+      "reliability": 1,
+      "accessed_at": "2026-11-05",
+      "needs_review": true
+     },
+     {
+      "id": "fix-azerbaycan-1813-turkmenchay",
+      "event_id": "azerbaycan",
+      "type": "ansiklopedi",
+      "author": null,
+      "title": "Treaty of Turkmenchay",
+      "year": null,
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Treaty_of_Turkmenchay",
+      "pages": null,
+      "reliability": 1,
+      "accessed_at": "2026-11-05",
+      "needs_review": true
+     }
+    ]
+   },
+   {
+    "from": 1918,
+    "to": 1920,
+    "name": "Azerbaycan Demokratik Cumhuriyeti",
+    "color_key": "Azerbaijan",
+    "note": "",
+    "sources": [
+     {
+      "id": "fix-azerbaycan-1918-adr",
+      "event_id": "azerbaycan",
+      "type": "ansiklopedi",
+      "author": null,
+      "title": "Azerbaijan Democratic Republic",
+      "year": null,
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Azerbaijan_Democratic_Republic",
+      "pages": null,
+      "reliability": 1,
+      "accessed_at": "2026-11-05",
+      "needs_review": true
+     }
+    ]
+   }
+  ],
+  "needs_review": true
+ },
+ {
+  "id": "karabag-zengezur",
+  "slices": [
+   {
+    "from": 1800,
+    "to": 1804,
+    "name": "Karabağ Hanlığı",
+    "color_key": "khanates",
+    "note": "",
+    "sources": [
+     {
+      "id": "fix-karabag-zengezur-1800-gulistan",
+      "event_id": "karabag-zengezur",
+      "type": "ansiklopedi",
+      "author": null,
+      "title": "Treaty of Gulistan",
+      "year": null,
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Treaty_of_Gulistan",
+      "pages": null,
+      "reliability": 1,
+      "accessed_at": "2026-11-05",
+      "needs_review": true
+     }
+    ]
+   },
+   {
+    "from": 1804,
+    "to": 1813,
+    "name": "Rus ilhakı sürüyor",
+    "color_key": "Russian Empire",
+    "note": "1813 Gülistan Antlaşması Rus egemenliğini tanıdı.",
+    "sources": [
+     {
+      "id": "fix-karabag-zengezur-1804-conquest",
+      "event_id": "karabag-zengezur",
+      "type": "ansiklopedi",
+      "author": null,
+      "title": "Russian conquest of the Caucasus",
+      "year": null,
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Russian_conquest_of_the_Caucasus",
+      "pages": null,
+      "reliability": 1,
+      "accessed_at": "2026-11-05",
+      "needs_review": true
+     },
+     {
+      "id": "fix-karabag-zengezur-1804-gulistan",
+      "event_id": "karabag-zengezur",
+      "type": "ansiklopedi",
+      "author": null,
+      "title": "Treaty of Gulistan",
+      "year": null,
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Treaty_of_Gulistan",
+      "pages": null,
+      "reliability": 1,
+      "accessed_at": "2026-11-05",
+      "needs_review": true
+     }
+    ]
+   },
+   {
+    "from": 1813,
+    "to": 1918,
+    "name": "Rus İmparatorluğu",
+    "color_key": "Russian Empire",
+    "note": "",
+    "sources": [
+     {
+      "id": "fix-karabag-zengezur-1813-gulistan",
+      "event_id": "karabag-zengezur",
+      "type": "ansiklopedi",
+      "author": null,
+      "title": "Treaty of Gulistan",
+      "year": null,
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Treaty_of_Gulistan",
+      "pages": null,
+      "reliability": 1,
+      "accessed_at": "2026-11-05",
+      "needs_review": true
+     }
+    ]
+   },
+   {
+    "from": 1918,
+    "to": 1920,
+    "name": "İhtilaflı: Azerbaycan ve Ermenistan",
+    "color_key": "contested",
+    "note": "Karabağ ve Zengezur iki cumhuriyet arasında ihtilaflıydı. Bu alan yalnızca ihtilafı gösterir, bir hak iddiasını değil.",
+    "sources": [
+     {
+      "id": "fix-karabag-zengezur-1918-adr",
+      "event_id": "karabag-zengezur",
+      "type": "ansiklopedi",
+      "author": null,
+      "title": "Azerbaijan Democratic Republic",
+      "year": null,
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Azerbaijan_Democratic_Republic",
+      "pages": null,
+      "reliability": 1,
+      "accessed_at": "2026-11-05",
+      "needs_review": true
+     },
+     {
+      "id": "fix-karabag-zengezur-1918-dra",
+      "event_id": "karabag-zengezur",
+      "type": "ansiklopedi",
+      "author": null,
+      "title": "First Republic of Armenia",
+      "year": null,
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/First_Republic_of_Armenia",
+      "pages": null,
+      "reliability": 1,
+      "accessed_at": "2026-11-05",
+      "needs_review": true
+     }
+    ]
+   }
+  ],
+  "needs_review": true
+ },
+ {
+  "id": "nahcivan",
+  "slices": [
+   {
+    "from": 1800,
+    "to": 1828,
+    "name": "Nahçıvan Hanlığı (İran)",
+    "color_key": "Persia",
+    "note": "1808'de Ruslar kısa süre işgal etti, Gülistan ile İran'a geri döndü.",
+    "sources": [
+     {
+      "id": "fix-nahcivan-1800-nakhchivan",
+      "event_id": "nahcivan",
+      "type": "ansiklopedi",
+      "author": null,
+      "title": "Nakhichevan Khanate",
+      "year": null,
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nakhichevan_Khanate",
+      "pages": null,
+      "reliability": 1,
+      "accessed_at": "2026-11-05",
+      "needs_review": true
+     }
+    ]
+   },
+   {
+    "from": 1828,
+    "to": 1918,
+    "name": "Rus İmparatorluğu",
+    "color_key": "Russian Empire",
+    "note": "1828 Türkmençay Antlaşması ile Rusya'ya geçti.",
+    "sources": [
+     {
+      "id": "fix-nahcivan-1828-turkmenchay",
+      "event_id": "nahcivan",
+      "type": "ansiklopedi",
+      "author": null,
+      "title": "Treaty of Turkmenchay",
+      "year": null,
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Treaty_of_Turkmenchay",
+      "pages": null,
+      "reliability": 1,
+      "accessed_at": "2026-11-05",
+      "needs_review": true
+     },
+     {
+      "id": "fix-nahcivan-1828-nakhchivan",
+      "event_id": "nahcivan",
+      "type": "ansiklopedi",
+      "author": null,
+      "title": "Nakhichevan Khanate",
+      "year": null,
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nakhichevan_Khanate",
+      "pages": null,
+      "reliability": 1,
+      "accessed_at": "2026-11-05",
+      "needs_review": true
+     }
+    ]
+   },
+   {
+    "from": 1918,
+    "to": 1920,
+    "name": "İhtilaflı: Azerbaycan, Ermenistan ve Osmanlı birlikleri",
+    "color_key": "contested",
+    "note": "Bu alan yalnızca ihtilafı gösterir, bir hak iddiasını değil.",
+    "sources": [
+     {
+      "id": "fix-nahcivan-1918-adr",
+      "event_id": "nahcivan",
+      "type": "ansiklopedi",
+      "author": null,
+      "title": "Azerbaijan Democratic Republic",
+      "year": null,
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Azerbaijan_Democratic_Republic",
+      "pages": null,
+      "reliability": 1,
+      "accessed_at": "2026-11-05",
+      "needs_review": true
+     },
+     {
+      "id": "fix-nahcivan-1918-dra",
+      "event_id": "nahcivan",
+      "type": "ansiklopedi",
+      "author": null,
+      "title": "First Republic of Armenia",
+      "year": null,
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/First_Republic_of_Armenia",
+      "pages": null,
+      "reliability": 1,
+      "accessed_at": "2026-11-05",
+      "needs_review": true
+     }
+    ]
+   }
+  ],
+  "needs_review": true
+ },
+ {
+  "id": "erivan",
+  "slices": [
+   {
+    "from": 1800,
+    "to": 1828,
+    "name": "Erivan Hanlığı (İran)",
+    "color_key": "Persia",
+    "note": "",
+    "sources": [
+     {
+      "id": "fix-erivan-1800-erivan",
+      "event_id": "erivan",
+      "type": "ansiklopedi",
+      "author": null,
+      "title": "Erivan Khanate",
+      "year": null,
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Erivan_Khanate",
+      "pages": null,
+      "reliability": 1,
+      "accessed_at": "2026-11-05",
+      "needs_review": true
+     }
+    ]
+   },
+   {
+    "from": 1828,
+    "to": 1918,
+    "name": "Rus İmparatorluğu",
+    "color_key": "Russian Empire",
+    "note": "1828 Türkmençay Antlaşması ile Rusya'ya geçti.",
+    "sources": [
+     {
+      "id": "fix-erivan-1828-turkmenchay",
+      "event_id": "erivan",
+      "type": "ansiklopedi",
+      "author": null,
+      "title": "Treaty of Turkmenchay",
+      "year": null,
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Treaty_of_Turkmenchay",
+      "pages": null,
+      "reliability": 1,
+      "accessed_at": "2026-11-05",
+      "needs_review": true
+     },
+     {
+      "id": "fix-erivan-1828-erivan",
+      "event_id": "erivan",
+      "type": "ansiklopedi",
+      "author": null,
+      "title": "Erivan Khanate",
+      "year": null,
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Erivan_Khanate",
+      "pages": null,
+      "reliability": 1,
+      "accessed_at": "2026-11-05",
+      "needs_review": true
+     }
+    ]
+   },
+   {
+    "from": 1918,
+    "to": 1920,
+    "name": "Ermenistan Demokratik Cumhuriyeti",
+    "color_key": "Armenia",
+    "note": "",
+    "sources": [
+     {
+      "id": "fix-erivan-1918-dra",
+      "event_id": "erivan",
+      "type": "ansiklopedi",
+      "author": null,
+      "title": "First Republic of Armenia",
+      "year": null,
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/First_Republic_of_Armenia",
+      "pages": null,
+      "reliability": 1,
+      "accessed_at": "2026-11-05",
+      "needs_review": true
+     }
+    ]
+   }
+  ],
+  "needs_review": true
+ },
+ {
+  "id": "sirak",
+  "slices": [
+   {
+    "from": 1800,
+    "to": 1804,
+    "name": "Şüregel (İran nüfuzunda)",
+    "color_key": "Persia",
+    "note": "",
+    "sources": [
+     {
+      "id": "fix-sirak-1800-gyumri",
+      "event_id": "sirak",
+      "type": "ansiklopedi",
+      "author": null,
+      "title": "Gyumri",
+      "year": null,
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Gyumri",
+      "pages": null,
+      "reliability": 1,
+      "accessed_at": "2026-11-05",
+      "needs_review": true
+     }
+    ]
+   },
+   {
+    "from": 1804,
+    "to": 1813,
+    "name": "Rus ilhakı sürüyor",
+    "color_key": "Russian Empire",
+    "note": "Ruslar 1804'te bölgeyi denetimine aldı; 1813 Gülistan Antlaşması ile resmîleşti.",
+    "sources": [
+     {
+      "id": "fix-sirak-1804-gyumri",
+      "event_id": "sirak",
+      "type": "ansiklopedi",
+      "author": null,
+      "title": "Gyumri",
+      "year": null,
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Gyumri",
+      "pages": null,
+      "reliability": 1,
+      "accessed_at": "2026-11-05",
+      "needs_review": true
+     },
+     {
+      "id": "fix-sirak-1804-gulistan",
+      "event_id": "sirak",
+      "type": "ansiklopedi",
+      "author": null,
+      "title": "Treaty of Gulistan",
+      "year": null,
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Treaty_of_Gulistan",
+      "pages": null,
+      "reliability": 1,
+      "accessed_at": "2026-11-05",
+      "needs_review": true
+     }
+    ]
+   },
+   {
+    "from": 1813,
+    "to": 1918,
+    "name": "Rus İmparatorluğu",
+    "color_key": "Russian Empire",
+    "note": "",
+    "sources": [
+     {
+      "id": "fix-sirak-1813-gyumri",
+      "event_id": "sirak",
+      "type": "ansiklopedi",
+      "author": null,
+      "title": "Gyumri",
+      "year": null,
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Gyumri",
+      "pages": null,
+      "reliability": 1,
+      "accessed_at": "2026-11-05",
+      "needs_review": true
+     }
+    ]
+   },
+   {
+    "from": 1918,
+    "to": 1920,
+    "name": "Ermenistan Demokratik Cumhuriyeti",
+    "color_key": "Armenia",
+    "note": "",
+    "sources": [
+     {
+      "id": "fix-sirak-1918-dra",
+      "event_id": "sirak",
+      "type": "ansiklopedi",
+      "author": null,
+      "title": "First Republic of Armenia",
+      "year": null,
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/First_Republic_of_Armenia",
+      "pages": null,
+      "reliability": 1,
+      "accessed_at": "2026-11-05",
+      "needs_review": true
+     }
+    ]
+   }
+  ],
+  "needs_review": true
+ }
+]

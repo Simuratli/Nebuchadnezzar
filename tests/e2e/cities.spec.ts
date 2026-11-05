@@ -39,7 +39,7 @@ test.describe("şehir zaman çizelgesi", () => {
 
   test("yönetim satırı yılı o döneme taşır", async ({ page }) => {
     await page.goto("/tr?y=1000&city=gence");
-    await page.getByTestId("city-rulers").getByText("Rus İmparatorluğu").click();
+    await page.getByTestId("city-rulers").getByText("Rus ilhakı sürüyor").click();
     await expect(page.getByTestId("year-label-year")).toHaveText("MS 1804");
   });
 

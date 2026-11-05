@@ -6,6 +6,7 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 import { MapPane } from "@/components/map/MapPane";
 import { CityPanel } from "@/components/panels/CityPanel";
 import { CollectionPanel } from "@/components/panels/CollectionPanel";
+import { CorrectionPanel } from "@/components/panels/CorrectionPanel";
 import { EventPanel } from "@/components/panels/EventPanel";
 import { ExportPanel } from "@/components/panels/ExportPanel";
 import { FiltersPanel } from "@/components/panels/FiltersPanel";
@@ -18,13 +19,14 @@ import { TourPlayer } from "@/components/panels/TourPlayer";
 import { ToursPanel } from "@/components/panels/ToursPanel";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { TimeBar, usePlayback } from "@/components/timeline/TimeBar";
+import { isCorrectedYear } from "@/lib/corrections";
 import { eventsAtYear, filterEvents } from "@/lib/filters";
-import type { City, EventSummary, HistoricalRoute, Person, Tour } from "@/lib/types";
+import type { City, Correction, EventSummary, HistoricalRoute, Person, Tour } from "@/lib/types";
 import { serializeUrlState } from "@/lib/url-state";
 import { formatYear, type BoundaryEntry } from "@/lib/year";
 import { useAtlas } from "@/store/atlas";
 
-export type AtlasData = { events: EventSummary[]; people: Person[]; routes: HistoricalRoute[]; tours: Tour[]; cities: City[] };
+export type AtlasData = { events: EventSummary[]; people: Person[]; routes: HistoricalRoute[]; tours: Tour[]; cities: City[]; corrections: Correction[] };
 
 /** Keeps the address bar shareable. replaceState avoids a Next navigation on every change. */
 function useUrlSync() {
@@ -108,7 +110,8 @@ export function AtlasApp({ data }: { data: AtlasData }) {
     : boundary.entry
       ? `${t("timeline.boundaryNote", { year: formatYear(boundary.entry.year, era) })} · ${t("map.boundariesApprox")}`
       : "";
-  const note = `${t("timeline.visibleCount", { count: visibleCount })}${boundaryNote ? ` · ${boundaryNote}` : ""}`;
+  const correctedNote = isCorrectedYear(year) ? ` · ${t("correction.timelineNote")}` : "";
+  const note = `${t("timeline.visibleCount", { count: visibleCount })}${boundaryNote ? ` · ${boundaryNote}` : ""}${correctedNote}`;
 
   return (
     <div className="flex h-dvh flex-col overflow-hidden">
@@ -127,12 +130,12 @@ export function AtlasApp({ data }: { data: AtlasData }) {
       </header>
       <main className="relative flex min-h-0 flex-1 flex-col md:flex-row">
         <div className="relative min-h-0 min-w-0 flex-1">
-          <MapPane events={events} routes={data.routes} cities={data.cities} yearKey="year" onBoundaryChange={onBoundaryChange} onMap={setLeftMap} />
+          <MapPane events={events} routes={data.routes} cities={data.cities} corrections={data.corrections} yearKey="year" onBoundaryChange={onBoundaryChange} onMap={setLeftMap} />
           {compare && <YearBadge yearKey="year" label={t("compare.left")} />}
         </div>
         {compare && (
           <div className="relative min-h-0 min-w-0 flex-1 border-t border-line md:border-l md:border-t-0">
-            <MapPane events={events} routes={data.routes} cities={data.cities} yearKey="year2" primary={false} onMap={setRightMap} />
+            <MapPane events={events} routes={data.routes} cities={data.cities} corrections={data.corrections} yearKey="year2" primary={false} onMap={setRightMap} />
             <YearBadge yearKey="year2" label={t("compare.right")} />
           </div>
         )}
@@ -165,6 +168,7 @@ export function AtlasApp({ data }: { data: AtlasData }) {
         <EventPanel people={data.people} />
         <PersonPanel people={data.people} events={data.events} routes={data.routes} />
         <CityPanel cities={data.cities} events={data.events} />
+        <CorrectionPanel corrections={data.corrections} />
       </main>
       <section id="timeline" aria-label={t("timeline.label")} className="z-40 border-t border-line bg-surface px-3 py-2 md:px-4">
         <TimeBar note={note} sliderLabel={compare ? t("timeline.sliderLeft") : undefined} />
