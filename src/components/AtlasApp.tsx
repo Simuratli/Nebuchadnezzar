@@ -11,6 +11,8 @@ import { NavButtons } from "@/components/panels/NavButtons";
 import { RoutesPanel } from "@/components/panels/RoutesPanel";
 import { SearchBox } from "@/components/panels/SearchBox";
 import { SidePanel } from "@/components/panels/SidePanel";
+import { TourPlayer } from "@/components/panels/TourPlayer";
+import { ToursPanel } from "@/components/panels/ToursPanel";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { TimeBar, usePlayback } from "@/components/timeline/TimeBar";
 import { eventsAtYear, filterEvents } from "@/lib/filters";
@@ -146,6 +148,12 @@ export function AtlasApp({ data }: { data: AtlasData }) {
             <RoutesPanel routes={data.routes} people={data.people} />
           </SidePanel>
         )}
+        {sidePanel === "tours" && (
+          <SidePanel title={t("tours.title")}>
+            <ToursPanel tours={data.tours} />
+          </SidePanel>
+        )}
+        <TourPlayer tours={data.tours} events={data.events} />
         <EventPanel />
       </main>
       <section id="timeline" aria-label={t("timeline.label")} className="z-40 border-t border-line bg-surface px-3 py-2 md:px-4">
