@@ -8,6 +8,7 @@ import { CollectionPanel } from "@/components/panels/CollectionPanel";
 import { EventPanel } from "@/components/panels/EventPanel";
 import { FiltersPanel } from "@/components/panels/FiltersPanel";
 import { NavButtons } from "@/components/panels/NavButtons";
+import { RoutesPanel } from "@/components/panels/RoutesPanel";
 import { SearchBox } from "@/components/panels/SearchBox";
 import { SidePanel } from "@/components/panels/SidePanel";
 import { ThemeToggle } from "@/components/ThemeToggle";
@@ -138,6 +139,11 @@ export function AtlasApp({ data }: { data: AtlasData }) {
         {sidePanel === "collection" && (
           <SidePanel title={t("collection.title")}>
             <CollectionPanel events={data.events} />
+          </SidePanel>
+        )}
+        {sidePanel === "routes" && (
+          <SidePanel title={t("routes.title")}>
+            <RoutesPanel routes={data.routes} people={data.people} />
           </SidePanel>
         )}
         <EventPanel />
