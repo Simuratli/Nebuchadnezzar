@@ -60,6 +60,11 @@ body {
   outline-offset: 2px;
 }
 
+/* Panels take focus programmatically when they open; only real controls show a ring. */
+[tabindex="-1"]:focus-visible {
+  outline: none;
+}
+
 .maplibregl-ctrl-attrib {
   font-size: 11px;
 }

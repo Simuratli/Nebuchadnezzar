@@ -7,6 +7,8 @@ import { addYears, formatYear, indexToYear, MAX_YEAR, MIN_YEAR, yearToIndex } fr
 import { SPEEDS, useAtlas, WINDOWS } from "@/store/atlas";
 
 const TICKS = [-500, 1, 500, 1000, 1500, 1950];
+// The slider is narrow on phones, where only these labels fit.
+const PHONE_TICKS = new Set([-500, 1000, 1950]);
 const MIN_INDEX = yearToIndex(MIN_YEAR);
 const MAX_INDEX = yearToIndex(MAX_YEAR);
 const tickPosition = (year: number) => ((yearToIndex(year) - MIN_INDEX) / (MAX_INDEX - MIN_INDEX)) * 100;
@@ -108,7 +110,10 @@ export function TimeBar({ yearKey = "year", note, compact = false, sliderLabel }
           </Slider.Root>
           <div aria-hidden="true" className="absolute inset-x-0 bottom-0 h-4 text-[11px] text-muted">
             {TICKS.map((tick) => (
-              <span key={tick} className="absolute -translate-x-1/2 whitespace-nowrap first:translate-x-0 last:-translate-x-full" style={{ left: `${tickPosition(tick)}%` }}>
+              <span
+                key={tick}
+                data-testid="tick"
+                className={`absolute -translate-x-1/2 whitespace-nowrap first:translate-x-0 last:-translate-x-full ${PHONE_TICKS.has(tick) ? "" : "hidden md:inline"}`} style={{ left: `${tickPosition(tick)}%` }}>
                 {formatYear(tick, era)}
               </span>
             ))}

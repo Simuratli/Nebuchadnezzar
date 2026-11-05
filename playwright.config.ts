@@ -17,7 +17,11 @@ export default defineConfig({
     launchOptions: { args: ["--use-angle=swiftshader", "--enable-unsafe-swiftshader", "--ignore-gpu-blocklist"] },
   },
   projects: [
-    { name: "desktop", use: { ...devices["Desktop Chrome"], permissions: ["clipboard-read", "clipboard-write"] } },
+    {
+      name: "desktop",
+      testIgnore: /mobile.spec.ts/,
+      use: { ...devices["Desktop Chrome"], permissions: ["clipboard-read", "clipboard-write"] },
+    },
     {
       name: "mobile",
       testMatch: /mobile\.spec\.ts/,

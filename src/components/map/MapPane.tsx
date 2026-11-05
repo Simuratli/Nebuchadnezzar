@@ -84,7 +84,12 @@ export function MapPane({ events, routes, yearKey, primary = true, onBoundaryCha
     }
     const coords = route.geometry.coordinates;
     const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    mapRef.current?.fitBounds(lineBounds(coords), { padding: 70, duration: reduce ? 0 : 900 });
+    // Keeps the whole route clear of the side panel, which covers the map's left edge on desktop.
+    const sideOpen = useAtlas.getState().sidePanel !== null && window.matchMedia("(min-width: 768px)").matches;
+    mapRef.current?.fitBounds(lineBounds(coords), {
+      padding: { top: 70, right: 70, bottom: 70, left: sideOpen ? 400 : 70 },
+      duration: reduce ? 0 : 900,
+    });
 
     let frame = 0;
     let lastPassed = 0;
