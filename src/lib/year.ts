@@ -17,11 +17,16 @@ export const clampYear = (year: number) => {
 /** Adds a duration in years, stepping over the missing year 0. */
 export const addYears = (year: number, delta: number) => clampYear(indexToYear(yearToIndex(year) + delta));
 
-export function formatYear(year: number, era: { bc: string; ad: string } = { bc: "MÖ", ad: "MS" }) {
-  return year < 0 ? `${era.bc} ${-year}` : `${era.ad} ${year}`;
+/** Era labels of a language. suffix puts the label after the year ("331 BCE"), otherwise before ("MÖ 331"). */
+export type Era = { bc: string; ad: string; suffix?: boolean };
+
+export function formatYear(year: number, era: Era) {
+  const label = year < 0 ? era.bc : era.ad;
+  const value = Math.abs(year);
+  return era.suffix ? `${value} ${label}` : `${label} ${value}`;
 }
 
-export function formatYearRange(start: number, end: number | null, era?: { bc: string; ad: string }) {
+export function formatYearRange(start: number, end: number | null, era: Era) {
   if (end === null || end === start) return formatYear(start, era);
   return `${formatYear(start, era)} – ${formatYear(end, era)}`;
 }

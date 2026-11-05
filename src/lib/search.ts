@@ -3,14 +3,15 @@ import type { City, EventSummary, Person } from "./types";
 
 /**
  * Folds text for matching: Turkish-aware lowercase ("İ" → "i", "I" → "ı"), then
- * accents and dotless ı removed, so "istanbul" finds "İstanbul" and "sivas" finds "Sıvas".
+ * accents, dotless ı and Azerbaijani ə removed, so "istanbul" finds "İstanbul" and "gence" finds "Gəncə".
  */
 export function foldText(text: string): string {
   return text
     .toLocaleLowerCase("tr")
     .normalize("NFD")
     .replace(/\p{M}/gu, "")
-    .replace(/ı/g, "i");
+    .replace(/ı/g, "i")
+    .replace(/ə/g, "e");
 }
 
 export type SearchResult = { kind: "event"; item: EventSummary } | { kind: "person"; item: Person } | { kind: "city"; item: City };

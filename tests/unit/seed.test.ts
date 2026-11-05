@@ -4,14 +4,14 @@ import people from "../../data/seed/people.json";
 import routes from "../../data/seed/routes.json";
 import sources from "../../data/seed/sources.json";
 import tours from "../../data/seed/tours.json";
-import { eventSchema, personSchema, routeSchema, sourceSchema, tourSchema } from "@/lib/types";
+import { routeSchema, sourceSchema, storedEventSchema, storedPersonSchema, tourSchema } from "@/lib/types";
 import { MAX_YEAR, MIN_YEAR } from "@/lib/year";
 
 describe("seed data", () => {
   it("satisfies the schemas", () => {
-    for (const e of events) eventSchema.parse(e);
+    for (const e of events) storedEventSchema.parse(e);
     for (const s of sources) sourceSchema.parse(s);
-    for (const p of people) personSchema.parse(p);
+    for (const p of people) storedPersonSchema.parse(p);
     for (const r of routes) routeSchema.parse(r);
     for (const t of tours) tourSchema.parse(t);
   });
@@ -44,16 +44,23 @@ describe("seed data", () => {
     for (const s of sources) expect(ids.has(s.event_id), s.id).toBe(true);
   });
 
-  it("flags everything that is not verified Turkish content", () => {
+  it("flags hand-drawn lines and events with no text at all", () => {
     for (const e of events) {
-      if (e.content_lang !== "tr" || !e.summary || e.geometry.type === "LineString") expect(e.needs_review, e.id).toBe(true);
+      const i18n = e.i18n as Record<string, { summary?: string } | undefined>;
+      const hasText = Object.values(i18n).some((v) => v?.summary);
+      if (!hasText || e.geometry.type === "LineString") expect(e.needs_review, e.id).toBe(true);
     }
+  });
+
+  it("has a title in at least one language for every event, mostly in all three", () => {
+    for (const e of events) expect(Object.values(e.i18n as Record<string, { title?: string }>).some((v) => v?.title), e.id).toBe(true);
+    expect(events.filter((e) => (e.i18n as Record<string, { title?: string }>).en?.title).length).toBeGreaterThan(events.length * 0.9);
   });
 
   it("marks hand-written routes and tours for review, with no invented sources", () => {
     for (const r of routes) expect(r.needs_review).toBe(true);
     for (const t of tours) expect(t.needs_review).toBe(true);
-    for (const s of sources) expect(s.publisher === "Wikidata" || s.publisher === "Vikipedi" || s.publisher === "Wikipedia", s.id).toBe(true);
+    for (const s of sources) expect(["Wikidata", "Vikipedi", "Wikipedia", "Vikipediya"], s.id).toContain(s.publisher);
   });
 
   it("has one waypoint per route vertex, in time order and matching position", () => {

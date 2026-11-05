@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { useEra } from "@/lib/use-era";
 import { useCallback } from "react";
 import { sliceAt } from "@/lib/corrections";
 import type { Correction } from "@/lib/types";
@@ -11,7 +12,7 @@ import { SourceList } from "./SourceList";
 
 export function CorrectionPanel({ corrections }: { corrections: Correction[] }) {
   const t = useTranslations();
-  const era = { bc: t("era.bc"), ad: t("era.ad") };
+  const era = useEra();
   const correctionId = useAtlas((s) => s.correctionId);
   const year = useAtlas((s) => s.year);
   const setYear = useAtlas((s) => s.setYear);

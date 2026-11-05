@@ -11,10 +11,11 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import {
-  eventSchema,
+  storedEventSchema,
   sourceSchema,
   type Category,
-  type HistoricalEvent,
+  type Locale,
+  type StoredEvent,
   type Source,
 } from "../src/lib/types";
 import {
@@ -36,6 +37,7 @@ import {
   seedDir,
   sparql,
   wikiUri,
+  WIKI_PUBLISHER,
   wikiUrl,
   type Binding,
 } from "./wikidata-client";
@@ -64,6 +66,8 @@ const LABELS = `
   OPTIONAL { ?item rdfs:label ?enLabel FILTER(LANG(?enLabel) = "en") }
   OPTIONAL { ?item schema:description ?trDesc FILTER(LANG(?trDesc) = "tr") }
   OPTIONAL { ?item schema:description ?enDesc FILTER(LANG(?enDesc) = "en") }
+  OPTIONAL { ?item schema:description ?azDesc FILTER(LANG(?azDesc) = "az") }
+  OPTIONAL { ?azWiki schema:about ?item; schema:isPartOf <https://az.wikipedia.org/>; schema:name ?azTitle }
   OPTIONAL { ?trWiki schema:about ?item; schema:isPartOf <https://tr.wikipedia.org/>; schema:name ?trTitle }
   OPTIONAL { ?enWiki schema:about ?item; schema:isPartOf <https://en.wikipedia.org/>; schema:name ?enTitle }
   OPTIONAL { ?item wdt:P18 ?img }
@@ -114,23 +118,24 @@ async function fetchPrecisions(items: Raw[]): Promise<void> {
   for (const r of items) r.date_precision = precisionToDate(known[r.qid] ?? 0);
 }
 
-type Enrichment = Pick<Raw, "labels" | "desc" | "trTitle" | "enTitle" | "image">;
+type Enrichment = Pick<Raw, "labels" | "desc" | "trTitle" | "enTitle" | "azTitle" | "image">;
 
 const enrichmentOf = (b: Binding): Enrichment => ({
   labels: { tr: b.trLabel?.value, az: b.azLabel?.value, en: b.enLabel?.value },
-  desc: { tr: b.trDesc?.value, en: b.enDesc?.value },
+  desc: { tr: b.trDesc?.value, en: b.enDesc?.value, az: b.azDesc?.value },
   trTitle: b.trTitle?.value,
   enTitle: b.enTitle?.value,
+  azTitle: b.azTitle?.value,
   image: b.img?.value,
 });
 
 /** Adds labels, descriptions, article titles and images to the selected items. */
 async function enrich(items: Raw[]): Promise<void> {
-  const cache = diskMap<Enrichment>("enrich.json");
+  const cache = diskMap<Enrichment>("enrich-3lang.json");
   const todo = items.filter((r) => !cache.data[r.qid]);
   for (let i = 0; i < todo.length; i += 60) {
     const batch = todo.slice(i, i + 60);
-    const rows = await sparql(`SELECT ?item ?trLabel ?azLabel ?enLabel ?trDesc ?enDesc ?trTitle ?enTitle ?img WHERE {
+    const rows = await sparql(`SELECT ?item ?trLabel ?azLabel ?enLabel ?trDesc ?enDesc ?azDesc ?trTitle ?enTitle ?azTitle ?img WHERE {
       VALUES ?item { ${batch.map((r) => `wd:${r.qid}`).join(" ")} }
       ${LABELS}
     }`);
@@ -159,14 +164,15 @@ type Raw = {
   date_precision: "year" | "month" | "day" | null;
   dateProp: string;
   labels: { tr?: string; az?: string; en?: string };
-  desc: { tr?: string; en?: string };
+  desc: { tr?: string; en?: string; az?: string };
   trTitle?: string;
   enTitle?: string;
+  azTitle?: string;
   image?: string;
   links: number;
   /** From data/manual/key-events.json. */
   line?: [number, number][];
-  regions?: HistoricalEvent["region_tags"];
+  regions?: StoredEvent["region_tags"];
   /** Coordinates or date could not be confirmed against Wikidata. */
   handPlaced?: boolean;
 };
@@ -235,7 +241,7 @@ type KeyEvent = {
   end_year: number | null;
   point?: [number, number];
   line?: [number, number][];
-  regions?: HistoricalEvent["region_tags"];
+  regions?: StoredEvent["region_tags"];
 };
 
 /**
@@ -296,22 +302,25 @@ async function fetchKeyEvents(): Promise<Raw[]> {
   return out;
 }
 
-function toEvent(
-  r: Raw,
-  regions: HistoricalEvent["region_tags"],
-  extract: { text: string; lang: string } | undefined,
-): HistoricalEvent {
+const trimOrUndefined = (text: string | undefined, max: number) => (text ? trimToSentence(text, max) : undefined);
+
+function toEvent(r: Raw, regions: StoredEvent["region_tags"], extracts: Record<Locale, string | undefined>): StoredEvent {
   const line = r.line;
-  // The Turkish article title is usually a more established name than the item label.
-  const title = r.trTitle ?? r.labels.tr ?? r.labels.az ?? r.labels.en ?? r.enTitle ?? r.qid;
-  const titleLang = r.labels.tr || r.trTitle ? "tr" : r.labels.az ? "az" : "en";
-  const summary = extract ? trimToSentence(extract.text, 240) : (r.desc.tr ?? r.desc.en ?? "");
-  const textLang = extract?.lang ?? (r.desc.tr ? "tr" : r.desc.en ? "en" : titleLang);
+  const titles: Record<Locale, string | undefined> = {
+    en: r.enTitle ?? r.labels.en,
+    // The Turkish article title is usually a more established name than the item label.
+    tr: r.trTitle ?? r.labels.tr,
+    az: r.azTitle ?? r.labels.az,
+  };
+  const i18n: StoredEvent["i18n"] = {};
+  for (const lang of ["en", "tr", "az"] as const) {
+    const summary = trimOrUndefined(extracts[lang], 240) ?? r.desc[lang];
+    const description = trimOrUndefined(extracts[lang], 1400);
+    if (titles[lang] || summary) i18n[lang] = { title: titles[lang], summary, description };
+  }
+  if (!Object.values(i18n).some((v) => v.title)) i18n.en = { ...i18n.en, title: r.qid };
   return {
     id: r.qid,
-    title,
-    summary,
-    description: extract ? trimToSentence(extract.text, 1400) : "",
     start_year: r.start_year,
     end_year: r.end_year,
     date_precision: r.date_precision ?? "year",
@@ -320,14 +329,15 @@ function toEvent(
     region_tags: regions,
     wikidata_id: r.qid,
     image_url: r.image ? `${r.image.replace(/^http:/, "https:")}?width=640` : null,
-    content_lang: textLang === "tr" ? titleLang : textLang,
-    // Hand-placed data, non-Turkish text and an empty summary all need a human eye. So do
-    // Wikidata inception dates, which often record a refoundation or first mention.
-    needs_review: Boolean(line) || Boolean(r.handPlaced) || r.dateProp === "P571" || titleLang !== "tr" || textLang !== "tr" || !summary,
+    i18n,
+    // Hand-placed data and empty summaries need a human eye. So do Wikidata inception
+    // dates, which often record a refoundation or first mention. Language is not a
+    // review matter: the panel states it whenever the text is in another language.
+    needs_review: Boolean(line) || Boolean(r.handPlaced) || r.dateProp === "P571" || !Object.values(i18n).some((v) => v.summary),
   };
 }
 
-function toSources(r: Raw, title: string): Source[] {
+function toSources(r: Raw): Source[] {
   const common = {
     event_id: r.qid,
     type: "ansiklopedi" as const,
@@ -338,11 +348,12 @@ function toSources(r: Raw, title: string): Source[] {
     accessed_at: accessed,
     needs_review: false,
   };
-  const out: Source[] = [
-    { ...common, id: `${r.qid}-wikidata`, title, publisher: "Wikidata", url: `https://www.wikidata.org/wiki/${r.qid}` },
-  ];
-  if (r.trTitle) out.push({ ...common, id: `${r.qid}-trwiki`, title: r.trTitle, publisher: "Vikipedi", url: wikiUrl("tr", r.trTitle) });
-  else if (r.enTitle) out.push({ ...common, id: `${r.qid}-enwiki`, title: r.enTitle, publisher: "Wikipedia", url: wikiUrl("en", r.enTitle) });
+  // The Wikidata title is filled in per language when records are served.
+  const out: Source[] = [{ ...common, id: `${r.qid}-wikidata`, title: null, publisher: "Wikidata", url: `https://www.wikidata.org/wiki/${r.qid}`, lang: null }];
+  const articles: [Locale, string | undefined][] = [["en", r.enTitle], ["tr", r.trTitle], ["az", r.azTitle]];
+  for (const [lang, title] of articles) {
+    if (title) out.push({ ...common, id: `${r.qid}-${lang}wiki`, title, publisher: WIKI_PUBLISHER[lang], url: wikiUrl(lang, title), lang });
+  }
   return out;
 }
 
@@ -369,33 +380,35 @@ async function main() {
     }))
     .filter((c) => c.region_tags.length > 0);
   const chosen = selectBalanced(scored, CENTURY_CAPS).map((c) => c.raw);
-  await enrich(chosen);
-
   const selected = [...chosen, ...keyEvents];
-  const tr = await fetchExtracts("tr", selected.flatMap((r) => (r.trTitle ? [r.trTitle] : [])));
-  const en = await fetchExtracts("en", selected.flatMap((r) => (r.enTitle && !(r.trTitle && tr.has(r.trTitle)) ? [r.enTitle] : [])));
+  await enrich(selected);
+  const titlesFor = (key: "trTitle" | "enTitle" | "azTitle") => selected.flatMap((r) => (r[key] ? [r[key] as string] : []));
+  const tr = await fetchExtracts("tr", titlesFor("trTitle"));
+  const en = await fetchExtracts("en", titlesFor("enTitle"));
+  const az = await fetchExtracts("az", titlesFor("azTitle"));
 
-  const events: HistoricalEvent[] = [];
+  const events: StoredEvent[] = [];
   const sources: Source[] = [];
   for (const r of selected) {
-    const trText = r.trTitle ? tr.get(r.trTitle) : undefined;
-    const enText = r.enTitle ? en.get(r.enTitle) : undefined;
-    const extract = trText ? { text: trText, lang: "tr" } : enText ? { text: enText, lang: "en" } : undefined;
-    const regions = r.regions ?? ([...new Set((r.line ?? [r.coordinates]).flatMap((c) => regionsForPoint(c)))] as HistoricalEvent["region_tags"]);
+    const extracts = {
+      en: r.enTitle ? en.get(r.enTitle) : undefined,
+      tr: r.trTitle ? tr.get(r.trTitle) : undefined,
+      az: r.azTitle ? az.get(r.azTitle) : undefined,
+    };
+    const regions = r.regions ?? ([...new Set((r.line ?? [r.coordinates]).flatMap((c) => regionsForPoint(c)))] as StoredEvent["region_tags"]);
     if (regions.length === 0) {
       console.warn(`BOLGE YOK, atlaniyor: ${r.enTitle ?? r.qid}`);
       continue;
     }
-    const ev = eventSchema.parse(toEvent(r, regions, extract));
-    events.push(ev);
-    sources.push(...toSources(r, ev.title).map((s) => sourceSchema.parse(s)));
+    events.push(storedEventSchema.parse(toEvent(r, regions, extracts)));
+    sources.push(...toSources(r).map((s) => sourceSchema.parse(s)));
   }
   events.sort((a, b) => a.start_year - b.start_year);
 
   writeFileSync(join(seedDir, "events.json"), `${JSON.stringify(events, null, 1)}\n`);
   writeFileSync(join(seedDir, "sources.json"), `${JSON.stringify(sources, null, 1)}\n`);
 
-  const count = (f: (e: HistoricalEvent) => string[]) => {
+  const count = (f: (e: StoredEvent) => string[]) => {
     const m: Record<string, number> = {};
     for (const e of events) for (const k of f(e)) m[k] = (m[k] ?? 0) + 1;
     return m;
@@ -403,7 +416,10 @@ async function main() {
   console.log(`Olay: ${events.length}, kaynak: ${sources.length}`);
   console.log("Kategori:", JSON.stringify(count((e) => [e.category])));
   console.log("Bolge:", JSON.stringify(count((e) => e.region_tags)));
-  console.log("Turkce:", events.filter((e) => e.content_lang === "tr").length, "| needs_review:", events.filter((e) => e.needs_review).length);
+  for (const lang of ["en", "tr", "az"] as const) {
+    console.log(`${lang}: baslik ${events.filter((e) => e.i18n[lang]?.title).length}, ozet ${events.filter((e) => e.i18n[lang]?.summary).length}, metin ${events.filter((e) => e.i18n[lang]?.description).length}`);
+  }
+  console.log("needs_review:", events.filter((e) => e.needs_review).length);
 }
 
 main().catch((e) => {

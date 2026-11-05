@@ -1,6 +1,7 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
+import { useEra } from "@/lib/use-era";
 import { useMemo, useState } from "react";
 import { formatBibtexCollection } from "@/lib/citation/bibtex";
 import { downloadText } from "@/lib/export";
@@ -11,7 +12,8 @@ import { useCollection } from "@/store/collection";
 
 export function CollectionPanel({ events }: { events: EventSummary[] }) {
   const t = useTranslations();
-  const era = { bc: t("era.bc"), ad: t("era.ad") };
+  const locale = useLocale();
+  const era = useEra();
   const items = useCollection((s) => s.items);
   const remove = useCollection((s) => s.remove);
   const setNote = useCollection((s) => s.setNote);
@@ -25,7 +27,7 @@ export function CollectionPanel({ events }: { events: EventSummary[] }) {
       const res = await fetch("/api/sources", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ eventIds: items.map((i) => i.eventId) }),
+        body: JSON.stringify({ eventIds: items.map((i) => i.eventId), locale }),
       });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const sources = (await res.json()) as Source[];

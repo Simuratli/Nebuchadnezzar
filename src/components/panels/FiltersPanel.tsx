@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { useEra } from "@/lib/use-era";
 import { useMemo, useState } from "react";
 import { CATEGORY_META } from "@/lib/categories";
 import { downloadText, eventsToCsv, eventsToGeoJson } from "@/lib/export";
@@ -48,7 +49,7 @@ function YearInput({ label, value, onChange, testId }: { label: string; value: n
 
 export function FiltersPanel({ events }: { events: EventSummary[] }) {
   const t = useTranslations();
-  const era = { bc: t("era.bc"), ad: t("era.ad") };
+  const era = useEra();
   const filters = useAtlas((s) => s.filters);
   const setFilters = useAtlas((s) => s.setFilters);
   const clearFilters = useAtlas((s) => s.clearFilters);

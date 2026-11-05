@@ -10,7 +10,7 @@ import { readFileSync } from "node:fs";
 import { join, resolve } from "node:path";
 import { createClient } from "@supabase/supabase-js";
 import { z } from "zod";
-import { citySchema, correctionSchema, eventSchema, personSchema, routeSchema, sourceSchema, tourSchema } from "../src/lib/types";
+import { correctionSchema, routeSchema, sourceSchema, storedCitySchema, storedEventSchema, storedPersonSchema, tourSchema } from "../src/lib/types";
 
 const url = process.env.SUPABASE_URL;
 const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
@@ -33,12 +33,12 @@ async function upsert(table: string, rows: object[]) {
 
 async function main() {
   // Order follows the foreign keys.
-  await upsert("people", read("people.json", personSchema));
-  await upsert("events", read("events.json", eventSchema));
+  await upsert("people", read("people.json", storedPersonSchema));
+  await upsert("events", read("events.json", storedEventSchema));
   await upsert("sources", read("sources.json", sourceSchema));
   await upsert("routes", read("routes.json", routeSchema));
   await upsert("tours", read("tours.json", tourSchema));
-  await upsert("cities", read("cities.json", citySchema));
+  await upsert("cities", read("cities.json", storedCitySchema));
   await upsert("corrections", read("corrections.json", correctionSchema));
 }
 

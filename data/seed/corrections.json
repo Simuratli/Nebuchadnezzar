@@ -21,7 +21,8 @@
       "pages": null,
       "reliability": 1,
       "accessed_at": "2026-11-05",
-      "needs_review": true
+      "needs_review": true,
+      "lang": "en"
      }
     ]
    },
@@ -44,7 +45,8 @@
       "pages": null,
       "reliability": 1,
       "accessed_at": "2026-11-05",
-      "needs_review": true
+      "needs_review": true,
+      "lang": "en"
      }
     ]
    },
@@ -67,7 +69,8 @@
       "pages": null,
       "reliability": 1,
       "accessed_at": "2026-11-05",
-      "needs_review": true
+      "needs_review": true,
+      "lang": "en"
      }
     ]
    }
@@ -96,7 +99,8 @@
       "pages": null,
       "reliability": 1,
       "accessed_at": "2026-11-05",
-      "needs_review": true
+      "needs_review": true,
+      "lang": "en"
      }
     ]
    },
@@ -119,7 +123,8 @@
       "pages": null,
       "reliability": 1,
       "accessed_at": "2026-11-05",
-      "needs_review": true
+      "needs_review": true,
+      "lang": "en"
      }
     ]
    },
@@ -142,7 +147,8 @@
       "pages": null,
       "reliability": 1,
       "accessed_at": "2026-11-05",
-      "needs_review": true
+      "needs_review": true,
+      "lang": "en"
      }
     ]
    },
@@ -165,7 +171,8 @@
       "pages": null,
       "reliability": 1,
       "accessed_at": "2026-11-05",
-      "needs_review": true
+      "needs_review": true,
+      "lang": "en"
      }
     ]
    }
@@ -194,7 +201,8 @@
       "pages": null,
       "reliability": 1,
       "accessed_at": "2026-11-05",
-      "needs_review": true
+      "needs_review": true,
+      "lang": "en"
      }
     ]
    },
@@ -217,7 +225,8 @@
       "pages": null,
       "reliability": 1,
       "accessed_at": "2026-11-05",
-      "needs_review": true
+      "needs_review": true,
+      "lang": "en"
      },
      {
       "id": "fix-meshetya-1829-akhaltsikhe",
@@ -231,7 +240,8 @@
       "pages": null,
       "reliability": 1,
       "accessed_at": "2026-11-05",
-      "needs_review": true
+      "needs_review": true,
+      "lang": "en"
      }
     ]
    },
@@ -254,7 +264,8 @@
       "pages": null,
       "reliability": 1,
       "accessed_at": "2026-11-05",
-      "needs_review": true
+      "needs_review": true,
+      "lang": "en"
      }
     ]
    }
@@ -283,7 +294,8 @@
       "pages": null,
       "reliability": 1,
       "accessed_at": "2026-11-05",
-      "needs_review": true
+      "needs_review": true,
+      "lang": "en"
      }
     ]
    },
@@ -306,7 +318,8 @@
       "pages": null,
       "reliability": 1,
       "accessed_at": "2026-11-05",
-      "needs_review": true
+      "needs_review": true,
+      "lang": "en"
      }
     ]
    },
@@ -329,7 +342,8 @@
       "pages": null,
       "reliability": 1,
       "accessed_at": "2026-11-05",
-      "needs_review": true
+      "needs_review": true,
+      "lang": "en"
      }
     ]
    }
@@ -358,7 +372,8 @@
       "pages": null,
       "reliability": 1,
       "accessed_at": "2026-11-05",
-      "needs_review": true
+      "needs_review": true,
+      "lang": "en"
      }
     ]
    },
@@ -381,7 +396,8 @@
       "pages": null,
       "reliability": 1,
       "accessed_at": "2026-11-05",
-      "needs_review": true
+      "needs_review": true,
+      "lang": "en"
      }
     ]
    },
@@ -404,7 +420,8 @@
       "pages": null,
       "reliability": 1,
       "accessed_at": "2026-11-05",
-      "needs_review": true
+      "needs_review": true,
+      "lang": "en"
      }
     ]
    }
@@ -433,7 +450,8 @@
       "pages": null,
       "reliability": 1,
       "accessed_at": "2026-11-05",
-      "needs_review": true
+      "needs_review": true,
+      "lang": "en"
      }
     ]
    },
@@ -456,7 +474,8 @@
       "pages": null,
       "reliability": 1,
       "accessed_at": "2026-11-05",
-      "needs_review": true
+      "needs_review": true,
+      "lang": "en"
      },
      {
       "id": "fix-azerbaycan-1804-gulistan",
@@ -470,7 +489,8 @@
       "pages": null,
       "reliability": 1,
       "accessed_at": "2026-11-05",
-      "needs_review": true
+      "needs_review": true,
+      "lang": "en"
      }
     ]
    },
@@ -493,7 +513,8 @@
       "pages": null,
       "reliability": 1,
       "accessed_at": "2026-11-05",
-      "needs_review": true
+      "needs_review": true,
+      "lang": "en"
      },
      {
       "id": "fix-azerbaycan-1813-turkmenchay",
@@ -507,7 +528,8 @@
       "pages": null,
       "reliability": 1,
       "accessed_at": "2026-11-05",
-      "needs_review": true
+      "needs_review": true,
+      "lang": "en"
      }
     ]
    },
@@ -530,7 +552,8 @@
       "pages": null,
       "reliability": 1,
       "accessed_at": "2026-11-05",
-      "needs_review": true
+      "needs_review": true,
+      "lang": "en"
      }
     ]
    }
@@ -559,7 +582,8 @@
       "pages": null,
       "reliability": 1,
       "accessed_at": "2026-11-05",
-      "needs_review": true
+      "needs_review": true,
+      "lang": "en"
      }
     ]
    },
@@ -582,7 +606,8 @@
       "pages": null,
       "reliability": 1,
       "accessed_at": "2026-11-05",
-      "needs_review": true
+      "needs_review": true,
+      "lang": "en"
      },
      {
       "id": "fix-karabag-zengezur-1804-gulistan",
@@ -596,7 +621,8 @@
       "pages": null,
       "reliability": 1,
       "accessed_at": "2026-11-05",
-      "needs_review": true
+      "needs_review": true,
+      "lang": "en"
      }
     ]
    },
@@ -619,7 +645,8 @@
       "pages": null,
       "reliability": 1,
       "accessed_at": "2026-11-05",
-      "needs_review": true
+      "needs_review": true,
+      "lang": "en"
      }
     ]
    },
@@ -642,7 +669,8 @@
       "pages": null,
       "reliability": 1,
       "accessed_at": "2026-11-05",
-      "needs_review": true
+      "needs_review": true,
+      "lang": "en"
      },
      {
       "id": "fix-karabag-zengezur-1918-dra",
@@ -656,7 +684,8 @@
       "pages": null,
       "reliability": 1,
       "accessed_at": "2026-11-05",
-      "needs_review": true
+      "needs_review": true,
+      "lang": "en"
      }
     ]
    }
@@ -685,7 +714,8 @@
       "pages": null,
       "reliability": 1,
       "accessed_at": "2026-11-05",
-      "needs_review": true
+      "needs_review": true,
+      "lang": "en"
      }
     ]
    },
@@ -708,7 +738,8 @@
       "pages": null,
       "reliability": 1,
       "accessed_at": "2026-11-05",
-      "needs_review": true
+      "needs_review": true,
+      "lang": "en"
      },
      {
       "id": "fix-nahcivan-1828-nakhchivan",
@@ -722,7 +753,8 @@
       "pages": null,
       "reliability": 1,
       "accessed_at": "2026-11-05",
-      "needs_review": true
+      "needs_review": true,
+      "lang": "en"
      }
     ]
    },
@@ -745,7 +777,8 @@
       "pages": null,
       "reliability": 1,
       "accessed_at": "2026-11-05",
-      "needs_review": true
+      "needs_review": true,
+      "lang": "en"
      },
      {
       "id": "fix-nahcivan-1918-dra",
@@ -759,7 +792,8 @@
       "pages": null,
       "reliability": 1,
       "accessed_at": "2026-11-05",
-      "needs_review": true
+      "needs_review": true,
+      "lang": "en"
      }
     ]
    }
@@ -788,7 +822,8 @@
       "pages": null,
       "reliability": 1,
       "accessed_at": "2026-11-05",
-      "needs_review": true
+      "needs_review": true,
+      "lang": "en"
      }
     ]
    },
@@ -811,7 +846,8 @@
       "pages": null,
       "reliability": 1,
       "accessed_at": "2026-11-05",
-      "needs_review": true
+      "needs_review": true,
+      "lang": "en"
      },
      {
       "id": "fix-erivan-1828-erivan",
@@ -825,7 +861,8 @@
       "pages": null,
       "reliability": 1,
       "accessed_at": "2026-11-05",
-      "needs_review": true
+      "needs_review": true,
+      "lang": "en"
      }
     ]
    },
@@ -848,7 +885,8 @@
       "pages": null,
       "reliability": 1,
       "accessed_at": "2026-11-05",
-      "needs_review": true
+      "needs_review": true,
+      "lang": "en"
      }
     ]
    }
@@ -877,7 +915,8 @@
       "pages": null,
       "reliability": 1,
       "accessed_at": "2026-11-05",
-      "needs_review": true
+      "needs_review": true,
+      "lang": "en"
      }
     ]
    },
@@ -900,7 +939,8 @@
       "pages": null,
       "reliability": 1,
       "accessed_at": "2026-11-05",
-      "needs_review": true
+      "needs_review": true,
+      "lang": "en"
      },
      {
       "id": "fix-sirak-1804-gulistan",
@@ -914,7 +954,8 @@
       "pages": null,
       "reliability": 1,
       "accessed_at": "2026-11-05",
-      "needs_review": true
+      "needs_review": true,
+      "lang": "en"
      }
     ]
    },
@@ -937,7 +978,8 @@
       "pages": null,
       "reliability": 1,
       "accessed_at": "2026-11-05",
-      "needs_review": true
+      "needs_review": true,
+      "lang": "en"
      }
     ]
    },
@@ -960,7 +1002,8 @@
       "pages": null,
       "reliability": 1,
       "accessed_at": "2026-11-05",
-      "needs_review": true
+      "needs_review": true,
+      "lang": "en"
      }
     ]
    }

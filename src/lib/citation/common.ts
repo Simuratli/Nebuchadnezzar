@@ -1,13 +1,24 @@
 import type { Source } from "@/lib/types";
 
-const MONTHS_TR = ["Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"];
+/** A language's citation wording, kept in messages/<locale>.json under citationFormat. */
+export type CitationText = {
+  noDate: string;
+  pages: string;
+  retrieved: string;
+  accessed: string;
+  date: string;
+  months: string[];
+};
 
-/** "2026-11-05" → "5 Kasım 2026". Returns null for anything that is not an ISO date. */
-export function formatAccessDate(iso: string | null): string | null {
+export const fill = (template: string, values: Record<string, string | number>) =>
+  template.replace(/\{(\w+)\}/g, (match, key: string) => String(values[key] ?? match));
+
+/** "2026-11-05" → "November 5, 2026". Returns null for anything that is not an ISO date. */
+export function formatAccessDate(iso: string | null, text: CitationText): string | null {
   const m = iso ? /^(\d{4})-(\d{2})-(\d{2})$/.exec(iso) : null;
   if (!m) return null;
-  const month = MONTHS_TR[Number(m[2]) - 1];
-  return month ? `${Number(m[3])} ${month} ${m[1]}` : null;
+  const month = text.months[Number(m[2]) - 1];
+  return month ? fill(text.date, { day: Number(m[3]), month, year: m[1] }) : null;
 }
 
 export type CitableField = "author" | "title" | "year" | "publisher";

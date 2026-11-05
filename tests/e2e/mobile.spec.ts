@@ -20,6 +20,18 @@ test.describe("mobil", () => {
     expect(overflow).toBeLessThanOrEqual(0);
   });
 
+  test("başlıkta dil seçici ve tema düğmesi tam görünür, menü kaydırılabilir", async ({ page }) => {
+    await page.goto("/az");
+    const language = await page.getByTestId("language").boundingBox();
+    const theme = await page.getByTestId("theme-toggle").boundingBox();
+    const viewport = page.viewportSize();
+    expect((language?.x ?? 0) + (language?.width ?? 0)).toBeLessThanOrEqual(theme?.x ?? 0);
+    expect((theme?.x ?? 0) + (theme?.width ?? 0)).toBeLessThanOrEqual(viewport?.width ?? 0);
+    expect(Math.abs((theme?.width ?? 0) - (theme?.height ?? 0))).toBeLessThan(2);
+    await page.getByTestId("nav-compare").scrollIntoViewIfNeeded();
+    await expect(page.getByTestId("nav-compare")).toBeInViewport();
+  });
+
   test("zaman ekseni etiketleri üst üste binmez", async ({ page }) => {
     await page.goto("/tr");
     await expect(page.getByTestId("slider-year")).toBeVisible();

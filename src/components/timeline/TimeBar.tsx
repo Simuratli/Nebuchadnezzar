@@ -2,6 +2,7 @@
 
 import * as Slider from "@radix-ui/react-slider";
 import { useTranslations } from "next-intl";
+import { useEra } from "@/lib/use-era";
 import { useEffect, useRef } from "react";
 import { addYears, formatYear, indexToYear, MAX_YEAR, MIN_YEAR, yearToIndex } from "@/lib/year";
 import { SPEEDS, useAtlas, WINDOWS } from "@/store/atlas";
@@ -46,8 +47,7 @@ type Props = {
 
 export function TimeBar({ yearKey = "year", note, compact = false, sliderLabel }: Props) {
   const t = useTranslations("timeline");
-  const tEra = useTranslations("era");
-  const era = { bc: tEra("bc"), ad: tEra("ad") };
+  const era = useEra();
   const year = useAtlas((s) => s[yearKey]);
   const playing = useAtlas((s) => s.playing);
   const speed = useAtlas((s) => s.speed);

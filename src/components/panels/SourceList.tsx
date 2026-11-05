@@ -5,14 +5,14 @@ import { useEffect, useRef, useState } from "react";
 import { formatApa } from "@/lib/citation/apa";
 import { formatBibtex } from "@/lib/citation/bibtex";
 import { formatChicago } from "@/lib/citation/chicago";
-import { missingFields } from "@/lib/citation/common";
+import { missingFields, type CitationText } from "@/lib/citation/common";
 import type { Source } from "@/lib/types";
 
-const FORMATS = [
+const FORMATS: { label: string; format: (s: Source, text: CitationText) => string }[] = [
   { label: "APA 7", format: formatApa },
   { label: "Chicago", format: formatChicago },
   { label: "BibTeX", format: formatBibtex },
-] as const;
+];
 
 const BADGE: Record<Source["type"], string> = {
   birincil: "bg-[#2f6b4f] text-white",
@@ -52,6 +52,7 @@ function CopyButton({ label, getText }: { label: string; getText: () => string }
 
 export function SourceList({ sources }: { sources: Source[] }) {
   const t = useTranslations();
+  const citationText = t.raw("citationFormat") as CitationText;
   return (
     <section className="mt-6" data-testid="sources">
       <h3 className="mb-2 font-serif text-lg font-semibold">{t("event.sources")}</h3>
@@ -80,7 +81,7 @@ export function SourceList({ sources }: { sources: Source[] }) {
               {source.needs_review && <p className="mt-2 rounded bg-warn-bg px-2 py-1 text-xs text-warn-ink">{t("source.reviewFlag")}</p>}
               <div className="mt-2 flex flex-wrap gap-2">
                 {FORMATS.map(({ label, format }) => (
-                  <CopyButton key={label} label={label} getText={() => format(source)} />
+                  <CopyButton key={label} label={label} getText={() => format(source, citationText)} />
                 ))}
               </div>
             </li>

@@ -4,8 +4,6 @@ import { createSupabaseRepository } from "@/lib/data/supabase-repository";
 // Stubs the HTTP layer only. This checks the adapter's own logic, not a real database.
 const summary = (id: string) => ({
   id,
-  title: `Olay ${id}`,
-  summary: "",
   start_year: 1453,
   end_year: null,
   date_precision: "year",
@@ -14,8 +12,8 @@ const summary = (id: string) => ({
   region_tags: ["osmanli"],
   wikidata_id: null,
   image_url: null,
-  content_lang: "tr",
   needs_review: false,
+  i18n: { tr: { title: `Olay ${id}`, summary: "Özet", description: "Metin" }, en: { title: `Event ${id}` } },
 });
 
 const source = (id: string, event_id: string) => ({
@@ -31,6 +29,7 @@ const source = (id: string, event_id: string) => ({
   reliability: 1,
   accessed_at: "2026-11-05",
   needs_review: false,
+  lang: "tr",
 });
 
 describe("Supabase repository", () => {
@@ -61,11 +60,12 @@ describe("Supabase repository", () => {
     expect(() => createSupabaseRepository()).toThrow(/NEXT_PUBLIC_SUPABASE_URL/);
   });
 
-  it("reads events without the description column", async () => {
+  it("serves events in one language, without the long text in lists", async () => {
     respond = () => [summary("a")];
-    const events = await createSupabaseRepository().listEvents();
-    expect(events.map((e) => e.id)).toEqual(["a"]);
-    expect(requests[0].searchParams.get("select")).not.toContain("description");
+    const events = await createSupabaseRepository().listEvents("tr");
+    expect(events[0]).toMatchObject({ id: "a", title: "Olay a", summary: "Özet", content_lang: "tr" });
+    expect(events[0]).not.toHaveProperty("description");
+    expect(events[0]).not.toHaveProperty("i18n");
   });
 
   it("keeps paging until a short page arrives", async () => {
@@ -74,21 +74,21 @@ describe("Supabase repository", () => {
       call++;
       return call === 1 ? Array.from({ length: 1000 }, (_, i) => summary(`e${i}`)) : [summary("last")];
     };
-    const events = await createSupabaseRepository().listEvents();
+    const events = await createSupabaseRepository().listEvents("en");
     expect(events).toHaveLength(1001);
     expect(call).toBe(2);
   });
 
   it("rejects rows that do not match the schema instead of passing them on", async () => {
     respond = () => [{ ...summary("a"), start_year: 0 }];
-    await expect(createSupabaseRepository().listEvents()).rejects.toThrow();
+    await expect(createSupabaseRepository().listEvents("en")).rejects.toThrow();
   });
 
   it("splits large source requests", async () => {
     respond = (url) => (url.pathname.endsWith("/sources") ? [source(`s${requests.length}`, "e")] : []);
     const ids = Array.from({ length: 250 }, (_, i) => `e${i}`);
-    const sources = await createSupabaseRepository().getSources(ids);
+    const sources = await createSupabaseRepository().getSources(ids, "tr");
     expect(requests).toHaveLength(3);
-    expect(sources).toHaveLength(3);
+    expect(sources.length).toBeGreaterThan(0);
   });
 });

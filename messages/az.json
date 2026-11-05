@@ -1,0 +1,242 @@
+{
+  "app": {
+    "title": "Zaman Atlası",
+    "description": "Qafqaz, Osmanlı coğrafiyası və İpək Yolu üçün mənbələrə əsaslanan interaktiv tarix xəritəsi.",
+    "loading": "Xəritə yüklənir…",
+    "skipToTimeline": "Zaman xəttinə keç",
+    "close": "Bağla",
+    "language": "Dil"
+  },
+  "era": {
+    "bc": "e.ə.",
+    "ad": "b.e.",
+    "position": "prefix"
+  },
+  "theme": {
+    "toggle": "Mövzunu dəyiş",
+    "light": "Açıq mövzu",
+    "dark": "Tünd mövzu"
+  },
+  "timeline": {
+    "label": "Zaman xətti",
+    "slider": "İl seçimi",
+    "sliderLeft": "Sol xəritənin ili",
+    "sliderRight": "Sağ xəritənin ili",
+    "play": "Oynat",
+    "pause": "Dayandır",
+    "speed": "Sürət",
+    "speedUnit": "il/san",
+    "window": "Hadisə pəncərəsi",
+    "windowHint": "Seçilmiş ildən neçə il əvvəl və sonrakı hadisələr göstərilsin",
+    "boundaryNote": "Sərhəd xəritəsi: {year}",
+    "visibleCount": "{count} hadisə göstərilir",
+    "boundaryError": "Sərhəd xəritəsi yüklənmədi"
+  },
+  "map": {
+    "label": "Tarix xəritəsi",
+    "boundariesApprox": "Sərhədlər təxminidir"
+  },
+  "categories": {
+    "savas": "Müharibə",
+    "antlasma": "Müqavilə",
+    "kurulus": "Qurulma",
+    "kultur": "Mədəniyyət",
+    "bilim": "Elm",
+    "goc": "Köç",
+    "isyan": "Üsyan",
+    "diger": "Digər"
+  },
+  "regions": {
+    "kafkasya": "Qafqaz",
+    "osmanli": "Osmanlı coğrafiyası",
+    "ipek-yolu": "İpək Yolu"
+  },
+  "event": {
+    "panel": "Hadisə haqqında",
+    "loading": "Yüklənir…",
+    "error": "Hadisə yüklənmədi.",
+    "retry": "Yenidən cəhd et",
+    "needsReview": "Bu qeyd hələ yoxlanılmayıb.",
+    "languageNote": "Hələ Azərbaycan dilində yoxdur, {lang} göstərilir.",
+    "imageCredit": "Şəkil: Wikimedia Commons",
+    "wikiLicense": "Mətn Vikipediyadan götürülüb (CC BY-SA).",
+    "noSummary": "Bu hadisə üçün hələ xülasə yoxdur.",
+    "sources": "Mənbələr",
+    "noSources": "Bu hadisə üçün mənbə yoxdur.",
+    "people": "Əlaqəli şəxslər"
+  },
+  "source": {
+    "birincil": "İlkin",
+    "ikincil": "Akademik",
+    "ansiklopedi": "Ensiklopediya",
+    "reliability": "Etibarlılıq: {value}/3",
+    "open": "Mənbəni aç",
+    "untitled": "Başlıqsız mənbə",
+    "copy": "{format} kopyala",
+    "copied": "Kopyalandı",
+    "copyFailed": "Kopyalanmadı",
+    "missing": "Çatışmayan sahə: {fields}. İstinaddan istifadə etməzdən əvvəl tamamlayın.",
+    "reviewFlag": "Bu mənbə yoxlanılmağı gözləyir.",
+    "fields": {
+      "author": "müəllif",
+      "title": "başlıq",
+      "year": "il",
+      "publisher": "nəşriyyat"
+    }
+  },
+  "citationFormat": {
+    "noDate": "t.g.",
+    "pages": "s. {pages}.",
+    "retrieved": "{date} tarixində {url} ünvanından əldə edilib.",
+    "accessed": "Giriş tarixi: {date}.",
+    "date": "{day} {month} {year}",
+    "months": [
+      "yanvar",
+      "fevral",
+      "mart",
+      "aprel",
+      "may",
+      "iyun",
+      "iyul",
+      "avqust",
+      "sentyabr",
+      "oktyabr",
+      "noyabr",
+      "dekabr"
+    ]
+  },
+  "nav": {
+    "filters": "Filtr",
+    "collection": "Kolleksiya",
+    "routes": "Marşrutlar",
+    "tours": "Turlar",
+    "export": "Xəritəni endir",
+    "compare": "Müqayisə et",
+    "panels": "Panellər"
+  },
+  "filters": {
+    "title": "Filtrlər",
+    "category": "Kateqoriya",
+    "region": "Region",
+    "yearRange": "İl aralığı",
+    "from": "Başlanğıc ili",
+    "to": "Son il",
+    "yearHint": "E.ə. illər üçün mənfi yazın (e.ə. 331 üçün -331).",
+    "clear": "Filtrləri təmizlə",
+    "results": "{count} hadisə",
+    "export": "İxrac et",
+    "exportCsv": "CSV endir",
+    "exportGeoJson": "GeoJSON endir",
+    "list": "Nəticələr",
+    "showMore": "Daha çox göstər"
+  },
+  "search": {
+    "label": "Hadisə, şəxs və ya şəhər axtar",
+    "placeholder": "Hadisə, şəxs, şəhər axtar…",
+    "noResults": "Nəticə tapılmadı",
+    "person": "Şəxs",
+    "event": "Hadisə",
+    "city": "Şəhər",
+    "lived": "{start} – {end}",
+    "unknown": "?"
+  },
+  "collection": {
+    "title": "Kolleksiyam",
+    "empty": "Hələ hadisə əlavə etməmisiniz. Hadisənin panelindən kolleksiyaya əlavə edə bilərsiniz.",
+    "add": "Kolleksiyaya əlavə et",
+    "remove": "Kolleksiyadan çıxar",
+    "note": "Qeyd",
+    "notePlaceholder": "Bu hadisə ilə bağlı qeydiniz…",
+    "count": "{count} hadisə",
+    "downloadBibtex": "BibTeX endir",
+    "preparing": "Hazırlanır…",
+    "downloadFailed": "Mənbələr endirilmədi.",
+    "localNotice": "Kolleksiya yalnız bu brauzerdə saxlanılır."
+  },
+  "compare": {
+    "enter": "Müqayisəni aç",
+    "exit": "Müqayisəni bağla",
+    "left": "Sol xəritə",
+    "right": "Sağ xəritə"
+  },
+  "routes": {
+    "title": "Marşrutlar",
+    "play": "Marşrutu oynat",
+    "replay": "Yenidən oynat",
+    "stop": "Marşrutu bağla",
+    "waypoints": "Dayanacaqlar",
+    "reviewNote": "Marşrut və tarixlər təxminidir, mütəxəssis yoxlamasını gözləyir.",
+    "noSource": "Bu marşrut üçün hələ mənbə əlavə edilməyib."
+  },
+  "tours": {
+    "title": "Turlar",
+    "start": "Turu başlat",
+    "step": "Addım {current} / {total}",
+    "next": "Növbəti",
+    "prev": "Əvvəlki",
+    "finish": "Turu bitir",
+    "reviewNote": "Bu mətn ümumi biliyə əsaslanır, mənbə əlavə edilməyib və mütəxəssis yoxlamasını gözləyir."
+  },
+  "city": {
+    "panel": "Şəhər haqqında",
+    "kind": "Şəhər",
+    "nameInYear": "{year} ilindəki adı: {name}",
+    "names": "Adları",
+    "noNames": "Bu şəhər üçün qeydə alınmış başqa ad yoxdur.",
+    "otherNames": "Digər adları",
+    "unknownStart": "başlanğıc məlum deyil",
+    "present": "bu gün",
+    "unconfirmed": "təsdiqlənməyib",
+    "rulers": "İdarəçilik (təxmini)",
+    "rulersWarning": "Bu siyahı tarixi sərhəd xəritələrindən avtomatik çıxarılıb və mənbə məlumatlarında bilinən səhvlər var. Qısa müddətli əl dəyişmələrini göstərmir. Yoxlamadan istinad etməyin.",
+    "unknownRuler": "Məlum deyil",
+    "manualRuler": "əl ilə düzəldilib",
+    "events": "Yaxın ətrafdakı hadisələr (≈{km} km)",
+    "noEvents": "Bu ərazidə qeydə alınmış hadisə yoxdur."
+  },
+  "person": {
+    "panel": "Şəxs haqqında",
+    "kind": "Şəxs",
+    "unknown": "?",
+    "needsReview": "Bu şəxs haqqında bəzi məlumatlar hələ yoxlanılmayıb.",
+    "noSummary": "Bu şəxs üçün hələ xülasə yoxdur.",
+    "goToEra": "Dövrünə keç ({year})",
+    "showRoute": "Marşrutu göstər: {title}",
+    "born": "Doğum yeri",
+    "died": "Vəfat yeri",
+    "events": "Əlaqəli hadisələr",
+    "noEvents": "Bu şəxsə bağlı hadisə hələ yoxdur.",
+    "manualLink": "əl ilə bağlanıb"
+  },
+  "correction": {
+    "panel": "Sərhəd düzəlişi",
+    "kind": "Əl ilə düzəldilmiş ərazi",
+    "outside": "Bu il düzəliş dövründən kənardadır",
+    "warning": "Mənbə məlumat dəsti bu regionu 1800–1920-ci illər üçün səhv göstərdiyindən əl ilə düzəldilib. Xətlər tarixi sərhəd deyil, bugünkü inzibati sərhədlərdən götürülüb; tarixlər müqavilələrə əsaslanır. Mütəxəssis yoxlamasını gözləyir.",
+    "periods": "Bu ərazinin dövrləri",
+    "timelineNote": "Cənubi Qafqaz düzəldilib"
+  },
+  "export": {
+    "title": "Xəritəni endir",
+    "help": "Xəritənin hazırkı görünüşü izahat və istinadla birlikdə endirilir. Əvvəlcə xəritəni istədiyiniz mövqeyə gətirin.",
+    "png": "PNG endir",
+    "pdf": "PDF endir",
+    "preparing": "Hazırlanır…",
+    "failed": "Şəkil yaradılmadı. Xəritə yükləndikdən sonra yenidən cəhd edin.",
+    "caption": "Şəklin izahatı",
+    "citation": "Xəritəyə istinad",
+    "copy": "İstinadı kopyala",
+    "accuracy": "Sərhədlər təxminidir və mənbə məlumatlarında bilinən səhvlər var. Dissertasiya və ya nəşrdə istifadə etməzdən əvvəl başqa mənbələrlə müqayisə edin."
+  },
+  "mapCaption": {
+    "yearOne": "{year} ili",
+    "yearTwo": "{year} və {year2} illəri",
+    "kind": "Xəritə",
+    "boundaryOne": "Sərhəd xəritəsi: {year}",
+    "boundaryTwo": "Sərhəd xəritələri: {year} və {year2}",
+    "unknown": "məlum deyil",
+    "attribution": "Əsas xəritə: OpenFreeMap, OpenMapTiles, OpenStreetMap iştirakçıları. Sərhədlər: historical-basemaps (A. Ourednik və iştirakçılar, GPL-3.0), təxminidir.",
+    "correction": "Cənubi Qafqaz (1800–1920): əl ilə düzəldilib, bugünkü inzibati sərhədlərdən (Natural Earth) götürülüb, müqavilələrlə tarixləndirilib, təxminidir.",
+    "citationLabel": "İstinad"
+  }
+}

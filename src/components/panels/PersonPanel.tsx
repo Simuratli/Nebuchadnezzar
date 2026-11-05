@@ -1,6 +1,7 @@
 "use client";
 
 import { useLocale, useTranslations } from "next-intl";
+import { useEra } from "@/lib/use-era";
 import { useCallback, useMemo } from "react";
 import type { EventSummary, HistoricalRoute, Person } from "@/lib/types";
 import { clampYear, formatYear } from "@/lib/year";
@@ -19,7 +20,7 @@ type Props = { people: Person[]; events: EventSummary[]; routes: HistoricalRoute
 export function PersonPanel({ people, events, routes }: Props) {
   const t = useTranslations();
   const locale = useLocale();
-  const era = { bc: t("era.bc"), ad: t("era.ad") };
+  const era = useEra();
   const personId = useAtlas((s) => s.personId);
   const selectPerson = useAtlas((s) => s.selectPerson);
   const person = people.find((p) => p.id === personId);
@@ -56,7 +57,11 @@ export function PersonPanel({ people, events, routes }: Props) {
         {person.needs_review && (
           <p data-testid="person-review" className="mt-3 rounded bg-warn-bg px-3 py-2 text-sm text-warn-ink">
             {t("person.needsReview")}
-            {person.content_lang !== "tr" && <> {t("event.languageNote", { lang: langName(person.content_lang) })}</>}
+          </p>
+        )}
+        {person.content_lang !== locale && (
+          <p data-testid="language-note" className="mt-3 rounded bg-surface-2 px-3 py-2 text-sm">
+            {t("event.languageNote", { lang: langName(person.content_lang) })}
           </p>
         )}
 

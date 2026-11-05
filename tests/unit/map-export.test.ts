@@ -1,6 +1,11 @@
 import { describe, expect, it } from "vitest";
-import { mapCaption, mapCitation, wrapText } from "@/lib/map-citation";
+import messages from "../../messages/tr.json";
+import { mapCaption as caption, mapCitation as citation, wrapText, type MapCaptionInput, type MapCaptionLanguage } from "@/lib/map-citation";
 import { jpegToPdf } from "@/lib/pdf";
+
+const LANG: MapCaptionLanguage = { caption: messages.mapCaption, citation: messages.citationFormat, era: { bc: "MÖ", ad: "MS" }, appTitle: "Zaman Atlası" };
+const mapCaption = (i: MapCaptionInput) => caption(i, LANG);
+const mapCitation = (i: MapCaptionInput) => citation(i, LANG);
 
 const input = { year: -331, boundaryYear: -400, url: "https://ornek.org/tr?y=-331", accessed: "2026-11-05" };
 

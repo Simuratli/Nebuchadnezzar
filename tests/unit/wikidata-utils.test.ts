@@ -49,6 +49,10 @@ describe("helpers", () => {
     expect(regionsForPoint([-70, 10])).toEqual([]);
   });
 
+  it("removes parentheses left empty by the extract", () => {
+    expect(trimToSentence("Gəncə () — şəhərdir ( ; ) və böyükdür.", 100)).toBe("Gəncə — şəhərdir və böyükdür.");
+    expect(trimToSentence("Bakü (Azerice: Bakı) başkenttir.", 100)).toBe("Bakü (Azerice: Bakı) başkenttir.");
+  });
   it("trims on a sentence boundary when possible", () => {
     expect(trimToSentence("Kısa metin.", 100)).toBe("Kısa metin.");
     expect(trimToSentence("Birinci cümle burada. İkinci cümle çok daha uzun bir metin içerir.", 30)).toBe("Birinci cümle burada.");

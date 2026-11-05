@@ -1,8 +1,10 @@
 import { defineRouting } from "next-intl/routing";
+import { DEFAULT_LOCALE, LOCALES } from "@/lib/types";
 
-// Add "az" and "en" here (plus messages/<locale>.json) when translations are ready.
 export const routing = defineRouting({
-  locales: ["tr"],
-  defaultLocale: "tr",
+  locales: LOCALES,
+  defaultLocale: DEFAULT_LOCALE,
   localePrefix: "always",
+  // English is the main language; visitors choose another one in the header.
+  localeDetection: false,
 });

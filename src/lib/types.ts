@@ -1,5 +1,11 @@
 import { z } from "zod";
 
+/** Interface and content languages. English is the default. */
+export const LOCALES = ["en", "tr", "az"] as const;
+export type Locale = (typeof LOCALES)[number];
+export const DEFAULT_LOCALE: Locale = "en";
+export const asLocale = (value: string | null | undefined): Locale => (LOCALES as readonly string[]).includes(value ?? "") ? (value as Locale) : DEFAULT_LOCALE;
+
 export const CATEGORIES = ["savas", "antlasma", "kurulus", "kultur", "bilim", "goc", "isyan", "diger"] as const;
 export type Category = (typeof CATEGORIES)[number];
 
@@ -28,6 +34,8 @@ export const sourceSchema = z.object({
   reliability: z.number().int().min(1).max(3),
   accessed_at: z.string().nullable(),
   needs_review: z.boolean(),
+  /** Language of a wiki article; null for language-neutral records such as Wikidata items. */
+  lang: z.enum(LOCALES).nullable().default(null),
 });
 export type Source = z.infer<typeof sourceSchema>;
 
@@ -51,9 +59,15 @@ export const eventSchema = z.object({
 export type HistoricalEvent = z.infer<typeof eventSchema>;
 /** Light form sent to the client up front; `description` and sources load on demand. */
 export type EventSummary = Omit<HistoricalEvent, "description">;
+
+const storedText = z.object({ title: z.string().optional(), summary: z.string().optional(), description: z.string().optional() });
+export const storedEventSchema = eventSchema.omit({ title: true, summary: true, description: true, content_lang: true }).extend({
+  i18n: z.partialRecord(z.enum(LOCALES), storedText),
+});
+export type StoredEvent = z.infer<typeof storedEventSchema>;
 export type EventDetail = HistoricalEvent & { sources: Source[] };
 
-const placeSchema = z.object({ name: z.string(), lng: z.number(), lat: z.number() });
+const placeSchema = z.object({ name: z.string(), lng: z.number(), lat: z.number(), i18n: z.partialRecord(z.enum(LOCALES), z.string()).optional() });
 
 export const personSchema = z.object({
   id: z.string(),
@@ -74,6 +88,11 @@ export const personSchema = z.object({
 });
 export type Person = z.infer<typeof personSchema>;
 
+export const storedPersonSchema = personSchema.omit({ name: true, summary: true, description: true, content_lang: true }).extend({
+  i18n: z.partialRecord(z.enum(LOCALES), z.object({ name: z.string().optional(), summary: z.string().optional(), description: z.string().optional() })),
+});
+export type StoredPerson = z.infer<typeof storedPersonSchema>;
+
 export const citySchema = z.object({
   id: z.string(),
   name: z.string(),
@@ -91,6 +110,11 @@ export const citySchema = z.object({
   needs_review: z.boolean(),
 });
 export type City = z.infer<typeof citySchema>;
+
+export const storedCitySchema = citySchema.omit({ name: true, summary: true, content_lang: true }).extend({
+  i18n: z.partialRecord(z.enum(LOCALES), z.object({ name: z.string().optional(), summary: z.string().optional() })),
+});
+export type StoredCity = z.infer<typeof storedCitySchema>;
 
 export const correctionSchema = z.object({
   id: z.string(),

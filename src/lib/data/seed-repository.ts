@@ -5,43 +5,48 @@ import peopleJson from "../../../data/seed/people.json";
 import routesJson from "../../../data/seed/routes.json";
 import sourcesJson from "../../../data/seed/sources.json";
 import toursJson from "../../../data/seed/tours.json";
-import type { City, Correction, EventSummary, HistoricalEvent, HistoricalRoute, Person, Source, Tour } from "@/lib/types";
+import type { Correction, EventSummary, HistoricalRoute, Source, StoredCity, StoredEvent, StoredPerson, Tour } from "@/lib/types";
+import { localizeCity, localizeCorrection, localizeEvent, localizePerson, localizeRoute, localizeSources, localizeTour } from "./localize";
 import type { AtlasRepository } from "./repository";
 
 export function createSeedRepository(): AtlasRepository {
-  const events = eventsJson as HistoricalEvent[];
-  const sources = sourcesJson as Source[];
+  const events = eventsJson as unknown as StoredEvent[];
+  const sources = sourcesJson as unknown as Source[];
   const byId = new Map(events.map((e) => [e.id, e]));
 
   return {
-    async listEvents() {
+    async listEvents(locale) {
       return events.map((event): EventSummary => {
-        const { description: _omit, ...summary } = event;
+        const { description: _omit, ...summary } = localizeEvent(event, locale);
         return summary;
       });
     },
-    async getEvent(id) {
+    async getEvent(id, locale) {
       const event = byId.get(id);
-      return event ? { ...event, sources: sources.filter((s) => s.event_id === id) } : null;
+      if (!event) return null;
+      const localized = localizeEvent(event, locale);
+      return { ...localized, sources: localizeSources(sources.filter((s) => s.event_id === id), locale, localized.title) };
     },
-    async getSources(eventIds) {
-      const wanted = new Set(eventIds);
-      return sources.filter((s) => wanted.has(s.event_id));
+    async getSources(eventIds, locale) {
+      return eventIds.flatMap((id) => {
+        const event = byId.get(id);
+        return event ? localizeSources(sources.filter((s) => s.event_id === id), locale, localizeEvent(event, locale).title) : [];
+      });
     },
-    async listPeople() {
-      return peopleJson as Person[];
+    async listPeople(locale) {
+      return (peopleJson as unknown as StoredPerson[]).map((p) => localizePerson(p, locale));
     },
-    async listRoutes() {
-      return routesJson as HistoricalRoute[];
+    async listRoutes(locale) {
+      return (routesJson as unknown as HistoricalRoute[]).map((r) => localizeRoute(r, locale));
     },
-    async listTours() {
-      return toursJson as Tour[];
+    async listTours(locale) {
+      return (toursJson as unknown as Tour[]).map((t) => localizeTour(t, locale));
     },
-    async listCities() {
-      return citiesJson as City[];
+    async listCities(locale) {
+      return (citiesJson as unknown as StoredCity[]).map((c) => localizeCity(c, locale));
     },
-    async listCorrections() {
-      return correctionsJson as Correction[];
+    async listCorrections(locale) {
+      return (correctionsJson as unknown as Correction[]).map((c) => localizeCorrection(c, locale));
     },
   };
 }

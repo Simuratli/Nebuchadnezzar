@@ -1,0 +1,242 @@
+{
+  "app": {
+    "title": "Zaman Atlası",
+    "description": "A sourced, interactive history map of the Caucasus, the Ottoman lands and the Silk Road.",
+    "loading": "Loading map…",
+    "skipToTimeline": "Skip to timeline",
+    "close": "Close",
+    "language": "Language"
+  },
+  "era": {
+    "bc": "BCE",
+    "ad": "CE",
+    "position": "suffix"
+  },
+  "theme": {
+    "toggle": "Change theme",
+    "light": "Light theme",
+    "dark": "Dark theme"
+  },
+  "timeline": {
+    "label": "Timeline",
+    "slider": "Select year",
+    "sliderLeft": "Left map year",
+    "sliderRight": "Right map year",
+    "play": "Play",
+    "pause": "Pause",
+    "speed": "Speed",
+    "speedUnit": "yrs/s",
+    "window": "Event window",
+    "windowHint": "How many years before and after the selected year to show events from",
+    "boundaryNote": "Boundary map: {year}",
+    "visibleCount": "{count} events shown",
+    "boundaryError": "Boundary map could not be loaded"
+  },
+  "map": {
+    "label": "History map",
+    "boundariesApprox": "Boundaries are approximate"
+  },
+  "categories": {
+    "savas": "War",
+    "antlasma": "Treaty",
+    "kurulus": "Founding",
+    "kultur": "Culture",
+    "bilim": "Science",
+    "goc": "Migration",
+    "isyan": "Uprising",
+    "diger": "Other"
+  },
+  "regions": {
+    "kafkasya": "Caucasus",
+    "osmanli": "Ottoman lands",
+    "ipek-yolu": "Silk Road"
+  },
+  "event": {
+    "panel": "Event details",
+    "loading": "Loading…",
+    "error": "The event could not be loaded.",
+    "retry": "Try again",
+    "needsReview": "This record has not been reviewed yet.",
+    "languageNote": "Not available in English yet, shown in {lang}.",
+    "imageCredit": "Image: Wikimedia Commons",
+    "wikiLicense": "Text from Wikipedia (CC BY-SA).",
+    "noSummary": "No summary for this event yet.",
+    "sources": "Sources",
+    "noSources": "No sources for this event.",
+    "people": "Related people"
+  },
+  "source": {
+    "birincil": "Primary",
+    "ikincil": "Academic",
+    "ansiklopedi": "Encyclopedia",
+    "reliability": "Reliability: {value}/3",
+    "open": "Open source",
+    "untitled": "Untitled source",
+    "copy": "Copy {format}",
+    "copied": "Copied",
+    "copyFailed": "Could not copy",
+    "missing": "Missing: {fields}. Complete these before using the citation.",
+    "reviewFlag": "This source is awaiting review.",
+    "fields": {
+      "author": "author",
+      "title": "title",
+      "year": "year",
+      "publisher": "publisher"
+    }
+  },
+  "citationFormat": {
+    "noDate": "n.d.",
+    "pages": "pp. {pages}.",
+    "retrieved": "Retrieved {date}, from {url}",
+    "accessed": "Accessed {date}.",
+    "date": "{month} {day}, {year}",
+    "months": [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December"
+    ]
+  },
+  "nav": {
+    "filters": "Filters",
+    "collection": "Collection",
+    "routes": "Routes",
+    "tours": "Tours",
+    "export": "Download map",
+    "compare": "Compare",
+    "panels": "Panels"
+  },
+  "filters": {
+    "title": "Filters",
+    "category": "Category",
+    "region": "Region",
+    "yearRange": "Year range",
+    "from": "From year",
+    "to": "To year",
+    "yearHint": "Use a minus sign for BCE years (-331 for 331 BCE).",
+    "clear": "Clear filters",
+    "results": "{count} events",
+    "export": "Export",
+    "exportCsv": "Download CSV",
+    "exportGeoJson": "Download GeoJSON",
+    "list": "Results",
+    "showMore": "Show more"
+  },
+  "search": {
+    "label": "Search events, people or cities",
+    "placeholder": "Search events, people, cities…",
+    "noResults": "No results",
+    "person": "Person",
+    "event": "Event",
+    "city": "City",
+    "lived": "{start} – {end}",
+    "unknown": "?"
+  },
+  "collection": {
+    "title": "My collection",
+    "empty": "Nothing here yet. You can add events from their panel.",
+    "add": "Add to collection",
+    "remove": "Remove from collection",
+    "note": "Note",
+    "notePlaceholder": "Your note on this event…",
+    "count": "{count} events",
+    "downloadBibtex": "Download BibTeX",
+    "preparing": "Preparing…",
+    "downloadFailed": "The sources could not be downloaded.",
+    "localNotice": "Your collection is stored in this browser only."
+  },
+  "compare": {
+    "enter": "Open compare",
+    "exit": "Close compare",
+    "left": "Left map",
+    "right": "Right map"
+  },
+  "routes": {
+    "title": "Routes",
+    "play": "Play route",
+    "replay": "Replay",
+    "stop": "Close route",
+    "waypoints": "Stops",
+    "reviewNote": "Route and dates are approximate and awaiting expert review.",
+    "noSource": "No sources have been added for this route yet."
+  },
+  "tours": {
+    "title": "Tours",
+    "start": "Start tour",
+    "step": "Step {current} of {total}",
+    "next": "Next",
+    "prev": "Previous",
+    "finish": "Finish tour",
+    "reviewNote": "This narrative is based on general knowledge, has no sources yet and is awaiting expert review."
+  },
+  "city": {
+    "panel": "City details",
+    "kind": "City",
+    "nameInYear": "Name in {year}: {name}",
+    "names": "Names",
+    "noNames": "No other names on record for this city.",
+    "otherNames": "Also known as",
+    "unknownStart": "start unknown",
+    "present": "present",
+    "unconfirmed": "unconfirmed",
+    "rulers": "Rule (approximate)",
+    "rulersWarning": "This list is derived automatically from historical boundary maps, and the source data has known errors. It does not show short-lived changes of hands. Do not cite it without checking.",
+    "unknownRuler": "Unknown",
+    "manualRuler": "corrected by hand",
+    "events": "Events nearby (≈{km} km)",
+    "noEvents": "No events on record near here."
+  },
+  "person": {
+    "panel": "Person details",
+    "kind": "Person",
+    "unknown": "?",
+    "needsReview": "Some details about this person have not been reviewed yet.",
+    "noSummary": "No summary for this person yet.",
+    "goToEra": "Go to their time ({year})",
+    "showRoute": "Show route: {title}",
+    "born": "Born in",
+    "died": "Died in",
+    "events": "Related events",
+    "noEvents": "No events linked to this person yet.",
+    "manualLink": "linked by hand"
+  },
+  "correction": {
+    "panel": "Boundary correction",
+    "kind": "Area corrected by hand",
+    "outside": "This year is outside the corrected period",
+    "warning": "The source dataset shows this region wrongly for 1800–1920, so it was corrected by hand. The lines are not historical borders: they come from today's administrative boundaries, and the dates rest on treaties. Awaiting expert review.",
+    "periods": "Periods of this area",
+    "timelineNote": "South Caucasus corrected"
+  },
+  "export": {
+    "title": "Download map",
+    "help": "Downloads the current view with a caption and citation. Move the map to the view you want first.",
+    "png": "Download PNG",
+    "pdf": "Download PDF",
+    "preparing": "Preparing…",
+    "failed": "The image could not be created. Try again once the map has loaded.",
+    "caption": "Image caption",
+    "citation": "Citation for this map",
+    "copy": "Copy citation",
+    "accuracy": "Boundaries are approximate and the source data has known errors. Compare with other sources before using this in a thesis or publication."
+  },
+  "mapCaption": {
+    "yearOne": "{year}",
+    "yearTwo": "{year} and {year2}",
+    "kind": "Map",
+    "boundaryOne": "Boundary map: {year}",
+    "boundaryTwo": "Boundary maps: {year} and {year2}",
+    "unknown": "unknown",
+    "attribution": "Basemap: OpenFreeMap, OpenMapTiles, OpenStreetMap contributors. Boundaries: historical-basemaps (A. Ourednik and contributors, GPL-3.0), approximate.",
+    "correction": "South Caucasus (1800–1920): corrected by hand, derived from today's administrative boundaries (Natural Earth), dated by treaties, approximate.",
+    "citationLabel": "Citation"
+  }
+}

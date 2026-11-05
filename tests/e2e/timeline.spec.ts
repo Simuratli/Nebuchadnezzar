@@ -24,9 +24,9 @@ test.describe("harita ve zaman kaydırıcı", () => {
     await expect(page).toHaveURL(/lat=36\.500/);
   });
 
-  test("kök adres /tr'ye yönlenir", async ({ page }) => {
+  test("kök adres /en'e yönlenir", async ({ page }) => {
     await page.goto("/");
-    await expect(page).toHaveURL(/\/tr/);
+    await expect(page).toHaveURL(/\/en/);
   });
 
   test("klavye ile kaydırma URL ve sınır dosyasını günceller, yıl 0 atlanır", async ({ page }) => {

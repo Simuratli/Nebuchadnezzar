@@ -9,9 +9,9 @@
  */
 import { readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
-import { citySchema, personSchema, type City, type Correction, type HistoricalEvent, type Person, type Source } from "../src/lib/types";
+import { storedCitySchema, storedPersonSchema, type Correction, type Locale, type Source, type StoredCity, type StoredEvent, type StoredPerson } from "../src/lib/types";
 import { applyRulerOverrides, mergeRulers, periodConfirmed, rulerAt, type AreaFeature, type AreaGeometry } from "./geo-utils";
-import { cachedSparql, fetchExtracts, root, seedDir, wikiUri, wikiUrl, type Binding } from "./wikidata-client";
+import { cachedSparql, fetchExtracts, root, seedDir, WIKI_PUBLISHER, wikiUri, wikiUrl, type Binding } from "./wikidata-client";
 import { parseWktPoint, trimToSentence, wikidataTimeToYear } from "./wikidata-utils";
 
 const LAST_YEAR = 1950;
@@ -22,9 +22,13 @@ const qidOf = (b: Binding, key = "item") => b[key]?.value.split("/").pop() ?? nu
 const LABELS = `
   OPTIONAL { ?item rdfs:label ?trLabel FILTER(LANG(?trLabel) = "tr") }
   OPTIONAL { ?item rdfs:label ?enLabel FILTER(LANG(?enLabel) = "en") }
-  OPTIONAL { ?trWiki schema:about ?item; schema:isPartOf <https://tr.wikipedia.org/>; schema:name ?trTitle }`;
+  OPTIONAL { ?item rdfs:label ?azLabel FILTER(LANG(?azLabel) = "az") }
+  OPTIONAL { ?trWiki schema:about ?item; schema:isPartOf <https://tr.wikipedia.org/>; schema:name ?trTitle }
+  OPTIONAL { ?azWiki schema:about ?item; schema:isPartOf <https://az.wikipedia.org/>; schema:name ?azTitle }`;
 
-function wikiSources(ownerId: string, qid: string | null, title: string, trTitle: string | undefined, enTitle: string): Source[] {
+type Titles = Record<Locale, string | undefined>;
+
+function wikiSources(ownerId: string, qid: string | null, titles: Titles): Source[] {
   const common = {
     event_id: ownerId,
     type: "ansiklopedi" as const,
@@ -36,38 +40,51 @@ function wikiSources(ownerId: string, qid: string | null, title: string, trTitle
     needs_review: false,
   };
   const out: Source[] = [];
-  if (qid) out.push({ ...common, id: `${ownerId}-wikidata`, title, publisher: "Wikidata", url: `https://www.wikidata.org/wiki/${qid}` });
-  if (trTitle) out.push({ ...common, id: `${ownerId}-trwiki`, title: trTitle, publisher: "Vikipedi", url: wikiUrl("tr", trTitle) });
-  else out.push({ ...common, id: `${ownerId}-enwiki`, title: enTitle, publisher: "Wikipedia", url: wikiUrl("en", enTitle) });
+  if (qid) out.push({ ...common, id: `${ownerId}-wikidata`, title: null, publisher: "Wikidata", url: `https://www.wikidata.org/wiki/${qid}`, lang: null });
+  for (const lang of ["en", "tr", "az"] as const) {
+    const title = titles[lang];
+    if (title) out.push({ ...common, id: `${ownerId}-${lang}wiki`, title, publisher: WIKI_PUBLISHER[lang], url: wikiUrl(lang, title), lang });
+  }
   return out;
 }
 
-const placeOf = (name: { value: string } | undefined, coord: { value: string } | undefined) => {
-  const point = coord ? parseWktPoint(coord.value) : null;
-  return name && point ? { name: name.value, lng: point[0], lat: point[1] } : null;
+/** Reads lead sections for one language at a time, which suits the per-language API. */
+async function extractsByLang(items: Titles[]): Promise<Record<Locale, Map<string, string>>> {
+  const titles = (lang: Locale) => items.flatMap((t) => (t[lang] ? [t[lang] as string] : []));
+  return { en: await fetchExtracts("en", titles("en")), tr: await fetchExtracts("tr", titles("tr")), az: await fetchExtracts("az", titles("az")) };
+}
+
+const hasText = (i18n: Record<string, { summary?: string } | undefined>) => Object.values(i18n).some((v) => v?.summary);
+
+const placeOf = (b: Binding, prefix: "birth" | "death") => {
+  const name = b[`${prefix}Name`]?.value;
+  const point = b[`${prefix}Coord`] ? parseWktPoint(b[`${prefix}Coord`]?.value ?? "") : null;
+  if (!name || !point) return null;
+  const tr = b[`${prefix}Tr`]?.value;
+  const az = b[`${prefix}Az`]?.value;
+  return { name, lng: point[0], lat: point[1], i18n: { ...(tr && { tr }), ...(az && { az }) } };
 };
 
-async function buildPeople(events: HistoricalEvent[]): Promise<Person[]> {
+async function buildPeople(events: StoredEvent[]): Promise<StoredPerson[]> {
   const list = readJson<{ id: string; enwiki: string }[]>("data", "manual", "people.json");
   const manualLinks = readJson<Record<string, string[]>>("data", "manual", "person-events.json");
-  const eventIds = new Set(events.map((e) => e.id));
-  const byTitle = new Map(events.map((e) => [e.title, e.id]));
+  const eventIds = new Set(events.map((ev) => ev.id));
+  // data/manual/person-events.json names events by title, in whichever language they had one.
+  const byTitle = new Map(events.flatMap((ev) => Object.values(ev.i18n).flatMap((v) => (v.title ? [[v.title, ev.id] as const] : []))));
 
-  const people: Person[] = [];
-  const titles: { id: string; tr?: string; en: string }[] = [];
-  const base = new Map<string, { b: Binding; links: Set<string> }>();
+  const base = new Map<string, { b: Binding; links: Set<string>; titles: Titles }>();
   for (const p of list) {
     const found = await cachedSparql(
-      `person2-${p.id}`,
-      `SELECT ?item ?trLabel ?enLabel ?trTitle ?birth ?death ?human ?img ?birthName ?birthCoord ?deathName ?deathCoord WHERE {
+      `person3-${p.id}`,
+      `SELECT ?item ?trLabel ?enLabel ?azLabel ?trTitle ?azTitle ?birth ?death ?human ?img ?birthName ?birthTr ?birthAz ?birthCoord ?deathName ?deathTr ?deathAz ?deathCoord WHERE {
         ${wikiUri(p.enwiki)} schema:about ?item.
         ${LABELS}
         OPTIONAL { ?item wdt:P569 ?birth }
         OPTIONAL { ?item wdt:P570 ?death }
         OPTIONAL { ?item wdt:P18 ?img }
         OPTIONAL { ?item wdt:P31 wd:Q5. BIND(1 AS ?human) }
-        OPTIONAL { ?item wdt:P19 ?bp. ?bp wdt:P625 ?birthCoord. ?bp rdfs:label ?birthName FILTER(LANG(?birthName) = "tr") }
-        OPTIONAL { ?item wdt:P20 ?dp. ?dp wdt:P625 ?deathCoord. ?dp rdfs:label ?deathName FILTER(LANG(?deathName) = "tr") }
+        OPTIONAL { ?item wdt:P19 ?bp. ?bp wdt:P625 ?birthCoord. ?bp rdfs:label ?birthName FILTER(LANG(?birthName) = "en") OPTIONAL { ?bp rdfs:label ?birthTr FILTER(LANG(?birthTr) = "tr") } OPTIONAL { ?bp rdfs:label ?birthAz FILTER(LANG(?birthAz) = "az") } }
+        OPTIONAL { ?item wdt:P20 ?dp. ?dp wdt:P625 ?deathCoord. ?dp rdfs:label ?deathName FILTER(LANG(?deathName) = "en") OPTIONAL { ?dp rdfs:label ?deathTr FILTER(LANG(?deathTr) = "tr") } OPTIONAL { ?dp rdfs:label ?deathAz FILTER(LANG(?deathAz) = "az") } }
       } LIMIT 1`,
     );
     const b = found[0];
@@ -83,46 +100,44 @@ async function buildPeople(events: HistoricalEvent[]): Promise<Person[]> {
         { ?p wdt:P607 ?e } UNION { ?p wdt:P793 ?e } UNION { ?e wdt:P710 ?p } UNION { ?e wdt:P112 ?p } UNION { ?e wdt:P1037 ?p } UNION { ?e wdt:P84 ?p } UNION { ?e wdt:P61 ?p }
       }`,
     );
-    base.set(p.id, { b, links: new Set(linkRows.map((r) => qidOf(r, "e") ?? "").filter((e) => eventIds.has(e))) });
-    titles.push({ id: p.id, tr: b.trTitle?.value, en: p.enwiki });
+    base.set(p.id, {
+      b,
+      links: new Set(linkRows.map((r) => qidOf(r, "e") ?? "").filter((id) => eventIds.has(id))),
+      titles: { en: p.enwiki, tr: b.trTitle?.value, az: b.azTitle?.value },
+    });
   }
 
-  const tr = await fetchExtracts("tr", titles.flatMap((t) => (t.tr ? [t.tr] : [])));
-  const en = await fetchExtracts("en", titles.flatMap((t) => (t.tr && tr.has(t.tr) ? [] : [t.en])));
-
+  const extracts = await extractsByLang([...base.values()].map((v) => v.titles));
+  const people: StoredPerson[] = [];
   for (const p of list) {
     const entry = base.get(p.id);
     if (!entry) continue;
-    const { b, links } = entry;
+    const { b, links, titles } = entry;
     const qid = qidOf(b);
-    const trText = b.trTitle ? tr.get(b.trTitle.value) : undefined;
-    const enText = en.get(p.enwiki);
-    const text = trText ?? enText ?? "";
-    const contentLang = trText ? "tr" : enText ? "en" : "tr";
-    const name = b.trLabel?.value ?? b.trTitle?.value ?? b.enLabel?.value ?? p.enwiki;
-
     const manual = (manualLinks[p.id] ?? []).flatMap((title) => {
       const id = byTitle.get(title);
       if (!id) console.warn(`BAGLANTI BULUNAMADI ${p.id}: ${title}`);
       return id && !links.has(id) ? [id] : [];
     });
-    const eventLinks = [...[...links].map((event_id) => ({ event_id, manual: false })), ...manual.map((event_id) => ({ event_id, manual: true }))];
-
+    const i18n: StoredPerson["i18n"] = {};
+    const labels: Titles = { en: b.enLabel?.value, tr: b.trLabel?.value ?? b.trTitle?.value, az: b.azLabel?.value ?? b.azTitle?.value };
+    for (const lang of ["en", "tr", "az"] as const) {
+      const title = titles[lang];
+      const text = title ? extracts[lang].get(title) : undefined;
+      if (labels[lang] || text) i18n[lang] = { name: labels[lang], summary: text && trimToSentence(text, 240), description: text && trimToSentence(text, 1400) };
+    }
     people.push({
       id: p.id,
-      name,
       birth_year: b.birth ? wikidataTimeToYear(b.birth.value) : null,
       death_year: b.death ? wikidataTimeToYear(b.death.value) : null,
       wikidata_id: qid,
-      summary: trimToSentence(text, 240),
-      description: trimToSentence(text, 1400),
       image_url: b.img ? `${b.img.value.replace(/^http:/, "https:")}?width=480` : null,
-      content_lang: contentLang,
-      birth_place: placeOf(b.birthName, b.birthCoord),
-      death_place: placeOf(b.deathName, b.deathCoord),
-      events: eventLinks,
-      sources: wikiSources(p.id, qid, name, b.trTitle?.value, p.enwiki),
-      needs_review: contentLang !== "tr" || !text || manual.length > 0,
+      birth_place: placeOf(b, "birth"),
+      death_place: placeOf(b, "death"),
+      events: [...[...links].map((event_id) => ({ event_id, manual: false })), ...manual.map((event_id) => ({ event_id, manual: true }))],
+      sources: wikiSources(p.id, qid, titles),
+      i18n,
+      needs_review: !hasText(i18n) || manual.length > 0,
     });
   }
   return people;
@@ -136,7 +151,7 @@ type ManualCity = {
   other_names: string[];
 };
 
-async function buildCities(): Promise<City[]> {
+async function buildCities(): Promise<StoredCity[]> {
   const list = readJson<ManualCity[]>("data", "manual", "cities.json");
   const overrides = readJson<Record<string, { from: number; to: number; name: string }[]>>("data", "manual", "ruler-overrides.json");
   const manifest = readJson<{ year: number; file: string }[]>("public", "data", "boundaries", "manifest.json");
@@ -151,12 +166,12 @@ async function buildCities(): Promise<City[]> {
     features: readJson<{ features: AreaFeature[] }>("public", "data", "boundaries", m.file).features,
   }));
 
-  const cities: City[] = [];
+  const cities: StoredCity[] = [];
   const found = new Map<string, Binding>();
   for (const c of list) {
     const rows = await cachedSparql(
-      `city-${c.id}`,
-      `SELECT ?item ?trTitle ?coord WHERE { ${wikiUri(c.enwiki)} schema:about ?item. ${LABELS} ?item wdt:P625 ?coord. } LIMIT 1`,
+      `city3-${c.id}`,
+      `SELECT ?item ?trLabel ?enLabel ?azLabel ?trTitle ?azTitle ?coord WHERE { ${wikiUri(c.enwiki)} schema:about ?item. ${LABELS} ?item wdt:P625 ?coord. } LIMIT 1`,
     );
     if (!rows[0]) {
       console.warn(`SEHIR BULUNAMADI: ${c.enwiki}`);
@@ -165,8 +180,11 @@ async function buildCities(): Promise<City[]> {
     found.set(c.id, rows[0]);
   }
   const live = list.filter((c) => found.has(c.id));
-  const tr = await fetchExtracts("tr", live.flatMap((c) => (found.get(c.id)?.trTitle ? [found.get(c.id)?.trTitle?.value as string] : [])));
-  const en = await fetchExtracts("en", live.flatMap((c) => (found.get(c.id)?.trTitle && tr.has(found.get(c.id)?.trTitle?.value as string) ? [] : [c.enwiki])));
+  const titlesOf = (c: ManualCity): Titles => {
+    const b = found.get(c.id) as Binding;
+    return { en: c.enwiki, tr: b.trTitle?.value, az: b.azTitle?.value };
+  };
+  const extracts = await extractsByLang(live.map(titlesOf));
 
   for (const c of live) {
     const b = found.get(c.id) as Binding;
@@ -185,9 +203,6 @@ async function buildCities(): Promise<City[]> {
       end: r.end ? wikidataTimeToYear(r.end.value) : null,
     }));
     const periods = c.periods.map((p) => ({ ...p, confirmed: periodConfirmed(p, statements) }));
-    const trTitle = b.trTitle?.value;
-    const trText = trTitle ? tr.get(trTitle) : undefined;
-    const text = trText ?? en.get(c.enwiki) ?? "";
     const rulers = applyRulerOverrides(
       mergeRulers(
         maps.map((m) => ({ year: m.year, name: rulerAt(point, m.features) })),
@@ -199,35 +214,44 @@ async function buildCities(): Promise<City[]> {
         ...(corrections.find((k) => k.id === rulerAt(point, correctionAreas, REGION_TOLERANCE_DEGREES))?.slices ?? []),
       ],
     );
+    const titles = titlesOf(c);
+    const i18n: StoredCity["i18n"] = {};
+    const names: Titles = { en: b.enLabel?.value, tr: c.name, az: b.azLabel?.value ?? b.azTitle?.value };
+    for (const lang of ["en", "tr", "az"] as const) {
+      const title = titles[lang];
+      const text = title ? extracts[lang].get(title) : undefined;
+      if (names[lang] || text) i18n[lang] = { name: names[lang], summary: text && trimToSentence(text, 320) };
+    }
     cities.push({
       id: c.id,
-      name: c.name,
       wikidata_id: qid,
       lng: point[0],
       lat: point[1],
-      summary: trimToSentence(text, 320),
-      content_lang: trText ? "tr" : "en",
       periods,
       other_names: c.other_names,
       rulers,
-      sources: wikiSources(c.id, qid, c.name, trTitle, c.enwiki),
+      sources: wikiSources(c.id, qid, titles),
+      i18n,
       // Ruler lists are always approximate, so that warning is shown separately on every city.
-      needs_review: !trText || periods.some((p) => !p.confirmed) || c.other_names.length > 0,
+      needs_review: !hasText(i18n) || periods.some((p) => !p.confirmed) || c.other_names.length > 0,
     });
   }
   return cities;
 }
 
 async function main() {
-  const events = readJson<HistoricalEvent[]>("data", "seed", "events.json");
-  const people = (await buildPeople(events)).map((p) => personSchema.parse(p));
+  const events = readJson<StoredEvent[]>("data", "seed", "events.json");
+  const people = (await buildPeople(events)).map((p) => storedPersonSchema.parse(p));
   writeFileSync(join(seedDir, "people.json"), `${JSON.stringify(people, null, 1)}\n`);
-  const cities = (await buildCities()).map((c) => citySchema.parse(c));
+  const cities = (await buildCities()).map((c) => storedCitySchema.parse(c));
   writeFileSync(join(seedDir, "cities.json"), `${JSON.stringify(cities, null, 1)}\n`);
 
   console.log(`Kisi: ${people.length}, baglanti: ${people.reduce((n, p) => n + p.events.length, 0)}`);
   console.log(`Sehir: ${cities.length}, ad donemi: ${cities.reduce((n, c) => n + c.periods.length, 0)}, dogrulanan: ${cities.reduce((n, c) => n + c.periods.filter((p) => p.confirmed).length, 0)}`);
-  const unknown = cities.flatMap((c) => c.rulers.filter((r) => !r.name).map((r) => `${c.name} ${r.from}`));
+  for (const lang of ["en", "tr", "az"] as const) {
+    console.log(`${lang}: kisi metni ${people.filter((p) => p.i18n[lang]?.description).length}, sehir ozeti ${cities.filter((c) => c.i18n[lang]?.summary).length}, sehir adi ${cities.filter((c) => c.i18n[lang]?.name).length}`);
+  }
+  const unknown = cities.flatMap((c) => c.rulers.filter((r) => !r.name).map((r) => `${c.id} ${r.from}`));
   console.log(`Yoneticisi bulunamayan donem: ${unknown.length}`, unknown.slice(0, 15).join(", "));
 }
 

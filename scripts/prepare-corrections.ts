@@ -109,6 +109,7 @@ async function main() {
             reliability: 1,
             accessed_at: accessed,
             needs_review: true,
+            lang: "en",
           });
         }),
       })),

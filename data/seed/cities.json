@@ -1,12 +1,9 @@
 [
  {
   "id": "gence",
-  "name": "Gence",
   "wikidata_id": "Q131290",
   "lng": 46.360555555,
   "lat": 40.682777777,
-  "summary": "Gence (Azerice: Gəncə, Azerice telaffuz: [ɟænˈdʒæ]), Azerbaycan'ın en kalabalık üçüncü şehridir. Tarihinin büyük bölümünde önemli bir tarihî ve kültürel merkez olarak öne çıkan şehir, 1804 yılına kadar Gence Hanlığı'nın başkentiydi.",
-  "content_lang": "tr",
   "periods": [
    {
     "name": "Gence",
@@ -180,14 +177,30 @@
     "event_id": "gence",
     "type": "ansiklopedi",
     "author": null,
-    "title": "Gence",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q131290",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "gence-enwiki",
+    "event_id": "gence",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Ganja, Azerbaijan",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ganja%2C_Azerbaijan",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "gence-trwiki",
@@ -201,19 +214,46 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "gence-azwiki",
+    "event_id": "gence",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Gəncə",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/G%C9%99nc%C9%99",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": true
+  "needs_review": true,
+  "i18n": {
+   "en": {
+    "name": "Ganja",
+    "summary": "Ganja (; Azerbaijani: Gəncə [ɟænˈdʒæ] ) is Azerbaijan's third largest city, with a population of around 335,600. The city has been a historic and cultural center throughout most of its existence."
+   },
+   "tr": {
+    "name": "Gence",
+    "summary": "Gence (Azerice: Gəncə, Azerice telaffuz: [ɟænˈdʒæ]), Azerbaycan'ın en kalabalık üçüncü şehridir. Tarihinin büyük bölümünde önemli bir tarihî ve kültürel merkez olarak öne çıkan şehir, 1804 yılına kadar Gence Hanlığı'nın başkentiydi."
+   },
+   "az": {
+    "name": "Gəncə",
+    "summary": "Gəncə — Azərbaycan Respublikasının əhalisinin sayına, sənaye məhsulları istehsalına görə üçüncü, ərazisinə görə isə ən böyük ikinci şəhərdir. Gəncə şəhəri Kiçik Qafqazın şimal-şərq tərəfində, Gəncə-Qazax düzənliyində, Gəncəçayın hər iki sahilində yerləşir."
+   }
+  }
  },
  {
   "id": "istanbul",
-  "name": "İstanbul",
   "wikidata_id": "Q406",
   "lng": 28.960277777,
   "lat": 41.01,
-  "summary": "İstanbul, Türkiye'nin ekonomik, kültürel ve tarihî merkezini oluşturan en kalabalık şehridir. 15,7 milyonu aşan nüfusuyla Türkiye nüfusunun yaklaşık %18,3'ine ev sahipliği yapmaktadır.",
-  "content_lang": "tr",
   "periods": [
    {
     "name": "Byzantion",
@@ -318,14 +358,30 @@
     "event_id": "istanbul",
     "type": "ansiklopedi",
     "author": null,
-    "title": "İstanbul",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q406",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "istanbul-enwiki",
+    "event_id": "istanbul",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Istanbul",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Istanbul",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "istanbul-trwiki",
@@ -339,19 +395,46 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "istanbul-azwiki",
+    "event_id": "istanbul",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "İstanbul",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/%C4%B0stanbul",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": true
+  "needs_review": true,
+  "i18n": {
+   "en": {
+    "name": "Istanbul",
+    "summary": "Istanbul is the largest city in Turkey, a megacity, constituting the country's economic, cultural, and historical center. With a population of over 15 million, it is home to 18% of the population of Turkey. Istanbul is among the largest cities in Europe and in the world by population."
+   },
+   "tr": {
+    "name": "İstanbul",
+    "summary": "İstanbul, Türkiye'nin ekonomik, kültürel ve tarihî merkezini oluşturan en kalabalık şehridir. 15,7 milyonu aşan nüfusuyla Türkiye nüfusunun yaklaşık %18,3'ine ev sahipliği yapmaktadır."
+   },
+   "az": {
+    "name": "İstanbul",
+    "summary": "İstanbul (köhnə Azərbaycandilli mənbələrdə İstambul) — Türkiyənin iqtisadi, mədəni və tarixi mərkəzini təşkil edən ən böyük şəhəri və ölkənin 81 ilindən biridir. İstanbul ilinin mərkəzidir. İqtisadi böyüklüyünə görə dünyada 34-cü, əhalisinə görə Avropada birinci, dünyada isə altıncı sırada yer alır."
+   }
+  }
  },
  {
   "id": "tiflis",
-  "name": "Tiflis",
   "wikidata_id": "Q994",
   "lng": 44.7925,
   "lat": 41.7225,
-  "summary": "Tiflis (Gürcüce: თბილისი / Tbilisi), Gürcistan'ın başkenti ve en kalabalık ilidir. Tiflis Gürcistan'ın doğusunda, Tiflis Havzasında, Kura Nehri'nin iki yakasında kurulmuştur. Kuzeyinde Saguramo Dağları'nın güney yamacı, doğusunda İgris Zageni Dağı'nın kuzeybatı bölümü ve güneyinde Trialeti Dağları uzanmaktadır.",
-  "content_lang": "tr",
   "periods": [
    {
     "name": "Tiflis",
@@ -507,14 +590,30 @@
     "event_id": "tiflis",
     "type": "ansiklopedi",
     "author": null,
-    "title": "Tiflis",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q994",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "tiflis-enwiki",
+    "event_id": "tiflis",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Tbilisi",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tbilisi",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "tiflis-trwiki",
@@ -528,19 +627,46 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "tiflis-azwiki",
+    "event_id": "tiflis",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Tbilisi",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/Tbilisi",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": false
+  "needs_review": false,
+  "i18n": {
+   "en": {
+    "name": "Tbilisi",
+    "summary": "Tbilisi ( tə-bil-EE-see, tə-BIL-iss-ee) is the capital and largest city of Georgia, located on the banks of the Kura River. With more than 1.3 million inhabitants, it contains almost one third of the country's population."
+   },
+   "tr": {
+    "name": "Tiflis",
+    "summary": "Tiflis (Gürcüce: თბილისი / Tbilisi), Gürcistan'ın başkenti ve en kalabalık ilidir. Tiflis Gürcistan'ın doğusunda, Tiflis Havzasında, Kura Nehri'nin iki yakasında kurulmuştur. Kuzeyinde Saguramo Dağları'nın güney yamacı, doğusunda İgris Zageni Dağı'nın kuzeybatı bölümü ve güneyinde Trialeti Dağları uzanmaktadır."
+   },
+   "az": {
+    "name": "Tbilisi",
+    "summary": "Tbilisi (gürc. თბილისი) və ya Tiflis – Gürcüstanın paytaxtı, Qafqaz şəhərlərinin mühüm sənaye, mədəniyyət və elm mərkəzlərindən biri. Ölkənin şərq hissəsində, Kür çayının hər iki sahilində, dəniz səviyyəsindən 406–522 metr hündürlükdə, Tiflis çökəkliyində yerləşir. Şəhər 244 km2 ərazidə yerləşir."
+   }
+  }
  },
  {
   "id": "erivan",
-  "name": "Erivan",
   "wikidata_id": "Q1953",
   "lng": 44.514444444,
   "lat": 40.181388888,
-  "summary": "Erivan (Ermenice: Երևան, bazen \"Երեվան\" olarak da yazılır, /ˌjɛrɛˈvɑn/; Osmanlı döneminde Farsça: ﺭﺍﻭﻦ, Revan, Azerice: İrəvan), Ermenistan'ın başkenti ve en büyük şehri olan Erivan, aynı zamanda dünyanın en eski sürekli yerleşim yerlerinden biridir.",
-  "content_lang": "tr",
   "periods": [
    {
     "name": "Erivan",
@@ -696,14 +822,30 @@
     "event_id": "erivan",
     "type": "ansiklopedi",
     "author": null,
-    "title": "Erivan",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q1953",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "erivan-enwiki",
+    "event_id": "erivan",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Yerevan",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Yerevan",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "erivan-trwiki",
@@ -717,19 +859,46 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "erivan-azwiki",
+    "event_id": "erivan",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "İrəvan",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/%C4%B0r%C9%99van",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": false
+  "needs_review": false,
+  "i18n": {
+   "en": {
+    "name": "Yerevan",
+    "summary": "Yerevan (UK: YERR-ə-VAN, US: , -⁠VAHN; Armenian: Երևան [jɛɾɛˈvɑn] ; sometimes spelled Erevan) is the capital and largest city of Armenia, as well as one of the world's oldest continuously inhabited cities."
+   },
+   "tr": {
+    "name": "Erivan",
+    "summary": "Erivan (Ermenice: Երևան, bazen \"Երեվան\" olarak da yazılır, /ˌjɛrɛˈvɑn/; Osmanlı döneminde Farsça: ﺭﺍﻭﻦ, Revan, Azerice: İrəvan), Ermenistan'ın başkenti ve en büyük şehri olan Erivan, aynı zamanda dünyanın en eski sürekli yerleşim yerlerinden biridir."
+   },
+   "az": {
+    "name": "İrəvan",
+    "summary": "İrəvan (erm. Երևան, BFƏ: jɛɾɛˈvɑn) — indiki Ermənistan Respublikasının paytaxtı və ən böyük şəhəri. Qərbi Azərbaycanın mədəniyyət mərkəzi olmuşdur. Ermənistan və dünyanın ən qədim davamlı məskunlaşan şəhərlərindən biridir. Zəngiçay boyunca yerləşən İrəvan ölkənin inzibati, mədəni və sənaye mərkəzidir."
+   }
+  }
  },
  {
   "id": "gumru",
-  "name": "Gümrü",
   "wikidata_id": "Q199500",
   "lng": 43.833333333,
   "lat": 40.783333333,
-  "summary": "Gümrü (Ermenice: Գյումրի, eskiden Александрополь Aleksandropol), Ermenistan'ın ikinci büyük şehri ve ülkenin kuzeybatısındaki Şirak Eyaleti'nin idari merkezi olarak hizmet veren kentsel bir belediye topluluğudur. 19.",
-  "content_lang": "tr",
   "periods": [
    {
     "name": "Gümrü",
@@ -903,14 +1072,30 @@
     "event_id": "gumru",
     "type": "ansiklopedi",
     "author": null,
-    "title": "Gümrü",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q199500",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "gumru-enwiki",
+    "event_id": "gumru",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Gyumri",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Gyumri",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "gumru-trwiki",
@@ -924,19 +1109,46 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "gumru-azwiki",
+    "event_id": "gumru",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Gümrü",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/G%C3%BCmr%C3%BC",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": true
+  "needs_review": true,
+  "i18n": {
+   "en": {
+    "name": "Gyumri",
+    "summary": "Gyumri (Armenian: Գյումրի, pronounced [ɡjumˈɾi]) is an urban municipal community and the second-largest city in Armenia, serving as the administrative center of Shirak Province in the northwestern part of the country."
+   },
+   "tr": {
+    "name": "Gümrü",
+    "summary": "Gümrü (Ermenice: Գյումրի, eskiden Александрополь Aleksandropol), Ermenistan'ın ikinci büyük şehri ve ülkenin kuzeybatısındaki Şirak Eyaleti'nin idari merkezi olarak hizmet veren kentsel bir belediye topluluğudur. 19."
+   },
+   "az": {
+    "name": "Gümrü",
+    "summary": "Gümrü (erm. Գյումրի, 1990-cu ildən qabaq Leninakan (erm. Լենինական)) — Ermənistanda şəhər."
+   }
+  }
  },
  {
   "id": "baku",
-  "name": "Bakü",
   "wikidata_id": "Q9248",
   "lng": 49.835183333,
   "lat": 40.366655555,
-  "summary": "Bakü (Azerbaycanca, Azerice telaffuz: [bɑˈcɯ] ( dinle)), Azerbaycan'ın Hazar Denizi'nin batı kıyısında yer alan başkentidir. Kafkasya'nın en büyük şehri, en önemli kültür ve ticaret merkezidir. Ülkenin en doğusundaki ve en önemli sanayi, ticaret ve kültür merkezi olmanın yanı sıra bir liman kenti olarak da önemlidir.",
-  "content_lang": "tr",
   "periods": [],
   "other_names": [],
   "rulers": [
@@ -1097,14 +1309,30 @@
     "event_id": "baku",
     "type": "ansiklopedi",
     "author": null,
-    "title": "Bakü",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q9248",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "baku-enwiki",
+    "event_id": "baku",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Baku",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Baku",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "baku-trwiki",
@@ -1118,19 +1346,46 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "baku-azwiki",
+    "event_id": "baku",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Bakı",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/Bak%C4%B1",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": false
+  "needs_review": false,
+  "i18n": {
+   "en": {
+    "name": "Baku",
+    "summary": "Baku (US: , UK: ; Azerbaijani: Bakı [bɑˈcɯ] ) is the capital and largest city of Azerbaijan, as well as the largest city on the Caspian Sea and in the Caucasus region."
+   },
+   "tr": {
+    "name": "Bakü",
+    "summary": "Bakü (Azerbaycanca, Azerice telaffuz: [bɑˈcɯ] ( dinle)), Azerbaycan'ın Hazar Denizi'nin batı kıyısında yer alan başkentidir. Kafkasya'nın en büyük şehri, en önemli kültür ve ticaret merkezidir. Ülkenin en doğusundaki ve en önemli sanayi, ticaret ve kültür merkezi olmanın yanı sıra bir liman kenti olarak da önemlidir."
+   },
+   "az": {
+    "name": "Bakı",
+    "summary": "Bakı — Azərbaycan Respublikasının paytaxtıdır və Abşeron yarımadasında, Xəzər dənizinin qərb sahilində yerləşir. Sahəsi 2140 km², əhalisi, 2018-ci ilin əvvəlinə qədər əhalisinin sayı 2 262 600 nəfər idi. Bakı, Avropa və Asiyanın kəsişməsində yerləşən dünyanın ən cazibədar və kosmopolit şəhərlərindən biridir."
+   }
+  }
  },
  {
   "id": "derbent",
-  "name": "Derbent",
   "wikidata_id": "Q131416",
   "lng": 48.288888888,
   "lat": 42.057777777,
-  "summary": "Derbent (Rusça: Дербе́нт; Azerice: Dərbənd; Lezgice: Кьвевар; Avarca: Дербенд; Farsça: دربند, Darband), bugünkü Rusya'ya bağlı Dağıstan'da yer alan tarihi bir şehirdir. Şehrin tarihi yapıları 2003 yılında UNESCO tarafından Dünya Mirası olarak ilan edilmiştir.",
-  "content_lang": "tr",
   "periods": [],
   "other_names": [
    "Babü'l-Ebvab"
@@ -1287,14 +1542,30 @@
     "event_id": "derbent",
     "type": "ansiklopedi",
     "author": null,
-    "title": "Derbent",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q131416",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "derbent-enwiki",
+    "event_id": "derbent",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Derbent",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Derbent",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "derbent-trwiki",
@@ -1308,19 +1579,46 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "derbent-azwiki",
+    "event_id": "derbent",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Dərbənd",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/D%C9%99rb%C9%99nd",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": true
+  "needs_review": true,
+  "i18n": {
+   "en": {
+    "name": "Derbent",
+    "summary": "Derbent, known as Albana until the 3rd century, as Chor until the 6th century, as Bab al-Abwab until the 12th century, and also as Darband, or Derbend, is a city in Dagestan, Russia."
+   },
+   "tr": {
+    "name": "Derbent",
+    "summary": "Derbent (Rusça: Дербе́нт; Azerice: Dərbənd; Lezgice: Кьвевар; Avarca: Дербенд; Farsça: دربند, Darband), bugünkü Rusya'ya bağlı Dağıstan'da yer alan tarihi bir şehirdir. Şehrin tarihi yapıları 2003 yılında UNESCO tarafından Dünya Mirası olarak ilan edilmiştir."
+   },
+   "az": {
+    "name": "Dərbənd",
+    "summary": "Dərbənd (rus. Дербент, azərb. Dərbənd / Дәрбәнд, Dəmirqapı / Дəмиргапы‎, ləzg. Кьвевар, yəni \"iki (кьве) divar (вар)\", Дербенд və Цал, aqul. Цал və Дербенд) — Dağıstan Respublikasında şəhər. Xəzər dənizi ilə Qafqaz sıra dağları arasında yerləşir. Rusiyanın şəhər statusunu daşıyan ən cənub yaşayış məntəqəsidir."
+   }
+  }
  },
  {
   "id": "nahcivan",
-  "name": "Nahçıvan",
   "wikidata_id": "Q230104",
   "lng": 45.412222222,
   "lat": 39.208888888,
-  "summary": "Nahçıvan (Azerice: Naxçıvan), Azerbaycan'da bir şehirdir. Nahçıvan Özerk Cumhuriyeti'nin başkentidir. Aras Nehri'nin kolu olan Nahçıvan Nehri'nin batı kıyısındadır. Babek Rayonu ile çevrili olan Nahçıvan şehri, özel bir statüye sahiptir. 2019 itibarıyla, şehir nüfusu 93.700'dür. Bakü'den uzaklığı 536 km'dir.",
-  "content_lang": "tr",
   "periods": [],
   "other_names": [],
   "rulers": [
@@ -1457,14 +1755,30 @@
     "event_id": "nahcivan",
     "type": "ansiklopedi",
     "author": null,
-    "title": "Nahçıvan",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q230104",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "nahcivan-enwiki",
+    "event_id": "nahcivan",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Nakhchivan (city)",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Nakhchivan_(city)",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "nahcivan-trwiki",
@@ -1478,19 +1792,46 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "nahcivan-azwiki",
+    "event_id": "nahcivan",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Naxçıvan (şəhər)",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/Nax%C3%A7%C4%B1van_(%C5%9F%C9%99h%C9%99r)",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": false
+  "needs_review": false,
+  "i18n": {
+   "en": {
+    "name": "Nakhchivan",
+    "summary": "Nakhchivan (Azerbaijani: Naxçıvan Azerbaijani pronunciation: [nɑxtʃɯˈvɑn]; Armenian: Նախիջևան, romanized: Naxijevan Armenian pronunciation: [naχidʒevˈan]) is the capital and largest city of the eponymous Nakhchivan Autonomous Republic, a true exclave of Azerbaijan, located 450 km (280 mi) west of Baku."
+   },
+   "tr": {
+    "name": "Nahçıvan",
+    "summary": "Nahçıvan (Azerice: Naxçıvan), Azerbaycan'da bir şehirdir. Nahçıvan Özerk Cumhuriyeti'nin başkentidir. Aras Nehri'nin kolu olan Nahçıvan Nehri'nin batı kıyısındadır. Babek Rayonu ile çevrili olan Nahçıvan şehri, özel bir statüye sahiptir. 2019 itibarıyla, şehir nüfusu 93.700'dür. Bakü'den uzaklığı 536 km'dir."
+   },
+   "az": {
+    "name": "Naxçıvan",
+    "summary": "Naxçıvan — Azərbaycanda respublika tabeli şəhər, Naxçıvan Muxtar Respublikasının paytaxtı və inzibati mərkəzidir. Şəhərin inzibati ərazisi 191,57 km²-dir; 1 yanvar 2026-cı il tarixinə əhalisi 98 073 nəfər, əhalinin sıxlığı isə hər km²-ə 512 nəfər olmuşdur."
+   }
+  }
  },
  {
   "id": "batum",
-  "name": "Batum",
   "wikidata_id": "Q25475",
   "lng": 41.641666666,
   "lat": 41.645833333,
-  "summary": "Batum (Gürcüce-Lazca: ბათუმი / Batumi), Gürcistan'ın ikinci büyük şehri ve Acara Özerk Cumhuriyeti'nin başkentidir. Karadeniz'in doğu kıyısında, Gürcistan-Türkiye sınırının yaklaşık 20 kilometre (12 mil) kuzeyinde yer alan Batum, Kafkas Dağları'nın eteklerinde, nemli subtropikal bir bölgede bulunmaktadır.",
-  "content_lang": "tr",
   "periods": [],
   "other_names": [],
   "rulers": [
@@ -1609,14 +1950,30 @@
     "event_id": "batum",
     "type": "ansiklopedi",
     "author": null,
-    "title": "Batum",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q25475",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "batum-enwiki",
+    "event_id": "batum",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Batumi",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Batumi",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "batum-trwiki",
@@ -1630,19 +1987,46 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "batum-azwiki",
+    "event_id": "batum",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Batumi",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/Batumi",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": false
+  "needs_review": false,
+  "i18n": {
+   "en": {
+    "name": "Batumi",
+    "summary": "Batumi (; Georgian: ბათუმი pronounced [ˈb̥a'tʰu.mi] ) is the second-largest city of Georgia and the capital of Georgia's Autonomous Republic of Adjara, located on the coast of the Black Sea in Georgia's southwest, 20 kilometres (12 mi) north of the border with Turkey."
+   },
+   "tr": {
+    "name": "Batum",
+    "summary": "Batum (Gürcüce-Lazca: ბათუმი / Batumi), Gürcistan'ın ikinci büyük şehri ve Acara Özerk Cumhuriyeti'nin başkentidir. Karadeniz'in doğu kıyısında, Gürcistan-Türkiye sınırının yaklaşık 20 kilometre (12 mil) kuzeyinde yer alan Batum, Kafkas Dağları'nın eteklerinde, nemli subtropikal bir bölgede bulunmaktadır."
+   },
+   "az": {
+    "name": "Batumi",
+    "summary": "Batumi (gürc. ბათუმი; 1936-cı ilə qədər Batum) və ya Batum— Gürcüstanın Qara dəniz limanı və Acarıstan Muxtar Respublikasının paytaxtı. Şəhərin əhalisi 152 839 nəfərdir (2014). Turizm mərkəzi olan Batuminin əhalisi yay aylarında 400 000 min nəfərə çatır."
+   }
+  }
  },
  {
   "id": "mahackale",
-  "name": "Mahaçkale",
   "wikidata_id": "Q5168",
   "lng": 47.505,
   "lat": 42.9825,
-  "summary": "Mahaçkale veya Mahaçkala (Kumukça: Anсi, Ancikala, Rusça: Махачкала; Avarca: МахIачхъала; Lakça: МахIачкъала, Анжи), Rusya'nın Dağıstan eyaletinin başkenti ve en büyük şehridir.",
-  "content_lang": "tr",
   "periods": [
    {
     "name": "Petrovsk-Port",
@@ -1786,14 +2170,30 @@
     "event_id": "mahackale",
     "type": "ansiklopedi",
     "author": null,
-    "title": "Mahaçkale",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q5168",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "mahackale-enwiki",
+    "event_id": "mahackale",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Makhachkala",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Makhachkala",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "mahackale-trwiki",
@@ -1807,19 +2207,46 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "mahackale-azwiki",
+    "event_id": "mahackale",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Mahaçqala",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/Maha%C3%A7qala",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": false
+  "needs_review": false,
+  "i18n": {
+   "en": {
+    "name": "Makhachkala",
+    "summary": "Makhachkala, previously known as Petrovskoye (1844–1857) and Port-Petrovsk (1857–1921), or by the local Kumyk name of Anji, is the capital and largest city of Dagestan, Russia."
+   },
+   "tr": {
+    "name": "Mahaçkale",
+    "summary": "Mahaçkale veya Mahaçkala (Kumukça: Anсi, Ancikala, Rusça: Махачкала; Avarca: МахIачхъала; Lakça: МахIачкъала, Анжи), Rusya'nın Dağıstan eyaletinin başkenti ve en büyük şehridir."
+   },
+   "az": {
+    "name": "Mahaçqala",
+    "summary": "Mahaçqala (rus. Махачкала, qum. Анжи-къала, Магьачкъала, avar. МахIачхъала, ləzg. Магьачкъала, tab. Мягьячгъала, darg. ГIянжи-Къала, МяхIячкъала, lak. МахІачкъала, Анжи) — Rusiyanın cənubunda yerləşən Dağıstan Respublikasının paytaxtı. Sahəsi 671 km² əhalisi 462.412 nəfərdir (2002)."
+   }
+  }
  },
  {
   "id": "edirne",
-  "name": "Edirne",
   "wikidata_id": "Q43387",
   "lng": 26.57361,
   "lat": 41.67304,
-  "summary": "Edirne, Türkiye'nin Edirne ilinin merkezi olan şehir. Marmara Bölgesi'nin Trakya kesiminde, Yunanistan ve Bulgaristan sınırında yer almaktadır. Edirne, 1363'ten 1453'e kadar Osmanlı İmparatorluğu'nun başkentiydi. 2020 sayımına göre toplam nüfusu 180.901'di.",
-  "content_lang": "tr",
   "periods": [
    {
     "name": "Hadrianopolis",
@@ -1927,14 +2354,30 @@
     "event_id": "edirne",
     "type": "ansiklopedi",
     "author": null,
-    "title": "Edirne",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q43387",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "edirne-enwiki",
+    "event_id": "edirne",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Edirne",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Edirne",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "edirne-trwiki",
@@ -1948,19 +2391,46 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "edirne-azwiki",
+    "event_id": "edirne",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Ədirnə",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/%C6%8Fdirn%C9%99",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": true
+  "needs_review": true,
+  "i18n": {
+   "en": {
+    "name": "Edirne",
+    "summary": "Edirne (US: ; Turkish: [e.ˈdiɾ.ne]), historically known as Orestias, Orestiada, Adrianople, or Adriana, is a city in Turkey, in the northwestern part of the province of Edirne in Eastern Thrace."
+   },
+   "tr": {
+    "name": "Edirne",
+    "summary": "Edirne, Türkiye'nin Edirne ilinin merkezi olan şehir. Marmara Bölgesi'nin Trakya kesiminde, Yunanistan ve Bulgaristan sınırında yer almaktadır. Edirne, 1363'ten 1453'e kadar Osmanlı İmparatorluğu'nun başkentiydi. 2020 sayımına göre toplam nüfusu 180.901'di."
+   },
+   "az": {
+    "name": "Ədirnə",
+    "summary": "Ədirnə (türk. Edirne; əvvəllər Adrianopol; yun. Αδριανούπολις) — Şərqi Trakiyada, Türkiyənin şimal-qərbində, Yunanıstan və Bolqarıstan sərhədlərinə yaxın şəhər. Ədirnə ilinin mərkəzidir."
+   }
+  }
  },
  {
   "id": "bursa",
-  "name": "Bursa",
   "wikidata_id": "Q40738",
   "lng": 29.080538888,
   "lat": 40.191330555,
-  "summary": "Bursa, Türkiye'nin nüfus bakımından dördüncü büyük ili olan Bursa ilinin merkezidir. Şehir merkezinin rakımı ortalama 155 metredir. Tarih boyunca Bithynia, Roma ve Bizans gibi medeniyetlere ev sahipliği yapan kent; Osmanlı İmparatorluğu'nun ilk başkenti olmasıyla tarihsel bir öneme sahiptir.",
-  "content_lang": "tr",
   "periods": [
    {
     "name": "Prusa",
@@ -2050,14 +2520,30 @@
     "event_id": "bursa",
     "type": "ansiklopedi",
     "author": null,
-    "title": "Bursa",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q40738",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "bursa-enwiki",
+    "event_id": "bursa",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Bursa",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Bursa",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "bursa-trwiki",
@@ -2071,19 +2557,46 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "bursa-azwiki",
+    "event_id": "bursa",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Bursa",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/Bursa",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": true
+  "needs_review": true,
+  "i18n": {
+   "en": {
+    "name": "Bursa",
+    "summary": "Bursa is a city in northwestern Turkey and the administrative center of Bursa Province. It is the fourth-most populous city in Turkey and second-most populous in the Marmara Region after Istanbul."
+   },
+   "tr": {
+    "name": "Bursa",
+    "summary": "Bursa, Türkiye'nin nüfus bakımından dördüncü büyük ili olan Bursa ilinin merkezidir. Şehir merkezinin rakımı ortalama 155 metredir. Tarih boyunca Bithynia, Roma ve Bizans gibi medeniyetlere ev sahipliği yapan kent; Osmanlı İmparatorluğu'nun ilk başkenti olmasıyla tarihsel bir öneme sahiptir."
+   },
+   "az": {
+    "name": "Bursa",
+    "summary": "Bursa (türk. Bursa) — Türkiyənin Bursa ilinin inzibati mərkəzi. Əhali sayına görə Türkiyənin ən böyük 4-cü şəhəridir. Osmanlı imperiyasının ikinci paytaxtı olmuşdur."
+   }
+  }
  },
  {
   "id": "iznik",
-  "name": "İznik",
   "wikidata_id": "Q217125",
   "lng": 29.719444444,
   "lat": 40.428888888,
-  "summary": "İznik (Grekçe: Νίκαια Níkaia), Türkiye'nin Bursa ilinin bir ilçesi ve ilçenin merkezi olan şehir. Adını şehirden alan İznik Gölü'nün doğu kıyısında, Bursa'nın kuzeydoğusunda yer alır. 2025 yılı TÜİK verilerine göre nüfusu 45.510 kişidir. İznik adı, şehrin eski adı olan Nikea'dan gelmektedir.",
-  "content_lang": "tr",
   "periods": [
    {
     "name": "Nikaia",
@@ -2173,14 +2686,30 @@
     "event_id": "iznik",
     "type": "ansiklopedi",
     "author": null,
-    "title": "İznik",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q217125",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "iznik-enwiki",
+    "event_id": "iznik",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "İznik",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/%C4%B0znik",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "iznik-trwiki",
@@ -2194,19 +2723,46 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "iznik-azwiki",
+    "event_id": "iznik",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "İznik",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/%C4%B0znik",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": true
+  "needs_review": true,
+  "i18n": {
+   "en": {
+    "name": "İznik",
+    "summary": "İznik (Turkish pronunciation: [izˈnik]) is a municipality and district of Bursa Province, Turkey. Its area is 753 km2, and its population 44,236 (2022). The town is at the site of the ancient city of Nicaea, from which the modern name derives."
+   },
+   "tr": {
+    "name": "İznik",
+    "summary": "İznik (Grekçe: Νίκαια Níkaia), Türkiye'nin Bursa ilinin bir ilçesi ve ilçenin merkezi olan şehir. Adını şehirden alan İznik Gölü'nün doğu kıyısında, Bursa'nın kuzeydoğusunda yer alır. 2025 yılı TÜİK verilerine göre nüfusu 45.510 kişidir. İznik adı, şehrin eski adı olan Nikea'dan gelmektedir."
+   },
+   "az": {
+    "name": "İznik",
+    "summary": "İznik — Bursanın ilçəsi."
+   }
+  }
  },
  {
   "id": "izmir",
-  "name": "İzmir",
   "wikidata_id": "Q35997",
   "lng": 27.13838,
   "lat": 38.41273,
-  "summary": "İzmir, Türkiye'de Ege Bölgesi'nde yer alan İzmir ilinin merkezi olan şehirdir. 3,5 milyona yakın merkez nüfusuyla ülkenin nüfus bakımından en kalabalık üçüncü şehridir. Uzun ve dar bir yapıya sahip olan İzmir Körfezi'nin başında yer alan İzmir'de Türkiye'nin en büyük yedinci limanı olan İzmir Limanı bulunur.",
-  "content_lang": "tr",
   "periods": [
    {
     "name": "Smyrna",
@@ -2320,14 +2876,30 @@
     "event_id": "izmir",
     "type": "ansiklopedi",
     "author": null,
-    "title": "İzmir",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q35997",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "izmir-enwiki",
+    "event_id": "izmir",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "İzmir",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/%C4%B0zmir",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "izmir-trwiki",
@@ -2341,19 +2913,46 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "izmir-azwiki",
+    "event_id": "izmir",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "İzmir",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/%C4%B0zmir",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": true
+  "needs_review": true,
+  "i18n": {
+   "en": {
+    "name": "İzmir",
+    "summary": "İzmir is the third most populous city in Turkey, after Istanbul and Ankara, and the largest metropolitan area on the Aegean Sea. It is on the Aegean coast of Anatolia, and is the capital of İzmir Province."
+   },
+   "tr": {
+    "name": "İzmir",
+    "summary": "İzmir, Türkiye'de Ege Bölgesi'nde yer alan İzmir ilinin merkezi olan şehirdir. 3,5 milyona yakın merkez nüfusuyla ülkenin nüfus bakımından en kalabalık üçüncü şehridir. Uzun ve dar bir yapıya sahip olan İzmir Körfezi'nin başında yer alan İzmir'de Türkiye'nin en büyük yedinci limanı olan İzmir Limanı bulunur."
+   },
+   "az": {
+    "name": "İzmir",
+    "summary": "İzmir — Türkiyənin ən böyük üçüncü şəhəri. İzmir ilinin mərkəzində yerləşir. 2017 TÜİK məlumatlarına görə, İzmirin əhalisi 4.279.677 nəfərdir."
+   }
+  }
  },
  {
   "id": "ankara",
-  "name": "Ankara",
   "wikidata_id": "Q3640",
   "lng": 32.83869,
   "lat": 39.93576,
-  "summary": "Ankara, Türkiye'nin başkenti ve Ankara ilinin merkezi olan şehirdir. Coğrafi olarak Türkiye'nin merkezine yakın bir konumda bulunur ve İç Anadolu Bölgesi'nde yer alır. Türkiye İstatistik Kurumu'nun 2025 sonuçlarına göre 5.910.320 nüfusuyla ülkenin İstanbul'dan sonra nüfus bakımından ikinci büyük şehridir.",
-  "content_lang": "tr",
   "periods": [],
   "other_names": [
    "Ankyra",
@@ -2445,14 +3044,30 @@
     "event_id": "ankara",
     "type": "ansiklopedi",
     "author": null,
-    "title": "Ankara",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q3640",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "ankara-enwiki",
+    "event_id": "ankara",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Ankara",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ankara",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "ankara-trwiki",
@@ -2466,19 +3081,46 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "ankara-azwiki",
+    "event_id": "ankara",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Ankara",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/Ankara",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": true
+  "needs_review": true,
+  "i18n": {
+   "en": {
+    "name": "Ankara",
+    "summary": "Ankara is the capital city of Turkey. Located in the central part of Anatolia, the city has a population of over 5.3 million residents in its urban center, out of 6 million residents in Ankara Province. Ankara is Turkey's second-largest city by population after Istanbul."
+   },
+   "tr": {
+    "name": "Ankara",
+    "summary": "Ankara, Türkiye'nin başkenti ve Ankara ilinin merkezi olan şehirdir. Coğrafi olarak Türkiye'nin merkezine yakın bir konumda bulunur ve İç Anadolu Bölgesi'nde yer alır. Türkiye İstatistik Kurumu'nun 2025 sonuçlarına göre 5.910.320 nüfusuyla ülkenin İstanbul'dan sonra nüfus bakımından ikinci büyük şehridir."
+   },
+   "az": {
+    "name": "Ankara",
+    "summary": "Ankara (türk. Ankara) — Türkiyə Respublikasının paytaxtı. İstanbuldan sonra ölkənin ən böyük ikinci şəhəridir."
+   }
+  }
  },
  {
   "id": "konya",
-  "name": "Konya",
   "wikidata_id": "Q79857",
   "lng": 32.5161,
   "lat": 37.847054,
-  "summary": "Konya, Türkiye'nin Konya ilinin merkezi olan şehirdir. 1875'te kurulan Konya Belediyesi, 1987'de çıkarılan 3399 sayılı yasa gereğince \"büyükşehir\" statüsüne kavuşmuş olup 1989'dan beri belediye hizmetleri bu statüye göre yürütülmektedir.",
-  "content_lang": "tr",
   "periods": [],
   "other_names": [
    "Ikonion"
@@ -2581,14 +3223,30 @@
     "event_id": "konya",
     "type": "ansiklopedi",
     "author": null,
-    "title": "Konya",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q79857",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "konya-enwiki",
+    "event_id": "konya",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Konya",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Konya",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "konya-trwiki",
@@ -2602,19 +3260,46 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "konya-azwiki",
+    "event_id": "konya",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Konya",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/Konya",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": true
+  "needs_review": true,
+  "i18n": {
+   "en": {
+    "name": "Konya",
+    "summary": "Konya is a major city in central Turkey, on the southwestern edge of the Central Anatolian Plateau, and is the capital of Konya Province. During ancient history and into Seljuk times it was known as Iconium. In 19th-century accounts of the city in English its name is usually spelt Konia or Koniah."
+   },
+   "tr": {
+    "name": "Konya",
+    "summary": "Konya, Türkiye'nin Konya ilinin merkezi olan şehirdir. 1875'te kurulan Konya Belediyesi, 1987'de çıkarılan 3399 sayılı yasa gereğince \"büyükşehir\" statüsüne kavuşmuş olup 1989'dan beri belediye hizmetleri bu statüye göre yürütülmektedir."
+   },
+   "az": {
+    "name": "Konya",
+    "summary": "Konya — Türkiyənin Konya ilinin mərkəzi."
+   }
+  }
  },
  {
   "id": "sivas",
-  "name": "Sivas",
   "wikidata_id": "Q107401",
   "lng": 37.016666666,
   "lat": 39.75,
-  "summary": "Sivas, Türkiye'nin İç Anadolu Bölgesi'nde yer alan Sivas ilinin merkezi olan şehir ve bölgenin en eski ve önemli kentlerinden biridir.",
-  "content_lang": "tr",
   "periods": [],
   "other_names": [
    "Sebasteia"
@@ -2705,14 +3390,30 @@
     "event_id": "sivas",
     "type": "ansiklopedi",
     "author": null,
-    "title": "Sivas",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q107401",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "sivas-enwiki",
+    "event_id": "sivas",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Sivas",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Sivas",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "sivas-trwiki",
@@ -2726,19 +3427,46 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "sivas-azwiki",
+    "event_id": "sivas",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Sivas",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/Sivas",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": true
+  "needs_review": true,
+  "i18n": {
+   "en": {
+    "name": "Sivas",
+    "summary": "Sivas is a city in central Turkey. It is the seat of Sivas Province and Sivas District. Its population is 365,274 (2022). The city, which lies at an elevation of 1,278 metres (4,193 ft) in the broad valley of the Kızılırmak river, is a moderately sized trade centre and industrial city, although the economy has…"
+   },
+   "tr": {
+    "name": "Sivas",
+    "summary": "Sivas, Türkiye'nin İç Anadolu Bölgesi'nde yer alan Sivas ilinin merkezi olan şehir ve bölgenin en eski ve önemli kentlerinden biridir."
+   },
+   "az": {
+    "name": "Sivas",
+    "summary": "Sivas — Türkiyənin Sivas ilinin inzibati mərkəzi."
+   }
+  }
  },
  {
   "id": "trabzon",
-  "name": "Trabzon",
   "wikidata_id": "Q45301",
   "lng": 39.7225,
   "lat": 41.005,
-  "summary": "Trabzon (Romeika: Τραπεζούντα, Trapezounta, Lazca: Ťamt̆ra), Türkiye'nin Trabzon ilinin merkezi olan şehirdir. Karadeniz Bölgesi'nin Doğu Karadeniz Bölümü'nde yer alan ilin Karadeniz'e kıyısı bulunur. Günümüzde Karadeniz Bölgesi'nin Samsun'dan sonra ikinci büyük kentidir.",
-  "content_lang": "tr",
   "periods": [
    {
     "name": "Trapezus",
@@ -2828,14 +3556,30 @@
     "event_id": "trabzon",
     "type": "ansiklopedi",
     "author": null,
-    "title": "Trabzon",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q45301",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "trabzon-enwiki",
+    "event_id": "trabzon",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Trabzon",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Trabzon",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "trabzon-trwiki",
@@ -2849,19 +3593,46 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "trabzon-azwiki",
+    "event_id": "trabzon",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Trabzon",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/Trabzon",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": false
+  "needs_review": false,
+  "i18n": {
+   "en": {
+    "name": "Trabzon",
+    "summary": "Trabzon (Turkish pronunciation: [tɾɑbzon]) is a city on the Black Sea coast of northeastern Turkey and the capital of Trabzon Province. Historically known as Trebizond, the city was founded in 756 BC as Trapezous (greek: Τραπεζοῦς) by Greeks originating from Miletus."
+   },
+   "tr": {
+    "name": "Trabzon",
+    "summary": "Trabzon (Romeika: Τραπεζούντα, Trapezounta, Lazca: Ťamt̆ra), Türkiye'nin Trabzon ilinin merkezi olan şehirdir. Karadeniz Bölgesi'nin Doğu Karadeniz Bölümü'nde yer alan ilin Karadeniz'e kıyısı bulunur. Günümüzde Karadeniz Bölgesi'nin Samsun'dan sonra ikinci büyük kentidir."
+   },
+   "az": {
+    "name": "Trabzon",
+    "summary": "Trabzon — Türkiyənin ərazisinin böyüklüyünə görə ən böyük iyirmi doqquzuncu şəhəridir. Sahəsi 4.662 km²-dir. Trabzon, Qara dəniz sahilləri ilə Ziqana dağları arasında yerləşən, olduqca zəngin təbiətə, rəngarəng adət-ənənələrə, əsrarəngiz mədəniyyətə malik bir şəhərdir."
+   }
+  }
  },
  {
   "id": "erzurum",
-  "name": "Erzurum",
   "wikidata_id": "Q122803",
   "lng": 41.275555555,
   "lat": 39.909722222,
-  "summary": "Erzurum, Türkiye'nin Erzurum ilinin merkezi olan şehirdir. Bir bölümü Türkiye'nin Doğu Anadolu Bölgesi'nde yer alırken diğer bölümü ise Türkiye'nin Doğu Karadeniz Bölgesi'nde yer almaktadır.",
-  "content_lang": "tr",
   "periods": [],
   "other_names": [
    "Theodosiopolis",
@@ -2977,14 +3748,30 @@
     "event_id": "erzurum",
     "type": "ansiklopedi",
     "author": null,
-    "title": "Erzurum",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q122803",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "erzurum-enwiki",
+    "event_id": "erzurum",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Erzurum",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Erzurum",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "erzurum-trwiki",
@@ -2998,19 +3785,46 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "erzurum-azwiki",
+    "event_id": "erzurum",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Ərzurum",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/%C6%8Frzurum",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": true
+  "needs_review": true,
+  "i18n": {
+   "en": {
+    "name": "Erzurum",
+    "summary": "Erzurum (Armenian: Կարին, romanized: Karin; Kurdish: Erzîrom) is a city in eastern Turkey. It is the largest city and capital of Erzurum Province and is 1,900 meters (6,233 feet) above sea level. Erzurum had a population of 367,250 in 2010. It is the site of ancient Theodosiopolis."
+   },
+   "tr": {
+    "name": "Erzurum",
+    "summary": "Erzurum, Türkiye'nin Erzurum ilinin merkezi olan şehirdir. Bir bölümü Türkiye'nin Doğu Anadolu Bölgesi'nde yer alırken diğer bölümü ise Türkiye'nin Doğu Karadeniz Bölgesi'nde yer almaktadır."
+   },
+   "az": {
+    "name": "Ərzurum",
+    "summary": "Ərzurum (türk. Erzurum, gürc. კარნუქალაქი, Karnukalaki) — Türkiyənin şimal-şərqində şəhər. Ən qədim şəhərdir. 1473-cü ildən Türkiyənin tərkibindədir. Əvvəllər Karin Feodosiopol adlanmış, VII əsrdə xilafətə qatılmış, XI əsrdə Ərzurum səlcuqlar tərəfindən tutulmuş və Ərzən-ər Rum adlanmışdır."
+   }
+  }
  },
  {
   "id": "kars",
-  "name": "Kars",
   "wikidata_id": "Q127063",
   "lng": 43.095833333,
   "lat": 40.607777777,
-  "summary": "Kars, Kars ilinin merkezi olan şehirdir. Türkiye'nin rakımı en yüksek il merkezlerinden biri olan, köyleri ile birlikte Kars merkez nüfusu 2023 itibarıyla 122.524 olarak bildirilmiştir. Merkez ilçeye bağlı, 23 mahalle ve 72 köy bulunmaktadır.",
-  "content_lang": "tr",
   "periods": [],
   "other_names": [],
   "rulers": [
@@ -3147,14 +3961,30 @@
     "event_id": "kars",
     "type": "ansiklopedi",
     "author": null,
-    "title": "Kars",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q127063",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "kars-enwiki",
+    "event_id": "kars",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Kars",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kars",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "kars-trwiki",
@@ -3168,19 +3998,46 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "kars-azwiki",
+    "event_id": "kars",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Qars",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/Qars",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": false
+  "needs_review": false,
+  "i18n": {
+   "en": {
+    "name": "Kars",
+    "summary": "Kars is a city in northeast Turkey. It is the seat of Kars Province and Kars District. As of 2022, its population was 91,450. Kars, in classical historiography (Strabo), was in the ancient region known as Chorzene (Greek: Χορζηνή), part of the province of Ayrarat in the Kingdom of Armenia, and later the capital of the…"
+   },
+   "tr": {
+    "name": "Kars",
+    "summary": "Kars, Kars ilinin merkezi olan şehirdir. Türkiye'nin rakımı en yüksek il merkezlerinden biri olan, köyleri ile birlikte Kars merkez nüfusu 2023 itibarıyla 122.524 olarak bildirilmiştir. Merkez ilçeye bağlı, 23 mahalle ve 72 köy bulunmaktadır."
+   },
+   "az": {
+    "name": "Qars",
+    "summary": "Qars (türk. Kars) — Türkiyənin şərqində yer alan şəhər. Qars ilinin inzibati mərkəzidir. Türkiyənin ən yüksəkdə yerləşən il mərkəzlərindən olan Qars kəndləri ilə birlikdə ümumi əhali sayı 100 mini keçən şəhərlərdəndir (şəhər mərkəzi: 102.001, ümumi 129.458). Mərkəz ilçəyə bağlı üç məhəllə və 70 kənd vardır."
+   }
+  }
  },
  {
   "id": "van",
-  "name": "Van",
   "wikidata_id": "Q83061",
   "lng": 43.416666666,
   "lat": 38.501944444,
-  "summary": "Van, Türkiye'nin Van ilinin merkezi olan şehirdir. Anadolu'nun en büyük kapalı havzası olan Van Gölü kıyısında toprakları verimli, akarsuları bol, iklim koşulları oldukça elverişli bir yerleşim merkezidir.",
-  "content_lang": "tr",
   "periods": [],
   "other_names": [
    "Tuşpa"
@@ -3295,14 +4152,30 @@
     "event_id": "van",
     "type": "ansiklopedi",
     "author": null,
-    "title": "Van",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q83061",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "van-enwiki",
+    "event_id": "van",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Van, Turkey",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Van%2C_Turkey",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "van-trwiki",
@@ -3316,19 +4189,46 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "van-azwiki",
+    "event_id": "van",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Van",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/Van",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": true
+  "needs_review": true,
+  "i18n": {
+   "en": {
+    "name": "Van",
+    "summary": "Van is a city in eastern Turkey's Van Province, on the eastern shore of Lake Van. It is the capital and largest city of Van Province. Van has a long history as a major urban area."
+   },
+   "tr": {
+    "name": "Van",
+    "summary": "Van, Türkiye'nin Van ilinin merkezi olan şehirdir. Anadolu'nun en büyük kapalı havzası olan Van Gölü kıyısında toprakları verimli, akarsuları bol, iklim koşulları oldukça elverişli bir yerleşim merkezidir."
+   },
+   "az": {
+    "name": "Van",
+    "summary": "Van (türk. Van) — Van ilinin inzibati mərkəzi, Türkiyədə şəhər."
+   }
+  }
  },
  {
   "id": "diyarbakir",
-  "name": "Diyarbakır",
   "wikidata_id": "Q83387",
   "lng": 40.21889,
   "lat": 37.91583,
-  "summary": "Diyarbakır, Türkiye'nin Diyarbakır ilinin merkezi olan şehirdir. Üzerinde tarihî Diyarbakır Kalesi'nin bulunduğu ve Dicle Nehri kıyısındaki yüksek platonun çevresinde yer alan şehir, Güneydoğu Anadolu Bölgesi'nde yüzölçümü bakımından Şanlıurfa'dan sonra ikinci sıradadır.",
-  "content_lang": "tr",
   "periods": [],
   "other_names": [
    "Amida",
@@ -3456,14 +4356,30 @@
     "event_id": "diyarbakir",
     "type": "ansiklopedi",
     "author": null,
-    "title": "Diyarbakır",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q83387",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "diyarbakir-enwiki",
+    "event_id": "diyarbakir",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Diyarbakır",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Diyarbak%C4%B1r",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "diyarbakir-trwiki",
@@ -3477,19 +4393,46 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "diyarbakir-azwiki",
+    "event_id": "diyarbakir",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Diyarbəkir",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/Diyarb%C9%99kir",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": true
+  "needs_review": true,
+  "i18n": {
+   "en": {
+    "name": "Diyarbakır",
+    "summary": "Diyarbakır is the largest Kurdish-majority city in Turkey. It is the administrative center of Diyarbakır Province. It is considered one of the oldest continually inhabited cities in the world, having been continually inhabited since c. 8,000 BCE."
+   },
+   "tr": {
+    "name": "Diyarbakır",
+    "summary": "Diyarbakır, Türkiye'nin Diyarbakır ilinin merkezi olan şehirdir. Üzerinde tarihî Diyarbakır Kalesi'nin bulunduğu ve Dicle Nehri kıyısındaki yüksek platonun çevresinde yer alan şehir, Güneydoğu Anadolu Bölgesi'nde yüzölçümü bakımından Şanlıurfa'dan sonra ikinci sıradadır."
+   },
+   "az": {
+    "name": "Diyarbəkir",
+    "summary": "Diyarbəkir — Türkiyənin Diyarbəkir ilinin mərkəzi."
+   }
+  }
  },
  {
   "id": "antakya",
-  "name": "Antakya",
   "wikidata_id": "Q80561",
   "lng": 36.160555555,
   "lat": 36.2025,
-  "summary": "Antakya (Arapça: انطاكيّة, Anṭākye; Yunanca: Ἀντιόχεια, Antiohia), Hatay ilinin nüfus bakımından en büyük yerleşim merkezidir. Yeni düzenlemeyle birlikte Antakya ve Defne Belediyesi olarak ayrılmıştır. Ortasından Asi Nehri geçmektedir. Hristiyanlığın önemli mukaddes mekânlarından biridir.",
-  "content_lang": "tr",
   "periods": [],
   "other_names": [
    "Antiokheia"
@@ -3604,14 +4547,30 @@
     "event_id": "antakya",
     "type": "ansiklopedi",
     "author": null,
-    "title": "Antakya",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q80561",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "antakya-enwiki",
+    "event_id": "antakya",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Antakya",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Antakya",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "antakya-trwiki",
@@ -3625,19 +4584,46 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "antakya-azwiki",
+    "event_id": "antakya",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Antakya",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/Antakya",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": true
+  "needs_review": true,
+  "i18n": {
+   "en": {
+    "name": "Antakya",
+    "summary": "Antakya (Turkish pronunciation: [anˈtakja]), Turkish form of Antioch, is a municipality and the capital district of Hatay Province, Turkey, with an area of 703 km2 (271 sq mi) and a population of around 400,000 people as of 2022. It is in the Hatay Province, which is the southernmost region of Turkey."
+   },
+   "tr": {
+    "name": "Antakya",
+    "summary": "Antakya (Arapça: انطاكيّة, Anṭākye; Yunanca: Ἀντιόχεια, Antiohia), Hatay ilinin nüfus bakımından en büyük yerleşim merkezidir. Yeni düzenlemeyle birlikte Antakya ve Defne Belediyesi olarak ayrılmıştır. Ortasından Asi Nehri geçmektedir. Hristiyanlığın önemli mukaddes mekânlarından biridir."
+   },
+   "az": {
+    "name": "Antakya",
+    "summary": "Antakya və ya tarixi azərbaycancada Əntakiyə — Türkiyənin cənubunda, Suriya sərhədinin yaxınlığında olan Hatay ilində şəhər və onun inzibati mərkəzi."
+   }
+  }
  },
  {
   "id": "gaziantep",
-  "name": "Gaziantep",
   "wikidata_id": "Q93338",
   "lng": 37.379166666,
   "lat": 37.062777777,
-  "summary": "Gaziantep (Osmanlıca: غازی عینتاب, Gazi Ayıntab) ya da halk arasında kullanılan eski ve kısa adıyla Antep (Osmanlıca: عینتاب, Ayıntab) Türkiye'nin Gaziantep ilinin merkezi olan şehirdir. 1,9 milyona yakın merkez nüfusuyla Türkiye'nin en fazla nüfusa sahip 5. şehri ve 2,250 milyon genel nüfusu ile Türkiye'nin 9.",
-  "content_lang": "tr",
   "periods": [
    {
     "name": "Antep",
@@ -3757,14 +4743,30 @@
     "event_id": "gaziantep",
     "type": "ansiklopedi",
     "author": null,
-    "title": "Gaziantep",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q93338",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "gaziantep-enwiki",
+    "event_id": "gaziantep",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Gaziantep",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Gaziantep",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "gaziantep-trwiki",
@@ -3778,19 +4780,46 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "gaziantep-azwiki",
+    "event_id": "gaziantep",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Qaziantep",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/Qaziantep",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": false
+  "needs_review": false,
+  "i18n": {
+   "en": {
+    "name": "Gaziantep",
+    "summary": "Gaziantep, historically Aintab and still informally called Antep, is a major city in south-central Turkey. It is the capital of the Gaziantep Province, in the westernmost part of Turkey's Southeastern Anatolia Region and partially in the Mediterranean Region."
+   },
+   "tr": {
+    "name": "Gaziantep",
+    "summary": "Gaziantep (Osmanlıca: غازی عینتاب, Gazi Ayıntab) ya da halk arasında kullanılan eski ve kısa adıyla Antep (Osmanlıca: عینتاب, Ayıntab) Türkiye'nin Gaziantep ilinin merkezi olan şehirdir. 1,9 milyona yakın merkez nüfusuyla Türkiye'nin en fazla nüfusa sahip 5. şehri ve 2,250 milyon genel nüfusu ile Türkiye'nin 9."
+   },
+   "az": {
+    "name": "Qaziantep",
+    "summary": "Qaziantep — Türkiyənin Qaziantep ilinin inzibati mərkəzi."
+   }
+  }
  },
  {
   "id": "urfa",
-  "name": "Şanlıurfa",
   "wikidata_id": "Q133118",
   "lng": 38.791666666,
   "lat": 37.158333333,
-  "summary": "Şanlıurfa (eski adıyla: Ruha, Kürtçe: Riha, Arapça: الرها (El-Ruhâ)), halk arasındaki kısa adıyla Urfa veya eski çağlarda bilinen adıyla Edessa, Türkiye'nin Şanlıurfa ilinin merkezi olan şehirdir. Yazları son derece sıcak ve kurak bir iklime sahip olan şehir, kışı serin ve nemli geçirir.",
-  "content_lang": "tr",
   "periods": [
    {
     "name": "Urfa",
@@ -3936,14 +4965,30 @@
     "event_id": "urfa",
     "type": "ansiklopedi",
     "author": null,
-    "title": "Şanlıurfa",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q133118",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "urfa-enwiki",
+    "event_id": "urfa",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Urfa",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Urfa",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "urfa-trwiki",
@@ -3957,19 +5002,46 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "urfa-azwiki",
+    "event_id": "urfa",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Şanlıurfa",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/%C5%9Eanl%C4%B1urfa",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": true
+  "needs_review": true,
+  "i18n": {
+   "en": {
+    "name": "Şanlıurfa",
+    "summary": "Urfa, officially called Şanlıurfa (Turkish pronunciation: [ʃanˈɫɯuɾfa] lit. 'Urfa the Glorious'), is a city in southeastern Turkey and the capital of Şanlıurfa Province. Urfa is situated on a plain about 80 km (50 mi) east of the Euphrates. Its climate features extremely hot, dry summers and cool, moist winters."
+   },
+   "tr": {
+    "name": "Şanlıurfa",
+    "summary": "Şanlıurfa (eski adıyla: Ruha, Kürtçe: Riha, Arapça: الرها (El-Ruhâ)), halk arasındaki kısa adıyla Urfa veya eski çağlarda bilinen adıyla Edessa, Türkiye'nin Şanlıurfa ilinin merkezi olan şehirdir. Yazları son derece sıcak ve kurak bir iklime sahip olan şehir, kışı serin ve nemli geçirir."
+   },
+   "az": {
+    "name": "Şanlıurfa",
+    "summary": "Şanlıurfa (türk. Şanlıurfa) — Türkiyənin Şanlıurfa ilinin inzibati mərkəzi."
+   }
+  }
  },
  {
   "id": "selanik",
-  "name": "Selanik",
   "wikidata_id": "Q17151",
   "lng": 22.935555555,
   "lat": 40.640277777,
-  "summary": "Selanik (Yunanca: Θεσσαλονίκη, romanize: Thessaloníki, Yunanca telaffuz: [θesaloˈnici]), metropol alanında bir milyondan fazla nüfusu ile Yunanistan'ın en büyük ikinci şehri ve Makedonya coğrafi bölgesinin, Orta Makedonya idari bölgesinin ve Makedonya ve Trakya Merkezi Olmayan İdaresi'nin başkentidir.",
-  "content_lang": "tr",
   "periods": [],
   "other_names": [
    "Thessaloniki"
@@ -4060,14 +5132,30 @@
     "event_id": "selanik",
     "type": "ansiklopedi",
     "author": null,
-    "title": "Selanik",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q17151",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "selanik-enwiki",
+    "event_id": "selanik",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Thessaloniki",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Thessaloniki",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "selanik-trwiki",
@@ -4081,19 +5169,46 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "selanik-azwiki",
+    "event_id": "selanik",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Saloniki",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/Saloniki",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": true
+  "needs_review": true,
+  "i18n": {
+   "en": {
+    "name": "Thessaloniki",
+    "summary": "Thessaloniki (; Greek: Θεσσαλονίκη [θesaloˈnici] ; also known by various spellings and names) is the capital and largest city of the administrative region of Central Macedonia, and the second-largest city in Greece."
+   },
+   "tr": {
+    "name": "Selanik",
+    "summary": "Selanik (Yunanca: Θεσσαλονίκη, romanize: Thessaloníki, Yunanca telaffuz: [θesaloˈnici]), metropol alanında bir milyondan fazla nüfusu ile Yunanistan'ın en büyük ikinci şehri ve Makedonya coğrafi bölgesinin, Orta Makedonya idari bölgesinin ve Makedonya ve Trakya Merkezi Olmayan İdaresi'nin başkentidir."
+   },
+   "az": {
+    "name": "Saloniki",
+    "summary": "Saloniki (yun. Θεσσαλονίκη, translit. Fessaloníki , translit. Saloniki) və ya Səlanik (osman. سلانیك, türk. Selanik) — Yunanıstanın ikinci böyük şəhəri. Əhalisi 363.987 nəfərdir."
+   }
+  }
  },
  {
   "id": "sofya",
-  "name": "Sofya",
   "wikidata_id": "Q472",
   "lng": 23.321726,
   "lat": 42.697886,
-  "summary": "Sofya, Bulgaristan'ın başkenti ve en büyük şehridir. Ülkenin batı kesiminde, Vitoşa Dağı'nın eteklerinde, Sofya Vadisi'nde yer almaktadır. Şehir, İskar Nehri'nin batısında kurulmuş olup, Sofya Merkez Mineral Hamamları gibi birçok mineral kaynağına sahiptir. Nemli karasal iklime sahiptir.",
-  "content_lang": "tr",
   "periods": [],
   "other_names": [
    "Serdika"
@@ -4190,14 +5305,30 @@
     "event_id": "sofya",
     "type": "ansiklopedi",
     "author": null,
-    "title": "Sofya",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q472",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "sofya-enwiki",
+    "event_id": "sofya",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Sofia",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Sofia",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "sofya-trwiki",
@@ -4211,19 +5342,46 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "sofya-azwiki",
+    "event_id": "sofya",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Sofiya",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/Sofiya",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": true
+  "needs_review": true,
+  "i18n": {
+   "en": {
+    "name": "Sofia",
+    "summary": "Sofia is the capital and largest city of Bulgaria. It is situated in the Sofia Valley at the foot of the Vitosha mountain, in the western part of the country. The city is built west of the Iskar river and has many mineral springs, such as the Sofia Central Mineral Baths. It has a humid continental climate."
+   },
+   "tr": {
+    "name": "Sofya",
+    "summary": "Sofya, Bulgaristan'ın başkenti ve en büyük şehridir. Ülkenin batı kesiminde, Vitoşa Dağı'nın eteklerinde, Sofya Vadisi'nde yer almaktadır. Şehir, İskar Nehri'nin batısında kurulmuş olup, Sofya Merkez Mineral Hamamları gibi birçok mineral kaynağına sahiptir. Nemli karasal iklime sahiptir."
+   },
+   "az": {
+    "name": "Sofiya",
+    "summary": "Sofiya (bolq. Со́фия) — Bolqarıstanın paytaxtı və ən böyük şəhəri. Sofiyada 1.4 milyona yaxın insan yaşayır, bəzi mənbələrdə isə 2 milyona yaxın əhalinin olduğu deyilir. Sofiya əhalisinin 96% bolqarlar təşkil edir. İkinci böyük etnik qrup isə türklərdir — 0,6%. Digər millətlər isə əhalinin 3%-ni təşkil edir."
+   }
+  }
  },
  {
   "id": "belgrad",
-  "name": "Belgrad",
   "wikidata_id": "Q3711",
   "lng": 20.456944444,
   "lat": 44.817777777,
-  "summary": "Belgrad, Sırbistan'ın başkenti ve en büyük şehridir. Sava ve Tuna nehirlerinin birleştiği noktada ve Karpat Havzası ile Balkan Yarımadası'nın kesişme noktasında yer almaktadır.",
-  "content_lang": "tr",
   "periods": [],
   "other_names": [
    "Singidunum"
@@ -4332,14 +5490,30 @@
     "event_id": "belgrad",
     "type": "ansiklopedi",
     "author": null,
-    "title": "Belgrad",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q3711",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "belgrad-enwiki",
+    "event_id": "belgrad",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Belgrade",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Belgrade",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "belgrad-trwiki",
@@ -4353,19 +5527,46 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "belgrad-azwiki",
+    "event_id": "belgrad",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Belqrad",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/Belqrad",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": true
+  "needs_review": true,
+  "i18n": {
+   "en": {
+    "name": "Belgrade",
+    "summary": "Belgrade ( bel-GRAYD or BEL-grayd; Serbian: Београд / Beograd, lit. 'White City', pronounced [beǒɡrad] ) is the capital and largest city of Serbia. It is located at the confluence of the Sava and Danube rivers and at the crossroads of the Pannonian Plain and the Balkan Peninsula."
+   },
+   "tr": {
+    "name": "Belgrad",
+    "summary": "Belgrad, Sırbistan'ın başkenti ve en büyük şehridir. Sava ve Tuna nehirlerinin birleştiği noktada ve Karpat Havzası ile Balkan Yarımadası'nın kesişme noktasında yer almaktadır."
+   },
+   "az": {
+    "name": "Belqrad",
+    "summary": "Belqrad (serb. Београд, Beograd, ing. Belgrade, rus. Белград, Belgrad, osman. بلغراد Beliğrad) — Serbiyanın paytaxtı və ən böyük şəhəri. Ortadunay düzənliyində, Sava və Dunay çaylarının birləşməsində yerləşir."
+   }
+  }
  },
  {
   "id": "halep",
-  "name": "Halep",
   "wikidata_id": "Q41183",
   "lng": 37.16,
   "lat": 36.2,
-  "summary": "Halep (Arapça: حلب), Suriye'nin kuzeyinde yer alan ve ülkenin en kalabalık vilayeti olan Halep Valiliği'nin başkenti olan bir şehirdir.",
-  "content_lang": "tr",
   "periods": [],
   "other_names": [],
   "rulers": [
@@ -4478,14 +5679,30 @@
     "event_id": "halep",
     "type": "ansiklopedi",
     "author": null,
-    "title": "Halep",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q41183",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "halep-enwiki",
+    "event_id": "halep",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Aleppo",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Aleppo",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "halep-trwiki",
@@ -4499,19 +5716,46 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "halep-azwiki",
+    "event_id": "halep",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Hələb",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/H%C9%99l%C9%99b",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": false
+  "needs_review": false,
+  "i18n": {
+   "en": {
+    "name": "Aleppo",
+    "summary": "Aleppo is a city in northern Syria, which serves as the capital of the Aleppo Governorate, the country's most populous governorate."
+   },
+   "tr": {
+    "name": "Halep",
+    "summary": "Halep (Arapça: حلب), Suriye'nin kuzeyinde yer alan ve ülkenin en kalabalık vilayeti olan Halep Valiliği'nin başkenti olan bir şehirdir."
+   },
+   "az": {
+    "name": "Hələb",
+    "summary": "Hələb (ərəb. حلب‎‎ ḥalab; q.yun. Βέροια Béroia; yun. Χαλέπι Chalépi; osman. حلب haleb; türk. Halep; ing. Aleppo) — Suriya Ərəb Respublikasının şimal-qərbində yerləşən şəhər. Hələb vilayətinin mərkəzi sayılan bu şəhər həm də Suriyanın əhali baxımından ən böyük şəhəridir."
+   }
+  }
  },
  {
   "id": "sam",
-  "name": "Şam",
   "wikidata_id": "Q3766",
   "lng": 36.292,
   "lat": 33.513,
-  "summary": "Şam veya Dımaşk (Arapça: دمشق Dımaşk ya da الشام Eş-şam), Suriye'nin başkentidir. Ayrıca, Şam Valiliğinin ve Rif Şam Valiliği'nin de idari başkentidir. Osmanlılar zamanında Şam-ı şerif unvanı ile anılmıştır.",
-  "content_lang": "tr",
   "periods": [],
   "other_names": [],
   "rulers": [
@@ -4606,14 +5850,30 @@
     "event_id": "sam",
     "type": "ansiklopedi",
     "author": null,
-    "title": "Şam",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q3766",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "sam-enwiki",
+    "event_id": "sam",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Damascus",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Damascus",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "sam-trwiki",
@@ -4627,19 +5887,46 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "sam-azwiki",
+    "event_id": "sam",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Dəməşq",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/D%C9%99m%C9%99%C5%9Fq",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": false
+  "needs_review": false,
+  "i18n": {
+   "en": {
+    "name": "Damascus",
+    "summary": "Damascus is the capital and largest city of Syria. It is the oldest capital city in the world. Known colloquially in Syria as aš-Šām and dubbed, poetically, the \"City of Jasmine\" (مَدِيْنَةُ الْيَاسْمِينِ, Madīnat al-Yāsmīn), Damascus is a major cultural center of the Levant and the Arab world."
+   },
+   "tr": {
+    "name": "Şam",
+    "summary": "Şam veya Dımaşk (Arapça: دمشق Dımaşk ya da الشام Eş-şam), Suriye'nin başkentidir. Ayrıca, Şam Valiliğinin ve Rif Şam Valiliği'nin de idari başkentidir. Osmanlılar zamanında Şam-ı şerif unvanı ile anılmıştır."
+   },
+   "az": {
+    "name": "Dəməşq",
+    "summary": "Dəməşq (ərəb. دمشق‎) və ya Şam (ərəb. الشام‎) — Suriya Ərəb Respublikasının paytaxtıdır. Dəməşq (ərəb dilində \"təşəbbüs\" mənasını bildirir) nəinki Suriyanın, eləcə də bütün dünyanın ən qədim şəhərlərindən biridir. Dəməşq barədə ilk məlumat e.ə. 1500-cü ilə təsadüf edir."
+   }
+  }
  },
  {
   "id": "kudus",
-  "name": "Kudüs",
   "wikidata_id": "Q1218",
   "lng": 35.234156,
   "lat": 31.776679,
-  "summary": "Kudüs (Arapça: القُدس, el-Kuds) veya Yeruşalim (İbranice: יְרוּשָׁלַיִם, Yeruşaláyim Şehir, Akdeniz ve Ölüdeniz'in (Lut Gölü) kuzey sınırı arasında yer almaktadır. Doğu Kudüs ile birlikte düşünüldüğünde, alan ve nüfus olarak İsrail'in en kalabalık şehridir. 800 binin üzerinde nüfusa ve 125,1 km2 alana sahiptir.",
-  "content_lang": "tr",
   "periods": [],
   "other_names": [
    "Aelia Capitolina"
@@ -4736,14 +6023,30 @@
     "event_id": "kudus",
     "type": "ansiklopedi",
     "author": null,
-    "title": "Kudüs",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q1218",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "kudus-enwiki",
+    "event_id": "kudus",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Jerusalem",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Jerusalem",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "kudus-trwiki",
@@ -4757,19 +6060,46 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "kudus-azwiki",
+    "event_id": "kudus",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Qüds",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/Q%C3%BCds",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": true
+  "needs_review": true,
+  "i18n": {
+   "en": {
+    "name": "Jerusalem",
+    "summary": "Jerusalem is a city in the Southern Levant, on a plateau in the Judaean Mountains between the Mediterranean and the Dead Sea. It is one of the oldest cities in the world and is considered a holy city to the three major Abrahamic religions: Judaism, Christianity and Islam."
+   },
+   "tr": {
+    "name": "Kudüs",
+    "summary": "Kudüs (Arapça: القُدس, el-Kuds) veya Yeruşalim (İbranice: יְרוּשָׁלַיִם, Yeruşaláyim Şehir, Akdeniz ve Ölüdeniz'in (Lut Gölü) kuzey sınırı arasında yer almaktadır. Doğu Kudüs ile birlikte düşünüldüğünde, alan ve nüfus olarak İsrail'in en kalabalık şehridir. 800 binin üzerinde nüfusa ve 125,1 km2 alana sahiptir."
+   },
+   "az": {
+    "name": "Qüds",
+    "summary": "Qüds (ərəb. القدس‎ əl-Qüds ) və ya Yerusəlim (ivr. ‏יְרוּשָׁלַיִם‏‎ Yerushalayim ) — Yaxın Şərqdə, Aralıq dənizi ilə Ölü dəniz arasında yerləşən və dünyanın ən qədim şəhərlərindən biri. İsrail və Fələstin hər ikisi Qüds şəhərinin öz ölkələrinin paytaxtı olmasını iddia edirlər."
+   }
+  }
  },
  {
   "id": "kahire",
-  "name": "Kahire",
   "wikidata_id": "Q85",
   "lng": 31.235833333,
   "lat": 30.044444444,
-  "summary": "Kahire (Arapça: القاهرة, romanize: el-Qāhira, \"Galip\", \"Üstün Gelen\"), Mısır'ın başkenti ve en büyük şehridir ve Kahire ilinin merkezidir. 9,8 milyondan fazla insana ev sahipliği yapmaktadır. Ayrıca Afrika, Arap dünyası ve Orta Doğu'daki en büyük kentsel yerleşim alanlarından biridir.",
-  "content_lang": "tr",
   "periods": [],
   "other_names": [],
   "rulers": [
@@ -4894,14 +6224,30 @@
     "event_id": "kahire",
     "type": "ansiklopedi",
     "author": null,
-    "title": "Kahire",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q85",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "kahire-enwiki",
+    "event_id": "kahire",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Cairo",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Cairo",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "kahire-trwiki",
@@ -4915,19 +6261,46 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "kahire-azwiki",
+    "event_id": "kahire",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Qahirə",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/Qahir%C9%99",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": false
+  "needs_review": false,
+  "i18n": {
+   "en": {
+    "name": "Cairo",
+    "summary": "Cairo is the capital and largest city of Egypt and the Cairo Governorate. It is home to more than 9.8 million people. The city is also part of the largest urban agglomeration in Africa, the Arab world, and the Middle East."
+   },
+   "tr": {
+    "name": "Kahire",
+    "summary": "Kahire (Arapça: القاهرة, romanize: el-Qāhira, \"Galip\", \"Üstün Gelen\"), Mısır'ın başkenti ve en büyük şehridir ve Kahire ilinin merkezidir. 9,8 milyondan fazla insana ev sahipliği yapmaktadır. Ayrıca Afrika, Arap dünyası ve Orta Doğu'daki en büyük kentsel yerleşim alanlarından biridir."
+   },
+   "az": {
+    "name": "Qahirə",
+    "summary": "Qahirə (ərəb. القاهره‎) — Misir Ərəb Respublikasının paytaxtı. Afrikada ən böyük şəhərlərdən biri. Zəngin memarlıq, mədəniyyət nümunələri və təbiət mənzərələrinə malikdir. Əhalisi təxminən 7 milyon nəfərdir (2006). Abbasilər, Əyyubilər və Məmluk Dövlətlərinin paytaxtları olmuşdur"
+   }
+  }
  },
  {
   "id": "iskenderiye",
-  "name": "İskenderiye",
   "wikidata_id": "Q87",
   "lng": 29.8925,
   "lat": 31.1975,
-  "summary": "İskenderiye veya Aleksandria (Arapça: الإسكندرية, al-ʾIskandarīyah; Mısır Arapçası: اسكندرية, Eskendereyya; Yunanca: Αλεξάνδρεια, Alexándria; Kıptîce: ⲣⲁⲕⲟϯ, Rakodī), Mısır'ın önemli bir şehridir. Nil Nehri Deltası'nın batı ucunda yer alan şehir, ülkenin kuzey kıyısı boyunca yaklaşık 40 km (25 mil) uzanır.",
-  "content_lang": "tr",
   "periods": [],
   "other_names": [],
   "rulers": [
@@ -5052,14 +6425,30 @@
     "event_id": "iskenderiye",
     "type": "ansiklopedi",
     "author": null,
-    "title": "İskenderiye",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q87",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "iskenderiye-enwiki",
+    "event_id": "iskenderiye",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Alexandria",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Alexandria",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "iskenderiye-trwiki",
@@ -5073,19 +6462,46 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "iskenderiye-azwiki",
+    "event_id": "iskenderiye",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "İsgəndəriyyə",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/%C4%B0sg%C9%99nd%C9%99riyy%C9%99",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": false
+  "needs_review": false,
+  "i18n": {
+   "en": {
+    "name": "Alexandria",
+    "summary": "Alexandria is a major city in Egypt. Lying at the western edge of the Nile River Delta, it extends about 40 km (25 mi) along the country's northern coast. It is Egypt's principal seaport, the second largest city after Cairo, and the largest city on the Mediterranean coast."
+   },
+   "tr": {
+    "name": "İskenderiye",
+    "summary": "İskenderiye veya Aleksandria (Arapça: الإسكندرية, al-ʾIskandarīyah; Mısır Arapçası: اسكندرية, Eskendereyya; Yunanca: Αλεξάνδρεια, Alexándria; Kıptîce: ⲣⲁⲕⲟϯ, Rakodī), Mısır'ın önemli bir şehridir. Nil Nehri Deltası'nın batı ucunda yer alan şehir, ülkenin kuzey kıyısı boyunca yaklaşık 40 km (25 mil) uzanır."
+   },
+   "az": {
+    "name": "İsgəndəriyyə",
+    "summary": "İsgəndəriyyə və ya Aleksandriya (yun. Αλεξάνδρεια) — Misirin Aralıq dənizi hövzəsində, Nil çayının deltasında yerləşən şəhər. 3,87 milyon əhalisi olan bu şəhər Qahirədən sonra Şimali Afrikada ikinci ən böyük şəhər sayılır."
+   }
+  }
  },
  {
   "id": "bagdat",
-  "name": "Bağdat",
   "wikidata_id": "Q1530",
   "lng": 44.366111111,
   "lat": 33.315277777,
-  "summary": "Bağdat (Arapça: بغداد), Irak'ın başkenti ve en büyük şehridir. Irak'ın merkezinde, Dicle Nehri kıyısında yer almaktadır. Şehrin tahmini nüfusu 8 milyondur. Orta Doğu ve Arap dünyasının en kalabalık ve büyük şehirleri arasında yer almakta olup Irak nüfusunun %22'sini oluşturmaktadır.",
-  "content_lang": "tr",
   "periods": [],
   "other_names": [
    "Medinetü's-Selam"
@@ -5200,14 +6616,30 @@
     "event_id": "bagdat",
     "type": "ansiklopedi",
     "author": null,
-    "title": "Bağdat",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q1530",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "bagdat-enwiki",
+    "event_id": "bagdat",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Baghdad",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Baghdad",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "bagdat-trwiki",
@@ -5221,19 +6653,46 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "bagdat-azwiki",
+    "event_id": "bagdat",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Bağdad",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/Ba%C4%9Fdad",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": true
+  "needs_review": true,
+  "i18n": {
+   "en": {
+    "name": "Baghdad",
+    "summary": "Baghdad is the capital and the largest city of Iraq. It is located on the banks of the Tigris in central Iraq. With an estimated population of 8 million, it ranks among the most populous and largest cities in the Middle East and the Arab world and constitutes 22% of Iraq's population."
+   },
+   "tr": {
+    "name": "Bağdat",
+    "summary": "Bağdat (Arapça: بغداد), Irak'ın başkenti ve en büyük şehridir. Irak'ın merkezinde, Dicle Nehri kıyısında yer almaktadır. Şehrin tahmini nüfusu 8 milyondur. Orta Doğu ve Arap dünyasının en kalabalık ve büyük şehirleri arasında yer almakta olup Irak nüfusunun %22'sini oluşturmaktadır."
+   },
+   "az": {
+    "name": "Bağdad",
+    "summary": "Bağdad (ərəb. بغداد‎) — İraqın paytaxtı. Əhalisi 9 milyon nəfərdir (2015),Bağdad Yaxın Şərqin ən iri şəhərlərindən biridir. Bağdad İraqın siyasi, iqtisadi və mədəniyyət mərkəzidir. Burada hökumət, bütün mərkəzi dövlət və dini müəssisələr və diplomatik nümayəndəliklər yerləşir."
+   }
+  }
  },
  {
   "id": "musul",
-  "name": "Musul",
   "wikidata_id": "Q83317",
   "lng": 43.129166666,
   "lat": 36.341666666,
-  "summary": "Musul (Arapça: موصل, Kürtçe: Mûsil), Irak'ın kuzeyindeki önemli bir şehirdir ve Ninova Valiliği'nin başkentidir. Başkent Bağdat'tan sonra Irak'ın ikinci büyük şehridir ve Dicle Nehri kıyısında yer almaktadır. Bir zamanlar dünyanın en büyük şehri olan antik Asur kenti Ninova'nın kalıntıları şehrin doğu tarafındadır.",
-  "content_lang": "tr",
   "periods": [],
   "other_names": [],
   "rulers": [
@@ -5358,14 +6817,30 @@
     "event_id": "musul",
     "type": "ansiklopedi",
     "author": null,
-    "title": "Musul",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q83317",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "musul-enwiki",
+    "event_id": "musul",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Mosul",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Mosul",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "musul-trwiki",
@@ -5379,19 +6854,46 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "musul-azwiki",
+    "event_id": "musul",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Mosul",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/Mosul",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": false
+  "needs_review": false,
+  "i18n": {
+   "en": {
+    "name": "Mosul",
+    "summary": "Mosul is a major city in northern Iraq, serving as the capital of Nineveh Governorate. It is the second largest city in Iraq overall after the capital Baghdad."
+   },
+   "tr": {
+    "name": "Musul",
+    "summary": "Musul (Arapça: موصل, Kürtçe: Mûsil), Irak'ın kuzeyindeki önemli bir şehirdir ve Ninova Valiliği'nin başkentidir. Başkent Bağdat'tan sonra Irak'ın ikinci büyük şehridir ve Dicle Nehri kıyısında yer almaktadır. Bir zamanlar dünyanın en büyük şehri olan antik Asur kenti Ninova'nın kalıntıları şehrin doğu tarafındadır."
+   },
+   "az": {
+    "name": "Mosul",
+    "summary": "Mosul (ərəb. الموصل‎ – əl-Mavsil; kürd. مووسڵ – Musil; süry. ܢܝܢܘܐ – Ninve; türk. Musul) — İraq Respublikasının Neynəvə mühafəzasının inzibati mərkəzi, əhalisinin sayına görə Bağdaddan sonra İraqın ikinci böyük şəhəridir."
+   }
+  }
  },
  {
   "id": "tebriz",
-  "name": "Tebriz",
   "wikidata_id": "Q80053",
   "lng": 46.296111111,
   "lat": 38.073888888,
-  "summary": "Tebriz (Farsça: تبریز, Azerice: Təbriz), İran'da Güney Azerbaycan bölgesinde yer alan, Doğu Azerbaycan Eyaleti'nin yönetim merkezi olan şehir. Tebriz İran'ın kuzey batısındaki en büyük şehri, aynı zamanda Azerbaycan Türkleri'nin yoğunluklu olarak yaşadığı bir şehirdir.",
-  "content_lang": "tr",
   "periods": [],
   "other_names": [],
   "rulers": [
@@ -5510,14 +7012,30 @@
     "event_id": "tebriz",
     "type": "ansiklopedi",
     "author": null,
-    "title": "Tebriz",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q80053",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "tebriz-enwiki",
+    "event_id": "tebriz",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Tabriz",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tabriz",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "tebriz-trwiki",
@@ -5531,19 +7049,46 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "tebriz-azwiki",
+    "event_id": "tebriz",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Təbriz",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/T%C9%99briz",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": false
+  "needs_review": false,
+  "i18n": {
+   "en": {
+    "name": "Tabriz",
+    "summary": "Tabriz (Persian: تبریز, romanized: tabriz, pronounced [tæbˈɾiːz] ) is a city in the Central District of Tabriz County, in East Azerbaijan province of northwestern Iran. It serves as capital of the province, the county, and the district. It is the sixth-most-populous city in Iran."
+   },
+   "tr": {
+    "name": "Tebriz",
+    "summary": "Tebriz (Farsça: تبریز, Azerice: Təbriz), İran'da Güney Azerbaycan bölgesinde yer alan, Doğu Azerbaycan Eyaleti'nin yönetim merkezi olan şehir. Tebriz İran'ın kuzey batısındaki en büyük şehri, aynı zamanda Azerbaycan Türkleri'nin yoğunluklu olarak yaşadığı bir şehirdir."
+   },
+   "az": {
+    "name": "Təbriz",
+    "summary": "Təbriz (fars. تبریز‎) — İranın şimal-qərbində yerləşən, Şərqi Azərbaycan ostanının mərkəzi və Təbriz metropoliyasının əsas şəhəridir."
+   }
+  }
  },
  {
   "id": "isfahan",
-  "name": "İsfahan",
   "wikidata_id": "Q42053",
   "lng": 51.674722222,
   "lat": 32.6525,
-  "summary": "İsfahan (Farsça: اصفهان), İran'ın İsfahan eyaletinin İsfahan ilçesinin merkez bölgesinde yer alan bir şehirdir. Eyaletin, ilçenin ve bölgenin başkentidir. Tahran'ın 440 kilometre (270 mil) güneyinde yer almaktadır.",
-  "content_lang": "tr",
   "periods": [],
   "other_names": [],
   "rulers": [
@@ -5662,14 +7207,30 @@
     "event_id": "isfahan",
     "type": "ansiklopedi",
     "author": null,
-    "title": "İsfahan",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q42053",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "isfahan-enwiki",
+    "event_id": "isfahan",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Isfahan",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Isfahan",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "isfahan-trwiki",
@@ -5683,19 +7244,46 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "isfahan-azwiki",
+    "event_id": "isfahan",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "İsfahan",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/%C4%B0sfahan",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": false
+  "needs_review": false,
+  "i18n": {
+   "en": {
+    "name": "Isfahan",
+    "summary": "Isfahan (Persian: اصفهان [esfæˈhɒːn] ) is a city in the Central District of Isfahan County, Isfahan Province, Iran. It is the capital of the province, the county, and the district. It is located 440 kilometres (270 miles) south of Tehran."
+   },
+   "tr": {
+    "name": "İsfahan",
+    "summary": "İsfahan (Farsça: اصفهان), İran'ın İsfahan eyaletinin İsfahan ilçesinin merkez bölgesinde yer alan bir şehirdir. Eyaletin, ilçenin ve bölgenin başkentidir. Tahran'ın 440 kilometre (270 mil) güneyinde yer almaktadır."
+   },
+   "az": {
+    "name": "İsfahan",
+    "summary": "İsfahan — İranın İsfahan ostanlığının mərkəzi olan şəhər. İranın Tehran və Məşhəddən sonra üçüncü ən böyük şəhəri sayılan İsfahan dünyanın ən gözəl memarlıq incilərindən biridir. Şəhərin Nəqşi Cahan meydanı UNESCO-nun mədəni irsinə daxildir."
+   }
+  }
  },
  {
   "id": "tahran",
-  "name": "Tahran",
   "wikidata_id": "Q3616",
   "lng": 51.389722222,
   "lat": 35.688888888,
-  "summary": "Tahran (Farsça: تهران), İran'ın başkenti ve en büyük şehridir. Aynı zamanda Tahran eyaletinin başkenti ve Tahran İlçesi ile Merkez Bölgesi'nin idari merkezidir.",
-  "content_lang": "tr",
   "periods": [],
   "other_names": [],
   "rulers": [
@@ -5808,14 +7396,30 @@
     "event_id": "tahran",
     "type": "ansiklopedi",
     "author": null,
-    "title": "Tahran",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q3616",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "tahran-enwiki",
+    "event_id": "tahran",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Tehran",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tehran",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "tahran-trwiki",
@@ -5829,19 +7433,46 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "tahran-azwiki",
+    "event_id": "tahran",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Tehran",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/Tehran",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": false
+  "needs_review": false,
+  "i18n": {
+   "en": {
+    "name": "Tehran",
+    "summary": "Tehran is the capital and largest city of Iran. It is also the capital of Tehran province and the administrative center for Tehran County and its Central District."
+   },
+   "tr": {
+    "name": "Tahran",
+    "summary": "Tahran (Farsça: تهران), İran'ın başkenti ve en büyük şehridir. Aynı zamanda Tahran eyaletinin başkenti ve Tahran İlçesi ile Merkez Bölgesi'nin idari merkezidir."
+   },
+   "az": {
+    "name": "Tehran",
+    "summary": "Tehran (fars. تهران‎) – İranın paytaxtı. Sahəsi 1.500 km², əhalisinin sayı 2006-cı ildə aparılmış rəsmi siyahıya almanın nəticələrinə əsasən 7.088.287 nəfərdir. Tehranı ilkin olaraq, Qacar sülaləsinin ilk nümayəndəsi Ağa Məhəmməd şah Qacar İran üçün paytaxt seçmişdir."
+   }
+  }
  },
  {
   "id": "merv",
-  "name": "Merv",
   "wikidata_id": "Q193325",
   "lng": 62.1925,
   "lat": 37.662777777,
-  "summary": "Merv (Türkmence: Merw; Farsça: مرو, Marv, bazı çevirilerde Marw veya Mary; Çince: 木鹿, Mulu), Türkmenistan sınırları içinde tarihi İpek yolu güzergâhı üzerinde kurulmuş, Karakum Çölü'nde bir vaha şehridir.",
-  "content_lang": "tr",
   "periods": [],
   "other_names": [
    "Margiana"
@@ -6004,14 +7635,30 @@
     "event_id": "merv",
     "type": "ansiklopedi",
     "author": null,
-    "title": "Merv",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q193325",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "merv-enwiki",
+    "event_id": "merv",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Merv",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Merv",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "merv-trwiki",
@@ -6025,19 +7672,46 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "merv-azwiki",
+    "event_id": "merv",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Mərv",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/M%C9%99rv",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": true
+  "needs_review": true,
+  "i18n": {
+   "en": {
+    "name": "Merv",
+    "summary": "Merv (Turkmen: Merw [ˈmeɾβ]; Persian: مرو [ˈmæɹv]), also called the Merve Oasis, was a major Iranian city in Central Asia, located on the historical Silk Road, near today's Mary, Turkmenistan. Human settlements on the site of Merv existed from the 3rd millennium BC until the 18th century AD."
+   },
+   "tr": {
+    "name": "Merv",
+    "summary": "Merv (Türkmence: Merw; Farsça: مرو, Marv, bazı çevirilerde Marw veya Mary; Çince: 木鹿, Mulu), Türkmenistan sınırları içinde tarihi İpek yolu güzergâhı üzerinde kurulmuş, Karakum Çölü'nde bir vaha şehridir."
+   },
+   "az": {
+    "name": "Mərv",
+    "summary": "Mərv (türkm. Merw; rus. Мерв; fars. مرو‎, Marv, Çince: 木鹿, Mulu) — bir zamanlar Böyük Səlcuqlu dövlətinin (ərəb. السلاجقة‎ əl-Salācike, fars. سلجوقيان‎ Salcūkiyān), paytaxtı Mərv şəhəri Türkmənistan sərhədləri içində tarixi İpək yolu güzərgahı üzərində qurulmuş bir çöl şəhəridir."
+   }
+  }
  },
  {
   "id": "herat",
-  "name": "Herat",
   "wikidata_id": "Q45313",
   "lng": 62.203056,
   "lat": 34.341944,
-  "summary": "Herat (Farsça: هرات, Eski Türkçe: Heri), Afganistan'ın batısında Herat Vilayeti'nin merkezi olan kent. 2016 tahminine göre 1,762,157 kişi nüfusu ile Herat Afganistan'ın nüfus itibarıyla ikinci büyük şehridir. Münbit Hari Nehri vadisinde konumlanmıştır. Kandehar ve Mezar-ı Şerif kentlerine 1.",
-  "content_lang": "tr",
   "periods": [],
   "other_names": [],
   "rulers": [
@@ -6150,14 +7824,30 @@
     "event_id": "herat",
     "type": "ansiklopedi",
     "author": null,
-    "title": "Herat",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q45313",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "herat-enwiki",
+    "event_id": "herat",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Herat",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Herat",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "herat-trwiki",
@@ -6171,19 +7861,46 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "herat-azwiki",
+    "event_id": "herat",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Herat",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/Herat",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": false
+  "needs_review": false,
+  "i18n": {
+   "en": {
+    "name": "Herat",
+    "summary": "Herat, also written as Harat or Hirat, and historically known as Haraiva, Horeiva and Hires, is a major city in western Afghanistan, serving as the capital of Herat Province and the Herat District."
+   },
+   "tr": {
+    "name": "Herat",
+    "summary": "Herat (Farsça: هرات, Eski Türkçe: Heri), Afganistan'ın batısında Herat Vilayeti'nin merkezi olan kent. 2016 tahminine göre 1,762,157 kişi nüfusu ile Herat Afganistan'ın nüfus itibarıyla ikinci büyük şehridir. Münbit Hari Nehri vadisinde konumlanmıştır. Kandehar ve Mezar-ı Şerif kentlerine 1."
+   },
+   "az": {
+    "name": "Herat",
+    "summary": "Herat (fars. هرات‎, q.türk Häri) — Əfqanıstanın qərbində Herat vilayətinin mərkəzi olan şəhər."
+   }
+  }
  },
  {
   "id": "semerkant",
-  "name": "Semerkant",
   "wikidata_id": "Q5753",
   "lng": 66.975833333,
   "lat": 39.654722222,
-  "summary": "Semerkant, Özbekistan'ın 12 ilinden biri olan Semerkant ilinin yönetim merkezi olan şehir. Zerefşan Nehri vadisinde, başkent Taşkent'in 275 km güneybatısında yer alır. Nüfus açısından Özbekistan'ın en büyük ikinci şehri, tarihi ve sosyo-kültürel açıdan en önemli şehridir.",
-  "content_lang": "tr",
   "periods": [],
   "other_names": [
    "Marakanda"
@@ -6346,14 +8063,30 @@
     "event_id": "semerkant",
     "type": "ansiklopedi",
     "author": null,
-    "title": "Semerkant",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q5753",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "semerkant-enwiki",
+    "event_id": "semerkant",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Samarkand",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Samarkand",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "semerkant-trwiki",
@@ -6367,19 +8100,46 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "semerkant-azwiki",
+    "event_id": "semerkant",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Səmərqənd",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/S%C9%99m%C9%99rq%C9%99nd",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": true
+  "needs_review": true,
+  "i18n": {
+   "en": {
+    "name": "Samarkand",
+    "summary": "Samarkand is a major city in south-eastern Uzbekistan. Among the oldest continuously inhabited cities in Central Asia, it had a population of 882,000 inhabitants as of 2026, making it the second-largest city in Uzbekistan after Tashkent."
+   },
+   "tr": {
+    "name": "Semerkant",
+    "summary": "Semerkant, Özbekistan'ın 12 ilinden biri olan Semerkant ilinin yönetim merkezi olan şehir. Zerefşan Nehri vadisinde, başkent Taşkent'in 275 km güneybatısında yer alır. Nüfus açısından Özbekistan'ın en büyük ikinci şehri, tarihi ve sosyo-kültürel açıdan en önemli şehridir."
+   },
+   "az": {
+    "name": "Səmərqənd",
+    "summary": "Səmərqənd (fars. سمرقند‎; özbəkcə: Samarqand) ― Özbəkistanın cənubunda tarixi şəhər, Səmərqənd vilayətinin mərkəzi. Zərəfşan çayının vadisində, Daşkənddən 275 kilometr cənub-qərbdə yerləşən Səmərqəndin əhalisi 566 min nəfərdir."
+   }
+  }
  },
  {
   "id": "buhara",
-  "name": "Buhara",
   "wikidata_id": "Q5764",
   "lng": 64.428611111,
   "lat": 39.774722222,
-  "summary": "Buhara (Özbekçe: Buxoro; Eski Türkçe: 𐰉𐰆𐰴𐰺𐰴 \"Bukarak\"; Türkmence: Buhara; Arapça: بخارى; Farsça: بُخارا‎ Bukhārā; Rusça: Бухара), Orta Asya'nın en eski yerleşim bölgelerinden olan ve günümüzde Özbekistan sınırları içinde bulunan tarihî şehir.",
-  "content_lang": "tr",
   "periods": [],
   "other_names": [],
   "rulers": [
@@ -6534,14 +8294,30 @@
     "event_id": "buhara",
     "type": "ansiklopedi",
     "author": null,
-    "title": "Buhara",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q5764",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "buhara-enwiki",
+    "event_id": "buhara",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Bukhara",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Bukhara",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "buhara-trwiki",
@@ -6555,19 +8331,46 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "buhara-azwiki",
+    "event_id": "buhara",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Buxara",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/Buxara",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": false
+  "needs_review": false,
+  "i18n": {
+   "en": {
+    "name": "Bukhara",
+    "summary": "Bukhara ( buu-KHAR-ə) is the seventh-largest city in Uzbekistan by population, with 305,500 residents as of 2026. It is the capital of Bukhara Region. Since ancient times, Bukhara was one of the most prosperous cities in Transoxiana alongside neighbouring Samarkand owing to its location on Silk Road."
+   },
+   "tr": {
+    "name": "Buhara",
+    "summary": "Buhara (Özbekçe: Buxoro; Eski Türkçe: 𐰉𐰆𐰴𐰺𐰴 \"Bukarak\"; Türkmence: Buhara; Arapça: بخارى; Farsça: بُخارا‎ Bukhārā; Rusça: Бухара), Orta Asya'nın en eski yerleşim bölgelerinden olan ve günümüzde Özbekistan sınırları içinde bulunan tarihî şehir."
+   },
+   "az": {
+    "name": "Buxara",
+    "summary": "Buxara (özb. Buxoro) — Özbəkistanın qədim şəhəri. Tarixi yerlərlə zəngin olan Buxara şəhərində təqribən 140 memarlıq abidəsi var. 31 avqust 2016-cı il tarixinə olan məlumata əsasən şəhər əhalisi 247,644 nəfər təşkil edir ki, bu da onu əhalisinin sayına görə Özbəkistanın beşinci ən böyük şəhəri edir."
+   }
+  }
  },
  {
   "id": "taskent",
-  "name": "Taşkent",
   "wikidata_id": "Q269",
   "lng": 69.279722222,
   "lat": 41.311111111,
-  "summary": "Taşkent (Özbekçe: Toshkent), Özbekistan'ın başkenti ve en büyük şehridir. 1 Temmuz 2025 itibarıyla 3,1 milyondan fazla nüfusuyla Orta Asya'nın en kalabalık şehridir.",
-  "content_lang": "tr",
   "periods": [],
   "other_names": [
    "Çaç"
@@ -6712,14 +8515,30 @@
     "event_id": "taskent",
     "type": "ansiklopedi",
     "author": null,
-    "title": "Taşkent",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q269",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "taskent-enwiki",
+    "event_id": "taskent",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Tashkent",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tashkent",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "taskent-trwiki",
@@ -6733,19 +8552,46 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "taskent-azwiki",
+    "event_id": "taskent",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Daşkənd",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/Da%C5%9Fk%C9%99nd",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": true
+  "needs_review": true,
+  "i18n": {
+   "en": {
+    "name": "Tashkent",
+    "summary": "Tashkent, also spelled Toshkent, is the capital and largest city of Uzbekistan. It is the most populous city in Central Asia, with a population of more than 3.1 million people as of July 1, 2025. It is located in northeastern Uzbekistan."
+   },
+   "tr": {
+    "name": "Taşkent",
+    "summary": "Taşkent (Özbekçe: Toshkent), Özbekistan'ın başkenti ve en büyük şehridir. 1 Temmuz 2025 itibarıyla 3,1 milyondan fazla nüfusuyla Orta Asya'nın en kalabalık şehridir."
+   },
+   "az": {
+    "name": "Daşkənd",
+    "summary": "Daşkənd (özb. Toshkent) — Özbəkistanın paytaxtı. Sahəsi 631,29 km², əhalisi 3,1 milyon nəfərdir (2024). Mərkəzi Asiyada metropoliteni olan iki şəhərdən biridir. Şəhərin su ehtiyaclarını təmin etmək üçün onun yaxınlığında süni Çarvak gölü yaradılmışdır."
+   }
+  }
  },
  {
   "id": "biskek",
-  "name": "Bişkek",
   "wikidata_id": "Q9361",
   "lng": 74.566666666,
   "lat": 42.866666666,
-  "summary": "Bişkek, Kırgızistan'ın başkenti ve en büyük kentsel şehridir. Şehir aynı zamanda Çuy bölgesininde başkentidir. Kazakistan sınırına yakın konumda olup 2024 yılı itibarıyla yaklaşık 1.200.000 nüfusa sahiptir.",
-  "content_lang": "tr",
   "periods": [
    {
     "name": "Pişpek",
@@ -6883,14 +8729,30 @@
     "event_id": "biskek",
     "type": "ansiklopedi",
     "author": null,
-    "title": "Bişkek",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q9361",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "biskek-enwiki",
+    "event_id": "biskek",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Bishkek",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Bishkek",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "biskek-trwiki",
@@ -6904,19 +8766,46 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "biskek-azwiki",
+    "event_id": "biskek",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Bişkek",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/Bi%C5%9Fkek",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": false
+  "needs_review": false,
+  "i18n": {
+   "en": {
+    "name": "Bishkek",
+    "summary": "Bishkek, formerly known as Pishpek (until 1926), and then Frunze (1926–1991), is the capital and largest city of Kyrgyzstan, and the capital of the Chüy Region. It is situated near the border with Kazakhstan and has a population of around 1,200,000 people as of 2024."
+   },
+   "tr": {
+    "name": "Bişkek",
+    "summary": "Bişkek, Kırgızistan'ın başkenti ve en büyük kentsel şehridir. Şehir aynı zamanda Çuy bölgesininde başkentidir. Kazakistan sınırına yakın konumda olup 2024 yılı itibarıyla yaklaşık 1.200.000 nüfusa sahiptir."
+   },
+   "az": {
+    "name": "Bişkek",
+    "summary": "Bişkek və ya Bişkək (qırğ. Бишкек) — Qırğızıstanın paytaxtı və böyük şəhəri."
+   }
+  }
  },
  {
   "id": "kasgar",
-  "name": "Kaşgar",
   "wikidata_id": "Q170521",
   "lng": 75.983333,
   "lat": 39.45,
-  "summary": "Kaşgar (Uygur Arap yazısı: قەشقەر; Uygur Latin yazısı: Qeshqer; Çince (basitleştirilmiş): 喀什噶尔; Çince (geleneksel): 喀什噶爾; pinyin: Kāshígá'ěr ya da 喀什 Kāshí), Çin'de Sincan Uygur Özerk Bölgesi'nin batısında yer alan tarihi bir vaha şehridir.",
-  "content_lang": "tr",
   "periods": [],
   "other_names": [],
   "rulers": [
@@ -7041,14 +8930,30 @@
     "event_id": "kasgar",
     "type": "ansiklopedi",
     "author": null,
-    "title": "Kaşgar",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q170521",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "kasgar-enwiki",
+    "event_id": "kasgar",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Kashgar",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kashgar",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "kasgar-trwiki",
@@ -7062,19 +8967,46 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "kasgar-azwiki",
+    "event_id": "kasgar",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Qaşqar",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/Qa%C5%9Fqar",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": false
+  "needs_review": false,
+  "i18n": {
+   "en": {
+    "name": "Kashgar",
+    "summary": "Kashgar (Uyghur: قەشقەر, romanised: Qeshqer), also known as Kashi (Chinese: 喀什; pinyin: Kāshí), is a city in the Tarim Basin region of southern Xinjiang, China. It is one of the westernmost cities of China, located near the country's border with Kyrgyzstan and Tajikistan."
+   },
+   "tr": {
+    "name": "Kaşgar",
+    "summary": "Kaşgar (Uygur Arap yazısı: قەشقەر; Uygur Latin yazısı: Qeshqer; Çince (basitleştirilmiş): 喀什噶尔; Çince (geleneksel): 喀什噶爾; pinyin: Kāshígá'ěr ya da 喀什 Kāshí), Çin'de Sincan Uygur Özerk Bölgesi'nin batısında yer alan tarihi bir vaha şehridir."
+   },
+   "az": {
+    "name": "Qaşqar",
+    "summary": "Qaşqar, Kaşkar və yaxud Kaşğər (uyğ. قەشقەر) — ÇXR-in Sincan-Uyğur Muxtar Rayonunun Kaşqar şəhər rayonunda şəhər. Çinin ən qərb şəhərlərindən biridir, Əfqanıstan, Qırğızıstan, Tacikistan və Pakistanla sərhədə yaxındır."
+   }
+  }
  },
  {
   "id": "dunhuang",
-  "name": "Dunhuang",
   "wikidata_id": "Q319114",
   "lng": 94.663888888,
   "lat": 40.141111111,
-  "summary": "Dunhuang (Çince: 敦煌市; pinyin: Dūnhuáng shì) Çin'in Kansu eyaletinde bulunan bir şehirdir. Şehir, tarihi önemi olan bir vahada kurulmuştur. Şehrin nüfusu 2010 yılı itibarı ile 186,027'dir.",
-  "content_lang": "tr",
   "periods": [],
   "other_names": [],
   "rulers": [
@@ -7211,14 +9143,30 @@
     "event_id": "dunhuang",
     "type": "ansiklopedi",
     "author": null,
-    "title": "Dunhuang",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q319114",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "dunhuang-enwiki",
+    "event_id": "dunhuang",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Dunhuang",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Dunhuang",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "dunhuang-trwiki",
@@ -7232,19 +9180,27 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
    }
   ],
-  "needs_review": false
+  "needs_review": false,
+  "i18n": {
+   "en": {
+    "name": "Dunhuang",
+    "summary": "Dunhuang is a county-level city in northwestern Gansu Province, Northwestern China. According to the 2010 Chinese census, the city has a population of 186,027, though 2019 estimates put the city's population at about 191,800."
+   },
+   "tr": {
+    "name": "Dunhuang",
+    "summary": "Dunhuang (Çince: 敦煌市; pinyin: Dūnhuáng shì) Çin'in Kansu eyaletinde bulunan bir şehirdir. Şehir, tarihi önemi olan bir vahada kurulmuştur. Şehrin nüfusu 2010 yılı itibarı ile 186,027'dir."
+   }
+  }
  },
  {
   "id": "sian",
-  "name": "Şian",
   "wikidata_id": "Q5826",
   "lng": 108.942222222,
   "lat": 34.261111111,
-  "summary": "Şian (Çince: 西安; pinyin: Xī'ān), Çin'in Şensi eyaletinin başkentidir. Guanzhong ovasında yer alan bir alt eyalet şehri olan Şian, Çin'in batısında Çongçing ve Çengdu'dan sonra en kalabalık üçüncü şehir ve aynı zamanda Çin'in kuzeybatısındaki en kalabalık şehirdir.",
-  "content_lang": "tr",
   "periods": [],
   "other_names": [
    "Chang'an"
@@ -7365,14 +9321,30 @@
     "event_id": "sian",
     "type": "ansiklopedi",
     "author": null,
-    "title": "Şian",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q5826",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "sian-enwiki",
+    "event_id": "sian",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Xi'an",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Xi'an",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "sian-trwiki",
@@ -7386,9 +9358,39 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "sian-azwiki",
+    "event_id": "sian",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Sian",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/Sian",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": true
+  "needs_review": true,
+  "i18n": {
+   "en": {
+    "name": "Xi'an",
+    "summary": "Xi'an is the capital of the Chinese province of Shaanxi. A sub-provincial city on the Guanzhong plain, the city is the most populous in the province and third-most populous in Western China after Chongqing and Chengdu, as well as the most populous in Northwestern China."
+   },
+   "tr": {
+    "name": "Şian",
+    "summary": "Şian (Çince: 西安; pinyin: Xī'ān), Çin'in Şensi eyaletinin başkentidir. Guanzhong ovasında yer alan bir alt eyalet şehri olan Şian, Çin'in batısında Çongçing ve Çengdu'dan sonra en kalabalık üçüncü şehir ve aynı zamanda Çin'in kuzeybatısındaki en kalabalık şehirdir."
+   },
+   "az": {
+    "name": "Sian",
+    "summary": "Sian — Şensi əyalətinin inzibati mərkəzi və Çinin şimal-qərbində ən iri şəhəridir. Əhalisi 3 mln. nəfərdən çoxdur. Sian (şəhərin keçmiş adı — Çanandır) Çinin məşhur qədim paytaxtı və \"İpək yolunun\" başlanğıc məntəqəsi olmuşdur. E.ə. IX əsrdən o, 10-dan çox sülalənin dövründə paytaxt olmuşdur."
+   }
+  }
  }
 ]

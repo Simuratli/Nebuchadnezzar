@@ -11,6 +11,8 @@ import {
   yearToIndex,
 } from "@/lib/year";
 
+const TR = { bc: "MÖ", ad: "MS" };
+
 describe("year axis", () => {
   it("has no year 0: 1 BCE is followed by 1 CE", () => {
     expect(addYears(-1, 1)).toBe(1);
@@ -32,11 +34,11 @@ describe("year axis", () => {
   });
 
   it("formats eras", () => {
-    expect(formatYear(-331)).toBe("MÖ 331");
-    expect(formatYear(1453)).toBe("MS 1453");
-    expect(formatYearRange(1914, 1918)).toBe("MS 1914 – MS 1918");
-    expect(formatYearRange(1453, null)).toBe("MS 1453");
-    expect(formatYearRange(1453, 1453)).toBe("MS 1453");
+    expect(formatYear(-331, TR)).toBe("MÖ 331");
+    expect(formatYear(1453, TR)).toBe("MS 1453");
+    expect(formatYearRange(1914, 1918, TR)).toBe("MS 1914 – MS 1918");
+    expect(formatYearRange(1453, null, TR)).toBe("MS 1453");
+    expect(formatYearRange(1453, 1453, TR)).toBe("MS 1453");
   });
 });
 

@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { useEra } from "@/lib/use-era";
 import { useEffect } from "react";
 import type { EventSummary, Tour } from "@/lib/types";
 import { formatYear } from "@/lib/year";
@@ -8,7 +9,7 @@ import { useAtlas } from "@/store/atlas";
 
 export function TourPlayer({ tours, events }: { tours: Tour[]; events: EventSummary[] }) {
   const t = useTranslations();
-  const era = { bc: t("era.bc"), ad: t("era.ad") };
+  const era = useEra();
   const tourId = useAtlas((s) => s.tourId);
   const stepIndex = useAtlas((s) => s.tourStep);
   const setTourStep = useAtlas((s) => s.setTourStep);

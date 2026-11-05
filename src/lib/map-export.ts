@@ -1,6 +1,6 @@
 import type { Map as MlMap } from "maplibre-gl";
 import { CATEGORY_META } from "./categories";
-import { mapCaption, wrapText, type MapCaptionInput } from "./map-citation";
+import { mapCaption, wrapText, type MapCaptionInput, type MapCaptionLanguage } from "./map-citation";
 import { jpegToPdf } from "./pdf";
 import { CATEGORIES, type Category } from "./types";
 
@@ -35,7 +35,7 @@ function captureMap(map: MlMap): Promise<HTMLCanvasElement> {
 type Labels = Record<Category, string>;
 
 /** Stacks the map frames above a white footer with legend, boundary note and citation. */
-export async function composeMapImage(maps: MlMap[], caption: MapCaptionInput, labels: Labels): Promise<HTMLCanvasElement> {
+export async function composeMapImage(maps: MlMap[], caption: MapCaptionInput, lang: MapCaptionLanguage, labels: Labels): Promise<HTMLCanvasElement> {
   const frames = await Promise.all(maps.map(captureMap));
   const gap = frames.length > 1 ? 4 : 0;
   const width = Math.max(1000, frames.reduce((w, f) => w + f.width, 0) + gap * (frames.length - 1));
@@ -45,7 +45,7 @@ export async function composeMapImage(maps: MlMap[], caption: MapCaptionInput, l
   const bodyFont = `${15 * scale}px ${getComputedStyle(document.body).fontFamily}`;
   const titleFont = `600 ${22 * scale}px ${getComputedStyle(document.body).fontFamily}`;
   const lineHeight = 21 * scale;
-  const { title, lines } = mapCaption(caption);
+  const { title, lines } = mapCaption(caption, lang);
 
   const measure = document.createElement("canvas").getContext("2d");
   if (!measure) throw new Error("no 2d context");

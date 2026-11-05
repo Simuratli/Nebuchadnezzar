@@ -14,7 +14,7 @@ export function ThemeToggle() {
       aria-label={dark ? t("light") : t("dark")}
       title={t("toggle")}
       data-testid="theme-toggle"
-      className="flex h-9 w-9 items-center justify-center rounded-full border border-line text-ink hover:bg-surface-2"
+      className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-line text-ink hover:bg-surface-2"
     >
       <svg viewBox="0 0 24 24" className="h-5 w-5" fill="currentColor" aria-hidden="true">
         {dark ? (

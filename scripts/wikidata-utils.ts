@@ -53,7 +53,8 @@ export function regionsForPoint([lng, lat]: [number, number]) {
 
 /** Trims text to at most `max` chars, ending on a sentence where one is available. */
 export function trimToSentence(text: string, max: number): string {
-  const clean = text.replace(/\s+/g, " ").trim();
+  // Plain-text extracts drop pronunciation markup, leaving behind "()" or "( ; )".
+  const clean = text.replace(/\s*\(\s*[;,]?\s*\)/g, "").replace(/\s+/g, " ").trim();
   if (clean.length <= max) return clean;
   const cut = clean.slice(0, max);
   const end = Math.max(cut.lastIndexOf(". "), cut.lastIndexOf("! "), cut.lastIndexOf("? "));

@@ -1,5 +1,7 @@
 # Zaman Atlası
 
+Available in English (default), Turkish and Azerbaijani.
+
 Kafkasya, Osmanlı coğrafyası ve İpek Yolu için (MÖ 500 – MS 1950) harita ve zaman çizelgesi tabanlı tarih uygulaması. Bir yıl seçin; harita o yılın sınırlarını ve olaylarını göstersin. Her olay kaynaklıdır ve APA 7, Chicago veya BibTeX olarak kopyalanabilir.
 
 ## Kurulum
@@ -82,12 +84,16 @@ Uygulama varsayılan olarak seed dosyalarıyla çalışır. Veri erişimi `src/l
 
 Koleksiyonlar şimdilik tarayıcıda (`localStorage`) tutulur. Hesaba bağlamak için `src/lib/collection.ts` içindeki `CollectionStore` arayüzünün Supabase Auth kullanan bir uygulaması yazılmalıdır; bu henüz yapılmadı.
 
-## Yeni dil ekleme
+## Diller
 
-1. `messages/<dil>.json` dosyasını `messages/tr.json` temelinde oluşturun.
-2. Dili `src/i18n/routing.ts` içindeki `locales` listesine ekleyin.
+Varsayılan dil İngilizcedir; Türkçe ve Azerbaycanca başlıktaki seçiciden açılır (`/en`, `/tr`, `/az`).
 
-Olay içeriği şu an tek dillidir; içerik çevirisi ayrı bir veri modeli çalışması gerektirir.
+- **Arayüz:** `messages/<dil>.json`. Üç dosyanın anahtarları ve yer tutucuları testle eşit tutulur.
+- **Olay, kişi, şehir metinleri:** Her dilin Vikipedi ve Wikidata kaydından gelir, kayıtların `i18n` alanındadır. Bir dilde metin yoksa İngilizce, o da yoksa başka bir dil gösterilir ve panel bunu belirtir. Metinler makine çevirisi değildir.
+- **Elle yazılan içerik (rota, tur, düzeltme notları, eski adlar):** Türkçe yazılır, çevirileri `data/i18n/content.json` dosyasındadır. Yeni bir metin çevirisiz eklenirse test başarısız olur.
+- **Harita etiketleri:** Devlet adları sınır verisinden İngilizce gelir, üç dilde de İngilizcedir.
+
+Yeni dil için: `src/lib/types.ts` içindeki `LOCALES` listesine ekleyin, `messages/<dil>.json` oluşturun, `content.json` ve veri scriptlerine o dili ekleyin.
 
 ## Lisanslar ve atıflar
 

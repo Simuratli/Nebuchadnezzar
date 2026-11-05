@@ -1,23 +1,27 @@
 [
  {
   "id": "evliya-celebi",
-  "name": "Evliya Çelebi",
   "birth_year": 1611,
   "death_year": 1682,
   "wikidata_id": "Q202308",
-  "summary": "Derviş Mehmed Zıllî veya bilinen adıyla Evliyâ Çelebi (Osmanlıca: اوليا چلبی; 25 Mart 1611, İstanbul – 1681-1685), 17. yüzyılın önde gelen bir Osmanlı seyyahı ve nesir yazardır.",
-  "description": "Derviş Mehmed Zıllî veya bilinen adıyla Evliyâ Çelebi (Osmanlıca: اوليا چلبی; 25 Mart 1611, İstanbul – 1681-1685), 17. yüzyılın önde gelen bir Osmanlı seyyahı ve nesir yazardır. Evliyâ Çelebi, imparatorluk kültürel zirvesinde iken, elli yılı aşkın süreyle Osmanlı topraklarını (Balkanlar, Anadolu, Batı Asya, Orta Doğu, Mısır) ve komşu toprakları gezmiş, gördüklerini ve yaşadıklarını Seyahatnâme adlı 10 ciltlik ünlü eserinde toplamıştır. Hayatı boyunca gezdiği şehir sayısı 257'dir.",
   "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Serafimovski%20-%20Evliya%20%C3%87elebi.jpg?width=480",
-  "content_lang": "tr",
   "birth_place": {
-   "name": "İstanbul",
+   "name": "Istanbul",
    "lng": 28.960277777,
-   "lat": 41.01
+   "lat": 41.01,
+   "i18n": {
+    "tr": "İstanbul",
+    "az": "İstanbul"
+   }
   },
   "death_place": {
-   "name": "Kahire",
+   "name": "Cairo",
    "lng": 31.235833333,
-   "lat": 30.044444444
+   "lat": 30.044444444,
+   "i18n": {
+    "tr": "Kahire",
+    "az": "Qahirə"
+   }
   },
   "events": [],
   "sources": [
@@ -26,14 +30,30 @@
     "event_id": "evliya-celebi",
     "type": "ansiklopedi",
     "author": null,
-    "title": "Evliya Çelebi",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q202308",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "evliya-celebi-enwiki",
+    "event_id": "evliya-celebi",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Evliya Çelebi",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Evliya_%C3%87elebi",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "evliya-celebi-trwiki",
@@ -47,30 +67,67 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "evliya-celebi-azwiki",
+    "event_id": "evliya-celebi",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Övliya Çələbi",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/%C3%96vliya_%C3%87%C9%99l%C9%99bi",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": false
+  "needs_review": false,
+  "i18n": {
+   "en": {
+    "name": "Evliya Çelebi",
+    "summary": "Dervish Mehmed Zillî (25 March 1611 – 1684), known as Evliya Çelebi (Ottoman Turkish: اوليا چلبى), was an Ottoman Turkish explorer who traveled through his home country during its cultural zenith as well as neighboring lands.",
+    "description": "Dervish Mehmed Zillî (25 March 1611 – 1684), known as Evliya Çelebi (Ottoman Turkish: اوليا چلبى), was an Ottoman Turkish explorer who traveled through his home country during its cultural zenith as well as neighboring lands. He travelled for over 40 years, recording his commentary in a travelogue called the Seyahatnâme (\"Book of Travel\"). The name Çelebi is an honorific meaning \"gentleman\" or \"man of God\"."
+   },
+   "tr": {
+    "name": "Evliya Çelebi",
+    "summary": "Derviş Mehmed Zıllî veya bilinen adıyla Evliyâ Çelebi (Osmanlıca: اوليا چلبی; 25 Mart 1611, İstanbul – 1681-1685), 17. yüzyılın önde gelen bir Osmanlı seyyahı ve nesir yazardır.",
+    "description": "Derviş Mehmed Zıllî veya bilinen adıyla Evliyâ Çelebi (Osmanlıca: اوليا چلبی; 25 Mart 1611, İstanbul – 1681-1685), 17. yüzyılın önde gelen bir Osmanlı seyyahı ve nesir yazardır. Evliyâ Çelebi, imparatorluk kültürel zirvesinde iken, elli yılı aşkın süreyle Osmanlı topraklarını (Balkanlar, Anadolu, Batı Asya, Orta Doğu, Mısır) ve komşu toprakları gezmiş, gördüklerini ve yaşadıklarını Seyahatnâme adlı 10 ciltlik ünlü eserinde toplamıştır. Hayatı boyunca gezdiği şehir sayısı 257'dir."
+   },
+   "az": {
+    "name": "Övliya Çələbi",
+    "summary": "Övliya Çələbi (osman. اوليا چلبي; tam adı: Çələbi ibn Dərviş Məhəmməd Zillin; 25 mart 1611[…], İstanbul – 1682[…], Qahirə və ya İstanbul) — XVII əsrin qabaqcıl səyyahlarından və nəsr yaradıcılarındandır.",
+    "description": "Övliya Çələbi (osman. اوليا چلبي; tam adı: Çələbi ibn Dərviş Məhəmməd Zillin; 25 mart 1611[…], İstanbul – 1682[…], Qahirə və ya İstanbul) — XVII əsrin qabaqcıl səyyahlarından və nəsr yaradıcılarındandır. Əlli ildən çox Avropa, Qərbi Asiya və Misirdə olub və \"Səyahətnamə\" adlı 10 cildlik əsərdə gördüklərini toplayıb."
+   }
+  }
  },
  {
   "id": "ibn-battuta",
-  "name": "İbn Battuta",
   "birth_year": 1304,
   "death_year": 1368,
   "wikidata_id": "Q7331",
-  "summary": "İbn-i Battuta (d. 24 Şubat 1304 - ö. 1369), Orta Çağ'da yaşamış olan Berberî Mağrip bilgini, kâşifi ve seyyahıdır. Rıhletü İbn Battûta diye bilinen seyahatnâmenin yazarıdır. Maliki mezhebine mensuptur.",
-  "description": "İbn-i Battuta (d. 24 Şubat 1304 - ö. 1369), Orta Çağ'da yaşamış olan Berberî Mağrip bilgini, kâşifi ve seyyahıdır. Rıhletü İbn Battûta diye bilinen seyahatnâmenin yazarıdır. Maliki mezhebine mensuptur. İbn-i Battuta, büyük ölçüde modern öncesi tarihte diğer tüm ünlü kâşiflerden daha fazla seyahat etmiş, toplam 117.000 km ile Zheng He'yi yaklaşık 50.000 km ve Marco Polo'yu da 24.000 km ile geride bırakmıştır. İbn-i Battuta, 1325'te Mekke'ye hacca giden zengin, Faslı bir Müslümandı. Bu esnada yaşadığı maceralar onu daha uzaklara yolculuk etmeye sevk etti. İbn Battuta, Avrupalılarca çok az bilinen Afrika, Orta Doğu ve Uzak Doğu'ya cesur yolculuklar yaptı. 28 sene boyunca durmadan gezdi. Mısır, Arap Yarımadası, Irak coğrafyası, İran coğrafyası, Anadolu'da bulunan belli başlı beylikleri, Bizans hâkimiyetindeki İstanbul'u, Orta Asya'yı, Hindistan'ı, Maldivler'i, Çin'i ve Endülüs'ü gezdi. Buralarda yaşayan toplumların devlet ve toplum yapılarını, inançlarını, adetlerini, farklı coğrafyaların doğal güzelliklerini, yapıtlarını ve ürünlerini inceleyen ünlü seyahatnamesini yazdı. Ayrıca birçok ülkede kadılık görevinde bulundu. İbn-i Battuta'nın doğduğu şehir olan Tanca'dan Mekke'ye kadarki yolculuğu, 2009 yılında yayınlanan Journey to Mecca (Mekke'ye Yolculuk) isimli belgesel filmine konu oldu.",
   "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bust%20of%20Ibn%20Battuta%20at%20Ibn%20Battuta%20museum.jpg?width=480",
-  "content_lang": "tr",
   "birth_place": {
-   "name": "Tanca",
+   "name": "Tangier",
    "lng": -5.8044679,
-   "lat": 35.7694908
+   "lat": 35.7694908,
+   "i18n": {
+    "tr": "Tanca",
+    "az": "Tanjer"
+   }
   },
   "death_place": {
-   "name": "Fas",
+   "name": "Fez",
    "lng": -5.003333333,
-   "lat": 34.043333333
+   "lat": 34.043333333,
+   "i18n": {
+    "tr": "Fas",
+    "az": "Fəs"
+   }
   },
   "events": [],
   "sources": [
@@ -79,14 +136,30 @@
     "event_id": "ibn-battuta",
     "type": "ansiklopedi",
     "author": null,
-    "title": "İbn Battuta",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q7331",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "ibn-battuta-enwiki",
+    "event_id": "ibn-battuta",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Ibn Battuta",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ibn_Battuta",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "ibn-battuta-trwiki",
@@ -100,30 +173,67 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "ibn-battuta-azwiki",
+    "event_id": "ibn-battuta",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "İbn Bətutə",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/%C4%B0bn_B%C9%99tut%C9%99",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": false
+  "needs_review": false,
+  "i18n": {
+   "en": {
+    "name": "Ibn Battuta",
+    "summary": "Ibn Battuta (; 24 February 1304–1368/1369) was a Maghrebi Muslim traveller, explorer, and scholar from Tangier, Morocco. Over a 30-year period (1325–1354) he visited much of Africa, Asia, and the Iberian Peninsula.",
+    "description": "Ibn Battuta (; 24 February 1304–1368/1369) was a Maghrebi Muslim traveller, explorer, and scholar from Tangier, Morocco. Over a 30-year period (1325–1354) he visited much of Africa, Asia, and the Iberian Peninsula. Near the end of his life, Ibn Battuta dictated an account of his journeys, titled A Gift to Those Who Contemplate the Wonders of Cities and the Marvels of Travelling, commonly known as The Rihla. Ibn Battuta travelled more than any other explorer in pre-modern history, totalling around 117,000 km (73,000 mi), surpassing Zheng He with about 50,000 km (31,000 mi) and Marco Polo with 24,000 km (15,000 mi)."
+   },
+   "tr": {
+    "name": "İbn Battuta",
+    "summary": "İbn-i Battuta (d. 24 Şubat 1304 - ö. 1369), Orta Çağ'da yaşamış olan Berberî Mağrip bilgini, kâşifi ve seyyahıdır. Rıhletü İbn Battûta diye bilinen seyahatnâmenin yazarıdır. Maliki mezhebine mensuptur.",
+    "description": "İbn-i Battuta (d. 24 Şubat 1304 - ö. 1369), Orta Çağ'da yaşamış olan Berberî Mağrip bilgini, kâşifi ve seyyahıdır. Rıhletü İbn Battûta diye bilinen seyahatnâmenin yazarıdır. Maliki mezhebine mensuptur. İbn-i Battuta, büyük ölçüde modern öncesi tarihte diğer tüm ünlü kâşiflerden daha fazla seyahat etmiş, toplam 117.000 km ile Zheng He'yi yaklaşık 50.000 km ve Marco Polo'yu da 24.000 km ile geride bırakmıştır. İbn-i Battuta, 1325'te Mekke'ye hacca giden zengin, Faslı bir Müslümandı. Bu esnada yaşadığı maceralar onu daha uzaklara yolculuk etmeye sevk etti. İbn Battuta, Avrupalılarca çok az bilinen Afrika, Orta Doğu ve Uzak Doğu'ya cesur yolculuklar yaptı. 28 sene boyunca durmadan gezdi. Mısır, Arap Yarımadası, Irak coğrafyası, İran coğrafyası, Anadolu'da bulunan belli başlı beylikleri, Bizans hâkimiyetindeki İstanbul'u, Orta Asya'yı, Hindistan'ı, Maldivler'i, Çin'i ve Endülüs'ü gezdi. Buralarda yaşayan toplumların devlet ve toplum yapılarını, inançlarını, adetlerini, farklı coğrafyaların doğal güzelliklerini, yapıtlarını ve ürünlerini inceleyen ünlü seyahatnamesini yazdı. Ayrıca birçok ülkede kadılık görevinde bulundu. İbn-i Battuta'nın doğduğu şehir olan Tanca'dan Mekke'ye kadarki yolculuğu, 2009 yılında yayınlanan Journey to Mecca (Mekke'ye Yolculuk) isimli belgesel filmine konu oldu."
+   },
+   "az": {
+    "name": "İbn Bəttutə",
+    "summary": "Əbu Abdullah Məhəmməd ibn Abdullah əl-Ləvati ət-Tanci (ərəb. ابن بطوطة‎; 24 fevral 1304[…], Tanjer – təq. 1368, Fəs) — ərəb səyyah və tacir.",
+    "description": "Əbu Abdullah Məhəmməd ibn Abdullah əl-Ləvati ət-Tanci (ərəb. ابن بطوطة‎; 24 fevral 1304[…], Tanjer – təq. 1368, Fəs) — ərəb səyyah və tacir."
+   }
+  }
  },
  {
   "id": "marco-polo",
-  "name": "Marco Polo",
   "birth_year": 1254,
   "death_year": 1324,
   "wikidata_id": "Q6101",
-  "summary": "Marco Polo (Venedikçe telaffuz: [ˈmaɾko ˈpolo], İtalyanca telaffuz: [ˈmarko ˈpɔːlo]; y. 1254 - 8 Ocak 1324), 1271 ile 1295 yılları arasında İpek Yolu üzerinden Asya'yı dolaşan Venedikli bir tüccar, kâşif ve yazardı.",
-  "description": "Marco Polo (Venedikçe telaffuz: [ˈmaɾko ˈpolo], İtalyanca telaffuz: [ˈmarko ˈpɔːlo]; y. 1254 - 8 Ocak 1324), 1271 ile 1295 yılları arasında İpek Yolu üzerinden Asya'yı dolaşan Venedikli bir tüccar, kâşif ve yazardı. Seyahatleri, Marco Polo'nun Gezileri adlı eserde kayda geçirildi. Bu eser, Dünyanın Harikaları Kitabı ve Il Milione adlarıyla da bilinir ve yaklaşık 1300 yılı civarında derlendi. Kitapta Moğol İmparatorluğu ve Yuan Hanedanı yönetimindeki Çin'in zenginliği ve büyüklüğü ayrıntılı biçimde anlatılır. Ayrıca dönemin Avrupalıları için büyük ölçüde bilinmeyen Doğu dünyasının kültürü ve yönetim yapısı ele alınır. Venedik'te doğan Marco Polo, ticaretle ilgili bilgilerini babası ve amcası Niccolò ve Matteo Polo'dan edindi. Babası ve amcası, Marco ile tanışmadan önce Asya'yı dolaştı ve Kubilay Han ile görüştü. 1269 yılında Venedik'e dönerek Marco ile ilk kez bir araya geldiler. Bunun ardından üçü birlikte, İpek Yolu boyunca birçok bölgeyi geçerek \"Hıtay\" olarak bilinen Çin'e ulaşan uzun bir yolculuğa çıktı. Marco'nun zekâsı ve alçakgönüllülüğü Kubilay Han'ı etkiledi ve imparatorluk sarayında iyi karşılandılar. Marco, Kubilay Han tarafından dışişleri elçisi olarak görevlendirildi. Bu görev kapsamında imparatorluk topraklarında ve Güneydoğu Asya'da çeşitli diplomatik misyonlara gönderildi.",
   "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Marco%20Polo%20Mosaic%20from%20Palazzo%20Tursi.jpg?width=480",
-  "content_lang": "tr",
   "birth_place": {
-   "name": "Venedik",
+   "name": "Venice",
    "lng": 12.331944444,
-   "lat": 45.439722222
+   "lat": 45.439722222,
+   "i18n": {
+    "tr": "Venedik",
+    "az": "Venesiya"
+   }
   },
   "death_place": {
-   "name": "Venedik",
+   "name": "Venice",
    "lng": 12.331944444,
-   "lat": 45.439722222
+   "lat": 45.439722222,
+   "i18n": {
+    "tr": "Venedik",
+    "az": "Venesiya"
+   }
   },
   "events": [],
   "sources": [
@@ -132,14 +242,30 @@
     "event_id": "marco-polo",
     "type": "ansiklopedi",
     "author": null,
-    "title": "Marco Polo",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q6101",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "marco-polo-enwiki",
+    "event_id": "marco-polo",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Marco Polo",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Marco_Polo",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "marco-polo-trwiki",
@@ -153,30 +279,67 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "marco-polo-azwiki",
+    "event_id": "marco-polo",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Marko Polo",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/Marko_Polo",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": false
+  "needs_review": false,
+  "i18n": {
+   "en": {
+    "name": "Marco Polo",
+    "summary": "Marco Polo (c. 1254 – 8 January 1324) was a Venetian merchant, explorer, and writer who travelled through Asia along the Silk Road between 1271 and 1295.",
+    "description": "Marco Polo (c. 1254 – 8 January 1324) was a Venetian merchant, explorer, and writer who travelled through Asia along the Silk Road between 1271 and 1295. His travels are recorded in The Travels of Marco Polo (also known as Book of the Marvels of the World and Il Milione, c. 1300), a book that described the then-mysterious culture and inner workings of the Eastern world, including the wealth and great size of the Mongol Empire and China under the Yuan dynasty, giving Europeans their first comprehensive look into China, Persia, India, Japan, and other Asian societies. Born in Venice, Marco learned the mercantile trade from his father and his uncle, Niccolò and Maffeo, who travelled through Asia and met Kublai Khan. In 1269, they returned to Venice to meet Marco for the first time. The three of them embarked on an epic journey to Asia, exploring many places along the Silk Road until they reached \"Cathay\". They were received by the royal court of Kublai Khan, who was impressed by Marco's intelligence and humility. Marco was appointed to serve as Kublai's foreign emissary, and he was sent on many diplomatic missions throughout the empire and Southeast Asia, visiting present-day Myanmar, India, Indonesia, Sri Lanka, and Vietnam."
+   },
+   "tr": {
+    "name": "Marco Polo",
+    "summary": "Marco Polo (Venedikçe telaffuz: [ˈmaɾko ˈpolo], İtalyanca telaffuz: [ˈmarko ˈpɔːlo]; y. 1254 - 8 Ocak 1324), 1271 ile 1295 yılları arasında İpek Yolu üzerinden Asya'yı dolaşan Venedikli bir tüccar, kâşif ve yazardı.",
+    "description": "Marco Polo (Venedikçe telaffuz: [ˈmaɾko ˈpolo], İtalyanca telaffuz: [ˈmarko ˈpɔːlo]; y. 1254 - 8 Ocak 1324), 1271 ile 1295 yılları arasında İpek Yolu üzerinden Asya'yı dolaşan Venedikli bir tüccar, kâşif ve yazardı. Seyahatleri, Marco Polo'nun Gezileri adlı eserde kayda geçirildi. Bu eser, Dünyanın Harikaları Kitabı ve Il Milione adlarıyla da bilinir ve yaklaşık 1300 yılı civarında derlendi. Kitapta Moğol İmparatorluğu ve Yuan Hanedanı yönetimindeki Çin'in zenginliği ve büyüklüğü ayrıntılı biçimde anlatılır. Ayrıca dönemin Avrupalıları için büyük ölçüde bilinmeyen Doğu dünyasının kültürü ve yönetim yapısı ele alınır. Venedik'te doğan Marco Polo, ticaretle ilgili bilgilerini babası ve amcası Niccolò ve Matteo Polo'dan edindi. Babası ve amcası, Marco ile tanışmadan önce Asya'yı dolaştı ve Kubilay Han ile görüştü. 1269 yılında Venedik'e dönerek Marco ile ilk kez bir araya geldiler. Bunun ardından üçü birlikte, İpek Yolu boyunca birçok bölgeyi geçerek \"Hıtay\" olarak bilinen Çin'e ulaşan uzun bir yolculuğa çıktı. Marco'nun zekâsı ve alçakgönüllülüğü Kubilay Han'ı etkiledi ve imparatorluk sarayında iyi karşılandılar. Marco, Kubilay Han tarafından dışişleri elçisi olarak görevlendirildi. Bu görev kapsamında imparatorluk topraklarında ve Güneydoğu Asya'da çeşitli diplomatik misyonlara gönderildi."
+   },
+   "az": {
+    "name": "Marko Polo",
+    "summary": "Marko Polo (15 sentyabr 1254, Venesiya – 8 yanvar 1324[…], Venesiya) — italyan səyyahı. Marko Polo (XIII XIV əsrlər) İtaliyadan Mərkəzi Şərq və Orta Asiya yolu ilə Çinə getmişdir.",
+    "description": "Marko Polo (15 sentyabr 1254, Venesiya – 8 yanvar 1324[…], Venesiya) — italyan səyyahı. Marko Polo (XIII XIV əsrlər) İtaliyadan Mərkəzi Şərq və Orta Asiya yolu ilə Çinə getmişdir. Marko Polo Bakı neftinin Yaxın Şərq ölkələrinə aparılmasından söz açmış, habelə Şamaxı və Bərdənin ipək məmulatlarının gözəlliyini vurğulamışdır."
+   }
+  }
  },
  {
   "id": "fatih-sultan-mehmed",
-  "name": "II. Mehmed",
   "birth_year": 1432,
   "death_year": 1481,
   "wikidata_id": "Q34503",
-  "summary": "II. Mehmed (Osmanlıca: محمد ثانى, romanize: Meḥemmed-i Sânî), bilinen adıyla Fâtih Sultan Mehmed ya da kısaca Fâtih (30 Mart 1432, Edirne - 3 Mayıs 1481, Gebze), Osmanlı İmparatorluğu'nun yedinci padişahıdır.",
-  "description": "II. Mehmed (Osmanlıca: محمد ثانى, romanize: Meḥemmed-i Sânî), bilinen adıyla Fâtih Sultan Mehmed ya da kısaca Fâtih (30 Mart 1432, Edirne - 3 Mayıs 1481, Gebze), Osmanlı İmparatorluğu'nun yedinci padişahıdır. İlk kez 1444-1446 yılları arasında kısa bir süre, ikinci kez ise 1451'den 1481'deki ölümüne kadar 30 yıl boyunca hüküm sürdü. 29 Mayıs 1453 tarihinde İstanbul'u fethederek yaklaşık bin yıllık Doğu Roma İmparatorluğu'na son verdi ve fetihten sonra \"Fâtih\" ünvanıyla anılmaya başlandı. Bu olay, birçok tarihçi tarafından Orta Çağ'ın sonunu ve Yeni Çağ'ın başlangıcını simgeleyen tarihî dönüm noktalarından biri olarak kabul edilmektedir. 30 Mart 1432 tarihinde Edirne'de doğdu. Babası altıncı Osmanlı padişahı II. Murad, annesi ise Hüma Hatun'dur. Küçük yaşlardan itibaren eğitimine ve yetişmesine büyük önem verilen Şehzade Mehmed, dönemin önde gelen âlimlerinden dersler aldı. Felsefe, hadis, tefsir, fıkıh, kelâm, tarih, geometri ve matematik alanlarında iyi bir eğitim gördü. 11 yaşına geldiğinde, idari yönden tecrübe kazanması amacıyla Saruhan Sancağı'na tayin edildi. Bu sıralarda, iki ağabeyinin erken yaştaki ölümü sonucu tahtın tek vârisi konumuna geldi. 1444 yılında II. Murad, tahtı 12 yaşındaki Mehmed'e devrederek Bursa'ya çekildi. Ancak Osmanlı tahtına çocuk yaştaki birinin geçtiğini öğrenen Avrupa devletleri, yeniden Osmanlı topraklarına yöneldiler. Bunun üzerine II.",
   "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mehmed%20II.%20Semailname%20%28Millet%20Library%2C%20Ali%20Em%C3%AEr%C3%AE%20Collection%2C%20History%2C%20MS%20no.%201216%29.jpg?width=480",
-  "content_lang": "tr",
   "birth_place": {
    "name": "Edirne",
    "lng": 26.57361,
-   "lat": 41.67304
+   "lat": 41.67304,
+   "i18n": {
+    "tr": "Edirne",
+    "az": "Ədirnə"
+   }
   },
   "death_place": {
    "name": "Gebze",
    "lng": 29.430555555,
-   "lat": 40.802777777
+   "lat": 40.802777777,
+   "i18n": {
+    "tr": "Gebze",
+    "az": "Gəbzə"
+   }
   },
   "events": [
    {
@@ -206,14 +369,30 @@
     "event_id": "fatih-sultan-mehmed",
     "type": "ansiklopedi",
     "author": null,
-    "title": "II. Mehmed",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q34503",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "fatih-sultan-mehmed-enwiki",
+    "event_id": "fatih-sultan-mehmed",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Mehmed II",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Mehmed_II",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "fatih-sultan-mehmed-trwiki",
@@ -227,30 +406,67 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "fatih-sultan-mehmed-azwiki",
+    "event_id": "fatih-sultan-mehmed",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "II Mehmed",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/II_Mehmed",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": true
+  "needs_review": true,
+  "i18n": {
+   "en": {
+    "name": "Mehmed II",
+    "summary": "Mehmed II (Ottoman Turkish: محمد ثانى, romanized: Meḥemmed-i s̱ānī; Turkish: II. Mehmed, pronounced [icinˈdʒi ˈmehmet]; 30 March 1432 – 3 May 1481), commonly known as Mehmed the Conqueror (Ottoman Turkish: ابو الفتح, romanized: Ebū'l-fetḥ,…",
+    "description": "Mehmed II (Ottoman Turkish: محمد ثانى, romanized: Meḥemmed-i s̱ānī; Turkish: II. Mehmed, pronounced [icinˈdʒi ˈmehmet]; 30 March 1432 – 3 May 1481), commonly known as Mehmed the Conqueror (Ottoman Turkish: ابو الفتح, romanized: Ebū'l-fetḥ, lit. 'the Father of Conquest'; Turkish: Fâtih Sultan Mehmed), was the sultan of the Ottoman Empire twice, from August 1444 to September 1446 and again from February 1451 to May 1481. During his first reign, he defeated the crusade led by John Hunyadi after Hungarian incursions into his lands violated the Treaties of Edirne and Szeged. Upon his restoration to the throne in 1451, he strengthened the Ottoman Navy and made preparations to attack Constantinople. In 1453, at the age of 21, he conquered Constantinople and effectively brought an end to the Byzantine Empire. After the conquest, Mehmed claimed the title caesar of Rome (Ottoman Turkish: قیصر روم, romanized: qayṣar-i rūm), on the grounds that Constantinople had been the seat and capital of the surviving Eastern Roman Empire since its consecration in 330 AD by Emperor Constantine I. The claim was soon recognized by the Patriarchate of Constantinople, but rejected by most European monarchs. Mehmed continued his conquests and reunified Anatolia, and campaigned as far west as Bosnia in Southeast Europe. At home, he implemented many political and social reforms."
+   },
+   "tr": {
+    "name": "II. Mehmed",
+    "summary": "II. Mehmed (Osmanlıca: محمد ثانى, romanize: Meḥemmed-i Sânî), bilinen adıyla Fâtih Sultan Mehmed ya da kısaca Fâtih (30 Mart 1432, Edirne - 3 Mayıs 1481, Gebze), Osmanlı İmparatorluğu'nun yedinci padişahıdır.",
+    "description": "II. Mehmed (Osmanlıca: محمد ثانى, romanize: Meḥemmed-i Sânî), bilinen adıyla Fâtih Sultan Mehmed ya da kısaca Fâtih (30 Mart 1432, Edirne - 3 Mayıs 1481, Gebze), Osmanlı İmparatorluğu'nun yedinci padişahıdır. İlk kez 1444-1446 yılları arasında kısa bir süre, ikinci kez ise 1451'den 1481'deki ölümüne kadar 30 yıl boyunca hüküm sürdü. 29 Mayıs 1453 tarihinde İstanbul'u fethederek yaklaşık bin yıllık Doğu Roma İmparatorluğu'na son verdi ve fetihten sonra \"Fâtih\" ünvanıyla anılmaya başlandı. Bu olay, birçok tarihçi tarafından Orta Çağ'ın sonunu ve Yeni Çağ'ın başlangıcını simgeleyen tarihî dönüm noktalarından biri olarak kabul edilmektedir. 30 Mart 1432 tarihinde Edirne'de doğdu. Babası altıncı Osmanlı padişahı II. Murad, annesi ise Hüma Hatun'dur. Küçük yaşlardan itibaren eğitimine ve yetişmesine büyük önem verilen Şehzade Mehmed, dönemin önde gelen âlimlerinden dersler aldı. Felsefe, hadis, tefsir, fıkıh, kelâm, tarih, geometri ve matematik alanlarında iyi bir eğitim gördü. 11 yaşına geldiğinde, idari yönden tecrübe kazanması amacıyla Saruhan Sancağı'na tayin edildi. Bu sıralarda, iki ağabeyinin erken yaştaki ölümü sonucu tahtın tek vârisi konumuna geldi. 1444 yılında II. Murad, tahtı 12 yaşındaki Mehmed'e devrederek Bursa'ya çekildi. Ancak Osmanlı tahtına çocuk yaştaki birinin geçtiğini öğrenen Avrupa devletleri, yeniden Osmanlı topraklarına yöneldiler. Bunun üzerine II."
+   },
+   "az": {
+    "name": "II Mehmed",
+    "summary": "II Mehmed və ya Fateh Sultan Mehmed (osman. السلطان الغازي محمد الثاني الفاتح Mehmed-i Sani; 30 mart 1432, Ədirnə – 3 may 1481, Gəbzə, Kocaeli ili) — 7-ci Osmanlı padşahı.",
+    "description": "II Mehmed və ya Fateh Sultan Mehmed (osman. السلطان الغازي محمد الثاني الفاتح Mehmed-i Sani; 30 mart 1432, Ədirnə – 3 may 1481, Gəbzə, Kocaeli ili) — 7-ci Osmanlı padşahı. II Mehmed 21 yaşında İstanbulu fəth edərək 1000 illik Bizans imperiyasına son verdi və bu hadisə bir çox tarixçi tərəfindən Orta Çağın sonu Yeni Çağın başlanğıcı olaraq qəbul edildi. Fəthdən sonra Fəthin Atası mənasını verən \"Əbül-Fəth\" (Osmanlı türkcəsi ilə ابو الفتح), daha sonrakı dövrlərdə isə \"Çağ Açan Hökmdar\" və \"Kayseri-Rum\" (Roma imperatoru, Osmanlı türkcəsi: قیصر روم) ünvanları ilə anıldı. Fateh, İslam Peyğəmbəri Məhəmmədin bir hədisinə nail olduğu üçün indiki vaxtda Türkiyə və İslam dünyasının geniş bir hissəsində \"qəhrəman\" olaraq qəbul edilməkdədir."
+   }
+  }
  },
  {
   "id": "kanuni-sultan-suleyman",
-  "name": "Kanuni Sultan Süleyman",
   "birth_year": 1494,
   "death_year": 1566,
   "wikidata_id": "Q8474",
-  "summary": "I. Süleyman (Osmanlıca: سلطان سليمان اول Sultân Süleymân-ı Evvel, divan edebiyatındaki mahlasıyla Muhibbi; 6 Kasım 1494, Trabzon - 7 Eylül 1566, Zigetvar), Osmanlı İmparatorluğu'nun 10. padişahı ve 89. İslam halifesidir.",
-  "description": "I. Süleyman (Osmanlıca: سلطان سليمان اول Sultân Süleymân-ı Evvel, divan edebiyatındaki mahlasıyla Muhibbi; 6 Kasım 1494, Trabzon - 7 Eylül 1566, Zigetvar), Osmanlı İmparatorluğu'nun 10. padişahı ve 89. İslam halifesidir. Batı'da Muhteşem Süleyman, Doğu'da ise adaletli yönetimine atfen Kanûnî Sultan Süleyman (Osmanlıca: قانونى سلطان سليمان) olarak da bilinmektedir. 1520'den 1566'daki ölümüne kadar, yaklaşık 46 yıl boyunca Osmanlı İmparatorluğu'na hükmetti. Toplamda 13 kez sefere çıktı ve saltanatının 10 yıl, 1 ayını seferlerde geçirdi. Osmanlı İmparatorluğu'nda en uzun süre hüküm süren ve en uzun süre sefer yapan padişahtır. Ayrıca 25 kez sefere çıkan Fatih Sultan Mehmet'ten sonra en çok sefere çıkan ikinci padişahtır. Şehzadeliği döneminde Süleyman, sırasıyla Şarkî Karahisar, Bolu ve Kefe'de sancakbeyi olarak görev yaptı. Babası I. Selim'in padişah olmasıyla birlikte, 1513 yılında Saruhan Sancakbeyi olarak atandı. Burada daha sonra başdanışmanı olacak olan Pargalı İbrahim ile yakın bir arkadaşlık kurdu. Babasının ölümü üzerinde, 30 Eylül 1520'de tahtın tek varisi olarak padişah oldu. Saltanatına Orta Avrupa ve Akdeniz'deki Hıristiyan güçlere karşı seferler düzenleyerek başladı; 1521'de Belgrad'ı fethetti ve ardından 1522'de Rodos Adası'nı fethetti. Ağustos 1526'da Mohaç Muharebesi'nde Macaristan'ın askerî gücünü kırdı ve büyük bir kısmını topraklarına kattı.",
   "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Suleiman%20I.%20Semailname%20%28Millet%20Library%2C%20Ali%20Em%C3%AEr%C3%AE%20Collection%2C%20History%2C%20MS%20no.%201216%29.jpg?width=480",
-  "content_lang": "tr",
   "birth_place": {
    "name": "Trabzon",
    "lng": 39.7225,
-   "lat": 41.005
+   "lat": 41.005,
+   "i18n": {
+    "tr": "Trabzon",
+    "az": "Trabzon"
+   }
   },
   "death_place": {
-   "name": "Sigetvar",
+   "name": "Szigetvár",
    "lng": 17.799444444,
-   "lat": 46.0475
+   "lat": 46.0475,
+   "i18n": {
+    "tr": "Sigetvar",
+    "az": "Siqetvar"
+   }
   },
   "events": [
    {
@@ -284,14 +500,30 @@
     "event_id": "kanuni-sultan-suleyman",
     "type": "ansiklopedi",
     "author": null,
-    "title": "Kanuni Sultan Süleyman",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q8474",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "kanuni-sultan-suleyman-enwiki",
+    "event_id": "kanuni-sultan-suleyman",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Suleiman the Magnificent",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Suleiman_the_Magnificent",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "kanuni-sultan-suleyman-trwiki",
@@ -305,30 +537,67 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "kanuni-sultan-suleyman-azwiki",
+    "event_id": "kanuni-sultan-suleyman",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Sultan Süleyman Qanuni",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/Sultan_S%C3%BCleyman_Qanuni",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": true
+  "needs_review": true,
+  "i18n": {
+   "en": {
+    "name": "Suleiman the Magnificent",
+    "summary": "Suleiman I (6 November 1494 – 6 September 1566), commonly known as Suleiman the Magnificent, was the Ottoman sultan from 1520 to 1566.",
+    "description": "Suleiman I (6 November 1494 – 6 September 1566), commonly known as Suleiman the Magnificent, was the Ottoman sultan from 1520 to 1566. The longest reign among the Ottoman sultans, his rule brought about a notable peak in the Ottoman Empire's economic, military and political power, and raised the number of the empire's subjects to at least 25 million people. After succeeding his father Selim I on 30 September 1520, Suleiman began his reign by launching military campaigns against the Christian powers of Central and Eastern Europe and the Mediterranean; Belgrade fell to him in 1521 and Rhodes in 1522, and at Mohács in 1526, Suleiman broke the strength of the Kingdom of Hungary. Hungary was subsequently divided, with much of it incorporated directly into the empire. However, his defeat at the siege of Vienna in 1529 prevented him from advancing further into Europe. Suleiman also fought for years against the Shia Islamic Safavid Empire of Iran and annexed Iraq. In North Africa, Ottoman Tripolitania was established and the Ottoman fleet dominated the seas from the Mediterranean to the Red Sea and into the Persian Gulf. Suleiman personally instituted major judicial changes pertaining to society, education, taxation, and criminal law."
+   },
+   "tr": {
+    "name": "Kanuni Sultan Süleyman",
+    "summary": "I. Süleyman (Osmanlıca: سلطان سليمان اول Sultân Süleymân-ı Evvel, divan edebiyatındaki mahlasıyla Muhibbi; 6 Kasım 1494, Trabzon - 7 Eylül 1566, Zigetvar), Osmanlı İmparatorluğu'nun 10. padişahı ve 89. İslam halifesidir.",
+    "description": "I. Süleyman (Osmanlıca: سلطان سليمان اول Sultân Süleymân-ı Evvel, divan edebiyatındaki mahlasıyla Muhibbi; 6 Kasım 1494, Trabzon - 7 Eylül 1566, Zigetvar), Osmanlı İmparatorluğu'nun 10. padişahı ve 89. İslam halifesidir. Batı'da Muhteşem Süleyman, Doğu'da ise adaletli yönetimine atfen Kanûnî Sultan Süleyman (Osmanlıca: قانونى سلطان سليمان) olarak da bilinmektedir. 1520'den 1566'daki ölümüne kadar, yaklaşık 46 yıl boyunca Osmanlı İmparatorluğu'na hükmetti. Toplamda 13 kez sefere çıktı ve saltanatının 10 yıl, 1 ayını seferlerde geçirdi. Osmanlı İmparatorluğu'nda en uzun süre hüküm süren ve en uzun süre sefer yapan padişahtır. Ayrıca 25 kez sefere çıkan Fatih Sultan Mehmet'ten sonra en çok sefere çıkan ikinci padişahtır. Şehzadeliği döneminde Süleyman, sırasıyla Şarkî Karahisar, Bolu ve Kefe'de sancakbeyi olarak görev yaptı. Babası I. Selim'in padişah olmasıyla birlikte, 1513 yılında Saruhan Sancakbeyi olarak atandı. Burada daha sonra başdanışmanı olacak olan Pargalı İbrahim ile yakın bir arkadaşlık kurdu. Babasının ölümü üzerinde, 30 Eylül 1520'de tahtın tek varisi olarak padişah oldu. Saltanatına Orta Avrupa ve Akdeniz'deki Hıristiyan güçlere karşı seferler düzenleyerek başladı; 1521'de Belgrad'ı fethetti ve ardından 1522'de Rodos Adası'nı fethetti. Ağustos 1526'da Mohaç Muharebesi'nde Macaristan'ın askerî gücünü kırdı ve büyük bir kısmını topraklarına kattı."
+   },
+   "az": {
+    "name": "Sultan Süleyman Qanuni",
+    "summary": "Sultan Süleyman Qanuni (Osmanlı Türkcəsi: سلطان سليمان اول, Sultan Süleyman-ı Evvel) (6 noyabr 1494, Trabzon – 6 sentyabr 1566, Siqetvar), Osmanlı imperiyasının 10-cu padşahı və 89-cu İslam xəlifəsidir.",
+    "description": "Sultan Süleyman Qanuni (Osmanlı Türkcəsi: سلطان سليمان اول, Sultan Süleyman-ı Evvel) (6 noyabr 1494, Trabzon – 6 sentyabr 1566, Siqetvar), Osmanlı imperiyasının 10-cu padşahı və 89-cu İslam xəlifəsidir. Qərb dünyasında Möhtəşəm Süleyman, şərqdə isə ədalətli idarəçiliyinə görə Qanuni Sultan Süleyman olaraq da tanınır. 1520-dən 1566-dakı ölümünə qədər təqribən 46 il sultanlıq etmiş və 13 dəfə səfərə çıxmış, səltənətinin ümumilikdə 10 il 1 ayını səfərlərdə keçirmişdir. Osmanlı tarixinin ən uzun müddət taxtda oturan, ən uzun müddət səfərdə qalan və ən çox səfərə çıxan sultanıdır. I Süleyman 1520 tarixində atası I Səlimin vəfatı ilə taxta çıxdı. Qərbdə Belqrad, Rodos, Boğdan (indiki Moldova) və Macarıstanın böyük hissəsini imperiya torpaqlarına birləşdirdi. 1529 tarixində Vyananı mühasirəyə alsa da, müxtəlif səbəblərdən bü mühasirə uğursuz oldu. Şərqdə Səfəvilərlə gedən döyüşlərdən sonra Orta Şərqin böyük bir qismini işğal etmişdir. Afrikada imperiya sərhədləri Əlcəzairə qədər uzanmış, Osmanlı donanması Aralıq dəniz və Qırmızı dəniz sahillərini fəth etmişdi. I Səlimdən 6.557.000 km2 olaraq aldığı Osmanlı mülkünü, oğlu II Səlimə 14.893.000 km2 olaraq miras buraxmışdır. Zigetvar mühasirəsinin bitməsinə bir gün qalmış 7 sentyabr 1566 tarixində müharibə düşərgəsində 71 yaşında vəfat etmiş və yerinə oğlu II Səlim keçmişdir."
+   }
+  }
  },
  {
   "id": "timur",
-  "name": "Timur",
   "birth_year": 1336,
   "death_year": 1405,
   "wikidata_id": "Q8462",
-  "summary": "Timur (Çağatayca: تیمور - Temür) (8 Nisan 1336 - 18 Şubat 1405) sonrasında Timur Küregen (Çağatayca: تيمور کورگن Temür Küregen), Timurlu İmparatorluğu'nun kurucusu olan Türk asker ve komutandır.",
-  "description": "Timur (Çağatayca: تیمور - Temür) (8 Nisan 1336 - 18 Şubat 1405) sonrasında Timur Küregen (Çağatayca: تيمور کورگن Temür Küregen), Timurlu İmparatorluğu'nun kurucusu olan Türk asker ve komutandır. 1370'ten itibaren düzenlediği seferlerle günümüzdeki Orta Asya, Rusya, İran, Hindistan, Afganistan, Kafkasya, Ortadoğu ve Anadolu'nun büyük bir bölümünü ele geçirmiştir. Çağatay ulusunu oluşturan boylardan Barlaslar'ın önderi olan Taragay ile Tekina Hatun'un çocuğu olarak 1336'da Semerkant yakınlarındaki Şehrisebz'e bağlı Hoca Ilgar köyünde dünyaya gelen Timur, 1370'te Çağatay Hanlığı'nın batısını denetim altına alan askeri bir lider olarak kendini göstermiştir. Timur, katıldığı bir savaşta ayağı aksak kalacak biçimde darbe aldığından dolayı kendisine Aksak Timur anlamına gelen Farsça Timur-i leng, Türkçeleşmiş olarak Timurlenk, Batılılar tarafından ise Tamerlane denilmekteydi. Timur'un düşüncesi Cengiz Han'ın ölümünden sonra parçalanan ve onun torunları tarafından kurulan Çağatay Hanlığı, İlhanlılar ve Altın Orda kalıntıları üzerinde Cengiz İmparatorluğunu tek bir siyasal çatı altında yeniden ayağa kaldırmaktı. Seferleri de bu düşüncesini doğrular niteliktedir ve saltanatının sonuna doğru bunu büyük ölçüde başarmıştır. Ön­ce yeniden birleştirdiği Çağatay ulusunun başına geçti.",
   "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Timur%20seated%20%28earliest%20known%20portrait%29%2C%20Timurid%20genealogy%2C%201405-1409%2C%20Samarkand%20%28TSMK%2C%20H2152%29.jpg?width=480",
-  "content_lang": "tr",
   "birth_place": {
-   "name": "Keş",
+   "name": "Shahrisabz",
    "lng": 66.833333333,
-   "lat": 39.05
+   "lat": 39.05,
+   "i18n": {
+    "tr": "Keş",
+    "az": "Şəhrisəbz"
+   }
   },
   "death_place": {
    "name": "Otrar",
    "lng": 68.3029696,
-   "lat": 42.8514829
+   "lat": 42.8514829,
+   "i18n": {
+    "tr": "Otrar",
+    "az": "Otrar"
+   }
   },
   "events": [
    {
@@ -362,14 +631,30 @@
     "event_id": "timur",
     "type": "ansiklopedi",
     "author": null,
-    "title": "Timur",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q8462",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "timur-enwiki",
+    "event_id": "timur",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Timur",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Timur",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "timur-trwiki",
@@ -383,26 +668,63 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "timur-azwiki",
+    "event_id": "timur",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Əmir Teymur",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/%C6%8Fmir_Teymur",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": true
+  "needs_review": true,
+  "i18n": {
+   "en": {
+    "name": "Timur",
+    "summary": "Timur (1320s – 17/18 February 1405), also known as Tamerlane, was a Turco-Mongol conqueror, first ruler of the Timurid dynasty, and the founder of the Timurid Empire, which ruled over modern-day Afghanistan, Iran, and Central Asia.",
+    "description": "Timur (1320s – 17/18 February 1405), also known as Tamerlane, was a Turco-Mongol conqueror, first ruler of the Timurid dynasty, and the founder of the Timurid Empire, which ruled over modern-day Afghanistan, Iran, and Central Asia. He was undefeated in most battles and is widely regarded as one of the greatest military leaders and tacticians in history, as well as one of the most brutal and deadly. Timur is also considered a great patron of the arts, for he interacted with scholars and poets such as ibn Khaldun, Hafez, and Hafiz-i Abru. His reign led to the Timurid Renaissance. Born into the Turkicized Mongol confederation of the Barlas in Transoxiana (now in Uzbekistan) in the 1320s, Timur gained control of the western Chagatai Khanate by 1370 and from there he led a series of military campaigns defeating the Khans of the Golden Horde, the Mamluk Sultanate in Egypt and Syria, the emerging Ottoman Empire, as well as the Delhi Sultanate in the Indian subcontinent, thus becoming the most powerful ruler in the Muslim world. These conquests led to the creation of the Timurid Empire, which fragmented shortly after his death. He spoke several languages, including the Karluk Turkic language Chagatai (an ancestor of modern Uzbek and Uyghur), as well as Classical Mongolian and New Persian, which he used for diplomatic correspondence."
+   },
+   "tr": {
+    "name": "Timur",
+    "summary": "Timur (Çağatayca: تیمور - Temür) (8 Nisan 1336 - 18 Şubat 1405) sonrasında Timur Küregen (Çağatayca: تيمور کورگن Temür Küregen), Timurlu İmparatorluğu'nun kurucusu olan Türk asker ve komutandır.",
+    "description": "Timur (Çağatayca: تیمور - Temür) (8 Nisan 1336 - 18 Şubat 1405) sonrasında Timur Küregen (Çağatayca: تيمور کورگن Temür Küregen), Timurlu İmparatorluğu'nun kurucusu olan Türk asker ve komutandır. 1370'ten itibaren düzenlediği seferlerle günümüzdeki Orta Asya, Rusya, İran, Hindistan, Afganistan, Kafkasya, Ortadoğu ve Anadolu'nun büyük bir bölümünü ele geçirmiştir. Çağatay ulusunu oluşturan boylardan Barlaslar'ın önderi olan Taragay ile Tekina Hatun'un çocuğu olarak 1336'da Semerkant yakınlarındaki Şehrisebz'e bağlı Hoca Ilgar köyünde dünyaya gelen Timur, 1370'te Çağatay Hanlığı'nın batısını denetim altına alan askeri bir lider olarak kendini göstermiştir. Timur, katıldığı bir savaşta ayağı aksak kalacak biçimde darbe aldığından dolayı kendisine Aksak Timur anlamına gelen Farsça Timur-i leng, Türkçeleşmiş olarak Timurlenk, Batılılar tarafından ise Tamerlane denilmekteydi. Timur'un düşüncesi Cengiz Han'ın ölümünden sonra parçalanan ve onun torunları tarafından kurulan Çağatay Hanlığı, İlhanlılar ve Altın Orda kalıntıları üzerinde Cengiz İmparatorluğunu tek bir siyasal çatı altında yeniden ayağa kaldırmaktı. Seferleri de bu düşüncesini doğrular niteliktedir ve saltanatının sonuna doğru bunu büyük ölçüde başarmıştır. Ön­ce yeniden birleştirdiği Çağatay ulusunun başına geçti."
+   },
+   "az": {
+    "name": "Əmir Teymur",
+    "summary": "Teymur (çağatay. تیمور; aprel 13369 aprel 1336 və ya 8 aprel 1336, Şəhrisəbz – fevral 140519 fevral 1405 və ya 18 fevral 1405, Otrar) — türk-monqol sərkərdə, Mərkəzi, Qərbi və Şərqi Asiyanın, habelə Qafqazın, Rusun və Volqaətrafı…",
+    "description": "Teymur (çağatay. تیمور; aprel 13369 aprel 1336 və ya 8 aprel 1336, Şəhrisəbz – fevral 140519 fevral 1405 və ya 18 fevral 1405, Otrar) — türk-monqol sərkərdə, Mərkəzi, Qərbi və Şərqi Asiyanın, habelə Qafqazın, Rusun və Volqaətrafı bölgələrin tarixində böyük rol oynamış şəxsiyyət, Teymurilər dövlətinin banisi. 1370-ci ildə Əmir titulu almış Teymurun adı Azərbaycan dilində olan tarixi ədəbiyyatlarda daha çox Əmir Teymur kimi qeyd olunur."
+   }
+  }
  },
  {
   "id": "cengiz-han",
-  "name": "Cengiz Han",
   "birth_year": 1162,
   "death_year": 1227,
   "wikidata_id": "Q720",
-  "summary": "Cengiz Han, (doğum adıyla Temuçin ya da Timuçin, 1162 - Ağustos 1227), Moğol İmparatorluğu'nun kurucusu ve ilk Han'ı olan Moğol komutan ve hükümdardır.",
-  "description": "Cengiz Han, (doğum adıyla Temuçin ya da Timuçin, 1162 - Ağustos 1227), Moğol İmparatorluğu'nun kurucusu ve ilk Han'ı olan Moğol komutan ve hükümdardır. Hükümdarlığı döneminde gerçekleştirdiği hiçbir savaşı kaybetmeyen Timuçin, dünya tarihinin en büyük askerî liderlerinden birisi olarak kabul edilmektedir. Bu sebeple doğum ismi olan Timuçin'den çok, \"güçlü hükümdar\" anlamına gelen Cengiz Han ismiyle anılmaktadır. 13. yüzyılın başında Orta Asya'daki tüm göçebe bozkır kavimlerini birleştirip, bir ulus hâline getirerek Moğol siyasi kimliği çatısı altında toplamıştır. Cengiz Han, hükümdarlığı döneminde 1206-1227 arasında, Kuzey Çin'deki Batı Xia ve Jin Hanedanı; Türkistan'daki Kara Hıtay, Maveraünnehir; Harezm, Horasan ve İran'daki Harezmşahlar, Kafkasya'daki Gürcüler, Deşt-i Kıpçak'taki Rus Knezlikleri, Kıpçaklar ile İdil Bulgarları üzerine seferler yaptı. Bunların sonucunda Pasifik Okyanusu'ndan Hazar Denizi'ne ve Karadeniz'in kuzeyine kadar uzanan bir imparatorluk kurdu. Bozkır geleneğinden gelen onlu teşkilatı kullanarak yetenek ve kişilerin bireysel üstünlüğüne dayanan meritokratik bir ordu oluşturan Cengiz Han'ın büyük bir asker olarak ün kazanmasının temelinde, kurduğu posta teşkilatı ve casus ağı ile istihbarat sanatına verdiği büyük değer önemli bir yer tutmaktadır.",
   "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/YuanEmperorAlbumGenghisPortrait.jpg?width=480",
-  "content_lang": "tr",
-  "birth_place": null,
+  "birth_place": {
+   "name": "Delüün Boldog",
+   "lng": 111.624667,
+   "lat": 49.021806,
+   "i18n": {}
+  },
   "death_place": {
    "name": "Yinchuan",
    "lng": 106.225,
-   "lat": 38.485
+   "lat": 38.485,
+   "i18n": {
+    "tr": "Yinchuan"
+   }
   },
   "events": [
    {
@@ -428,14 +750,30 @@
     "event_id": "cengiz-han",
     "type": "ansiklopedi",
     "author": null,
-    "title": "Cengiz Han",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q720",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "cengiz-han-enwiki",
+    "event_id": "cengiz-han",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Genghis Khan",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Genghis_Khan",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "cengiz-han-trwiki",
@@ -449,30 +787,67 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "cengiz-han-azwiki",
+    "event_id": "cengiz-han",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Çingiz xan",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/%C3%87ingiz_xan",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": true
+  "needs_review": true,
+  "i18n": {
+   "en": {
+    "name": "Genghis Khan",
+    "summary": "Genghis Khan (born Temüjin; c. 1162 – 18 or 25 August 1227), also known as Chinggis Khan, was the founder and first khan of the Mongol Empire.",
+    "description": "Genghis Khan (born Temüjin; c. 1162 – 18 or 25 August 1227), also known as Chinggis Khan, was the founder and first khan of the Mongol Empire. After spending most of his life uniting the Mongol tribes, he launched a series of military campaigns, conquering large parts of China and Central Asia. Genghis Khan was born Temüjin between 1155 and 1167 as the eldest child of Yesugei, a Mongol chieftain of the Borjigin clan, and his wife Hö'elün. When Temüjin was eight, his father died and his family was abandoned by its tribe. Reduced to near-poverty, Temüjin killed his older half-brother Behter to secure his familial position. His charismatic personality helped to attract his first followers and to form alliances with two prominent steppe leaders named Jamukha and Toghrul; they worked together to retrieve Temüjin's newlywed wife Börte, who had been kidnapped by raiders. As his reputation grew, his relationship with Jamukha deteriorated into open warfare. Temüjin was badly defeated in c. 1187, and may have spent the following years as a subject of the Jin dynasty; upon reemerging in 1196, he swiftly began gaining power. Toghrul came to view Temüjin as a threat and launched a surprise attack on him in 1203. Temüjin regrouped and overpowered Toghrul. After defeating the Naiman tribe and executing Jamukha, he was left as the sole ruler on the Mongolian steppe."
+   },
+   "tr": {
+    "name": "Cengiz Han",
+    "summary": "Cengiz Han, (doğum adıyla Temuçin ya da Timuçin, 1162 - Ağustos 1227), Moğol İmparatorluğu'nun kurucusu ve ilk Han'ı olan Moğol komutan ve hükümdardır.",
+    "description": "Cengiz Han, (doğum adıyla Temuçin ya da Timuçin, 1162 - Ağustos 1227), Moğol İmparatorluğu'nun kurucusu ve ilk Han'ı olan Moğol komutan ve hükümdardır. Hükümdarlığı döneminde gerçekleştirdiği hiçbir savaşı kaybetmeyen Timuçin, dünya tarihinin en büyük askerî liderlerinden birisi olarak kabul edilmektedir. Bu sebeple doğum ismi olan Timuçin'den çok, \"güçlü hükümdar\" anlamına gelen Cengiz Han ismiyle anılmaktadır. 13. yüzyılın başında Orta Asya'daki tüm göçebe bozkır kavimlerini birleştirip, bir ulus hâline getirerek Moğol siyasi kimliği çatısı altında toplamıştır. Cengiz Han, hükümdarlığı döneminde 1206-1227 arasında, Kuzey Çin'deki Batı Xia ve Jin Hanedanı; Türkistan'daki Kara Hıtay, Maveraünnehir; Harezm, Horasan ve İran'daki Harezmşahlar, Kafkasya'daki Gürcüler, Deşt-i Kıpçak'taki Rus Knezlikleri, Kıpçaklar ile İdil Bulgarları üzerine seferler yaptı. Bunların sonucunda Pasifik Okyanusu'ndan Hazar Denizi'ne ve Karadeniz'in kuzeyine kadar uzanan bir imparatorluk kurdu. Bozkır geleneğinden gelen onlu teşkilatı kullanarak yetenek ve kişilerin bireysel üstünlüğüne dayanan meritokratik bir ordu oluşturan Cengiz Han'ın büyük bir asker olarak ün kazanmasının temelinde, kurduğu posta teşkilatı ve casus ağı ile istihbarat sanatına verdiği büyük değer önemli bir yer tutmaktadır."
+   },
+   "az": {
+    "name": "Çingiz xan",
+    "summary": "Çingiz xan və ya Timuçin (monq. Чингис Хаан; 31 may 1162 – 25 avqust 1227[…], Qərbi Hsia sülaləsi) — Monqol hökmdarı və sərkərdəsi.",
+    "description": "Çingiz xan və ya Timuçin (monq. Чингис Хаан; 31 may 1162 – 25 avqust 1227[…], Qərbi Hsia sülaləsi) — Monqol hökmdarı və sərkərdəsi. Monqol qəbilələrini bir bayraq altında birləşdirərək, insanlıq tarixindəki ən böyük ikinci imperiya olmuş Böyük Monqol imperiyasını (1206–1368) qurmuşdur."
+   }
+  }
  },
  {
   "id": "iskender",
-  "name": "İskender",
   "birth_year": -356,
   "death_year": -323,
   "wikidata_id": "Q8409",
-  "summary": "Büyük İskender (Antik Yunanca: Grekçe: Ἀλέξανδρος ὁ Μέγας, Aléxandros ho Mégas; Latince: Alexander Magnus; MÖ 20/21 Temmuz 356 – MÖ 10/11 Haziran 323), tam adıyla III.",
-  "description": "Büyük İskender (Antik Yunanca: Grekçe: Ἀλέξανδρος ὁ Μέγας, Aléxandros ho Mégas; Latince: Alexander Magnus; MÖ 20/21 Temmuz 356 – MÖ 10/11 Haziran 323), tam adıyla III. Aleksandros, antik Makedonya Krallığı'nın Argead hanedanından Makedonyalıların Kralı'dır. II. Philippos'un oğlu olan İskender, MÖ 336'da 20 yaşında tahta geçmiş; on üç yıllık saltanatını büyük ölçüde askeri seferler yürüterek geçirmiştir. 30 yaşına gelindiğinde Yunanistan'dan Kuzeybatı Hindistan'a uzanan tarihin en büyük imparatorluklarından birini kurmuştur. Savaş meydanında hiç yenilgiye uğramamış olan İskender, tarihçiler tarafından tarihin en başarılı askeri komutanlarından biri kabul edilmektedir. Pella'da dünyaya gelen İskender, 13 yaşından itibaren Aristoteles tarafından yetiştirilmiştir. Tahta geçtikten kısa süre sonra Balkanlar'da kuzey sınırlarını güvenceye almış ve Thebes'i yerle bir etmiştir. MÖ 334'te Korinthos Birliği'nin komutanı sıfatıyla Ahameniş İmparatorluğu'na karşı Pan-Hellen seferini başlatmıştır. İssos ve Gaugamela'daki zaferlerle III. Darius'u tahttan indirmiş; Adriyatik Denizi'nden İndus Nehri'ne uzanan imparatorluğu kurmuştur. MÖ 326'da Hydaspes Muharebesi'nde Poros'u yenerek Hindistan'a girmiş, ancak askerlerinin isyanı üzerine geri dönmek zorunda kalmış ve MÖ 323'te Babil'de 32 yaşında hayatını kaybetmiştir.",
   "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Alexander%20the%20Great%20mosaic%20%28cropped%29.jpg?width=480",
-  "content_lang": "tr",
   "birth_place": {
    "name": "Pella",
    "lng": 22.525642,
-   "lat": 40.760033
+   "lat": 40.760033,
+   "i18n": {
+    "tr": "Pella",
+    "az": "Pella"
+   }
   },
   "death_place": {
-   "name": "Babil",
+   "name": "Babylon",
    "lng": 44.421111111,
-   "lat": 32.5425
+   "lat": 32.5425,
+   "i18n": {
+    "tr": "Babil",
+    "az": "Babil"
+   }
   },
   "events": [
    {
@@ -506,14 +881,30 @@
     "event_id": "iskender",
     "type": "ansiklopedi",
     "author": null,
-    "title": "İskender",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q8409",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "iskender-enwiki",
+    "event_id": "iskender",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Alexander the Great",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Alexander_the_Great",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "iskender-trwiki",
@@ -527,26 +918,64 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "iskender-azwiki",
+    "event_id": "iskender",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Makedoniyalı İsgəndər",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/Makedoniyal%C4%B1_%C4%B0sg%C9%99nd%C9%99r",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": true
+  "needs_review": true,
+  "i18n": {
+   "en": {
+    "name": "Alexander the Great",
+    "summary": "Alexander III of Macedon (Ancient Greek: Ἀλέξανδρος, romanized: Aléxandros; 20/21 July 356 BC – 10/11 June 323 BC), most commonly known as Alexander the Great, was king of the ancient Greek kingdom of Macedon from 336 BC until his death.",
+    "description": "Alexander III of Macedon (Ancient Greek: Ἀλέξανδρος, romanized: Aléxandros; 20/21 July 356 BC – 10/11 June 323 BC), most commonly known as Alexander the Great, was king of the ancient Greek kingdom of Macedon from 336 BC until his death. He was the son of Philip II, born to him by his fourth wife, Olympias, and ascended to the throne at the age of 20 after Philip was assassinated. Alexander spent most of his reign conducting a lengthy military campaign throughout Asia and Egypt, and by the age of 30, he had created one of the largest empires in history, stretching from Greece to northwestern India. He was undefeated in battle and is widely considered to be one of history's greatest and most successful military commanders. Born in Pella, Macedon, Alexander was tutored by the philosopher and polymath Aristotle until the age of 16. In 335 BC, shortly after assuming the throne of Macedon, he launched a campaign in the Balkans and reasserted control over Thrace and parts of Illyria before marching on the city of Thebes, which was subsequently destroyed. Alexander then assumed leadership of the League of Corinth, created by his father. With this authority over all Greeks he launched a pan-Hellenic invasion of the Achaemenid Persian Empire in 334 BC, and with it began a series of campaigns which lasted for ten years."
+   },
+   "tr": {
+    "name": "İskender",
+    "summary": "Büyük İskender (Antik Yunanca: Grekçe: Ἀλέξανδρος ὁ Μέγας, Aléxandros ho Mégas; Latince: Alexander Magnus; MÖ 20/21 Temmuz 356 – MÖ 10/11 Haziran 323), tam adıyla III.",
+    "description": "Büyük İskender (Antik Yunanca: Grekçe: Ἀλέξανδρος ὁ Μέγας, Aléxandros ho Mégas; Latince: Alexander Magnus; MÖ 20/21 Temmuz 356 – MÖ 10/11 Haziran 323), tam adıyla III. Aleksandros, antik Makedonya Krallığı'nın Argead hanedanından Makedonyalıların Kralı'dır. II. Philippos'un oğlu olan İskender, MÖ 336'da 20 yaşında tahta geçmiş; on üç yıllık saltanatını büyük ölçüde askeri seferler yürüterek geçirmiştir. 30 yaşına gelindiğinde Yunanistan'dan Kuzeybatı Hindistan'a uzanan tarihin en büyük imparatorluklarından birini kurmuştur. Savaş meydanında hiç yenilgiye uğramamış olan İskender, tarihçiler tarafından tarihin en başarılı askeri komutanlarından biri kabul edilmektedir. Pella'da dünyaya gelen İskender, 13 yaşından itibaren Aristoteles tarafından yetiştirilmiştir. Tahta geçtikten kısa süre sonra Balkanlar'da kuzey sınırlarını güvenceye almış ve Thebes'i yerle bir etmiştir. MÖ 334'te Korinthos Birliği'nin komutanı sıfatıyla Ahameniş İmparatorluğu'na karşı Pan-Hellen seferini başlatmıştır. İssos ve Gaugamela'daki zaferlerle III. Darius'u tahttan indirmiş; Adriyatik Denizi'nden İndus Nehri'ne uzanan imparatorluğu kurmuştur. MÖ 326'da Hydaspes Muharebesi'nde Poros'u yenerek Hindistan'a girmiş, ancak askerlerinin isyanı üzerine geri dönmek zorunda kalmış ve MÖ 323'te Babil'de 32 yaşında hayatını kaybetmiştir."
+   },
+   "az": {
+    "name": "Makedoniyalı İsgəndər",
+    "summary": "Makedoniyalı İsgəndər, III İsgəndər, İsgəndər Zülqərneyn və ya Böyük İsgəndər (yun. Ἀλέξανδρος ὁ Μέγας, Aléxandros ho Mégas, Yunan dilindən : ἀλέξω alexo \"müdafiə etmək, kömək etmək\" və ἀνήρ ander \"adam\") (20 iyul e.ə.",
+    "description": "Makedoniyalı İsgəndər, III İsgəndər, İsgəndər Zülqərneyn və ya Böyük İsgəndər (yun. Ἀλέξανδρος ὁ Μέγας, Aléxandros ho Mégas, Yunan dilindən : ἀλέξω alexo \"müdafiə etmək, kömək etmək\" və ἀνήρ ander \"adam\") (20 iyul e.ə. 356, Pella – 10 iyun e.ə. 323, Babil) — Qədim Yunanıstanın Makedoniya çarlığının hökmdarı (Basilevs) və Argeadlar sülaləsinin nümayəndəsi. Eramızdan əvvəl 356-cı ildə Pellada (Mərkəzi Makedoniya) doğulan İsgəndər atası Makedoniyalı II Filipin ölümündən sonra 20 yaşında taxta çıxmışdır. O, 30 yaşına qədər qədim dünyanın ən böyük imperiyalarından birini (Yunanıstandan Misirə və Şimal-qərbi Hindistana qədər) yaradana qədər hakimiyyətinin çox hissəsini Asiya və Şimal-şərqi Afrika boyunca hərbi kampaniyalarda keçirib. O, döyüşdə məğlub edilməz idi və tarixdəki ən müvəffəqiyyətli hərbi komandanlardan biri hesab edilir. Gəncliyində İsgəndər filosof Aristoteldən 16 yaşına qədər dərs alıb. Atası II Filippin öldürülməsindən sonra eramızdan əvvəl 336-cı ildə taxta çıxan İsgəndər güclü dövləti və təcrübəli ordunu miras alıb. O, Yunanıstanın generallığı ilə mükafatlandırılıb və bu səlahiyyətdən atasının hərbi işğal planlarını həyata keçirməyə başlamaq üçün istifadə edib. E.ə. 334-cü ildə o, Anatoliyanı idarə edən Əhəmənilər imperiyasını işğal edib və 10 il davam edən hərbi əməliyyatlara başlayıb."
+   }
+  }
  },
  {
   "id": "nadir-sah",
-  "name": "Nadir Şah",
   "birth_year": 1688,
   "death_year": 1747,
   "wikidata_id": "Q192868",
-  "summary": "Nadir Şah Afşar (22 Ekim 1688, Dergez - 19 Haziran 1747, Fethabad), Afşar İmparatorluğu'nun kurucusu ve ilk hükümdarı olan Türkmen şahtır.",
-  "description": "Nadir Şah Afşar (22 Ekim 1688, Dergez - 19 Haziran 1747, Fethabad), Afşar İmparatorluğu'nun kurucusu ve ilk hükümdarı olan Türkmen şahtır. Azerbaycan ve İran tarihlerinin en güçlü hükümdarlarından biri kabul edilip, 1736'dan 1747'deki suikastına kadar Afşar İmparatoru ve İran şahı olarak hüküm sürmüştür. Batı Asya, Güney Kafkasya, Orta Asya ve Güney Asya'da birçok seferde savaşmıştır. Askeri dehası nedeniyle, bazı tarihçiler onu İran'ın Napolyonu veya İkinci İskender olarak tanımlamıştır. İran, Azerbaycan, Hindistan'ın kuzeyi ve Orta Asya'nın bir bölümünü içine alan büyük Afşar İmparatorluğu'nu kurdu. Afganlar, Osmanlılar ve Babür İmparatorluğu'na karşı zaferler kazandı. Nadir Şah, Asya'nın son büyük fatihiydi. Osmanlılar ve Babür İmparatorluğu arasında Afşarlar'ı yeniden saygın bir yere getirdiği için övülür. Kaynaklarda Nadir Şah'ın, teşkilatçı, cesur, zeki ve çok enerjik bir yapıya sahip olduğu belirtilmiştir. Farsça'yı çok iyi bildiği halde Türkçe'yi (Çağatayca) kullanmayı tercih etmiştir. Hatta Çağatayca Türkçesi ile yazılmış yarlığı mevcuttur. Hindistan'da Karnal Muharebesi'nden sonra Babürlüler hükümdarı Muhammed Şah'la, Nadir Afşar arasındaki görüşmede iki hükümdar Türkçe konuşmuşlardır.",
   "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Contemporary%20portrait%20of%20Nader%20Shah.%20Artist%20unknown%2C%20created%20in%20ca.%201740%20in%20Iran%20%28cropped%29.jpg?width=480",
-  "content_lang": "tr",
-  "birth_place": null,
+  "birth_place": {
+   "name": "Dastgerd",
+   "lng": 59.16777778,
+   "lat": 36.62944444,
+   "i18n": {}
+  },
   "death_place": {
-   "name": "Goçan",
+   "name": "Quchan",
    "lng": 58.509444444,
-   "lat": 37.106111111
+   "lat": 37.106111111,
+   "i18n": {
+    "tr": "Goçan",
+    "az": "Qoçan"
+   }
   },
   "events": [
    {
@@ -568,14 +997,30 @@
     "event_id": "nadir-sah",
     "type": "ansiklopedi",
     "author": null,
-    "title": "Nadir Şah",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q192868",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "nadir-sah-enwiki",
+    "event_id": "nadir-sah",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Nader Shah",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Nader_Shah",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "nadir-sah-trwiki",
@@ -589,30 +1034,67 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "nadir-sah-azwiki",
+    "event_id": "nadir-sah",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Nadir şah",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/Nadir_%C5%9Fah",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": true
+  "needs_review": true,
+  "i18n": {
+   "en": {
+    "name": "Nader Shah",
+    "summary": "Nader Shah Afshar (born Nadr Qoli; Persian: نادرشاه افشار; 6 August 1698 or 22 November 1688 – 20 June 1747) was the founder of the Afsharid dynasty of Iran and one of the most powerful rulers in Iranian history, ruling as the emperor of…",
+    "description": "Nader Shah Afshar (born Nadr Qoli; Persian: نادرشاه افشار; 6 August 1698 or 22 November 1688 – 20 June 1747) was the founder of the Afsharid dynasty of Iran and one of the most powerful rulers in Iranian history, ruling as the emperor of Iran (Persia) from 1736 to 1747, when he was assassinated during a rebellion. He fought numerous campaigns throughout West Asia, the Caucasus, Central Asia, and South Asia, emerging victorious from the battles of Herat, Mihmandust, Murche-Khort, Kirkuk, Yeghevārd, Khyber Pass, Karnal, and Kars. Nader belonged to the Turkoman Afshars, one of the seven Qizilbash tribes that helped the Safavid dynasty establish their power in Iran. Nader rose to power during a period of chaos in Iran after a rebellion by the Hotaki Afghans had overthrown the weak emperor Soltan Hoseyn (r. 1694–1722), while the arch-enemy of the Safavids, the Ottoman Empire, as well as the Russian Empire, had seized Iranian territory for themselves. Nader reunited the Iranian realm and removed the invaders. He became so powerful that he decided to depose the last members of the Safavid dynasty, which had ruled Iran for over 200 years, and declared himself Shah in 1736."
+   },
+   "tr": {
+    "name": "Nadir Şah",
+    "summary": "Nadir Şah Afşar (22 Ekim 1688, Dergez - 19 Haziran 1747, Fethabad), Afşar İmparatorluğu'nun kurucusu ve ilk hükümdarı olan Türkmen şahtır.",
+    "description": "Nadir Şah Afşar (22 Ekim 1688, Dergez - 19 Haziran 1747, Fethabad), Afşar İmparatorluğu'nun kurucusu ve ilk hükümdarı olan Türkmen şahtır. Azerbaycan ve İran tarihlerinin en güçlü hükümdarlarından biri kabul edilip, 1736'dan 1747'deki suikastına kadar Afşar İmparatoru ve İran şahı olarak hüküm sürmüştür. Batı Asya, Güney Kafkasya, Orta Asya ve Güney Asya'da birçok seferde savaşmıştır. Askeri dehası nedeniyle, bazı tarihçiler onu İran'ın Napolyonu veya İkinci İskender olarak tanımlamıştır. İran, Azerbaycan, Hindistan'ın kuzeyi ve Orta Asya'nın bir bölümünü içine alan büyük Afşar İmparatorluğu'nu kurdu. Afganlar, Osmanlılar ve Babür İmparatorluğu'na karşı zaferler kazandı. Nadir Şah, Asya'nın son büyük fatihiydi. Osmanlılar ve Babür İmparatorluğu arasında Afşarlar'ı yeniden saygın bir yere getirdiği için övülür. Kaynaklarda Nadir Şah'ın, teşkilatçı, cesur, zeki ve çok enerjik bir yapıya sahip olduğu belirtilmiştir. Farsça'yı çok iyi bildiği halde Türkçe'yi (Çağatayca) kullanmayı tercih etmiştir. Hatta Çağatayca Türkçesi ile yazılmış yarlığı mevcuttur. Hindistan'da Karnal Muharebesi'nden sonra Babürlüler hükümdarı Muhammed Şah'la, Nadir Afşar arasındaki görüşmede iki hükümdar Türkçe konuşmuşlardır."
+   },
+   "az": {
+    "name": "Nadir şah Əfşar",
+    "summary": "Nadir şah Əfşar (fars. نادر شاه‎; Nâdir şâh) 22 oktyabr 1688[…] və ya 6 avqust 1698 – iyun 174719 iyun 1747 və ya 20 iyun 1747, Qoçan) — Əfşar imperiyasının şahı (1736–1747) və Əfşarlar sülaləsinin banisi.",
+    "description": "Nadir şah Əfşar (fars. نادر شاه‎; Nâdir şâh) 22 oktyabr 1688[…] və ya 6 avqust 1698 – iyun 174719 iyun 1747 və ya 20 iyun 1747, Qoçan) — Əfşar imperiyasının şahı (1736–1747) və Əfşarlar sülaləsinin banisi. Tarixdə, həmçinin \"Nadirqulu bəy\" və \"Təhmasibqulu xan\" adları ilə də tanınır. Hərbi nailiyyətlərinə görə bəzi tarixçilər ona \"Şərqin qılıncı\", \"Şərqin Napoleonu\" və \"İkinci Makedoniyalı İsgəndər\" kimi ləqəblər veriblər."
+   }
+  }
  },
  {
   "id": "sah-ismail",
-  "name": "I. İsmail",
   "birth_year": 1487,
   "death_year": 1524,
   "wikidata_id": "Q214559",
-  "summary": "I. İsmail, bilinen adıyla Şah İsmail veya tam ünvanıyla Ebu'l-Muzaffer Bahadır el-Hüseynî (Farsça: شاه اسماعیل; 17 Temmuz 1487, Erdebil - 23 Mayıs 1524, Tebriz), divan edebiyatındaki mahlasıyla Hatayî, Safevî Tarikatı'nın lideri, Safevî…",
-  "description": "I. İsmail, bilinen adıyla Şah İsmail veya tam ünvanıyla Ebu'l-Muzaffer Bahadır el-Hüseynî (Farsça: شاه اسماعیل; 17 Temmuz 1487, Erdebil - 23 Mayıs 1524, Tebriz), divan edebiyatındaki mahlasıyla Hatayî, Safevî Tarikatı'nın lideri, Safevî Devleti'nin kurucusu ve ilk hükümdarıdır. Alevilik ve Bektaşilikte Yedi Ulu Ozan'dan birisi olarak kabul edilir. İran coğrafyası, Şah İsmail tarafından 1501 yılında birleşik bir ülke haline gelmeden önce, yaklaşık sekiz buçuk yüzyıl önce Müslüman Araplar tarafından fethedilmesinden bu yana, yerel İran yönetimi altında birleşik bir ülke olarak var olmamıştı. Fakat bir dizi Arap halifesi, Türk sultanları ve Moğol hanları tarafından idare ediliyordu. Tüm bu dönem içinde yalnızca Büveyhîler döneminde İran coğrafyasının bir bölümü İranî bir yönetime kavuşmuştu. I. İsmail tarafından kurulan Safevî Hanedanı, iki asırdan fazla bir süre hüküm sürdü, tarihteki en büyük İran imparatorluklarından biri oldu ve gücünün zirvesindeyken, günümüzdeki İran, Azerbaycan, Ermenistan ve Gürcistan'ın çoğunu, Kuzey Kafkasya, Irak, Kuveyt ve Afganistan'ın yanı sıra, günümüz Türkiye, Pakistan, Özbekistan, Türkmenistan ve Suriye topraklarının bazı kısımlarına hükmederek kendi zamanının en güçlü devletlerinden biri oldu. Ayrıca, İran kültürünün Büyük İran'ın geniş bölgelerinde yeniden gelişmesini sağladı.",
   "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Shah%20Ismail%20I.%20Inscribed%20%22Ismael%20Sophy%20Rex%20Pers%22.%20Painted%20by%20Cristofano%20dell%27Altissimo%2C%20dated%201552-1568.jpg?width=480",
-  "content_lang": "tr",
   "birth_place": {
-   "name": "Erdebil",
+   "name": "Ardabil",
    "lng": 48.3,
-   "lat": 38.25
+   "lat": 38.25,
+   "i18n": {
+    "tr": "Erdebil",
+    "az": "Ərdəbil"
+   }
   },
   "death_place": {
-   "name": "Tebriz",
+   "name": "Tabriz",
    "lng": 46.296111111,
-   "lat": 38.073888888
+   "lat": 38.073888888,
+   "i18n": {
+    "tr": "Tebriz",
+    "az": "Təbriz"
+   }
   },
   "events": [
    {
@@ -626,14 +1108,30 @@
     "event_id": "sah-ismail",
     "type": "ansiklopedi",
     "author": null,
-    "title": "I. İsmail",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q214559",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "sah-ismail-enwiki",
+    "event_id": "sah-ismail",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Ismail I",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ismail_I",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "sah-ismail-trwiki",
@@ -647,30 +1145,67 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "sah-ismail-azwiki",
+    "event_id": "sah-ismail",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "I İsmayıl",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/I_%C4%B0smay%C4%B1l",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": true
+  "needs_review": true,
+  "i18n": {
+   "en": {
+    "name": "Ismail I",
+    "summary": "Ismail I (Persian: اسماعیل یکم, romanized: Ismāʿīl; 17 July 1487 – 23 May 1524) was the founder and first shah of Safavid Iran, ruling from 1501 until his death in 1524.",
+    "description": "Ismail I (Persian: اسماعیل یکم, romanized: Ismāʿīl; 17 July 1487 – 23 May 1524) was the founder and first shah of Safavid Iran, ruling from 1501 until his death in 1524. His reign is one of the most vital in the history of Iran, and the Safavid era is often considered the beginning of modern Iranian history. Under Ismail, Iran was unified under native rule for the first time since the Islamic conquest of the country eight-and-a-half centuries earlier. Ismail inherited leadership of the Safavid Sufi order from his brother as a child. His predecessors had transformed the religious order into a military movement supported by the Qizilbash (mainly Turkoman Shiite groups). The Safavids took control of northwestern Iran, with Tabriz as the capital. In 1501, Ismail was crowned as shah (king). In the following years, Ismail conquered the rest of Iran and other neighbouring territories. His expansion into Eastern Anatolia brought him into conflict with the Ottoman Empire. In 1514, the Ottomans decisively defeated the Safavids at the Battle of Chaldiran, which brought an end to Ismail's conquests. Ismail fell into depression and heavy drinking after this defeat and died in 1524. He was succeeded by his eldest son Tahmasp I."
+   },
+   "tr": {
+    "name": "I. İsmail",
+    "summary": "I. İsmail, bilinen adıyla Şah İsmail veya tam ünvanıyla Ebu'l-Muzaffer Bahadır el-Hüseynî (Farsça: شاه اسماعیل; 17 Temmuz 1487, Erdebil - 23 Mayıs 1524, Tebriz), divan edebiyatındaki mahlasıyla Hatayî, Safevî Tarikatı'nın lideri, Safevî…",
+    "description": "I. İsmail, bilinen adıyla Şah İsmail veya tam ünvanıyla Ebu'l-Muzaffer Bahadır el-Hüseynî (Farsça: شاه اسماعیل; 17 Temmuz 1487, Erdebil - 23 Mayıs 1524, Tebriz), divan edebiyatındaki mahlasıyla Hatayî, Safevî Tarikatı'nın lideri, Safevî Devleti'nin kurucusu ve ilk hükümdarıdır. Alevilik ve Bektaşilikte Yedi Ulu Ozan'dan birisi olarak kabul edilir. İran coğrafyası, Şah İsmail tarafından 1501 yılında birleşik bir ülke haline gelmeden önce, yaklaşık sekiz buçuk yüzyıl önce Müslüman Araplar tarafından fethedilmesinden bu yana, yerel İran yönetimi altında birleşik bir ülke olarak var olmamıştı. Fakat bir dizi Arap halifesi, Türk sultanları ve Moğol hanları tarafından idare ediliyordu. Tüm bu dönem içinde yalnızca Büveyhîler döneminde İran coğrafyasının bir bölümü İranî bir yönetime kavuşmuştu. I. İsmail tarafından kurulan Safevî Hanedanı, iki asırdan fazla bir süre hüküm sürdü, tarihteki en büyük İran imparatorluklarından biri oldu ve gücünün zirvesindeyken, günümüzdeki İran, Azerbaycan, Ermenistan ve Gürcistan'ın çoğunu, Kuzey Kafkasya, Irak, Kuveyt ve Afganistan'ın yanı sıra, günümüz Türkiye, Pakistan, Özbekistan, Türkmenistan ve Suriye topraklarının bazı kısımlarına hükmederek kendi zamanının en güçlü devletlerinden biri oldu. Ayrıca, İran kültürünün Büyük İran'ın geniş bölgelerinde yeniden gelişmesini sağladı."
+   },
+   "az": {
+    "name": "Şah İsmayıl Xətai",
+    "summary": "Şah İsmayıl Səfəvi, I İsmayıl və ya Şah İsmayıl (tam adı: Əbül-Müzəffər İsmail ibn Heydər əs-Səfəvi; 17 iyul 1487[…], Ərdəbil – 23 may 1524[…], Təbriz) — Səfəviyyə təriqətinin şeyxi (1494–1524); Səfəvilər dövlətinin banisi və ilk şahı;…",
+    "description": "Şah İsmayıl Səfəvi, I İsmayıl və ya Şah İsmayıl (tam adı: Əbül-Müzəffər İsmail ibn Heydər əs-Səfəvi; 17 iyul 1487[…], Ərdəbil – 23 may 1524[…], Təbriz) — Səfəviyyə təriqətinin şeyxi (1494–1524); Səfəvilər dövlətinin banisi və ilk şahı; Azərbaycan şairi, Azərbaycan türklərinin piri. O, 1501-ci ilin iyul ayında Təbriz şəhərində özünü şah elan edib. Azərbaycan Respublikası Nazirlər Kabinetinin 7 may 2019-cu il tarixli 211 nömrəli Qərarı ilə Şah İsmayıl Xətai Azərbaycan Respublikasında əsərləri dövlət varidatı elan edilən müəlliflərin siyahısına daxil edilmişdir. Onun yaratdığı Səfəvilər dövləti 1736-cı ilə qədər mövcud olmuşdur. İsmayıl 1501-ci ildən Cənubi Azərbaycanda On iki imam şiəliyinə əsaslanan səfəviliyi yayaraq 1509-cu ildə bütün İran, Azərbaycan, İraq, Şərqi Anadolunu və s. əraziləri vahid dövlətdə birləşdirmişdir. Bədii əsərlərini \"Xətai\" təxəllüsü ilə yazmışdır. Bununla əlaqədar olaraq \"Şah İsmayıl Xətai\" olaraq da tanınır. Əsərlərini əsasən Azərbaycan türkcəsində, qismən də fars və ərəbcə yazmışdır."
+   }
+  }
  },
  {
   "id": "babek",
-  "name": "Babek",
   "birth_year": 798,
   "death_year": 838,
   "wikidata_id": "Q379997",
-  "summary": "Bâbek Hûrremî (Farsça: بابک خرمدین, Bābek Hurremdīn; 795 ya da 798 - 4 Ocak 838) Abbâsîler Hâlifeliği'ne karşı mücadele eden Hûrrem’îyye Hareketi'nin önderliğini yapan ve 22 yıl süren (816-838) Babek Ayaklanması zamanında Halife'nin ünlü…",
-  "description": "Bâbek Hûrremî (Farsça: بابک خرمدین, Bābek Hurremdīn; 795 ya da 798 - 4 Ocak 838) Abbâsîler Hâlifeliği'ne karşı mücadele eden Hûrrem’îyye Hareketi'nin önderliğini yapan ve 22 yıl süren (816-838) Babek Ayaklanması zamanında Halife'nin ünlü komutanının önderliğindeki 6 büyük Hilafet Ordusunu mağlup eden komutan. Azerbaycanın ve Farsların millî kahramanı.Erdebil Nir'de doğmuştur.",
   "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Illustrated%20leaf%20from%20the%20Tarikhnama%20of%20Abu%20%27Ali%20Muhammad%20ibn%20Muhammad%20al-Bal%27ami%3B%20Afshin%20and%20Babak%20arriving%20at%20Samarra.%20Persia%2C%20Safavid%20dynasty%2C%2016th%20century%20%28Babak%20detail%29.jpg?width=480",
-  "content_lang": "tr",
   "birth_place": {
-   "name": "Erdebil",
+   "name": "Ardabil",
    "lng": 48.3,
-   "lat": 38.25
+   "lat": 38.25,
+   "i18n": {
+    "tr": "Erdebil",
+    "az": "Ərdəbil"
+   }
   },
   "death_place": {
    "name": "Samarra",
    "lng": 43.88568,
-   "lat": 34.1959
+   "lat": 34.1959,
+   "i18n": {
+    "tr": "Samarra",
+    "az": "Səmərra"
+   }
   },
   "events": [],
   "sources": [
@@ -679,14 +1214,30 @@
     "event_id": "babek",
     "type": "ansiklopedi",
     "author": null,
-    "title": "Babek",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q379997",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "babek-enwiki",
+    "event_id": "babek",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Babak Khorramdin",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Babak_Khorramdin",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "babek-trwiki",
@@ -700,30 +1251,67 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "babek-azwiki",
+    "event_id": "babek",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Babək",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/Bab%C9%99k",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": false
+  "needs_review": false,
+  "i18n": {
+   "en": {
+    "name": "Babak Khorramdin",
+    "summary": "Bābak Khorramdin (Persian: بابک خرمدین, romanized: Bābak-e Khorramdīn; 795 or 798 – January 838) was one of the main Iranian revolutionary leaders of the Iranian Khorram-Dinān (\"Those of the joyous religion\"), which was a local rebellion…",
+    "description": "Bābak Khorramdin (Persian: بابک خرمدین, romanized: Bābak-e Khorramdīn; 795 or 798 – January 838) was one of the main Iranian revolutionary leaders of the Iranian Khorram-Dinān (\"Those of the joyous religion\"), which was a local rebellion against the Abbasid Caliphate. Khorramdin appears to be a compound analogous to durustdin \"orthodoxy\" and Behdin \"Good Religion\" (Zoroastrianism), and are considered an offshoot of neo-Mazdakism. Babak's Iranianizing rebellion, from its base in Azerbaijan in northwestern Iran, called for a return of the political glories of the Iranian past. The Khorramdin rebellion of Babak spread to the western and central parts of Iran and lasted more than twenty years before it was defeated when Babak was betrayed. Babak's uprising showed the continuing strength of ancestral Iranian local feelings in the region."
+   },
+   "tr": {
+    "name": "Babek",
+    "summary": "Bâbek Hûrremî (Farsça: بابک خرمدین, Bābek Hurremdīn; 795 ya da 798 - 4 Ocak 838) Abbâsîler Hâlifeliği'ne karşı mücadele eden Hûrrem’îyye Hareketi'nin önderliğini yapan ve 22 yıl süren (816-838) Babek Ayaklanması zamanında Halife'nin ünlü…",
+    "description": "Bâbek Hûrremî (Farsça: بابک خرمدین, Bābek Hurremdīn; 795 ya da 798 - 4 Ocak 838) Abbâsîler Hâlifeliği'ne karşı mücadele eden Hûrrem’îyye Hareketi'nin önderliğini yapan ve 22 yıl süren (816-838) Babek Ayaklanması zamanında Halife'nin ünlü komutanının önderliğindeki 6 büyük Hilafet Ordusunu mağlup eden komutan. Azerbaycanın ve Farsların millî kahramanı.Erdebil Nir'de doğmuştur."
+   },
+   "az": {
+    "name": "Babək Xürrəmi",
+    "summary": "Babək və ya Babək Xürrəmi və ya Babək Xürrəmdin (fars. بابک خرمدین‎; 1 iyul 798, Ərdəbil – yanvar 838, Səmərra, Səlahəddin mühafəzəsi) — Xürrəmilər hərəkatının rəhbəri, Ərəb Xilafətinə qarşı İrandakı azadlıq müharibəsinə rəhbərlik etmiş…",
+    "description": "Babək və ya Babək Xürrəmi və ya Babək Xürrəmdin (fars. بابک خرمدین‎; 1 iyul 798, Ərdəbil – yanvar 838, Səmərra, Səlahəddin mühafəzəsi) — Xürrəmilər hərəkatının rəhbəri, Ərəb Xilafətinə qarşı İrandakı azadlıq müharibəsinə rəhbərlik etmiş sərkərdə. Fars mənbələrində adı \"Bapak\", erməni mənbələrində \"Bab\", \"Baban\" kimi də qeyd edilir."
+   }
+  }
  },
  {
   "id": "seyh-samil",
-  "name": "Şeyh Şamil",
   "birth_year": 1797,
   "death_year": 1871,
   "wikidata_id": "Q244742",
-  "summary": "Şeyh Şamil (26 Haziran 1797, Gimri - 4 Şubat 1871, Medine), Kuzey Kafkasya halklarının siyasi ve dinî önderi, Kuzey Azerbaycan, Dağıstan, Çeçenistan ve Çerkesya'nın üçüncü imamı olan imam ve askerdir.",
-  "description": "Şeyh Şamil (26 Haziran 1797, Gimri - 4 Şubat 1871, Medine), Kuzey Kafkasya halklarının siyasi ve dinî önderi, Kuzey Azerbaycan, Dağıstan, Çeçenistan ve Çerkesya'nın üçüncü imamı olan imam ve askerdir. Kafkasya'nın bağımsızlığı için mücadele etmiş olan Şeyh Şamil, Müslüman nüfusa sahip ülkelerde ün sahibidir. Ruslara karşı kazandığı zaferlerden ötürü \"Kafkas Kartalı\" ve \"Rusya'nın Kâbusu\" gibi isimlerle anılır. Hamzat Bey'den sonra Kafkasya'daki direnişçilerin komutanıdır ve aynı zamanda Nakşibendi şeyhlerinden Seyyid Cemaleddin Kumuki'nin halifelerindendir. Yirmi beş yıl sürdürdüğü savaş ile onu izleyenlerin benimsemiş oldukları İslam ve tasavvuf inancı, günümüzde Kafkas halkları arasında oldukça yaygındır.",
   "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Shamil%20by%20Denier.jpg?width=480",
-  "content_lang": "tr",
   "birth_place": {
-   "name": "Gimri",
+   "name": "Gimry",
    "lng": 46.842222222,
-   "lat": 42.757777777
+   "lat": 42.757777777,
+   "i18n": {
+    "tr": "Gimri",
+    "az": "Gimri"
+   }
   },
   "death_place": {
-   "name": "Medine",
+   "name": "Medina",
    "lng": 39.61,
-   "lat": 24.47
+   "lat": 24.47,
+   "i18n": {
+    "tr": "Medine",
+    "az": "Mədinə"
+   }
   },
   "events": [
    {
@@ -737,14 +1325,30 @@
     "event_id": "seyh-samil",
     "type": "ansiklopedi",
     "author": null,
-    "title": "Şeyh Şamil",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q244742",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "seyh-samil-enwiki",
+    "event_id": "seyh-samil",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Imam Shamil",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Imam_Shamil",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "seyh-samil-trwiki",
@@ -758,26 +1362,59 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "seyh-samil-azwiki",
+    "event_id": "seyh-samil",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Şeyx Şamil",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/%C5%9Eeyx_%C5%9Eamil",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": false
+  "needs_review": false,
+  "i18n": {
+   "en": {
+    "name": "Shamil",
+    "summary": "Imam Shamil (26 June 1797 – 4 February 1871) was the third Imam of the Caucasian Imamate (1840–1859), and a Muslim sheikh of the Naqshbandi Sufi order.",
+    "description": "Imam Shamil (26 June 1797 – 4 February 1871) was the third Imam of the Caucasian Imamate (1840–1859), and a Muslim sheikh of the Naqshbandi Sufi order. Nicknamed the \"Caucasian Eagle\", he was the political, military, and spiritual leader of North Caucasian resistance to Imperial Russia in the 1800s; his rule was recognized in Dagestan, Chechnya, and Circassia, the latter indirectly through his representative Muhammad Amin. He is considered a hero by peoples of the Northern Caucasus."
+   },
+   "tr": {
+    "name": "Şeyh Şamil",
+    "summary": "Şeyh Şamil (26 Haziran 1797, Gimri - 4 Şubat 1871, Medine), Kuzey Kafkasya halklarının siyasi ve dinî önderi, Kuzey Azerbaycan, Dağıstan, Çeçenistan ve Çerkesya'nın üçüncü imamı olan imam ve askerdir.",
+    "description": "Şeyh Şamil (26 Haziran 1797, Gimri - 4 Şubat 1871, Medine), Kuzey Kafkasya halklarının siyasi ve dinî önderi, Kuzey Azerbaycan, Dağıstan, Çeçenistan ve Çerkesya'nın üçüncü imamı olan imam ve askerdir. Kafkasya'nın bağımsızlığı için mücadele etmiş olan Şeyh Şamil, Müslüman nüfusa sahip ülkelerde ün sahibidir. Ruslara karşı kazandığı zaferlerden ötürü \"Kafkas Kartalı\" ve \"Rusya'nın Kâbusu\" gibi isimlerle anılır. Hamzat Bey'den sonra Kafkasya'daki direnişçilerin komutanıdır ve aynı zamanda Nakşibendi şeyhlerinden Seyyid Cemaleddin Kumuki'nin halifelerindendir. Yirmi beş yıl sürdürdüğü savaş ile onu izleyenlerin benimsemiş oldukları İslam ve tasavvuf inancı, günümüzde Kafkas halkları arasında oldukça yaygındır."
+   },
+   "az": {
+    "name": "Şeyx Şamil",
+    "summary": "Şeyx Şamil (avar. Имам Шамиль; 26 iyun (7 iyul) 1797, Gimri – 4 (16) fevral 1871, Mədinə, Həbəşistan əyaləti) — Qafqaz dağlılarının rəhbəri, 1834-cü ildən Qərbi Dağıstan dağlılarını, çeçenləri və çərkəzləri birləşdirən teokratik dövlətin —…",
+    "description": "Şeyx Şamil (avar. Имам Шамиль; 26 iyun (7 iyul) 1797, Gimri – 4 (16) fevral 1871, Mədinə, Həbəşistan əyaləti) — Qafqaz dağlılarının rəhbəri, 1834-cü ildən Qərbi Dağıstan dağlılarını, çeçenləri və çərkəzləri birləşdirən teokratik dövlətin — Şimali Qafqaz imamlığının imamı kimi tanınmışdır. Qafqaz xalqlarının milli qəhrəmanı. Milliyyətcə — Avardır."
+   }
+  }
  },
  {
   "id": "fuzuli",
-  "name": "Fuzuli",
   "birth_year": 1480,
   "death_year": 1556,
   "wikidata_id": "Q178379",
-  "summary": "Fuzûlî (y. 1480 veya 1494 - 1556, Kerbela ya da Bağdat), Azerbaycan Türkçesi, Arapça ve Farsça eser veren Osmanlı dönemi Türk divan şâiridir. Asıl adı Mehmed bin Süleyman'dır. Oğuzlar'ın Bayat boyuna mensuptur.",
-  "description": "Fuzûlî (y. 1480 veya 1494 - 1556, Kerbela ya da Bağdat), Azerbaycan Türkçesi, Arapça ve Farsça eser veren Osmanlı dönemi Türk divan şâiridir. Asıl adı Mehmed bin Süleyman'dır. Oğuzlar'ın Bayat boyuna mensuptur. Arapça ve Farsça eserleri de bulunmakla birlikte Azerbaycan Türkçesinin en önemli lirik şairi olarak kabul görmüştür. Mehmed Fuzûlî Alevî Müslümanların Yedi Ulu Ozanlarından birisidir.",
   "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Fuz%C3%BBl%C3%AE.jpg?width=480",
-  "content_lang": "tr",
   "birth_place": null,
   "death_place": {
-   "name": "Osmanlı İmparatorluğu",
+   "name": "Ottoman Empire",
    "lng": 29,
-   "lat": 41
+   "lat": 41,
+   "i18n": {
+    "tr": "Osmanlı İmparatorluğu",
+    "az": "Osmanlı imperiyası"
+   }
   },
   "events": [],
   "sources": [
@@ -786,14 +1423,30 @@
     "event_id": "fuzuli",
     "type": "ansiklopedi",
     "author": null,
-    "title": "Fuzuli",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q178379",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "fuzuli-enwiki",
+    "event_id": "fuzuli",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Fuzuli (poet)",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Fuzuli_(poet)",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "fuzuli-trwiki",
@@ -807,30 +1460,67 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "fuzuli-azwiki",
+    "event_id": "fuzuli",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Məhəmməd Füzuli",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/M%C9%99h%C9%99mm%C9%99d_F%C3%BCzuli",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": false
+  "needs_review": false,
+  "i18n": {
+   "en": {
+    "name": "Fuzuli",
+    "summary": "Muhammad bin Suleyman (Azerbaijani: Məhəmməd Süleyman oğlu, مَحمد سلیمان اوغلی; 1483–1556), better known by his pen name Fuzuli (Füzuli, فضولی), was a 16th-century poet who composed works in his native Azerbaijani, as well as Persian and…",
+    "description": "Muhammad bin Suleyman (Azerbaijani: Məhəmməd Süleyman oğlu, مَحمد سلیمان اوغلی; 1483–1556), better known by his pen name Fuzuli (Füzuli, فضولی), was a 16th-century poet who composed works in his native Azerbaijani, as well as Persian and Arabic. He is regarded as one of the greatest poets of Turkic literature and a prominent figure in both Azerbaijani and Ottoman literature. Fuzuli's work was widely known and admired throughout the Turkic cultural landscape from the 16th to the 19th centuries, with his fame reaching as far as Central Asia and India. Born in 1483 in modern-day Iraq, Fuzuli studied literature, mathematics, astronomy, and languages as a child. During his lifetime, his homeland changed hands between the Aq Qoyunlu, Safavid, and Ottoman states. He composed poetry for officials in all three empires, writing his first known poem to Shah Alvand Mirza of the Aq Qoyunlu. Fuzuli wrote most of his poetry during the Ottoman rule of Iraq, which is why he is also sometimes called an Ottoman poet. Throughout his life, he had several patrons but never found one that fully satisfied him—as he wrote—and his desire to join a royal court was never realised. Despite wishing to see places like Tabriz in modern-day Iran, Anatolia, and India, he never travelled outside Iraq. In 1556, Fuzuli died from the plague and was buried in Karbala."
+   },
+   "tr": {
+    "name": "Fuzuli",
+    "summary": "Fuzûlî (y. 1480 veya 1494 - 1556, Kerbela ya da Bağdat), Azerbaycan Türkçesi, Arapça ve Farsça eser veren Osmanlı dönemi Türk divan şâiridir. Asıl adı Mehmed bin Süleyman'dır. Oğuzlar'ın Bayat boyuna mensuptur.",
+    "description": "Fuzûlî (y. 1480 veya 1494 - 1556, Kerbela ya da Bağdat), Azerbaycan Türkçesi, Arapça ve Farsça eser veren Osmanlı dönemi Türk divan şâiridir. Asıl adı Mehmed bin Süleyman'dır. Oğuzlar'ın Bayat boyuna mensuptur. Arapça ve Farsça eserleri de bulunmakla birlikte Azerbaycan Türkçesinin en önemli lirik şairi olarak kabul görmüştür. Mehmed Fuzûlî Alevî Müslümanların Yedi Ulu Ozanlarından birisidir."
+   },
+   "az": {
+    "name": "Füzuli",
+    "summary": "Məhəmməd Füzuli (təq. 1494 və ya təq. 1480, Ağqoyunlular – 1556, Osmanlı imperiyası), və ya sadəcə Füzuli — XVI-XVII əsr Azərbaycan şairi. O, ana dili azərbaycanca, həmçinin farsca və ərəbcə şeirlər yazmışdır.",
+    "description": "Məhəmməd Füzuli (təq. 1494 və ya təq. 1480, Ağqoyunlular – 1556, Osmanlı imperiyası), və ya sadəcə Füzuli — XVI-XVII əsr Azərbaycan şairi. O, ana dili azərbaycanca, həmçinin farsca və ərəbcə şeirlər yazmışdır. Füzuli türkdilli ədəbiyyatın ən böyük şairlərindən biri, həm Azərbaycan, həm də Osmanlı ədəbiyyatının görkəmli simalarından biri kimi qəbul edilir. Füzulinin yaradıcılığı XVI–XIX əsrlərdən Mərkəzi Asiyaya və Hindistana qədər uzanan fars-türk mədəniyyət sahəsində geniş şəkildə tanınmış və təqdir edilmişdir. Məhəmməd Füzuli Ələvi müsəlmanların Yedi Ulu Ozanından biridir. 1494-cü ildə indiki İraq ərazisində anadan olan Füzuli uşaqlıqda yaxşı təhsil almış, ədəbiyyat, riyaziyyat, astronomiya və xarici dilləri öyrənmişdir. Onun sağlığında Füzulinin doğma yurduna nəzarət Ağqoyunlu, Səfəvi və Osmanlı imperiyaları arasında dəyişmişdir. O, hər üç imperiyanın dövlət səlahiyyətliləri üçün şeirlər yazmış, ilk şeirini Ağqoyunlu şahı Əlvənd mirzəyə həsr etmişdir. Füzuli poeziyasının çoxunu İraqda Osmanlı hakimiyyəti dövründə yazmış və buna görə o, bəzən Osmanlı şairi də adlandırılır. Füzulinin bütün həyatı boyu onun bir neçə himayədarı olmuş, lakin heç vaxt onu həqiqətən qane edən birini tapa bilməmişdir və onun şah sarayına qoşulmaq arzusu heç vaxt həyata keçməmişdir."
+   }
+  }
  },
  {
   "id": "nizami-gencevi",
-  "name": "Nizami Gencevi",
   "birth_year": 1141,
   "death_year": 1202,
   "wikidata_id": "Q234908",
-  "summary": "Nizâmî-i Gencevî (Farsça: نظامی گنجوی; d. 1141 – ö. 1209), Fars edebiyatında hamse türünün kurucusu şair. Felsefe, edebiyat, astronomi, tıp, geometri gibi alanlarda çalışmalar yapmış bir 12. yüzyıl filozofu ve şairidir.",
-  "description": "Nizâmî-i Gencevî (Farsça: نظامی گنجوی; d. 1141 – ö. 1209), Fars edebiyatında hamse türünün kurucusu şair. Felsefe, edebiyat, astronomi, tıp, geometri gibi alanlarda çalışmalar yapmış bir 12. yüzyıl filozofu ve şairidir. Eserlerinin çoğunu Farsça yazan şair Fars edebiyatında hamse türünün kurucusu sayılır. destansı şiir türünü zirveye taşımış, manzum aşk hikâyelerinin en büyük üstadı unvanını kazanmıştır. Eserleri kendinden sonraki şair ve düşünürleri etkileyerek Sadi-i Şirazi'nin Bostan'ında, Mevlana Celaleddin Rumi'nin Mesnevi'sinde, Emir Hüsrev Dehlevi'nin Hamsesinde, Arif Erdebili'nin Ferhadnamesinde, Ali Şir Nevai ve Abdurrahman Cami’nin “Hamsal”larında, Fuzuli’nin Leyla ve Mecnununda yeniden işlenmiştir.",
   "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nezami%20%28detail%29%20Addressing%20his%20Son%20Mohammad.%20Attributed%20to%20Behzad%2C%20Leyli%20and%20Majnun%20%28Nizami%20Ganjavi%29%201482.jpg?width=480",
-  "content_lang": "tr",
   "birth_place": {
-   "name": "Gence",
+   "name": "Ganja",
    "lng": 46.360555555,
-   "lat": 40.682777777
+   "lat": 40.682777777,
+   "i18n": {
+    "tr": "Gence",
+    "az": "Gəncə"
+   }
   },
   "death_place": {
-   "name": "Gence",
+   "name": "Ganja",
    "lng": 46.360555555,
-   "lat": 40.682777777
+   "lat": 40.682777777,
+   "i18n": {
+    "tr": "Gence",
+    "az": "Gəncə"
+   }
   },
   "events": [],
   "sources": [
@@ -839,14 +1529,30 @@
     "event_id": "nizami-gencevi",
     "type": "ansiklopedi",
     "author": null,
-    "title": "Nizami Gencevi",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q234908",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "nizami-gencevi-enwiki",
+    "event_id": "nizami-gencevi",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Nizami Ganjavi",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Nizami_Ganjavi",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "nizami-gencevi-trwiki",
@@ -860,26 +1566,66 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "nizami-gencevi-azwiki",
+    "event_id": "nizami-gencevi",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Nizami Gəncəvi",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/Nizami_G%C9%99nc%C9%99vi",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": false
+  "needs_review": false,
+  "i18n": {
+   "en": {
+    "name": "Nizami Ganjavi",
+    "summary": "Nizami Ganjavi (Persian: نظامی گنجوی, romanized: Niẓāmī Ganjavī, lit. 'Niẓāmī of Ganja'; c. 1141 – 1209), Nizami Ganje'i, Nizami, or Nezāmi, whose formal name was Jamal ad-Dīn Abū Muḥammad Ilyās ibn-Yūsuf ibn-Zakkī, was a 12th-century…",
+    "description": "Nizami Ganjavi (Persian: نظامی گنجوی, romanized: Niẓāmī Ganjavī, lit. 'Niẓāmī of Ganja'; c. 1141 – 1209), Nizami Ganje'i, Nizami, or Nezāmi, whose formal name was Jamal ad-Dīn Abū Muḥammad Ilyās ibn-Yūsuf ibn-Zakkī, was a 12th-century poet. Nizami is considered the greatest romantic epic poet in Persian literature, who brought a colloquial and realistic style to the Persian epic. His heritage is widely appreciated in Afghanistan, Republic of Azerbaijan, Iran, the Kurdistan region and Tajikistan."
+   },
+   "tr": {
+    "name": "Nizami Gencevi",
+    "summary": "Nizâmî-i Gencevî (Farsça: نظامی گنجوی; d. 1141 – ö. 1209), Fars edebiyatında hamse türünün kurucusu şair. Felsefe, edebiyat, astronomi, tıp, geometri gibi alanlarda çalışmalar yapmış bir 12. yüzyıl filozofu ve şairidir.",
+    "description": "Nizâmî-i Gencevî (Farsça: نظامی گنجوی; d. 1141 – ö. 1209), Fars edebiyatında hamse türünün kurucusu şair. Felsefe, edebiyat, astronomi, tıp, geometri gibi alanlarda çalışmalar yapmış bir 12. yüzyıl filozofu ve şairidir. Eserlerinin çoğunu Farsça yazan şair Fars edebiyatında hamse türünün kurucusu sayılır. destansı şiir türünü zirveye taşımış, manzum aşk hikâyelerinin en büyük üstadı unvanını kazanmıştır. Eserleri kendinden sonraki şair ve düşünürleri etkileyerek Sadi-i Şirazi'nin Bostan'ında, Mevlana Celaleddin Rumi'nin Mesnevi'sinde, Emir Hüsrev Dehlevi'nin Hamsesinde, Arif Erdebili'nin Ferhadnamesinde, Ali Şir Nevai ve Abdurrahman Cami’nin “Hamsal”larında, Fuzuli’nin Leyla ve Mecnununda yeniden işlenmiştir."
+   },
+   "az": {
+    "name": "Nizami Gəncəvi",
+    "summary": "Nizami Gəncəvi (fars. \"نظامی گنجوی\"‎, tam adı: Əbu İlyas ibn Yusif; təq. 1141[…], Gəncə – 1209[…], təq. 1202 və ya təq.",
+    "description": "Nizami Gəncəvi (fars. \"نظامی گنجوی\"‎, tam adı: Əbu İlyas ibn Yusif; təq. 1141[…], Gəncə – 1209[…], təq. 1202 və ya təq. 1214, Gəncə) — fars dilli poeziyasının klassiki, orta əsrlər Şərqinin ən böyük şairlərindən biri, fars dilli epik ədəbiyyatın ən böyük romantik şairi, farsdilli epik poeziyaya danışıq dili və realistik stili gətirmiş şairdir. Şifahi xalq ədəbiyyatı və yazılı tarixi salnamələrin ənənəvi mövzularından istifadə edən Nizami, islamdan əvvəlki və islam dövrü İranını birləşdirmişdir. Nizaminin qəhrəmanlıq-romantik poeziyası sonrakı əsrlər boyunca, fars dilinin istifadə olunduğu bütün ərazilərdə özünü ona oxşatmağa çalışan gənc sənətkarların yaradıcılığına təsir etmiş, nəinki Persiyada, həm də Azərbaycan, Əfqanıstan, Gürcüstan, Hindistan, İran, Pakistan, Tacikistan, Türkiyə və Özbəkistan kimi müasir ölkələrin mədəniyyətinin formalaşmasında rol oynamışdır. Nizaminin yaradıcılığı, Hafiz Şirazi, Mövlana Cəlaləddin Rumi və Sədi Şirazi kimi böyük sənətkarların yaradıcılığına təsir etmişdir. Onun, müxtəlif ictimai, mədəni və elmi mövzuları işıqlandıran beş məsnəvisi bütün Şərq ölkələrində böyük məşhurluğa malik olmuşdur ki, bunu da, şairin əsərlərinin çoxlu sayda və müxtəlif dövrlərə aid əlyazmalarının dövrümüzə çatması sübut edir."
+   }
+  }
  },
  {
   "id": "biruni",
-  "name": "Biruni",
   "birth_year": 973,
   "death_year": 1048,
   "wikidata_id": "Q11826",
-  "summary": "Bîrûnî (4 Eylül 973 Kat - 13 Aralık 1048 Gazne), İslam'ın Altın Çağı'ndaki çalışmaları ile bilinen hezârfen. Tam adı Ebu Reyhan Muhammed bin Ahmed el-Bîrûnî'dir (Farsça: بیرونی, Arapça: ابو الريحان محمد بن احمد البيروني).",
-  "description": "Bîrûnî (4 Eylül 973 Kat - 13 Aralık 1048 Gazne), İslam'ın Altın Çağı'ndaki çalışmaları ile bilinen hezârfen. Tam adı Ebu Reyhan Muhammed bin Ahmed el-Bîrûnî'dir (Farsça: بیرونی, Arapça: ابو الريحان محمد بن احمد البيروني). Batı dillerinde adı Alberuni veya Aliboron olarak geçer. Matematik, doğa bilimleri, coğrafya, tarih ve tıp alanındaki çalışmalarıyla tanınır.",
   "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Al-Biruni%20Portrait.jpg?width=480",
-  "content_lang": "tr",
-  "birth_place": null,
+  "birth_place": {
+   "name": "Kath",
+   "lng": 60.3025,
+   "lat": 41.655833,
+   "i18n": {
+    "az": "Kayat"
+   }
+  },
   "death_place": {
-   "name": "Gazni",
+   "name": "Ghazni",
    "lng": 68.423333333,
-   "lat": 33.549166666
+   "lat": 33.549166666,
+   "i18n": {
+    "tr": "Gazni",
+    "az": "Qəzni"
+   }
   },
   "events": [],
   "sources": [
@@ -888,14 +1634,30 @@
     "event_id": "biruni",
     "type": "ansiklopedi",
     "author": null,
-    "title": "Biruni",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q11826",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "biruni-enwiki",
+    "event_id": "biruni",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Al-Biruni",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Al-Biruni",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "biruni-trwiki",
@@ -909,26 +1671,66 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "biruni-azwiki",
+    "event_id": "biruni",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Əl-Biruni",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/%C6%8Fl-Biruni",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": false
+  "needs_review": false,
+  "i18n": {
+   "en": {
+    "name": "Al-Biruni",
+    "summary": "Abu Reyhan Muhammad ibn Ahmad al-Biruni (Persian: ابوریحان محمد بن احمد بیرونی, romanized: Abū-Reyhān Bīrūnī; Arabic: أبو الريحان محمد بن أحمد البيروني; c. 973 – c.",
+    "description": "Abu Reyhan Muhammad ibn Ahmad al-Biruni (Persian: ابوریحان محمد بن احمد بیرونی, romanized: Abū-Reyhān Bīrūnī; Arabic: أبو الريحان محمد بن أحمد البيروني; c. 973 – c. 1050), known as Biruni (بیرونی), was an Iranian Khwarazmian polymath of the Islamic Golden Age. Well versed in physics, mathematics, astronomy and the natural sciences, he also distinguished himself as a historian, chronologist and linguist, and has been described as the first anthropologist and a founding figure in comparative religion, geodesy and Indology. Born in Kath in Khwarazm, al-Biruni spent the first twenty-five years of his life there before moving, after the fall of the Afrighids in 995, between the courts of Bukhara, Tabaristan and Gurganj. Around 1000 he completed his first major work, al-Āthār al-bāqiya ʿan al-qurūn al-khāliya, on historical and scientific chronology. From 1017 he lived at Ghazni under Mahmud of Ghazni, serving as court astrologer and accompanying Mahmud's campaigns in the Indian subcontinent; the resulting Tārīkh al-Hind, finished around 1030, is the work on which his reputation as an Indologist chiefly rests. He died at Ghazni around 1050. He studied almost all the sciences of his day and was rewarded abundantly for his research in many fields of knowledge. Royalty and other powerful elements in society funded al-Biruni's research and sought him out with specific projects in mind."
+   },
+   "tr": {
+    "name": "Biruni",
+    "summary": "Bîrûnî (4 Eylül 973 Kat - 13 Aralık 1048 Gazne), İslam'ın Altın Çağı'ndaki çalışmaları ile bilinen hezârfen. Tam adı Ebu Reyhan Muhammed bin Ahmed el-Bîrûnî'dir (Farsça: بیرونی, Arapça: ابو الريحان محمد بن احمد البيروني).",
+    "description": "Bîrûnî (4 Eylül 973 Kat - 13 Aralık 1048 Gazne), İslam'ın Altın Çağı'ndaki çalışmaları ile bilinen hezârfen. Tam adı Ebu Reyhan Muhammed bin Ahmed el-Bîrûnî'dir (Farsça: بیرونی, Arapça: ابو الريحان محمد بن احمد البيروني). Batı dillerinde adı Alberuni veya Aliboron olarak geçer. Matematik, doğa bilimleri, coğrafya, tarih ve tıp alanındaki çalışmalarıyla tanınır."
+   },
+   "az": {
+    "name": "Əl-Biruni",
+    "summary": "Əbu Reyhan Məhəmməd ibn Əhməd əl-Biruni (4 sentyabr 973, Kayat[d] – 9 dekabr 1048, Qəzni) – iranlı ensiklopediyaçı alim və mütəfəkkir.",
+    "description": "Əbu Reyhan Məhəmməd ibn Əhməd əl-Biruni (4 sentyabr 973, Kayat[d] – 9 dekabr 1048, Qəzni) – iranlı ensiklopediyaçı alim və mütəfəkkir."
+   }
+  }
  },
  {
   "id": "ibn-sina",
-  "name": "İbn-i Sina",
   "birth_year": 980,
   "death_year": 1037,
   "wikidata_id": "Q8011",
-  "summary": "İbn Sînâ (Farsça: ابن سینا) veya Ebu Ali Sînâ (Farsça: ابوعلی سینا) ya da Batılıların söyleyişiyle Avicenna (y.",
-  "description": "İbn Sînâ (Farsça: ابن سینا) veya Ebu Ali Sînâ (Farsça: ابوعلی سینا) ya da Batılıların söyleyişiyle Avicenna (y. 980 – Haziran 1037), İslam'ın Altın Çağı döneminin en önemli doktorlarından, astronomlarından, düşünürlerinden, yazarlarından ve bilginlerinden biri olarak kabul edilen Fars polimat ve \"polimerik erken tıbbın babası\" olarak bilinen tabiptir. Buhara yakınlarındaki Efşene köyünde (Özbekistan) 980 civarında dünyaya gelmiş ve 1037 yılında Hemedan şehrinde (İran) ölmüştür. Tıp ve felsefe alanına ağırlık verdiği değişik alanlarda 200 kadar kitap yazmıştır. Batılılarca modern Orta Çağ biliminin kurucusu ve tabiplerin önderi olarak bilinen İbn-i Sina, \"Büyük Üstat\" ismiyle de tanınır. Tıp alanında yedi yüzyıl boyunca temel kaynak eser olarak süregelen \"El-Kanun fi't-Tıb\" (Tıbbın Kanunu) adlı kitabı ile ünlenmiş ve bu kitap, değişik Avrupa üniversitelerinde 17. yüzyıl ortalarına kadar tıp biliminde temel eser olarak okutulmuştur. İbn Sînâ, Kuşyar isimli bir tabibin yanında tıp eğitimi almıştır. Değişik konular üzerine, 240'ı günümüze kadar gelen 450 kadar makale yazdı. Elimizdeki yazılarının 150 tanesi felsefe, 40 tanesi de tıp üzerinedir. Eserlerinin en ünlüleri, felsefe ve fen konularını içeren çok geniş bir çalışma olan Kitabü'ş-Şifa (İyileşme Kitabı) ile El-Kanun fi't-Tıb'dır (Tıbbın Kanunu).",
   "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pursina.jpg?width=480",
-  "content_lang": "tr",
-  "birth_place": null,
+  "birth_place": {
+   "name": "Afshona",
+   "lng": 64.379166666,
+   "lat": 39.994444444,
+   "i18n": {
+    "az": "Afşona"
+   }
+  },
   "death_place": {
-   "name": "Hemedan",
+   "name": "Hamadan",
    "lng": 48.516666666,
-   "lat": 34.8
+   "lat": 34.8,
+   "i18n": {
+    "tr": "Hemedan",
+    "az": "Həmədan"
+   }
   },
   "events": [],
   "sources": [
@@ -937,14 +1739,30 @@
     "event_id": "ibn-sina",
     "type": "ansiklopedi",
     "author": null,
-    "title": "İbn-i Sina",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q8011",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "ibn-sina-enwiki",
+    "event_id": "ibn-sina",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Avicenna",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Avicenna",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "ibn-sina-trwiki",
@@ -958,30 +1776,67 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "ibn-sina-azwiki",
+    "event_id": "ibn-sina",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "İbn Sina",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/%C4%B0bn_Sina",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": false
+  "needs_review": false,
+  "i18n": {
+   "en": {
+    "name": "Avicenna",
+    "summary": "Ibn Sina (c. 980 – 22 June 1037), commonly known in the West as Avicenna, was a preeminent philosopher and physician of the Muslim world.",
+    "description": "Ibn Sina (c. 980 – 22 June 1037), commonly known in the West as Avicenna, was a preeminent philosopher and physician of the Muslim world. He was a seminal figure of the Islamic Golden Age, serving in the courts of various Iranian rulers, and was influential to medieval European medical and Scholastic thought. Avicenna is considered one of the greatest thinkers and medical scholars in history. Often described as the father of early modern medicine, Avicenna's most famous works are The Book of Healing, a philosophical and scientific encyclopedia, and The Canon of Medicine, a medical encyclopedia that became a standard medical text at many medieval European universities and remained in use as late as 1650. Besides philosophy and medicine, Avicenna's corpus includes writings on astronomy, alchemy, geography and geology, psychology, Islamic theology, logic, mathematics, physics, and works of poetry. His philosophy was of the Peripatetic school derived from Aristotelianism, of which he is considered among the greatest proponents within the Muslim world. Avicenna wrote most of his philosophical and scientific works in Arabic but also wrote several key works in Persian; his poetry was written in both languages. Of the 450 works he is believed to have written, around 240 have survived, including 150 on philosophy and 40 on medicine."
+   },
+   "tr": {
+    "name": "İbn-i Sina",
+    "summary": "İbn Sînâ (Farsça: ابن سینا) veya Ebu Ali Sînâ (Farsça: ابوعلی سینا) ya da Batılıların söyleyişiyle Avicenna (y.",
+    "description": "İbn Sînâ (Farsça: ابن سینا) veya Ebu Ali Sînâ (Farsça: ابوعلی سینا) ya da Batılıların söyleyişiyle Avicenna (y. 980 – Haziran 1037), İslam'ın Altın Çağı döneminin en önemli doktorlarından, astronomlarından, düşünürlerinden, yazarlarından ve bilginlerinden biri olarak kabul edilen Fars polimat ve \"polimerik erken tıbbın babası\" olarak bilinen tabiptir. Buhara yakınlarındaki Efşene köyünde (Özbekistan) 980 civarında dünyaya gelmiş ve 1037 yılında Hemedan şehrinde (İran) ölmüştür. Tıp ve felsefe alanına ağırlık verdiği değişik alanlarda 200 kadar kitap yazmıştır. Batılılarca modern Orta Çağ biliminin kurucusu ve tabiplerin önderi olarak bilinen İbn-i Sina, \"Büyük Üstat\" ismiyle de tanınır. Tıp alanında yedi yüzyıl boyunca temel kaynak eser olarak süregelen \"El-Kanun fi't-Tıb\" (Tıbbın Kanunu) adlı kitabı ile ünlenmiş ve bu kitap, değişik Avrupa üniversitelerinde 17. yüzyıl ortalarına kadar tıp biliminde temel eser olarak okutulmuştur. İbn Sînâ, Kuşyar isimli bir tabibin yanında tıp eğitimi almıştır. Değişik konular üzerine, 240'ı günümüze kadar gelen 450 kadar makale yazdı. Elimizdeki yazılarının 150 tanesi felsefe, 40 tanesi de tıp üzerinedir. Eserlerinin en ünlüleri, felsefe ve fen konularını içeren çok geniş bir çalışma olan Kitabü'ş-Şifa (İyileşme Kitabı) ile El-Kanun fi't-Tıb'dır (Tıbbın Kanunu)."
+   },
+   "az": {
+    "name": "İbn Sina",
+    "summary": "İbn Sina (fars. ابوعلی سینا، ابن سینا‎; tam adı: Əbu Əli Hüseyn ibn Abdullah ibn Həsən ibn Əli ibn Sina; latınlaşdırılmış və Avropada qeyd olunan adı – Avisenna; təq.",
+    "description": "İbn Sina (fars. ابوعلی سینا، ابن سینا‎; tam adı: Əbu Əli Hüseyn ibn Abdullah ibn Həsən ibn Əli ibn Sina; latınlaşdırılmış və Avropada qeyd olunan adı – Avisenna; təq. 980[…], Afşona[d], Mavəraünnəhr – 18 iyun 1037, Həmədan) — Orta əsrlər dövrünün ən böyük müdrik təbiblərindən biri. Fars əsilli olduğu ehtimal olunur. Onun ən etibarlı əsərlərindən biri \"Göz həkiminin dəftəri\" əsəridir. Buxara yaxınlığında dünyaya göz açmış, qısa ömründə böyük titullar qazanmışdır: Hüdcətül-Haqq (həqiqət carçısı), Şeyx-ur-Rəis (böyük, müdrik), Harami buzurq (dahi təbib), Şərəf-ül-Mülk (ölkənin ən şərəfli insanı) və s."
+   }
+  }
  },
  {
   "id": "ulug-bey",
-  "name": "Uluğ Bey",
   "birth_year": 1394,
   "death_year": 1449,
   "wikidata_id": "Q486088",
-  "summary": "Uluğ Bey (Özbekçe: Mirzo Ulug'bek, Çağatayca: الغ‌بیگ Ulug Beg; asıl adı: میرزا محمد طاراغایای بن شاه رخ - Mīrzā Muhammed Ṭaragay bin Şāh Ruḫ; 22 Mart 1394 - 27 Ekim 1449), Timur İmparatorluğu'nun 4. sultanıdır.",
-  "description": "Uluğ Bey (Özbekçe: Mirzo Ulug'bek, Çağatayca: الغ‌بیگ Ulug Beg; asıl adı: میرزا محمد طاراغایای بن شاه رخ - Mīrzā Muhammed Ṭaragay bin Şāh Ruḫ; 22 Mart 1394 - 27 Ekim 1449), Timur İmparatorluğu'nun 4. sultanıdır. Matematikçi ve astronomi bilginiydi. Uluğ Bey, trigonometri ve küresel geometri gibi astronomiyle ilişkili matematik alanlarındaki çalışmaları ile tanınır; bunun yanı sıra sanata ve entelektüel etkinliklere duyduğu genel ilgiyle de öne çıkar. Arapça, Farsça, Çağatay Türkçesi ve Moğolcanın yanı sıra sınırlı düzeyde Çince de bildiği düşünülmektedir. Hükümdarlığı döneminde (ilkin vali, ardından fiilen hükümdar olarak), gösterdiği ilgi ve himaye sayesinde Timur İmparatorluğu, Timurlu Rönesansı olarak adlandırılan kültürel yükselişin doruk noktasına ulaşmıştır. Semerkant, babası Şahruh tarafından fethedilerek Uluğ Bey'e verilmiştir. Uluğ Bey, 1424–1429 yılları arasında Semerkant'ta Uluğ Bey Rasathanesi’ni inşa ettirdi. Bu yapı, dönemin bilginleri tarafından İslam dünyasının en seçkin rasathanelerinden biri ve Orta Asya’nın en büyüğü olarak kabul edilmiştir. Uluğ Bey, bu çalışmaları sayesinde birçok araştırmacı tarafından 15. yüzyılın en önemli gözlemsel astronomu olarak değerlendirilmiştir. Ayrıca 1417–1420 yılları arasında Semerkant ve Buhara’da Uluğ Bey Medresesi’ni yaptırarak bu şehirleri Orta Asya’nın önemli ilim ve kültür merkezlerine dönüştürmüştür.",
   "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ulugh%20Beg%2C%20Timurid%20painting%201425-50.jpg?width=480",
-  "content_lang": "tr",
   "birth_place": {
-   "name": "Sultaniye",
+   "name": "Soltaniyeh",
    "lng": 48.7975,
-   "lat": 36.434722
+   "lat": 36.434722,
+   "i18n": {
+    "tr": "Sultaniye",
+    "az": "Sultaniyə"
+   }
   },
   "death_place": {
-   "name": "Semerkant",
+   "name": "Samarkand",
    "lng": 66.975833333,
-   "lat": 39.654722222
+   "lat": 39.654722222,
+   "i18n": {
+    "tr": "Semerkant",
+    "az": "Səmərqənd"
+   }
   },
   "events": [
    {
@@ -999,14 +1854,30 @@
     "event_id": "ulug-bey",
     "type": "ansiklopedi",
     "author": null,
-    "title": "Uluğ Bey",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q486088",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "ulug-bey-enwiki",
+    "event_id": "ulug-bey",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Ulugh Beg",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ulugh_Beg",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "ulug-bey-trwiki",
@@ -1020,26 +1891,64 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "ulug-bey-azwiki",
+    "event_id": "ulug-bey",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Uluqbəy",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/Uluqb%C9%99y",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": false
+  "needs_review": false,
+  "i18n": {
+   "en": {
+    "name": "Ulugh Beg",
+    "summary": "Mīrzā Muhammad Tarāghāy bin Shāhrukh (Chagatay: میرزا محمد تراغای بن شاهرخ; Persian: میرزا محمد طارق بن شاهرخ), better known as Ulugh Beg (Persian: الغ‌بیگ; 22 March 1394 – 27 October 1449), was a Timurid sultan, as well as an astronomer…",
+    "description": "Mīrzā Muhammad Tarāghāy bin Shāhrukh (Chagatay: میرزا محمد تراغای بن شاهرخ; Persian: میرزا محمد طارق بن شاهرخ), better known as Ulugh Beg (Persian: الغ‌بیگ; 22 March 1394 – 27 October 1449), was a Timurid sultan, as well as an astronomer and mathematician. Ulugh Beg was notable for his work in astronomy-related mathematics, such as trigonometry and spherical geometry, as well as his general interests in the arts and intellectual activities. It is thought that he spoke five languages: Arabic, Persian, Chaghatai Turkic, Mongolian, and a small amount of Chinese. During his rule (first as a governor, then outright) the Timurid Empire achieved the cultural peak of the Timurid Renaissance through his attention and patronage. Samarkand was captured and given to Ulugh Beg by his father Shah Rukh. He built the great Ulugh Beg Observatory in Samarkand between 1424 and 1429. It was considered by scholars to have been one of the finest observatories in the Islamic world at the time and the largest in Central Asia. Ulugh Beg was subsequently recognized as the most important observational astronomer from the 15th century by many scholars. He also built the Ulugh Beg Madrasah (1417–1420) in Samarkand and Bukhara, transforming the cities into cultural centers of learning in Central Asia. However, Ulugh Beg's scientific expertise was not matched by his skills in governance."
+   },
+   "tr": {
+    "name": "Uluğ Bey",
+    "summary": "Uluğ Bey (Özbekçe: Mirzo Ulug'bek, Çağatayca: الغ‌بیگ Ulug Beg; asıl adı: میرزا محمد طاراغایای بن شاه رخ - Mīrzā Muhammed Ṭaragay bin Şāh Ruḫ; 22 Mart 1394 - 27 Ekim 1449), Timur İmparatorluğu'nun 4. sultanıdır.",
+    "description": "Uluğ Bey (Özbekçe: Mirzo Ulug'bek, Çağatayca: الغ‌بیگ Ulug Beg; asıl adı: میرزا محمد طاراغایای بن شاه رخ - Mīrzā Muhammed Ṭaragay bin Şāh Ruḫ; 22 Mart 1394 - 27 Ekim 1449), Timur İmparatorluğu'nun 4. sultanıdır. Matematikçi ve astronomi bilginiydi. Uluğ Bey, trigonometri ve küresel geometri gibi astronomiyle ilişkili matematik alanlarındaki çalışmaları ile tanınır; bunun yanı sıra sanata ve entelektüel etkinliklere duyduğu genel ilgiyle de öne çıkar. Arapça, Farsça, Çağatay Türkçesi ve Moğolcanın yanı sıra sınırlı düzeyde Çince de bildiği düşünülmektedir. Hükümdarlığı döneminde (ilkin vali, ardından fiilen hükümdar olarak), gösterdiği ilgi ve himaye sayesinde Timur İmparatorluğu, Timurlu Rönesansı olarak adlandırılan kültürel yükselişin doruk noktasına ulaşmıştır. Semerkant, babası Şahruh tarafından fethedilerek Uluğ Bey'e verilmiştir. Uluğ Bey, 1424–1429 yılları arasında Semerkant'ta Uluğ Bey Rasathanesi’ni inşa ettirdi. Bu yapı, dönemin bilginleri tarafından İslam dünyasının en seçkin rasathanelerinden biri ve Orta Asya’nın en büyüğü olarak kabul edilmiştir. Uluğ Bey, bu çalışmaları sayesinde birçok araştırmacı tarafından 15. yüzyılın en önemli gözlemsel astronomu olarak değerlendirilmiştir. Ayrıca 1417–1420 yılları arasında Semerkant ve Buhara’da Uluğ Bey Medresesi’ni yaptırarak bu şehirleri Orta Asya’nın önemli ilim ve kültür merkezlerine dönüştürmüştür."
+   },
+   "az": {
+    "name": "Uluqbəy",
+    "summary": "Məhəmməd Tarağay Uluqbəy (22 mart 1394, Sultaniyə, Zəncan ostanı – 27 oktyabr 1449, Səmərqənd) — riyaziyyatçı,astronom, böyük alim və hökmdar və Teymurlular sülaləsindən olan dövlət adamı. Teymurləngin nəvəsi idi.",
+    "description": "Məhəmməd Tarağay Uluqbəy (22 mart 1394, Sultaniyə, Zəncan ostanı – 27 oktyabr 1449, Səmərqənd) — riyaziyyatçı,astronom, böyük alim və hökmdar və Teymurlular sülaləsindən olan dövlət adamı. Teymurləngin nəvəsi idi. Atası Şahruxun ölümündən sonra 1447-ci ildən Teymurilər sülaləsinin başçısı olmuşdur. Uluqbəy rəsədxanasında tərtib edilən ulduz kataloqu uzun müddət dünyada ən mötəbər kataloq sayılmışdır. Uluqbəy yaxşı elm adamı olduğu qədər, yaxşı dövlət adamı olmamışdır. Bir neçə döyüşü uduzmuş, 1480-ci ildə Herat əhalisini qılıncdan keçirtmişdir. Üsyan edən oğlunun qoşunlarına məğlub olandan sonra Məkkəyə getməyə icazə verilmiş, ancaq öz sözünün üstündə durmayan oğlu tərəfindən öldürülmüşdür."
+   }
+  }
  },
  {
   "id": "zhang-qian",
-  "name": "Zhang Qian",
   "birth_year": -200,
   "death_year": -114,
   "wikidata_id": "Q197276",
-  "summary": "Zhang Qian (Chinese: 張騫; died c. 114 BC) was a Chinese diplomat, explorer, and politician who served as an imperial envoy to the world outside of China in the late 2nd century BC during the Western Han dynasty.",
-  "description": "Zhang Qian (Chinese: 張騫; died c. 114 BC) was a Chinese diplomat, explorer, and politician who served as an imperial envoy to the world outside of China in the late 2nd century BC during the Western Han dynasty. He was one of the first official diplomats to bring back valuable information about Central Asia, including the Greco-Bactrian remains of the Macedonian Empire as well as the Parthian Empire, to the Han dynasty imperial court, then ruled by Emperor Wu of Han. He played an important pioneering role for the future Chinese conquest of lands west of Xinjiang, including swaths of Central Asia and even lands south of the Hindu Kush (see Protectorate of the Western Regions). This trip created the Silk Road that marked the beginning of globalization between the countries in the east and west. Cultural exchanges along some of these routes had already occurred before Zhang Qian's missions. Zhang Qian's travel was commissioned by Emperor Wu with the major goal of initiating transcontinental trade in the Silk Road, as well as create political protectorates by securing allies. His missions opened trade routes between East and West and exposed different products and kingdoms to each other through trade. Zhang's accounts were compiled by Sima Qian in the 1st century BC.",
   "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/ZhangQianTravels.jpg?width=480",
-  "content_lang": "en",
-  "birth_place": null,
+  "birth_place": {
+   "name": "Chenggu County",
+   "lng": 107.32536,
+   "lat": 33.15405,
+   "i18n": {}
+  },
   "death_place": {
-   "name": "Çin",
+   "name": "China",
    "lng": 105,
-   "lat": 35
+   "lat": 35,
+   "i18n": {
+    "tr": "Çin",
+    "az": "Çin"
+   }
   },
   "events": [],
   "sources": [
@@ -1048,14 +1957,15 @@
     "event_id": "zhang-qian",
     "type": "ansiklopedi",
     "author": null,
-    "title": "Zhang Qian",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q197276",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
    },
    {
     "id": "zhang-qian-enwiki",
@@ -1069,30 +1979,42 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "en"
    }
   ],
-  "needs_review": true
+  "needs_review": false,
+  "i18n": {
+   "en": {
+    "name": "Zhang Qian",
+    "summary": "Zhang Qian (Chinese: 張騫; died c. 114 BC) was a Chinese diplomat, explorer, and politician who served as an imperial envoy to the world outside of China in the late 2nd century BC during the Western Han dynasty.",
+    "description": "Zhang Qian (Chinese: 張騫; died c. 114 BC) was a Chinese diplomat, explorer, and politician who served as an imperial envoy to the world outside of China in the late 2nd century BC during the Western Han dynasty. He was one of the first official diplomats to bring back valuable information about Central Asia, including the Greco-Bactrian remains of the Macedonian Empire as well as the Parthian Empire, to the Han dynasty imperial court, then ruled by Emperor Wu of Han. He played an important pioneering role for the future Chinese conquest of lands west of Xinjiang, including swaths of Central Asia and even lands south of the Hindu Kush (see Protectorate of the Western Regions). This trip created the Silk Road that marked the beginning of globalization between the countries in the east and west. Cultural exchanges along some of these routes had already occurred before Zhang Qian's missions. Zhang Qian's travel was commissioned by Emperor Wu with the major goal of initiating transcontinental trade in the Silk Road, as well as create political protectorates by securing allies. His missions opened trade routes between East and West and exposed different products and kingdoms to each other through trade. Zhang's accounts were compiled by Sima Qian in the 1st century BC."
+   }
+  }
  },
  {
   "id": "ataturk",
-  "name": "Mustafa Kemal Atatürk",
   "birth_year": 1881,
   "death_year": 1938,
   "wikidata_id": "Q5152",
-  "summary": "Mustafa Kemal Atatürk (1881, Selanik - 10 Kasım 1938, İstanbul), Türk mareşal, devlet adamı, yazar, Türk Kurtuluş Savaşı'nın başkomutanı, Türkiye Cumhuriyeti'nin kurucusu ve ilk cumhurbaşkanıdır.",
-  "description": "Mustafa Kemal Atatürk (1881, Selanik - 10 Kasım 1938, İstanbul), Türk mareşal, devlet adamı, yazar, Türk Kurtuluş Savaşı'nın başkomutanı, Türkiye Cumhuriyeti'nin kurucusu ve ilk cumhurbaşkanıdır. Türkiye'yi laik, sanayileşen bir ulusa dönüştüren kapsamlı ilerici reformlar üstlenmiştir. İdeolojik olarak sekülarist ve milliyetçi politikaları ve sosyo-politik teorileri Kemalizm olarak tanınmıştır. I. Dünya Savaşı sırasında Osmanlı ordusunda görev yapan Atatürk, Çanakkale Cephesi'nde miralaylığa, Sina ve Filistin Cephesi'nde ise Yıldırım Ordular Grubu komutanlığına atandı. Savaşın sonunda, Osmanlı İmparatorluğu'nun yenilgisini izleyen Kurtuluş Savaşı ile simgelenen Anadolu Hareketi'ne öncülük ve önderlik etti. Türk Kurtuluş Savaşı sürecinde Ankara Hükûmeti'ni kurdu, Türk Orduları Başkomutanı olarak Sakarya Meydan Muharebesi'ndeki başarısından dolayı 19 Eylül 1921 tarihinde \"gazi\" sanını aldı ve mareşallik rütbesine yükseldi. Askerî ve siyasal eylemleriyle İtilaf Devletleri ve destekçilerine karşı yengi kazandı. Savaşın ardından Cumhuriyet Halk Partisini \"Halk Fırkası\" adıyla kurdu ve ilk genel başkanı oldu. 29 Ekim 1923'te cumhuriyetin ilan edilmesinin ardından cumhurbaşkanı seçildi. 1938'deki ölümüne dek dört dönem bu görevi yürütmüş olup günümüze kadar Türkiye'de en uzun süre cumhurbaşkanlığı yapmış kişidir.",
   "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Atat%C3%BCrk%20Kemal.jpg?width=480",
-  "content_lang": "tr",
   "birth_place": {
-   "name": "Selanik",
+   "name": "Thessaloniki",
    "lng": 22.935555555,
-   "lat": 40.640277777
+   "lat": 40.640277777,
+   "i18n": {
+    "tr": "Selanik",
+    "az": "Saloniki"
+   }
   },
   "death_place": {
-   "name": "Dolmabahçe Sarayı",
+   "name": "Dolmabahçe Palace",
    "lng": 29.001666666,
-   "lat": 41.039444444
+   "lat": 41.039444444,
+   "i18n": {
+    "tr": "Dolmabahçe Sarayı",
+    "az": "Dolmabağça sarayı"
+   }
   },
   "events": [
    {
@@ -1114,14 +2036,30 @@
     "event_id": "ataturk",
     "type": "ansiklopedi",
     "author": null,
-    "title": "Mustafa Kemal Atatürk",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q5152",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "ataturk-enwiki",
+    "event_id": "ataturk",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Mustafa Kemal Atatürk",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Mustafa_Kemal_Atat%C3%BCrk",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "ataturk-trwiki",
@@ -1135,30 +2073,67 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "ataturk-azwiki",
+    "event_id": "ataturk",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Mustafa Kamal Atatürk",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/Mustafa_Kamal_Atat%C3%BCrk",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": true
+  "needs_review": true,
+  "i18n": {
+   "en": {
+    "name": "Mustafa Kemal Atatürk",
+    "summary": "Mustafa Kemal Atatürk (c. 1881 – 10 November 1938) was a Turkish field marshal and statesman who was the founder of the Republic of Turkey and served as its first president from 1923 until his death in 1938.",
+    "description": "Mustafa Kemal Atatürk (c. 1881 – 10 November 1938) was a Turkish field marshal and statesman who was the founder of the Republic of Turkey and served as its first president from 1923 until his death in 1938. He led sweeping reforms, turning Turkey into an industrialising nation. Ideologically a republican, secularist, and nationalist, his policies and socio-political theories became known as Kemalism. Atatürk's personality cult and the Kemalist historiography developed around it have had significant and ongoing influences on Turkey's political culture and historical narrative. Born in Salonica in the Ottoman Empire, Atatürk was early on persecuted for agitating against Sultan Abdul Hamid II's autocracy, joining opposition movements like the Committee of Union and Progress and the Young Turks. He participated in the Young Turk Revolution and the 31 March Incident. His early military career saw him involved in the Italo-Turkish and Balkan Wars. He rose to prominence with his role in the Defence of Gallipoli during World War I. Following his country's defeat after the war, in the Turkish War of Independence he directed the Turkish National Movement in a nationalist resistance against Turkey's partition among the victorious Allied powers."
+   },
+   "tr": {
+    "name": "Mustafa Kemal Atatürk",
+    "summary": "Mustafa Kemal Atatürk (1881, Selanik - 10 Kasım 1938, İstanbul), Türk mareşal, devlet adamı, yazar, Türk Kurtuluş Savaşı'nın başkomutanı, Türkiye Cumhuriyeti'nin kurucusu ve ilk cumhurbaşkanıdır.",
+    "description": "Mustafa Kemal Atatürk (1881, Selanik - 10 Kasım 1938, İstanbul), Türk mareşal, devlet adamı, yazar, Türk Kurtuluş Savaşı'nın başkomutanı, Türkiye Cumhuriyeti'nin kurucusu ve ilk cumhurbaşkanıdır. Türkiye'yi laik, sanayileşen bir ulusa dönüştüren kapsamlı ilerici reformlar üstlenmiştir. İdeolojik olarak sekülarist ve milliyetçi politikaları ve sosyo-politik teorileri Kemalizm olarak tanınmıştır. I. Dünya Savaşı sırasında Osmanlı ordusunda görev yapan Atatürk, Çanakkale Cephesi'nde miralaylığa, Sina ve Filistin Cephesi'nde ise Yıldırım Ordular Grubu komutanlığına atandı. Savaşın sonunda, Osmanlı İmparatorluğu'nun yenilgisini izleyen Kurtuluş Savaşı ile simgelenen Anadolu Hareketi'ne öncülük ve önderlik etti. Türk Kurtuluş Savaşı sürecinde Ankara Hükûmeti'ni kurdu, Türk Orduları Başkomutanı olarak Sakarya Meydan Muharebesi'ndeki başarısından dolayı 19 Eylül 1921 tarihinde \"gazi\" sanını aldı ve mareşallik rütbesine yükseldi. Askerî ve siyasal eylemleriyle İtilaf Devletleri ve destekçilerine karşı yengi kazandı. Savaşın ardından Cumhuriyet Halk Partisini \"Halk Fırkası\" adıyla kurdu ve ilk genel başkanı oldu. 29 Ekim 1923'te cumhuriyetin ilan edilmesinin ardından cumhurbaşkanı seçildi. 1938'deki ölümüne dek dört dönem bu görevi yürütmüş olup günümüze kadar Türkiye'de en uzun süre cumhurbaşkanlığı yapmış kişidir."
+   },
+   "az": {
+    "name": "Mustafa Kamal Atatürk",
+    "summary": "Mustafa Kamal Atatürk (türk. Mustafa Kemal Atatürk) (və ya sadəcə Kemal Atatürk, 1935–1937-ci illərdə Kamâl Atatürk) (ən tezi 1879 və ən geci 1881, Saloniki – 10 noyabr 1938[…], Beşiktaş) — Türkiyə Respublikasının qurucusu və ilk…",
+    "description": "Mustafa Kamal Atatürk (türk. Mustafa Kemal Atatürk) (və ya sadəcə Kemal Atatürk, 1935–1937-ci illərdə Kamâl Atatürk) (ən tezi 1879 və ən geci 1881, Saloniki – 10 noyabr 1938[…], Beşiktaş) — Türkiyə Respublikasının qurucusu və ilk prezidenti, dövlət xadimi, marşal, 1919-cu ildə başlayan Türkiyə İstiqlaliyyət müharibəsinin öndəri. Birinci Dünya müharibəsində Osmanlı ordusunda xidmət edən Atatürk Çanaqqala cəbhəsində polkovnik, Suriya-Fələstin cəbhəsində isə İldırım Ordular qrupunun komandiri vəzifəsinə təyin edildi. Müharibənin sonunda Osmanlı imperiyasının məğlub olmasının ardınca İstiqlaliyyət müharibəsi — Türk Milli Hərəkatına liderlik və öndərlik etdi. Türkiyə İstiqlaliyyət müharibəsi ərəfəsində Ankara Hökumətini qurdu, Türkiyə Ordusunun baş komandanı olaraq Sakarya döyüşündəki qələbəsinə görə 19 sentyabr 1921-ci ildə \"Qazi\" ləqəbini aldı və marşal rütbəsinə yüksəldi. Hərbi və siyasi fəaliyyəti ilə Antanta Dövlətləri və onların dəstəkçiləri üzərində qələbə qazandı. Müharibədən sonra Cümhuriyyət Xalq Partiyasını qurdu və partiyanın ilk sədri oldu. 29 oktyabr 1923-cü ildə prezident seçildi. 1938-ci ildə ölənə qədər dörd hakimiyyət dövründə bu vəzifədə xidmət edərək Türkiyədə ən uzun müddət prezident olmuş şəxs oldu."
+   }
+  }
  },
  {
   "id": "resulzade",
-  "name": "Mehmed Emin Resulzade",
   "birth_year": 1884,
   "death_year": 1955,
   "wikidata_id": "Q361311",
-  "summary": "Mehmed Emin Resulzâde (Azerice: Məhəmməd Əmin Rəsulzadə /mæmˈmæd æˈmin ɾæsulzɑːˈdæ/; 31 Ocak 1884, Bakü - 6 Mart 1955, Ankara), Azeri-Türk gazeteci, siyasetçi, devlet adamı ve Azerbaycan Demokratik Cumhuriyeti'nin kurucusudur.",
-  "description": "Mehmed Emin Resulzâde (Azerice: Məhəmməd Əmin Rəsulzadə /mæmˈmæd æˈmin ɾæsulzɑːˈdæ/; 31 Ocak 1884, Bakü - 6 Mart 1955, Ankara), Azeri-Türk gazeteci, siyasetçi, devlet adamı ve Azerbaycan Demokratik Cumhuriyeti'nin kurucusudur. Resulzâde'nin \"Bir kere yükselen bayrak bir daha inmez\" ifadesi 20. yüzyıl Azerbaycan'ında istiklal harekâtının sloganı haline geldi. Müsavat Partisi'nin kurucu genel başkanı olan Resulzâde, Mayıs-Aralık 1918'de Azerbaycan Millî Şûrası Başkanı olarak görev yapmıştır. Resulzâde Azerbaycan'ın ulusal bağımsızlık hareketine öncülük etmesinden dolayı Azerbaycan tarihinin en önemli şahsiyetleri arasındadır. 1947'de Türkiye'ye gelerek, 1949 yılında Azerbaycan Kültür Derneği'ni kurdu. 6 Mart 1955 tarihinde Ankara'da öldü.",
   "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mahammad%20Amin%20Rasulzade%205.jpg?width=480",
-  "content_lang": "tr",
   "birth_place": {
-   "name": "Novhanı",
+   "name": "Novkhany",
    "lng": 49.78354901,
-   "lat": 40.539167771
+   "lat": 40.539167771,
+   "i18n": {
+    "tr": "Novhanı",
+    "az": "Novxanı"
+   }
   },
   "death_place": {
    "name": "Ankara",
    "lng": 32.83869,
-   "lat": 39.93576
+   "lat": 39.93576,
+   "i18n": {
+    "tr": "Ankara",
+    "az": "Ankara"
+   }
   },
   "events": [],
   "sources": [
@@ -1167,14 +2142,30 @@
     "event_id": "resulzade",
     "type": "ansiklopedi",
     "author": null,
-    "title": "Mehmed Emin Resulzade",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q361311",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "resulzade-enwiki",
+    "event_id": "resulzade",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Mahammad Amin Rasulzade",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Mahammad_Amin_Rasulzade",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "resulzade-trwiki",
@@ -1188,30 +2179,67 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "resulzade-azwiki",
+    "event_id": "resulzade",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Məhəmməd Əmin Rəsulzadə",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/M%C9%99h%C9%99mm%C9%99d_%C6%8Fmin_R%C9%99sulzad%C9%99",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": false
+  "needs_review": false,
+  "i18n": {
+   "en": {
+    "name": "Mahammad Amin Rasulzade",
+    "summary": "Mahammad Amin Akhund Haji Molla Alakbar oghlu Rasulzade (31 January 1884 – 6 March 1955) was an Azerbaijani politician, journalist and the head of the Azerbaijani National Council.",
+    "description": "Mahammad Amin Akhund Haji Molla Alakbar oghlu Rasulzade (31 January 1884 – 6 March 1955) was an Azerbaijani politician, journalist and the head of the Azerbaijani National Council. He is mainly considered the founder of Azerbaijan Democratic Republic in 1918 and the father of its statehood. His expression \"Bir kərə yüksələn bayraq, bir daha enməz!\" (\"The flag once raised shall never fall!\") became the motto of the independence movement in Azerbaijan in the early 20th century. He faced numerous exiles from both Turkey and Iran. During World War II, Rasulzade attempted to form a strategic alliance with Nazi Germany in order to garner support for an independent Azerbaijan."
+   },
+   "tr": {
+    "name": "Mehmed Emin Resulzade",
+    "summary": "Mehmed Emin Resulzâde (Azerice: Məhəmməd Əmin Rəsulzadə /mæmˈmæd æˈmin ɾæsulzɑːˈdæ/; 31 Ocak 1884, Bakü - 6 Mart 1955, Ankara), Azeri-Türk gazeteci, siyasetçi, devlet adamı ve Azerbaycan Demokratik Cumhuriyeti'nin kurucusudur.",
+    "description": "Mehmed Emin Resulzâde (Azerice: Məhəmməd Əmin Rəsulzadə /mæmˈmæd æˈmin ɾæsulzɑːˈdæ/; 31 Ocak 1884, Bakü - 6 Mart 1955, Ankara), Azeri-Türk gazeteci, siyasetçi, devlet adamı ve Azerbaycan Demokratik Cumhuriyeti'nin kurucusudur. Resulzâde'nin \"Bir kere yükselen bayrak bir daha inmez\" ifadesi 20. yüzyıl Azerbaycan'ında istiklal harekâtının sloganı haline geldi. Müsavat Partisi'nin kurucu genel başkanı olan Resulzâde, Mayıs-Aralık 1918'de Azerbaycan Millî Şûrası Başkanı olarak görev yapmıştır. Resulzâde Azerbaycan'ın ulusal bağımsızlık hareketine öncülük etmesinden dolayı Azerbaycan tarihinin en önemli şahsiyetleri arasındadır. 1947'de Türkiye'ye gelerek, 1949 yılında Azerbaycan Kültür Derneği'ni kurdu. 6 Mart 1955 tarihinde Ankara'da öldü."
+   },
+   "az": {
+    "name": "Məhəmməd Əmin Rəsulzadə",
+    "summary": "Məhəmməd Əmin Rəsulzadə (az.-əski. محمد امین رسولزاده‎; tam adı: Məhəmməd Əmin Axund Hacı Molla Ələkbər oğlu Rəsulzadə; 31 yanvar 1884, Novxanı, Bakı qəzası, Bakı quberniyası – 6 mart 1955, Ankara) — Azərbaycan Xalq Cümhuriyyətinin…",
+    "description": "Məhəmməd Əmin Rəsulzadə (az.-əski. محمد امین رسولزاده‎; tam adı: Məhəmməd Əmin Axund Hacı Molla Ələkbər oğlu Rəsulzadə; 31 yanvar 1884, Novxanı, Bakı qəzası, Bakı quberniyası – 6 mart 1955, Ankara) — Azərbaycan Xalq Cümhuriyyətinin banilərindən biri, Azərbaycan Xalq Cümhuriyyəti Milli Şurasının sədri (may-dekabr 1918), ictimai-siyasi və dövlət xadimi. Onun \"Bir kərə yüksələn bayraq bir daha enməz!\" ifadəsi XX əsrdə Azərbaycanda istiqlal hərəkatının şüarı olmuşdur."
+   }
+  }
  },
  {
   "id": "tamar",
-  "name": "Tamar",
   "birth_year": 1166,
   "death_year": 1213,
   "wikidata_id": "Q244007",
-  "summary": "Tamar (Gürcüce: თამარ) (d. 1160 - ö. 1213), Gürcistan Krallığı’nı 1184-1213 arasında yöneten ünlü kraliçedir. Hükümdarlık dönemi \"Gürcistan’ın Altın Çağı\" olarak bilinir. “Krallar kralı” ve \"Kraliçeler kraliçesi” olarak adlandırılmıştır.",
-  "description": "Tamar (Gürcüce: თამარ) (d. 1160 - ö. 1213), Gürcistan Krallığı’nı 1184-1213 arasında yöneten ünlü kraliçedir. Hükümdarlık dönemi \"Gürcistan’ın Altın Çağı\" olarak bilinir. “Krallar kralı” ve \"Kraliçeler kraliçesi” olarak adlandırılmıştır. Bagrationi (Bagratlılar) hanedanından gelir. Bazı dillerde Tamara olarak da yazılır.",
   "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Betania%20Monastery%2C%20Tamar.jpg?width=480",
-  "content_lang": "tr",
   "birth_place": {
-   "name": "Mtsheta",
+   "name": "Mtskheta",
    "lng": 44.719444444,
-   "lat": 41.843055555
+   "lat": 41.843055555,
+   "i18n": {
+    "tr": "Mtsheta",
+    "az": "Mtsxeta"
+   }
   },
   "death_place": {
    "name": "Tabakhmela",
    "lng": 44.756111111,
-   "lat": 41.651111111
+   "lat": 41.651111111,
+   "i18n": {
+    "tr": "Tabakhmela",
+    "az": "Tabaxmela"
+   }
   },
   "events": [
    {
@@ -1225,14 +2253,30 @@
     "event_id": "tamar",
     "type": "ansiklopedi",
     "author": null,
-    "title": "Tamar",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q244007",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "tamar-enwiki",
+    "event_id": "tamar",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Tamar of Georgia",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tamar_of_Georgia",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "tamar-trwiki",
@@ -1246,21 +2290,50 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "tamar-azwiki",
+    "event_id": "tamar",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Böyük Tamara",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/B%C3%B6y%C3%BCk_Tamara",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": true
+  "needs_review": true,
+  "i18n": {
+   "en": {
+    "name": "Tamar of Georgia",
+    "summary": "Tamar the Great (Georgian: თამარ მეფე, romanized: tamar mepe [ˈt̪ʰämäɾ ˈme̞pʰe̞], lit. 'King Tamar'; c. 1160 or c.",
+    "description": "Tamar the Great (Georgian: თამარ მეფე, romanized: tamar mepe [ˈt̪ʰämäɾ ˈme̞pʰe̞], lit. 'King Tamar'; c. 1160 or c. 1166 – 18 January 1213) reigned as the Queen of Georgia from 1184 to 1213, presiding over the apex of the Georgian Golden Age. A member of the Bagrationi dynasty, her position as the first woman to rule Georgia in her own right was emphasized by the title mepe (\"King\"), afforded to Tamar in the medieval Georgian sources. Tamar was proclaimed heir and co-ruler by her reigning father George III in 1178, but she faced significant opposition from the aristocracy upon her ascension to full ruling powers after George's death. Tamar was successful in neutralizing this opposition and embarked on an energetic foreign policy aided by the decline of the hostile Seljuk Turks. Relying on a powerful military elite, Tamar was able to build on the successes of her predecessors to consolidate an empire which dominated the Caucasus until its collapse under the Mongol attacks within two decades after Tamar's death. Tamar was married twice, her first union being, from 1185 to 1187, to Yury Bogolyubsky of the Grand Principality of Vladimir, whom she divorced and expelled from the country, defeating his subsequent coup attempts."
+   },
+   "tr": {
+    "name": "Tamar",
+    "summary": "Tamar (Gürcüce: თამარ) (d. 1160 - ö. 1213), Gürcistan Krallığı’nı 1184-1213 arasında yöneten ünlü kraliçedir. Hükümdarlık dönemi \"Gürcistan’ın Altın Çağı\" olarak bilinir. “Krallar kralı” ve \"Kraliçeler kraliçesi” olarak adlandırılmıştır.",
+    "description": "Tamar (Gürcüce: თამარ) (d. 1160 - ö. 1213), Gürcistan Krallığı’nı 1184-1213 arasında yöneten ünlü kraliçedir. Hükümdarlık dönemi \"Gürcistan’ın Altın Çağı\" olarak bilinir. “Krallar kralı” ve \"Kraliçeler kraliçesi” olarak adlandırılmıştır. Bagrationi (Bagratlılar) hanedanından gelir. Bazı dillerde Tamara olarak da yazılır."
+   },
+   "az": {
+    "name": "Tamara",
+    "summary": "Böyük Tamara (gürc. თამარ მეფე Tamar Mepe) və ya Tamar (1166, Mtsxeta – 18 yanvar 1213, Tabaxmela) — 1184–1213-cü illərdə hakimiyyət sürmüş Gürcüstan hökmdarı. Gürcüstanın Qızıl Dövrünü idarə edib.",
+    "description": "Böyük Tamara (gürc. თამარ მეფე Tamar Mepe) və ya Tamar (1166, Mtsxeta – 18 yanvar 1213, Tabaxmela) — 1184–1213-cü illərdə hakimiyyət sürmüş Gürcüstan hökmdarı. Gürcüstanın Qızıl Dövrünü idarə edib. Baqrationilər sülaləsinin üzvü olan Tamaranın təkbaşına Gürcüstanı idarə edən ilk qadın olması orta əsr gürcü mənbələrində, əsasən, Tamara üçün istifadə edilən mep'e (\"kral\") titulu ilə qeyd edilib. Tamara 1178-ci ildə hakimiyyətdə olan atası III Georgi tərəfindən varis və hakimiyyət şəriki elan edildi, ancaq Georginin ölümündən sonra hökmdar səlahiyyətlərinə tamamilə sahib olduğu zaman zadəganların böyük bir müxalifəti ilə qarşılaşdı. Tamara onları neytrallaşdırmağa nail oldu və düşmən səlcuq türklərinin zəifləməsi ilə dəstəklənən fəal xarici siyasətə başladı. Güclü hərbi elitaya etibar edən Tamara Qafqazda ağalıq edən imperiyanı gücləndirməkdə öz sələflərinin uğurlarını davam etdirdi və bu imperiya onun ölümündən sonrakı iki onillikdə monqol hücumları ilə tənəzzül etdi. Tamara iki dəfə ailə həyatı qurub. Birinci əri olan Böyük Vladimir Knyazlığının şahzadəsi Yuri ilə 1185–1187-ci illərdə evli olub. O, Yuridən boşanıb, onu Gürcüstandan sürgün edib və daha sonra onun dövlət çevrilişi cəhdlərinin qarşısını alıb. İkinci əri kimi Tamara Alaniya şahzadəsi David Soslanı seçib və Daviddən iki övladı — sıra ilə Gürcüstan taxtının sahibləri olan Georgi və Rusudan doğulub."
+   }
+  }
  },
  {
   "id": "alparslan",
-  "name": "Alp Arslan",
   "birth_year": 1029,
   "death_year": 1072,
   "wikidata_id": "Q200193",
-  "summary": "Alp Arslan (Fars alfabesi ile yazımı: آلپ ارسلان ; y. 1029-1030 - 24 Kasım 1072), Büyük Selçuklu İmparatorluğu'nun ikinci sultanı olan ve Türklerin Orta Asya'dan Anadolu'ya gelişlerini ve mücadelesini yöneten askeri komutan ve hükümdardır.",
-  "description": "Alp Arslan (Fars alfabesi ile yazımı: آلپ ارسلان ; y. 1029-1030 - 24 Kasım 1072), Büyük Selçuklu İmparatorluğu'nun ikinci sultanı olan ve Türklerin Orta Asya'dan Anadolu'ya gelişlerini ve mücadelesini yöneten askeri komutan ve hükümdardır. 1071 yılında Bizans İmparatorluğu hükümdarı Romen Diyojen ile yaptığı Malazgirt Muharebesi'ndeki başarısından dolayı tanınmaktadır.",
   "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Alp%20Arslan%20on%20throne%20Majma%20al-Tawarikh%20by%20Hafiz%20Abru%20%28cropped%29.png?width=480",
-  "content_lang": "tr",
   "birth_place": null,
   "death_place": null,
   "events": [
@@ -1275,14 +2348,30 @@
     "event_id": "alparslan",
     "type": "ansiklopedi",
     "author": null,
-    "title": "Alp Arslan",
+    "title": null,
     "year": null,
     "publisher": "Wikidata",
     "url": "https://www.wikidata.org/wiki/Q200193",
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": null
+   },
+   {
+    "id": "alparslan-enwiki",
+    "event_id": "alparslan",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Alp Arslan",
+    "year": null,
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Alp_Arslan",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "en"
    },
    {
     "id": "alparslan-trwiki",
@@ -1296,9 +2385,42 @@
     "pages": null,
     "reliability": 1,
     "accessed_at": "2026-11-05",
-    "needs_review": false
+    "needs_review": false,
+    "lang": "tr"
+   },
+   {
+    "id": "alparslan-azwiki",
+    "event_id": "alparslan",
+    "type": "ansiklopedi",
+    "author": null,
+    "title": "Alp Arslan",
+    "year": null,
+    "publisher": "Vikipediya",
+    "url": "https://az.wikipedia.org/wiki/Alp_Arslan",
+    "pages": null,
+    "reliability": 1,
+    "accessed_at": "2026-11-05",
+    "needs_review": false,
+    "lang": "az"
    }
   ],
-  "needs_review": true
+  "needs_review": true,
+  "i18n": {
+   "en": {
+    "name": "Alp Arslan",
+    "summary": "Alp Arslan (Persian: آلپ ارسلان; full name: Muhammad Alp Arslan bin Dawud Chaghri) (20 January 1029 – 24 November 1072) was the son of Chaghri Beg, a co-founder of the Seljuk Empire.",
+    "description": "Alp Arslan (Persian: آلپ ارسلان; full name: Muhammad Alp Arslan bin Dawud Chaghri) (20 January 1029 – 24 November 1072) was the son of Chaghri Beg, a co-founder of the Seljuk Empire. In 1063, he defeated his rivals to ascend the throne, ruling as the Seljuk sultan until his death in 1072. He had previously served as the Seljuk malik of Khorasan from 1060 to 1063. Renowned for his justice, great military leadership and prowess as a warrior , Alp Arslan earned such epithets as Sultan al-Adil (The Just Sultan), Abu'l Feth (Father of Conquests), Sultan al-Azam (Greatest Sultan), Abu Shuja (Father of Courage), and Adud al-Dawla (Protector of the State). Additionally, due to the vastness of the territories he ruled, he was also known as Sultan al-Alem (Sultan of the World). Alp Arslan greatly expanded Seljuk territories and consolidated his power, defeating rivals to the south, east, and northwest."
+   },
+   "tr": {
+    "name": "Alp Arslan",
+    "summary": "Alp Arslan (Fars alfabesi ile yazımı: آلپ ارسلان ; y. 1029-1030 - 24 Kasım 1072), Büyük Selçuklu İmparatorluğu'nun ikinci sultanı olan ve Türklerin Orta Asya'dan Anadolu'ya gelişlerini ve mücadelesini yöneten askeri komutan ve hükümdardır.",
+    "description": "Alp Arslan (Fars alfabesi ile yazımı: آلپ ارسلان ; y. 1029-1030 - 24 Kasım 1072), Büyük Selçuklu İmparatorluğu'nun ikinci sultanı olan ve Türklerin Orta Asya'dan Anadolu'ya gelişlerini ve mücadelesini yöneten askeri komutan ve hükümdardır. 1071 yılında Bizans İmparatorluğu hükümdarı Romen Diyojen ile yaptığı Malazgirt Muharebesi'ndeki başarısından dolayı tanınmaktadır."
+   },
+   "az": {
+    "name": "Alp Arslan",
+    "summary": "Alp Arslan (20 yanvar 1029 – 15 dekabr 1072) — Səlcuq sultanı.",
+    "description": "Alp Arslan (20 yanvar 1029 – 15 dekabr 1072) — Səlcuq sultanı."
+   }
+  }
  }
 ]

@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { useEra } from "@/lib/use-era";
 import { useId, useMemo, useRef, useState } from "react";
 import { CATEGORY_META } from "@/lib/categories";
 import { createSearch, type SearchResult } from "@/lib/search";
@@ -12,7 +13,7 @@ type Props = { events: EventSummary[]; people: Person[]; cities: City[] };
 
 export function SearchBox({ events, people, cities }: Props) {
   const t = useTranslations();
-  const era = { bc: t("era.bc"), ad: t("era.ad") };
+  const era = useEra();
   const listId = useId();
   const search = useMemo(() => createSearch(events, people, cities), [events, people, cities]);
   const [query, setQuery] = useState("");

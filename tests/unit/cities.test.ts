@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import { applyRulerOverrides, mergeRulers, periodConfirmed, pointInGeometry, rulerAt, type AreaFeature, type AreaGeometry } from "../../scripts/geo-utils";
 import cities from "../../data/seed/cities.json";
 import { distanceKm, eventsNearCity, nameAtYear, rulerAtYear } from "@/lib/cities";
-import { citySchema, type EventSummary } from "@/lib/types";
+import { storedCitySchema, type EventSummary } from "@/lib/types";
 
 const square = (x: number, y: number, size = 1): AreaGeometry => ({
   type: "Polygon",
@@ -124,7 +124,7 @@ describe("city helpers", () => {
 
 describe("cities seed", () => {
   it("satisfies the schema with unique ids", () => {
-    for (const c of cities) citySchema.parse(c);
+    for (const c of cities) storedCitySchema.parse(c);
     expect(new Set(cities.map((c) => c.id)).size).toBe(cities.length);
     expect(cities.length).toBeGreaterThanOrEqual(30);
   });

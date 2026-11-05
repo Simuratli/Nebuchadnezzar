@@ -2,6 +2,7 @@
 
 import type { Map as MlMap } from "maplibre-gl";
 import { useTranslations } from "next-intl";
+import { useEra } from "@/lib/use-era";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { MapPane } from "@/components/map/MapPane";
 import { CityPanel } from "@/components/panels/CityPanel";
@@ -17,6 +18,7 @@ import { SearchBox } from "@/components/panels/SearchBox";
 import { SidePanel } from "@/components/panels/SidePanel";
 import { TourPlayer } from "@/components/panels/TourPlayer";
 import { ToursPanel } from "@/components/panels/ToursPanel";
+import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { TimeBar, usePlayback } from "@/components/timeline/TimeBar";
 import { isCorrectedYear } from "@/lib/corrections";
@@ -75,12 +77,12 @@ function useSyncedMaps(left: MlMap | null, right: MlMap | null) {
 }
 
 function YearBadge({ yearKey, label }: { yearKey: "year" | "year2"; label: string }) {
-  const t = useTranslations("era");
+  const era = useEra();
   const year = useAtlas((s) => s[yearKey]);
   return (
     <div className="pointer-events-none absolute left-2 top-2 z-10 rounded bg-surface/90 px-2 py-1 text-sm shadow">
       <span className="text-muted">{label}: </span>
-      <span className="font-serif font-semibold">{formatYear(year, { bc: t("bc"), ad: t("ad") })}</span>
+      <span className="font-serif font-semibold">{formatYear(year, era)}</span>
     </div>
   );
 }
@@ -104,7 +106,7 @@ export function AtlasApp({ data }: { data: AtlasData }) {
   const [boundary, setBoundary] = useState<{ entry: BoundaryEntry | null; failed: boolean }>({ entry: null, failed: false });
   const onBoundaryChange = useCallback((entry: BoundaryEntry | null, failed: boolean) => setBoundary({ entry, failed }), []);
 
-  const era = { bc: t("era.bc"), ad: t("era.ad") };
+  const era = useEra();
   const boundaryNote = boundary.failed
     ? t("timeline.boundaryError")
     : boundary.entry
@@ -120,11 +122,15 @@ export function AtlasApp({ data }: { data: AtlasData }) {
       </a>
       <header className="z-40 flex flex-wrap items-center gap-2 border-b border-line bg-surface px-3 py-2 md:px-4">
         <h1 className="font-serif text-xl font-semibold">{t("app.title")}</h1>
-        <div className="order-last w-full md:order-none md:ml-4 md:w-auto md:flex-1">
+        {/* Phones: title and settings, then the menu, then search. Desktop: one row. */}
+        <div className="order-3 w-full md:order-1 md:ml-4 md:w-auto md:flex-1">
           <SearchBox events={data.events} people={data.people} cities={data.cities} />
         </div>
-        <div className="ml-auto flex min-w-0 items-center gap-2">
+        <div className="order-2 w-full min-w-0 md:ml-auto md:w-auto">
           <NavButtons />
+        </div>
+        <div className="order-1 ml-auto flex shrink-0 items-center gap-2 md:order-3 md:ml-0">
+          <LanguageSwitcher />
           <ThemeToggle />
         </div>
       </header>

@@ -2,9 +2,11 @@
 
 import type { Map as MlMap } from "maplibre-gl";
 import { useTranslations } from "next-intl";
+import { useEra } from "@/lib/use-era";
 import { useEffect, useMemo, useState } from "react";
 import { getManifest } from "@/lib/boundaries";
-import { mapCaption, mapCitation, type MapCaptionInput } from "@/lib/map-citation";
+import type { CitationText } from "@/lib/citation/common";
+import { mapCaption, mapCitation, type MapCaptionInput, type MapCaptionLanguage, type MapCaptionText } from "@/lib/map-citation";
 import { canvasToBlob, canvasToPdf, composeMapImage, downloadBlob } from "@/lib/map-export";
 import { CATEGORIES, type Category } from "@/lib/types";
 import { boundaryForYear, type BoundaryEntry } from "@/lib/year";
@@ -35,8 +37,15 @@ export function ExportPanel({ maps }: { maps: (MlMap | null)[] }) {
     }),
     [year, year2, compare, manifest],
   );
-  const preview = mapCaption(caption);
-  const citation = mapCitation(caption);
+  const era = useEra();
+  const lang: MapCaptionLanguage = {
+    caption: t.raw("mapCaption") as MapCaptionText,
+    citation: t.raw("citationFormat") as CitationText,
+    era,
+    appTitle: t("app.title"),
+  };
+  const preview = mapCaption(caption, lang);
+  const citation = mapCitation(caption, lang);
 
   const fileBase = `zaman-atlasi-${year}${compare ? `-${year2}` : ""}`;
 
@@ -47,7 +56,7 @@ export function ExportPanel({ maps }: { maps: (MlMap | null)[] }) {
     try {
       const labels = Object.fromEntries(CATEGORIES.map((c) => [c, t(`categories.${c}`)])) as Record<Category, string>;
       // The URL is read at export time, because the address bar updates after a short delay.
-      const canvas = await composeMapImage(ready, { ...caption, url: window.location.href }, labels);
+      const canvas = await composeMapImage(ready, { ...caption, url: window.location.href }, lang, labels);
       const blob = format === "png" ? await canvasToBlob(canvas, "image/png") : await canvasToPdf(canvas);
       downloadBlob(`${fileBase}.${format}`, blob);
       setStatus("idle");
@@ -58,7 +67,7 @@ export function ExportPanel({ maps }: { maps: (MlMap | null)[] }) {
 
   const copy = async () => {
     try {
-      await navigator.clipboard.writeText(mapCitation({ ...caption, url: window.location.href }));
+      await navigator.clipboard.writeText(mapCitation({ ...caption, url: window.location.href }, lang));
       setStatus("copied");
     } catch {
       setStatus("error");

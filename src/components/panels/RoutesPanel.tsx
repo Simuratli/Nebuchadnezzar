@@ -1,13 +1,14 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { useEra } from "@/lib/use-era";
 import type { HistoricalRoute, Person } from "@/lib/types";
 import { formatYear, formatYearRange } from "@/lib/year";
 import { useAtlas } from "@/store/atlas";
 
 export function RoutesPanel({ routes, people }: { routes: HistoricalRoute[]; people: Person[] }) {
   const t = useTranslations();
-  const era = { bc: t("era.bc"), ad: t("era.ad") };
+  const era = useEra();
   const routeId = useAtlas((s) => s.routeId);
   const setRoute = useAtlas((s) => s.setRoute);
   const replayRoute = useAtlas((s) => s.replayRoute);

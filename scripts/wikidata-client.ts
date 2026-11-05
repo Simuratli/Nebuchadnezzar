@@ -64,6 +64,9 @@ export function diskMap<T>(name: string) {
 export const wikiUri = (title: string) =>
   `<https://en.wikipedia.org/wiki/${encodeURIComponent(title.replaceAll(" ", "_")).replace(/%3A/g, ":").replace(/%2C/g, ",").replace(/'/g, "%27")}>`;
 
+/** Publisher name for an article, as readers of that language know it. */
+export const WIKI_PUBLISHER = { en: "Wikipedia", tr: "Vikipedi", az: "Vikipediya" } as const;
+
 export const wikiUrl = (lang: string, title: string) => `https://${lang}.wikipedia.org/wiki/${encodeURIComponent(title.replaceAll(" ", "_"))}`;
 
 type ExtractResponse = {
@@ -75,13 +78,19 @@ type ExtractResponse = {
 };
 
 /** Fetches lead sections in batches of 20 (the API limit for exintro). */
-export async function fetchExtracts(lang: "tr" | "en", titles: string[]): Promise<Map<string, string>> {
+export async function fetchExtracts(lang: "tr" | "en" | "az", titles: string[]): Promise<Map<string, string>> {
   const cache = diskMap<string>(`extracts-${lang}.json`);
   const todo = titles.filter((t) => cache.data[t] === undefined);
   for (let i = 0; i < todo.length; i += 20) {
     const batch = todo.slice(i, i + 20);
     const url = `https://${lang}.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&exintro=1&explaintext=1&exlimit=20&redirects=1&maxlag=5&titles=${encodeURIComponent(batch.join("|"))}`;
-    const q = (await getJson<ExtractResponse>(url)).query;
+    let q = (await getJson<ExtractResponse>(url)).query;
+    // A maxlag or throttling reply has no query block; caching it would record empty texts.
+    for (let tries = 0; !q && tries < 4; tries++) {
+      await sleep(15_000 * (tries + 1));
+      q = (await getJson<ExtractResponse>(url)).query;
+    }
+    if (!q) throw new Error(`${lang}.wikipedia: no result for batch at ${i}`);
     const byTitle = new Map(Object.values(q?.pages ?? {}).map((p) => [p.title, p.extract]));
     for (const t of batch) {
       let cur = t;
@@ -90,7 +99,7 @@ export async function fetchExtracts(lang: "tr" | "en", titles: string[]): Promis
       cache.data[t] = byTitle.get(cur) ?? "";
     }
     cache.save();
-    await sleep(300);
+    await sleep(1000);
   }
   return new Map(titles.filter((t) => cache.data[t]).map((t) => [t, cache.data[t]]));
 }

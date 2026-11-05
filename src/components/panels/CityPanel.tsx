@@ -1,6 +1,7 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
+import { useEra } from "@/lib/use-era";
 import { useCallback, useMemo } from "react";
 import { eventsNearCity, nameAtYear, NEARBY_KM } from "@/lib/cities";
 import type { City, EventSummary } from "@/lib/types";
@@ -12,7 +13,8 @@ import { SourceList } from "./SourceList";
 
 export function CityPanel({ cities, events }: { cities: City[]; events: EventSummary[] }) {
   const t = useTranslations();
-  const era = { bc: t("era.bc"), ad: t("era.ad") };
+  const locale = useLocale();
+  const era = useEra();
   const cityId = useAtlas((s) => s.cityId);
   const year = useAtlas((s) => s.year);
   const selectCity = useAtlas((s) => s.selectCity);
@@ -35,6 +37,11 @@ export function CityPanel({ cities, events }: { cities: City[]; events: EventSum
         <p data-testid="city-name-now" className="mt-1 text-sm text-muted">
           {t("city.nameInYear", { year: formatYear(year, era), name: nameNow })}
         </p>
+        {city.content_lang !== locale && (
+          <p data-testid="language-note" className="mt-3 rounded bg-surface-2 px-3 py-2 text-sm">
+            {t("event.languageNote", { lang: new Intl.DisplayNames([locale], { type: "language" }).of(city.content_lang) ?? city.content_lang })}
+          </p>
+        )}
         {city.summary && <p className="mt-3 leading-relaxed">{city.summary}</p>}
 
         <section className="mt-5">

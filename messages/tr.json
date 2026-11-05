@@ -4,11 +4,13 @@
     "description": "Kafkasya, Osmanlı coğrafyası ve İpek Yolu için kaynaklı, etkileşimli tarih haritası.",
     "loading": "Harita yükleniyor…",
     "skipToTimeline": "Zaman çizelgesine atla",
-    "close": "Kapat"
+    "close": "Kapat",
+    "language": "Dil"
   },
   "era": {
     "bc": "MÖ",
-    "ad": "MS"
+    "ad": "MS",
+    "position": "prefix"
   },
   "theme": {
     "toggle": "Temayı değiştir",
@@ -55,7 +57,7 @@
     "error": "Olay yüklenemedi.",
     "retry": "Yeniden dene",
     "needsReview": "Bu kayıt henüz gözden geçirilmedi.",
-    "languageNote": "Metin dili: {lang}. Türkçe çevirisi bekleniyor.",
+    "languageNote": "Henüz Türkçesi yok, {lang} gösteriliyor.",
     "imageCredit": "Görsel: Wikimedia Commons",
     "wikiLicense": "Metin Vikipedi'den alınmıştır (CC BY-SA).",
     "noSummary": "Bu olay için henüz özet yok.",
@@ -108,8 +110,8 @@
     "showMore": "Daha fazla göster"
   },
   "search": {
-    "label": "Olay veya kişi ara",
-    "placeholder": "Olay veya kişi ara…",
+    "label": "Olay, kişi veya şehir ara",
+    "placeholder": "Olay, kişi, şehir ara…",
     "noResults": "Sonuç bulunamadı",
     "person": "Kişi",
     "event": "Olay",
@@ -204,5 +206,37 @@
     "warning": "Kaynak veri seti bu bölgeyi 1800–1920 için hatalı gösterdiğinden elle düzeltildi. Çizgiler tarihî sınır değil, bugünkü idari sınırlardan türetildi; tarihler antlaşmalara dayanır. Uzman kontrolü bekliyor.",
     "periods": "Bu bölgenin dönemleri",
     "timelineNote": "Güney Kafkasya düzeltildi"
+  },
+  "citationFormat": {
+    "noDate": "t.y.",
+    "pages": "s. {pages}.",
+    "retrieved": "{date} tarihinde {url} adresinden erişildi.",
+    "accessed": "Erişim {date}.",
+    "date": "{day} {month} {year}",
+    "months": [
+      "Ocak",
+      "Şubat",
+      "Mart",
+      "Nisan",
+      "Mayıs",
+      "Haziran",
+      "Temmuz",
+      "Ağustos",
+      "Eylül",
+      "Ekim",
+      "Kasım",
+      "Aralık"
+    ]
+  },
+  "mapCaption": {
+    "yearOne": "{year} yılı",
+    "yearTwo": "{year} ve {year2} yılları",
+    "kind": "Harita",
+    "boundaryOne": "Sınır haritası: {year}",
+    "boundaryTwo": "Sınır haritaları: {year} ve {year2}",
+    "unknown": "bilinmiyor",
+    "attribution": "Taban harita: OpenFreeMap, OpenMapTiles, OpenStreetMap katkıcıları. Sınırlar: historical-basemaps (A. Ourednik ve katkıcılar, GPL-3.0), yaklaşıktır.",
+    "correction": "Güney Kafkasya (1800–1920): elle düzeltilmiştir; bugünkü idari sınırlardan (Natural Earth) türetilmiş, antlaşmalarla tarihlendirilmiştir ve yaklaşıktır.",
+    "citationLabel": "Atıf"
   }
 }

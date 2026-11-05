@@ -1,6 +1,6 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useEra } from "@/lib/use-era";
 import { CATEGORY_META } from "@/lib/categories";
 import type { EventSummary } from "@/lib/types";
 import { formatYearRange } from "@/lib/year";
@@ -8,8 +8,7 @@ import { useAtlas } from "@/store/atlas";
 
 /** Compact clickable event list used by the city and person pages. */
 export function EventList({ events, testId, tag }: { events: EventSummary[]; testId: string; tag?: (e: EventSummary) => string | null }) {
-  const t = useTranslations("era");
-  const era = { bc: t("bc"), ad: t("ad") };
+  const era = useEra();
   const openEvent = useAtlas((s) => s.openEvent);
   return (
     <ul className="divide-y divide-line text-sm">

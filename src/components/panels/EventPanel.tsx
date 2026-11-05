@@ -1,6 +1,7 @@
 "use client";
 
 import { useLocale, useTranslations } from "next-intl";
+import { useEra } from "@/lib/use-era";
 import { useCallback, useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import { CATEGORY_META } from "@/lib/categories";
@@ -21,6 +22,7 @@ const commonsPage = (imageUrl: string) => {
 export function EventPanel({ people }: { people: Person[] }) {
   const t = useTranslations();
   const locale = useLocale();
+  const era = useEra();
   const eventId = useAtlas((s) => s.eventId);
   const selectEvent = useAtlas((s) => s.selectEvent);
   const selectPerson = useAtlas((s) => s.selectPerson);
@@ -31,7 +33,7 @@ export function EventPanel({ people }: { people: Person[] }) {
     if (!eventId) return;
     const controller = new AbortController();
     setState({ status: "loading" });
-    fetch(`/api/events/${encodeURIComponent(eventId)}`, { signal: controller.signal })
+    fetch(`/api/events/${encodeURIComponent(eventId)}?locale=${locale}`, { signal: controller.signal })
       .then((r) => {
         if (!r.ok) throw new Error(`HTTP ${r.status}`);
         return r.json() as Promise<EventDetail>;
@@ -41,12 +43,11 @@ export function EventPanel({ people }: { people: Person[] }) {
         if (e.name !== "AbortError") setState({ status: "error" });
       });
     return () => controller.abort();
-  }, [eventId, attempt]);
+  }, [eventId, attempt, locale]);
 
   const close = useCallback(() => selectEvent(null), [selectEvent]);
 
   if (!eventId) return null;
-  const era = { bc: t("era.bc"), ad: t("era.ad") };
   const langName = (code: string) => new Intl.DisplayNames([locale], { type: "language" }).of(code) ?? code;
 
   return (
@@ -76,7 +77,11 @@ export function EventPanel({ people }: { people: Person[] }) {
             {state.event.needs_review && (
               <p data-testid="needs-review" className="mt-3 rounded bg-warn-bg px-3 py-2 text-sm text-warn-ink">
                 {t("event.needsReview")}
-                {state.event.content_lang !== "tr" && <> {t("event.languageNote", { lang: langName(state.event.content_lang) })}</>}
+              </p>
+            )}
+            {state.event.content_lang !== locale && (
+              <p data-testid="language-note" className="mt-3 rounded bg-surface-2 px-3 py-2 text-sm">
+                {t("event.languageNote", { lang: langName(state.event.content_lang) })}
               </p>
             )}
 
