@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { MapPane } from "@/components/map/MapPane";
+import { CollectionPanel } from "@/components/panels/CollectionPanel";
 import { EventPanel } from "@/components/panels/EventPanel";
 import { FiltersPanel } from "@/components/panels/FiltersPanel";
 import { NavButtons } from "@/components/panels/NavButtons";
@@ -86,6 +87,11 @@ export function AtlasApp({ data }: { data: AtlasData }) {
         {sidePanel === "filters" && (
           <SidePanel title={t("filters.title")}>
             <FiltersPanel events={events} />
+          </SidePanel>
+        )}
+        {sidePanel === "collection" && (
+          <SidePanel title={t("collection.title")}>
+            <CollectionPanel events={data.events} />
           </SidePanel>
         )}
         <EventPanel />

@@ -7,6 +7,7 @@ import { CATEGORY_META } from "@/lib/categories";
 import type { EventDetail } from "@/lib/types";
 import { formatYearRange } from "@/lib/year";
 import { useAtlas } from "@/store/atlas";
+import { CollectionControls } from "./CollectionControls";
 import { SourceList } from "./SourceList";
 
 type State = { status: "loading" } | { status: "error" } | { status: "ready"; event: EventDetail };
@@ -134,6 +135,7 @@ export function EventPanel() {
             </div>
             {state.event.description && <p className="mt-2 text-xs text-muted">{t("event.wikiLicense")}</p>}
 
+            <CollectionControls eventId={state.event.id} />
             <SourceList sources={state.event.sources} />
 
           </article>
