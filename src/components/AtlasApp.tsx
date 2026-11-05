@@ -1,12 +1,16 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { MapPane } from "@/components/map/MapPane";
 import { EventPanel } from "@/components/panels/EventPanel";
+import { FiltersPanel } from "@/components/panels/FiltersPanel";
+import { NavButtons } from "@/components/panels/NavButtons";
+import { SearchBox } from "@/components/panels/SearchBox";
+import { SidePanel } from "@/components/panels/SidePanel";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { TimeBar, usePlayback } from "@/components/timeline/TimeBar";
-import { eventsAtYear } from "@/lib/filters";
+import { eventsAtYear, filterEvents } from "@/lib/filters";
 import type { EventSummary, HistoricalRoute, Person, Tour } from "@/lib/types";
 import { serializeUrlState } from "@/lib/url-state";
 import { formatYear, type BoundaryEntry } from "@/lib/year";
@@ -44,7 +48,9 @@ export function AtlasApp({ data }: { data: AtlasData }) {
 
   const year = useAtlas((s) => s.year);
   const windowYears = useAtlas((s) => s.windowYears);
-  const events = data.events;
+  const filters = useAtlas((s) => s.filters);
+  const sidePanel = useAtlas((s) => s.sidePanel);
+  const events = useMemo(() => filterEvents(data.events, filters), [data.events, filters]);
   const visibleCount = eventsAtYear(events, year, windowYears).length;
 
   const [boundary, setBoundary] = useState<{ entry: BoundaryEntry | null; failed: boolean }>({ entry: null, failed: false });
@@ -65,7 +71,11 @@ export function AtlasApp({ data }: { data: AtlasData }) {
       </a>
       <header className="z-40 flex flex-wrap items-center gap-2 border-b border-line bg-surface px-3 py-2 md:px-4">
         <h1 className="font-serif text-xl font-semibold">{t("app.title")}</h1>
-        <div className="ml-auto flex items-center gap-2">
+        <div className="order-last w-full md:order-none md:ml-4 md:w-auto md:flex-1">
+          <SearchBox events={data.events} people={data.people} routes={data.routes} />
+        </div>
+        <div className="ml-auto flex min-w-0 items-center gap-2">
+          <NavButtons />
           <ThemeToggle />
         </div>
       </header>
@@ -73,6 +83,11 @@ export function AtlasApp({ data }: { data: AtlasData }) {
         <div className="relative min-h-0 min-w-0 flex-1">
           <MapPane events={events} routes={data.routes} yearKey="year" onBoundaryChange={onBoundaryChange} />
         </div>
+        {sidePanel === "filters" && (
+          <SidePanel title={t("filters.title")}>
+            <FiltersPanel events={events} />
+          </SidePanel>
+        )}
         <EventPanel />
       </main>
       <section id="timeline" aria-label={t("timeline.label")} className="z-40 border-t border-line bg-surface px-3 py-2 md:px-4">
