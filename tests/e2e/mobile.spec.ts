@@ -7,7 +7,9 @@ test.describe("mobil", () => {
     await expect(page.getByTestId("event-title")).toContainText("Fethi");
     const viewport = page.viewportSize();
     const box = await panel.boundingBox();
-    expect(box?.width).toBe(viewport?.width);
+    expect(box?.x ?? -1).toBeGreaterThanOrEqual(0);
+    expect((box?.x ?? 0) + (box?.width ?? 0)).toBeLessThanOrEqual(viewport?.width ?? 0);
+    expect(box?.width ?? 0).toBeGreaterThan((viewport?.width ?? 0) * 0.9);
     expect((box?.y ?? 0) + 40).toBeGreaterThan((viewport?.height ?? 0) * 0.2);
     const map = await page.getByTestId("map-year").boundingBox();
     expect(map?.height ?? 0).toBeGreaterThan(200);

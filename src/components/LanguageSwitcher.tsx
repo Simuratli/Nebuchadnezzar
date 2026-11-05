@@ -16,7 +16,7 @@ export function LanguageSwitcher() {
       data-testid="language"
       // A full navigation reloads the data in the new language; the query keeps the view.
       onChange={(e) => window.location.assign(`/${e.target.value}${window.location.search}`)}
-      className="rounded-full border border-line bg-surface px-2 py-1.5 text-sm text-ink"
+      className="rounded-lg bg-transparent px-1.5 py-1.5 text-[13px] font-medium text-ink hover:bg-surface-2"
     >
       {LOCALES.map((l) => (
         <option key={l} value={l} lang={l}>

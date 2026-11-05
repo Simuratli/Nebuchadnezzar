@@ -56,7 +56,7 @@ export function SearchBox({ events, people, cities }: Props) {
   };
 
   return (
-    <div className="relative min-w-0 flex-1 md:max-w-sm">
+    <div className="relative min-w-0">
       <input
         ref={inputRef}
         type="search"
@@ -78,10 +78,10 @@ export function SearchBox({ events, people, cities }: Props) {
         // Delayed so a click on a result lands before the list closes.
         onBlur={() => window.setTimeout(() => setOpen(false), 150)}
         onKeyDown={onKeyDown}
-        className="w-full rounded-full border border-line bg-bg px-4 py-1.5 text-sm"
+        className="w-full rounded-lg bg-surface-2 px-3 py-1.5 text-sm placeholder:text-muted"
       />
       {showList && (
-        <ul id={listId} role="listbox" className="absolute left-0 right-0 z-50 mt-1 max-h-80 overflow-y-auto rounded-lg border border-line bg-surface shadow-xl md:min-w-80">
+        <ul id={listId} role="listbox" className="absolute left-0 right-0 floating-card z-50 mt-2 max-h-80 overflow-y-auto md:min-w-80">
           {results.length === 0 && <li className="px-3 py-2 text-sm text-muted">{t("search.noResults")}</li>}
           {results.map((r, i) => (
             <li

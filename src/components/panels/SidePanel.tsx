@@ -20,7 +20,7 @@ export function SidePanel({ title, children }: { title: string; children: React.
       tabIndex={-1}
       aria-label={title}
       data-testid="side-panel"
-      className="absolute inset-x-0 bottom-0 z-30 flex max-h-[75%] flex-col rounded-t-2xl border-t border-line bg-surface shadow-2xl outline-none md:inset-y-0 md:left-0 md:right-auto md:max-h-none md:w-[340px] md:rounded-none md:border-r md:border-t-0"
+      className="floating-card absolute inset-x-2 bottom-[calc(var(--timeline-h,90px)+16px)] z-30 flex max-h-[62%] flex-col overflow-hidden outline-none md:inset-x-auto md:left-3 md:top-[calc(var(--header-h,60px)+20px)] md:bottom-[calc(var(--timeline-h,90px)+20px)] md:max-h-none md:w-[340px]"
     >
       <div className="flex items-center justify-between px-4 py-2">
         <h2 className="font-serif text-lg font-semibold">{title}</h2>

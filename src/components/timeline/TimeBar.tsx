@@ -74,7 +74,7 @@ export function TimeBar({ yearKey = "year", note, compact = false, sliderLabel }
             aria-label={playing ? t("pause") : t("play")}
             aria-pressed={playing}
             data-testid="play"
-            className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-accent text-accent-ink"
+            className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-accent text-accent-ink"
           >
             <svg viewBox="0 0 24 24" className="h-5 w-5" fill="currentColor" aria-hidden="true">
               {playing ? <path d="M7 5h4v14H7zM13 5h4v14h-4z" /> : <path d="M8 5l11 7-11 7z" />}
@@ -84,7 +84,7 @@ export function TimeBar({ yearKey = "year", note, compact = false, sliderLabel }
         <output
           data-testid={`year-label-${yearKey}`}
           aria-live={playing ? "off" : "polite"}
-          className="w-24 shrink-0 font-serif text-xl font-semibold tabular-nums"
+          className="w-[6.5rem] shrink-0 font-serif text-xl font-semibold tracking-tight tabular-nums"
         >
           {label}
         </output>
@@ -98,14 +98,14 @@ export function TimeBar({ yearKey = "year", note, compact = false, sliderLabel }
             onValueChange={([v]) => setYear(indexToYear(v))}
             aria-label={sliderLabel ?? t("slider")}
           >
-            <Slider.Track className="relative h-1.5 grow rounded-full bg-line">
+            <Slider.Track className="relative h-1 grow rounded-full bg-line">
               <Slider.Range className="absolute h-full rounded-full bg-accent" />
             </Slider.Track>
             <Slider.Thumb
               data-testid={`slider-${yearKey}`}
               aria-label={sliderLabel ?? t("slider")}
               aria-valuetext={label}
-              className="block h-5 w-5 rounded-full border-2 border-accent bg-surface shadow"
+              className="block h-4 w-4 rounded-full border-2 border-accent bg-surface shadow"
             />
           </Slider.Root>
           <div aria-hidden="true" className="absolute inset-x-0 bottom-0 h-4 text-[11px] text-muted">
@@ -152,7 +152,7 @@ export function TimeBar({ yearKey = "year", note, compact = false, sliderLabel }
               ))}
             </select>
           </label>
-          {note && <span>{note}</span>}
+          {note && <span className="hidden sm:inline">{note}</span>}
         </div>
       )}
     </div>

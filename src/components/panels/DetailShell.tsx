@@ -36,10 +36,9 @@ export function DetailShell({ kind, label, recordId, onClose, children }: Props)
       tabIndex={-1}
       aria-label={label}
       data-testid={`${kind}-panel`}
-      className="absolute inset-x-0 bottom-0 z-30 flex max-h-[70%] flex-col rounded-t-2xl border-t border-line bg-surface shadow-2xl outline-none md:inset-y-0 md:left-auto md:right-0 md:max-h-none md:w-[420px] md:rounded-none md:border-l md:border-t-0"
+      className="floating-card absolute inset-x-2 bottom-[calc(var(--timeline-h,90px)+16px)] z-30 flex max-h-[58%] flex-col overflow-hidden outline-none md:inset-x-auto md:right-3 md:top-[calc(var(--header-h,60px)+20px)] md:bottom-[calc(var(--timeline-h,90px)+20px)] md:max-h-none md:w-[400px]"
     >
-      <div aria-hidden="true" className="mx-auto mt-2 h-1 w-10 shrink-0 rounded-full bg-line md:hidden" />
-      <div className="flex justify-end px-2 pt-1">
+            <div className="flex justify-end px-2 pt-1">
         <button
           type="button"
           onClick={onClose}

@@ -32,7 +32,7 @@ export function TourPlayer({ tours, events }: { tours: Tour[]; events: EventSumm
     <section
       aria-label={tour.title}
       data-testid="tour-player"
-      className="absolute inset-x-2 bottom-2 z-30 rounded-lg border border-line bg-surface p-4 shadow-xl md:inset-x-auto md:left-4 md:w-[420px]"
+      className="floating-card absolute inset-x-2 bottom-[calc(var(--timeline-h,90px)+16px)] z-30 p-4 md:inset-x-auto md:left-3 md:w-[420px]"
     >
       <div className="flex items-baseline justify-between gap-2 text-xs text-muted">
         <span>{tour.title}</span>

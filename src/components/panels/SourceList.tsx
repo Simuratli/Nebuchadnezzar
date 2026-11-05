@@ -15,9 +15,9 @@ const FORMATS: { label: string; format: (s: Source, text: CitationText) => strin
 ];
 
 const BADGE: Record<Source["type"], string> = {
-  birincil: "bg-[#2f6b4f] text-white",
-  ikincil: "bg-[#2f5f8f] text-white",
-  ansiklopedi: "bg-surface-2 text-ink border border-line",
+  birincil: "bg-accent text-accent-ink",
+  ikincil: "border border-accent text-accent",
+  ansiklopedi: "bg-surface-2 text-ink",
 };
 
 function CopyButton({ label, getText }: { label: string; getText: () => string }) {

@@ -3,7 +3,7 @@
 import type { Map as MlMap } from "maplibre-gl";
 import { useTranslations } from "next-intl";
 import { useEra } from "@/lib/use-era";
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { MapPane } from "@/components/map/MapPane";
 import { CityPanel } from "@/components/panels/CityPanel";
 import { CollectionPanel } from "@/components/panels/CollectionPanel";
@@ -81,11 +81,30 @@ function YearBadge({ yearKey, label }: { yearKey: "year" | "year2"; label: strin
   const era = useEra();
   const year = useAtlas((s) => s[yearKey]);
   return (
-    <div className="pointer-events-none absolute left-2 top-2 z-10 rounded bg-surface/90 px-2 py-1 text-sm shadow">
+    <div className="floating-card pointer-events-none absolute left-3 top-[calc(var(--header-h,60px)+20px)] z-10 px-2.5 py-1 text-sm">
       <span className="text-muted">{label}: </span>
       <span className="font-serif font-semibold">{formatYear(year, era)}</span>
     </div>
   );
+}
+
+/** Publishes the header and timeline heights, so floating panels can sit between them. */
+function useFloatingLayout() {
+  const root = useRef<HTMLDivElement>(null);
+  const header = useRef<HTMLElement>(null);
+  const timeline = useRef<HTMLElement>(null);
+  useEffect(() => {
+    const update = () => {
+      root.current?.style.setProperty("--header-h", `${header.current?.offsetHeight ?? 60}px`);
+      root.current?.style.setProperty("--timeline-h", `${timeline.current?.offsetHeight ?? 90}px`);
+    };
+    update();
+    const observer = new ResizeObserver(update);
+    if (header.current) observer.observe(header.current);
+    if (timeline.current) observer.observe(timeline.current);
+    return () => observer.disconnect();
+  }, []);
+  return { root, header, timeline };
 }
 
 export function AtlasApp({ data }: { data: AtlasData }) {
@@ -116,26 +135,16 @@ export function AtlasApp({ data }: { data: AtlasData }) {
   const correctedNote = isCorrectedYear(year) ? ` · ${t("correction.timelineNote")}` : "";
   const note = `${t("timeline.visibleCount", { count: visibleCount })}${boundaryNote ? ` · ${boundaryNote}` : ""}${correctedNote}`;
 
+  const detailOpen = useAtlas((s) => Boolean(s.eventId || s.personId || s.cityId || s.correctionId));
+  const layoutRef = useFloatingLayout();
+
   return (
-    <div className="flex h-dvh flex-col overflow-hidden">
+    <div ref={layoutRef.root} data-detail-open={detailOpen} className="relative h-dvh overflow-hidden bg-bg">
       <a href="#timeline" className="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:rounded focus:bg-surface focus:p-2">
         {t("app.skipToTimeline")}
       </a>
-      <header className="z-40 flex flex-wrap items-center gap-2 border-b border-line bg-surface px-3 py-2 md:px-4">
-        <h1 className="font-serif text-xl font-semibold">{t("app.title")}</h1>
-        {/* Phones: title and settings, then the menu, then search. Desktop: one row. */}
-        <div className="order-3 w-full md:order-1 md:ml-4 md:w-auto md:flex-1">
-          <SearchBox events={data.events} people={data.people} cities={data.cities} />
-        </div>
-        <div className="order-2 w-full min-w-0 md:ml-auto md:w-auto">
-          <NavButtons />
-        </div>
-        <div className="order-1 ml-auto flex shrink-0 items-center gap-2 md:order-3 md:ml-0">
-          <LanguageSwitcher />
-          <ThemeToggle />
-        </div>
-      </header>
-      <main className="relative flex min-h-0 flex-1 flex-col md:flex-row">
+
+      <main className="absolute inset-0 flex flex-col md:flex-row">
         <div className="relative min-h-0 min-w-0 flex-1">
           <MapPane events={events} routes={data.routes} cities={data.cities} corrections={data.corrections} yearKey="year" onBoundaryChange={onBoundaryChange} onMap={setLeftMap} />
           {compare && <YearBadge yearKey="year" label={t("compare.left")} />}
@@ -146,39 +155,63 @@ export function AtlasApp({ data }: { data: AtlasData }) {
             <YearBadge yearKey="year2" label={t("compare.right")} />
           </div>
         )}
-        {sidePanel === "filters" && (
-          <SidePanel title={t("filters.title")}>
-            <FiltersPanel events={events} />
-          </SidePanel>
-        )}
-        {sidePanel === "collection" && (
-          <SidePanel title={t("collection.title")}>
-            <CollectionPanel events={data.events} />
-          </SidePanel>
-        )}
-        {sidePanel === "routes" && (
-          <SidePanel title={t("routes.title")}>
-            <RoutesPanel routes={data.routes} people={data.people} />
-          </SidePanel>
-        )}
-        {sidePanel === "tours" && (
-          <SidePanel title={t("tours.title")}>
-            <ToursPanel tours={data.tours} />
-          </SidePanel>
-        )}
-        {sidePanel === "export" && (
-          <SidePanel title={t("export.title")}>
-            <ExportPanel maps={compare ? [leftMap, rightMap] : [leftMap]} />
-          </SidePanel>
-        )}
-        {sidePanel === "states" && <StatesChart polities={data.polities} />}
-        <TourPlayer tours={data.tours} events={data.events} />
-        <EventPanel people={data.people} />
-        <PersonPanel people={data.people} events={data.events} routes={data.routes} />
-        <CityPanel cities={data.cities} events={data.events} />
-        <CorrectionPanel corrections={data.corrections} />
       </main>
-      <section id="timeline" aria-label={t("timeline.label")} className="z-40 border-t border-line bg-surface px-3 py-2 md:px-4">
+
+      {/* Clicks pass through the empty space between these cards to the map. */}
+      <header ref={layoutRef.header} className="pointer-events-none absolute inset-x-2 top-2 z-40 flex flex-wrap items-center gap-2 md:inset-x-3 md:top-3">
+        <div className="floating-card pointer-events-auto flex min-w-0 flex-1 items-center gap-3 px-3 py-1.5 md:w-[26rem] md:flex-none">
+          <h1 className="sr-only whitespace-nowrap font-serif text-lg font-semibold tracking-tight sm:not-sr-only">{t("app.title")}</h1>
+          <div className="min-w-0 flex-1">
+            <SearchBox events={data.events} people={data.people} cities={data.cities} />
+          </div>
+        </div>
+        <div className="floating-card pointer-events-auto order-1 flex shrink-0 items-center gap-1 px-1.5 py-1 md:order-2">
+          <LanguageSwitcher />
+          <ThemeToggle />
+        </div>
+        <div className="floating-card pointer-events-auto order-2 w-full min-w-0 px-1.5 py-1 md:order-1 md:ml-auto md:w-auto">
+          <NavButtons />
+        </div>
+      </header>
+
+      {sidePanel === "filters" && (
+        <SidePanel title={t("filters.title")}>
+          <FiltersPanel events={events} />
+        </SidePanel>
+      )}
+      {sidePanel === "collection" && (
+        <SidePanel title={t("collection.title")}>
+          <CollectionPanel events={data.events} />
+        </SidePanel>
+      )}
+      {sidePanel === "routes" && (
+        <SidePanel title={t("routes.title")}>
+          <RoutesPanel routes={data.routes} people={data.people} />
+        </SidePanel>
+      )}
+      {sidePanel === "tours" && (
+        <SidePanel title={t("tours.title")}>
+          <ToursPanel tours={data.tours} />
+        </SidePanel>
+      )}
+      {sidePanel === "export" && (
+        <SidePanel title={t("export.title")}>
+          <ExportPanel maps={compare ? [leftMap, rightMap] : [leftMap]} />
+        </SidePanel>
+      )}
+      {sidePanel === "states" && <StatesChart polities={data.polities} />}
+      <TourPlayer tours={data.tours} events={data.events} />
+      <EventPanel people={data.people} />
+      <PersonPanel people={data.people} events={data.events} routes={data.routes} />
+      <CityPanel cities={data.cities} events={data.events} />
+      <CorrectionPanel corrections={data.corrections} />
+
+      <section
+        ref={layoutRef.timeline}
+        id="timeline"
+        aria-label={t("timeline.label")}
+        className="floating-card absolute inset-x-2 bottom-2 z-40 px-3 py-2 md:inset-x-auto md:bottom-3 md:left-1/2 md:w-[min(960px,calc(100%-24px))] md:-translate-x-1/2 md:px-4"
+      >
         <TimeBar note={note} sliderLabel={compare ? t("timeline.sliderLeft") : undefined} />
         {compare && <TimeBar yearKey="year2" compact sliderLabel={t("timeline.sliderRight")} />}
       </section>

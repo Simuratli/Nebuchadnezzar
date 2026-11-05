@@ -31,8 +31,8 @@ function prepareBasemap(map: MlMap, dark: boolean) {
     }
   }
   if (!dark) {
-    if (map.getLayer("background")) map.setPaintProperty("background", "background-color", "#f3ecd9");
-    if (map.getLayer("water")) map.setPaintProperty("water", "fill-color", "#c6d3d1");
+    if (map.getLayer("background")) map.setPaintProperty("background", "background-color", "#f2f3f0");
+    if (map.getLayer("water")) map.setPaintProperty("water", "fill-color", "#c9d9e3");
   }
 }
 
@@ -52,7 +52,7 @@ function drawCategoryIcon(color: string, path: string): ImageData | null {
   ctx.fillStyle = color;
   ctx.fill();
   ctx.lineWidth = 3;
-  ctx.strokeStyle = "#fffaf0";
+  ctx.strokeStyle = "#ffffff";
   ctx.stroke();
   ctx.translate(size / 2 - 16, size / 2 - 16);
   ctx.scale(32 / 24, 32 / 24);
@@ -119,8 +119,8 @@ export function installLayers(map: MlMap, dark: boolean) {
       "text-padding": 8,
     },
     paint: {
-      "text-color": dark ? "#e6dcc6" : "#3d3120",
-      "text-halo-color": dark ? "#17140f" : "#fbf6ea",
+      "text-color": dark ? "#dfe6ec" : "#26323f",
+      "text-halo-color": dark ? "#0e141b" : "#ffffff",
       "text-halo-width": 1.4,
     },
   });
@@ -151,8 +151,8 @@ export function installLayers(map: MlMap, dark: boolean) {
       "text-padding": 8,
     },
     paint: {
-      "text-color": dark ? "#e6dcc6" : "#3d3120",
-      "text-halo-color": dark ? "#17140f" : "#fbf6ea",
+      "text-color": dark ? "#dfe6ec" : "#26323f",
+      "text-halo-color": dark ? "#0e141b" : "#ffffff",
       "text-halo-width": 1.4,
     },
   });
@@ -166,9 +166,9 @@ export function installLayers(map: MlMap, dark: boolean) {
     minzoom: 4,
     paint: {
       "circle-radius": 3.5,
-      "circle-color": dark ? "#efe6d3" : "#2c2416",
+      "circle-color": dark ? "#e8edf2" : "#16202c",
       "circle-stroke-width": 1.5,
-      "circle-stroke-color": dark ? "#17140f" : "#fffaf0",
+      "circle-stroke-color": dark ? "#0e141b" : "#ffffff",
     },
   });
   map.addLayer({
@@ -185,8 +185,8 @@ export function installLayers(map: MlMap, dark: boolean) {
       "text-optional": true,
     },
     paint: {
-      "text-color": dark ? "#f3ead8" : "#2c2416",
-      "text-halo-color": dark ? "#17140f" : "#fbf6ea",
+      "text-color": dark ? "#e8edf2" : "#16202c",
+      "text-halo-color": dark ? "#0e141b" : "#ffffff",
       "text-halo-width": 1.5,
     },
   });
@@ -198,14 +198,14 @@ export function installLayers(map: MlMap, dark: boolean) {
     type: "line",
     source: "route",
     layout: { "line-cap": "round", "line-join": "round" },
-    paint: { "line-color": dark ? "#17140f" : "#fffaf0", "line-width": 6 },
+    paint: { "line-color": dark ? "#0e141b" : "#ffffff", "line-width": 6 },
   });
   map.addLayer({
     id: "route-line",
     type: "line",
     source: "route",
     layout: { "line-cap": "round", "line-join": "round" },
-    paint: { "line-color": dark ? "#f0b35e" : "#8a3a1c", "line-width": 3.5 },
+    paint: { "line-color": dark ? "#5fbcd9" : "#0f5c78", "line-width": 3 },
   });
   map.addLayer({
     id: "route-stops",
@@ -214,9 +214,9 @@ export function installLayers(map: MlMap, dark: boolean) {
     filter: ["!=", ["get", "kind"], "head"],
     paint: {
       "circle-radius": 4.5,
-      "circle-color": dark ? "#f0b35e" : "#8a3a1c",
+      "circle-color": dark ? "#5fbcd9" : "#0f5c78",
       "circle-stroke-width": 1.5,
-      "circle-stroke-color": dark ? "#17140f" : "#fffaf0",
+      "circle-stroke-color": dark ? "#0e141b" : "#ffffff",
     },
   });
   map.addLayer({
@@ -232,8 +232,8 @@ export function installLayers(map: MlMap, dark: boolean) {
       "text-offset": [0, -0.6],
     },
     paint: {
-      "text-color": dark ? "#f3ead8" : "#2c2416",
-      "text-halo-color": dark ? "#17140f" : "#fbf6ea",
+      "text-color": dark ? "#e8edf2" : "#16202c",
+      "text-halo-color": dark ? "#0e141b" : "#ffffff",
       "text-halo-width": 1.5,
     },
   });
@@ -242,7 +242,7 @@ export function installLayers(map: MlMap, dark: boolean) {
     type: "circle",
     source: "route-points",
     filter: ["==", ["get", "kind"], "head"],
-    paint: { "circle-radius": 7, "circle-color": dark ? "#fff2d8" : "#2c2416", "circle-stroke-width": 2, "circle-stroke-color": dark ? "#8a3a1c" : "#fffaf0" },
+    paint: { "circle-radius": 7, "circle-color": dark ? "#ffffff" : "#16202c", "circle-stroke-width": 2, "circle-stroke-color": dark ? "#0e141b" : "#ffffff" },
   });
 
   // Line events (migrations) cannot be clustered, so they use their own source.
@@ -274,10 +274,10 @@ export function installLayers(map: MlMap, dark: boolean) {
     source: "events",
     filter: ["has", "point_count"],
     paint: {
-      "circle-color": dark ? "#e39a6c" : "#8a3a1c",
+      "circle-color": dark ? "#5fbcd9" : "#0f5c78",
       "circle-radius": ["step", ["get", "point_count"], 14, 5, 18, 15, 23],
       "circle-stroke-width": 2,
-      "circle-stroke-color": dark ? "#17140f" : "#fffaf0",
+      "circle-stroke-color": dark ? "#0e141b" : "#ffffff",
     },
   });
   map.addLayer({
@@ -291,7 +291,7 @@ export function installLayers(map: MlMap, dark: boolean) {
       "text-size": 13,
       "text-allow-overlap": true,
     },
-    paint: { "text-color": dark ? "#20140a" : "#fff8ec" },
+    paint: { "text-color": dark ? "#08222c" : "#ffffff" },
   });
   map.addLayer({
     id: "event-selected",
@@ -302,7 +302,7 @@ export function installLayers(map: MlMap, dark: boolean) {
       "circle-radius": 20,
       "circle-color": "rgba(0,0,0,0)",
       "circle-stroke-width": 3,
-      "circle-stroke-color": dark ? "#f5d9a8" : "#2c2416",
+      "circle-stroke-color": dark ? "#ffffff" : "#16202c",
     },
   });
   map.addLayer({
@@ -323,8 +323,8 @@ export function installLayers(map: MlMap, dark: boolean) {
       "text-optional": true,
     },
     paint: {
-      "text-color": dark ? "#f3ead8" : "#2c2416",
-      "text-halo-color": dark ? "#17140f" : "#fbf6ea",
+      "text-color": dark ? "#e8edf2" : "#16202c",
+      "text-halo-color": dark ? "#0e141b" : "#ffffff",
       "text-halo-width": 1.5,
       "text-opacity": ["step", ["zoom"], 0, 5, 1],
     },

@@ -4,29 +4,31 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-  --bg: #f4ecdb;
-  --surface: #fbf6ea;
-  --surface-2: #efe5cf;
-  --ink: #2c2416;
-  --muted: #62573f;
-  --line: #d6c9ab;
-  --accent: #8a3a1c;
-  --accent-ink: #fff8ec;
-  --warn-bg: #f7e3b5;
-  --warn-ink: #5c4300;
+  --bg: #e9edf1;
+  --surface: #ffffff;
+  --surface-2: #f1f4f7;
+  --ink: #16202c;
+  --muted: #566373;
+  --line: #dde3ea;
+  --accent: #0f5c78;
+  --accent-ink: #ffffff;
+  --warn-bg: #fdf3dc;
+  --warn-ink: #664700;
+  --card-shadow: 0 1px 2px rgb(16 24 40 / 0.08), 0 8px 24px rgb(16 24 40 / 0.14);
 }
 
 .dark {
-  --bg: #17140f;
-  --surface: #221d16;
-  --surface-2: #2e2820;
-  --ink: #efe6d3;
-  --muted: #b3a78f;
-  --line: #443c2f;
-  --accent: #e39a6c;
-  --accent-ink: #20140a;
-  --warn-bg: #43350f;
-  --warn-ink: #f4dc9c;
+  --bg: #0e141b;
+  --surface: #161e27;
+  --surface-2: #212b36;
+  --ink: #e8edf2;
+  --muted: #9dabba;
+  --line: #2e3a47;
+  --accent: #5fbcd9;
+  --accent-ink: #08222c;
+  --warn-bg: #33290f;
+  --warn-ink: #f2d98f;
+  --card-shadow: 0 1px 2px rgb(0 0 0 / 0.4), 0 8px 24px rgb(0 0 0 / 0.45);
 }
 
 @theme inline {
@@ -42,6 +44,14 @@
   --color-warn-ink: var(--warn-ink);
   --font-serif: var(--font-source-serif), Georgia, serif;
   --font-sans: var(--font-inter), system-ui, sans-serif;
+}
+
+/* The map fills the screen; everything else floats above it on these cards. */
+@utility floating-card {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+  box-shadow: var(--card-shadow);
 }
 
 html,
@@ -69,6 +79,23 @@ body {
   font-size: 11px;
 }
 
+/* Keeps map controls clear of the floating timeline and an open detail panel. */
+.maplibregl-ctrl-bottom-right {
+  margin-bottom: calc(var(--timeline-h, 90px) + 12px);
+  margin-right: 4px;
+}
+
+@media (min-width: 768px) {
+  [data-detail-open="true"] .maplibregl-ctrl-bottom-right {
+    margin-right: 420px;
+  }
+}
+
+.maplibregl-ctrl-group {
+  border-radius: 10px;
+  box-shadow: var(--card-shadow) !important;
+}
+
 .dark .maplibregl-ctrl-group {
   background: var(--surface);
 }
@@ -78,7 +105,7 @@ body {
 }
 
 .dark .maplibregl-ctrl-attrib {
-  background: rgb(34 29 22 / 0.8);
+  background: rgb(22 30 39 / 0.85);
   color: var(--muted);
 }
 

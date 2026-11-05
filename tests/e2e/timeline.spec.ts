@@ -1,6 +1,22 @@
 import { expect, test } from "@playwright/test";
 
 test.describe("harita ve zaman kaydırıcı", () => {
+  test("harita tüm ekranı kaplar, diğer öğeler üzerinde yüzer", async ({ page }) => {
+    await page.goto("/tr?y=1500");
+    const viewport = page.viewportSize();
+    const map = await page.getByTestId("map-year").boundingBox();
+    expect(map?.width).toBe(viewport?.width);
+    expect(map?.height).toBe(viewport?.height);
+    expect(map?.x).toBe(0);
+    expect(map?.y).toBe(0);
+    // A panel floats between the header and timeline without overlapping them.
+    await page.getByTestId("nav-filters").click();
+    const panel = await page.getByTestId("side-panel").boundingBox();
+    const bar = await page.locator("#timeline").boundingBox();
+    expect((panel?.y ?? 0) + (panel?.height ?? 0)).toBeLessThanOrEqual(bar?.y ?? 0);
+    expect(panel?.y ?? 0).toBeGreaterThan(0);
+  });
+
   test("harita gerçekten çizilir ve tarayıcıda hata oluşmaz", async ({ page }) => {
     const errors: string[] = [];
     page.on("pageerror", (e) => errors.push(e.message));

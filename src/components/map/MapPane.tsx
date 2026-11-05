@@ -123,7 +123,7 @@ export function MapPane({ events, routes, cities, corrections, yearKey, primary 
     // Keeps the whole route clear of the side panel, which covers the map's left edge on desktop.
     const sideOpen = useAtlas.getState().sidePanel !== null && window.matchMedia("(min-width: 768px)").matches;
     mapRef.current?.fitBounds(lineBounds(coords), {
-      padding: { top: 70, right: 70, bottom: 70, left: sideOpen ? 400 : 70 },
+      padding: { top: 110, right: 70, bottom: 150, left: sideOpen ? 400 : 70 },
       duration: reduce ? 0 : 900,
     });
 
@@ -165,7 +165,7 @@ export function MapPane({ events, routes, cities, corrections, yearKey, primary 
       pitchWithRotate: false,
     });
     map.touchZoomRotate.disableRotation();
-    map.addControl(new NavigationControl({ showCompass: false }), "top-right");
+    map.addControl(new NavigationControl({ showCompass: false }), "bottom-right");
     map.on("style.load", () => {
       installLayers(map, darkRef.current);
       if (boundaryRef.current) (map.getSource("boundaries") as GeoJSONSource).setData(boundaryRef.current);

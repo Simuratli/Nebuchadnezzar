@@ -30,7 +30,7 @@ export function StatesChart({ polities }: { polities: Polity[] }) {
     <section
       aria-label={t("title")}
       data-testid="states-chart"
-      className="absolute inset-x-0 bottom-0 z-30 flex h-[70%] flex-col border-t border-line bg-surface shadow-2xl md:h-[62%]"
+      className="floating-card absolute inset-x-2 bottom-[calc(var(--timeline-h,90px)+16px)] z-30 flex h-[60%] flex-col overflow-hidden md:inset-x-3 md:h-[64%]"
     >
       <div className="flex flex-wrap items-center gap-x-4 gap-y-1 px-4 py-2">
         <h2 className="font-serif text-lg font-semibold">{t("title")}</h2>

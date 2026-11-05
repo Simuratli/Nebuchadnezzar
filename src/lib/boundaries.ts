@@ -5,7 +5,7 @@ const BASE = "/data/boundaries";
 const CACHE_SIZE = 12;
 
 // Muted so polygons tint the basemap in both themes without hiding labels.
-const PALETTE = ["#b5654a", "#6f8f72", "#7d78a8", "#c29a4b", "#4f8a9b", "#a8688e", "#8c8a4f", "#5d7ba6", "#b07f5a", "#66937f"];
+const PALETTE = ["#b8694f", "#5f9470", "#7470b3", "#c0983f", "#3f8ea8", "#ad5f8e", "#8a8f45", "#4f79b5", "#b57d4a", "#4f9a8a"];
 
 /** Stable colour per polity, so the Ottoman Empire keeps its colour from year to year. */
 export function colorForName(name: string | null | undefined): string {
