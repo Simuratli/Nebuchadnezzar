@@ -88,7 +88,8 @@
     "routes": "Rotalar",
     "tours": "Turlar",
     "compare": "Karşılaştır",
-    "panels": "Paneller"
+    "panels": "Paneller",
+    "export": "Haritayı indir"
   },
   "filters": {
     "title": "Filtreler",
@@ -183,5 +184,17 @@
     "events": "İlgili olaylar",
     "noEvents": "Bu kişiye bağlı olay henüz yok.",
     "manualLink": "elle bağlandı"
+  },
+  "export": {
+    "title": "Haritayı indir",
+    "help": "Haritanın şu anki görünümü, dipnot ve atıfla birlikte indirilir. Önce haritayı istediğiniz konuma getirin.",
+    "png": "PNG indir",
+    "pdf": "PDF indir",
+    "preparing": "Hazırlanıyor…",
+    "failed": "Görsel oluşturulamadı. Harita yüklendikten sonra yeniden deneyin.",
+    "caption": "Görselin dipnotu",
+    "citation": "Haritanın atfı",
+    "copy": "Atfı kopyala",
+    "accuracy": "Sınırlar yaklaşıktır ve kaynak veride bilinen hatalar vardır. Tez veya yayında kullanmadan önce başka kaynaklarla karşılaştırın."
   }
 }

@@ -130,9 +130,10 @@ export function installLayers(map: MlMap, dark: boolean) {
     id: "city-dot",
     type: "circle",
     source: "cities",
-    minzoom: 3,
+    // Same threshold as the label: an unnamed dot tells the reader nothing.
+    minzoom: 4,
     paint: {
-      "circle-radius": 4,
+      "circle-radius": 3.5,
       "circle-color": dark ? "#efe6d3" : "#2c2416",
       "circle-stroke-width": 1.5,
       "circle-stroke-color": dark ? "#17140f" : "#fffaf0",
@@ -142,7 +143,7 @@ export function installLayers(map: MlMap, dark: boolean) {
     id: "city-label",
     type: "symbol",
     source: "cities",
-    minzoom: 4.2,
+    minzoom: 4,
     layout: {
       "text-field": ["get", "name"],
       "text-font": ["Noto Sans Bold"],

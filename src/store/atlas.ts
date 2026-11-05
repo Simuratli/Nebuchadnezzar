@@ -8,7 +8,7 @@ export const SPEEDS = [5, 10, 25, 50, 100] as const;
 export const WINDOWS = [0, 10, 25, 50, 100] as const;
 
 export type FlyTarget = { lng: number; lat: number; zoom?: number; nonce: number };
-export type SidePanel = "filters" | "collection" | "routes" | "tours" | null;
+export type SidePanel = "filters" | "collection" | "routes" | "tours" | "export" | null;
 
 type AtlasState = UrlState & {
   playing: boolean;

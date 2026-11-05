@@ -21,7 +21,7 @@ Seed verisi ve sınır dosyaları repoda hazır gelir, ek ayar gerekmez.
 | `npm test` | Vitest birim testleri |
 | `npm run test:e2e` | Playwright testleri (önce `npm run build` ve `npx playwright install chromium`) |
 
-`next dev` ve `next build` aynı `.next` klasörünü kullanır; aynı anda çalıştırmayın.
+`next dev` ve `next build` aynı `.next` klasörünü kullanır; aynı anda çalıştırmayın. Geliştirme sunucusu açıkken test etmek için derlemeyi ayrı klasöre alın: `NEXT_DIST_DIR=.next-test npm run build`, ardından `NEXT_DIST_DIR=.next-test npm run test:e2e`.
 
 ## Veri
 

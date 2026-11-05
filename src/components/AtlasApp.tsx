@@ -7,6 +7,7 @@ import { MapPane } from "@/components/map/MapPane";
 import { CityPanel } from "@/components/panels/CityPanel";
 import { CollectionPanel } from "@/components/panels/CollectionPanel";
 import { EventPanel } from "@/components/panels/EventPanel";
+import { ExportPanel } from "@/components/panels/ExportPanel";
 import { FiltersPanel } from "@/components/panels/FiltersPanel";
 import { NavButtons } from "@/components/panels/NavButtons";
 import { PersonPanel } from "@/components/panels/PersonPanel";
@@ -153,6 +154,11 @@ export function AtlasApp({ data }: { data: AtlasData }) {
         {sidePanel === "tours" && (
           <SidePanel title={t("tours.title")}>
             <ToursPanel tours={data.tours} />
+          </SidePanel>
+        )}
+        {sidePanel === "export" && (
+          <SidePanel title={t("export.title")}>
+            <ExportPanel maps={compare ? [leftMap, rightMap] : [leftMap]} />
           </SidePanel>
         )}
         <TourPlayer tours={data.tours} events={data.events} />

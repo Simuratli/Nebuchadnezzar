@@ -3,7 +3,7 @@
 import { useTranslations } from "next-intl";
 import { useAtlas, type SidePanel } from "@/store/atlas";
 
-const PANELS: Exclude<SidePanel, null>[] = ["filters", "collection", "routes", "tours"];
+const PANELS: Exclude<SidePanel, null>[] = ["filters", "collection", "routes", "tours", "export"];
 
 export function NavButtons() {
   const t = useTranslations("nav");
