@@ -1,0 +1,57 @@
+{
+  "name": "zaman-atlasi",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "data:boundaries": "tsx scripts/prepare-boundaries.ts",
+    "data:wikidata": "tsx scripts/fetch-wikidata.ts",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "predev": "node scripts/copy-maplibre-worker.mjs",
+    "prebuild": "node scripts/copy-maplibre-worker.mjs",
+    "data:load-supabase": "tsx scripts/load-supabase.ts"
+  },
+  "dependencies": {
+    "@radix-ui/react-slider": "^1.6.1",
+    "@supabase/supabase-js": "^2.119.0",
+    "fuse.js": "^7.5.0",
+    "maplibre-gl": "^6.16.0",
+    "next": "15.5.29",
+    "next-intl": "^4.14.9",
+    "next-themes": "^0.4.6",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-markdown": "^10.1.0",
+    "zod": "^4.6.7",
+    "zustand": "^5.0.16"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@playwright/test": "^1.64.1",
+    "@tailwindcss/postcss": "^4",
+    "@types/geojson": "^7946.0.16",
+    "@types/node": "^24.19.2",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.29",
+    "mapshaper": "^0.7.101",
+    "tailwindcss": "^4",
+    "tsx": "^4.23.15",
+    "typescript": "^5",
+    "vitest": "^5.1.0"
+  },
+  "overrides": {
+    "next": {
+      "postcss": "^8.5.32"
+    },
+    "@typescript-eslint/eslint-plugin": "^8.72.1",
+    "@typescript-eslint/parser": "^8.72.1",
+    "@typescript-eslint/typescript-estree": "^8.72.1"
+  },
+  "license": "GPL-3.0-only"
+}

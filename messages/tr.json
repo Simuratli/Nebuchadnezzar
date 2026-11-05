@@ -1,0 +1,142 @@
+{
+  "app": {
+    "title": "Zaman Atlası",
+    "description": "Kafkasya, Osmanlı coğrafyası ve İpek Yolu için kaynaklı, etkileşimli tarih haritası.",
+    "loading": "Harita yükleniyor…",
+    "skipToTimeline": "Zaman çizelgesine atla",
+    "close": "Kapat"
+  },
+  "era": { "bc": "MÖ", "ad": "MS" },
+  "theme": { "toggle": "Temayı değiştir", "light": "Açık tema", "dark": "Koyu tema" },
+  "timeline": {
+    "label": "Zaman çizelgesi",
+    "slider": "Yıl seçimi",
+    "sliderLeft": "Sol harita yılı",
+    "sliderRight": "Sağ harita yılı",
+    "play": "Oynat",
+    "pause": "Durdur",
+    "speed": "Hız",
+    "speedUnit": "yıl/sn",
+    "window": "Olay penceresi",
+    "windowHint": "Seçili yılın kaç yıl öncesi ve sonrasındaki olaylar gösterilsin",
+    "boundaryNote": "Sınır haritası: {year}",
+    "visibleCount": "{count} olay görünüyor",
+    "boundaryError": "Sınır haritası yüklenemedi"
+  },
+  "map": {
+    "label": "Tarih haritası",
+    "boundariesApprox": "Sınırlar yaklaşıktır"
+  },
+  "categories": {
+    "savas": "Savaş",
+    "antlasma": "Antlaşma",
+    "kurulus": "Kuruluş",
+    "kultur": "Kültür",
+    "bilim": "Bilim",
+    "goc": "Göç",
+    "isyan": "İsyan",
+    "diger": "Diğer"
+  },
+  "regions": {
+    "kafkasya": "Kafkasya",
+    "osmanli": "Osmanlı coğrafyası",
+    "ipek-yolu": "İpek Yolu"
+  },
+  "event": {
+    "panel": "Olay ayrıntıları",
+    "loading": "Yükleniyor…",
+    "error": "Olay yüklenemedi.",
+    "retry": "Yeniden dene",
+    "needsReview": "Bu kayıt henüz gözden geçirilmedi.",
+    "languageNote": "Metin dili: {lang}. Türkçe çevirisi bekleniyor.",
+    "imageCredit": "Görsel: Wikimedia Commons",
+    "wikiLicense": "Metin Vikipedi'den alınmıştır (CC BY-SA).",
+    "noSummary": "Bu olay için henüz özet yok.",
+    "sources": "Kaynaklar",
+    "noSources": "Bu olay için kaynak yok."
+  },
+  "source": {
+    "birincil": "Birincil",
+    "ikincil": "Akademik",
+    "ansiklopedi": "Ansiklopedi",
+    "reliability": "Güvenilirlik: {value}/3",
+    "open": "Kaynağı aç",
+    "untitled": "Başlıksız kaynak",
+    "copy": "{format} kopyala",
+    "copied": "Kopyalandı",
+    "copyFailed": "Kopyalanamadı",
+    "missing": "Eksik alan: {fields}. Atıfı kullanmadan önce tamamlayın.",
+    "reviewFlag": "Bu kaynak gözden geçirilmeyi bekliyor.",
+    "fields": { "author": "yazar", "title": "başlık", "year": "yıl", "publisher": "yayınevi" }
+  },
+  "nav": {
+    "filters": "Filtre",
+    "collection": "Koleksiyon",
+    "routes": "Rotalar",
+    "tours": "Turlar",
+    "compare": "Karşılaştır",
+    "panels": "Paneller"
+  },
+  "filters": {
+    "title": "Filtreler",
+    "category": "Kategori",
+    "region": "Bölge",
+    "yearRange": "Yıl aralığı",
+    "from": "Başlangıç yılı",
+    "to": "Bitiş yılı",
+    "yearHint": "MÖ yılları için eksi yazın (MÖ 331 için -331).",
+    "clear": "Filtreleri temizle",
+    "results": "{count} olay",
+    "export": "Dışa aktar",
+    "exportCsv": "CSV indir",
+    "exportGeoJson": "GeoJSON indir",
+    "list": "Sonuçlar",
+    "showMore": "Daha fazla göster"
+  },
+  "search": {
+    "label": "Olay veya kişi ara",
+    "placeholder": "Olay veya kişi ara…",
+    "noResults": "Sonuç bulunamadı",
+    "person": "Kişi",
+    "event": "Olay",
+    "lived": "{start} – {end}",
+    "unknown": "?"
+  },
+  "collection": {
+    "title": "Koleksiyonum",
+    "empty": "Henüz olay eklemediniz. Bir olayın panelinden koleksiyona ekleyebilirsiniz.",
+    "add": "Koleksiyona ekle",
+    "remove": "Koleksiyondan çıkar",
+    "note": "Not",
+    "notePlaceholder": "Bu olayla ilgili notunuz…",
+    "count": "{count} olay",
+    "downloadBibtex": "BibTeX indir",
+    "preparing": "Hazırlanıyor…",
+    "downloadFailed": "Kaynaklar indirilemedi.",
+    "localNotice": "Koleksiyon yalnızca bu tarayıcıda saklanır."
+  },
+  "compare": {
+    "enter": "Karşılaştırmayı aç",
+    "exit": "Karşılaştırmayı kapat",
+    "left": "Sol harita",
+    "right": "Sağ harita"
+  },
+  "routes": {
+    "title": "Rotalar",
+    "play": "Rotayı oynat",
+    "replay": "Yeniden oynat",
+    "stop": "Rotayı kapat",
+    "waypoints": "Duraklar",
+    "reviewNote": "Güzergâh ve tarihler yaklaşıktır, uzman kontrolü beklemektedir.",
+    "noSource": "Bu rota için henüz kaynak eklenmedi."
+  },
+  "tours": {
+    "title": "Turlar",
+    "start": "Turu başlat",
+    "step": "Adım {current} / {total}",
+    "next": "Sonraki",
+    "prev": "Önceki",
+    "finish": "Turu bitir",
+    "reviewNote": "Anlatım genel bilgiye dayanır, kaynak eklenmedi ve uzman kontrolü beklemektedir."
+  }
+}

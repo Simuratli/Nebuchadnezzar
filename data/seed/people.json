@@ -1,0 +1,156 @@
+[
+ {
+  "id": "evliya-celebi",
+  "name": "Evliya Çelebi",
+  "birth_year": 1611,
+  "death_year": 1682,
+  "wikidata_id": "Q202308"
+ },
+ {
+  "id": "ibn-battuta",
+  "name": "İbn Battuta",
+  "birth_year": 1304,
+  "death_year": 1368,
+  "wikidata_id": "Q7331"
+ },
+ {
+  "id": "marco-polo",
+  "name": "Marco Polo",
+  "birth_year": 1254,
+  "death_year": 1324,
+  "wikidata_id": "Q6101"
+ },
+ {
+  "id": "fatih-sultan-mehmed",
+  "name": "II. Mehmed",
+  "birth_year": 1432,
+  "death_year": 1481,
+  "wikidata_id": "Q34503"
+ },
+ {
+  "id": "kanuni-sultan-suleyman",
+  "name": "Kanuni Sultan Süleyman",
+  "birth_year": 1494,
+  "death_year": 1566,
+  "wikidata_id": "Q8474"
+ },
+ {
+  "id": "timur",
+  "name": "Timur",
+  "birth_year": 1336,
+  "death_year": 1405,
+  "wikidata_id": "Q8462"
+ },
+ {
+  "id": "cengiz-han",
+  "name": "Cengiz Han",
+  "birth_year": 1162,
+  "death_year": 1227,
+  "wikidata_id": "Q720"
+ },
+ {
+  "id": "iskender",
+  "name": "İskender",
+  "birth_year": -356,
+  "death_year": -323,
+  "wikidata_id": "Q8409"
+ },
+ {
+  "id": "nadir-sah",
+  "name": "Nadir Şah",
+  "birth_year": 1688,
+  "death_year": 1747,
+  "wikidata_id": "Q192868"
+ },
+ {
+  "id": "sah-ismail",
+  "name": "I. İsmail",
+  "birth_year": 1487,
+  "death_year": 1524,
+  "wikidata_id": "Q214559"
+ },
+ {
+  "id": "babek",
+  "name": "Babek",
+  "birth_year": 798,
+  "death_year": 838,
+  "wikidata_id": "Q379997"
+ },
+ {
+  "id": "seyh-samil",
+  "name": "Şeyh Şamil",
+  "birth_year": 1797,
+  "death_year": 1871,
+  "wikidata_id": "Q244742"
+ },
+ {
+  "id": "fuzuli",
+  "name": "Fuzuli",
+  "birth_year": 1480,
+  "death_year": 1556,
+  "wikidata_id": "Q178379"
+ },
+ {
+  "id": "nizami-gencevi",
+  "name": "Nizami Gencevi",
+  "birth_year": 1141,
+  "death_year": 1202,
+  "wikidata_id": "Q234908"
+ },
+ {
+  "id": "biruni",
+  "name": "Biruni",
+  "birth_year": 973,
+  "death_year": 1048,
+  "wikidata_id": "Q11826"
+ },
+ {
+  "id": "ibn-sina",
+  "name": "İbn-i Sina",
+  "birth_year": 980,
+  "death_year": 1037,
+  "wikidata_id": "Q8011"
+ },
+ {
+  "id": "ulug-bey",
+  "name": "Uluğ Bey",
+  "birth_year": 1394,
+  "death_year": 1449,
+  "wikidata_id": "Q486088"
+ },
+ {
+  "id": "zhang-qian",
+  "name": "Zhang Qian",
+  "birth_year": -200,
+  "death_year": -114,
+  "wikidata_id": "Q197276"
+ },
+ {
+  "id": "ataturk",
+  "name": "Mustafa Kemal Atatürk",
+  "birth_year": 1881,
+  "death_year": 1938,
+  "wikidata_id": "Q5152"
+ },
+ {
+  "id": "resulzade",
+  "name": "Mehmed Emin Resulzade",
+  "birth_year": 1884,
+  "death_year": 1955,
+  "wikidata_id": "Q361311"
+ },
+ {
+  "id": "tamar",
+  "name": "Tamar",
+  "birth_year": 1166,
+  "death_year": 1213,
+  "wikidata_id": "Q244007"
+ },
+ {
+  "id": "alparslan",
+  "name": "Alp Arslan",
+  "birth_year": 1029,
+  "death_year": 1072,
+  "wikidata_id": "Q200193"
+ }
+]

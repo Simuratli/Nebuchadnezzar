@@ -1,0 +1,98 @@
+[
+  {
+    "id": "ipek-yolu-yukselisi",
+    "title": "İpek Yolu'nun yükselişi",
+    "description": "Pers kraliyet yolundan Moğol barışına, Avrasya'yı birbirine bağlayan ticaret ağının hikâyesi. Anlatım genel bilgiye dayanır ve uzman kontrolü beklemektedir.",
+    "needs_review": true,
+    "steps": [
+      {
+        "title": "Pers Kraliyet Yolu",
+        "text": "Ahameniş İmparatorluğu, Sardes ile Sus'u birbirine bağlayan uzun bir kraliyet yolu ve menzil sistemi işletiyordu. Bu altyapı, sonraki yüzyılların kara ticareti için erken bir örnek oluşturdu.",
+        "year": -500,
+        "event_id": null,
+        "view": {
+          "lng": 40,
+          "lat": 35,
+          "zoom": 3.6
+        }
+      },
+      {
+        "title": "İskender ve Orta Asya",
+        "text": "Büyük İskender'in seferleri Yunan dünyasını Baktriya ve Sogdiana'ya kadar taşıdı. Bu bölgelerde kurulan şehirler, Doğu ile Batı arasında yeni temas noktaları hâline geldi.",
+        "year": -329,
+        "event_id": "Q179670",
+        "view": {
+          "lng": 66,
+          "lat": 38,
+          "zoom": 4
+        }
+      },
+      {
+        "title": "Zhang Qian'ın elçiliği",
+        "text": "MÖ 2. yüzyılda Han hanedanı elçisi Zhang Qian batı bölgelerine gönderildi. Getirdiği bilgiler, Çin'in Orta Asya ile düzenli ilişkiler kurmasının yolunu açtı.",
+        "year": -138,
+        "event_id": null,
+        "view": {
+          "lng": 85,
+          "lat": 39,
+          "zoom": 3.6
+        }
+      },
+      {
+        "title": "Han ve Part aracılığıyla ticaret",
+        "text": "MÖ 1. yüzyıla gelindiğinde ipek ve başka mallar, aracı tüccarların elinden geçerek Akdeniz'e ulaşıyordu. Malların tamamını tek bir tüccarın taşıması nadirdi; ağ, kısa bağlantıların toplamıydı.",
+        "year": -100,
+        "event_id": null,
+        "view": {
+          "lng": 60,
+          "lat": 37,
+          "zoom": 3
+        }
+      },
+      {
+        "title": "Soğdlu tüccarlar",
+        "text": "Semerkant ve Buhara çevresindeki Soğdlu tüccarlar, 5.–8. yüzyıllar arasında Orta Asya ticaretinin en önemli aracıları arasındaydı.",
+        "year": 650,
+        "event_id": null,
+        "view": {
+          "lng": 67,
+          "lat": 39.6,
+          "zoom": 4.6
+        }
+      },
+      {
+        "title": "Abbasi Bağdat'ı",
+        "text": "762'de kurulan Bağdat, kara ve deniz yollarının kesiştiği büyük bir ticaret ve bilim merkezine dönüştü.",
+        "year": 762,
+        "event_id": "Q1530",
+        "view": {
+          "lng": 44.4,
+          "lat": 33.3,
+          "zoom": 4.6
+        }
+      },
+      {
+        "title": "Moğol barışı",
+        "text": "13. yüzyılda Moğol egemenliği Avrasya'nın büyük bölümünü tek bir siyasi çerçevede topladı. Marco Polo ve İbn Battuta gibi gezginlerin uzun yolculukları bu dönemin koşullarında mümkün oldu.",
+        "year": 1279,
+        "event_id": "Q369560",
+        "view": {
+          "lng": 75,
+          "lat": 42,
+          "zoom": 2.8
+        }
+      },
+      {
+        "title": "Yeni dengeler",
+        "text": "Moğol devletlerinin parçalanması ve sonraki yüzyıllarda deniz yollarının güçlenmesiyle kara ticaretinin göreli önemi azaldı. Bu dönüşüm tek bir olaya değil, uzun bir sürece bağlıdır.",
+        "year": 1453,
+        "event_id": "Q160077",
+        "view": {
+          "lng": 45,
+          "lat": 38,
+          "zoom": 3.2
+        }
+      }
+    ]
+  }
+]

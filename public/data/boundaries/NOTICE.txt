@@ -1,0 +1,3 @@
+Boundary data derived from historical-basemaps by Andre Ourednik and contributors
+https://github.com/aourednik/historical-basemaps - licensed under GPL-3.0 (see LICENSE in this folder).
+Modifications: filtered to -500..1950, unnamed polygons removed, fields reduced, geometry simplified with mapshaper.

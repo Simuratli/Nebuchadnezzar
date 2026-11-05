@@ -1,0 +1,73 @@
+[
+  {
+    "id": "evliya-kafkasya",
+    "person_id": "evliya-celebi",
+    "title": "Evliya Çelebi'nin Doğu ve Kafkasya seyahati",
+    "start_year": 1646,
+    "end_year": 1648,
+    "needs_review": true,
+    "geometry": { "type": "LineString", "coordinates": [[28.97, 41.01], [41.27, 39.9], [45.41, 39.21], [46.29, 38.08], [48.29, 38.25], [49.87, 40.41], [46.36, 40.68], [44.8, 41.72], [41.27, 39.9]] },
+    "waypoints": [
+      { "year": 1646, "lng": 28.97, "lat": 41.01, "place": "İstanbul", "note": "Başlangıç noktası. Tarih yaklaşık, Seyahatname ile doğrulanmalı." },
+      { "year": 1646, "lng": 41.27, "lat": 39.9, "place": "Erzurum", "note": "Doğu seferlerinin üssü. Tarih yaklaşık." },
+      { "year": 1647, "lng": 45.41, "lat": 39.21, "place": "Nahçıvan", "note": "Yaklaşık durak; sıra doğrulanmalı." },
+      { "year": 1647, "lng": 46.29, "lat": 38.08, "place": "Tebriz", "note": "Yaklaşık durak; sıra doğrulanmalı." },
+      { "year": 1647, "lng": 48.29, "lat": 38.25, "place": "Erdebil", "note": "Yaklaşık durak; sıra doğrulanmalı." },
+      { "year": 1647, "lng": 49.87, "lat": 40.41, "place": "Bakü", "note": "Yaklaşık durak; sıra doğrulanmalı." },
+      { "year": 1647, "lng": 46.36, "lat": 40.68, "place": "Gence", "note": "Yaklaşık durak; sıra doğrulanmalı." },
+      { "year": 1647, "lng": 44.8, "lat": 41.72, "place": "Tiflis", "note": "Yaklaşık durak; sıra doğrulanmalı." },
+      { "year": 1648, "lng": 41.27, "lat": 39.9, "place": "Erzurum", "note": "Dönüş. Tarih yaklaşık." }
+    ]
+  },
+  {
+    "id": "ibn-battuta-delhi",
+    "person_id": "ibn-battuta",
+    "title": "İbn Battuta: Tanca'dan Delhi'ye",
+    "start_year": 1325,
+    "end_year": 1334,
+    "needs_review": true,
+    "geometry": { "type": "LineString", "coordinates": [[-5.8, 35.78], [10.18, 36.8], [29.92, 31.2], [31.24, 30.04], [36.29, 33.51], [39.83, 21.42], [44.38, 33.31], [46.29, 38.08], [30.7, 36.9], [32.49, 37.87], [35.15, 42.03], [35.38, 45.03], [47.4, 47.4], [64.42, 39.77], [66.97, 39.65], [66.9, 36.76], [77.2, 28.6]] },
+    "waypoints": [
+      { "year": 1325, "lng": -5.8, "lat": 35.78, "place": "Tanca", "note": "Yolculuğun başlangıcı." },
+      { "year": 1325, "lng": 10.18, "lat": 36.8, "place": "Tunus", "note": "Kuzey Afrika güzergâhı." },
+      { "year": 1326, "lng": 29.92, "lat": 31.2, "place": "İskenderiye", "note": "Mısır'a varış." },
+      { "year": 1326, "lng": 31.24, "lat": 30.04, "place": "Kahire", "note": "Memlük başkenti." },
+      { "year": 1326, "lng": 36.29, "lat": 33.51, "place": "Şam", "note": "Hac kafilesine katılım." },
+      { "year": 1326, "lng": 39.83, "lat": 21.42, "place": "Mekke", "note": "İlk hac." },
+      { "year": 1327, "lng": 44.38, "lat": 33.31, "place": "Bağdat", "note": "İlhanlı toprakları." },
+      { "year": 1327, "lng": 46.29, "lat": 38.08, "place": "Tebriz", "note": "İlhanlı merkezi." },
+      { "year": 1330, "lng": 30.7, "lat": 36.9, "place": "Antalya", "note": "Anadolu'ya varış; tarih tartışmalıdır (1330–1332)." },
+      { "year": 1332, "lng": 32.49, "lat": 37.87, "place": "Konya", "note": "Anadolu beylikleri. Tarih yaklaşık." },
+      { "year": 1332, "lng": 35.15, "lat": 42.03, "place": "Sinop", "note": "Karadeniz'e çıkış. Tarih yaklaşık." },
+      { "year": 1332, "lng": 35.38, "lat": 45.03, "place": "Kefe", "note": "Kırım. Tarih yaklaşık." },
+      { "year": 1333, "lng": 47.4, "lat": 47.4, "place": "Saray", "note": "Altın Orda başkenti; konum yaklaşık." },
+      { "year": 1333, "lng": 64.42, "lat": 39.77, "place": "Buhara", "note": "Orta Asya. Tarih yaklaşık." },
+      { "year": 1333, "lng": 66.97, "lat": 39.65, "place": "Semerkant", "note": "Orta Asya. Tarih yaklaşık." },
+      { "year": 1333, "lng": 66.9, "lat": 36.76, "place": "Belh", "note": "Hindikuş'a doğru. Tarih yaklaşık." },
+      { "year": 1334, "lng": 77.2, "lat": 28.6, "place": "Delhi", "note": "Delhi Sultanlığı'na varış. Tarih yaklaşık." }
+    ]
+  },
+  {
+    "id": "marco-polo-dogu",
+    "person_id": "marco-polo",
+    "title": "Marco Polo'nun doğu yolculuğu",
+    "start_year": 1271,
+    "end_year": 1275,
+    "needs_review": true,
+    "geometry": { "type": "LineString", "coordinates": [[12.33, 45.44], [35.07, 32.93], [35.78, 36.77], [39.49, 39.75], [46.29, 38.08], [57.08, 30.28], [56.46, 27.1], [66.9, 36.76], [75.99, 39.47], [79.92, 37.11], [94.66, 40.14], [116.18, 42.36]] },
+    "waypoints": [
+      { "year": 1271, "lng": 12.33, "lat": 45.44, "place": "Venedik", "note": "Yolculuğun başlangıcı." },
+      { "year": 1271, "lng": 35.07, "lat": 32.93, "place": "Akka", "note": "Doğu Akdeniz limanı." },
+      { "year": 1271, "lng": 35.78, "lat": 36.77, "place": "Ayas", "note": "Kilikya limanı." },
+      { "year": 1272, "lng": 39.49, "lat": 39.75, "place": "Erzincan", "note": "Anadolu güzergâhı; güzergâh tartışmalıdır." },
+      { "year": 1272, "lng": 46.29, "lat": 38.08, "place": "Tebriz", "note": "İlhanlı ticaret merkezi; güzergâh tartışmalıdır." },
+      { "year": 1272, "lng": 57.08, "lat": 30.28, "place": "Kirman", "note": "Tarih yaklaşık." },
+      { "year": 1272, "lng": 56.46, "lat": 27.1, "place": "Hürmüz", "note": "Körfez limanı. Tarih yaklaşık." },
+      { "year": 1273, "lng": 66.9, "lat": 36.76, "place": "Belh", "note": "Tarih yaklaşık." },
+      { "year": 1273, "lng": 75.99, "lat": 39.47, "place": "Kaşgar", "note": "Tarım Havzası'nın batısı. Tarih yaklaşık." },
+      { "year": 1274, "lng": 79.92, "lat": 37.11, "place": "Hotan", "note": "Güney Tarım hattı. Tarih yaklaşık." },
+      { "year": 1274, "lng": 94.66, "lat": 40.14, "place": "Dunhuang", "note": "Çin'e giriş kapısı. Tarih yaklaşık." },
+      { "year": 1275, "lng": 116.18, "lat": 42.36, "place": "Şangdu", "note": "Kubilay Han'ın yazlık başkenti." }
+    ]
+  }
+]
