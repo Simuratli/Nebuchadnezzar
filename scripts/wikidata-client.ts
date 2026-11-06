@@ -6,7 +6,7 @@ export const root = resolve(import.meta.dirname, "..");
 export const seedDir = join(root, "data", "seed");
 export const cacheDir = join(root, ".cache", "wikidata");
 
-const UA = "ZamanAtlasi/0.1 (historical map project; data preparation script)";
+const UA = "Nebuchadnezzar/0.1 (historical map project; data preparation script)";
 const SPARQL = "https://query.wikidata.org/sparql";
 const DELAY_MS = 1500;
 

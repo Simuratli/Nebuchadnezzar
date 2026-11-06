@@ -1,4 +1,4 @@
--- Zaman Atlası initial schema. Years use historical numbering: negative = BCE, no year 0.
+-- Nebuchadnezzar initial schema. Years use historical numbering: negative = BCE, no year 0.
 create extension if not exists postgis;
 
 create type event_category as enum ('savas', 'antlasma', 'kurulus', 'kultur', 'bilim', 'goc', 'isyan', 'diger');

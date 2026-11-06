@@ -14,7 +14,7 @@ import { join, resolve } from "node:path";
 import { correctionSchema, sourceSchema, type Correction, type Source } from "../src/lib/types";
 
 const NE_URL = "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_admin_1_states_provinces.geojson";
-const UA = "ZamanAtlasi/0.1 (historical map project; data preparation script)";
+const UA = "Nebuchadnezzar/0.1 (historical map project; data preparation script)";
 const root = resolve(import.meta.dirname, "..");
 const cacheDir = join(root, ".cache", "natural-earth");
 const outDir = join(root, "public", "data", "corrections");

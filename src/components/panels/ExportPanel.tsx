@@ -47,7 +47,7 @@ export function ExportPanel({ maps }: { maps: (MlMap | null)[] }) {
   const preview = mapCaption(caption, lang);
   const citation = mapCitation(caption, lang);
 
-  const fileBase = `zaman-atlasi-${year}${compare ? `-${year2}` : ""}`;
+  const fileBase = `nebuchadnezzar-${year}${compare ? `-${year2}` : ""}`;
 
   const save = async (format: "png" | "pdf") => {
     const ready = maps.filter((m): m is MlMap => m !== null);

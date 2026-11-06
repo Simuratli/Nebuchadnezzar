@@ -32,7 +32,7 @@ test.describe("kişisel koleksiyon", () => {
     await expect(page.getByTestId("collection-count")).toHaveText("2 olay");
 
     const [download] = await Promise.all([page.waitForEvent("download"), page.getByTestId("download-bibtex").click()]);
-    expect(download.suggestedFilename()).toBe("zaman-atlasi-koleksiyon.bib");
+    expect(download.suggestedFilename()).toBe("nebuchadnezzar-koleksiyon.bib");
     const bib = await readFile((await download.path()) as string, "utf8");
     expect(bib).toContain("@misc{Q160077-");
     expect(bib).toContain("@misc{Q200032-");

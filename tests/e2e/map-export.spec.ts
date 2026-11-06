@@ -32,7 +32,7 @@ test.describe("atıflı harita görseli", () => {
     await page.getByTestId("nav-export").click();
 
     const [download] = await Promise.all([page.waitForEvent("download"), page.getByTestId("export-png").click()]);
-    expect(download.suggestedFilename()).toBe("zaman-atlasi-1453.png");
+    expect(download.suggestedFilename()).toBe("nebuchadnezzar-1453.png");
     const result = await inspectPng(page, (await download.path()) as string);
     expect(result.colours).toBeGreaterThan(20);
     expect(result.footerWhite).toBe(true);
@@ -44,7 +44,7 @@ test.describe("atıflı harita görseli", () => {
     await ready(page);
     await page.getByTestId("nav-export").click();
     const [download] = await Promise.all([page.waitForEvent("download"), page.getByTestId("export-pdf").click()]);
-    expect(download.suggestedFilename()).toBe("zaman-atlasi--331.pdf");
+    expect(download.suggestedFilename()).toBe("nebuchadnezzar--331.pdf");
     const bytes = await readFile((await download.path()) as string);
     const text = bytes.toString("latin1");
     expect(text.startsWith("%PDF-1.4")).toBe(true);
@@ -57,7 +57,7 @@ test.describe("atıflı harita görseli", () => {
     await page.goto("/tr?y=1453");
     await page.getByTestId("nav-export").click();
     const caption = page.getByTestId("export-caption");
-    await expect(caption).toContainText("Zaman Atlası: MS 1453 yılı");
+    await expect(caption).toContainText("Nebuchadnezzar: MS 1453 yılı");
     await expect(caption).toContainText("Sınır haritası: MS 1400");
     await expect(caption).toContainText("OpenStreetMap");
 
@@ -85,7 +85,7 @@ test.describe("atıflı harita görseli", () => {
     await page.getByTestId("nav-export").click();
     await expect(page.getByTestId("export-caption")).toContainText("MS 1453 ve MS 1914 yılları");
     const [download] = await Promise.all([page.waitForEvent("download"), page.getByTestId("export-png").click()]);
-    expect(download.suggestedFilename()).toBe("zaman-atlasi-1453-1914.png");
+    expect(download.suggestedFilename()).toBe("nebuchadnezzar-1453-1914.png");
     const result = await inspectPng(page, (await download.path()) as string);
     expect(result.width).toBeGreaterThan((single?.width ?? 0) * 1.5);
     expect(result.colours).toBeGreaterThan(20);

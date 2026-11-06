@@ -3,7 +3,7 @@ import messages from "../../messages/tr.json";
 import { mapCaption as caption, mapCitation as citation, wrapText, type MapCaptionInput, type MapCaptionLanguage } from "@/lib/map-citation";
 import { jpegToPdf } from "@/lib/pdf";
 
-const LANG: MapCaptionLanguage = { caption: messages.mapCaption, citation: messages.citationFormat, era: { bc: "MÖ", ad: "MS" }, appTitle: "Zaman Atlası" };
+const LANG: MapCaptionLanguage = { caption: messages.mapCaption, citation: messages.citationFormat, era: { bc: "MÖ", ad: "MS" }, appTitle: "Nebuchadnezzar" };
 const mapCaption = (i: MapCaptionInput) => caption(i, LANG);
 const mapCitation = (i: MapCaptionInput) => citation(i, LANG);
 
@@ -11,7 +11,7 @@ const input = { year: -331, boundaryYear: -400, url: "https://ornek.org/tr?y=-33
 
 describe("map citation", () => {
   it("cites a single map with access date", () => {
-    expect(mapCitation(input)).toBe("Zaman Atlası. (t.y.). MÖ 331 yılı [Harita]. 5 Kasım 2026 tarihinde https://ornek.org/tr?y=-331 adresinden erişildi.");
+    expect(mapCitation(input)).toBe("Nebuchadnezzar. (t.y.). MÖ 331 yılı [Harita]. 5 Kasım 2026 tarihinde https://ornek.org/tr?y=-331 adresinden erişildi.");
   });
   it("cites both years in compare mode", () => {
     expect(mapCitation({ ...input, year: 1071, year2: 1914 })).toContain("MS 1071 ve MS 1914 yılları [Harita]");
@@ -24,7 +24,7 @@ describe("map citation", () => {
 describe("map caption", () => {
   it("names the boundary map, because it can differ from the chosen year", () => {
     const { title, lines } = mapCaption(input);
-    expect(title).toBe("Zaman Atlası: MÖ 331 yılı");
+    expect(title).toBe("Nebuchadnezzar: MÖ 331 yılı");
     expect(lines[0]).toBe("Sınır haritası: MÖ 400");
   });
   it("always carries the required attribution and approximation note", () => {

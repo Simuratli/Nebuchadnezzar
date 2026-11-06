@@ -31,7 +31,7 @@ export function CollectionPanel({ events }: { events: EventSummary[] }) {
       });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const sources = (await res.json()) as Source[];
-      downloadText("zaman-atlasi-koleksiyon.bib", formatBibtexCollection(sources), "application/x-bibtex;charset=utf-8");
+      downloadText("nebuchadnezzar-koleksiyon.bib", formatBibtexCollection(sources), "application/x-bibtex;charset=utf-8");
       setStatus("idle");
     } catch {
       setStatus("error");

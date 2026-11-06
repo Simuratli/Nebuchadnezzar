@@ -13,6 +13,7 @@ export interface CollectionStore {
   save(items: CollectionItem[]): void;
 }
 
+// Keeps the name from before the rename, so collections already in browsers survive.
 const KEY = "zaman-atlasi:collection:v1";
 
 type StorageLike = Pick<Storage, "getItem" | "setItem">;

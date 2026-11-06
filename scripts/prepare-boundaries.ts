@@ -13,7 +13,7 @@ import { removeSlivers, type AreaFeature } from "./geo-utils";
 
 const REPO = "aourednik/historical-basemaps";
 const RAW = `https://raw.githubusercontent.com/${REPO}/master`;
-const UA = "ZamanAtlasi/0.1 (historical map project; data preparation script)";
+const UA = "Nebuchadnezzar/0.1 (historical map project; data preparation script)";
 const MIN_YEAR = -500;
 const MAX_YEAR = 1950;
 // Files used for 1800-1919; the correction layer replaces them in its region.

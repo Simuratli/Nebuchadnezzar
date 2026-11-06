@@ -52,7 +52,7 @@ test.describe("filtre ve dışa aktarma", () => {
     const expected = await count(page);
 
     const [csv] = await Promise.all([page.waitForEvent("download"), page.getByTestId("export-csv").click()]);
-    expect(csv.suggestedFilename()).toBe("zaman-atlasi-olaylar.csv");
+    expect(csv.suggestedFilename()).toBe("nebuchadnezzar-olaylar.csv");
     const text = await readFile((await csv.path()) as string, "utf8");
     expect(text.charCodeAt(0)).toBe(0xfeff);
     expect(text.trim().split("\r\n").length).toBeGreaterThanOrEqual(expected + 1);

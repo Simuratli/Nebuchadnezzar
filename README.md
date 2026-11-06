@@ -1,4 +1,4 @@
-# Zaman Atlası
+# Nebuchadnezzar
 
 Available in English (default), Turkish and Azerbaijani.
 

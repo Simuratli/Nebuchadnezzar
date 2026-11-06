@@ -21,7 +21,7 @@ test.describe("arama motorları", () => {
     expect(meta(page, /<title>([^<]*)<\/title>/)).toContain("Caucasus");
     expect(page).toMatch(/<meta name="description" content="[^"]{50,}"/);
     expect(page).toMatch(/<html[^>]*lang="en"/);
-    expect(page).toMatch(/<h1[^>]*>[^<]*Zaman Atlası/);
+    expect(page).toMatch(/<h1[^>]*>[^<]*Nebuchadnezzar/);
     expect(page).toContain("/en/explore");
   });
 

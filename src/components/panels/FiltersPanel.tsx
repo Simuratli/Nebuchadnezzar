@@ -119,7 +119,7 @@ export function FiltersPanel({ events }: { events: EventSummary[] }) {
             type="button"
             disabled={events.length === 0}
             data-testid="export-csv"
-            onClick={() => downloadText("zaman-atlasi-olaylar.csv", eventsToCsv(events), "text/csv;charset=utf-8")}
+            onClick={() => downloadText("nebuchadnezzar-olaylar.csv", eventsToCsv(events), "text/csv;charset=utf-8")}
             className="rounded border border-line px-3 py-1.5 hover:bg-surface-2 disabled:opacity-50"
           >
             {t("filters.exportCsv")}
@@ -128,7 +128,7 @@ export function FiltersPanel({ events }: { events: EventSummary[] }) {
             type="button"
             disabled={events.length === 0}
             data-testid="export-geojson"
-            onClick={() => downloadText("zaman-atlasi-olaylar.geojson", JSON.stringify(eventsToGeoJson(events), null, 1), "application/geo+json")}
+            onClick={() => downloadText("nebuchadnezzar-olaylar.geojson", JSON.stringify(eventsToGeoJson(events), null, 1), "application/geo+json")}
             className="rounded border border-line px-3 py-1.5 hover:bg-surface-2 disabled:opacity-50"
           >
             {t("filters.exportGeoJson")}
