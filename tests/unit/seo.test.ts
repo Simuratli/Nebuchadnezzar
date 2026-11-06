@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { alternates, jsonLd, localizedUrl, snippet } from "@/lib/seo";
+import { alternates, jsonLd, localizedUrl, resolveSiteUrl, snippet } from "@/lib/seo";
 
 describe("alternates", () => {
   it("gives a canonical and hreflang links for every language", () => {
@@ -34,5 +34,17 @@ describe("jsonLd", () => {
     const out = jsonLd({ name: "</script><script>alert(1)</script>" });
     expect(out).not.toContain("<");
     expect(JSON.parse(out).name).toBe("</script><script>alert(1)</script>");
+  });
+});
+
+describe("resolveSiteUrl", () => {
+  it("prefers the explicit address and trims its slash", () => {
+    expect(resolveSiteUrl({ NEXT_PUBLIC_SITE_URL: "https://ornek.com/", VERCEL_PROJECT_PRODUCTION_URL: "x.vercel.app" })).toBe("https://ornek.com");
+  });
+  it("uses the Vercel production domain when nothing is set", () => {
+    expect(resolveSiteUrl({ VERCEL_PROJECT_PRODUCTION_URL: "nebuchadnezzar-three.vercel.app" })).toBe("https://nebuchadnezzar-three.vercel.app");
+  });
+  it("falls back to localhost only outside a deployment", () => {
+    expect(resolveSiteUrl({})).toBe("http://localhost:3000");
   });
 });

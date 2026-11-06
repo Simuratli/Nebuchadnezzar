@@ -1,8 +1,22 @@
 import type { Metadata } from "next";
 import { DEFAULT_LOCALE, LOCALES, type Locale } from "./types";
 
-/** Set NEXT_PUBLIC_SITE_URL in production: canonical links and the sitemap are built from it. */
-export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000").replace(/\/+$/, "");
+type SiteEnv = { NEXT_PUBLIC_SITE_URL?: string; VERCEL_PROJECT_PRODUCTION_URL?: string };
+
+/**
+ * The public address that canonical links and the sitemap are built from: the explicit
+ * setting first, then the production domain Vercel provides, so a deployment can never
+ * tell search engines to crawl localhost.
+ */
+export function resolveSiteUrl(env: SiteEnv): string {
+  const url = env.NEXT_PUBLIC_SITE_URL || (env.VERCEL_PROJECT_PRODUCTION_URL && `https://${env.VERCEL_PROJECT_PRODUCTION_URL}`) || "http://localhost:3000";
+  return url.replace(/\/+$/, "");
+}
+
+export const SITE_URL = resolveSiteUrl({
+  NEXT_PUBLIC_SITE_URL: process.env.NEXT_PUBLIC_SITE_URL,
+  VERCEL_PROJECT_PRODUCTION_URL: process.env.VERCEL_PROJECT_PRODUCTION_URL,
+});
 
 export const localizedUrl = (locale: Locale, path = "") => `${SITE_URL}/${locale}${path}`;
 
