@@ -92,6 +92,15 @@ Uygulama varsayılan olarak seed dosyalarıyla çalışır. Veri erişimi `src/l
 
 Koleksiyonlar şimdilik tarayıcıda (`localStorage`) tutulur. Hesaba bağlamak için `src/lib/collection.ts` içindeki `CollectionStore` arayüzünün Supabase Auth kullanan bir uygulaması yazılmalıdır; bu henüz yapılmadı.
 
+## Arama motorları (SEO)
+
+Harita tarayıcıda çizildiği için içerik ayrıca sunucuda üretilen sayfalarda da bulunur: `/<dil>/events/<id>`, `/<dil>/people/<id>`, `/<dil>/cities/<id>` ve `/<dil>/explore`. Sayfalar ilk istekte üretilip önbelleğe alınır.
+
+- **Yayına almadan önce `NEXT_PUBLIC_SITE_URL` tanımlanmalıdır.** Tanımlı değilse canonical adresler ve sitemap `localhost` gösterir.
+- `/sitemap.xml` ve `/robots.txt` otomatik üretilir.
+- Bir kaydın o dilde kendi metni yoksa sayfa `noindex` olur ve sitemap'e girmez, böylece aynı metin üç adreste kopya içerik oluşturmaz.
+- Paylaşım görseli `public/og.png` dosyasıdır.
+
 ## Diller
 
 Varsayılan dil İngilizcedir; Türkçe ve Azerbaycanca başlıktaki seçiciden açılır (`/en`, `/tr`, `/az`).

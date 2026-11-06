@@ -1,12 +1,14 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import Link from "next/link";
+import { useLocale, useTranslations } from "next-intl";
 import { useAtlas, type SidePanel } from "@/store/atlas";
 
 const PANELS: Exclude<SidePanel, null>[] = ["filters", "collection", "routes", "tours", "states", "export"];
 
 export function NavButtons() {
   const t = useTranslations("nav");
+  const locale = useLocale();
   const sidePanel = useAtlas((s) => s.sidePanel);
   const setSidePanel = useAtlas((s) => s.setSidePanel);
   const compare = useAtlas((s) => s.compare);
@@ -34,6 +36,9 @@ export function NavButtons() {
       >
         {t("compare")}
       </button>
+      <Link href={`/${locale}/explore`} data-testid="nav-explore" className="whitespace-nowrap rounded-lg px-2.5 py-1.5 text-[13px] font-medium text-ink hover:bg-surface-2">
+        {t("explore")}
+      </Link>
     </nav>
   );
 }

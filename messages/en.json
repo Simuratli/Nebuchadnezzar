@@ -1,7 +1,7 @@
 {
   "app": {
     "title": "Zaman Atlası",
-    "description": "A sourced, interactive history map of the Caucasus, the Ottoman lands and the Silk Road.",
+    "description": "Explore 2,450 years of history on a map: borders by year, battles, treaties, cities and people from 500 BCE to 1950, each with sources and ready citations.",
     "loading": "Loading map…",
     "skipToTimeline": "Skip to timeline",
     "close": "Close",
@@ -113,7 +113,8 @@
     "export": "Download map",
     "compare": "Compare",
     "panels": "Panels",
-    "states": "States"
+    "states": "States",
+    "explore": "Index"
   },
   "filters": {
     "title": "Filters",
@@ -273,5 +274,15 @@
       "bozkir": "Steppe and Russia",
       "cin": "China"
     }
+  },
+  "seo": {
+    "homeTitle": "Interactive History Map of the Caucasus, Ottoman Lands and Silk Road",
+    "homeDescription": "Explore 2,450 years of history on a map: borders by year, battles, treaties, cities and people from 500 BCE to 1950, each with sources and ready citations.",
+    "explore": "Index",
+    "exploreTitle": "Index of events, people and cities",
+    "exploreDescription": "Every war, treaty, uprising, founding, city and historical figure in the atlas, from 500 BCE to 1950, with dates and sources.",
+    "viewOnMap": "View on the map",
+    "people": "People",
+    "cities": "Cities"
   }
 }

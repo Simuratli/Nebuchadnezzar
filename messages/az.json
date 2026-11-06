@@ -1,7 +1,7 @@
 {
   "app": {
     "title": "Zaman Atlası",
-    "description": "Qafqaz, Osmanlı coğrafiyası və İpək Yolu üçün mənbələrə əsaslanan interaktiv tarix xəritəsi.",
+    "description": "2450 illik tarixi xəritədə kəşf edin: e.ə. 500-dən 1950-yə qədər illərə görə sərhədlər, müharibələr, müqavilələr, şəhərlər və şəxslər; mənbələri və hazır istinadları ilə.",
     "loading": "Xəritə yüklənir…",
     "skipToTimeline": "Zaman xəttinə keç",
     "close": "Bağla",
@@ -113,7 +113,8 @@
     "export": "Xəritəni endir",
     "compare": "Müqayisə et",
     "panels": "Panellər",
-    "states": "Dövlətlər"
+    "states": "Dövlətlər",
+    "explore": "Göstərici"
   },
   "filters": {
     "title": "Filtrlər",
@@ -273,5 +274,15 @@
       "bozkir": "Çöl və Rusiya",
       "cin": "Çin"
     }
+  },
+  "seo": {
+    "homeTitle": "Qafqaz, Osmanlı Coğrafiyası və İpək Yolu üçün İnteraktiv Tarix Xəritəsi",
+    "homeDescription": "2450 illik tarixi xəritədə kəşf edin: e.ə. 500-dən 1950-yə qədər illərə görə sərhədlər, müharibələr, müqavilələr, şəhərlər və şəxslər; mənbələri və hazır istinadları ilə.",
+    "explore": "Göstərici",
+    "exploreTitle": "Hadisə, şəxs və şəhər göstəricisi",
+    "exploreDescription": "Atlasdakı bütün müharibə, müqavilə, üsyan, qurulma, şəhər və tarixi şəxslər; e.ə. 500-dən 1950-yə qədər, tarixləri və mənbələri ilə.",
+    "viewOnMap": "Xəritədə gör",
+    "people": "Şəxslər",
+    "cities": "Şəhərlər"
   }
 }

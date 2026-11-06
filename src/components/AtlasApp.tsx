@@ -160,7 +160,7 @@ export function AtlasApp({ data }: { data: AtlasData }) {
       {/* Clicks pass through the empty space between these cards to the map. */}
       <header ref={layoutRef.header} className="pointer-events-none absolute inset-x-2 top-2 z-40 flex flex-wrap items-center gap-2 md:inset-x-3 md:top-3">
         <div className="floating-card pointer-events-auto flex min-w-0 flex-1 items-center gap-3 px-3 py-1.5 md:w-[26rem] md:flex-none">
-          <h1 className="sr-only whitespace-nowrap font-serif text-lg font-semibold tracking-tight sm:not-sr-only">{t("app.title")}</h1>
+          <p className="sr-only whitespace-nowrap font-serif text-lg font-semibold tracking-tight sm:not-sr-only">{t("app.title")}</p>
           <div className="min-w-0 flex-1">
             <SearchBox events={data.events} people={data.people} cities={data.cities} />
           </div>

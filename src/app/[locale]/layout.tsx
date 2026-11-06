@@ -5,6 +5,8 @@ import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { ThemeProvider } from "next-themes";
 import { routing } from "@/i18n/routing";
+import { alternates, SITE_URL } from "@/lib/seo";
+import { asLocale } from "@/lib/types";
 import "../globals.css";
 
 // latin-ext covers Turkish (ı, ş, ğ) and Azerbaijani (ə).
@@ -19,8 +21,20 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "app" });
-  return { title: t("title"), description: t("description"), icons: { icon: "/favicon.svg" } };
+  const t = await getTranslations({ locale });
+  const brand = t("app.title");
+  const description = t("seo.homeDescription");
+  const title = `${t("seo.homeTitle")} | ${brand}`;
+  return {
+    metadataBase: new URL(SITE_URL),
+    title: { default: title, template: `%s | ${brand}` },
+    description,
+    applicationName: brand,
+    icons: { icon: "/favicon.svg" },
+    alternates: alternates(asLocale(locale)),
+    openGraph: { type: "website", siteName: brand, title, description, locale, url: `/${locale}`, images: [{ url: "/og.png", width: 1200, height: 630, alt: brand }] },
+    twitter: { card: "summary_large_image", title, description, images: ["/og.png"] },
+  };
 }
 
 export const viewport: Viewport = {

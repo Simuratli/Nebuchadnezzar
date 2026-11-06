@@ -1,7 +1,7 @@
 {
   "app": {
     "title": "Zaman Atlası",
-    "description": "Kafkasya, Osmanlı coğrafyası ve İpek Yolu için kaynaklı, etkileşimli tarih haritası.",
+    "description": "2450 yıllık tarihi haritada keşfedin: MÖ 500'den 1950'ye yıla göre sınırlar, savaşlar, antlaşmalar, şehirler ve kişiler; kaynakları ve hazır atıflarıyla.",
     "loading": "Harita yükleniyor…",
     "skipToTimeline": "Zaman çizelgesine atla",
     "close": "Kapat",
@@ -92,7 +92,8 @@
     "compare": "Karşılaştır",
     "panels": "Paneller",
     "export": "Haritayı indir",
-    "states": "Devletler"
+    "states": "Devletler",
+    "explore": "Dizin"
   },
   "filters": {
     "title": "Filtreler",
@@ -273,5 +274,15 @@
       "bozkir": "Bozkır ve Rusya",
       "cin": "Çin"
     }
+  },
+  "seo": {
+    "homeTitle": "Kafkasya, Osmanlı Coğrafyası ve İpek Yolu İçin Etkileşimli Tarih Haritası",
+    "homeDescription": "2450 yıllık tarihi haritada keşfedin: MÖ 500'den 1950'ye yıla göre sınırlar, savaşlar, antlaşmalar, şehirler ve kişiler; kaynakları ve hazır atıflarıyla.",
+    "explore": "Dizin",
+    "exploreTitle": "Olay, kişi ve şehir dizini",
+    "exploreDescription": "Atlastaki tüm savaş, antlaşma, isyan, kuruluş, şehir ve tarihî kişiler; MÖ 500'den 1950'ye, tarihleri ve kaynaklarıyla.",
+    "viewOnMap": "Haritada gör",
+    "people": "Kişiler",
+    "cities": "Şehirler"
   }
 }
