@@ -34,6 +34,14 @@ test.describe("arama motorları", () => {
     expect(page).toContain('name="twitter:card"');
   });
 
+  test("Google doğrulama etiketi head içindedir", async ({ request }) => {
+    for (const path of ["/en", "/tr", "/en/events/Q160077"]) {
+      const page = await html(request, path);
+      const head = page.slice(0, page.indexOf("</head>"));
+      expect(head, path).toContain('<meta name="google-site-verification" content="LYxCfyRNBX2i-yNHpLKuCDilh4TDTGwERTWjzq2rPc4"/>');
+    }
+  });
+
   test("durum parametreleri canonical adresi değiştirmez", async ({ request }) => {
     const page = await html(request, "/en?y=1453&lat=40&lng=30&z=5");
     expect(page).toMatch(/<link rel="canonical" href="[^"?]*\/en"/);

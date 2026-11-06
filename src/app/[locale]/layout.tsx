@@ -31,6 +31,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description,
     applicationName: brand,
     icons: { icon: "/favicon.svg" },
+    verification: { google: "LYxCfyRNBX2i-yNHpLKuCDilh4TDTGwERTWjzq2rPc4" },
     alternates: alternates(asLocale(locale)),
     openGraph: { type: "website", siteName: brand, title, description, locale, url: `/${locale}`, images: [{ url: "/og.png", width: 1200, height: 630, alt: brand }] },
     twitter: { card: "summary_large_image", title, description, images: ["/og.png"] },
