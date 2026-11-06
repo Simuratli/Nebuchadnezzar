@@ -40,8 +40,8 @@ describe("messages", () => {
     });
     it(`${name} is really translated`, () => {
       const same = Object.keys(base).filter((k) => typeof base[k] === "string" && base[k] === other[k] && (base[k] as string).length > 12);
-      // Only the placeholder-only date range may match.
-      expect(same.sort()).toEqual(["search.lived"]);
+      // Only the brand name and the placeholder-only date range may match.
+      expect(same.sort()).toEqual(["app.title", "search.lived"]);
     });
   }
 });
